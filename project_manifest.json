@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-20",
+  "migration_status": "UNVERIFIED_SCAFFOLD",
+  "notes": "Release versions/null and authority must be verified against actual artifacts; never infer from filenames or old chats.",
+  "atlas": [
+    {
+      "slug": "brain",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "deep-time",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "tree-of-life",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "mythology",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "muscles",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "emergence",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "launcher",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    }
+  ],
+  "quiz": [
+    {
+      "slug": "geologic-time",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "tree-of-life",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "nervous-system",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "human-anatomy",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "greek-roman-mythology",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    },
+    {
+      "slug": "launcher",
+      "release_version": null,
+      "authoritative_source": null,
+      "verified": false
+    }
+  ],
+  "shared_taxa": {
+    "release_version": null,
+    "verified": false,
+    "manifest": "shared/taxa/manifest.json"
+  }
+}

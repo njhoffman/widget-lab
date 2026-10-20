@@ -1,0 +1,16 @@
+# Sensitive and temporary imports: NEVER COMMIT
+.local/
+incoming/
+*.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secrets*.json
+node_modules/
+dist/
+build/
+.cache/
+.DS_Store
+__pycache__/
