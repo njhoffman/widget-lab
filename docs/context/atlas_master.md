@@ -16,11 +16,11 @@ The delivered Atlas master v1.21 catalog and actual HTML titles agree on these v
 | Emergence | 1.10 | `atlas/widgets/Emergence_Atlas_v1.10.html` |
 | Launcher | 1.14 | `atlas/widgets/Widget_Launcher_v1.14.html` |
 
-All six scientific widgets match the delivered v1.20 source checksums. Launcher v1.14 is documented by the actual HTML, v1.21 catalog, and release notes. The SHA inventory records imported bytes. This verifies source identity, not scientific claims, publication history outside the package, or interactive browser behavior. No new release was created.
+All six scientific widgets match the delivered v1.20 source checksums. Launcher v1.14 is documented by the actual HTML, v1.21 catalog, and release notes. The SHA inventory records imported bytes. This verifies source identity, not scientific claims, publication history outside the package, or interactive browser behavior. No new release was created during that migration step.
 
 ## Approved UI, scientific, and data requirements
 
-The user prioritized Atlas and selected `atlas/images/goal_1.png` and `goal_2.png` as direction. See `atlas/specs/visual-direction.md` revision 2 for the approved design language and regression constraints. Preserve scientific content, stable identifiers, historical changelogs, and browser progress formats. Repository setup and relevant context curation were explicitly authorized; raw account exports and transcripts stay private.
+The user prioritized Atlas and selected `atlas/images/goal_1.png` and `goal_2.png` as direction. See `atlas/specs/visual-direction.md` revision 4 for the approved design language and regression constraints. Preserve scientific content, stable identifiers, historical changelogs, and browser progress formats. Repository setup and relevant context curation were explicitly authorized; raw account exports and transcripts stay private.
 
 The images favor dark navy, cyan/mint accents, compact headers, illustrated selected-subject stages, and adjacent navigation/detail panels. Their versions and numerical badges are examples. The more compact second composition is useful for subsequent layout work without removing existing scientific panels.
 
@@ -59,3 +59,11 @@ Every Atlas update must produce fresh actual-versus-goal PNGs with completed/pen
 WL-005, T018, T022, and WL-010 are complete with [45 passing scenario checks](../browser-tests/0.1.1/README.md). The suite uses real mouse/key input, verifies selected title/artwork/breadcrumb changes and five distinct topic tabs, and guards against empty or stale source reports. Spec revisions for the primary three widgets and shared direction are now 3. Actual original widget/data bytes and versions remain unchanged.
 
 T021 remains open: the UI card/profile interaction passes, but canonical Shared Taxa identity/provenance is not established by opening the original embedded taxon profile. No scientific correctness or data migration is inferred from UI tests. The larger WL-006 visual refinement can begin next against this baseline. Fresh primary-widget comparisons in `docs/visual-reviews/0.1.1/` reflect the updated completed/pending task list.
+
+## Deep Time visual update — repository 0.2.0
+
+Current Deep Time source is `atlas/widgets/Deep_Time_Atlas_v1.19.0.html`; imported 1.18 remains unchanged. The new standalone adds a compact topic/search header, interval scene refinement, larger preview cards with actual age labels and current state, and responsive/reduced-motion styling. Its original source is preserved verbatim except document title plus appended presentation CSS/JS. No scientific payloads, IDs, classifications, dates, or original event/control handlers changed.
+
+Use `atlas/current.html` for current registered builds. Imported dashboards/catalogs remain historical. Editable Deep Time presentation is under `atlas/widgets/deep-time/src/`; deterministic builders and preservation tests guard the generated file. All prior release entries are retained, with 1.19.0 added ahead of them.
+
+WL-006 remains in progress for later widget/layout/artwork work. Procedural Triassic imagery remains procedural; no cinematic reconstruction or canonical taxon migration is claimed. Browser tooling now requests graceful Chrome shutdown after a profile cleanup race found during QA; bounded termination fallbacks remain for stuck processes.

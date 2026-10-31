@@ -46,14 +46,51 @@
       "matches_v1_20_checksum": false
     }
   ],
+  "active_versions": [
+    {
+      "slug": "brain",
+      "version": "1.21",
+      "source": "atlas/widgets/Brain_Atlas_v1.21.html"
+    },
+    {
+      "slug": "deep-time",
+      "version": "1.19.0",
+      "source": "atlas/widgets/Deep_Time_Atlas_v1.19.0.html"
+    },
+    {
+      "slug": "tree-of-life",
+      "version": "1.14",
+      "source": "atlas/widgets/Tree_of_Life_Atlas_v1.14.html"
+    },
+    {
+      "slug": "mythology",
+      "version": "1.13",
+      "source": "atlas/widgets/Mythology_Atlas_v1.13.html"
+    },
+    {
+      "slug": "muscles",
+      "version": "1.8",
+      "source": "atlas/widgets/Muscle_Atlas_v1.8.html"
+    },
+    {
+      "slug": "emergence",
+      "version": "1.10",
+      "source": "atlas/widgets/Emergence_Atlas_v1.10.html"
+    },
+    {
+      "slug": "launcher",
+      "version": "1.14",
+      "source": "atlas/widgets/Widget_Launcher_v1.14.html"
+    }
+  ],
   "javascript_syntax": {
     "status": "pass",
-    "html_files": 14,
-    "scripts": 39
+    "html_files": 16,
+    "scripts": 47
   },
   "errors": [],
   "limitations": [
-    "No interactive browser, IndexedDB, folder-picker, or offline persistence testing.",
+    "Browser interaction evidence is validated separately by tools/check_project.py; storage/folder-picker/persistence remain outside this audit.",
     "Checksums and syntax do not certify scientific accuracy or artwork approval.",
     "Distribution download ZIPs remain in incoming; original dashboard download links are unavailable."
   ]

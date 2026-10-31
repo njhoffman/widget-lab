@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-30 · Repository release: 0.1.1
+Reviewed: 2026-10-30 · Repository release: 0.2.0
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -30,7 +30,7 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [x] **WL-005 — Exercise Atlas browser interactions before visual refactoring.** (p1) [test] [done]
   Test hierarchy/filter/selection/topic panels, keyboard focus, and 390/768/1440px layouts for Deep Time, Brain, and Mythology.
   Acceptance/evidence: [45/45 real-browser checks](docs/browser-tests/0.1.1/README.md) and nine selected-state screenshots at 390/768/1440px; original source hashes preserved. Spec: [visual direction r3](atlas/specs/visual-direction.md). Chrome/Linux coverage; storage/Windows/scientific checks remain separate.
-- [ ] **WL-006 — Refine the goal-image layout without scientific regressions.** (p1) [feature] [approved]
+- [ ] **WL-006 — Refine the goal-image layout without scientific regressions.** (p1) [feature] [in-progress]
   Work in small reviewed widget batches toward the two goal references; preserve existing controls and informative panels.
   Acceptance: browser checks pass and new real-versus-goal images show completed/pending items with source/version metadata. Depends on WL-005; speculative science and new anatomical geometry remain outside this scope.
 - [ ] **WL-007 — Import and verify Quiz sources.** (p2) [chore] [triage]
@@ -46,6 +46,23 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [x] **WL-010 — Guard browser evidence against incomplete coverage and stale sources.** (p1) [test] [done]
   Add a repeatable real-input regression runner and validate its full unique 3-widget/3-width matrix against current source hashes. Correct Enter character events and focus the overlapping range input for keyboard testing.
   Acceptance/evidence: [browser report](docs/browser-tests/0.1.1/report.json), `tools/test_atlas_browser.py`, and `test_browser_report_cannot_claim_success_with_missing_coverage_or_stale_sources` in the unit suite. No application bugs inferred from test-driver mistakes.
+
+- [x] **WL-011 — Refine Deep Time header, interval scene, and preview strip.** (p1) [feature] [done]
+  First WL-006 implementation batch: move existing topics/search into the header, enlarge interval previews with actual ages/selected state, and retain all scientific panels and original baseline bytes.
+  Acceptance/evidence: Deep Time spec revision 4, [complete browser matrix](docs/browser-tests/0.2.0/README.md), preview/header/reduced-motion assertions, preserved-source build test, and fresh goal comparison opened in feh.
+- [x] **WL-012 — Launch current builds without rewriting imported dashboards.** (p1) [feature] [done]
+  Generate `atlas/current.html` from registered sources and direct users to current versions while retaining original dashboard/source artifacts.
+  Acceptance/evidence: [current launch page](atlas/current.html), all seven source links exist and match the manifest (`test_current_launcher_matches_registered_sources`); Deep Time 1.19.0 passes browser checks.
+
+- [x] **WL-013 — Preserve recent interval age precision in previews.** (p1) [bug] [done]
+  The new preview formatter initially rounded four-decimal source boundaries. Preserve the manifest precision, including Holocene 0.0117 Ma, without changing the dataset.
+  Acceptance/evidence: [browser report](docs/browser-tests/0.2.0/report.json) checks Holocene 0.0117 Ma at 390/768/1440px.
+- [ ] **WL-014 — Make visual comparison sheets easier to scan.** (p2) [feature] [proposed]
+  Current full backlog sidebars make comparison PNGs tall. Explore concise priority summaries while keeping complete task details/evidence available.
+  Acceptance: approve the report layout, retain actual/goal provenance and completed/pending IDs, and compare readability at typical feh window sizes.
+- [x] **WL-015 — Close Chrome gracefully before removing its test profile.** (p1) [bug] [done]
+  A passing matrix exposed a renderer/profile cleanup race after forced browser termination. Request browser shutdown and wait, retaining bounded terminate/kill fallbacks.
+  Acceptance/evidence: two shutdown unit tests and the final real browser matrix exit successfully without suppressing profile cleanup errors; fresh capture/viewer result is retained with this release.
 
 ## 2. Shared UI and accessibility
 
@@ -148,13 +165,15 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Acceptance: triage this proposal, record the decision and concrete criteria in the relevant spec, then validate with regression checks and actual-versus-goal evidence before completion.
   Source: catalog `suggestions/S001`; historical status `proposed`, priority `P0`.
 
-- [ ] **T016 — Place compact view tabs and search alongside header like concept, without crowding.** (p1) [feature] [proposed]
+- [x] **T016 — Place compact view tabs and search alongside header like concept, without crowding.** (p1) [feature] [done]
   Acceptance: All controls available, no title overlap, responsive
   Source: catalog `goals/T016`; historical status `partial`, priority `P1`.
+  Approved scope/evidence: Deep Time spec revision 4, [0.2.0 browser report](docs/browser-tests/0.2.0/README.md), and [fresh goal comparison](docs/visual-reviews/0.2.0/deep-time-comparison.png). Existing artwork/review limits remain.
 
-- [ ] **T017 — Show polished geology thumbnail previews with selected outline.** (p1) [feature] [proposed]
+- [x] **T017 — Show polished geology thumbnail previews with selected outline.** (p1) [feature] [done]
   Acceptance: Period thumb/age text and selected state clear
   Source: catalog `goals/T017`; historical status `partial`, priority `P1`.
+  Approved scope/evidence: Deep Time spec revision 4, [0.2.0 browser report](docs/browser-tests/0.2.0/README.md), and [fresh goal comparison](docs/visual-reviews/0.2.0/deep-time-comparison.png). Existing artwork/review limits remain.
 
 - [x] **T018 — Verify existing: Click neighboring intervals to navigate.** (p1) [test] [done]
   Acceptance: Selection updates text, artwork, breadcrumbs

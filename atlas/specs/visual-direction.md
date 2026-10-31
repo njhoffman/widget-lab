@@ -1,7 +1,7 @@
 # Atlas visual direction
 
 **Status:** APPROVED direction and migration safeguards; implementation backlog is proposed.  
-**Spec revision:** 3  
+**Spec revision:** 4  
 **Last reviewed:** 2026-10-30  
 **Authority:** User's request to prioritize Atlas and `goal_1.png` / `goal_2.png`, followed by authorization to curate and finish repository setup.
 
@@ -59,3 +59,9 @@ See [migration decision](../../docs/decisions/2026-10-30-atlas-migration-baselin
 WL-005 is complete for the defined Chrome/Linux matrix: [45 checks](../../docs/browser-tests/0.1.1/README.md) across three widgets and three viewport widths. Repeat the suite before/after a visual-source change. The complete matrix and source hashes are enforced by the project consistency check. Fresh [goal comparisons](../../docs/visual-reviews/0.1.1/index.html) retain exact imported source hashes.
 
 WL-006 layout refinements may now begin in small batches; full accessibility, scientific review, canonical taxon provenance, Windows storage and launcher persistence remain separately tracked. No visual redesign or new scientific claim is part of this verification release.
+
+## First visual implementation — repository 0.2.0
+
+Deep Time 1.19.0 implements the first scoped WL-006 batch: compact topic/search header, clearer interval stage, larger nearby previews with actual ages/current state, and responsive panel styling. Its original 1.18 science/control source is retained verbatim, except for the standalone document title; added CSS/JS changes presentation and release metadata only. The current-build launch page routes to registered source versions without rewriting imported dashboards.
+
+Age labels retain recent four-decimal boundaries, including Holocene 0.0117 Ma. Added browser checks enforce header compactness, manifest-backed preview ages, preview navigation/current state, and reduced motion. The original art and anatomical/scientific disclosures remain unchanged. Further bespoke artwork and the other widgets' layout refinements remain pending under WL-006 and their linked tasks.

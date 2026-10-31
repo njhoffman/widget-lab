@@ -1,5 +1,23 @@
 # Deep Time — release history
 
+## [1.19.0] - 2026-10-30
+
+### Added
+
+- Compact responsive topic/search header using the existing controls.
+- Larger clickable interval preview cards with source age ranges and explicit current state, including precise recent boundaries.
+- Separate standalone build and preservation checks; current-build launch page.
+
+### Changed
+
+- Refined interval-stage/panel composition toward both approved goal references, with visible focus and reduced-motion behavior.
+- Adopted an explicit three-part version for this new release. Historical 1.18 and all other imported labels remain unchanged.
+
+### Preserved
+
+- Original data/control scripts, interval/taxon IDs, science panels, filters, timeline bars, artwork disclosures, and old HTML/history.
+
+
 <!-- Bring forward all VERIFIED historical releases from existing files; none are inferred yet. -->
 
 ## Unreleased — repository migration, 2026-10-30

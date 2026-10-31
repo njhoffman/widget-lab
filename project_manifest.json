@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated": "2026-10-20",
   "migration_status": "ATLAS_BASELINE_IMPORTED_QUIZ_UNVERIFIED",
-  "notes": "Atlas source versions verified from actual HTML, catalog and import hashes; no new releases created. Quiz null versions remain unverified. Verification of source integrity does not certify scientific accuracy or completed browser QA.",
+  "notes": "Imported widget baselines and dataset versions are preserved. Current derived releases are recorded explicitly with source hashes and evidence; null Quiz versions remain unverified. Integrity and browser checks do not certify scientific accuracy.",
   "atlas": [
     {
       "slug": "brain",
@@ -13,22 +13,23 @@
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
       "visual_evidence": "docs/visual-reviews/0.1.1/brain-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.1.1/report.json",
+        "report": "docs/browser-tests/0.2.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
       }
     },
     {
       "slug": "deep-time",
-      "release_version": "1.18",
-      "authoritative_source": "atlas/widgets/Deep_Time_Atlas_v1.18.html",
+      "release_version": "1.19.0",
+      "authoritative_source": "atlas/widgets/Deep_Time_Atlas_v1.19.0.html",
       "verified": true,
-      "sha256": "778624d6ae08e6c461ab5e7e7c55700e4867c589fe2145b01eb5e57393ed9cea",
-      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.1/deep-time-evidence.json",
+      "sha256": "13b203a3c5b8e0f8a9091e4d35c80491e44cc83fc15bbed4fddad6054be82c1f",
+      "verification_scope": "Standalone visual release derived from preserved 1.18 baseline; original data/scripts retained, presentation adapter and title added. Runtime/scientific verification scope is recorded separately.",
+      "visual_evidence": "docs/visual-reviews/0.2.0/deep-time-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.1.1/report.json",
+        "report": "docs/browser-tests/0.2.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
-      }
+      },
+      "baseline_source": "atlas/widgets/Deep_Time_Atlas_v1.18.html"
     },
     {
       "slug": "tree-of-life",
@@ -48,7 +49,7 @@
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
       "visual_evidence": "docs/visual-reviews/0.1.1/mythology-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.1.1/report.json",
+        "report": "docs/browser-tests/0.2.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
       }
     },
@@ -134,11 +135,11 @@
     "verification_scope": "Imported source identity and JavaScript syntax; existing dashboard decisions are project metadata, not approved requirements."
   },
   "repository": {
-    "release_version": "0.1.1",
+    "release_version": "0.2.0",
     "version_file": "VERSION",
     "tag_format": "v{version}",
     "changelog": "CHANGELOG.md",
     "backlog": "TODO.md",
-    "browser_regression_report": "docs/browser-tests/0.1.1/report.json"
+    "browser_regression_report": "docs/browser-tests/0.2.0/report.json"
   }
 }

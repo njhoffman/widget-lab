@@ -109,6 +109,22 @@ class Suite:
         self.require("document.getElementById('modalBack').classList.contains('show') && document.getElementById('modalContents').innerText.length>100", 'Representative-life card did not open a substantive taxon profile')
         self.click('#closeModal')
         self.require("!document.getElementById('modalBack').classList.contains('show')", 'Taxon profile failed to close')
+        if self.context['version'] == '1.19.0':
+            self.require("document.getElementById('aw-header-family').contains(document.getElementById('tabs')) && document.getElementById('aw-header-family').contains(document.getElementById('search'))", 'Topics/search were not retained in the compact header')
+            if self.context['width'] >= 1200:
+                self.require("document.getElementById('aw-header-family').getBoundingClientRect().height<=100", 'Desktop header is no longer compact')
+            self.require("(()=>{const entries=JSON.parse(document.getElementById('atlas-art-manifest').textContent).entries;return [...document.querySelectorAll('.aw-v19-scene-filmstrip button')].every(b=>{const e=entries.find(e=>e.id===b.dataset.interval);const n=b.querySelector('.wl-interval-age')?.innerText.replaceAll(',','').match(/\\d+(?:\\.\\d+)?/g)?.map(Number);return e&&n&&n[0]===e.start_mya&&n[1]===e.end_mya})})()", 'Preview ages do not match the actual interval manifest')
+            self.click('.aw-v19-scene-filmstrip [data-interval="jurassic"]')
+            self.require("document.getElementById('mainTitle').innerText.includes('Jurassic') && document.querySelector('.aw-v19-scene-filmstrip [data-interval=jurassic]').getAttribute('aria-current')==='true'", 'Artwork preview did not select Jurassic and expose current state')
+            self.click('.aw-v19-scene-filmstrip [data-interval="triassic"]')
+            self.browser.call('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-motion', 'value': 'reduce'}]})
+            self.require("getComputedStyle(document.querySelector('.aw-v19-interval-banner'),'::before').transitionDuration==='0s'", 'Reduced-motion preference did not suppress scene transition')
+            self.browser.call('Emulation.setEmulatedMedia', {'features': []})
+            self.text('#search', 'Holocene')
+            self.click('#searchHits [data-hit="0"]')
+            self.require("document.querySelector('.aw-v19-scene-filmstrip [data-interval=holocene] .wl-interval-age').innerText.includes('0.0117')", 'Recent interval preview rounded away the source boundary precision')
+            self.text('#search', 'Triassic')
+            self.click('#searchHits [data-hit="0"]')
 
     def brain(self):
         self.click('#brain circle:has(title)')
@@ -174,6 +190,8 @@ def main():
                     browser.navigate(source, width, 1000)
                     suite.check('navigation-filters-panels', getattr(suite, {'deep-time': 'deep', 'brain': 'brain', 'mythology': 'myth'}[slug]))
                     suite.check('layout-selected', suite.layout)
+                    suite.evaluate('window.scrollTo(0,0); true')
+                    suite.wait()
                     image = args.output / f'{slug}-{width}-selected.png'
                     browser.screenshot(image)
                     exceptions = [e['params']['exceptionDetails'] for e in browser.events if e.get('method') == 'Runtime.exceptionThrown']

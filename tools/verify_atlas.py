@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Verify the imported Atlas baseline without executing widget applications."""
+"""Verify the imported baseline plus current source versions and script syntax."""
 import hashlib
 from html.parser import HTMLParser
 import json
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -75,6 +76,16 @@ def audit():
     html_files = sorted((ROOT / 'atlas/widgets').glob('*.html'))
     html_files += sorted((ROOT / 'atlas/tools').glob('*.html'))
     html_files += [ROOT / 'atlas/MASTER_DASHBOARD_v1.21.html', ROOT / 'atlas/index.html']
+    if (ROOT / 'atlas/current.html').is_file():
+        html_files.append(ROOT / 'atlas/current.html')
+    active_versions = []
+    registry = json.loads((ROOT / 'project_manifest.json').read_text())
+    for component in registry['atlas']:
+        path = safe_file(ROOT, component['authoritative_source'])
+        title = path.read_text().split('<title>', 1)[1].split('</title>', 1)[0]
+        if not re.search(r'\bv' + re.escape(component['release_version']) + r'(?![\d.])', title):
+            errors.append({'path': component['authoritative_source'], 'check': 'active_title_version'})
+        active_versions.append({'slug': component['slug'], 'version': component['release_version'], 'source': component['authoritative_source']})
     syntax = {'status': 'not_run', 'reason': 'Node.js unavailable'}
     if shutil.which('node'):
         count = 0
@@ -91,8 +102,8 @@ def audit():
                   'html_files': len(html_files), 'scripts': count}
     return {'status': 'pass' if not errors and syntax['status'] == 'pass' else 'incomplete',
             'imported_files_checked': len(inventory['files']), 'artwork_records_checked': artwork,
-            'versions': versions, 'javascript_syntax': syntax, 'errors': errors,
-            'limitations': ['No interactive browser, IndexedDB, folder-picker, or offline persistence testing.',
+            'versions': versions, 'active_versions': active_versions, 'javascript_syntax': syntax, 'errors': errors,
+            'limitations': ['Browser interaction evidence is validated separately by tools/check_project.py; storage/folder-picker/persistence remain outside this audit.',
                             'Checksums and syntax do not certify scientific accuracy or artwork approval.',
                             'Distribution download ZIPs remain in incoming; original dashboard download links are unavailable.']}
 

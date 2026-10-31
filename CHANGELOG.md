@@ -4,6 +4,25 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-30
+
+### Added
+
+- Deep Time Atlas 1.19.0 with a compact topic/search header, clearer interval scene, and larger clickable preview cards showing source age ranges and selected state.
+- A current-build launch page linking registered widget sources while retaining original dashboards and standalone imports.
+- Deterministic standalone building and preservation tests proving the original scientific/control source is retained alongside the presentation adapter.
+- Browser checks for header compactness, preview navigation and ages, recent Holocene precision, and reduced-motion behavior.
+
+### Changed
+
+- Moved Deep Time's existing topic/search controls into its responsive header while retaining scientific panels, filters, timeline bars, taxon profiles, and artwork disclosures.
+- Recorded the new active standalone source independently of historical 1.18; repository and widget releases now use explicit three-part versions.
+
+### Fixed
+
+- Preserved four-decimal recent interval ages in the new preview labels.
+- Shut down Chrome gracefully before temporary-profile cleanup, retaining bounded fallbacks for stuck processes.
+
 ## [0.1.1] - 2026-10-30
 
 ### Added

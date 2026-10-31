@@ -94,13 +94,25 @@ class Browser:
         path.write_bytes(base64.b64decode(data))
 
     def close(self):
-        self.ws.close()
-        self.process.terminate()
+        # Let Chrome flush its profile and stop renderer children before the
+        # temporary-directory context attempts cleanup.
+        try:
+            self.ws.settimeout(5)
+            self.call('Browser.close')
+        except Exception:
+            # Chrome may close the debugging connection before acknowledging.
+            pass
+        finally:
+            self.ws.close()
         try:
             self.process.wait(timeout=10)
         except subprocess.TimeoutExpired:
-            self.process.kill()
-            self.process.wait()
+            self.process.terminate()
+            try:
+                self.process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                self.process.kill()
+                self.process.wait(timeout=5)
 
 
 def task_lists(widget):
@@ -108,6 +120,8 @@ def task_lists(widget):
     related = {x['id'] for key in ('goals', 'issues', 'suggestions') for x in catalog[key]
                if x['widget'] == widget or x['widget'] == 'Shared UI'}
     related.update(('WL-001', 'WL-003', 'WL-004', 'WL-005', 'WL-006', 'WL-010'))
+    if widget == 'Deep Time Atlas':
+        related.update(('WL-011', 'WL-012', 'WL-013', 'WL-015'))
     done, pending = [], []
     for match in TASK.finditer((ROOT / 'TODO.md').read_text()):
         if match[2] in related:
