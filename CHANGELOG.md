@@ -4,6 +4,18 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-30
+
+### Added
+
+- Repeatable real-browser interaction checks for Deep Time, Brain, and Mythology at 390, 768, and 1440 pixels, covering navigation, search/filter resets, selected details, keyboard focus, history dialogs, and overflow.
+- Versioned browser reports, selected-state screenshots, and fresh actual-versus-goal comparisons with automatic feh preview.
+
+### Changed
+
+- Replaced historical completion claims for Deep Time neighboring navigation, linked taxon cards, and five topic tabs with current browser evidence in the live TODO.
+- Recorded browser regression coverage and remaining platform/scientific limits in the component specs and handoff. Original widget/data bytes and component versions are preserved.
+
 ## [0.1.0] - 2026-10-30
 
 ### Added

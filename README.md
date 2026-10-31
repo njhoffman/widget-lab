@@ -29,6 +29,8 @@ python3 tools/check_project.py
 python3 -m unittest discover -s tests -v
 ```
 
+Run `python3 tools/test_atlas_browser.py` for the real-input Chrome regression matrix across Deep Time, Brain, and Mythology at 390/768/1440px. The [0.1.1 results](docs/browser-tests/0.1.1/README.md) pass all 45 scenario checks and retain selected-state screenshots. Project checks reject incomplete matrices or reports for outdated source hashes. Storage, Windows, full accessibility, and scientific reviews remain separate.
+
 Python 3.9+, Node.js, and Python `jsonschema` are needed for all checks. Without `jsonschema` or Node, the respective audit reports incomplete validation and exits nonzero. These tools check file integrity, schemas, source identity, and JavaScript syntax. Interactive browser, accessibility, folder-picker, persistence, and scientific review remain separate work.
 
 `shared/taxa/` is the canonical imported Shared Taxa v1.0 package. The identical delivered copy in `atlas/data/Shared_Taxa_v1.0/` is preserved for the original dashboard's links. Do not edit either published dataset in place or change stable IDs. Distribution ZIPs remain in ignored `incoming/`; original dashboard package-download actions are unavailable until packaging is implemented. Two small original source ZIPs are retained as manifest checksum evidence.

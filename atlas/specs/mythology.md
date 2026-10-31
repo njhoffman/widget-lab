@@ -1,8 +1,8 @@
 # Mythology — Atlas specification
 
 **Status:** APPROVED migration safeguards and shared visual direction; detailed new features remain proposed.  
-**Spec revision:** 2  
-**Imported source release:** 1.13 (source identity verified; interactive/scientific QA remains open)  
+**Spec revision:** 3  
+**Imported source release:** 1.13 (source identity verified; defined browser matrix passed; wider QA remains open)  
 **Last reviewed:** 2026-10-30
 
 ## Purpose and existing implementation
@@ -12,7 +12,7 @@ The authoritative imported implementation is `atlas/widgets/Mythology_Atlas_v1.1
 ## Approved requirements
 
 - Preserve the imported implementation and scientific content while establishing repository management.
-- Follow [shared visual direction](visual-direction.md) revision 2, derived from the user's selected goal pictures.
+- Follow [shared visual direction](visual-direction.md) revision 3, derived from the user's selected goal pictures.
 - Preserve identifiers, stored-state formats, and historical changelogs. Do not bump release versions during migration setup.
 
 ## Scientific / pedagogical integrity
@@ -37,3 +37,11 @@ Historical dashboard issues/suggestions and old chat proposals are retained as e
 ## Decision history
 
 See [curated Atlas context](../../docs/context/atlas_master.md) and [migration decision](../../docs/decisions/2026-10-30-atlas-migration-baseline.md).
+
+## Verified regression baseline — repository 0.1.1
+
+Approved QA scope from WL-005 and the user's request to begin low-feedback high-priority tasks. The [browser report](../../docs/browser-tests/0.1.1/README.md) records all 45 checks passing across Deep Time, Brain, and Mythology at 390/768/1440px in Chrome on Linux. Inputs use browser mouse/key events; no original widget bytes or scientific records changed.
+
+Coverage includes initial/selected horizontal layout and title/version bounds, Enter-opened history, Escape dismissal and returned focus, visible Tab focus, widget-specific navigation/filter/detail controls, and runtime errors. Deep Time additionally checks distinct five-tab content, neighboring title/artwork/breadcrumb updates, and representative-life profile opening/closing. Brain checks projections, selected details, schematic depth, keyboard time-range input and reset. Mythology checks figure selection, tradition switching, empty-result state and reset.
+
+Before source changes, rerun `python3 tools/test_atlas_browser.py` and retain the source-hashed report and selected screenshots. `tools/check_project.py` rejects missing matrix cells, failures, and stale source evidence. This is not Windows/IndexedDB/folder-picker, full accessibility, scientific, or exhaustive interaction certification. T021 remains open for canonical taxon identity/provenance despite passing its UI interaction check.

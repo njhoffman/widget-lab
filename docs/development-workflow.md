@@ -36,4 +36,6 @@ Read and inspect the images; rendering alone does not validate interactions or s
 
 The user authorized routine commit/tag/push at batch completion, so another conversational confirmation is unnecessary. Tool sandbox approvals may still be required. This authorization does not include deployment, publishing GitHub Releases, force-pushing, deleting sources, or resolving an unexpected destructive conflict.
 
+For primary Atlas work, run `python3 tools/test_atlas_browser.py` after selecting the batch VERSION and before closing WL-005-related regressions. Keep the complete 3-widget × 3-width report and selected-state screenshots. `repository.browser_regression_report` identifies the current registered report; project checks require its source hashes to match current implementations and all 45 scenario cells to pass. A narrower exploratory run does not satisfy that gate. Screenshots and interaction results do not close canonical provenance or scientific-review tasks.
+
 Initial repository release is 0.1.0. Legacy imported versions such as Brain 1.21 are intentionally unchanged. A future independently released widget can adopt a full three-part version with explicit migration documentation rather than retroactively renumbering historical artifacts.

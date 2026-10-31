@@ -1,7 +1,7 @@
 # Atlas visual direction
 
 **Status:** APPROVED direction and migration safeguards; implementation backlog is proposed.  
-**Spec revision:** 2  
+**Spec revision:** 3  
 **Last reviewed:** 2026-10-30  
 **Authority:** User's request to prioritize Atlas and `goal_1.png` / `goal_2.png`, followed by authorization to curate and finish repository setup.
 
@@ -53,3 +53,9 @@ Tree of Life, Muscles, Emergence, and Launcher inherit the shared visual languag
 ## Decision history
 
 See [migration decision](../../docs/decisions/2026-10-30-atlas-migration-baseline.md) and [curated Atlas context](../../docs/context/atlas_master.md).
+
+## Verified starting point — repository 0.1.1
+
+WL-005 is complete for the defined Chrome/Linux matrix: [45 checks](../../docs/browser-tests/0.1.1/README.md) across three widgets and three viewport widths. Repeat the suite before/after a visual-source change. The complete matrix and source hashes are enforced by the project consistency check. Fresh [goal comparisons](../../docs/visual-reviews/0.1.1/index.html) retain exact imported source hashes.
+
+WL-006 layout refinements may now begin in small batches; full accessibility, scientific review, canonical taxon provenance, Windows storage and launcher persistence remain separately tracked. No visual redesign or new scientific claim is part of this verification release.

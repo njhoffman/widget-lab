@@ -1,0 +1,1048 @@
+{
+  "repository_version": "0.1.1",
+  "captured_at": "2026-10-31T03:27:12.646933+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "sources": {
+    "deep-time": {
+      "path": "atlas/widgets/Deep_Time_Atlas_v1.18.html",
+      "sha256": "778624d6ae08e6c461ab5e7e7c55700e4867c589fe2145b01eb5e57393ed9cea"
+    },
+    "brain": {
+      "path": "atlas/widgets/Brain_Atlas_v1.21.html",
+      "sha256": "e0d06998612440905f37ea2ab7ac686035132177b0f6bf4d8ac8c6acb71966dd"
+    },
+    "mythology": {
+      "path": "atlas/widgets/Mythology_Atlas_v1.13.html",
+      "sha256": "c674057629c975b1f54e64be6f831660ce9ff19d563d78a2216dc2ec12dc0c19"
+    }
+  },
+  "results": [
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 390,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 390,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 390,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Search failed to select Triassic",
+          "status": "pass"
+        },
+        {
+          "expectation": "Overview active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Climate active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Continents active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Geology active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Life active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Neighbor did not update selected title and breadcrumb to Jurassic",
+          "status": "pass"
+        },
+        {
+          "expectation": "Neighbor did not update interval artwork",
+          "status": "pass"
+        },
+        {
+          "expectation": "Return neighbor did not restore Triassic title and breadcrumb",
+          "status": "pass"
+        },
+        {
+          "expectation": "Representative-life card did not open a substantive taxon profile",
+          "status": "pass"
+        },
+        {
+          "expectation": "Taxon profile failed to close",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 390,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 390,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 768,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 768,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 768,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Search failed to select Triassic",
+          "status": "pass"
+        },
+        {
+          "expectation": "Overview active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Climate active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Continents active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Geology active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Life active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Neighbor did not update selected title and breadcrumb to Jurassic",
+          "status": "pass"
+        },
+        {
+          "expectation": "Neighbor did not update interval artwork",
+          "status": "pass"
+        },
+        {
+          "expectation": "Return neighbor did not restore Triassic title and breadcrumb",
+          "status": "pass"
+        },
+        {
+          "expectation": "Representative-life card did not open a substantive taxon profile",
+          "status": "pass"
+        },
+        {
+          "expectation": "Taxon profile failed to close",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 768,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 768,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 1440,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 1440,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 1440,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Search failed to select Triassic",
+          "status": "pass"
+        },
+        {
+          "expectation": "Overview active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Climate active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Continents active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Geology active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Life active state absent",
+          "status": "pass"
+        },
+        {
+          "expectation": "Neighbor did not update selected title and breadcrumb to Jurassic",
+          "status": "pass"
+        },
+        {
+          "expectation": "Neighbor did not update interval artwork",
+          "status": "pass"
+        },
+        {
+          "expectation": "Return neighbor did not restore Triassic title and breadcrumb",
+          "status": "pass"
+        },
+        {
+          "expectation": "Representative-life card did not open a substantive taxon profile",
+          "status": "pass"
+        },
+        {
+          "expectation": "Taxon profile failed to close",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 1440,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "deep-time",
+      "width": 1440,
+      "version": "1.18",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "brain",
+      "width": 390,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "brain",
+      "width": 390,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "brain",
+      "width": 390,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Brain marker did not open structure details",
+          "status": "pass"
+        },
+        {
+          "expectation": "#medialButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "#axialButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "#lateralButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "Depth control did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "Depth view lost its schematic disclosure",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time filter dialog did not open",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time slider did not change by keyboard",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time reset did not restore original window",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "brain",
+      "width": 390,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "brain",
+      "width": 390,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "brain",
+      "width": 768,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "brain",
+      "width": 768,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "brain",
+      "width": 768,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Brain marker did not open structure details",
+          "status": "pass"
+        },
+        {
+          "expectation": "#medialButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "#axialButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "#lateralButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "Depth control did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "Depth view lost its schematic disclosure",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time filter dialog did not open",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time slider did not change by keyboard",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time reset did not restore original window",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "brain",
+      "width": 768,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "brain",
+      "width": 768,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "brain",
+      "width": 1440,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "brain",
+      "width": 1440,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "brain",
+      "width": 1440,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Brain marker did not open structure details",
+          "status": "pass"
+        },
+        {
+          "expectation": "#medialButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "#axialButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "#lateralButton did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "Depth control did not become active",
+          "status": "pass"
+        },
+        {
+          "expectation": "Depth view lost its schematic disclosure",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time filter dialog did not open",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time slider did not change by keyboard",
+          "status": "pass"
+        },
+        {
+          "expectation": "Time reset did not restore original window",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "brain",
+      "width": 1440,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "brain",
+      "width": 1440,
+      "version": "1.21",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 390,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 390,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 390,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Figure search did not select Zeus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tradition filter did not switch to Norse",
+          "status": "pass"
+        },
+        {
+          "expectation": "Empty search did not produce zero matches",
+          "status": "pass"
+        },
+        {
+          "expectation": "Reset did not restore figure index",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 390,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 390,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 768,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 768,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 768,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Figure search did not select Zeus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tradition filter did not switch to Norse",
+          "status": "pass"
+        },
+        {
+          "expectation": "Empty search did not produce zero matches",
+          "status": "pass"
+        },
+        {
+          "expectation": "Reset did not restore figure index",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 768,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 768,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-initial",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 1440,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "keyboard-history",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 1440,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Enter did not open version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Current version absent from visible history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Escape did not dismiss version history",
+          "status": "pass"
+        },
+        {
+          "expectation": "Dismissed history did not restore trigger focus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tab did not move to a focusable control",
+          "status": "pass"
+        },
+        {
+          "expectation": "Keyboard focus lacks an outline or shadow",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "navigation-filters-panels",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 1440,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Figure search did not select Zeus",
+          "status": "pass"
+        },
+        {
+          "expectation": "Tradition filter did not switch to Norse",
+          "status": "pass"
+        },
+        {
+          "expectation": "Empty search did not produce zero matches",
+          "status": "pass"
+        },
+        {
+          "expectation": "Reset did not restore figure index",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "layout-selected",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 1440,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "Title/version control clips outside viewport",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "name": "runtime-errors",
+      "status": "pass",
+      "widget": "mythology",
+      "width": 1440,
+      "version": "1.13",
+      "assertions": [
+        {
+          "expectation": "[]",
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "task_coverage": {
+    "WL-005": "All cases at 390/768/1440; incomplete if a width is omitted.",
+    "T018": "Deep Time navigation-filters-panels: click Jurassic then Triassic adjacent intervals.",
+    "T021": "Deep Time navigation-filters-panels: click representative life and inspect/close taxon profile.",
+    "T022": "Deep Time navigation-filters-panels: five topic controls, active state and distinct nonempty content."
+  },
+  "status": "pass",
+  "limits": [
+    "Chrome on Linux only; no Windows/IndexedDB/folder-picker, screen reader, contrast audit, or scientific verification."
+  ]
+}

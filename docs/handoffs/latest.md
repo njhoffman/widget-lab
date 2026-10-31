@@ -1,35 +1,30 @@
-# Codex handoff — repository release 0.1.0
+# Codex handoff — regression verification 0.1.1
 
-Date: 2026-10-30 (America/Chicago). Previous migration detail is preserved in [migration handoff](2026-10-30-atlas-migration.md). Repository source is identified by annotated tag `v0.1.0` after batch finalization; initial scaffold commit was `f9f88dc`.
+Date: 2026-10-30 (America/Chicago). Base: `abfa853` / annotated tag `v0.1.0`. This batch closes a few high-priority tasks that require no new design or scientific decisions. Repository version advances to 0.1.1 for test/verification improvements; component versions and source bytes are unchanged. Previous handoff is preserved in `2026-10-30-release-0.1.0.md`.
 
-## Current batch
+## Completed tasks
 
-Imported Atlas baseline and verified Shared Taxa are preserved unchanged. Added root VERSION/CHANGELOG/TODO, permanent task/spec synchronization instructions, SemVer batch commit/tag/push workflow, and fresh Atlas comparisons with automatic feh preview. This implements explicit user requests; routine batch publishing is now authorized. Deployment, source deletion, force-push, tag rewrites, and publishing GitHub Releases remain outside that authorization.
+- WL-005: real-browser interaction/layout baseline for Deep Time, Brain, and Mythology at 390/768/1440px.
+- T018: neighboring Jurassic/Triassic controls update selected title, artwork, and breadcrumb at each width.
+- T022: all five Deep Time tabs activate and show distinct substantive content from the unchanged source dataset. Independent scientific review remains open in I007.
+- WL-010: repeatable real-input test driver plus guards against missing matrix cells, failed cases, and outdated source hashes.
 
-Root repository version is 0.1.0. Legacy widget/data versions remain unchanged. Root changelog preserves earlier unversioned scaffold history without inventing historical repository releases.
+T021 remains open. Its representative-life UI/profile interaction passes, but opening an original embedded profile does not establish canonical Shared Taxa identity or provenance. No original application bug was confirmed: early Enter/slider failures were driver mistakes corrected before recording the final matrix. Temporary failed-driver runs remain outside Git in /tmp; only final evidence is committed.
 
-TODO.md holds all 84 historical goals, 28 issues, 25 suggestions, and nine WL tasks. Imported implemented/done claims remain unchecked verification tasks. New findings/suggestions must be recorded and triaged, not silently implemented. WL-005 (interaction regressions) precedes the approved WL-006 layout refinement. Quiz remains unverified.
+## Changes
 
-## Files and specifications
+Added `tools/test_atlas_browser.py`; updated project consistency guard and its tests. VERSION/manifest/changelog/TODO now record the batch. Primary component/shared visual specs are revision 3; component changelogs/readmes, context, workflow, and check documentation are synchronized. Browser evidence is in `docs/browser-tests/0.1.1/`; new primary-widget actual-versus-goal images and viewer outcome are in `docs/visual-reviews/0.1.1/`.
 
-- VERSION, CHANGELOG.md, TODO.md, requirements-dev.txt, AGENTS.md, README.md, and project_manifest.json.
-- `docs/development-workflow.md` and approved release/backlog decision.
-- Atlas component specs and shared visual direction revision 2; READMEs/component changelogs/context updated.
-- `tools/check_project.py`, `tests/test_project_workflow.py`, `tools/capture_atlas_comparisons.py`, and tooling/test documentation.
-- Fresh evidence under `docs/visual-reviews/0.1.0/`: seven actual screenshots, seven actual-versus-goal PNGs, HTML reports, companion JSON, index, and viewer result. Original source hashes are unchanged.
+## Validation
 
-## Validation and visual evidence
+45/45 real Chrome/Linux scenario checks pass: initial/selected horizontal overflow and title/version bounds, Enter history opening, Escape dismissal and returned focus, visible Tab focus, widget navigation/filter/detail controls, and runtime errors across the full nine-row widget/viewport matrix. Nine selected-state screenshots are retained. Depth control, projection changes, keyboard time filtering/reset, myth tradition switching/search/no-results/reset, distinct Deep Time tabs, neighboring artwork/breadcrumb changes, and taxon-profile open/close were exercised.
 
-Shared Taxa: 90/90 listed files match size/SHA-256; 15 JSON schemas pass. Atlas: 1,321 import records and 543 artwork records verified; 39 inline scripts across 14 current HTML pages compile. Six unit tests pass, covering import safety/corruption, SemVer, release drift, missing tasks, false completion, and changed screenshot detection. Project checks also verify current source/goal/actual/comparison hashes and reject recorded runtime exceptions. Staged whitespace checks are part of finalization.
+Seven unit tests pass, including rejection of incomplete, failed, or stale browser reports. Shared Taxa 90/90 hashes and 15 schemas pass; Atlas 1,321 imported file records and 543 artwork records still match. All 39 inline scripts compile. Project metadata/evidence and staged whitespace checks pass. No scientific, ID, stored-state, or source-version changes were made.
 
-Real Chrome 155 browser captures rendered all seven components with zero captured runtime exceptions. Deep Time was selected to Triassic, Brain to orbitofrontal cortex, Mythology to Greek Zeus; other four used their clean initial state. Both approved goal images are cropped through HTML/CSS for the primary three. Other concept references are clearly labeled proposed. Completed/pending sidebar items are snapshots from TODO.md; full acceptance text remains in TODO and catalogs.
+Fresh comparison images for Deep Time, Brain, and Mythology show completed/pending items and are opened automatically in feh; `viewer.json` records whether launch succeeded. Release finalization commits, annotated-tags, atomically pushes, and verifies remote refs; the final user response reports the actual outcome.
 
-The generator launched feh successfully with all seven comparison PNGs (see `viewer.json`). Fresh browser rendering and targeted selection are smoke checks, not full keyboard/mobile, folder-import, IndexedDB, offline, or scientific testing. External HTTP(S) was blocked to keep screenshots local/deterministic. Scientific uncertainties and artwork/anatomical limitations remain as previously documented.
+## Remaining limits and next priority
 
-## Batch finalization and next work
+Linux Chrome coverage only. Windows folder-picker/sync, IndexedDB/persistence, offline import/export, screen readers/full contrast/accessibility, scientific validation, canonical taxon migration, and bespoke/registered artwork remain open. Shared history tests cover only these three widgets; T005's wider family acceptance is not closed. WL-009 remains an ongoing maintenance task.
 
-Current authorized batch is committed, annotated-tagged, and pushed only after checks/staged review pass; the final user response reports the actual commit/tag/push outcome. Fetch before pushing, push branch and tag atomically, and verify remote objects. Never imply success after a rejected push.
-
-At future batch start, read AGENTS, manifest, TODO, and affected specs/context. Update tasks/specs/changelog with changes, bump repository VERSION once, capture fresh images for affected Atlas widgets, open them in feh, validate/review, commit/tag/push, and report results. Capture new bugs and proposed improvements as tasks. Do not regenerate the live TODO from historical catalogs.
-
-Next implementation priority: WL-005 browser interaction/viewport coverage, then small WL-006 visual batches toward both goal images. Preserve original widget sources and history. Full custom artwork and registered 3D Brain geometry remain outside the initial layout scope. See the workflow and TODO for other open science, storage, packaging, and Quiz tasks.
+Next: begin WL-006 in small visual batches toward the two approved goal images, using the new browser matrix and fresh comparison/feh workflow. Preserve original sources; introduce separately reviewed source versions if modifying implementation. Do not claim anatomical 3D accuracy for schematic Brain projections.

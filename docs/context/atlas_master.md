@@ -38,7 +38,7 @@ Canonical Shared Taxa v1.0 is now complete at `shared/taxa/`; the delivered Atla
 
 ## Outstanding issues
 
-Current checks cover imported bytes, source identity, JSON schemas, and JavaScript syntax. Interactive browser navigation, responsive/keyboard behavior, Windows folder import, IndexedDB persistence, and offline launch/export need testing. Historical audits and suggestions remain evidence/backlog, not blanket implementation authorization.
+Current checks cover imported bytes, source identity, JSON schemas, JavaScript syntax, and the defined Chrome/Linux browser matrix at 390/768/1440px. Wider interaction/accessibility coverage, Windows folder import, IndexedDB persistence, and offline launch/export still need testing. Historical audits and suggestions remain evidence/backlog, not blanket implementation authorization.
 
 Distribution download ZIPs were intentionally not copied; the original dashboard still describes them. Maintain the source package until a deliberate packaging change reconciles its download actions. Dataset duplication is a compatibility measure for this initial migration.
 
@@ -53,3 +53,9 @@ A limited relevant Brain Atlas project extract (October 14–16, 2026) corrobora
 As of 2026-10-30, root TODO.md is the live task register, retaining all 84 historical goals, 28 issues, and 25 suggestions. The immutable catalog remains provenance. Imported implemented/done claims become verification tasks; new suggestions remain proposed. User authorizes routinely committing/tagging/pushing finished validated batches using repository SemVer, separate from original component version labels.
 
 Every Atlas update must produce fresh actual-versus-goal PNGs with completed/pending sidebars and open them automatically in feh. Initial real-browser captures for all seven components are in `docs/visual-reviews/0.1.0/`; Triassic, OFC, and Zeus selections were exercised for the primary widgets. These are render/selection smoke checks, not comprehensive interaction or scientific QA. Other four concept targets remain explicitly proposed.
+
+## Regression verification — repository 0.1.1
+
+WL-005, T018, T022, and WL-010 are complete with [45 passing scenario checks](../browser-tests/0.1.1/README.md). The suite uses real mouse/key input, verifies selected title/artwork/breadcrumb changes and five distinct topic tabs, and guards against empty or stale source reports. Spec revisions for the primary three widgets and shared direction are now 3. Actual original widget/data bytes and versions remain unchanged.
+
+T021 remains open: the UI card/profile interaction passes, but canonical Shared Taxa identity/provenance is not established by opening the original embedded taxon profile. No scientific correctness or data migration is inferred from UI tests. The larger WL-006 visual refinement can begin next against this baseline. Fresh primary-widget comparisons in `docs/visual-reviews/0.1.1/` reflect the updated completed/pending task list.

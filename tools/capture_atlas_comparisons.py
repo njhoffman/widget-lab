@@ -107,7 +107,7 @@ def task_lists(widget):
     catalog = json.loads((ROOT / 'atlas/data/project_catalog_v1.21.json').read_text())
     related = {x['id'] for key in ('goals', 'issues', 'suggestions') for x in catalog[key]
                if x['widget'] == widget or x['widget'] == 'Shared UI'}
-    related.update(('WL-001', 'WL-003', 'WL-004', 'WL-005', 'WL-006'))
+    related.update(('WL-001', 'WL-003', 'WL-004', 'WL-005', 'WL-006', 'WL-010'))
     done, pending = [], []
     for match in TASK.finditer((ROOT / 'TODO.md').read_text()):
         if match[2] in related:

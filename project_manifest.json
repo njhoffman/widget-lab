@@ -11,7 +11,11 @@
       "verified": true,
       "sha256": "e0d06998612440905f37ea2ab7ac686035132177b0f6bf4d8ac8c6acb71966dd",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/brain-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.1.1/brain-evidence.json",
+      "browser_verification": {
+        "report": "docs/browser-tests/0.1.1/report.json",
+        "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
+      }
     },
     {
       "slug": "deep-time",
@@ -20,7 +24,11 @@
       "verified": true,
       "sha256": "778624d6ae08e6c461ab5e7e7c55700e4867c589fe2145b01eb5e57393ed9cea",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/deep-time-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.1.1/deep-time-evidence.json",
+      "browser_verification": {
+        "report": "docs/browser-tests/0.1.1/report.json",
+        "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
+      }
     },
     {
       "slug": "tree-of-life",
@@ -38,7 +46,11 @@
       "verified": true,
       "sha256": "c674057629c975b1f54e64be6f831660ce9ff19d563d78a2216dc2ec12dc0c19",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/mythology-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.1.1/mythology-evidence.json",
+      "browser_verification": {
+        "report": "docs/browser-tests/0.1.1/report.json",
+        "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
+      }
     },
     {
       "slug": "muscles",
@@ -122,10 +134,11 @@
     "verification_scope": "Imported source identity and JavaScript syntax; existing dashboard decisions are project metadata, not approved requirements."
   },
   "repository": {
-    "release_version": "0.1.0",
+    "release_version": "0.1.1",
     "version_file": "VERSION",
     "tag_format": "v{version}",
     "changelog": "CHANGELOG.md",
-    "backlog": "TODO.md"
+    "backlog": "TODO.md",
+    "browser_regression_report": "docs/browser-tests/0.1.1/report.json"
   }
 }

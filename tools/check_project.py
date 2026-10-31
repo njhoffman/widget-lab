@@ -20,6 +20,29 @@ def is_semver(version):
     return not match[4] or all(not part.isdigit() or len(part) == 1 or not part.startswith('0') for part in match[4].split('.'))
 
 
+def validate_browser_report(root, report, components):
+    errors = []
+    if report.get('status') != 'pass' or any(r.get('status') != 'pass' for r in report.get('results', [])):
+        errors.append('Browser regression report contains failures')
+    names = {'layout-initial', 'keyboard-history', 'navigation-filters-panels', 'layout-selected', 'runtime-errors'}
+    required = {(slug, width, name) for slug in ('deep-time', 'brain', 'mythology') for width in (390, 768, 1440) for name in names}
+    observed = [(r.get('widget'), r.get('width'), r.get('name')) for r in report.get('results', [])]
+    if not required.issubset(set(observed)) or len(observed) != len(set(observed)):
+        errors.append('Browser regression report lacks the full unique 3-widget/3-width matrix')
+    for slug in ('deep-time', 'brain', 'mythology'):
+        component = next((c for c in components if c['slug'] == slug), None)
+        source = report.get('sources', {}).get(slug, {})
+        if not component or source.get('path') != component['authoritative_source']:
+            errors.append(f'{slug}: browser report source differs from manifest')
+        elif not (root / source['path']).is_file() or digest_file(root / source['path']) != source.get('sha256'):
+            errors.append(f'{slug}: browser regression report is stale for current source')
+    return errors
+
+
+def digest_file(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def validate(root):
     errors = []
     version = (root / 'VERSION').read_text().strip()
@@ -50,6 +73,13 @@ def validate(root):
     missing = expected - set(ids)
     if missing:
         errors.append('Missing historical tasks: ' + ', '.join(sorted(missing)))
+    browser_report = registry.get('repository', {}).get('browser_regression_report')
+    if browser_report:
+        path = root / browser_report
+        if not path.is_file():
+            errors.append('Missing browser regression report')
+        else:
+            errors.extend(validate_browser_report(root, json.loads(path.read_text()), registry.get('atlas', [])))
     for component in registry.get('atlas', []):
         source = root / component['authoritative_source']
         if not source.is_file():

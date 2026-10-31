@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-30 · Repository release: 0.1.0
+Reviewed: 2026-10-30 · Repository release: 0.1.1
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -27,9 +27,9 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [x] **WL-004 — Produce actual-versus-goal evidence and open it in feh.** (p1) [feature] [done]
   Capture all seven original components in a real browser, add goal crops and completed/pending side lists, retain hashes and selection evidence, and open the produced PNGs automatically.
   Acceptance/evidence: [visual review index](docs/visual-reviews/0.1.0/index.html), companion JSON, and `tools/capture_atlas_comparisons.py`; desktop viewer outcome is recorded in the handoff.
-- [ ] **WL-005 — Exercise Atlas browser interactions before visual refactoring.** (p1) [test] [approved]
+- [x] **WL-005 — Exercise Atlas browser interactions before visual refactoring.** (p1) [test] [done]
   Test hierarchy/filter/selection/topic panels, keyboard focus, and 390/768/1440px layouts for Deep Time, Brain, and Mythology.
-  Acceptance: dated results and matching selected-state screenshots; preserve stable IDs and scientific panels. Spec: [visual direction r2](atlas/specs/visual-direction.md).
+  Acceptance/evidence: [45/45 real-browser checks](docs/browser-tests/0.1.1/README.md) and nine selected-state screenshots at 390/768/1440px; original source hashes preserved. Spec: [visual direction r3](atlas/specs/visual-direction.md). Chrome/Linux coverage; storage/Windows/scientific checks remain separate.
 - [ ] **WL-006 — Refine the goal-image layout without scientific regressions.** (p1) [feature] [approved]
   Work in small reviewed widget batches toward the two goal references; preserve existing controls and informative panels.
   Acceptance: browser checks pass and new real-versus-goal images show completed/pending items with source/version metadata. Depends on WL-005; speculative science and new anatomical geometry remain outside this scope.
@@ -42,6 +42,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [ ] **WL-009 — Extend task coverage to new spec changes and findings.** (p2) [docs] [approved]
   During each future batch, add concrete tasks for newly found issues and proposed suggestions; update affected acceptance criteria and spec revisions.
   Acceptance: no new requirement or known issue left only in chat/handoff; checklist guard and review pass. This is an ongoing process, not automatically completed by the initial import.
+
+- [x] **WL-010 — Guard browser evidence against incomplete coverage and stale sources.** (p1) [test] [done]
+  Add a repeatable real-input regression runner and validate its full unique 3-widget/3-width matrix against current source hashes. Correct Enter character events and focus the overlapping range input for keyboard testing.
+  Acceptance/evidence: [browser report](docs/browser-tests/0.1.1/report.json), `tools/test_atlas_browser.py`, and `test_browser_report_cannot_claim_success_with_missing_coverage_or_stale_sources` in the unit suite. No application bugs inferred from test-driver mistakes.
 
 ## 2. Shared UI and accessibility
 
@@ -152,10 +156,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Acceptance: Period thumb/age text and selected state clear
   Source: catalog `goals/T017`; historical status `partial`, priority `P1`.
 
-- [ ] **T018 — Verify existing: Click neighboring intervals to navigate.** (p1) [test] [needs-verification]
+- [x] **T018 — Verify existing: Click neighboring intervals to navigate.** (p1) [test] [done]
   Acceptance: Selection updates text, artwork, breadcrumbs
   Source: catalog `goals/T018`; historical status `implemented`, priority `P1`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.1.1 browser report](docs/browser-tests/0.1.1/report.json), Deep Time navigation-filters-panels at 390/768/1440px; source checksum unchanged. Scientific interpretation remains separately tracked in I007.
 
 - [ ] **T019 — Replace generic sidebar with period-specific icon/fact rows and soft scene background.** (p1) [feature] [proposed]
   Acceptance: Rank, range, duration, previous/next, paleoenvironments and representative life
@@ -169,11 +173,12 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Acceptance: Click representative life -> canonical taxon profile with evidence
   Source: catalog `goals/T021`; historical status `implemented`, priority `P1`.
   Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Partial verification: current UI cards open substantive original taxon profiles at all three widths (0.1.1 report). Keep this task open until canonical Shared Taxa identity/provenance is independently checked; the original embedded dataset has not been migrated.
 
-- [ ] **T022 — Verify existing: Distinct Overview/Climate/Continents/Geology/Life content presentation.** (p1) [test] [needs-verification]
+- [x] **T022 — Verify existing: Distinct Overview/Climate/Continents/Geology/Life content presentation.** (p1) [test] [done]
   Acceptance: All tabs interactive and scientifically grounded; no fake datasets
   Source: catalog `goals/T022`; historical status `implemented`, priority `P1`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.1.1 browser report](docs/browser-tests/0.1.1/report.json), Deep Time navigation-filters-panels at 390/768/1440px; source checksum unchanged. Scientific interpretation remains separately tracked in I007.
 
 - [ ] **S002 — Make representative-life cards into a richer specimen browser.** (p1) [feature] [proposed]
   Scope: Expand cards to real linked taxa and verified source previews, not mockup species or invented counts.

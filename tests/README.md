@@ -14,3 +14,5 @@ Dependencies: Python 3.9+, `jsonschema`, and Node.js. Missing schema/syntax depe
 Interactive browser flows, responsive and keyboard behavior, accessibility, offline storage, stable ID/progress compatibility during future changes, and scientific correctness still need dedicated coverage. Existing historical QA reports must not be cited as fresh test results.
 
 Project workflow tests also exercise SemVer edge cases, manifest drift, missing historical tasks, and false task completion. The consistency check validates saved visual evidence hashes against current source/goal images. `tools/capture_atlas_comparisons.py` supplies fresh browser render/selection evidence; it does not replace full interaction tests.
+
+`python3 tools/test_atlas_browser.py` now supplies the defined Chrome/Linux interaction matrix: 45 scenario checks over three widgets at three widths. Current evidence is in `docs/browser-tests/0.1.1/`. The unit suite additionally verifies that a nominally successful report cannot pass with missing widths, failed cases, or stale sources. Uncovered platforms/storage/full accessibility/scientific claims remain open.

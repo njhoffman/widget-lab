@@ -1,0 +1,268 @@
+{
+  "widget": "mythology",
+  "widget_version": "1.13",
+  "repository_version": "0.1.1",
+  "captured_at": "2026-10-31T03:28:53.412538+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Mythology_Atlas_v1.13.html",
+  "source_sha256": "c674057629c975b1f54e64be6f831660ce9ff19d563d78a2216dc2ec12dc0c19",
+  "actual_sha256": "8303e17f4bd498ed177874fd8971edce4de0b56277f0fb2d877cf5c3a3cf10f5",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Greek Zeus",
+  "goals": [
+    {
+      "path": "atlas/images/goal_1.png",
+      "sha256": "ac6791493a099863f8cf109412176a3daf201e9c4f9b6c65bb358ea3d2347775",
+      "crop": [
+        0,
+        538,
+        1536,
+        486
+      ],
+      "approval": "approved visual direction"
+    },
+    {
+      "path": "atlas/images/goal_2.png",
+      "sha256": "047dcaa91d5d2cb3966527acafab4f57c9c851992c5d10f9967bffa100fdf275",
+      "crop": [
+        0,
+        750,
+        1536,
+        274
+      ],
+      "approval": "approved visual direction"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-010",
+      "title": "Guard browser evidence against incomplete coverage and stale sources.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T040",
+      "title": "Verify existing: Provide local illustration for all 363 indexed records.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T041",
+      "title": "Cinematic selected-figure hero art with readable left-aligned text.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T042",
+      "title": "Commission/generate distinctive iconography for 33 flagship figures.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T043",
+      "title": "Verify existing: Preserve switchable family tree and artwork views.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T044",
+      "title": "Verify existing: Keep tradition filters, search, genealogy, parent and child navigation.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T048",
+      "title": "Verify existing: Greek/Roman name toggles with independent traditions.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T049",
+      "title": "Artwork type and historical accuracy provenance visible.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T050",
+      "title": "Verify existing: Keep shared teal/green active states while letting paintings vary by tradition.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "S005",
+      "title": "Cinematic profile and richer right-side relationships.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T045",
+      "title": "Verify existing: Figure result thumbnails with selected treatment.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T046",
+      "title": "Rich illustrated right-side figure facts, attribution and relations.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T047",
+      "title": "Clickable related-artwork thumbnails/carousel.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T051",
+      "title": "Matching pills for lineage, epics, symbols and role.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I004",
+      "title": "More tradition-specific hero portraits.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "I005",
+      "title": "Separate related figures from linked historical artwork.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S006",
+      "title": "Licensed related-artwork gallery.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S021",
+      "title": "Separate generated narrative portraits from documented historical artwork.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T052",
+      "title": "Improve person/entity equivalents, variant myths and sources.",
+      "priority": "p2",
+      "status": "proposed"
+    }
+  ],
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "214765557f28a163be104d0942ac7f6045ab99ec281502e4b409052b674d9b71"
+}
