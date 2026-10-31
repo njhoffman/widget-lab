@@ -23,6 +23,7 @@ The root `justfile` provides these shortcuts (run `just` for the full list):
 | `just check` | Run audits, unit tests, and release/task/registered-evidence checks |
 | `just serve` | Serve only `atlas/` on localhost:8765; optional port argument |
 | `just browser-test` | Run the complete Chrome interaction matrix |
+| `just artwork-test` | Check all indexed offline hero/thumbnail images and adjacent byte parity |
 | `just compare --widgets brain` | Capture selected widget comparisons and open them in feh |
 
 Use `just python=/path/to/venv/bin/python check` to select an interpreter. Python requirements are in `requirements-dev.txt`; Node.js, Chrome/Chromium and feh are separate system dependencies. Direct Python equivalents are in `tools/README.md`. Serving uses `python3 -m http.server 8765 --bind 127.0.0.1 --directory atlas`; open `http://localhost:8765/current.html`.
@@ -56,3 +57,7 @@ The user authorized routine commit/tag/push at batch completion, so another conv
 For primary Atlas work, run `python3 tools/test_atlas_browser.py` after selecting the batch VERSION and before closing WL-005-related regressions. Keep the complete 3-widget × 3-width report and selected-state screenshots. `repository.browser_regression_report` identifies the current registered report; project checks require its source hashes to match current implementations and all 45 scenario cells to pass. A narrower exploratory run does not satisfy that gate. Screenshots and interaction results do not close canonical provenance or scientific-review tasks.
 
 Initial repository release is 0.1.0. Legacy imported versions such as Brain 1.21 are intentionally unchanged. A future independently released widget can adopt a full three-part version with explicit migration documentation rather than retroactively renumbering historical artifacts.
+
+## Exhaustive offline artwork evidence
+
+`just artwork-test` writes `docs/artwork-tests/<VERSION>/report.json` and refuses to overwrite an existing report. For exploration use `just artwork-test --output /tmp/atlas-artwork-check`. It loads isolated current Deep Time and Mythology HTML in a clean Chrome profile with networking disabled, matches runtime IDs against asset manifests, compares embedded hero/thumbnail bytes with adjacent assets, and decodes every image. `repository.artwork_regression_report` registers the current complete report. `just check` rejects incomplete/failed decoding and stale source, manifest or asset evidence. Re-run and register new evidence when either widget's source or artwork changes. Availability and byte parity do not certify scientific/cultural interpretation or a separate bundle edition.

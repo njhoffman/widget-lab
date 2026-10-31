@@ -43,6 +43,52 @@ def digest_file(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def validate_artwork_report(root, report, components):
+    errors = []
+    results = report.get('results', [])
+    if report.get('status') != 'pass' or sorted(r.get('widget', '') for r in results) != ['deep-time', 'mythology']:
+        return ['Artwork report must pass and cover Deep Time and Mythology exactly once']
+    for result in results:
+        slug = result['widget']
+        component = next(c for c in components if c['slug'] == slug)
+        expected = 172 if slug == 'deep-time' else 363
+        if result.get('source') != component['authoritative_source'] or digest_file(root / component['authoritative_source']) != result.get('source_sha256'):
+            errors.append(f'{slug}: offline artwork report is stale for current source')
+        folder = 'deep_time' if slug == 'deep-time' else 'mythology'
+        manifest_path = root / 'atlas/assets' / folder / 'manifest.json'
+        if result.get('manifest') != str(manifest_path.relative_to(root)) or digest_file(manifest_path) != result.get('manifest_sha256'):
+            errors.append(f'{slug}: offline artwork manifest changed')
+        manifest = json.loads(manifest_path.read_text())
+        indexed = {e['id' if slug == 'deep-time' else 'key']: e for e in manifest['entries']}
+        keys = set(indexed)
+        rows = result.get('entries', [])
+        if (result.get('status') != 'pass' or result.get('errors') or result.get('runtime_exceptions')
+                or result.get('expected') != expected or result.get('indexed') != expected
+                or result.get('images_decoded') != expected * 2 or len(rows) != expected
+                or {r.get('id') for r in rows} != keys):
+            errors.append(f'{slug}: offline artwork coverage incomplete or failed')
+        for row in rows:
+            decodes = row.get('decode', [])
+            assets = row.get('assets', {})
+            if (row.get('status') != 'pass' or len(decodes) != 2
+                    or {d.get('kind') for d in decodes} != {'hero', 'thumbnail'}
+                    or any(d.get('status') != 'pass' or d.get('id') != row.get('id')
+                           or d.get('width', 0) <= 0 or d.get('height', 0) <= 0 for d in decodes)
+                    or set(assets) != {'hero', 'thumb' if slug == 'deep-time' else 'thumbnail'}):
+                errors.append(f'{slug}/{row.get("id")}: incomplete or failed artwork evidence')
+            for kind, asset in assets.items():
+                entry = indexed.get(row.get('id'), {})
+                if kind not in entry:
+                    errors.append(f'{slug}/{row.get("id")}: unexpected artwork kind')
+                    continue
+                path = manifest_path.parent / entry[kind]
+                if asset.get('path') != str(path.relative_to(root)):
+                    errors.append(f'{slug}/{row.get("id")}: artwork path differs from manifest')
+                if not path.is_file() or digest_file(path) != asset.get('sha256'):
+                    errors.append(f'{slug}/{row.get("id")}: changed adjacent artwork')
+    return errors
+
+
 def validate(root):
     errors = []
     version = (root / 'VERSION').read_text().strip()
@@ -80,6 +126,13 @@ def validate(root):
             errors.append('Missing browser regression report')
         else:
             errors.extend(validate_browser_report(root, json.loads(path.read_text()), registry.get('atlas', [])))
+    artwork_report = registry.get('repository', {}).get('artwork_regression_report')
+    if artwork_report:
+        path = root / artwork_report
+        if not path.is_file():
+            errors.append('Missing offline artwork regression report')
+        else:
+            errors.extend(validate_artwork_report(root, json.loads(path.read_text()), registry.get('atlas', [])))
     for component in registry.get('atlas', []):
         source = root / component['authoritative_source']
         if not source.is_file():

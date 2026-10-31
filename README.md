@@ -31,7 +31,9 @@ python3 tools/check_project.py
 python3 -m unittest discover -s tests -v
 ```
 
-Run `python3 tools/test_atlas_browser.py` for the real-input Chrome regression matrix across Deep Time, Brain, and Mythology at 390/768/1440px. The [0.4.0 results](docs/browser-tests/0.4.0/README.md) pass all 45 scenario checks, including the three primary widgets’ presentation assertions, and retain selected-state screenshots. Project checks reject incomplete matrices or reports for outdated source hashes. Storage, Windows, full accessibility, and scientific reviews remain separate.
+Run `just artwork-test` for exhaustive Deep Time/Mythology offline image coverage and embedded/adjacent byte parity; the [0.4.2 report](docs/artwork-tests/0.4.2/README.md) verifies all 535 indexed IDs and 1,070 images.
+
+Run `python3 tools/test_atlas_browser.py` for the real-input Chrome regression matrix across Deep Time, Brain, and Mythology at 390/768/1440px. The [0.4.2 results](docs/browser-tests/0.4.2/README.md) pass all 45 scenario checks, including the three primary widgets’ presentation assertions, and retain selected-state screenshots. Project checks reject incomplete matrices or reports for outdated source hashes. Storage, Windows, full accessibility, and scientific reviews remain separate.
 
 Python 3.9+, Node.js, and Python `jsonschema` are needed for all checks. Without `jsonschema` or Node, the respective audit reports incomplete validation and exits nonzero. These tools check file integrity, schemas, source identity, and JavaScript syntax. Interactive browser, accessibility, folder-picker, persistence, and scientific review remain separate work.
 

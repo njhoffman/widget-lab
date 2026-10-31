@@ -32,3 +32,8 @@
 
 - Verified actual navigation/filter/panel and keyboard/history behavior at 390/768/1440px in Chrome/Linux; see `docs/browser-tests/0.1.1/`.
 - Captured new goal comparisons and advanced component spec to revision 3. Widget HTML, science, stored-state formats, and component version remain unchanged.
+
+## Verification — repository 0.4.2, 2026-10-31
+
+- Verified complete indexed hero/thumbnail availability, embedded/adjacent byte parity, and browser decoding in isolated network-disabled standalone files; see `docs/artwork-tests/0.4.2/`.
+- Component spec revision 5 records the QA scope and limits. Widget version/source bytes and prior release history remain unchanged; scientific/cultural approval and separate bundle-edition behavior are not inferred.

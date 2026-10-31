@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-30 · Repository release: 0.4.1
+Reviewed: 2026-10-31 · Repository release: 0.4.2
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -14,6 +14,10 @@ Historical IDs and acceptance criteria come from the [v1.21 catalog](atlas/data/
 Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 items first.
 
 ## 1. Repository, workflow, and migration
+
+- [x] **WL-023 — Exhaustively verify offline artwork coverage and parity.** (p1) [test] [done]
+  Continue approved QA under WL-005/WL-006: match all 172 Deep Time and 363 tradition-specific Mythology IDs, compare embedded hero/thumbnail bytes with adjacent assets, and decode every image from isolated HTML with networking disabled.
+  Acceptance/evidence: [0.4.2 report](docs/artwork-tests/0.4.2/README.md), 535 IDs and 1,070 images pass; corruption/incomplete/stale-evidence tests and registered report guard. Repeat with `just artwork-test`; original widget/data files remain unchanged.
 
 - [x] **WL-022 — Add a repository justfile.** (p2) [chore] [done]
   User-approved tooling scope: expose current builders, audits, unit/check commands, Atlas-only localhost serving, browser regression and comparison capture with feh. Forward browser options without shell interpolation and document dependencies.
@@ -154,13 +158,14 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 
 ## 3. Deep Time Atlas
 
-- [ ] **T011 — Verify existing: Resolve image for every indexed Deep Time interval.** (p1) [test] [needs-verification]
+- [x] **T011 — Verify existing: Resolve image for every indexed Deep Time interval.** (p1) [test] [done]
   Acceptance: 172/172 IDs resolve without missing images
   Source: catalog `goals/T011`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [offline artwork verification](docs/artwork-tests/0.4.2/README.md), complete source-hashed report and [dataset audit](docs/artwork-tests/0.4.2/data-integrity.json). Image availability/byte preservation only; no scientific or cultural approval.
 
 - [ ] **T012 — Verify existing: Maintain adjacent-folder bundle and single-file offline editions.** (p1) [test] [needs-verification]
   Acceptance: Both work without network; checksums match
+  Partial evidence: [0.4.2 artwork report](docs/artwork-tests/0.4.2/README.md) verifies isolated standalone images and byte parity against adjacent files. A separately runnable bundle edition and its offline navigation still need verification.
   Source: catalog `goals/T012`; historical status `implemented`, priority `P0`.
   Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
 
@@ -329,10 +334,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 
 ## 5. Mythology Atlas
 
-- [ ] **T040 — Verify existing: Provide local illustration for all 363 indexed records.** (p1) [test] [needs-verification]
+- [x] **T040 — Verify existing: Provide local illustration for all 363 indexed records.** (p1) [test] [done]
   Acceptance: 363/363 available offline
   Source: catalog `goals/T040`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [offline artwork verification](docs/artwork-tests/0.4.2/README.md), complete source-hashed report and [dataset audit](docs/artwork-tests/0.4.2/data-integrity.json). Image availability/byte preservation only; no scientific or cultural approval.
 
 - [ ] **T041 — Cinematic selected-figure hero art with readable left-aligned text.** (p1) [feature] [proposed]
   Acceptance: Image/text safe area consistent across traditions
@@ -553,10 +558,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 
 ## 10. Shared Taxa and science
 
-- [ ] **T078 — Verify existing: Preserve Shared Taxa v1.0 authoritative dataset unaffected by artwork.** (p1) [test] [needs-verification]
+- [x] **T078 — Verify existing: Preserve Shared Taxa v1.0 authoritative dataset unaffected by artwork.** (p1) [test] [done]
   Acceptance: No scientific data mutations for UI/art updates
   Source: catalog `goals/T078`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [offline artwork verification](docs/artwork-tests/0.4.2/README.md), complete source-hashed report and [dataset audit](docs/artwork-tests/0.4.2/data-integrity.json). Image availability/byte preservation only; no scientific or cultural approval.
 
 - [ ] **T079 — Link selected taxon from Deep Time representative life view.** (p1) [feature] [proposed]
   Acceptance: Use canonical concept IDs and traceable scientific source

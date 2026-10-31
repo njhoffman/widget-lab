@@ -1,10 +1,10 @@
 # Mythology — Atlas specification
 
 **Status:** APPROVED migration safeguards and shared visual direction; detailed new features remain proposed.  
-**Spec revision:** 4  
+**Spec revision:** 5  
 **Current release:** 1.14.0 (standalone visual update)  
 **Preserved imported baseline:** 1.13  
-**Last reviewed:** 2026-10-30
+**Last reviewed:** 2026-10-31
 
 ## Purpose and existing implementation
 
@@ -58,3 +58,9 @@ Keep the complete 1.13 standalone import unchanged. Add a separate 1.14.0 build 
 Acceptance: preserve source bytes/IDs and offline standalone behavior; complete browser matrix plus artwork/tree switching with retained selected ID, source-backed feature disclosure, all five tradition keys, related thumbnails matching the selected tradition, independent figure/profile updates, and reduced motion. Review actual screenshots at 390/768/1440px, generate the real-versus-goal comparison with task sidebar, and open feh. Bespoke portraits, historical gallery attribution/licenses, and remaining WL-006 work stay pending.
 
 Figure changes reset the profile pane to its heading; artwork mode hides tree-only legends. This corrects display context while leaving original relationship handlers intact. Existing group/story/symbol filtering, complementary Greek/Roman names, five-tradition result thumbnails, and parent/child navigation are covered by the browser suite. Exact asset-key tests verify current-tradition thumbnails. No historical-artwork carousel or new cultural approval is claimed.
+
+## Offline artwork verification — repository 0.4.2
+
+Approved QA continuation of WL-005/WL-006, T011/T040 and T078; no new application feature or artwork promotion. `just artwork-test` must match every runtime indexed ID to the artwork manifest, prove embedded hero/thumbnail bytes equal adjacent assets, and decode every image with nonzero dimensions in Chrome. Each standalone HTML is copied into an otherwise empty temporary folder, using a clean profile with networking disabled and HTTP(S) blocked.
+
+The [source-hashed report](../../docs/artwork-tests/0.4.2/README.md) passes 172 Deep Time and 363 Mythology IDs (1,070 images total). The project guard rejects missing/failed rows, missing decodes, or stale source/manifest/asset hashes. T011/T040 are complete for image availability; T078 is complete for unchanged canonical dataset bytes/schemas. These checks do not verify scientific reconstruction, cultural interpretation, licensing or final artwork approval. Mythology's separate featured Zeus override is covered by the existing build/browser tests; this exhaustive mapping check covers the original per-figure library. T012 remains open for a separately runnable bundle edition; checking adjacent bytes alone does not establish bundle behavior. Existing sources/versions remain unchanged.

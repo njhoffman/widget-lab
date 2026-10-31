@@ -1,10 +1,10 @@
 # Deep Time — Atlas specification
 
 **Status:** APPROVED migration safeguards and shared visual direction; detailed new features remain proposed.  
-**Spec revision:** 4  
+**Spec revision:** 5  
 **Current release:** 1.19.0 (standalone visual update)  
 **Preserved imported baseline:** 1.18  
-**Last reviewed:** 2026-10-30
+**Last reviewed:** 2026-10-31
 
 ## Purpose and existing implementation
 
@@ -56,3 +56,9 @@ Use the existing art without changing its scientific/review status; no new artwo
 Editable presentation sources live in `atlas/widgets/deep-time/src/layout.css` and `layout.js`; build with `python3 tools/build_deep_time.py`. `atlas/current.html` links registered current builds; the original dashboard remains historical. Add the new changelog entry ahead of all existing entries, and reflect the true active version in the title/header/history dialog.
 
 Acceptance: full browser matrix passes, plus current tabs/search are inside the header, real age labels and active states appear on previews, preview clicks update the selected interval, reduced-motion settings suppress adapter transitions, original science/control bytes match the preserved baseline, and new screenshots are reviewed at 390/768/1440px. Produce the actual-versus-goal image and open it in feh. WL-006 remains open for the other widgets and remaining visual/artwork gaps.
+
+## Offline artwork verification — repository 0.4.2
+
+Approved QA continuation of WL-005/WL-006, T011/T040 and T078; no new application feature or artwork promotion. `just artwork-test` must match every runtime indexed ID to the artwork manifest, prove embedded hero/thumbnail bytes equal adjacent assets, and decode every image with nonzero dimensions in Chrome. Each standalone HTML is copied into an otherwise empty temporary folder, using a clean profile with networking disabled and HTTP(S) blocked.
+
+The [source-hashed report](../../docs/artwork-tests/0.4.2/README.md) passes 172 Deep Time and 363 Mythology IDs (1,070 images total). The project guard rejects missing/failed rows, missing decodes, or stale source/manifest/asset hashes. T011/T040 are complete for image availability; T078 is complete for unchanged canonical dataset bytes/schemas. These checks do not verify scientific reconstruction, cultural interpretation, licensing or final artwork approval. Mythology's separate featured Zeus override is covered by the existing build/browser tests; this exhaustive mapping check covers the original per-figure library. T012 remains open for a separately runnable bundle edition; checking adjacent bytes alone does not establish bundle behavior. Existing sources/versions remain unchanged.

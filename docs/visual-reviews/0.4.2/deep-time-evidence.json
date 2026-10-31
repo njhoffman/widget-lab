@@ -1,0 +1,293 @@
+{
+  "widget": "deep-time",
+  "widget_version": "1.19.0",
+  "repository_version": "0.4.2",
+  "captured_at": "2026-10-31T05:13:06.631719+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Deep_Time_Atlas_v1.19.0.html",
+  "source_sha256": "13b203a3c5b8e0f8a9091e4d35c80491e44cc83fc15bbed4fddad6054be82c1f",
+  "actual_sha256": "b458f980ca02e03d85037b39d895183ab6493ad83c1449b84b391f1266f46245",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Triassic interval",
+  "goals": [
+    {
+      "path": "atlas/images/goal_1.png",
+      "sha256": "ac6791493a099863f8cf109412176a3daf201e9c4f9b6c65bb358ea3d2347775",
+      "crop": [
+        0,
+        0,
+        817,
+        505
+      ],
+      "approval": "approved visual direction"
+    },
+    {
+      "path": "atlas/images/goal_2.png",
+      "sha256": "047dcaa91d5d2cb3966527acafab4f57c9c851992c5d10f9967bffa100fdf275",
+      "crop": [
+        0,
+        0,
+        1536,
+        411
+      ],
+      "approval": "approved visual direction"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-010",
+      "title": "Guard browser evidence against incomplete coverage and stale sources.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-011",
+      "title": "Refine Deep Time header, interval scene, and preview strip.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-012",
+      "title": "Launch current builds without rewriting imported dashboards.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-013",
+      "title": "Preserve recent interval age precision in previews.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-015",
+      "title": "Close Chrome gracefully before removing its test profile.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T011",
+      "title": "Verify existing: Resolve image for every indexed Deep Time interval.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T016",
+      "title": "Place compact view tabs and search alongside header like concept, without crowding.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T017",
+      "title": "Show polished geology thumbnail previews with selected outline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T018",
+      "title": "Verify existing: Click neighboring intervals to navigate.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T022",
+      "title": "Verify existing: Distinct Overview/Climate/Continents/Geology/Life content presentation.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "in-progress"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T012",
+      "title": "Verify existing: Maintain adjacent-folder bundle and single-file offline editions.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T013",
+      "title": "Verify existing: Large interval-specific illustrated hero with text-safe overlay.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T014",
+      "title": "Replace procedural palette/silhouette variations with bespoke period scenes.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T015",
+      "title": "Complete 13 flagship scene upgrades in Batch 1.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T023",
+      "title": "Track geological data provenance and artwork uncertainty.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I002",
+      "title": "Replace procedural interval artwork with researched scenes.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S001",
+      "title": "Turn the interval hero into a cohesive editorial scene.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T019",
+      "title": "Replace generic sidebar with period-specific icon/fact rows and soft scene background.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T020",
+      "title": "Real paleomap/continental reconstruction by geologic interval.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T021",
+      "title": "Verify existing: Clickable representative organism art and taxon details.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "S002",
+      "title": "Make representative-life cards into a richer specimen browser.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S024",
+      "title": "Link interval artwork to traceable paleomaps and representative life.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T024",
+      "title": "In-atlas artwork gallery with alternative views for interval.",
+      "priority": "p2",
+      "status": "proposed"
+    }
+  ],
+  "capture_checks": {},
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "def7beb4c558ba9a4d5d38a747d3cdb9bdb49c5a2d4c1345750393c902040448"
+}

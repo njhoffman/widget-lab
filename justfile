@@ -51,6 +51,10 @@ serve port="8765":
 browser-test *args:
     "{{ python }}" tools/test_atlas_browser.py "$@"
 
+# Verify every Deep Time/Mythology hero and thumbnail in isolated offline HTML.
+artwork-test *args:
+    "{{ python }}" tools/test_atlas_artwork.py "$@"
+
 # Capture comparisons and open in feh; e.g. just compare --widgets brain.
 compare *args:
     "{{ python }}" tools/capture_atlas_comparisons.py "$@"

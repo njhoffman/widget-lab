@@ -4,6 +4,17 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-10-31
+
+### Added
+
+- Exhaustive Chrome offline artwork regression: 172 Deep Time intervals and 363 Mythology figures, with all 1,070 hero/thumbnail images decoded from isolated standalone HTML and compared byte-for-byte against adjacent assets.
+- `just artwork-test`, source/manifest/asset freshness and complete-coverage checks for registered artwork evidence, plus corruption and incomplete-evidence regression tests.
+
+### Changed
+
+- Closed T011, T040 and T078 with fresh image-coverage and Shared Taxa integrity evidence; kept separate bundle-edition and scientific/cultural review requirements open. Widget source bytes and versions are unchanged.
+
 ## [0.4.1] - 2026-10-30
 
 ### Added
