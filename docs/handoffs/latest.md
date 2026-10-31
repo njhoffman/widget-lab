@@ -1,33 +1,21 @@
-# Codex handoff — Brain visual batch 0.4.0
+# Codex handoff — justfile tooling batch 0.4.1
 
-Date: 2026-10-30 (America/Chicago). Base: `2cf49b9` / tag `v0.3.0`. Repository advances to 0.4.0 for Brain Atlas 1.22.0; original 1.21 remains unchanged. Current Deep Time/Mythology source files are unchanged.
+Date: 2026-10-30 (America/Chicago). Base: `3872a1a` / tag `v0.4.0`. Repository patch release 0.4.1 adds development commands; component versions, specs and widget sources remain unchanged.
 
-## Delivered
+## Delivered and audit trail
 
-Native projection/estimated-depth controls and strength selection now sit in a compact responsive header. Selected-region context is larger; orientation reference and depth context are moved off the interactive drawing. Desktop details scroll locally, while mobile/tablet details remain in document flow. The hierarchy retains usable widths and selected controls at each target viewport.
+Closed user-requested WL-022: root `justfile` lists commands by default and wraps dependency installation, all four current builders, integrity audits, unit tests, project consistency checks, Atlas-only localhost serving, browser regression and comparison capture. Python is overridable; positional arguments forward browser options and the server port. Comparison capture retains automatic feh opening and versioned evidence behavior.
 
-The SVG geometry, transforms, original region/circuit records, scientific/clinical text, original handlers and depth mathematics are unchanged. This remains authored schematic anatomy, with explicit estimated/not-volumetric labels. No new image assets, registered model, calibrated geometry, anatomical claims or progress migration. Depth strength is disabled while depth is off; startup remains unselected/depth-off.
-
-## Tasks and specifications
-
-Closed WL-019 (Brain visual layout), WL-020 (native projection/depth verification), WL-021 (mobile hierarchy grid), T025/T026/T029, and I003 through its accepted explicit-labeling alternative. I003's live title now states that labeling resolution; it does not imply a registered model. T027/T032/T033/T037/T039 remain open for wider assets, selected-inset overlays and anatomical/all-region alignment review. The broader WL-006 task remains in progress beyond these three first visual batches.
-
-Brain spec is revision 4; shared visual direction is revision 6. Version/changelog/manifest/TODO, component docs, context, current launch page and build/check instructions are synchronized. Editable adapter is under `atlas/widgets/brain/src/`; builder is `tools/build_brain.py`. Prior standalone/history entries are retained. Previous handoff is archived as `2026-10-30-release-0.3.0.md`.
+Changed files: `justfile`, README, tools README, development workflow, TODO, VERSION, root CHANGELOG, repository manifest release version and this handoff. Prior Brain handoff is preserved as `docs/handoffs/2026-10-30-release-0.4.0.md`. Workflow decision remains approved; no component specification revision is needed for tooling wrappers.
 
 ## Verification
 
-45/45 Chrome/Linux scenarios and 341 recorded assertions pass across Deep Time/Brain/Mythology at 390/768/1440px; detailed source hashes and assertions are in `docs/browser-tests/0.4.0/`. Brain checks add header containment/compactness, keyboard OFC selection, retained hierarchy/identity across all projections, marker bounds, three distinct orientation references, per-projection depth on/off, Low/Medium/High opacity/radius differences, crisp selected marker, restored cues, explicit labels, time preset/reset counts, actual panel/control widths and native hierarchy click.
+`just --list`, formatter check, serve dry run, browser/capture help forwarding, `just build`, and `just check` pass. The combined check runs migration/data/schema checks, Atlas integrity/inline JavaScript checks, all 14 unit tests and release/task/registered-evidence checks. Rebuilding produces byte-identical widget files and current launch page. No Python dependencies were reinstalled.
 
-14 unit tests pass, including complete Brain import byte preservation after removing only added presentation blocks and reversing the title. Original Shared Taxa/artwork/import files remain unchanged: 90 dataset entries/15 schemas, 543 artwork records and 1,321 import records pass. Active title/version and current links are checked; 62 inline scripts across 18 HTML pages compile. Actual/goal/comparison source hashes are checked by the project guard.
+Existing complete 0.4.0 browser matrix and earlier per-widget goal comparisons remain registered and hash-valid. No widgets or goals changed, so no new browser matrix/comparison images were generated or opened for this tooling-only release. Browser/desktop recipes require Chrome/Chromium and feh; audits also require Node.js, and Python requirements are in requirements-dev.txt. Commands were validated on just 1.59.0.
 
-A draft regression caught schematic text moving outside the drawing; a visible note remains beside the map. Screenshot review exposed an implicit-column mobile collapse despite no document overflow; matching responsive selector specificity fixed it and new width/click assertions prevent regression. Intermediate diagnostics stayed outside committed evidence.
+## Remaining work and publishing
 
-Fresh Brain comparison under `docs/visual-reviews/0.4.0/` uses OFC/lateral schematic with estimated depth on at native Medium, matching the goal's mode. Older comparisons used depth-off and are retained. Capture JSON records that configuration and a passing reduced-motion control-transition check; default product startup is unchanged. Automatic feh opening is recorded in viewer.json.
+Continue the live TODO and prior Brain handoff for visual, scientific, accessibility and compatibility limits. `just check` checks existing evidence; run `just browser-test` and `just compare --widgets ...` separately when changing widgets after selecting the new batch VERSION. A narrow exploratory browser run does not satisfy the full matrix gate.
 
-Finalization commits, annotated-tags, atomically pushes and verifies remote objects; the final response states the actual commit/tag/push outcome.
-
-## Remaining limits and next work
-
-Orientation references update by projection but do not highlight a registered selected structure. Representative native bounds/selection checks are not all-region anatomical validation, medical imaging, clinical advice, or independent scientific review. Windows/storage/folder-picker, full screen-reader/contrast/touch accessibility and registered 3D remain separate tasks. No scientific dates/relationships or source records changed.
-
-The first Deep Time, Mythology and Brain layout batches are complete. Continue with concrete remaining QA/compatibility tasks or a separately scoped visual/artwork batch; preserve originals and avoid claiming full goal-image fidelity or new validated anatomy. Follow TODO/specs and the comparison/feh/release workflow.
+Finish by committing, annotated-tagging v0.4.1, atomically pushing and verifying remote branch/tag objects. Actual publication outcome is reported in the final response.

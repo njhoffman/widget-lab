@@ -5,8 +5,10 @@ Standalone Atlas and Quiz widgets, scientific data, and reviewed specifications 
 From the repository root, start Atlas with:
 
 ```sh
-python3 -m http.server 8765 --bind 127.0.0.1 --directory atlas
+just serve
 ```
+
+Run `just` to list commands, `just build` to rebuild current standalone widgets and the launch page, and `just check` for audits, unit tests, and project consistency. Install [just](https://github.com/casey/just) separately; direct Python commands remain available in [developer tooling](tools/README.md). `just deps` installs Python development dependencies into your active environment. Override the interpreter with `just python=/path/to/venv/bin/python check`.
 
 Open <http://localhost:8765/current.html> for current builds. The [original master dashboard](atlas/index.html) remains available at <http://localhost:8765/> with the artwork tools and goal tracker. Serving only `atlas/` keeps private migration folders outside the web root. Browser storage is origin-specific: use a stable port and export existing decisions before changing origins. No cloud deployment or progress synchronization is configured.
 

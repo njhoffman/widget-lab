@@ -12,6 +12,23 @@ Historical priorities P0 and P1 map to high (p1), P2 to normal (p2), P3 to low (
 
 ## During work
 
+The root `justfile` provides these shortcuts (run `just` for the full list):
+
+| Command | Purpose |
+| --- | --- |
+| `just deps` | Install Python development requirements into the active environment |
+| `just build` | Build Deep Time, Mythology, Brain, then the current launch page |
+| `just verify` | Audit migration/data/source integrity and Atlas JavaScript |
+| `just test` | Run the unit and source-preservation suite |
+| `just check` | Run audits, unit tests, and release/task/registered-evidence checks |
+| `just serve` | Serve only `atlas/` on localhost:8765; optional port argument |
+| `just browser-test` | Run the complete Chrome interaction matrix |
+| `just compare --widgets brain` | Capture selected widget comparisons and open them in feh |
+
+Use `just python=/path/to/venv/bin/python check` to select an interpreter. Python requirements are in `requirements-dev.txt`; Node.js, Chrome/Chromium and feh are separate system dependencies. Direct Python equivalents are in `tools/README.md`. Serving uses `python3 -m http.server 8765 --bind 127.0.0.1 --directory atlas`; open `http://localhost:8765/current.html`.
+
+Browser recipes forward options: for exploration, `just browser-test --output /tmp/atlas-tests --widths 1440`. A narrow run does not replace the full registered matrix. `just check` validates existing evidence without launching Chrome or generating screenshots. Select the new batch VERSION before browser/capture commands; comparison capture refuses existing version/widget outputs. `just compare` without arguments captures all seven widgets and opens feh; `--no-open` remains CI-only. Tooling-only batches may retain registered evidence when widget and goal hashes remain unchanged.
+
 Update the live TODO and relevant spec revision in the same change. Capture bugs, test findings, and suggestions with concrete triggers and acceptance criteria. Link rather than duplicate overlapping tasks. Close only with evidence; preserve deferred work and historical IDs. Keep changelog Unreleased entries current. Do not regenerate TODO from the catalog: the imported catalog is provenance, not mutable task state.
 
 ## Atlas evidence

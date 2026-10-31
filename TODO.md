@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-30 · Repository release: 0.4.0
+Reviewed: 2026-10-30 · Repository release: 0.4.1
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -14,6 +14,10 @@ Historical IDs and acceptance criteria come from the [v1.21 catalog](atlas/data/
 Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 items first.
 
 ## 1. Repository, workflow, and migration
+
+- [x] **WL-022 — Add a repository justfile.** (p2) [chore] [done]
+  User-approved tooling scope: expose current builders, audits, unit/check commands, Atlas-only localhost serving, browser regression and comparison capture with feh. Forward browser options without shell interpolation and document dependencies.
+  Acceptance/evidence: `just --list`, formatting/dry-run checks, CLI help forwarding, `just build`, and `just check`; usage in [development workflow](docs/development-workflow.md). No widget changes or replacement evidence required.
 
 - [x] **WL-001 — Import and verify the Atlas baseline.** (p1) [chore] [done]
   Preserve original HTML/science/history; restore the complete Shared Taxa package.

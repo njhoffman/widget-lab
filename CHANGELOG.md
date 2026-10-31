@@ -4,6 +4,13 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-10-30
+
+### Added
+
+- Root justfile with discoverable build, audit, unit-test, combined-check, localhost-server, browser-test, and comparison/feh commands; Python dependency installation and interpreter override are supported.
+- Documented common commands, browser option forwarding, and evidence/version requirements. Existing widget sources and registered evidence remain unchanged.
+
 ## [0.4.0] - 2026-10-30
 
 ### Added

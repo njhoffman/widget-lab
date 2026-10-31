@@ -1,5 +1,7 @@
 # Developer tooling
 
+The root `justfile` wraps these tools: `just build`, `just verify`, `just test`, `just check`, `just serve`, `just browser-test`, and `just compare`. Run `just` to list all recipes. `just deps` installs `requirements-dev.txt` into the active Python environment; override Python with `just python=/path/to/venv/bin/python check`. Browser/capture options pass through directly. See [workflow](../docs/development-workflow.md) for evidence and release requirements.
+
 Run from the repository root:
 
 ```sh
