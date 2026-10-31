@@ -122,6 +122,8 @@ def task_lists(widget):
     related.update(('WL-001', 'WL-003', 'WL-004', 'WL-005', 'WL-006', 'WL-010'))
     if widget == 'Deep Time Atlas':
         related.update(('WL-011', 'WL-012', 'WL-013', 'WL-015'))
+    if widget == 'Mythology Atlas':
+        related.update(('WL-016', 'WL-017', 'WL-018'))
     done, pending = [], []
     for match in TASK.finditer((ROOT / 'TODO.md').read_text()):
         if match[2] in related:
@@ -191,7 +193,8 @@ def main():
                 elif slug == 'mythology':
                     browser.evaluate("selectFigure('zeus'); true")
                     browser.evaluate("(()=>{if(!document.getElementById('profileHead').innerText.includes('Zeus'))throw Error('Zeus selection failed');return true})()")
-                    selection = 'Greek Zeus'
+                    artwork_view = browser.evaluate("!document.getElementById('awMythArtworkStage').hidden")
+                    selection = 'Greek Zeus, artwork view' if artwork_view else 'Greek Zeus, family tree view'
                 else:
                     selection = 'Initial default view in clean browser profile'
                 browser.evaluate('new Promise(resolve => setTimeout(resolve, 600))')

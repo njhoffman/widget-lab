@@ -20,7 +20,7 @@ All six scientific widgets match the delivered v1.20 source checksums. Launcher 
 
 ## Approved UI, scientific, and data requirements
 
-The user prioritized Atlas and selected `atlas/images/goal_1.png` and `goal_2.png` as direction. See `atlas/specs/visual-direction.md` revision 4 for the approved design language and regression constraints. Preserve scientific content, stable identifiers, historical changelogs, and browser progress formats. Repository setup and relevant context curation were explicitly authorized; raw account exports and transcripts stay private.
+The user prioritized Atlas and selected `atlas/images/goal_1.png` and `goal_2.png` as direction. See `atlas/specs/visual-direction.md` revision 5 for the approved design language and regression constraints. Preserve scientific content, stable identifiers, historical changelogs, and browser progress formats. Repository setup and relevant context curation were explicitly authorized; raw account exports and transcripts stay private.
 
 The images favor dark navy, cyan/mint accents, compact headers, illustrated selected-subject stages, and adjacent navigation/detail panels. Their versions and numerical badges are examples. The more compact second composition is useful for subsequent layout work without removing existing scientific panels.
 
@@ -67,3 +67,11 @@ Current Deep Time source is `atlas/widgets/Deep_Time_Atlas_v1.19.0.html`; import
 Use `atlas/current.html` for current registered builds. Imported dashboards/catalogs remain historical. Editable Deep Time presentation is under `atlas/widgets/deep-time/src/`; deterministic builders and preservation tests guard the generated file. All prior release entries are retained, with 1.19.0 added ahead of them.
 
 WL-006 remains in progress for later widget/layout/artwork work. Procedural Triassic imagery remains procedural; no cinematic reconstruction or canonical taxon migration is claimed. Browser tooling now requests graceful Chrome shutdown after a profile cleanup race found during QA; bounded termination fallbacks remain for stuck processes.
+
+## Mythology visual update — repository 0.3.0
+
+Current source is `atlas/widgets/Mythology_Atlas_v1.14.0.html`, derived from preserved 1.13. It defaults to the original artwork mode with explicit mode controls, compact search header, and clearer figure/profile composition. Verified existing Greek Zeus concept bytes are reused offline with modern/AI art disclosure; no new artwork or cultural approval is claimed.
+
+Original records, IDs, filters, naming controls, genealogy handlers, and history are retained. Related thumbnails now use the active tradition's exact key; newly selected profiles start at their heading, and tree-only legends stay out of artwork mode. The full browser matrix covers all five traditions, native group/story/symbol filters, complementary names, parent/child links and view/selection retention. T043/T044/T045/T048 and WL-016/WL-017/WL-018 are complete; T041/T042/T047, historical gallery provenance, and broader WL-006 work remain open.
+
+Editable presentation is under `atlas/widgets/mythology/src/`; `tools/build_mythology.py` verifies baseline/featured-art hashes and builds a separate standalone. The current launch page points to it while imported dashboards/catalogs remain historical. Brain layout is the next scoped primary-widget candidate.

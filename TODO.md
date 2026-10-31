@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-30 · Repository release: 0.2.0
+Reviewed: 2026-10-30 · Repository release: 0.3.0
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -63,6 +63,17 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [x] **WL-015 — Close Chrome gracefully before removing its test profile.** (p1) [bug] [done]
   A passing matrix exposed a renderer/profile cleanup race after forced browser termination. Request browser shutdown and wait, retaining bounded terminate/kill fallbacks.
   Acceptance/evidence: two shutdown unit tests and the final real browser matrix exit successfully without suppressing profile cleanup errors; fresh capture/viewer result is retained with this release.
+
+- [x] **WL-016 — Refine Mythology artwork and genealogy layout.** (p1) [feature] [done]
+  Follow Mythology spec revision 4: default artwork stage, explicit view controls, compact search header, readable profile, and preserved genealogy/filter controls. Reuse verified bundle art with its existing disclosure.
+  Acceptance/evidence: source-preserving standalone build tests, [complete browser matrix](docs/browser-tests/0.3.0/README.md) with mode/selection/tradition/reduced-motion assertions, and fresh comparison opened in feh.
+- [x] **WL-017 — Keep related-figure thumbnails within the selected tradition.** (p1) [bug] [done]
+  The imported related-figure renderer searches Greek first when IDs overlap across traditions. Resolve thumbnails against the active tradition without changing recorded relationships.
+  Acceptance/evidence: [browser report](docs/browser-tests/0.3.0/report.json) checks exact related-image keys across all five traditions at three widths; navigation retains the active tradition.
+
+- [x] **WL-018 — Keep figure context visible in the selected view.** (p1) [bug] [done]
+  Artwork mode inherited a visible genealogy legend despite its hidden flag, and relationship navigation could retain the old profile scroll position. Hide tree-only labels in artwork mode and reset the profile pane when the figure/tradition key changes.
+  Acceptance/evidence: view-state and parent/child assertions in the [browser report](docs/browser-tests/0.3.0/report.json); selected profile scrollTop is zero after figure changes. Regression snapshots use instant top scrolling.
 
 ## 2. Shared UI and accessibility
 
@@ -313,24 +324,25 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Acceptance: 33/33 reviewed and approved by tradition
   Source: catalog `goals/T042`; historical status `planned`, priority `P0`.
 
-- [ ] **T043 — Verify existing: Preserve switchable family tree and artwork views.** (p1) [test] [needs-verification]
+- [x] **T043 — Verify existing: Preserve switchable family tree and artwork views.** (p1) [test] [done]
   Acceptance: Selection persists across switches
   Source: catalog `goals/T043`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.3.0 browser report](docs/browser-tests/0.3.0/README.md), Mythology navigation-filters-panels at 390/768/1440px; source-preservation tests retain original records/handlers.
 
-- [ ] **T044 — Verify existing: Keep tradition filters, search, genealogy, parent and child navigation.** (p1) [test] [needs-verification]
+- [x] **T044 — Verify existing: Keep tradition filters, search, genealogy, parent and child navigation.** (p1) [test] [done]
   Acceptance: No losses after art loading
   Source: catalog `goals/T044`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.3.0 browser report](docs/browser-tests/0.3.0/README.md), Mythology navigation-filters-panels at 390/768/1440px; source-preservation tests retain original records/handlers.
 
-- [ ] **T048 — Verify existing: Greek/Roman name toggles with independent traditions.** (p1) [test] [needs-verification]
+- [x] **T048 — Verify existing: Greek/Roman name toggles with independent traditions.** (p1) [test] [done]
   Acceptance: No conflation of genealogy
   Source: catalog `goals/T048`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.3.0 browser report](docs/browser-tests/0.3.0/README.md), Mythology navigation-filters-panels at 390/768/1440px; source-preservation tests retain original records/handlers.
 
 - [ ] **T049 — Artwork type and historical accuracy provenance visible.** (p1) [feature] [proposed]
   Acceptance: Labels AI illustrative vs public domain historical vs licensed
   Source: catalog `goals/T049`; historical status `partial`, priority `P0`.
+  Partial progress: Modern symbolic versus featured AI concept disclosure is visible in 1.14.0; historical/public-domain/licensed artwork categories remain a separate unfinished gallery workflow.
 
 - [ ] **T050 — Verify existing: Keep shared teal/green active states while letting paintings vary by tradition.** (p1) [test] [needs-verification]
   Acceptance: No gold on shared selected widgets
@@ -342,10 +354,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Acceptance: triage this proposal, record the decision and concrete criteria in the relevant spec, then validate with regression checks and actual-versus-goal evidence before completion.
   Source: catalog `suggestions/S005`; historical status `proposed`, priority `P0`.
 
-- [ ] **T045 — Verify existing: Figure result thumbnails with selected treatment.** (p1) [test] [needs-verification]
+- [x] **T045 — Verify existing: Figure result thumbnails with selected treatment.** (p1) [test] [done]
   Acceptance: Works across all five traditions
   Source: catalog `goals/T045`; historical status `implemented`, priority `P1`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.3.0 browser report](docs/browser-tests/0.3.0/README.md), Mythology navigation-filters-panels at 390/768/1440px; source-preservation tests retain original records/handlers.
 
 - [ ] **T046 — Rich illustrated right-side figure facts, attribution and relations.** (p1) [feature] [proposed]
   Acceptance: Truthful family edges, role, references, provenance
@@ -368,6 +380,7 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Scope: Related-figure navigation exists; licensed artwork carousel is a separate unbuilt workflow.
   Acceptance: Display source, attribution, license and related art separately.
   Source: catalog `issues/I005`; historical status `open`, priority `P1`.
+  Partial progress: Related-figure heading/thumb keys are corrected in 1.14.0; the separate licensed historical-artwork gallery and its attribution remain unimplemented.
 
 - [ ] **S006 — Licensed related-artwork gallery.** (p1) [feature] [proposed]
   Scope: Separate actual historical artwork with credits, external links and rights metadata from generated portraits.

@@ -1,0 +1,87 @@
+/* Mythology 1.14.0: presentation only; original genealogy/data remain intact. */
+html.wl-myth-layout { --wl-cyan:#5be7e9;--wl-line:#21576a; }
+.wl-myth-layout body { background:radial-gradient(ellipse at 60% 0,#16394b 0,transparent 50%),#06111b; }
+.wl-myth-layout .app { max-width:1800px;padding:12px 14px 28px;margin:auto; }
+.wl-myth-layout #aw-header-family { display:grid!important;grid-template-columns:245px minmax(180px,1fr) auto auto!important;grid-template-areas:none!important;gap:12px!important;align-items:center!important;padding:11px 12px!important;min-height:68px!important;border:1px solid var(--wl-line)!important;border-radius:12px!important;background:linear-gradient(115deg,#071725,#0a2233,#071724)!important; }
+.wl-myth-layout #aw-header-family .atlas-family-brand { grid-column:1!important;grid-row:1!important;min-width:0!important; }
+.wl-myth-layout #aw-header-family .searchwrap { grid-column:2!important;grid-row:1!important;min-width:0;width:100%;margin:0; }
+.wl-myth-layout #aw-header-family #wl-myth-views { grid-column:3!important;grid-row:1!important; }
+.wl-myth-layout #aw-header-family .atlas-family-right { grid-column:4!important;grid-row:1!important;margin:0!important;gap:6px!important; }
+.wl-myth-layout .atlas-family-copy h1 { font-size:24px!important; }
+.wl-myth-layout #aw-header-family #search { width:100%;min-width:0;min-height:38px;font-size:12px;background:#0b2030;border-color:#285469; }
+.wl-myth-layout #wl-myth-views { display:flex;gap:6px; }
+.wl-myth-layout .wl-view { white-space:nowrap;min-height:38px;border:1px solid #285469;border-radius:8px;background:#0a1c2b;color:#d0e6f3;font-size:12px;padding:8px 12px; }
+.wl-myth-layout .wl-view[aria-pressed=true] { color:#071923;background:var(--wl-cyan);border-color:#8bf8ef;box-shadow:0 0 14px #37dfec22; }
+.wl-myth-layout #awMythArtToggle[hidden] { display:none!important; }
+.wl-myth-layout .tradition-bar { border:1px solid var(--wl-line);background:#081b2a;border-radius:10px;margin:10px 0;padding:8px 12px; }
+.wl-myth-layout .workspace { display:grid!important;grid-template-columns:245px minmax(0,1fr) 350px;gap:12px;align-items:start; }
+.wl-myth-layout .panel { border-color:var(--wl-line);border-radius:12px;background:linear-gradient(155deg,#0d2030,#081522);min-width:0; }
+.wl-myth-layout .left .ph { padding:12px; }
+.wl-myth-layout .filters { padding:0 12px 12px; }
+.wl-myth-layout .results { max-height:650px;scrollbar-width:thin; }
+.wl-myth-layout .result { border-radius:8px; }
+.wl-myth-layout .result.selected { border-color:var(--wl-cyan);box-shadow:inset 0 0 0 1px #54dbe84d;background:#0d3442; }
+.wl-myth-layout .maphead { padding:12px; }
+.wl-myth-layout .mapmain { gap:10px; }
+.wl-myth-layout .crumb { padding:8px 12px;border-color:#24495b; }
+.wl-myth-layout.wl-myth-art-mode #familyTabs,
+.wl-myth-layout.wl-myth-art-mode .mapctrl,
+.wl-myth-layout.wl-myth-art-mode .maplegend,
+.wl-myth-layout.wl-myth-art-mode #mapMsg { display:none!important; }
+.wl-myth-layout #awMythArtworkStage { min-height:500px!important;height:auto!important;border:0!important;align-items:stretch;justify-content:flex-end; }
+.wl-myth-layout #awMythArtworkStage::before { background-position:center 35%;background-size:cover;filter:none; }
+.wl-myth-layout #awMythArtworkStage::after { background:linear-gradient(90deg,#05121be8,#05121b80 55%,#05121b15),linear-gradient(0deg,#05121bea,transparent 75%); }
+.wl-myth-layout #awMythArtworkStage .aw-artwork-description { width:100%;max-width:95%;padding:28px!important; }
+.wl-myth-layout #awArtName { font-size:clamp(34px,3.2vw,48px);margin:9px 0; }
+.wl-myth-layout #awArtRole { font-size:15px;color:#c2eaf0; }
+.wl-myth-layout #awArtOrigin { max-width:62ch;font-size:13px;line-height:1.7; }
+.wl-myth-layout #awArtTradition { color:#7ef1e8;font-size:11px;letter-spacing:.08em; }
+.wl-myth-layout #awArtTags { display:flex;gap:6px;flex-wrap:wrap;margin:14px 0; }
+.wl-myth-layout #awArtTags span { border:1px solid #3c8790;border-radius:20px;background:#08232bc9;padding:4px 9px;font-size:11px; }
+.wl-myth-layout #awArtCredit { display:block;max-width:65ch;font-size:11px;line-height:1.6;color:#c1d5df;margin-top:16px; }
+.wl-myth-layout .profiletop.aw-myth-hero { min-height:160px;padding:14px; }
+.wl-myth-layout .profilehead h2 { font-size:27px; }
+.wl-myth-layout .profilehead img { width:64px;height:64px;object-fit:cover; }
+.wl-myth-layout .profilecontent { padding:14px; }
+.wl-myth-layout .detailsection { border-color:#234b5d; }
+.wl-myth-layout #awMythRelated { background:#0b2432;border-color:#2a5f70;border-radius:10px; }
+.wl-myth-layout .aw-related-grid { gap:8px; }
+.wl-myth-layout .aw-related-figure { border-color:#326477; }
+.wl-myth-layout .aw-related-figure img { object-fit:cover; }
+.wl-myth-layout :is(button,input,select,a):focus-visible { outline:2px solid #a5ffff!important;outline-offset:3px!important; }
+@media(min-width:900px) and (max-width:1199px) {
+ .wl-myth-layout #aw-header-family { grid-template-columns:minmax(0,1fr) auto!important; }
+ .wl-myth-layout #aw-header-family .atlas-family-right { grid-column:2!important; }
+ .wl-myth-layout #aw-header-family .searchwrap { grid-column:1!important;grid-row:2!important; }
+ .wl-myth-layout #aw-header-family #wl-myth-views { grid-column:2!important;grid-row:2!important; }
+ .wl-myth-layout .workspace { grid-template-columns:220px minmax(0,1fr); }
+ .wl-myth-layout #profile { grid-column:1/-1;width:100%; }
+}
+@media(max-width:899px) {
+ .wl-myth-layout .app { padding:10px; }
+ .wl-myth-layout #aw-header-family { grid-template-columns:minmax(0,1fr) auto!important;gap:10px!important; }
+ .wl-myth-layout #aw-header-family .atlas-family-brand { grid-column:1/-1!important; }
+ .wl-myth-layout #aw-header-family .atlas-family-right { grid-column:2!important;grid-row:2!important; }
+ .wl-myth-layout #aw-header-family #wl-myth-views { grid-column:1!important;grid-row:2!important; }
+ .wl-myth-layout #aw-header-family .searchwrap { grid-column:1/-1!important;grid-row:3!important; }
+ .wl-myth-layout .workspace { grid-template-columns:minmax(0,1fr); }
+ .wl-myth-layout .workspace>.center { grid-column:1;grid-row:1;width:100%; }
+ .wl-myth-layout .workspace>.left { grid-column:1;grid-row:2;width:100%; }
+ .wl-myth-layout #profile { grid-column:1;grid-row:3;width:100%; }
+ .wl-myth-layout #awMythArtworkStage { min-height:390px!important; }
+ .wl-myth-layout #awMythArtworkStage .aw-artwork-description { padding:20px!important;max-width:100%; }
+ .wl-myth-layout .results { max-height:300px; }
+ .wl-myth-layout .tradition-bar { gap:8px; }
+ .wl-myth-layout .tradition-tabs { flex-wrap:wrap; }
+}
+@media(max-width:480px) {
+ .wl-myth-layout #aw-header-family { grid-template-columns:minmax(0,1fr)!important; }
+ .wl-myth-layout #aw-header-family #wl-myth-views { grid-column:1!important;grid-row:2!important; }
+ .wl-myth-layout #aw-header-family .atlas-family-right { grid-column:1!important;grid-row:3!important;justify-content:flex-start!important; }
+ .wl-myth-layout #aw-header-family .searchwrap { grid-column:1!important;grid-row:4!important; }
+ .wl-myth-layout .mapmain { flex-wrap:wrap; }
+ .wl-myth-layout .mapctrl { flex-wrap:wrap;gap:8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .wl-myth-layout *, .wl-myth-layout *::before, .wl-myth-layout *::after { scroll-behavior:auto!important;transition:none!important;animation:none!important; }
+}

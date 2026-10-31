@@ -44,9 +44,9 @@
       "family": "atlas",
       "slug": "mythology",
       "html_sources": [
-        "atlas/widgets/Mythology_Atlas_v1.13.html"
+        "atlas/widgets/Mythology_Atlas_v1.14.0.html"
       ],
-      "release_version": "1.13",
+      "release_version": "1.14.0",
       "verified": true
     },
     {

@@ -1,7 +1,7 @@
 # Atlas visual direction
 
 **Status:** APPROVED direction and migration safeguards; implementation backlog is proposed.  
-**Spec revision:** 4  
+**Spec revision:** 5  
 **Last reviewed:** 2026-10-30  
 **Authority:** User's request to prioritize Atlas and `goal_1.png` / `goal_2.png`, followed by authorization to curate and finish repository setup.
 
@@ -65,3 +65,9 @@ WL-006 layout refinements may now begin in small batches; full accessibility, sc
 Deep Time 1.19.0 implements the first scoped WL-006 batch: compact topic/search header, clearer interval stage, larger nearby previews with actual ages/current state, and responsive panel styling. Its original 1.18 science/control source is retained verbatim, except for the standalone document title; added CSS/JS changes presentation and release metadata only. The current-build launch page routes to registered source versions without rewriting imported dashboards.
 
 Age labels retain recent four-decimal boundaries, including Holocene 0.0117 Ma. Added browser checks enforce header compactness, manifest-backed preview ages, preview navigation/current state, and reduced motion. The original art and anatomical/scientific disclosures remain unchanged. Further bespoke artwork and the other widgets' layout refinements remain pending under WL-006 and their linked tasks.
+
+## Mythology visual implementation — repository 0.3.0
+
+Mythology 1.14.0 continues WL-006 with an artwork-first stage, clear Artwork / Family tree controls, compact search header, readable profile, and tradition-correct related thumbnails. It reuses the verified existing Greek Zeus concept with explicit modern/AI interpretation and review caveats; other figures retain their current local illustrations. Original 1.13 data/control source and historical entries are preserved in the new standalone build.
+
+Mode changes retain selected figure identity; original filters, name controls and genealogy tools remain functional. Related thumbnails use the current tradition rather than searching Greek first. Newly selected profiles begin at their heading, and tree-only labels are hidden in artwork mode. Cross-viewport browser checks and byte-preservation tests are required. Bespoke portraits, historical gallery licensing/provenance, and remaining Brain/general layout work remain pending.

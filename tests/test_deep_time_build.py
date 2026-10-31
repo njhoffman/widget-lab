@@ -31,3 +31,4 @@ class DeepTimeBuildTests(unittest.TestCase):
         self.assertEqual(len(links), 7)
         self.assertTrue(all((ROOT / 'atlas' / link).is_file() for link in links))
         self.assertIn('widgets/Deep_Time_Atlas_v1.19.0.html', links)
+        self.assertIn('widgets/Mythology_Atlas_v1.14.0.html', links)

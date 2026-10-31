@@ -1,33 +1,31 @@
-# Codex handoff — Deep Time visual batch 0.2.0
+# Codex handoff — Mythology visual batch 0.3.0
 
-Date: 2026-10-30 (America/Chicago). Base commit: `e4344b8` / tag `v0.1.1`. Repository advances to 0.2.0 for the first visible layout feature batch. Deep Time advances to the new standalone version 1.19.0; historical 1.18 remains unchanged and is not retroactively renumbered.
+Date: 2026-10-30 (America/Chicago). Base: `0a1f2e6` / tag `v0.2.0`. Repository advances to 0.3.0 for Mythology Atlas 1.14.0; the original 1.13 standalone remains unchanged. Deep Time/Brain current sources are unchanged.
 
 ## Delivered
 
-- Deep Time header now contains the original topic navigation and search alongside title, actual data chips and version, with responsive wrapping.
-- Selected interval scene and panel composition refined; existing nearby previews enlarged with source age labels, current state and native navigation. Recent Holocene 0.0117 Ma precision is preserved.
-- Existing science cards, filters, timelines, taxon profiles, IDs, source payloads and artwork limitations retained.
-- New `atlas/current.html` links all seven registered active sources; imported dashboards/catalogs remain historical. Start at `http://localhost:8765/current.html` when serving atlas/.
-- Original Deep Time HTML stays intact. New standalone is built deterministically from that import plus editable presentation CSS/JS in `atlas/widgets/deep-time/src/`.
+Artwork-first Mythology view using the existing native artwork mode, clear Artwork / Family tree controls, compact search header, selected-figure composition, and readable profile styling. The existing verified Greek Zeus concept image is embedded offline; its modern/AI and pending cultural-review disclosure remains visible. Other figures retain original local illustrations; no new artwork or cultural/historical claims.
+
+Related thumbnails now use exact active-tradition keys instead of Greek-first lookup. Profile panes reset to the figure heading after identity changes, tree-only legends stay out of artwork mode, and screenshot resets use instant scrolling to avoid partially captured headers. Original filters, IDs, records, complementary names, genealogy/relationship handlers and historical entries are retained.
+
+Current launch page routes to 1.14.0. Editable CSS/JS is under `atlas/widgets/mythology/src/`; `tools/build_mythology.py` verifies the import and featured image hashes, then adds presentation blocks and a new title to a separate standalone file. Preservation tests remove only those allowed changes and compare every remaining original byte.
 
 ## Tasks and specs
 
-Closed WL-011 (Deep Time layout batch), WL-012 (current-build launch page), WL-013 (recent-age preview precision), WL-015 (graceful browser shutdown), T016 (topic/search header), and T017 (thumbnail/age/current state). Broader WL-006 remains in progress; Brain/Mythology layout and bespoke artwork are future batches. Added WL-014 as a proposed improvement for overly tall comparison sheets; it is not implemented.
+Closed WL-016, WL-017, WL-018, T043, T044, T045 and T048 with browser/source evidence. Broader WL-006 remains in progress for Brain/general layout and art work. T041/T042/T047, I005's full licensed historical-artwork workflow, and T049's gallery provenance categories remain open; current disclosures/related-figure labels are recorded as partial progress.
 
-Deep Time and shared visual specs are revision 4. Component changelog adds 1.19.0 ahead of retained history. Root changelog/version/manifest/TODO/context and build/check instructions are synchronized.
+Mythology spec is revision 4 and shared visual direction is revision 5. Version/changelog/manifest/TODO, component docs, context, current launch page, build/test instructions and handoff are synchronized. Prior handoff is archived as `2026-10-30-release-0.2.0.md`.
 
 ## Verification
 
-All 45 Chrome/Linux browser scenario checks pass at 390/768/1440px for Deep Time, Brain and Mythology. The Deep Time scenario now also tests compact header containment/height, manifest-backed ages, clickable preview selection/current state, reduced-motion preferences, and Holocene precision. Source hashes are in `docs/browser-tests/0.2.0/report.json`; selected-state screenshots and summary are adjacent.
+45/45 Chrome/Linux scenarios and 259 recorded assertions pass across three widgets and 390/768/1440px; the JSON report records per-assertion details and current source hashes under `docs/browser-tests/0.3.0/`. Added Mythology checks cover initial artwork mode/disclosure, header search, mode switching with retained selected ID, keyboard view activation, parent/child links, profile scroll reset, native group/story/symbol filters, complementary names without identity changes, all five traditions' exact related/result thumbnail keys, selected state, tree legend visibility and reduced motion.
 
-All 11 unit tests pass, including original-source byte preservation after removing only added presentation blocks/reversing the title, deterministic generated output, all current launcher source links, shutdown behavior, stale/incomplete reports, release/task metadata and import safety. The new source title/version and original imported versions are both checked; 47 inline scripts across 16 HTML pages compile. Original Shared Taxa 90-file/15-schema, 543 artwork-record, and 1,321 imported-file checks pass unchanged.
+13 unit tests pass, including original Mythology byte preservation and verified offline Zeus asset identity. Existing import/Shared Taxa/artwork checks pass unchanged; active-source title/version and current launch links are checked, and standalone scripts compile. New source/actual/goal/comparison hashes are validated by the project guard. 54 inline scripts across 17 HTML pages compile; 90 Shared Taxa manifest entries/15 schemas, 543 artwork records, and 1,321 imported file records pass unchanged.
 
-During screenshot review, an inherited `grid-template-columns:none!important` rule caused excess desktop header height; fixed with explicit scoped grid placement and a height assertion. Initial three-decimal preview formatting could round recent boundaries; fixed before release and covered by Holocene assertion. Chrome profile cleanup once raced renderer writes after forced termination; switched to graceful Browser.close with bounded fallbacks. Final browser run exits cleanly; no cleanup errors are suppressed. Intermediate diagnostic runs stayed outside committed evidence.
+Fresh Mythology actual-versus-goal PNG/HTML/actual image/JSON under `docs/visual-reviews/0.3.0/` records the artwork view and completed/pending task snapshot. Automatic feh launch is recorded in viewer.json. Finalization commits, annotated-tags, atomically pushes, and verifies remote objects; the final response states the actual outcome.
 
-Fresh Deep Time actual-versus-goal PNG, HTML, actual screenshot, hashes and task statuses are in `docs/visual-reviews/0.2.0/`. Automatic feh opening is recorded in viewer.json. Original comparison evidence for previous versions is retained. Release finalization commits, annotated-tags and atomically pushes the batch; final user response reports actual remote outcome.
+## Limits and next work
 
-## Boundaries and next work
+This reuses a concept derivative; it is not new bespoke portrait coverage or an approved historical-artwork library. No original genealogy, cultural records, identifiers, progress format, dataset, or scientific values changed. Linux Chrome coverage does not include Windows storage, full accessibility/screen-reader/contrast, or cultural/scientific review. Existing external artwork previews are optional and HTTP(S) was blocked during deterministic capture.
 
-No new artwork, scientific claims, paleomaps, taxonomy, date values or progress/storage migration. Triassic art remains procedural; goal-like cinematic artwork still needs individual creation/review. T021 canonical taxon provenance remains open. Browser coverage is Linux Chrome, not Windows storage, folder-picker, exhaustive accessibility, screen-reader or scientific validation.
-
-Next: continue WL-006 with a similarly scoped Brain or Mythology visual batch against both goal references. Preserve originals, add an explicit standalone version, rerun the browser matrix and source-preservation checks, produce comparisons and open feh, then release the validated batch.
+Next scoped WL-006 candidate: Brain layout, with truthful schematic/estimated-depth labels and preserved hierarchy, regions/circuits, time filters and explanatory panels. Continue source-preserving standalone builds, browser checks, actual-versus-goal evidence/feh, and routine validated releases.

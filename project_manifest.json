@@ -13,7 +13,7 @@
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
       "visual_evidence": "docs/visual-reviews/0.1.1/brain-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.2.0/report.json",
+        "report": "docs/browser-tests/0.3.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
       }
     },
@@ -26,7 +26,7 @@
       "verification_scope": "Standalone visual release derived from preserved 1.18 baseline; original data/scripts retained, presentation adapter and title added. Runtime/scientific verification scope is recorded separately.",
       "visual_evidence": "docs/visual-reviews/0.2.0/deep-time-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.2.0/report.json",
+        "report": "docs/browser-tests/0.3.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
       },
       "baseline_source": "atlas/widgets/Deep_Time_Atlas_v1.18.html"
@@ -42,16 +42,17 @@
     },
     {
       "slug": "mythology",
-      "release_version": "1.13",
-      "authoritative_source": "atlas/widgets/Mythology_Atlas_v1.13.html",
+      "release_version": "1.14.0",
+      "authoritative_source": "atlas/widgets/Mythology_Atlas_v1.14.0.html",
       "verified": true,
-      "sha256": "c674057629c975b1f54e64be6f831660ce9ff19d563d78a2216dc2ec12dc0c19",
-      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.1/mythology-evidence.json",
+      "sha256": "a8b8a6813216ebd4cf9afa81c3cc1e0d6db7c0c829c937b9a007a5de8dec3d03",
+      "verification_scope": "Derived standalone visual release; original 1.13 records/control source retained with appended presentation and verified local featured artwork. Scientific/cultural approval is not implied.",
+      "visual_evidence": "docs/visual-reviews/0.3.0/mythology-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.2.0/report.json",
+        "report": "docs/browser-tests/0.3.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
-      }
+      },
+      "baseline_source": "atlas/widgets/Mythology_Atlas_v1.13.html"
     },
     {
       "slug": "muscles",
@@ -135,11 +136,11 @@
     "verification_scope": "Imported source identity and JavaScript syntax; existing dashboard decisions are project metadata, not approved requirements."
   },
   "repository": {
-    "release_version": "0.2.0",
+    "release_version": "0.3.0",
     "version_file": "VERSION",
     "tag_format": "v{version}",
     "changelog": "CHANGELOG.md",
     "backlog": "TODO.md",
-    "browser_regression_report": "docs/browser-tests/0.2.0/report.json"
+    "browser_regression_report": "docs/browser-tests/0.3.0/report.json"
   }
 }

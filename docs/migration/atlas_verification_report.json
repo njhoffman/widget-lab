@@ -64,8 +64,8 @@
     },
     {
       "slug": "mythology",
-      "version": "1.13",
-      "source": "atlas/widgets/Mythology_Atlas_v1.13.html"
+      "version": "1.14.0",
+      "source": "atlas/widgets/Mythology_Atlas_v1.14.0.html"
     },
     {
       "slug": "muscles",
@@ -85,8 +85,8 @@
   ],
   "javascript_syntax": {
     "status": "pass",
-    "html_files": 16,
-    "scripts": 47
+    "html_files": 17,
+    "scripts": 54
   },
   "errors": [],
   "limitations": [

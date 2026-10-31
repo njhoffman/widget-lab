@@ -1,5 +1,23 @@
 # Mythology — release history
 
+## [1.14.0] - 2026-10-30
+
+### Added
+
+- Artwork-first selected-figure stage with explicit Artwork / Family tree controls and compact search header.
+- Verified existing Greek Zeus concept image embedded for offline rendering with modern/AI interpretation disclosure.
+- Separate source-preserving standalone build and expanded mode/filter/tradition/relationship browser checks.
+
+### Fixed
+
+- Related-figure thumbnails now use the active tradition's asset key.
+- Selected profiles begin at their heading after figure changes; tree-only legends stay hidden in artwork mode.
+
+### Preserved
+
+- Original 1.13 HTML, figure IDs, records, genealogy/relationship handlers, filters, name controls, cultural caveats, and historical entries.
+
+
 <!-- Bring forward all VERIFIED historical releases from existing files; none are inferred yet. -->
 
 ## Unreleased — repository migration, 2026-10-30

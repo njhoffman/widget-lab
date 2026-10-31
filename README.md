@@ -1,6 +1,6 @@
 # Widget Lab
 
-Standalone Atlas and Quiz widgets, scientific data, and reviewed specifications managed in Git. **Atlas is the current priority.** Deep Time Atlas 1.19.0 is the first goal-directed visual update; other Atlas builds and the imported v1.21 dashboard are preserved. Quiz remains an unverified scaffold.
+Standalone Atlas and Quiz widgets, scientific data, and reviewed specifications managed in Git. **Atlas is the current priority.** Deep Time Atlas 1.19.0 and Mythology Atlas 1.14.0 now have goal-directed visual updates; other builds and the imported v1.21 dashboard are preserved. Quiz remains an unverified scaffold.
 
 From the repository root, start Atlas with:
 
@@ -12,7 +12,7 @@ Open <http://localhost:8765/current.html> for current builds. The [original mast
 
 The visual direction is [goal_1.png](atlas/images/goal_1.png) and [goal_2.png](atlas/images/goal_2.png). Read the [Atlas context](docs/context/atlas_master.md), [visual specification](atlas/specs/visual-direction.md), and [latest handoff](docs/handoffs/latest.md) before making changes. The pictures define direction; their sample versions, counts, and anatomical imagery are not verified application data.
 
-Verified imported source identities are recorded in [project_manifest.json](project_manifest.json). The seven original widget HTML files remain in `atlas/widgets/` with their delivered names and layout so existing paths work. Deep Time presentation sources now live in `atlas/widgets/deep-time/src/`; build its current standalone HTML with `python3 tools/build_deep_time.py`. Other component `src/` placeholders remain empty. `python3 tools/build_atlas_index.py` refreshes the current-build launch page from the manifest. Historical changelogs remain embedded in the original HTML and in `atlas/docs/`.
+Verified imported source identities are recorded in [project_manifest.json](project_manifest.json). The seven original widget HTML files remain in `atlas/widgets/` with their delivered names and layout so existing paths work. Deep Time and Mythology presentation sources live in their component `src/` folders; build standalone HTML with `python3 tools/build_deep_time.py` or `python3 tools/build_mythology.py`. Other component `src/` placeholders remain empty. `python3 tools/build_atlas_index.py` refreshes the current-build launch page from the manifest. Historical changelogs remain embedded in the original HTML and in `atlas/docs/`.
 
 Repository version is in [VERSION](VERSION); dated changes are in [CHANGELOG.md](CHANGELOG.md). Releases use annotated `vX.Y.Z` GitHub tags. The [live TODO](TODO.md) tracks categories, priorities, acceptance criteria, issues, and proposed suggestions. See the [batch workflow](docs/development-workflow.md) for task/spec synchronization and authorized commit/tag/push behavior.
 
@@ -29,7 +29,7 @@ python3 tools/check_project.py
 python3 -m unittest discover -s tests -v
 ```
 
-Run `python3 tools/test_atlas_browser.py` for the real-input Chrome regression matrix across Deep Time, Brain, and Mythology at 390/768/1440px. The [0.2.0 results](docs/browser-tests/0.2.0/README.md) pass all 45 scenario checks, including the new Deep Time presentation assertions, and retain selected-state screenshots. Project checks reject incomplete matrices or reports for outdated source hashes. Storage, Windows, full accessibility, and scientific reviews remain separate.
+Run `python3 tools/test_atlas_browser.py` for the real-input Chrome regression matrix across Deep Time, Brain, and Mythology at 390/768/1440px. The [0.3.0 results](docs/browser-tests/0.3.0/README.md) pass all 45 scenario checks, including Deep Time and Mythology presentation assertions, and retain selected-state screenshots. Project checks reject incomplete matrices or reports for outdated source hashes. Storage, Windows, full accessibility, and scientific reviews remain separate.
 
 Python 3.9+, Node.js, and Python `jsonschema` are needed for all checks. Without `jsonschema` or Node, the respective audit reports incomplete validation and exits nonzero. These tools check file integrity, schemas, source identity, and JavaScript syntax. Interactive browser, accessibility, folder-picker, persistence, and scientific review remain separate work.
 

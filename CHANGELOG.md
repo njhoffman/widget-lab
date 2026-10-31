@@ -4,6 +4,24 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-30
+
+### Added
+
+- Mythology Atlas 1.14.0 with an artwork-first figure stage, clear view controls, compact search header, and refined profile styling.
+- Verified existing Greek Zeus concept artwork embedded offline with its modern/AI interpretation disclosure; no new artworks or cultural approvals.
+- Source-preservation and featured-asset tests plus browser checks for mode/selection retention, filters, names, genealogy navigation, and all five traditions.
+
+### Fixed
+
+- Related-figure thumbnails resolve within the selected tradition instead of searching Greek first.
+- New figure profiles reset to their heading, and artwork mode hides genealogy-only legends.
+- Regression screenshots reset scrolling instantly so inherited smooth scrolling cannot crop the page header.
+
+### Changed
+
+- Current-build launch page now opens Mythology 1.14.0 while preserving the original standalone and imported dashboards.
+
 ## [0.2.0] - 2026-10-30
 
 ### Added
