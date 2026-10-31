@@ -124,6 +124,8 @@ def task_lists(widget):
         related.update(('WL-011', 'WL-012', 'WL-013', 'WL-015'))
     if widget == 'Mythology Atlas':
         related.update(('WL-016', 'WL-017', 'WL-018'))
+    if widget == 'Brain Atlas':
+        related.update(('WL-019', 'WL-020', 'WL-021'))
     done, pending = [], []
     for match in TASK.finditer((ROOT / 'TODO.md').read_text()):
         if match[2] in related:
@@ -183,13 +185,23 @@ def main():
                 component = next(c for c in registry['atlas'] if c['slug'] == slug)
                 source = ROOT / component['authoritative_source']
                 browser.events.clear()
+                capture_checks = {}
                 browser.navigate(source, 1440, 1000)
                 if slug == 'deep-time':
                     browser.evaluate("drill('triassic'); true")
                     selection = 'Triassic interval'
                 elif slug == 'brain':
                     browser.evaluate("(()=>{const n=[...document.querySelectorAll('svg circle, svg [role=button]')].find(n=>n.textContent.includes('Orbitofrontal'));if(!n)throw Error('OFC marker missing');n.dispatchEvent(new MouseEvent('click',{bubbles:true}));return true})()")
-                    selection = 'Orbitofrontal cortex, lateral schematic'
+                    browser.evaluate("(()=>{const b=document.getElementById('depthButton');if(b.getAttribute('aria-pressed')!=='true')b.click();return true})()")
+                    strength = browser.evaluate("document.getElementById('awDepthStrength').selectedOptions[0].textContent")
+                    selection = f'Orbitofrontal cortex, lateral schematic; estimated depth on ({strength.lower()})'
+                    if component['release_version'] == '1.22.0':
+                        browser.call('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-motion', 'value': 'reduce'}]})
+                        reduced = browser.evaluate("getComputedStyle(document.querySelector('#tree .region.sel')).transitionDuration==='0s'")
+                        browser.call('Emulation.setEmulatedMedia', {'features': []})
+                        if not reduced:
+                            raise RuntimeError('Brain controls ignore reduced-motion preference')
+                        capture_checks['reduced_motion_control_transition'] = 'pass'
                 elif slug == 'mythology':
                     browser.evaluate("selectFigure('zeus'); true")
                     browser.evaluate("(()=>{if(!document.getElementById('profileHead').innerText.includes('Zeus'))throw Error('Zeus selection failed');return true})()")
@@ -210,6 +222,7 @@ def main():
                             'actual_sha256': digest(actual), 'viewport': [1440, 1000], 'selection': selection,
                             'goals': [{'path': str(g['path'].relative_to(ROOT)), 'sha256': digest(g['path']), 'crop': g['crop'], 'approval': g['approval']} for g in goals],
                             'complete': done, 'pending': pending,
+                            'capture_checks': capture_checks,
                             'runtime_exceptions': [e['params']['exceptionDetails'] for e in browser.events if e.get('method') == 'Runtime.exceptionThrown'],
                             'review_scope': 'Fresh browser rendering and selected state only; full functional/scientific review pending.'}
                 page = output / f'{slug}-comparison.html'

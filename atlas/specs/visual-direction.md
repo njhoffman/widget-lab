@@ -1,7 +1,7 @@
 # Atlas visual direction
 
 **Status:** APPROVED direction and migration safeguards; implementation backlog is proposed.  
-**Spec revision:** 5  
+**Spec revision:** 6  
 **Last reviewed:** 2026-10-30  
 **Authority:** User's request to prioritize Atlas and `goal_1.png` / `goal_2.png`, followed by authorization to curate and finish repository setup.
 
@@ -71,3 +71,11 @@ Age labels retain recent four-decimal boundaries, including Holocene 0.0117 Ma. 
 Mythology 1.14.0 continues WL-006 with an artwork-first stage, clear Artwork / Family tree controls, compact search header, readable profile, and tradition-correct related thumbnails. It reuses the verified existing Greek Zeus concept with explicit modern/AI interpretation and review caveats; other figures retain their current local illustrations. Original 1.13 data/control source and historical entries are preserved in the new standalone build.
 
 Mode changes retain selected figure identity; original filters, name controls and genealogy tools remain functional. Related thumbnails use the current tradition rather than searching Greek first. Newly selected profiles begin at their heading, and tree-only labels are hidden in artwork mode. Cross-viewport browser checks and byte-preservation tests are required. Bespoke portraits, historical gallery licensing/provenance, and remaining Brain/general layout work remain pending.
+
+## Brain visual implementation — repository 0.4.0
+
+Brain 1.22.0 continues WL-006 with native projection/estimated-depth controls in the compact header, a larger live selected-region summary, clear scientific details, and orientation/depth context moved off the interactive map. Authored SVG paths, region/circuit records, transforms, clinical/evolutionary text and native depth mathematics are preserved unchanged. The original 1.21 file remains intact.
+
+Depth strength is inactive while depth is off; original Low/Medium/High choices and cue behavior remain. Authored schematic/not-volumetric labels stay visible beside the drawing. References remain orientation-only; registered 3D, new calibrated assets and selected-structure inset overlays remain pending. Mobile hierarchy controls must retain usable widths, and source-preserving builds plus native browser checks cover projections, depth, time filters, keyboard/hierarchy selection and reduced motion.
+
+Fresh Brain comparisons select OFC, lateral schematic, estimated depth on at Medium to match the goal reference's mode; startup defaults are unchanged. This configuration is recorded in evidence and differs from older depth-off comparison snapshots. The broad WL-006 visual/artwork work remains in progress beyond these first three primary-widget batches.

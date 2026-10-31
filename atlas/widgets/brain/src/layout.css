@@ -1,0 +1,87 @@
+/* Brain 1.22.0 presentation; no region geometry or native depth calculations change. */
+html.wl-brain-layout { --wl-cyan:#61e8ed;--wl-line:#245a70; }
+.wl-brain-layout body { background:radial-gradient(ellipse at 65% 0,#173b50 0,transparent 52%),#06111b; }
+.wl-brain-layout .shell { max-width:1800px;padding:12px 14px 28px;margin:auto; }
+.wl-brain-layout #aw-header-family { display:grid!important;grid-template-columns:220px minmax(340px,1fr) auto auto!important;grid-template-areas:none!important;align-items:center!important;gap:12px!important;padding:11px 12px!important;min-height:68px!important;border:1px solid var(--wl-line)!important;border-radius:12px!important;background:linear-gradient(110deg,#071725,#0b2334,#071725)!important; }
+.wl-brain-layout #aw-header-family .atlas-family-brand { grid-column:1!important;grid-row:1!important;min-width:0!important; }
+.wl-brain-layout #aw-header-family .segmented { grid-column:2!important;grid-row:1!important;min-width:0; }
+.wl-brain-layout #wl-depth-control { grid-column:3!important;grid-row:1!important;display:flex;align-items:center;gap:7px;color:#b7d2df;font-size:11px;white-space:nowrap; }
+.wl-brain-layout #aw-header-family .atlas-family-right { grid-column:4!important;grid-row:1!important;margin:0!important;gap:6px!important; }
+.wl-brain-layout .atlas-family-copy h1 { font-size:24px!important; }
+.wl-brain-layout .segmented { padding:3px;gap:3px;border-color:#28576e;background:#071a2a; }
+.wl-brain-layout .segmented button { flex:1 0 auto;padding:8px 9px;font-size:11px;white-space:nowrap; }
+.wl-brain-layout .segmented button.on { background:var(--wl-cyan)!important;color:#051b26!important;border-color:#84f8f0!important; }
+.wl-brain-layout #awDepthStrength { border:1px solid #2e6579;border-radius:7px;padding:8px;background:#0a2130;color:#d2eefa;font-size:11px; }
+.wl-brain-layout #awDepthStrength:disabled { opacity:.5; }
+.wl-brain-layout #aw-header-family .atlas-status,
+.wl-brain-layout #aw-header-family .atlas-family-version { font-size:10px!important;padding:6px 8px!important;min-height:34px!important; }
+.wl-brain-layout .workspace { display:grid;grid-template-columns:240px minmax(0,1fr) 350px;gap:12px;align-items:start;margin-top:12px; }
+.wl-brain-layout .workspace>.left { grid-column:1;grid-row:1; }
+.wl-brain-layout .workspace>.center { grid-column:2;grid-row:1; }
+.wl-brain-layout #details { grid-column:3;grid-row:1; }
+.wl-brain-layout .panel { min-width:0;border-color:var(--wl-line);border-radius:12px;background:linear-gradient(150deg,#0d2030,#081522); }
+.wl-brain-layout .left-top { padding:13px; }
+.wl-brain-layout #tree { max-height:760px;overflow-y:auto;scrollbar-width:thin; }
+.wl-brain-layout .division-btn { border-radius:8px; }
+.wl-brain-layout .region.sel { border-color:var(--wl-cyan);background:#113344;box-shadow:inset 0 0 0 1px #5be5ed33; }
+.wl-brain-layout .map-top { padding:14px 15px 9px;gap:10px; }
+.wl-brain-layout .map-title-row { display:block; }
+.wl-brain-layout .map-context { width:100%;min-width:0; }
+.wl-brain-layout .map-selection { display:flex;gap:7px;flex-wrap:wrap;align-items:center; }
+.wl-brain-layout #focusMetric { background:transparent;border:0;padding:0; }
+.wl-brain-layout #focusLabel { font-size:22px;line-height:1.25;color:#e8f8ff;letter-spacing:-.02em; }
+.wl-brain-layout .optional-metric[hidden] { display:none!important; }
+.wl-brain-layout #selectedEra { color:#83ebd8; }
+.wl-brain-layout .aw-v19-brain-callout { position:static!important;inset:auto!important;margin-top:8px;max-width:none;width:auto;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:7px 10px!important;box-shadow:none!important;background:#0a2634!important;border-color:#285e72!important; }
+.wl-brain-layout .aw-v19-brain-callout strong { font-size:12px; }
+.wl-brain-layout .aw-v19-brain-callout small { font-size:11px;color:#accad8; }
+.wl-brain-layout .brain-stage { margin:0 12px;min-height:330px;flex-direction:column;align-items:stretch;border:1px solid #245367;background:radial-gradient(ellipse at 45% 40%,#244e6b77,#071421 78%)!important;box-shadow:inset 0 0 35px #04121e!important; }
+.wl-brain-layout #wl-brain-map-note { margin:0;padding:8px 10px;font-size:10px;color:#a7c9d9;line-height:1.5; }
+.wl-brain-layout #brain { display:block;width:100%;height:auto;max-height:470px;filter:drop-shadow(0 10px 15px #0005); }
+.wl-brain-layout #wl-brain-context { display:flex;align-items:stretch;gap:10px;margin:10px 12px;min-width:0; }
+.wl-brain-layout .aw-brain-view-card { position:static!important;inset:auto!important;width:180px!important;max-width:180px;flex:0 0 180px;padding:8px;box-shadow:none!important;background:#0a2030!important; }
+.wl-brain-layout .aw-brain-view-card img { height:78px!important; }
+.wl-brain-layout #awDepthLegend { flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:12px;background:#0a2030;border:1px solid #285d71;border-radius:10px;font-size:11px;color:#b8d4e0; }
+.wl-brain-layout #awDepthLegend[hidden] { display:none!important; }
+.wl-brain-layout .aw-depth-spectrum { width:100%;height:8px; }
+.wl-brain-layout .aw-v19-brain-guide { margin:7px 0 0;font-size:11px; }
+.wl-brain-layout .map-key { padding:7px 13px; }
+.wl-brain-layout .map-caption { padding:8px 13px; }
+.wl-brain-layout .history-card { margin:0 12px 12px;border-radius:9px; }
+.wl-brain-layout #details { padding:16px;gap:12px;max-height:calc(100vh - 110px);overflow-y:auto;scrollbar-width:thin;position:sticky;top:12px;overscroll-behavior:contain; }
+.wl-brain-layout #details h2 { font-size:28px;line-height:1.2;letter-spacing:-.025em; }
+.wl-brain-layout #details .intro { font-size:13px;line-height:1.65; }
+.wl-brain-layout #awBrainContextNav { border-color:#34798c;background:#0b2a37; }
+.wl-brain-layout .detail-block h3 { color:#8ee7e7; }
+.wl-brain-layout :is(button,input,select,a):focus-visible { outline:2px solid #b2ffff!important;outline-offset:3px!important; }
+@media(min-width:760px) and (max-width:1199px) {
+ .wl-brain-layout #aw-header-family { grid-template-columns:minmax(0,1fr) auto!important; }
+ .wl-brain-layout #aw-header-family .atlas-family-right { grid-column:2!important; }
+ .wl-brain-layout #aw-header-family .segmented { grid-column:1!important;grid-row:2!important; }
+ .wl-brain-layout #wl-depth-control { grid-column:2!important;grid-row:2!important; }
+ .wl-brain-layout .workspace { grid-template-columns:210px minmax(0,1fr); }
+ .wl-brain-layout #details { grid-column:1/-1;grid-row:2;display:flex;position:static;max-height:none;overflow:visible; }
+ .wl-brain-layout .brain-stage { min-height:280px; }
+}
+@media(max-width:759px) {
+ .wl-brain-layout .shell { padding:10px; }
+ .wl-brain-layout #aw-header-family { grid-template-columns:minmax(0,1fr)!important;gap:10px!important; }
+ .wl-brain-layout #aw-header-family .atlas-family-brand { grid-column:1!important;grid-row:1!important; }
+ .wl-brain-layout #aw-header-family .atlas-family-right { grid-column:1!important;grid-row:2!important;justify-content:flex-start!important; }
+ .wl-brain-layout #aw-header-family .segmented { grid-column:1!important;grid-row:3!important;flex-wrap:wrap; }
+ .wl-brain-layout #wl-depth-control { grid-column:1!important;grid-row:4!important; }
+ .wl-brain-layout .workspace { grid-template-columns:minmax(0,1fr); }
+ .wl-brain-layout .workspace>.center { grid-column:1;grid-row:1; }
+ .wl-brain-layout .workspace>.left { grid-column:1;grid-row:2; }
+ .wl-brain-layout #details { grid-column:1;grid-row:3;display:flex;position:static;max-height:none;overflow:visible; }
+ .wl-brain-layout #tree { max-height:420px; }
+ .wl-brain-layout .brain-stage { margin:0 8px;min-height:0; }
+ .wl-brain-layout #wl-brain-context { margin:9px 8px;flex-wrap:wrap; }
+ .wl-brain-layout .aw-brain-view-card { flex-basis:125px;width:125px!important; }
+ .wl-brain-layout #awDepthLegend { flex:1 1 155px; }
+ .wl-brain-layout #focusLabel { font-size:20px; }
+ .wl-brain-layout #details h2 { font-size:25px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .wl-brain-layout *, .wl-brain-layout *::before, .wl-brain-layout *::after { scroll-behavior:auto!important;transition:none!important;animation:none!important; }
+}

@@ -17,9 +17,9 @@
       "family": "atlas",
       "slug": "brain",
       "html_sources": [
-        "atlas/widgets/Brain_Atlas_v1.21.html"
+        "atlas/widgets/Brain_Atlas_v1.22.0.html"
       ],
-      "release_version": "1.21",
+      "release_version": "1.22.0",
       "verified": true
     },
     {

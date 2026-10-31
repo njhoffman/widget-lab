@@ -75,6 +75,8 @@ class Suite:
         if dimensions['scroll'] > dimensions['width'] + 2:
             raise AssertionError(f'Horizontal document overflow: {dimensions}')
         self.require("[...document.querySelectorAll('h1,.atlas-family-version')].filter(n=>n.getBoundingClientRect().width).every(n=>{const r=n.getBoundingClientRect();return r.left>=-1&&r.right<=innerWidth+1})", 'Title/version control clips outside viewport')
+        if self.context['widget'] == 'brain' and self.context['version'] == '1.22.0':
+            self.require("(()=>{const r=document.querySelector('.workspace>.left').getBoundingClientRect();return r.width>=180&&r.left>=0&&r.right<=innerWidth+1})()", 'Brain hierarchy panel collapsed or clipped outside the viewport')
 
     def keyboard_history(self):
         self.evaluate("document.querySelector('.atlas-family-version').focus()")
@@ -146,6 +148,60 @@ class Suite:
         self.click('#timelineDone')
         self.click('#timelineReset')
         self.require("document.getElementById('timelineOpen').innerText.includes('550')", 'Time reset did not restore original window')
+        if self.context['version'] == '1.22.0':
+            self.require("document.getElementById('aw-header-family').contains(document.getElementById('lateralButton')) && document.getElementById('aw-header-family').contains(document.getElementById('awDepthStrength'))", 'Projection/depth controls are missing from the header')
+            if self.context['width'] >= 1200:
+                self.require("document.getElementById('aw-header-family').getBoundingClientRect().height<=100", 'Brain desktop header is not compact')
+            self.require("!document.querySelector('.brain-stage').contains(document.querySelector('.aw-brain-view-card')) && !document.querySelector('.brain-stage').contains(document.getElementById('awDepthLegend'))", 'Reference/depth context still covers interactive markers')
+            if self.evaluate("document.getElementById('depthButton').getAttribute('aria-pressed')==='true'"):
+                self.click('#depthButton')
+            self.require("document.getElementById('awDepthStrength').disabled", 'Depth strength should be inactive while depth is off')
+            self.evaluate("document.querySelector('#brainHits [aria-label=\"Select Orbitofrontal cortex (OFC)\"]').focus()")
+            self.key('Enter', 13)
+            self.require("document.getElementById('focusLabel').innerText.includes('Orbitofrontal') && document.querySelector('#details h2').innerText.includes('Orbitofrontal')", 'Keyboard marker selection lost the region/detail identity')
+            references = set()
+            for selector in ('#lateralButton', '#medialButton', '#axialButton'):
+                self.click(selector)
+                self.require("document.getElementById('focusLabel').innerText.includes('Orbitofrontal') && document.querySelector('#tree .region.sel').innerText.includes('Orbitofrontal')", 'Projection change lost selected region or hierarchy state')
+                self.require("(()=>{const c=document.querySelector('#brainSelected circle');const v=document.getElementById('brain').viewBox.baseVal;const x=Number(c?.getAttribute('cx')),y=Number(c?.getAttribute('cy'));return c&&x>=v.x&&x<=v.x+v.width&&y>=v.y&&y<=v.y+v.height})()", 'Selected marker lies outside the authored projection bounds')
+                references.add(self.evaluate("document.querySelector('.aw-brain-view-card img').getAttribute('src')"))
+                before = self.evaluate("Number(document.querySelector('#brainHits [aria-label=\"Select Thalamus\"]').getAttribute('fill-opacity'))")
+                self.click('#depthButton')
+                self.require(f"Number(document.querySelector('#brainHits [aria-label=\"Select Thalamus\"]').getAttribute('fill-opacity'))<{before} && document.getElementById('focusLabel').innerText.includes('Orbitofrontal')", 'Projection-specific depth toggle did not change cues while retaining selection')
+                self.click('#depthButton')
+                self.require(f"Number(document.querySelector('#brainHits [aria-label=\"Select Thalamus\"]').getAttribute('fill-opacity'))==={before}", 'Projection-specific depth off did not restore native opacity')
+            if len(references) != 3:
+                raise AssertionError('Projection reference did not update for all three views')
+            self.click('#lateralButton')
+            marker = "document.querySelector('#brainHits [aria-label=\"Select Thalamus\"]')"
+            baseline = self.evaluate(f"[Number({marker}.getAttribute('fill-opacity')),Number({marker}.getAttribute('r'))]")
+            self.click('#depthButton')
+            self.require("!document.getElementById('awDepthStrength').disabled && !document.getElementById('awDepthLegend').hidden", 'Enabled depth lost its native strength/legend controls')
+            cues = []
+            self.evaluate("document.getElementById('awDepthStrength').focus()")
+            self.key('Home', 36)
+            for index in range(3):
+                if index:
+                    self.key('ArrowDown', 40)
+                cues.append(self.evaluate(f"[Number({marker}.getAttribute('fill-opacity')),Number({marker}.getAttribute('r'))]"))
+                self.require("document.querySelector('#brainSelected circle').getAttribute('r')==='5' && document.querySelector('#brainSelected circle').getAttribute('fill')==='#f8ffff' && document.getElementById('focusLabel').innerText.includes('Orbitofrontal')", 'Depth strength altered selected marker clarity or identity')
+            if not all(cues[0][i] > cues[1][i] > cues[2][i] for i in (0, 1)):
+                raise AssertionError(f'Low/medium/high depth did not change opacity and radius monotonically: {cues}')
+            self.click('#depthButton')
+            restored = self.evaluate(f"[Number({marker}.getAttribute('fill-opacity')),Number({marker}.getAttribute('r'))]")
+            if restored != baseline:
+                raise AssertionError('Turning depth off did not restore native cue attributes')
+            self.require("document.querySelector('.brain-stage').innerText.includes('not volumetric') && document.querySelector('.aw-brain-view-card').innerText.includes('not 3D')", 'Schematic/orientation limitations are not visible')
+            total = self.evaluate("Number(document.getElementById('visibleCount').innerText)")
+            self.click('#timelineOpen')
+            self.click('#presets [data-old="70"][data-young="0"]')
+            self.require(f"Number(document.getElementById('visibleCount').innerText)<{total} && document.getElementById('focusLabel').innerText.includes('Orbitofrontal')", 'Evolutionary preset failed to filter counts while retaining the eligible selected region')
+            self.click('#timelineDone')
+            self.click('#timelineReset')
+            self.require(f"Number(document.getElementById('visibleCount').innerText)==={total}", 'Reset did not restore the original visible region count')
+            self.require("document.querySelector('#tree .region.sel').getBoundingClientRect().width>=150", 'Selected hierarchy control is too narrow to remain usable')
+            self.click('#tree .region.sel')
+            self.require("document.getElementById('focusLabel').innerText.includes('Orbitofrontal')", 'Native hierarchy control failed to retain its selected region')
 
     def myth(self):
         self.text('#search', 'Zeus')

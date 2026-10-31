@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-30 · Repository release: 0.3.0
+Reviewed: 2026-10-30 · Repository release: 0.4.0
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -31,7 +31,7 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Test hierarchy/filter/selection/topic panels, keyboard focus, and 390/768/1440px layouts for Deep Time, Brain, and Mythology.
   Acceptance/evidence: [45/45 real-browser checks](docs/browser-tests/0.1.1/README.md) and nine selected-state screenshots at 390/768/1440px; original source hashes preserved. Spec: [visual direction r3](atlas/specs/visual-direction.md). Chrome/Linux coverage; storage/Windows/scientific checks remain separate.
 - [ ] **WL-006 — Refine the goal-image layout without scientific regressions.** (p1) [feature] [in-progress]
-  Work in small reviewed widget batches toward the two goal references; preserve existing controls and informative panels.
+  Work in small reviewed widget batches toward the two goal references; preserve existing controls and informative panels. First visual batches for Deep Time, Mythology and Brain are now complete; remaining art/fidelity/family-wide work is still open.
   Acceptance: browser checks pass and new real-versus-goal images show completed/pending items with source/version metadata. Depends on WL-005; speculative science and new anatomical geometry remain outside this scope.
 - [ ] **WL-007 — Import and verify Quiz sources.** (p2) [chore] [triage]
   Locate artifacts, verify actual versions/question IDs/storage formats, curate specs, and capture initial checks before enabling new features.
@@ -74,6 +74,17 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [x] **WL-018 — Keep figure context visible in the selected view.** (p1) [bug] [done]
   Artwork mode inherited a visible genealogy legend despite its hidden flag, and relationship navigation could retain the old profile scroll position. Hide tree-only labels in artwork mode and reset the profile pane when the figure/tradition key changes.
   Acceptance/evidence: view-state and parent/child assertions in the [browser report](docs/browser-tests/0.3.0/report.json); selected profile scrollTop is zero after figure changes. Regression snapshots use instant top scrolling.
+
+- [x] **WL-019 — Refine Brain controls, map, and selected-region layout.** (p1) [feature] [done]
+  Brain spec revision 4: compact native view/depth header, larger selected summary, non-overlapping orientation reference, and readable scientific details. Preserve geometry, markers, source records and handlers.
+  Acceptance/evidence: 1.22.0 source-preservation test, [full browser matrix](docs/browser-tests/0.4.0/README.md), and fresh goal comparison opened in feh.
+- [x] **WL-020 — Verify Brain depth cues and projection selection with truthful labels.** (p1) [test] [done]
+  Exercise native low/medium/high cue changes, projection/reference updates, keyboard marker selection, retained selected region and timeline reset at all target widths.
+  Acceptance/evidence: [browser report](docs/browser-tests/0.4.0/report.json) verifies cue opacity/size differences, crisp selected marker, unchanged identity/bounds, and estimated/schematic labels. Registered anatomy and clinical validation remain separate.
+
+- [x] **WL-021 — Keep Brain hierarchy controls usable in the mobile grid.** (p1) [bug] [done]
+  Screenshot review found a specificity conflict in the new mobile layout that could collapse the hierarchy into an implicit grid column despite no horizontal overflow. Match the responsive selectors and verify actual panel/control widths.
+  Acceptance/evidence: [browser report](docs/browser-tests/0.4.0/report.json) enforces in-bounds hierarchy width of at least 180px and clickable selected-control width of at least 150px at all target widths.
 
 ## 2. Shared UI and accessibility
 
@@ -226,10 +237,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 
 ## 4. Brain Atlas
 
-- [ ] **T025 — Verify existing: Schematic per-angle depth visualization.** (p1) [test] [needs-verification]
+- [x] **T025 — Verify existing: Schematic per-angle depth visualization.** (p1) [test] [done]
   Acceptance: Toggle on/off adjusts dots and preserves region selection
   Source: catalog `goals/T025`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.4.0 browser report](docs/browser-tests/0.4.0/README.md), native projection/depth/selection checks at 390/768/1440px; original source bytes preserved. Clinical/registered-anatomy validation remains separate.
 
 - [ ] **T027 — Upgrade from schematic to independently verified anatomical render assets.** (p1) [feature] [proposed]
   Acceptance: Licensed open 3D dataset with validated region overlays
@@ -239,10 +250,10 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
   Acceptance: More surface detail without implying voxel-accurate geometry
   Source: catalog `goals/T028`; historical status `partial`, priority `P0`.
 
-- [ ] **T029 — Verify existing: Keep existing region dots with exact click targets and view transforms.** (p1) [test] [needs-verification]
+- [x] **T029 — Verify existing: Keep existing region dots with exact click targets and view transforms.** (p1) [test] [done]
   Acceptance: Region selection stable across views/depth
   Source: catalog `goals/T029`; historical status `implemented`, priority `P0`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.4.0 browser report](docs/browser-tests/0.4.0/README.md), native projection/depth/selection checks at 390/768/1440px; original source bytes preserved. Clinical/registered-anatomy validation remains separate.
 
 - [ ] **T032 — Additional high-quality lateral/medial/dorsal/ventral view graphics.** (p1) [feature] [proposed]
   Acceptance: Distinct view images registered to projection markers
@@ -259,21 +270,23 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [ ] **T039 — Verify marker alignment and selection at every angle.** (p1) [feature] [proposed]
   Acceptance: All angles and mobile layouts tested
   Source: catalog `goals/T039`; historical status `planned`, priority `P0`.
+  Partial verification: Representative OFC marker bounds/identity pass across the three native views and target widths. All-region anatomical registration and broader mobile alignment/touch review remain open.
 
-- [ ] **I003 — Schematic depth is not calibrated 3D.** (p1) [bug] [triage]
+- [x] **I003 — Retain explicit schematic and estimated-depth labeling.** (p1) [bug] [done]
   Scope: Depth cue estimates are illustrative; no registered anatomical coordinate model.
   Acceptance: Retain schematic labeling or adopt verified registered model with provenance.
   Source: catalog `issues/I003`; historical status `open`, priority `P0`.
+  Evidence/resolution: [0.4.0 browser checks](docs/browser-tests/0.4.0/README.md) verify visible schematic/not-volumetric/orientation-only labels. Closed through the labeling alternative, not by claiming calibrated 3D. T027/T033 remain open.
 
 - [ ] **S003 — Improve brain centerpiece and selected-region emphasis.** (p1) [feature] [proposed]
   Scope: Keep schematic projection but refine shading, layering and selected-region focus.
   Acceptance: triage this proposal, record the decision and concrete criteria in the relevant spec, then validate with regression checks and actual-versus-goal evidence before completion.
   Source: catalog `suggestions/S003`; historical status `proposed`, priority `P0`.
 
-- [ ] **T026 — Verify existing: Low / medium / high depth strength.** (p1) [test] [needs-verification]
+- [x] **T026 — Verify existing: Low / medium / high depth strength.** (p1) [test] [done]
   Acceptance: Visible strength difference for same view
   Source: catalog `goals/T026`; historical status `implemented`, priority `P1`.
-  Required evidence: rerun the stated acceptance checks; imported completion is not a fresh pass.
+  Evidence: [0.4.0 browser report](docs/browser-tests/0.4.0/README.md), native projection/depth/selection checks at 390/768/1440px; original source bytes preserved. Clinical/registered-anatomy validation remains separate.
 
 - [ ] **T030 — Bright selected region outlines and location annotation.** (p1) [feature] [proposed]
   Acceptance: Selection spotlight accurate and unclipped
@@ -294,6 +307,7 @@ Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 item
 - [ ] **T037 — Current view inset with selected structure accurately indicated.** (p1) [feature] [proposed]
   Acceptance: Inset updates with angle and selection
   Source: catalog `goals/T037`; historical status `partial`, priority `P1`.
+  Partial verification: The existing orientation reference is now outside the map and updates across native views; a registered selected-structure overlay remains unimplemented.
 
 - [ ] **S004 — Persistent selected-region facts panel.** (p1) [feature] [proposed]
   Scope: Show function, evolution, clinical implications and transmitters using existing detail records.

@@ -49,8 +49,8 @@
   "active_versions": [
     {
       "slug": "brain",
-      "version": "1.21",
-      "source": "atlas/widgets/Brain_Atlas_v1.21.html"
+      "version": "1.22.0",
+      "source": "atlas/widgets/Brain_Atlas_v1.22.0.html"
     },
     {
       "slug": "deep-time",
@@ -85,8 +85,8 @@
   ],
   "javascript_syntax": {
     "status": "pass",
-    "html_files": 17,
-    "scripts": 54
+    "html_files": 18,
+    "scripts": 62
   },
   "errors": [],
   "limitations": [

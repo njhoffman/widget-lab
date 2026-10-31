@@ -20,7 +20,7 @@ All six scientific widgets match the delivered v1.20 source checksums. Launcher 
 
 ## Approved UI, scientific, and data requirements
 
-The user prioritized Atlas and selected `atlas/images/goal_1.png` and `goal_2.png` as direction. See `atlas/specs/visual-direction.md` revision 5 for the approved design language and regression constraints. Preserve scientific content, stable identifiers, historical changelogs, and browser progress formats. Repository setup and relevant context curation were explicitly authorized; raw account exports and transcripts stay private.
+The user prioritized Atlas and selected `atlas/images/goal_1.png` and `goal_2.png` as direction. See `atlas/specs/visual-direction.md` revision 6 for the approved design language and regression constraints. Preserve scientific content, stable identifiers, historical changelogs, and browser progress formats. Repository setup and relevant context curation were explicitly authorized; raw account exports and transcripts stay private.
 
 The images favor dark navy, cyan/mint accents, compact headers, illustrated selected-subject stages, and adjacent navigation/detail panels. Their versions and numerical badges are examples. The more compact second composition is useful for subsequent layout work without removing existing scientific panels.
 
@@ -75,3 +75,13 @@ Current source is `atlas/widgets/Mythology_Atlas_v1.14.0.html`, derived from pre
 Original records, IDs, filters, naming controls, genealogy handlers, and history are retained. Related thumbnails now use the active tradition's exact key; newly selected profiles start at their heading, and tree-only legends stay out of artwork mode. The full browser matrix covers all five traditions, native group/story/symbol filters, complementary names, parent/child links and view/selection retention. T043/T044/T045/T048 and WL-016/WL-017/WL-018 are complete; T041/T042/T047, historical gallery provenance, and broader WL-006 work remain open.
 
 Editable presentation is under `atlas/widgets/mythology/src/`; `tools/build_mythology.py` verifies baseline/featured-art hashes and builds a separate standalone. The current launch page points to it while imported dashboards/catalogs remain historical. Brain layout is the next scoped primary-widget candidate.
+
+## Brain visual update — repository 0.4.0
+
+Current Brain source is `atlas/widgets/Brain_Atlas_v1.22.0.html`, derived from preserved 1.21. The native projection/estimated-depth controls now sit in a compact responsive header; the selected-region summary is larger and the orientation reference/depth context no longer overlays the interactive map. Desktop details scroll locally while tablet/mobile details stay in document flow.
+
+Original authored geometry, transforms, region/circuit records, scientific text, handlers and depth calculations are retained verbatim. The drawing remains explicitly schematic, estimated, and not volumetric anatomy. Existing orientation reference graphics update with the native view; they do not show a registered selected-structure overlay.
+
+WL-019/WL-020/WL-021 and T025/T026/T029 are complete. I003 is closed through its explicit-labeling alternative; T027/T032/T033/T037/T039 retain their wider registered-asset, selected-inset and all-region alignment scope. Browser checks cover all three authored projections, retained OFC selection, native low/medium/high cues, keyboard/hierarchy controls, usable panel widths and time presets/reset. Mobile grid specificity was corrected after screenshot review exposed an otherwise no-overflow collapse.
+
+Fresh comparisons use OFC/lateral schematic with estimated depth on at Medium to match the goal reference. Startup stays unselected/depth-off; older comparison captures used depth-off and are retained unchanged. Remaining broader WL-006 art/fidelity and other family components are still pending.

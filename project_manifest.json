@@ -6,16 +6,17 @@
   "atlas": [
     {
       "slug": "brain",
-      "release_version": "1.21",
-      "authoritative_source": "atlas/widgets/Brain_Atlas_v1.21.html",
+      "release_version": "1.22.0",
+      "authoritative_source": "atlas/widgets/Brain_Atlas_v1.22.0.html",
       "verified": true,
-      "sha256": "e0d06998612440905f37ea2ab7ac686035132177b0f6bf4d8ac8c6acb71966dd",
-      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.1/brain-evidence.json",
+      "sha256": "a01fa7f9a05132926d6ebf52a28fb76e0aa09cbeceebcd76eaad190a832e526b",
+      "verification_scope": "Derived standalone visual release; original 1.21 geometry, records and handlers retained with appended presentation. Schematic/estimated depth is not registered anatomy.",
+      "visual_evidence": "docs/visual-reviews/0.4.0/brain-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.3.0/report.json",
+        "report": "docs/browser-tests/0.4.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
-      }
+      },
+      "baseline_source": "atlas/widgets/Brain_Atlas_v1.21.html"
     },
     {
       "slug": "deep-time",
@@ -26,7 +27,7 @@
       "verification_scope": "Standalone visual release derived from preserved 1.18 baseline; original data/scripts retained, presentation adapter and title added. Runtime/scientific verification scope is recorded separately.",
       "visual_evidence": "docs/visual-reviews/0.2.0/deep-time-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.3.0/report.json",
+        "report": "docs/browser-tests/0.4.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
       },
       "baseline_source": "atlas/widgets/Deep_Time_Atlas_v1.18.html"
@@ -49,7 +50,7 @@
       "verification_scope": "Derived standalone visual release; original 1.13 records/control source retained with appended presentation and verified local featured artwork. Scientific/cultural approval is not implied.",
       "visual_evidence": "docs/visual-reviews/0.3.0/mythology-evidence.json",
       "browser_verification": {
-        "report": "docs/browser-tests/0.3.0/report.json",
+        "report": "docs/browser-tests/0.4.0/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
       },
       "baseline_source": "atlas/widgets/Mythology_Atlas_v1.13.html"
@@ -136,11 +137,11 @@
     "verification_scope": "Imported source identity and JavaScript syntax; existing dashboard decisions are project metadata, not approved requirements."
   },
   "repository": {
-    "release_version": "0.3.0",
+    "release_version": "0.4.0",
     "version_file": "VERSION",
     "tag_format": "v{version}",
     "changelog": "CHANGELOG.md",
     "backlog": "TODO.md",
-    "browser_regression_report": "docs/browser-tests/0.3.0/report.json"
+    "browser_regression_report": "docs/browser-tests/0.4.0/report.json"
   }
 }

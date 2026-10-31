@@ -1,0 +1,295 @@
+{
+  "widget": "brain",
+  "widget_version": "1.22.0",
+  "repository_version": "0.4.0",
+  "captured_at": "2026-10-31T04:33:21.427259+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Brain_Atlas_v1.22.0.html",
+  "source_sha256": "a01fa7f9a05132926d6ebf52a28fb76e0aa09cbeceebcd76eaad190a832e526b",
+  "actual_sha256": "48ee84213e2ede79f4cdbf4a40a8b9a38ddb610be015df9ce254f1a45ae7cd31",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Orbitofrontal cortex, lateral schematic; estimated depth on (medium)",
+  "goals": [
+    {
+      "path": "atlas/images/goal_1.png",
+      "sha256": "ac6791493a099863f8cf109412176a3daf201e9c4f9b6c65bb358ea3d2347775",
+      "crop": [
+        828,
+        0,
+        708,
+        505
+      ],
+      "approval": "approved visual direction"
+    },
+    {
+      "path": "atlas/images/goal_2.png",
+      "sha256": "047dcaa91d5d2cb3966527acafab4f57c9c851992c5d10f9967bffa100fdf275",
+      "crop": [
+        0,
+        414,
+        1536,
+        332
+      ],
+      "approval": "approved visual direction"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-010",
+      "title": "Guard browser evidence against incomplete coverage and stale sources.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-019",
+      "title": "Refine Brain controls, map, and selected-region layout.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-020",
+      "title": "Verify Brain depth cues and projection selection with truthful labels.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-021",
+      "title": "Keep Brain hierarchy controls usable in the mobile grid.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T025",
+      "title": "Verify existing: Schematic per-angle depth visualization.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T029",
+      "title": "Verify existing: Keep existing region dots with exact click targets and view transforms.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "I003",
+      "title": "Retain explicit schematic and estimated-depth labeling.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T026",
+      "title": "Verify existing: Low / medium / high depth strength.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "in-progress"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T027",
+      "title": "Upgrade from schematic to independently verified anatomical render assets.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T028",
+      "title": "Create striking sculptural main brain centerpiece with dimensional shadows.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T032",
+      "title": "Additional high-quality lateral/medial/dorsal/ventral view graphics.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T033",
+      "title": "Correct 3D coordinates/volumetric mesh for depth and structures.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T038",
+      "title": "Show evolutionary dates with scientific uncertainty.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T039",
+      "title": "Verify marker alignment and selection at every angle.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S003",
+      "title": "Improve brain centerpiece and selected-region emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T030",
+      "title": "Bright selected region outlines and location annotation.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T031",
+      "title": "Near-to-far opacity, size and subtle desaturation cues.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T034",
+      "title": "Show large selected-region name with functional/evolution tags.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T035",
+      "title": "Tabs for evolutionary history / function & circuits / clinical relevance.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T037",
+      "title": "Current view inset with selected structure accurately indicated.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S004",
+      "title": "Persistent selected-region facts panel.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S020",
+      "title": "Add a coordinate-provenance route for future true depth.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T036",
+      "title": "Region-specific neurotransmitters and mechanisms.",
+      "priority": "p2",
+      "status": "proposed"
+    }
+  ],
+  "capture_checks": {
+    "reduced_motion_control_transition": "pass"
+  },
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "da4159070e24a5e66a9266c8c6cd3e28dcfec94336d755bed05a8a9d8b377a5a"
+}

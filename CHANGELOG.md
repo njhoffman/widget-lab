@@ -4,6 +4,22 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-30
+
+### Added
+
+- Brain Atlas 1.22.0 with a compact native projection/depth header, larger selected-region context, unobstructed interactive map, and responsive scientific details.
+- Source-preservation tests and browser checks for all native projections, selected-marker identity/bounds, depth strength cues, time filtering, and usable hierarchy controls.
+
+### Changed
+
+- Moved the orientation reference and depth context off the map; retained explicit schematic/estimated/not-volumetric labels and original native calculations.
+- Updated current-build links and Brain comparison configuration to demonstrate OFC with Medium estimated depth enabled. Startup defaults remain unchanged.
+
+### Fixed
+
+- Corrected a mobile grid specificity conflict that could collapse the hierarchy despite no horizontal overflow.
+
 ## [0.3.0] - 2026-10-30
 
 ### Added
