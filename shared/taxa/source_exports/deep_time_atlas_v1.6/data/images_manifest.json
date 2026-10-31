@@ -1,0 +1,521 @@
+{
+  "images": [
+    {
+      "image_key": "stromatolite",
+      "original_embedded_reference": "IMAGES[\"stromatolite\"]",
+      "relative_path": "images/stromatolite.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "becebeb749cb6d97700a02b9ee35cdaa702b87c9217e5ca491415266cbe32222",
+      "bytes": 28288,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "dickinsonia",
+      "original_embedded_reference": "IMAGES[\"dickinsonia\"]",
+      "relative_path": "images/dickinsonia.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "2cbd2bbe3ce91f69a24bac422a2b8ca5842a40a8b7863055a30bedd6d9bb5498",
+      "bytes": 27429,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "anomalocaris",
+      "original_embedded_reference": "IMAGES[\"anomalocaris\"]",
+      "relative_path": "images/anomalocaris.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "18d3788f589643d8148fd93af6b2174cab93f44a248dbef4e057e517f2ca027c",
+      "bytes": 20529,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "trilobite",
+      "original_embedded_reference": "IMAGES[\"trilobite\"]",
+      "relative_path": "images/trilobite.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "f1a7cb79249de3ba1000c9323110f39ea7f673d0aa27b8d1226ee0f70ddff7c8",
+      "bytes": 27137,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "horseshoe",
+      "original_embedded_reference": "IMAGES[\"horseshoe\"]",
+      "relative_path": "images/horseshoe.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "e3add0c9168a72b7d545007f3ab8f423b5d852ff6b178c5b0e8bf0343c772c89",
+      "bytes": 24471,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "ammonite",
+      "original_embedded_reference": "IMAGES[\"ammonite\"]",
+      "relative_path": "images/ammonite.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "5e4cab735d0c4df24796e391b3aa78a38d040b03bdfec069e2c90596522b7970",
+      "bytes": 22733,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "nautilus",
+      "original_embedded_reference": "IMAGES[\"nautilus\"]",
+      "relative_path": "images/nautilus.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "dee9b7b379545e6759d5695055e1c884450527b725c3d74ffe25178cb95b4cd2",
+      "bytes": 20510,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "dunkleosteus",
+      "original_embedded_reference": "IMAGES[\"dunkleosteus\"]",
+      "relative_path": "images/dunkleosteus.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "add8916232ec1b4c41a310c493aa0326d68c97bd7d754277b989e3ef1c7a18ae",
+      "bytes": 19156,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "coelacanth",
+      "original_embedded_reference": "IMAGES[\"coelacanth\"]",
+      "relative_path": "images/coelacanth.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "b29204e8b5f7773fc1bdf495260a486bea7ee2a2083662146599c6ac70741d78",
+      "bytes": 19332,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "tiktaalik",
+      "original_embedded_reference": "IMAGES[\"tiktaalik\"]",
+      "relative_path": "images/tiktaalik.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "09f6bf8f4057681c3344cd44e045130d36829b2bc2a71d4a4904d5629575cbd4",
+      "bytes": 21608,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "lungfish",
+      "original_embedded_reference": "IMAGES[\"lungfish\"]",
+      "relative_path": "images/lungfish.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "ee0956bea33d63ef0f3a1c502afcc95f25b2ed207553c5ec6e9d7c93fe4a6b99",
+      "bytes": 18256,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "ichthyostega",
+      "original_embedded_reference": "IMAGES[\"ichthyostega\"]",
+      "relative_path": "images/ichthyostega.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "8aafe76d19e6183e4e03b34d54ee7c7658478dc2cc027966f1686f286b14ed0d",
+      "bytes": 24414,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "dimetrodon",
+      "original_embedded_reference": "IMAGES[\"dimetrodon\"]",
+      "relative_path": "images/dimetrodon.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "015c6b366f15de64dd076a898f2d81ffa56eb1a41a373549491415c26626114e",
+      "bytes": 27967,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "lystrosaurus",
+      "original_embedded_reference": "IMAGES[\"lystrosaurus\"]",
+      "relative_path": "images/lystrosaurus.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "d9cd4044c7af266e0301bf69efbcb8be8df2e802eaea28e2cebd2fbe8c7e25b1",
+      "bytes": 25099,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "tuatara",
+      "original_embedded_reference": "IMAGES[\"tuatara\"]",
+      "relative_path": "images/tuatara.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "38bf1d6af9b2b641e0720d2a1fc1d09d5f326bed9715dad15c6f75e05d7cd662",
+      "bytes": 26826,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "tyrannosaurus",
+      "original_embedded_reference": "IMAGES[\"tyrannosaurus\"]",
+      "relative_path": "images/tyrannosaurus.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "edee541b69ec67a2f6dc218b687df9c02ba2b1c3e4de79d77feb78d002ff420f",
+      "bytes": 26899,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "magnolia",
+      "original_embedded_reference": "IMAGES[\"magnolia\"]",
+      "relative_path": "images/magnolia.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "a2c835d5d25f1f8406348c7aa22cfc530b2fc627b16634cc7341ddf37575d140",
+      "bytes": 5466,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "bird",
+      "original_embedded_reference": "IMAGES[\"bird\"]",
+      "relative_path": "images/bird.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "c8f67c722274738ea57ed91f9f2d399a45064d502ed3b616894291feb2ca71c1",
+      "bytes": 1772,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "insect",
+      "original_embedded_reference": "IMAGES[\"insect\"]",
+      "relative_path": "images/insect.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "bf09d1131af8edf570e05624c643ae85b9eb828b95ff1e20b04acf39c90f0cb8",
+      "bytes": 1921,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "earlymammal",
+      "original_embedded_reference": "IMAGES[\"earlymammal\"]",
+      "relative_path": "images/earlymammal.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "68227a6b5ce6fad51fe740638de89a1f57ea7c6d63b8066b72d670327dad87ff",
+      "bytes": 2143,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "triceratops",
+      "original_embedded_reference": "IMAGES[\"triceratops\"]",
+      "relative_path": "images/triceratops.png",
+      "mime_type": "image/png",
+      "sha256": "e568eaa1722c281192908e4016e4d85c5ec384088e7d0df99740ccd9a7b1087a",
+      "bytes": 88794,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "plesiosaur",
+      "original_embedded_reference": "IMAGES[\"plesiosaur\"]",
+      "relative_path": "images/plesiosaur.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "84b583cce9775037bedf17116100f0dbaeadc181650c8acd0008e0cd62717e54",
+      "bytes": 9339,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    },
+    {
+      "image_key": "mosasaur",
+      "original_embedded_reference": "IMAGES[\"mosasaur\"]",
+      "relative_path": "images/mosasaur.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "0337b2c1d27bdc6838d5ce0e7582d253f75af4308ad106a03cd0928f5adb318b",
+      "bytes": 11419,
+      "credit": "Source widget describes images as illustrative AI paleoart; original generation prompt/rights not supplied."
+    }
+  ],
+  "example_image_references": [
+    {
+      "taxon_id": "cyanobacteria",
+      "example_index": 0,
+      "example_name": "Stromatolite microbial mats",
+      "image_key": "stromatolite",
+      "resolved_file": "images/stromatolite.jpg"
+    },
+    {
+      "taxon_id": "cyanobacteria",
+      "example_index": 1,
+      "example_name": "Microbial mat communities",
+      "image_key": "stromatolite",
+      "resolved_file": "images/stromatolite.jpg"
+    },
+    {
+      "taxon_id": "ediacara",
+      "example_index": 0,
+      "example_name": "Dickinsonia",
+      "image_key": "dickinsonia",
+      "resolved_file": "images/dickinsonia.jpg"
+    },
+    {
+      "taxon_id": "radiodonta",
+      "example_index": 0,
+      "example_name": "Anomalocaris",
+      "image_key": "anomalocaris",
+      "resolved_file": "images/anomalocaris.jpg"
+    },
+    {
+      "taxon_id": "trilobita",
+      "example_index": 0,
+      "example_name": "Phacops / trilobite",
+      "image_key": "trilobite",
+      "resolved_file": "images/trilobite.jpg"
+    },
+    {
+      "taxon_id": "arthropoda",
+      "example_index": 0,
+      "example_name": "Trilobite",
+      "image_key": "trilobite",
+      "resolved_file": "images/trilobite.jpg"
+    },
+    {
+      "taxon_id": "arthropoda",
+      "example_index": 1,
+      "example_name": "Horseshoe crab",
+      "image_key": "horseshoe",
+      "resolved_file": "images/horseshoe.jpg"
+    },
+    {
+      "taxon_id": "chordata",
+      "example_index": 1,
+      "example_name": "Coelacanth",
+      "image_key": "coelacanth",
+      "resolved_file": "images/coelacanth.jpg"
+    },
+    {
+      "taxon_id": "mollusca",
+      "example_index": 0,
+      "example_name": "Ammonite",
+      "image_key": "ammonite",
+      "resolved_file": "images/ammonite.jpg"
+    },
+    {
+      "taxon_id": "mollusca",
+      "example_index": 1,
+      "example_name": "Chambered nautilus",
+      "image_key": "nautilus",
+      "resolved_file": "images/nautilus.jpg"
+    },
+    {
+      "taxon_id": "fishes",
+      "example_index": 0,
+      "example_name": "Dunkleosteus",
+      "image_key": "dunkleosteus",
+      "resolved_file": "images/dunkleosteus.jpg"
+    },
+    {
+      "taxon_id": "fishes",
+      "example_index": 1,
+      "example_name": "Coelacanth",
+      "image_key": "coelacanth",
+      "resolved_file": "images/coelacanth.jpg"
+    },
+    {
+      "taxon_id": "placodermi",
+      "example_index": 0,
+      "example_name": "Dunkleosteus",
+      "image_key": "dunkleosteus",
+      "resolved_file": "images/dunkleosteus.jpg"
+    },
+    {
+      "taxon_id": "sarcopterygii",
+      "example_index": 0,
+      "example_name": "Tiktaalik",
+      "image_key": "tiktaalik",
+      "resolved_file": "images/tiktaalik.jpg"
+    },
+    {
+      "taxon_id": "sarcopterygii",
+      "example_index": 1,
+      "example_name": "Coelacanth",
+      "image_key": "coelacanth",
+      "resolved_file": "images/coelacanth.jpg"
+    },
+    {
+      "taxon_id": "tetrapoda",
+      "example_index": 0,
+      "example_name": "Ichthyostega",
+      "image_key": "ichthyostega",
+      "resolved_file": "images/ichthyostega.jpg"
+    },
+    {
+      "taxon_id": "tetrapoda",
+      "example_index": 1,
+      "example_name": "Tuatara",
+      "image_key": "tuatara",
+      "resolved_file": "images/tuatara.jpg"
+    },
+    {
+      "taxon_id": "amniota",
+      "example_index": 0,
+      "example_name": "Dimetrodon",
+      "image_key": "dimetrodon",
+      "resolved_file": "images/dimetrodon.jpg"
+    },
+    {
+      "taxon_id": "amniota",
+      "example_index": 1,
+      "example_name": "Tuatara",
+      "image_key": "tuatara",
+      "resolved_file": "images/tuatara.jpg"
+    },
+    {
+      "taxon_id": "synapsida",
+      "example_index": 0,
+      "example_name": "Dimetrodon",
+      "image_key": "dimetrodon",
+      "resolved_file": "images/dimetrodon.jpg"
+    },
+    {
+      "taxon_id": "therapsida",
+      "example_index": 0,
+      "example_name": "Lystrosaurus",
+      "image_key": "lystrosaurus",
+      "resolved_file": "images/lystrosaurus.jpg"
+    },
+    {
+      "taxon_id": "dinosaurs",
+      "example_index": 0,
+      "example_name": "Tyrannosaurus rex",
+      "image_key": "tyrannosaurus",
+      "resolved_file": "images/tyrannosaurus.jpg"
+    },
+    {
+      "taxon_id": "dinosaurs",
+      "example_index": 1,
+      "example_name": "Modern birds",
+      "image_key": "bird",
+      "resolved_file": "images/bird.jpg"
+    },
+    {
+      "taxon_id": "aves",
+      "example_index": 1,
+      "example_name": "Modern bird",
+      "image_key": "bird",
+      "resolved_file": "images/bird.jpg"
+    },
+    {
+      "taxon_id": "ammonoidea",
+      "example_index": 0,
+      "example_name": "Spiral ammonite",
+      "image_key": "ammonite",
+      "resolved_file": "images/ammonite.jpg"
+    },
+    {
+      "taxon_id": "ammonoidea",
+      "example_index": 1,
+      "example_name": "Modern nautilus (relative)",
+      "image_key": "nautilus",
+      "resolved_file": "images/nautilus.jpg"
+    },
+    {
+      "taxon_id": "mammalia",
+      "example_index": 0,
+      "example_name": "Early mammaliaform",
+      "image_key": "earlymammal",
+      "resolved_file": "images/earlymammal.jpg"
+    },
+    {
+      "taxon_id": "angiosperms",
+      "example_index": 1,
+      "example_name": "Modern magnolia",
+      "image_key": "magnolia",
+      "resolved_file": "images/magnolia.jpg"
+    },
+    {
+      "taxon_id": "insecta",
+      "example_index": 1,
+      "example_name": "Living insect",
+      "image_key": "insect",
+      "resolved_file": "images/insect.jpg"
+    },
+    {
+      "taxon_id": "chelicerata",
+      "example_index": 1,
+      "example_name": "Horseshoe crab",
+      "image_key": "horseshoe",
+      "resolved_file": "images/horseshoe.jpg"
+    },
+    {
+      "taxon_id": "lepidosauria",
+      "example_index": 1,
+      "example_name": "Tuatara",
+      "image_key": "tuatara",
+      "resolved_file": "images/tuatara.jpg"
+    },
+    {
+      "taxon_id": "nautiloidea",
+      "example_index": 1,
+      "example_name": "Chambered nautilus",
+      "image_key": "nautilus",
+      "resolved_file": "images/nautilus.jpg"
+    },
+    {
+      "taxon_id": "dipnoi",
+      "example_index": 1,
+      "example_name": "Australian lungfish",
+      "image_key": "lungfish",
+      "resolved_file": "images/lungfish.jpg"
+    },
+    {
+      "taxon_id": "actinistia",
+      "example_index": 1,
+      "example_name": "Latimeria",
+      "image_key": "coelacanth",
+      "resolved_file": "images/coelacanth.jpg"
+    },
+    {
+      "taxon_id": "dicynodontia",
+      "example_index": 1,
+      "example_name": "Lystrosaurus",
+      "image_key": "lystrosaurus",
+      "resolved_file": "images/lystrosaurus.jpg"
+    },
+    {
+      "taxon_id": "theropoda",
+      "example_index": 0,
+      "example_name": "Tyrannosaurus rex",
+      "image_key": "tyrannosaurus",
+      "resolved_file": "images/tyrannosaurus.jpg"
+    },
+    {
+      "taxon_id": "theropoda",
+      "example_index": 1,
+      "example_name": "Modern crow",
+      "image_key": "bird",
+      "resolved_file": "images/bird.jpg"
+    },
+    {
+      "taxon_id": "ornithischia",
+      "example_index": 1,
+      "example_name": "Triceratops",
+      "image_key": "triceratops",
+      "resolved_file": "images/triceratops.png"
+    },
+    {
+      "taxon_id": "ceratopsia",
+      "example_index": 1,
+      "example_name": "Triceratops",
+      "image_key": "triceratops",
+      "resolved_file": "images/triceratops.png"
+    },
+    {
+      "taxon_id": "plesiosauria",
+      "example_index": 0,
+      "example_name": "Elasmosaurus",
+      "image_key": "plesiosaur",
+      "resolved_file": "images/plesiosaur.jpg"
+    },
+    {
+      "taxon_id": "mosasauridae",
+      "example_index": 0,
+      "example_name": "Mosasaurus",
+      "image_key": "mosasaur",
+      "resolved_file": "images/mosasaur.jpg"
+    },
+    {
+      "taxon_id": "osteichthyes",
+      "example_index": 0,
+      "example_name": "Eusthenopteron",
+      "image_key": "coelacanth",
+      "resolved_file": "images/coelacanth.jpg"
+    },
+    {
+      "taxon_id": "tetrapodomorpha",
+      "example_index": 0,
+      "example_name": "Tiktaalik",
+      "image_key": "tiktaalik",
+      "resolved_file": "images/tiktaalik.jpg"
+    },
+    {
+      "taxon_id": "tyrannosauroidea",
+      "example_index": 0,
+      "example_name": "Tyrannosaurus rex",
+      "image_key": "tyrannosaurus",
+      "resolved_file": "images/tyrannosaurus.jpg"
+    }
+  ]
+}

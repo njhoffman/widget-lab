@@ -1,0 +1,306 @@
+{
+  "_metadata": {
+    "originating_widget": "Tree of Life Explorer",
+    "originating_widget_file": "tree_of_life_explorer.html",
+    "originating_widget_version": "1.7",
+    "pre_export_widget_version": "1.6",
+    "source_date": "2026-10-15",
+    "export_date": "2026-10-15",
+    "export_type": "unreconciled source snapshot",
+    "source_html_sha256": "561087777ad88950fa1981e9f0b81f1a2a8232181b75fbf73e3811f2d21709b7",
+    "source_pre_export_sha256": "da359aa023aeeaa4e3769c74f2548920603307e58b9921123511e092d82d8a21"
+  },
+  "units": "Ma before present",
+  "source_hierarchy": {
+    "name": "Geologic time",
+    "rank": "Scale",
+    "old": 4600,
+    "young": 0,
+    "children": [
+      {
+        "name": "Hadean",
+        "rank": "Eon",
+        "old": 4600,
+        "young": 4031,
+        "children": []
+      },
+      {
+        "name": "Archean",
+        "rank": "Eon",
+        "old": 4031,
+        "young": 2500,
+        "children": [
+          {
+            "name": "Eoarchean",
+            "rank": "Era",
+            "old": 4031,
+            "young": 3600
+          },
+          {
+            "name": "Paleoarchean",
+            "rank": "Era",
+            "old": 3600,
+            "young": 3200
+          },
+          {
+            "name": "Mesoarchean",
+            "rank": "Era",
+            "old": 3200,
+            "young": 2800
+          },
+          {
+            "name": "Neoarchean",
+            "rank": "Era",
+            "old": 2800,
+            "young": 2500
+          }
+        ]
+      },
+      {
+        "name": "Proterozoic",
+        "rank": "Eon",
+        "old": 2500,
+        "young": 538.8,
+        "children": [
+          {
+            "name": "Paleoproterozoic",
+            "rank": "Era",
+            "old": 2500,
+            "young": 1600,
+            "children": [
+              {
+                "name": "Siderian",
+                "rank": "Period",
+                "old": 2500,
+                "young": 2300
+              },
+              {
+                "name": "Rhyacian",
+                "rank": "Period",
+                "old": 2300,
+                "young": 2050
+              },
+              {
+                "name": "Orosirian",
+                "rank": "Period",
+                "old": 2050,
+                "young": 1800
+              },
+              {
+                "name": "Statherian",
+                "rank": "Period",
+                "old": 1800,
+                "young": 1600
+              }
+            ]
+          },
+          {
+            "name": "Mesoproterozoic",
+            "rank": "Era",
+            "old": 1600,
+            "young": 1000,
+            "children": [
+              {
+                "name": "Calymmian",
+                "rank": "Period",
+                "old": 1600,
+                "young": 1400
+              },
+              {
+                "name": "Ectasian",
+                "rank": "Period",
+                "old": 1400,
+                "young": 1200
+              },
+              {
+                "name": "Stenian",
+                "rank": "Period",
+                "old": 1200,
+                "young": 1000
+              }
+            ]
+          },
+          {
+            "name": "Neoproterozoic",
+            "rank": "Era",
+            "old": 1000,
+            "young": 538.8,
+            "children": [
+              {
+                "name": "Tonian",
+                "rank": "Period",
+                "old": 1000,
+                "young": 720
+              },
+              {
+                "name": "Cryogenian",
+                "rank": "Period",
+                "old": 720,
+                "young": 635
+              },
+              {
+                "name": "Ediacaran",
+                "rank": "Period",
+                "old": 635,
+                "young": 538.8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phanerozoic",
+        "rank": "Eon",
+        "old": 538.8,
+        "young": 0,
+        "children": [
+          {
+            "name": "Paleozoic",
+            "rank": "Era",
+            "old": 538.8,
+            "young": 251.9,
+            "children": [
+              {
+                "name": "Cambrian",
+                "rank": "Period",
+                "old": 538.8,
+                "young": 486.85
+              },
+              {
+                "name": "Ordovician",
+                "rank": "Period",
+                "old": 486.85,
+                "young": 443.1
+              },
+              {
+                "name": "Silurian",
+                "rank": "Period",
+                "old": 443.1,
+                "young": 419.62
+              },
+              {
+                "name": "Devonian",
+                "rank": "Period",
+                "old": 419.62,
+                "young": 358.86
+              },
+              {
+                "name": "Carboniferous",
+                "rank": "Period",
+                "old": 358.86,
+                "young": 298.9
+              },
+              {
+                "name": "Permian",
+                "rank": "Period",
+                "old": 298.9,
+                "young": 251.9
+              }
+            ]
+          },
+          {
+            "name": "Mesozoic",
+            "rank": "Era",
+            "old": 251.9,
+            "young": 66,
+            "children": [
+              {
+                "name": "Triassic",
+                "rank": "Period",
+                "old": 251.9,
+                "young": 201.4
+              },
+              {
+                "name": "Jurassic",
+                "rank": "Period",
+                "old": 201.4,
+                "young": 143.1
+              },
+              {
+                "name": "Cretaceous",
+                "rank": "Period",
+                "old": 143.1,
+                "young": 66
+              }
+            ]
+          },
+          {
+            "name": "Cenozoic",
+            "rank": "Era",
+            "old": 66,
+            "young": 0,
+            "children": [
+              {
+                "name": "Paleogene",
+                "rank": "Period",
+                "old": 66,
+                "young": 23.03,
+                "children": [
+                  {
+                    "name": "Paleocene",
+                    "rank": "Epoch",
+                    "old": 66,
+                    "young": 56
+                  },
+                  {
+                    "name": "Eocene",
+                    "rank": "Epoch",
+                    "old": 56,
+                    "young": 33.9
+                  },
+                  {
+                    "name": "Oligocene",
+                    "rank": "Epoch",
+                    "old": 33.9,
+                    "young": 23.03
+                  }
+                ]
+              },
+              {
+                "name": "Neogene",
+                "rank": "Period",
+                "old": 23.03,
+                "young": 2.58,
+                "children": [
+                  {
+                    "name": "Miocene",
+                    "rank": "Epoch",
+                    "old": 23.03,
+                    "young": 5.333
+                  },
+                  {
+                    "name": "Pliocene",
+                    "rank": "Epoch",
+                    "old": 5.333,
+                    "young": 2.58
+                  }
+                ]
+              },
+              {
+                "name": "Quaternary",
+                "rank": "Period",
+                "old": 2.58,
+                "young": 0,
+                "children": [
+                  {
+                    "name": "Pleistocene",
+                    "rank": "Epoch",
+                    "old": 2.58,
+                    "young": 0.0117
+                  },
+                  {
+                    "name": "Holocene",
+                    "rank": "Epoch",
+                    "old": 0.0117,
+                    "young": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "note": "Chronostratigraphic boundaries copied from the widget; not re-synchronized to a new ICS chart."
+}

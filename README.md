@@ -1,18 +1,36 @@
 # Widget Lab
 
-A private Git monorepo for standalone **Atlas Widgets**, **Quiz Widgets**, and versioned **Shared Taxa**. Migration scaffold only: **sources and release versions are NOT considered imported or verified** until you inspect them.
+Standalone Atlas and Quiz widgets, scientific data, and reviewed specifications managed in Git. **Atlas is the current priority.** The imported Atlas v1.21 package is available locally; Quiz remains an unverified scaffold.
 
-Start with [docs/migration/MANUAL_STEPS.md](docs/migration/MANUAL_STEPS.md), then fill `incoming/` according to its folder map and run `import-files`. This project separates source code and scientific data (Git), private user progress (future cloud backend), and discussion archives (private local storage).
+From the repository root, start Atlas with:
 
-Key locations:
-- `atlas/widgets/*/src/` and `quiz/widgets/*/src/`: implementation files
-- `atlas/specs/` and `quiz/specs/`: reviewed feature specifications
-- `shared/taxa/`: verified Shared Taxa source
-- `docs/context/`: reviewed, committed summaries of conversations
-- `docs/decisions/`: approved architectural and UI decisions
-- `docs/architecture/`: proposed PWA/cloud/offline architecture
-- `docs/handoffs/`: Codex task reports
-- `AGENTS.md`: persistent implementation instructions
-- `project_manifest.json`: component registry; version fields initially null
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory atlas
+```
 
-Private `incoming/` and `.local/` are **intentionally ignored** by Git. Never push raw ChatGPT exports or files containing account information.
+Open <http://localhost:8765/> for the original master dashboard. It links all six atlases, the launcher, artwork tools, and goal tracker. Serving only `atlas/` keeps private migration folders outside the web root. Browser storage is origin-specific: use a stable port and export existing decisions before changing origins. No cloud deployment or progress synchronization is configured.
+
+The visual direction is [goal_1.png](atlas/images/goal_1.png) and [goal_2.png](atlas/images/goal_2.png). Read the [Atlas context](docs/context/atlas_master.md), [visual specification](atlas/specs/visual-direction.md), and [latest handoff](docs/handoffs/latest.md) before making changes. The pictures define direction; their sample versions, counts, and anatomical imagery are not verified application data.
+
+Verified imported source identities are recorded in [project_manifest.json](project_manifest.json). The seven original widget HTML files remain in `atlas/widgets/` with their delivered names and layout so existing paths work. Component subdirectories contain specifications and migration changelogs; their empty `src/` placeholders are not authoritative implementations. Historical changelogs remain embedded in the original HTML and in `atlas/docs/`.
+
+Repository version is in [VERSION](VERSION); dated changes are in [CHANGELOG.md](CHANGELOG.md). Releases use annotated `vX.Y.Z` GitHub tags. The [live TODO](TODO.md) tracks categories, priorities, acceptance criteria, issues, and proposed suggestions. See the [batch workflow](docs/development-workflow.md) for task/spec synchronization and authorized commit/tag/push behavior.
+
+Every Atlas update produces fresh browser actual-versus-goal comparison images with completed/pending sidebars and automatically opens them with `feh`. Initial captures for all seven components are in the [visual review](docs/visual-reviews/0.1.0/index.html). Run `python3 tools/capture_atlas_comparisons.py --widgets deep-time brain mythology` for an affected batch; advance VERSION first so earlier evidence is preserved.
+
+Install check/capture dependencies with `python3 -m pip install -r requirements-dev.txt`. Chrome/Chromium and `feh` are also needed for the visual workflow.
+
+Run checks from the repository root:
+
+```sh
+python3 tools/verify_migration.py
+python3 tools/verify_atlas.py
+python3 tools/check_project.py
+python3 -m unittest discover -s tests -v
+```
+
+Python 3.9+, Node.js, and Python `jsonschema` are needed for all checks. Without `jsonschema` or Node, the respective audit reports incomplete validation and exits nonzero. These tools check file integrity, schemas, source identity, and JavaScript syntax. Interactive browser, accessibility, folder-picker, persistence, and scientific review remain separate work.
+
+`shared/taxa/` is the canonical imported Shared Taxa v1.0 package. The identical delivered copy in `atlas/data/Shared_Taxa_v1.0/` is preserved for the original dashboard's links. Do not edit either published dataset in place or change stable IDs. Distribution ZIPs remain in ignored `incoming/`; original dashboard package-download actions are unavailable until packaging is implemented. Two small original source ZIPs are retained as manifest checksum evidence.
+
+`incoming/` and `.local/` remain ignored. The user authorized inspecting relevant migration artifacts and curating project context in this session; raw chats, account exports, and personal progress must stay private. The user authorizes committing, annotated tagging, and pushing completed validated batches. Source deletion, deployment, and publishing GitHub Releases still require separate instruction.

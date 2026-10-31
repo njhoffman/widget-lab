@@ -1,0 +1,37 @@
+{
+  "dataset": "atlas-featured-concepts",
+  "version": "1.0",
+  "source": "Approved AI-generated Atlas Widgets interface concept images; images are derivatives, not independently researched artwork",
+  "assets": {
+    "mesozoic_concept": {
+      "path": "mesozoic_concept.webp",
+      "sha256": "8461be0d09e85a705d8841d23b5229ba4bd5ac98e12a7ceeda21a38bf1dda2d7",
+      "method": "AI-generated concept-reference crop; no external artwork license claimed",
+      "validation": "illustrative; not scientifically or historically verified"
+    },
+    "zeus_concept": {
+      "path": "zeus_concept.webp",
+      "sha256": "d093e9e04304764bf0e49bf689dd665eea145ea2437be4a485655ce83481aa5d",
+      "method": "AI-generated concept-reference crop; no external artwork license claimed",
+      "validation": "illustrative; not scientifically or historically verified"
+    },
+    "planetary_concept": {
+      "path": "planetary_concept.webp",
+      "sha256": "941ad1c5b595dc6cacbb8fb2508119a037a94abcac67317f0971ab9787f7e2cc",
+      "method": "AI-generated concept-reference crop; no external artwork license claimed",
+      "validation": "illustrative; not scientifically or historically verified"
+    },
+    "coastal_concept": {
+      "path": "coastal_concept.webp",
+      "sha256": "62fa348958b0723da186bb0edd17e869589e5ace1b0167d94d9554fda0ecd28a",
+      "method": "AI-generated concept-reference crop; no external artwork license claimed",
+      "validation": "illustrative; not scientifically or historically verified"
+    },
+    "brain_concept": {
+      "path": "brain_concept.webp",
+      "sha256": "cb86990cad9c8ae71ce724860f555a7a7cf191fbad7e26abd515febadcb00f73",
+      "method": "AI-generated concept-reference crop; no external artwork license claimed",
+      "validation": "illustrative; not scientifically or historically verified"
+    }
+  }
+}

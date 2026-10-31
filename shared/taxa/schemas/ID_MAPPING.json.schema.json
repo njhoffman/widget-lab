@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "taxa",
+    "geologic_intervals"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "taxa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_export",
+          "source_id",
+          "canonical_id"
+        ],
+        "properties": {
+          "source_export": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "canonical_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "geologic_intervals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_export",
+          "source_id",
+          "canonical_id"
+        ],
+        "properties": {
+          "source_export": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "canonical_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

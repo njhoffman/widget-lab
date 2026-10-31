@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "subdivision_estimates",
+    "population_estimates"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "subdivision_estimates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "taxon_id",
+          "subdivision_rank",
+          "parsed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "taxon_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "subdivision_rank": {
+            "type": "string"
+          },
+          "parsed": {
+            "type": "object",
+            "required": [
+              "estimate_type",
+              "value",
+              "minimum",
+              "maximum"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "population_estimates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "subject_name",
+          "parsed",
+          "verbatim_estimate"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "subject_name": {
+            "type": "string"
+          },
+          "parsed": {
+            "type": "object"
+          },
+          "verbatim_estimate": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

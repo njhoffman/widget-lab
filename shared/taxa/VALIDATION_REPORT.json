@@ -1,0 +1,276 @@
+{
+  "dataset": "Shared Taxa",
+  "version": "1.0",
+  "date": "2026-10-15",
+  "schema_version": "1.0",
+  "validation_status": "PASS_WITH_DOCUMENTED_SCIENTIFIC_WARNINGS",
+  "checks": [
+    {
+      "check": "unique_canonical_taxon_ids",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "primary_taxon_parent_refs",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "taxon_source_inventory_crosswalk",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "taxon_source_entry_multiplicity",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "taxon_hierarchy_cycle",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "taxon_detail_history_relationships",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "organism_taxon_references",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "organism_image_references",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "subdivision_taxon_references",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "population_source_reference_integrity",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "population_estimates_scope_source_metadata",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "population_estimates_no_spurious_speciation_counts",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_parent_references",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_boundary_ordering",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "history_origin_extinction_range_consistency",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "history_all_ages_nonnegative",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "taxon_parent_origin_chronology",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "alternate_geologic_parent_assertions",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "alternate_taxonomic_classifications",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_hierarchy_parent_duration",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_hierarchy_cycle",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_taxon_links",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_curated_and_inferred_partition",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "cross_source_duplicate_mapping",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "geologic_time_source_inventory",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "image_local_artwork_integrity",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "scientific_uncertainties_documented",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "external_image_urls_unverified",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "source_tree_zip_checksum_inventory",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "source_deep_file_inventory",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "source_export_original_record_counts",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    },
+    {
+      "check": "json_schemas_correctness_and_conformity",
+      "status": "PASS",
+      "severity": "error",
+      "error_count": 0,
+      "examples": []
+    }
+  ],
+  "statistics": {
+    "taxa_total_canonical": 368,
+    "taxa_source_tree": 238,
+    "taxa_source_deep": 200,
+    "taxa_added_tree_before_merging": 238,
+    "taxa_added_deep_unique": 130,
+    "duplicate_taxon_source_records_reconciled": 70,
+    "unranked_clade_records": 70,
+    "ranked_taxonomic_concept_records": 279,
+    "organism_example_records": 495,
+    "organism_examples_tree": 95,
+    "organism_examples_deep": 400,
+    "population_estimate_records": 12,
+    "population_estimates_with_explicit_unknown": 1,
+    "subdivision_reference_taxa": 47,
+    "subdivision_estimate_values": 104,
+    "image_reference_records": 129,
+    "images_bundled_locally": 23,
+    "images_local_content_verified": 23,
+    "images_external_links_checked": 0,
+    "image_references_tree_runtime": 95,
+    "image_references_tree_commons_fallback": 11,
+    "deep_time_example_image_usages": 44,
+    "geologic_intervals_canonical": 173,
+    "geologic_intervals_tree_source": 44,
+    "geologic_intervals_deep_source": 172,
+    "curated_interval_taxon_associations": 580,
+    "derived_ui_age_filter_matches": 8916,
+    "source_reference_records_canonical": 24,
+    "source_reference_entries_tree": 24,
+    "source_reference_entries_deep": 1,
+    "rank_disagreements": 1,
+    "lineage_age_source_differences": 22,
+    "geologic_boundary_source_differences": 9,
+    "source_ambiguity_notes": 25,
+    "unresolved_scientific_ambiguities": 57
+  },
+  "scientific_verification": "Scientific claims and source URLs are not independently checked; substantial unresolved historical interpretation questions remain.",
+  "source_export_checksums": {
+    "tree_of_life_explorer_v1.7": "a45d1ca16a1d1f54c6e0dc415e447350ff16bce8d748c0fcef4442cebc9f95f1",
+    "deep_time_atlas_v1.6": "a836159c0662f2a14746b211ccbb5129cd35013e1c0d75e4aaa451985582a1d4"
+  },
+  "content_integrity": "Source archives, source exports and Deep Time illustration byte copies all included."
+}

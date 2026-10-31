@@ -1,0 +1,1263 @@
+{
+  "explanation": "Additional authored interval text and highlighted events, preserved as source structures. Many are already applied to geologic_intervals.json.",
+  "epoch_notes": {
+    "paleocene": {
+      "etym": "Greek palaiós “old” + kainós “recent.”",
+      "summary": "Early Cenozoic recovery and diversification after the end-Cretaceous extinction.",
+      "life": "Mammalian and avian groups spread into ecological roles vacated by non-avian dinosaurs.",
+      "taxa": [
+        "mammalia",
+        "aves",
+        "angiosperms"
+      ]
+    },
+    "eocene": {
+      "etym": "Greek ēṓs “dawn” + kainós “recent”: dawn of many modern mammalian lineages.",
+      "summary": "Extremely warm early Eocene conditions precede progressive cooling.",
+      "climate": "Paleocene–Eocene Thermal Maximum occurs just before the Eocene; Early Eocene Climatic Optimum follows.",
+      "life": "Early whales, horses, primates and many forest-associated mammals diversify.",
+      "taxa": [
+        "mammalia",
+        "primates",
+        "angiosperms"
+      ],
+      "events": [
+        "~56 Ma: rapid carbon injection and warming at PETM boundary"
+      ]
+    },
+    "oligocene": {
+      "etym": "Greek olígos “few” + kainós “recent,” reflecting relatively few modern molluscan forms recognized in original classification.",
+      "summary": "Antarctic ice sheets and cooler climates restructure ecosystems.",
+      "climate": "Sharp cooling and Antarctic ice-sheet expansion near the epoch start.",
+      "life": "Open habitats become more widespread; mammalian faunas turn over.",
+      "taxa": [
+        "mammalia",
+        "angiosperms"
+      ]
+    },
+    "miocene": {
+      "etym": "Greek meíōn “less” + kainós “recent,” based on proportions of living molluscan forms.",
+      "summary": "Apes radiate, grassy ecosystems expand and modern oceanic currents develop.",
+      "climate": "Middle Miocene warmth followed by cooling and increased aridity.",
+      "life": "Ape diversity, grasses, grazing herbivores and marine mammals diversify.",
+      "taxa": [
+        "primates",
+        "mammalia",
+        "angiosperms"
+      ]
+    },
+    "pliocene": {
+      "etym": "Greek pleíōn “more” + kainós “recent,” reflecting the larger fraction of modern molluscs.",
+      "summary": "Cooling intensifies as ecosystems approach the ice-age world.",
+      "climate": "A generally warmer early Pliocene transitions toward Northern Hemisphere glaciation.",
+      "life": "Early hominins and increasingly modern mammal communities.",
+      "taxa": [
+        "hominini",
+        "mammalia",
+        "angiosperms"
+      ]
+    },
+    "pleistocene": {
+      "etym": "Greek pleîstos “most” + kainós “recent,” indicating a very high proportion of modern molluscan species.",
+      "summary": "Repeated glacial cycles and a remarkable megafauna accompany hominin expansion.",
+      "climate": "Ice sheets wax and wane in repeated orbital-paced cycles.",
+      "life": "Mammoths, saber-toothed cats, archaic humans and eventually Homo sapiens.",
+      "taxa": [
+        "mammalia",
+        "hominini",
+        "primates"
+      ],
+      "events": [
+        "~300 ka: early Homo sapiens fossils",
+        "Late Pleistocene: regional megafaunal extinctions"
+      ]
+    },
+    "holocene": {
+      "etym": "Greek hólos “whole, entire” + kainós “recent,” meaning entirely recent.",
+      "summary": "The current interglacial: agriculture, cities and large human environmental impacts.",
+      "climate": "Relatively stable postglacial warmth compared with glacial–interglacial swings; recent anthropogenic warming.",
+      "life": "Modern ecosystems under growing human influence.",
+      "taxa": [
+        "hominini",
+        "mammalia",
+        "angiosperms"
+      ],
+      "events": [
+        "11.7 ka: Holocene begins",
+        "~12–10 ka: agriculture arises in several regions"
+      ]
+    },
+    "earlycret": {
+      "summary": "Flowering plants first become conspicuous in the fossil record; many major dinosaur and bird lineages persist.",
+      "taxa": [
+        "angiosperms",
+        "dinosaurs",
+        "aves",
+        "ammonoidea"
+      ]
+    },
+    "latecret": {
+      "summary": "Flowering plants radiate extensively; near the end, Chicxulub impact accompanies the K–Pg extinction.",
+      "taxa": [
+        "angiosperms",
+        "dinosaurs",
+        "aves",
+        "mammalia",
+        "ammonoidea"
+      ],
+      "events": [
+        "66 Ma: K–Pg mass extinction"
+      ]
+    },
+    "latejur": {
+      "summary": "A famous interval for large sauropod faunas and Archaeopteryx.",
+      "taxa": [
+        "dinosaurs",
+        "aves",
+        "ammonoidea"
+      ]
+    },
+    "earlytr": {
+      "summary": "Ecological recovery after the devastating end-Permian extinction.",
+      "taxa": [
+        "therapsida",
+        "ammonoidea"
+      ]
+    },
+    "latetr": {
+      "summary": "Dinosaurs and early mammaliaforms evolve as Pangaea starts to break apart.",
+      "taxa": [
+        "dinosaurs",
+        "mammalia",
+        "pterosauria"
+      ]
+    },
+    "lateord": {
+      "summary": "An end-Ordovician glaciation and extinction event strongly affect marine life.",
+      "taxa": [
+        "trilobita",
+        "mollusca",
+        "fishes"
+      ],
+      "events": [
+        "~445–443 Ma: end-Ordovician extinction"
+      ]
+    },
+    "latedev": {
+      "summary": "Early limbed vertebrates coexist with enormous reef systems before biotic crises.",
+      "taxa": [
+        "tetrapoda",
+        "sarcopterygii",
+        "placodermi"
+      ]
+    },
+    "mississippian": {
+      "summary": "Extensive shallow seas and diversified crinoids, with land forests advancing.",
+      "taxa": [
+        "echinodermata",
+        "tetrapoda",
+        "ferns"
+      ]
+    },
+    "pennsylvanian": {
+      "summary": "Coal forests, early amniotes and diverse large arthropods populate equatorial wetlands.",
+      "taxa": [
+        "amniota",
+        "arthropoda",
+        "ferns"
+      ]
+    }
+  },
+  "highlights": {
+    "danian": {
+      "summary": "Directly after the K–Pg mass extinction, mammal, bird and marine food webs reorganize.",
+      "events": [
+        "Post-impact ecological recovery and new mammal radiations"
+      ],
+      "taxa": [
+        "mammalia",
+        "aves"
+      ]
+    },
+    "ypresian": {
+      "summary": "Early Eocene greenhouse climates promote tropical and subtropical forests at high latitudes.",
+      "climate": "Some of the warmest sustained Cenozoic climates.",
+      "taxa": [
+        "mammalia",
+        "primates"
+      ]
+    },
+    "lutetian": {
+      "summary": "Early whales transition into more fully aquatic forms; warm forests persist.",
+      "taxa": [
+        "mammalia",
+        "primates"
+      ]
+    },
+    "rupelian": {
+      "summary": "After Eocene–Oligocene cooling, major ice expands on Antarctica.",
+      "climate": "The Antarctic icehouse becomes established.",
+      "events": [
+        "~34 Ma: Antarctic glaciation"
+      ],
+      "taxa": [
+        "mammalia"
+      ]
+    },
+    "messinian": {
+      "summary": "The Mediterranean undergoes the Messinian Salinity Crisis, producing thick evaporite deposits.",
+      "geo": "Widespread Mediterranean evaporites from extreme basin restriction (~5.97–5.33 Ma).",
+      "events": [
+        "~5.97–5.33 Ma: Messinian Salinity Crisis"
+      ]
+    },
+    "zanclean": {
+      "summary": "Rapid refilling of the Mediterranean at the beginning of the Pliocene is a leading explanation for its re-connection to the Atlantic.",
+      "events": [
+        "~5.33 Ma: Zanclean transgression"
+      ]
+    },
+    "gelasian": {
+      "summary": "Quaternary glaciations intensify; large ice-age climate oscillations reshape habitats."
+    },
+    "chibanian": {
+      "summary": "Middle Pleistocene glacial cycles and changing hominin communities.",
+      "events": [
+        "~774 ka: Matuyama–Brunhes magnetic polarity reversal"
+      ]
+    },
+    "upperpleist": {
+      "summary": "Anatomically modern humans spread globally; large mammals decline in many regions.",
+      "taxa": [
+        "hominini",
+        "mammalia"
+      ]
+    },
+    "greenlandian": {
+      "summary": "Early Holocene warming follows the end of the Younger Dryas cold episode.",
+      "taxa": [
+        "hominini",
+        "angiosperms"
+      ]
+    },
+    "northgrippian": {
+      "summary": "Mid-Holocene civilizations and landscape changes unfold under relatively warm conditions.",
+      "taxa": [
+        "hominini",
+        "angiosperms"
+      ]
+    },
+    "meghalayan": {
+      "summary": "Late Holocene histories of agriculture, states, urbanization and industrialization.",
+      "taxa": [
+        "hominini",
+        "angiosperms"
+      ]
+    },
+    "aptian": {
+      "summary": "Diversifying flowering plants become clearer in terrestrial fossil assemblages.",
+      "taxa": [
+        "angiosperms",
+        "dinosaurs"
+      ]
+    },
+    "cenomanian": {
+      "summary": "Warm seas and widespread marine ecosystems accompany elevated atmospheric CO₂.",
+      "taxa": [
+        "ammonoidea",
+        "angiosperms",
+        "dinosaurs"
+      ]
+    },
+    "maastrichtian": {
+      "summary": "The last age of non-avian dinosaurs and ammonites ends at the 66 Ma K–Pg extinction.",
+      "events": [
+        "66 Ma: Chicxulub impact; non-avian dinosaurs and ammonites become extinct"
+      ],
+      "taxa": [
+        "dinosaurs",
+        "ammonoidea",
+        "aves",
+        "mammalia"
+      ]
+    },
+    "tithonian": {
+      "summary": "Early bird relatives and large theropod and sauropod faunas inhabit Late Jurassic ecosystems.",
+      "taxa": [
+        "dinosaurs",
+        "aves"
+      ]
+    },
+    "carnian": {
+      "summary": "The Carnian Pluvial Episode involves notable environmental disruptions; dinosaur diversification occurs across the Triassic.",
+      "taxa": [
+        "dinosaurs",
+        "pterosauria"
+      ]
+    },
+    "changhsingian": {
+      "summary": "Massive environmental disruption culminates in the end-Permian extinction.",
+      "events": [
+        "251.902 Ma: end-Permian mass extinction"
+      ],
+      "taxa": [
+        "therapsida",
+        "ammonoidea",
+        "trilobita"
+      ]
+    },
+    "frasnian": {
+      "summary": "Kellwasser-related environmental disruptions contribute to Late Devonian marine extinctions.",
+      "taxa": [
+        "placodermi",
+        "sarcopterygii"
+      ]
+    },
+    "hirnantian": {
+      "summary": "Rapid glaciation and sea-level change coincide with the end-Ordovician extinction.",
+      "events": [
+        "~445–443 Ma: glaciation and mass extinction"
+      ],
+      "taxa": [
+        "trilobita",
+        "mollusca",
+        "echinodermata"
+      ]
+    },
+    "fortunian": {
+      "summary": "Trace fossils signal increasing animal movement and sediment mixing in early Cambrian seas.",
+      "taxa": [
+        "radiodonta",
+        "chordata"
+      ]
+    },
+    "wuliuan": {
+      "summary": "Diverse Cambrian marine communities include spectacular soft-bodied fossil deposits.",
+      "taxa": [
+        "radiodonta",
+        "trilobita",
+        "chordata"
+      ]
+    }
+  },
+  "insights": {
+    "earth": "Rock sequences, radiometric dating, fossils, isotopic proxies and plate reconstructions provide independent but uneven windows into Earth history.",
+    "cambrian": "Cambrian fossil lagerstätten reveal both mineralized shells and exceptional soft tissues; diversification was protracted rather than instantaneous.",
+    "ordovician": "The Great Ordovician Biodiversification Event transformed seafloor communities, followed by glaciation-linked marine extinctions.",
+    "silurian": "Recovery after Late Ordovician extinction coincided with expanding reef systems and early land-plant ecosystems.",
+    "devonian": "Reef systems, wooded floodplains and the fin-to-limb transition developed amid repeated ocean anoxic crises.",
+    "carboniferous": "Extensive tropical wetlands buried organic carbon and helped generate major coal deposits; early amniotes appeared.",
+    "permian": "Pangaea produced strong continental climate contrasts; end-Permian volcanism and biotic collapse fundamentally reorganized ecosystems.",
+    "triassic": "Life recovered and reorganized after the end-Permian crisis; the first dinosaurs and mammals arose in ecosystems with strong climatic seasonality.",
+    "jurassic": "Marine ammonites and reptilian predators flourished, while conifer forests supported sauropods and early feathered avialans.",
+    "cretaceous": "High sea levels flooded continents. Angiosperms diversified alongside pollinating insects; the interval ended at the K–Pg extinction.",
+    "paleogene": "Mammals and birds radiated after the K–Pg extinction; Eocene warmth preceded Oligocene Antarctic ice-sheet expansion.",
+    "neogene": "Expanding open habitats favored grazing mammals while tectonics reshaped ocean gateways and rainfall patterns.",
+    "quaternary": "Glacial–interglacial cycles strongly influenced sea level, biogeography and dispersal of Homo and associated megafaunas.",
+    "cenozoic": "Repeated climate transitions, Himalayan uplift and changing ocean gateways structured modern marine and terrestrial faunas."
+  },
+  "original_epoch_series_arrays": {
+    "cambrian": [
+      [
+        "terreneuvian",
+        "Terreneuvian",
+        538.8,
+        521
+      ],
+      [
+        "cambseries2",
+        "Cambrian Series 2",
+        521,
+        506.5
+      ],
+      [
+        "miaolingian",
+        "Miaolingian",
+        506.5,
+        497
+      ],
+      [
+        "furongian",
+        "Furongian",
+        497,
+        486.85
+      ]
+    ],
+    "ordovician": [
+      [
+        "earlyord",
+        "Early Ordovician",
+        486.85,
+        471.3
+      ],
+      [
+        "midord",
+        "Middle Ordovician",
+        471.3,
+        458.2
+      ],
+      [
+        "lateord",
+        "Late Ordovician",
+        458.2,
+        443.1
+      ]
+    ],
+    "silurian": [
+      [
+        "llandovery",
+        "Llandovery",
+        443.1,
+        432.9
+      ],
+      [
+        "wenlock",
+        "Wenlock",
+        432.9,
+        426.7
+      ],
+      [
+        "ludlow",
+        "Ludlow",
+        426.7,
+        422.7
+      ],
+      [
+        "pridoli",
+        "Pridoli",
+        422.7,
+        419.62
+      ]
+    ],
+    "devonian": [
+      [
+        "earlydev",
+        "Early Devonian",
+        419.62,
+        393.47
+      ],
+      [
+        "middev",
+        "Middle Devonian",
+        393.47,
+        382.31
+      ],
+      [
+        "latedev",
+        "Late Devonian",
+        382.31,
+        358.86
+      ]
+    ],
+    "carboniferous": [
+      [
+        "mississippian",
+        "Mississippian (subperiod)",
+        358.86,
+        323.4
+      ],
+      [
+        "pennsylvanian",
+        "Pennsylvanian (subperiod)",
+        323.4,
+        298.9
+      ]
+    ],
+    "permian": [
+      [
+        "cisuralian",
+        "Cisuralian",
+        298.9,
+        274.4
+      ],
+      [
+        "guadalupian",
+        "Guadalupian",
+        274.4,
+        259.857
+      ],
+      [
+        "lopingian",
+        "Lopingian",
+        259.857,
+        251.902
+      ]
+    ],
+    "triassic": [
+      [
+        "earlytr",
+        "Early Triassic",
+        251.902,
+        247
+      ],
+      [
+        "midtr",
+        "Middle Triassic",
+        247,
+        237
+      ],
+      [
+        "latetr",
+        "Late Triassic",
+        237,
+        201.4
+      ]
+    ],
+    "jurassic": [
+      [
+        "earlyjur",
+        "Early Jurassic",
+        201.4,
+        174.7
+      ],
+      [
+        "midjur",
+        "Middle Jurassic",
+        174.7,
+        161.5
+      ],
+      [
+        "latejur",
+        "Late Jurassic",
+        161.5,
+        143.1
+      ]
+    ],
+    "cretaceous": [
+      [
+        "earlycret",
+        "Early Cretaceous",
+        143.1,
+        100.5
+      ],
+      [
+        "latecret",
+        "Late Cretaceous",
+        100.5,
+        66
+      ]
+    ],
+    "paleogene": [
+      [
+        "paleocene",
+        "Paleocene",
+        66,
+        56
+      ],
+      [
+        "eocene",
+        "Eocene",
+        56,
+        33.9
+      ],
+      [
+        "oligocene",
+        "Oligocene",
+        33.9,
+        23.04
+      ]
+    ],
+    "neogene": [
+      [
+        "miocene",
+        "Miocene",
+        23.04,
+        5.333
+      ],
+      [
+        "pliocene",
+        "Pliocene",
+        5.333,
+        2.58
+      ]
+    ],
+    "quaternary": [
+      [
+        "pleistocene",
+        "Pleistocene",
+        2.58,
+        0.0117
+      ],
+      [
+        "holocene",
+        "Holocene",
+        0.0117,
+        0
+      ]
+    ]
+  },
+  "original_stage_age_arrays": {
+    "paleocene": [
+      [
+        "danian",
+        "Danian",
+        66,
+        61.66
+      ],
+      [
+        "selandian",
+        "Selandian",
+        61.66,
+        59.24
+      ],
+      [
+        "thanetian",
+        "Thanetian",
+        59.24,
+        56
+      ]
+    ],
+    "eocene": [
+      [
+        "ypresian",
+        "Ypresian",
+        56,
+        48.07
+      ],
+      [
+        "lutetian",
+        "Lutetian",
+        48.07,
+        41.03
+      ],
+      [
+        "bartonian",
+        "Bartonian",
+        41.03,
+        37.71
+      ],
+      [
+        "priabonian",
+        "Priabonian",
+        37.71,
+        33.9
+      ]
+    ],
+    "oligocene": [
+      [
+        "rupelian",
+        "Rupelian",
+        33.9,
+        27.3
+      ],
+      [
+        "chattian",
+        "Chattian",
+        27.3,
+        23.04
+      ]
+    ],
+    "miocene": [
+      [
+        "aquitanian",
+        "Aquitanian",
+        23.04,
+        20.45
+      ],
+      [
+        "burdigalian",
+        "Burdigalian",
+        20.45,
+        15.98
+      ],
+      [
+        "langhian",
+        "Langhian",
+        15.98,
+        13.82
+      ],
+      [
+        "serravallian",
+        "Serravallian",
+        13.82,
+        11.63
+      ],
+      [
+        "tortonian",
+        "Tortonian",
+        11.63,
+        7.246
+      ],
+      [
+        "messinian",
+        "Messinian",
+        7.246,
+        5.333
+      ]
+    ],
+    "pliocene": [
+      [
+        "zanclean",
+        "Zanclean",
+        5.333,
+        3.6
+      ],
+      [
+        "piacenzian",
+        "Piacenzian",
+        3.6,
+        2.58
+      ]
+    ],
+    "pleistocene": [
+      [
+        "gelasian",
+        "Gelasian",
+        2.58,
+        1.8
+      ],
+      [
+        "calabrian",
+        "Calabrian",
+        1.8,
+        0.774
+      ],
+      [
+        "chibanian",
+        "Chibanian",
+        0.774,
+        0.129
+      ],
+      [
+        "upperpleist",
+        "Upper Pleistocene",
+        0.129,
+        0.0117
+      ]
+    ],
+    "holocene": [
+      [
+        "greenlandian",
+        "Greenlandian",
+        0.0117,
+        0.0082
+      ],
+      [
+        "northgrippian",
+        "Northgrippian",
+        0.0082,
+        0.0042
+      ],
+      [
+        "meghalayan",
+        "Meghalayan",
+        0.0042,
+        0
+      ]
+    ],
+    "earlycret": [
+      [
+        "berriasian",
+        "Berriasian",
+        143.1,
+        137.05
+      ],
+      [
+        "valanginian",
+        "Valanginian",
+        137.05,
+        132.6
+      ],
+      [
+        "hauterivian",
+        "Hauterivian",
+        132.6,
+        125.77
+      ],
+      [
+        "barremian",
+        "Barremian",
+        125.77,
+        121.4
+      ],
+      [
+        "aptian",
+        "Aptian",
+        121.4,
+        113.2
+      ],
+      [
+        "albian",
+        "Albian",
+        113.2,
+        100.5
+      ]
+    ],
+    "latecret": [
+      [
+        "cenomanian",
+        "Cenomanian",
+        100.5,
+        93.9
+      ],
+      [
+        "turonian",
+        "Turonian",
+        93.9,
+        89.8
+      ],
+      [
+        "coniacian",
+        "Coniacian",
+        89.8,
+        85.7
+      ],
+      [
+        "santonian",
+        "Santonian",
+        85.7,
+        83.6
+      ],
+      [
+        "campanian",
+        "Campanian",
+        83.6,
+        72.2
+      ],
+      [
+        "maastrichtian",
+        "Maastrichtian",
+        72.2,
+        66
+      ]
+    ],
+    "earlyjur": [
+      [
+        "hettangian",
+        "Hettangian",
+        201.4,
+        199.5
+      ],
+      [
+        "sinemurian",
+        "Sinemurian",
+        199.5,
+        192.9
+      ],
+      [
+        "pliensbachian",
+        "Pliensbachian",
+        192.9,
+        184.2
+      ],
+      [
+        "toarcian",
+        "Toarcian",
+        184.2,
+        174.7
+      ]
+    ],
+    "midjur": [
+      [
+        "aalenian",
+        "Aalenian",
+        174.7,
+        170.9
+      ],
+      [
+        "bajocian",
+        "Bajocian",
+        170.9,
+        168.2
+      ],
+      [
+        "bathonian",
+        "Bathonian",
+        168.2,
+        165.3
+      ],
+      [
+        "callovian",
+        "Callovian",
+        165.3,
+        161.5
+      ]
+    ],
+    "latejur": [
+      [
+        "oxfordian",
+        "Oxfordian",
+        161.5,
+        154.8
+      ],
+      [
+        "kimmeridgian",
+        "Kimmeridgian",
+        154.8,
+        149.2
+      ],
+      [
+        "tithonian",
+        "Tithonian",
+        149.2,
+        143.1
+      ]
+    ],
+    "earlytr": [
+      [
+        "induan",
+        "Induan",
+        251.902,
+        250.8
+      ],
+      [
+        "olenekian",
+        "Olenekian",
+        250.8,
+        247
+      ]
+    ],
+    "midtr": [
+      [
+        "anisian",
+        "Anisian",
+        247,
+        241.464
+      ],
+      [
+        "ladinian",
+        "Ladinian",
+        241.464,
+        237
+      ]
+    ],
+    "latetr": [
+      [
+        "carnian",
+        "Carnian",
+        237,
+        227.3
+      ],
+      [
+        "norian",
+        "Norian",
+        227.3,
+        205.7
+      ],
+      [
+        "rhaetian",
+        "Rhaetian",
+        205.7,
+        201.4
+      ]
+    ],
+    "cisuralian": [
+      [
+        "asselian",
+        "Asselian",
+        298.9,
+        293.52
+      ],
+      [
+        "sakmarian",
+        "Sakmarian",
+        293.52,
+        290.1
+      ],
+      [
+        "artinskian",
+        "Artinskian",
+        290.1,
+        283.3
+      ],
+      [
+        "kungurian",
+        "Kungurian",
+        283.3,
+        274.4
+      ]
+    ],
+    "guadalupian": [
+      [
+        "roadian",
+        "Roadian",
+        274.4,
+        266.9
+      ],
+      [
+        "wordian",
+        "Wordian",
+        266.9,
+        264.28
+      ],
+      [
+        "capitanian",
+        "Capitanian",
+        264.28,
+        259.857
+      ]
+    ],
+    "lopingian": [
+      [
+        "wuchiapingian",
+        "Wuchiapingian",
+        259.857,
+        254.14
+      ],
+      [
+        "changhsingian",
+        "Changhsingian",
+        254.14,
+        251.902
+      ]
+    ],
+    "earlydev": [
+      [
+        "lochkovian",
+        "Lochkovian",
+        419.62,
+        413.02
+      ],
+      [
+        "pragian",
+        "Pragian",
+        413.02,
+        410.62
+      ],
+      [
+        "emsian",
+        "Emsian",
+        410.62,
+        393.47
+      ]
+    ],
+    "middev": [
+      [
+        "eifelian",
+        "Eifelian",
+        393.47,
+        387.95
+      ],
+      [
+        "givetian",
+        "Givetian",
+        387.95,
+        382.31
+      ]
+    ],
+    "latedev": [
+      [
+        "frasnian",
+        "Frasnian",
+        382.31,
+        372.15
+      ],
+      [
+        "famennian",
+        "Famennian",
+        372.15,
+        358.86
+      ]
+    ],
+    "mississippian": [
+      [
+        "tournaisian",
+        "Tournaisian",
+        358.86,
+        346.7
+      ],
+      [
+        "visean",
+        "Visean",
+        346.7,
+        330.3
+      ],
+      [
+        "serpukhovian",
+        "Serpukhovian",
+        330.3,
+        323.4
+      ]
+    ],
+    "pennsylvanian": [
+      [
+        "bashkirian",
+        "Bashkirian",
+        323.4,
+        315.2
+      ],
+      [
+        "moscovian",
+        "Moscovian",
+        315.2,
+        307
+      ],
+      [
+        "kasimovian",
+        "Kasimovian",
+        307,
+        303.7
+      ],
+      [
+        "gzhelian",
+        "Gzhelian",
+        303.7,
+        298.9
+      ]
+    ],
+    "terreneuvian": [
+      [
+        "fortunian",
+        "Fortunian",
+        538.8,
+        529
+      ],
+      [
+        "cambstage2",
+        "Cambrian Stage 2",
+        529,
+        521
+      ]
+    ],
+    "cambseries2": [
+      [
+        "cambstage3",
+        "Cambrian Stage 3",
+        521,
+        514.5
+      ],
+      [
+        "cambstage4",
+        "Cambrian Stage 4",
+        514.5,
+        506.5
+      ]
+    ],
+    "miaolingian": [
+      [
+        "wuliuan",
+        "Wuliuan",
+        506.5,
+        504.5
+      ],
+      [
+        "drumian",
+        "Drumian",
+        504.5,
+        500.5
+      ],
+      [
+        "guzhangian",
+        "Guzhangian",
+        500.5,
+        497
+      ]
+    ],
+    "furongian": [
+      [
+        "paibian",
+        "Paibian",
+        497,
+        494.2
+      ],
+      [
+        "jiangshanian",
+        "Jiangshanian",
+        494.2,
+        491
+      ],
+      [
+        "cambstage10",
+        "Cambrian Stage 10",
+        491,
+        486.85
+      ]
+    ],
+    "earlyord": [
+      [
+        "tremadocian",
+        "Tremadocian",
+        486.85,
+        477.1
+      ],
+      [
+        "floian",
+        "Floian",
+        477.1,
+        471.3
+      ]
+    ],
+    "midord": [
+      [
+        "dapingian",
+        "Dapingian",
+        471.3,
+        469.4
+      ],
+      [
+        "darriwilian",
+        "Darriwilian",
+        469.4,
+        458.2
+      ]
+    ],
+    "lateord": [
+      [
+        "sandbian",
+        "Sandbian",
+        458.2,
+        452.8
+      ],
+      [
+        "katian",
+        "Katian",
+        452.8,
+        445.2
+      ],
+      [
+        "hirnantian",
+        "Hirnantian",
+        445.2,
+        443.1
+      ]
+    ],
+    "llandovery": [
+      [
+        "rhuddanian",
+        "Rhuddanian",
+        443.1,
+        440.5
+      ],
+      [
+        "aeronian",
+        "Aeronian",
+        440.5,
+        438.6
+      ],
+      [
+        "telychian",
+        "Telychian",
+        438.6,
+        432.9
+      ]
+    ],
+    "wenlock": [
+      [
+        "sheinwoodian",
+        "Sheinwoodian",
+        432.9,
+        430.6
+      ],
+      [
+        "homerian",
+        "Homerian",
+        430.6,
+        426.7
+      ]
+    ],
+    "ludlow": [
+      [
+        "gorstian",
+        "Gorstian",
+        426.7,
+        425
+      ],
+      [
+        "ludfordian",
+        "Ludfordian",
+        425,
+        422.7
+      ]
+    ]
+  }
+}

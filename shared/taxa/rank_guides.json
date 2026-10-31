@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "guides": [
+    {
+      "id": "stx:rank:domain-f2ff83860a",
+      "name": "domain",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "The broadest traditional cellular grouping, based on deep ancestry and molecular machinery.",
+        "basis_for_grouping": "Ribosomal RNA, conserved genes, membrane chemistry and genome systems.",
+        "examples_and_rationale": "Bacteria and Archaea differ in information-processing enzymes and characteristic membrane biochemistry.",
+        "evolutionary_timeline": "Branches diverged very early in Earth history, likely in the Archean; Eukaryota later arose within or close to archaeal ancestry.",
+        "monophyly_notes": "A named domain is usually intended as a clade, but the three-domain vs two-domain tree is actively debated."
+      }
+    },
+    {
+      "id": "stx:rank:kingdom-6038ac4d78",
+      "name": "kingdom",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "A high-level conventional rank used for large groupings; boundaries vary among classification systems.",
+        "basis_for_grouping": "Broad cellular organization, nutritional modes, plastids, wall components and molecular phylogeny.",
+        "examples_and_rationale": "Animalia groups multicellular ingestive organisms; Fungi unites primarily absorptive fungal organisms. Traditional Protozoa is a mixed assemblage.",
+        "evolutionary_timeline": "Major modern eukaryotic lineages formed across the Proterozoic, with later animal and plant radiations.",
+        "monophyly_notes": "Not necessarily. Traditional Protozoa and some versions of Chromista are not accepted as single exclusive clades."
+      }
+    },
+    {
+      "id": "stx:rank:phylum-a639e5a816",
+      "name": "phylum",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "Groups major animal body plans or comparable high-level lineages; plants and fungi sometimes use division.",
+        "basis_for_grouping": "Homologous developmental architecture, distinctive structures and shared genomic characters.",
+        "examples_and_rationale": "Arthropoda shares jointed limbs and a molting exoskeleton; Chordata has a notochord and dorsal nerve cord during development.",
+        "evolutionary_timeline": "Many living animal phylum-level body plans became conspicuous in the Cambrian (≈539–487 Ma), though their lineages may be older.",
+        "monophyly_notes": "Most modern formally accepted animal phyla are hypothesized clades, but rank does not guarantee monophyly."
+      }
+    },
+    {
+      "id": "stx:rank:subphylum-6257503c5b",
+      "name": "subphylum",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "Intermediate rank between phylum and class, used when large phyla need further structure.",
+        "basis_for_grouping": "Developmental features, body architecture and evolutionary ancestry.",
+        "examples_and_rationale": "Vertebrata within Chordata shares a cranium and vertebral skeletal features; Hexapoda within arthropods has six legs.",
+        "evolutionary_timeline": "Dates are group-dependent; several lineages became recognizable in the Cambrian–Ordovician.",
+        "monophyly_notes": "Depends on the named subphylum, not on the rank itself."
+      }
+    },
+    {
+      "id": "stx:rank:class-0889113e04",
+      "name": "class",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "A conventional rank below phylum, highlighting substantial organismal groupings.",
+        "basis_for_grouping": "Combined anatomy, reproduction, development and molecular evidence.",
+        "examples_and_rationale": "Mammalia groups hair-bearing, milk-producing vertebrates; Aves comprises living feathered theropod dinosaurs.",
+        "evolutionary_timeline": "Some stem lineages have Paleozoic origins, while surviving crown groups emerged in different intervals, especially the Mesozoic.",
+        "monophyly_notes": "Intended to reflect ancestry in modern systems, but historical classes may be paraphyletic."
+      }
+    },
+    {
+      "id": "stx:rank:subclass-6946ed5805",
+      "name": "subclass",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "Intermediate level between class and order, used inconsistently across kingdoms.",
+        "basis_for_grouping": "Distinctive shared inherited traits and phylogenetic placement.",
+        "examples_and_rationale": "Coleoidea groups squids, octopuses and cuttlefish with internalized or reduced shells.",
+        "evolutionary_timeline": "Dates vary strongly by group; many living subclass lineages diversified in the Paleozoic–Mesozoic.",
+        "monophyly_notes": "No automatic guarantee of monophyly."
+      }
+    },
+    {
+      "id": "stx:rank:order-3eeb7e96e5",
+      "name": "order",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "Groups related families, commonly supported by a suite of inherited characteristics.",
+        "basis_for_grouping": "Anatomical synapomorphies, molecular trees, ecological or reproductive innovations.",
+        "examples_and_rationale": "Primates shares characteristic grasping and vision traits; Lepidoptera has scaled wings and distinctive mouthpart evolution.",
+        "evolutionary_timeline": "Present orders emerged at different times; many mammal and bird crown orders expanded in the Cenozoic.",
+        "monophyly_notes": "Most modern orders aim to be monophyletic; revisions remain frequent."
+      }
+    },
+    {
+      "id": "stx:rank:family-d34a569ab7",
+      "name": "family",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "A relatively cohesive set of related genera with recognizable shared descent.",
+        "basis_for_grouping": "Diagnostic morphology, DNA evidence, reproductive and ecological features.",
+        "examples_and_rationale": "Felidae groups cats with specialized carnivorous teeth; Poaceae groups grasses with distinctive flowers and grains.",
+        "evolutionary_timeline": "Families often originated from the Cretaceous onward, but there is no universal family-level formation date.",
+        "monophyly_notes": "Usually intended as a clade; historical circumscription can change after genetic studies."
+      }
+    },
+    {
+      "id": "stx:rank:genus-b27b9f4a8e",
+      "name": "genus",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "A cluster of very closely related species, often also phenotypically similar.",
+        "basis_for_grouping": "Recent common ancestry, reproductive compatibility where informative, morphological and genetic distinctiveness.",
+        "examples_and_rationale": "Panthera groups big cats sharing close ancestry; Homo groups humans and extinct close relatives.",
+        "evolutionary_timeline": "Genus ages vary hugely; many living genera arose in the Neogene or Quaternary.",
+        "monophyly_notes": "Most current genera aim to be monophyletic but some are still recognized pragmatically."
+      }
+    },
+    {
+      "id": "stx:rank:species-1559d6aa3c",
+      "name": "species",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "The most familiar named unit for distinguishing evolving lineages; species concepts vary.",
+        "basis_for_grouping": "Interbreeding barriers (in sexual taxa), ecology, diagnosable traits and genome divergence.",
+        "examples_and_rationale": "Homo sapiens is one species; Panthera tigris is another, recognized by distinct histories and inherited characteristics.",
+        "evolutionary_timeline": "Speciation is ongoing. Many extant species evolved in the Neogene–Quaternary, while some lineages are far older.",
+        "monophyly_notes": "A species is often treated as a lineage, but gene flow and hybridization can obscure strict monophyly."
+      }
+    },
+    {
+      "id": "stx:rank:clade-cf4b693515",
+      "name": "clade",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_record": {
+        "meaning": "A common ancestor plus every descendant of that ancestor, irrespective of formal taxonomic rank.",
+        "basis_for_grouping": "Shared derived traits (synapomorphies) and convergent evidence from molecular trees and fossils.",
+        "examples_and_rationale": "Tetrapoda includes amphibians and amniotes because they share a limb-bearing ancestry; Dinosauria includes all living birds.",
+        "evolutionary_timeline": "Clades originated throughout life’s history; major bilaterian body-plan diversification is visible in the Cambrian fossil record.",
+        "monophyly_notes": "Yes by definition: a clade is monophyletic; uncertainty concerns which organisms belong in it."
+      }
+    }
+  ]
+}

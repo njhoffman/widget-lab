@@ -1,0 +1,2938 @@
+{
+  "schema_version": "1.0",
+  "subdivision_estimates": [
+    {
+      "id": "stx:estimate:subdiv-life-domain-af73381931",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "domain",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 3,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 3,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-kingdom-56546637ac",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "kingdom",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 7,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 7,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-phylum-b93ee23745",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "phylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥60",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 60,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-subphylum-a0965233e0",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subphylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥41",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 41,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-class-5bf7480007",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥187",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 187,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-subclass-c7744bcbff",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subclass",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥118",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 118,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-order-2caaf2dc1c",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥895",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 895,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-family-73600ea921",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥7.5k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 7500,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-genus-1366fcac8c",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥58k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 58000,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-life-species-71ddba5e35",
+      "taxon_id": "stx:taxon:tree-life-657b4791e2",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">2m",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 2000000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-kingdom-ce5429b540",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "kingdom",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 5,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 5,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-phylum-45b1a7b162",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "phylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥60",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 60,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-subphylum-8148810b77",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subphylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥41",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 41,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-class-b899f769c2",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥187",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 187,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-subclass-2deb462503",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subclass",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥118",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 118,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-order-eb564127bb",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥895",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 895,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-family-36eae01acf",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥7.5k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 7500,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-genus-f5c288fa4d",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥58k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 58000,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-eukaryota-species-9a1e2f133a",
+      "taxon_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">2m",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 2000000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-kingdom-3217805100",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "kingdom",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 2,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 2,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-phylum-a70f0deb70",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "phylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥53",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 53,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-subphylum-383cfaa607",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subphylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥32",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 32,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-class-f20ae561d8",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥145",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 145,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-subclass-4c0962b2f0",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subclass",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥87",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 87,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-order-b317799118",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥682",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 682,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-family-d41d166562",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥6.5k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 6500,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-opisthokonta-species-ee2981f909",
+      "taxon_id": "stx:taxon:tree-opisthokonta-281d46ec15",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">1.6m",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 1600000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-phylum-78ec275ca4",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "phylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 34,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 34,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-subphylum-5ddec3a4b6",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subphylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 21,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 21,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-class-9868513bb4",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 107,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 107,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-subclass-4f33404304",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subclass",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 54,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 54,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-order-c5fd9e48f1",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 521,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 521,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-family-ffeebca364",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 5956,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 5956,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-genus-19e178aee5",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 51892,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 51892,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-animalia-species-fa47dfc6d4",
+      "taxon_id": "stx:taxon:tree-animalia-a253d87b05",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">1.5m",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 1500000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-phylum-d2a6e548b5",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "phylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 7,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 7,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-subphylum-985824409b",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subphylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 9,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 9,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-class-a566b71e72",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 42,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 42,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-subclass-4b4e123724",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subclass",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 31,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 31,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-order-c65cadf0e2",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 213,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 213,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-family-86df7e1b6e",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 941,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 941,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-genus-6e3ae082d8",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 6160,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 6160,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-plantae-species-1666b95b72",
+      "taxon_id": "stx:taxon:tree-plantae-6214acbcf1",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈400k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 400000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-phylum-985767671a",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "phylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 19,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 19,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-subphylum-8b3df212b8",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subphylum",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥11",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 11,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-class-6693746bf6",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥38",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 38,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-subclass-03692b4739",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "subclass",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥33",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 33,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-order-5179264a43",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥161",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 161,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-family-74a0d619c5",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥628",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 628,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-genus-5413764c13",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≥784",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 784,
+        "maximum": null,
+        "comparator": ">=",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-fungi-species-fc3c4b2bf3",
+      "taxon_id": "stx:taxon:tree-fungi-bc272c202a",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈170k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 170000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-angiospermae-order-0c2646cc75",
+      "taxon_id": "stx:taxon:tree-angiospermae-d743fcdb17",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 64,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 64,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-angiospermae-family-ef07180d6b",
+      "taxon_id": "stx:taxon:tree-angiospermae-d743fcdb17",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 416,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 416,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-angiospermae-species-dbed533155",
+      "taxon_id": "stx:taxon:tree-angiospermae-d743fcdb17",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈300k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 300000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-mammalia-order-aefae21a3b",
+      "taxon_id": "stx:taxon:tree-mammalia-caa6267fce",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 27,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 27,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-mammalia-family-fc01772679",
+      "taxon_id": "stx:taxon:tree-mammalia-caa6267fce",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 169,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 169,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-mammalia-genus-5202657bdf",
+      "taxon_id": "stx:taxon:tree-mammalia-caa6267fce",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 1363,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 1363,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-mammalia-species-c5af3bbefd",
+      "taxon_id": "stx:taxon:tree-mammalia-caa6267fce",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 6791,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 6791,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-aves-order-7a9c9ed90f",
+      "taxon_id": "stx:taxon:tree-aves-6bf26da885",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 46,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 46,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-aves-family-08ecd7044a",
+      "taxon_id": "stx:taxon:tree-aves-6bf26da885",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 252,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 252,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-aves-genus-a633217993",
+      "taxon_id": "stx:taxon:tree-aves-6bf26da885",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 2376,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 2376,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-aves-species-2e80762217",
+      "taxon_id": "stx:taxon:tree-aves-6bf26da885",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 11131,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 11131,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-insecta-species-4694f4e40d",
+      "taxon_id": "stx:taxon:tree-insecta-4e9be8a3db",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">1m",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 1000000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-arthropoda-species-0702dba647",
+      "taxon_id": "stx:taxon:tree-arthropoda-7483f37241",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">1.1m",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 1100000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-chordata-species-a46a2a5124",
+      "taxon_id": "stx:taxon:tree-chordata-e25dd70cfb",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">65k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 65000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-vertebrata-class-74211aff3c",
+      "taxon_id": "stx:taxon:tree-vertebrata-23209966a5",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "class",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 14,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 14,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-vertebrata-order-7dba82c0a1",
+      "taxon_id": "stx:taxon:tree-vertebrata-23209966a5",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "order",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 141,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 141,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-vertebrata-family-8ffe6a6a2f",
+      "taxon_id": "stx:taxon:tree-vertebrata-23209966a5",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "family",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 1067,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 1067,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-vertebrata-genus-15936985a8",
+      "taxon_id": "stx:taxon:tree-vertebrata-23209966a5",
+      "count_kind": "estimated_taxonomic_subdivisions",
+      "subdivision_rank": "genus",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 9984,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 9984,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-vertebrata-species-177fc343e4",
+      "taxon_id": "stx:taxon:tree-vertebrata-23209966a5",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">60k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 60000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-cnidaria-species-7d8fd1e52e",
+      "taxon_id": "stx:taxon:tree-cnidaria-c89f6e1a21",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈11k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 11000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-porifera-species-4ee6975158",
+      "taxon_id": "stx:taxon:tree-porifera-3b830759ee",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈9k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 9000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-mollusca-species-998dd60789",
+      "taxon_id": "stx:taxon:tree-mollusca-bbcc6f597e",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈85k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 85000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-echinodermata-species-bc57beabc1",
+      "taxon_id": "stx:taxon:tree-echinodermata-ab669a5cb5",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈7k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 7000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-ctenophora-species-84ae62452a",
+      "taxon_id": "stx:taxon:tree-ctenophora-dcbe1c86cc",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈200",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 200,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-nematoda-species-755df99c81",
+      "taxon_id": "stx:taxon:tree-nematoda-b29d82a19c",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">25k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 25000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-annelida-species-c83b207901",
+      "taxon_id": "stx:taxon:tree-annelida-8fce65ffed",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈20k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 20000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-amphibia-species-8f17e0cb39",
+      "taxon_id": "stx:taxon:tree-amphibia-c785ef2be2",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">8k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 8000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-crocodylia-species-b1a7ed0833",
+      "taxon_id": "stx:taxon:tree-crocodylia-5967239c87",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈27",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 27,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-testudines-species-00a8ba900b",
+      "taxon_id": "stx:taxon:tree-testudines-cf82e13faa",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈360",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 360,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-squamata-species-98a9c76f67",
+      "taxon_id": "stx:taxon:tree-squamata-6e6ad3b88f",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">11k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 11000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-lepidosauria-species-e437eca1c6",
+      "taxon_id": "stx:taxon:tree-lepidosauria-01f26625bc",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈12k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 12000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-primates-species-c525e26d04",
+      "taxon_id": "stx:taxon:tree-primates-f711c8c541",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈500",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 500,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-carnivora-species-afd17dc1cf",
+      "taxon_id": "stx:taxon:tree-carnivora-77ee16c33a",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈300",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 300,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-felidae-species-7b9dd293ac",
+      "taxon_id": "stx:taxon:tree-felidae-8c407166dd",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈40",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 40,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-hominidae-species-6cbeaba3e3",
+      "taxon_id": "stx:taxon:tree-hominidae-dc377beb93",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 8,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 8,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-panthera-species-e2e2cd46da",
+      "taxon_id": "stx:taxon:tree-panthera-4803ab3be1",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 5,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 5,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-proboscidea-species-ba0a0a2569",
+      "taxon_id": "stx:taxon:tree-proboscidea-b5cc3dd76c",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 3,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 3,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-monotremata-species-3799c886fd",
+      "taxon_id": "stx:taxon:tree-monotremata-cd40c2bb50",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": 5,
+      "parsed": {
+        "estimate_type": "source_stated_number",
+        "value": 5,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-marsupialia-species-e320b677e1",
+      "taxon_id": "stx:taxon:tree-marsupialia-0d9b95e0e5",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈330",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 330,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-placentalia-species-43c1e9a394",
+      "taxon_id": "stx:taxon:tree-placentalia-465fef2d05",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">6k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 6000,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-agaricus-species-22427d49b0",
+      "taxon_id": "stx:taxon:tree-agaricus-7db7b3614e",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">400",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 400,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-pinus-species-eae55d4160",
+      "taxon_id": "stx:taxon:tree-pinus-e2b387e4da",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈130",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 130,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-rosa-species-3c75c57ba9",
+      "taxon_id": "stx:taxon:tree-rosa-fec5e8fe75",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">300",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 300,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-dinosauria-species-fd5c000807",
+      "taxon_id": "stx:taxon:tree-dinosauria-ef3bf2b16e",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈11k living birds",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 11000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-theropoda-species-ec5e2c746d",
+      "taxon_id": "stx:taxon:tree-theropoda-a0756980e4",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈11k living birds",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 11000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-chytridiomycota-species-ced968e097",
+      "taxon_id": "stx:taxon:tree-chytridiomycota-972ffdf7e3",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈1k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 1000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-poaceae-species-023769c3c3",
+      "taxon_id": "stx:taxon:tree-poaceae-04ee070e1a",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈12k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 12000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-asteraceae-species-1d56a6c114",
+      "taxon_id": "stx:taxon:tree-asteraceae-1bc3190cc2",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈25k–32k",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 25000,
+        "maximum": 32000,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-liliopsida-species-1b7b0192d2",
+      "taxon_id": "stx:taxon:tree-liliopsida-a4e81d0c40",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈60k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 60000,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-cichlidae-species-5ac8ab1594",
+      "taxon_id": "stx:taxon:tree-cichlidae-217cb204dd",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">1.7k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 1700,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-rodentia-species-883111fd1a",
+      "taxon_id": "stx:taxon:tree-rodentia-ecef2dad9b",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">2.5k",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 2500,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1000,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-muridae-species-98d8b3c94a",
+      "taxon_id": "stx:taxon:tree-muridae-7f12976b9e",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": ">700",
+      "parsed": {
+        "estimate_type": "bound",
+        "value": null,
+        "minimum": 700,
+        "maximum": null,
+        "comparator": ">",
+        "unit_multiplier": 1,
+        "approximate": false
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    },
+    {
+      "id": "stx:estimate:subdiv-holothuroidea-species-40f52b97b4",
+      "taxon_id": "stx:taxon:tree-holothuroidea-35245e590c",
+      "count_kind": "estimated_extant_species_richness",
+      "subdivision_rank": "species",
+      "geographic_scope": "worldwide_reference_estimate",
+      "extant_status_scope": "extant_only_or_extant_focused_not_confirmed",
+      "as_of_date": null,
+      "source_reference_ids": [],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "verbatim_value": "≈1.7k",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 1700,
+        "minimum": null,
+        "maximum": null,
+        "comparator": null,
+        "unit_multiplier": 1000,
+        "approximate": true
+      },
+      "units": "taxa_at_specified_rank",
+      "uncertainty_note": "Source-native estimate or lower bound; assembled from multiple classification schemes; not a complete census."
+    }
+  ],
+  "population_estimates": [
+    {
+      "id": "stx:estimate:population-0-homo-sapiens-a34f3c6885",
+      "subject_name": "Homo sapiens",
+      "subject_taxon_id": "stx:taxon:tree-homo-sapiens-015d3cefb2",
+      "subject_tree_organism_keys": [
+        "ho"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-population-un-org-wpp-43598a297d"
+      ],
+      "verbatim_estimate": ">8 billion individuals",
+      "verbatim_scope": "Worldwide, 2026 approximate",
+      "geographic_scope": "Worldwide, 2026 approximate",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Worldwide, 2026 approximate",
+        "reported_years": [
+          2026
+        ],
+        "observed_from_year": 2026,
+        "observed_to_year": 2026,
+        "exact_date_known": false
+      },
+      "source_label": "UN World Population Prospects",
+      "uncertainty_note": "Population changes continuously; this is a broad order-of-magnitude figure, not a live census.",
+      "parsed": {
+        "estimate_type": "lower_bound",
+        "value": null,
+        "minimum": 8000000000.0,
+        "maximum": null,
+        "unit": "individuals",
+        "approximate": false
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Homo sapiens",
+        "estimate": ">8 billion individuals",
+        "scope": "Worldwide, 2026 approximate",
+        "note": "Population changes continuously; this is a broad order-of-magnitude figure, not a live census.",
+        "source": "UN World Population Prospects",
+        "href": "https://population.un.org/wpp/",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-1-panthera-tigris-49abcae760",
+      "subject_name": "Panthera tigris",
+      "subject_taxon_id": "stx:taxon:tree-panthera-tigris-f27498efd2",
+      "subject_tree_organism_keys": [
+        "ti"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-www-worldwildlife-org-stories-new-tiger-populati-81660bfe84"
+      ],
+      "verbatim_estimate": "≈5,574 wild individuals",
+      "verbatim_scope": "Global wild population, 2023",
+      "geographic_scope": "Global wild population, 2023",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Global wild population, 2023",
+        "reported_years": [
+          2023
+        ],
+        "observed_from_year": 2023,
+        "observed_to_year": 2023,
+        "exact_date_known": false
+      },
+      "source_label": "WWF / Global Tiger Forum",
+      "uncertainty_note": "A Global Tiger Forum estimate reported by WWF; excludes animals in captivity.",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 5574.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Panthera tigris",
+        "estimate": "≈5,574 wild individuals",
+        "scope": "Global wild population, 2023",
+        "note": "A Global Tiger Forum estimate reported by WWF; excludes animals in captivity.",
+        "source": "WWF / Global Tiger Forum",
+        "href": "https://www.worldwildlife.org/stories/new-tiger-population-estimate-of-5-574-wild-tigers-announced-by-global-tiger-forum",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-2-loxodonta-cyclotis-8d259ab5bb",
+      "subject_name": "Loxodonta cyclotis",
+      "subject_taxon_id": "stx:taxon:tree-loxodonta-cyclotis-0a2f34664e",
+      "subject_tree_organism_keys": [
+        "el"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-iucn-org-press-release-202511-dna-methods-help-u-af7e99b69a"
+      ],
+      "verbatim_estimate": "≈135,690 surveyed individuals",
+      "verbatim_scope": "African forest elephants, 2016–2022 surveys",
+      "geographic_scope": "African forest elephants, 2016–2022 surveys",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "African forest elephants, 2016–2022 surveys",
+        "reported_years": [
+          2016,
+          2022
+        ],
+        "observed_from_year": 2016,
+        "observed_to_year": 2022,
+        "exact_date_known": false
+      },
+      "source_label": "IUCN African Forest Elephant Status Report",
+      "uncertainty_note": "95% confidence interval: 99,343–172,297; a further 7,728–10,990 may occupy unsurveyed regions. Published in 2025.",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 135690.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Loxodonta cyclotis",
+        "estimate": "≈135,690 surveyed individuals",
+        "scope": "African forest elephants, 2016–2022 surveys",
+        "note": "95% confidence interval: 99,343–172,297; a further 7,728–10,990 may occupy unsurveyed regions. Published in 2025.",
+        "source": "IUCN African Forest Elephant Status Report",
+        "href": "https://iucn.org/press-release/202511/dna-methods-help-uncover-further-african-forest-elephants-species-remains",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-3-balaenoptera-musculus-1aafce9211",
+      "subject_name": "Balaenoptera musculus",
+      "subject_taxon_id": "stx:taxon:tree-balaenoptera-musculus-5671b16c6b",
+      "subject_tree_organism_keys": [
+        "new54"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-www-worldwildlife-org-species-blue-whale-0fe5f8dc5d"
+      ],
+      "verbatim_estimate": "≈10,000–25,000 individuals",
+      "verbatim_scope": "Global blue whale population",
+      "geographic_scope": "Global blue whale population",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Global blue whale population",
+        "reported_years": [],
+        "observed_from_year": null,
+        "observed_to_year": null,
+        "exact_date_known": false
+      },
+      "source_label": "WWF blue whale facts",
+      "uncertainty_note": "Broad conservation estimate; no complete worldwide animal-by-animal census.",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 10000.0,
+        "maximum": 25000.0,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Balaenoptera musculus",
+        "estimate": "≈10,000–25,000 individuals",
+        "scope": "Global blue whale population",
+        "note": "Broad conservation estimate; no complete worldwide animal-by-animal census.",
+        "source": "WWF blue whale facts",
+        "href": "https://www.worldwildlife.org/species/blue-whale",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-4-dromaius-novaehollandiae-d6b0216474",
+      "subject_name": "Dromaius novaehollandiae",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new58"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-doi-org-10-2305-iucn-uk-2018-2-rlts-t22678117a13-794ea4ee91"
+      ],
+      "verbatim_estimate": "≈630,000–725,000 mature birds",
+      "verbatim_scope": "Global mature population, 2018 assessment",
+      "geographic_scope": "Global mature population, 2018 assessment",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Global mature population, 2018 assessment",
+        "reported_years": [
+          2018
+        ],
+        "observed_from_year": 2018,
+        "observed_to_year": 2018,
+        "exact_date_known": false
+      },
+      "source_label": "BirdLife / IUCN Red List",
+      "uncertainty_note": "A mature-individual estimate—not all emus including juveniles.",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 630000.0,
+        "maximum": 725000.0,
+        "unit": "mature_individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Dromaius novaehollandiae",
+        "estimate": "≈630,000–725,000 mature birds",
+        "scope": "Global mature population, 2018 assessment",
+        "note": "A mature-individual estimate—not all emus including juveniles.",
+        "source": "BirdLife / IUCN Red List",
+        "href": "https://doi.org/10.2305/IUCN.UK.2018-2.RLTS.T22678117A131902466.en",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-5-corvus-corax-1d702c5767",
+      "subject_name": "Corvus corax",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new57"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-datazone-birdlife-org-species-factsheet-common-r-d7c0dca0f6"
+      ],
+      "verbatim_estimate": "≈21–26.4 million mature birds",
+      "verbatim_scope": "Global, preliminary BirdLife estimate",
+      "geographic_scope": "Global, preliminary BirdLife estimate",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Global, preliminary BirdLife estimate",
+        "reported_years": [],
+        "observed_from_year": null,
+        "observed_to_year": null,
+        "exact_date_known": false
+      },
+      "source_label": "BirdLife DataZone",
+      "uncertainty_note": "Preliminary adult-population estimate; accuracy varies across regions.",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 21000000.0,
+        "maximum": 26400000.0,
+        "unit": "mature_individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Corvus corax",
+        "estimate": "≈21–26.4 million mature birds",
+        "scope": "Global, preliminary BirdLife estimate",
+        "note": "Preliminary adult-population estimate; accuracy varies across regions.",
+        "source": "BirdLife DataZone",
+        "href": "https://datazone.birdlife.org/species/factsheet/common-raven-corvus-corax",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-6-ornithorhynchus-anatinus-e8ea71dcee",
+      "subject_name": "Ornithorhynchus anatinus",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new53"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-platypus-asn-au-population-size-and-density-e636501aab"
+      ],
+      "verbatim_estimate": "≈30,000–300,000 individuals",
+      "verbatim_scope": "Australia, highly uncertain 2016 assessment",
+      "geographic_scope": "Australia, highly uncertain 2016 assessment",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Australia, highly uncertain 2016 assessment",
+        "reported_years": [
+          2016
+        ],
+        "observed_from_year": 2016,
+        "observed_to_year": 2016,
+        "exact_date_known": false
+      },
+      "source_label": "IUCN-based platypus abundance review",
+      "uncertainty_note": "This large range reflects limited survey coverage and strong uncertainty, not short-term annual variation.",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 30000.0,
+        "maximum": 300000.0,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Ornithorhynchus anatinus",
+        "estimate": "≈30,000–300,000 individuals",
+        "scope": "Australia, highly uncertain 2016 assessment",
+        "note": "This large range reflects limited survey coverage and strong uncertainty, not short-term annual variation.",
+        "source": "IUCN-based platypus abundance review",
+        "href": "https://platypus.asn.au/population-size-and-density/",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-7-ambystoma-mexicanum-866678e01e",
+      "subject_name": "Ambystoma mexicanum",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new52"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-www-conservation-org-learning-axolotl-conservati-9ec4946f93"
+      ],
+      "verbatim_estimate": "≈50–1,000 wild individuals",
+      "verbatim_scope": "Xochimilco wild population, IUCN-based estimate",
+      "geographic_scope": "Xochimilco wild population, IUCN-based estimate",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Xochimilco wild population, IUCN-based estimate",
+        "reported_years": [],
+        "observed_from_year": null,
+        "observed_to_year": null,
+        "exact_date_known": false
+      },
+      "source_label": "Conservation International",
+      "uncertainty_note": "Excludes the much larger captive and laboratory population.",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 50.0,
+        "maximum": 1000.0,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Ambystoma mexicanum",
+        "estimate": "≈50–1,000 wild individuals",
+        "scope": "Xochimilco wild population, IUCN-based estimate",
+        "note": "Excludes the much larger captive and laboratory population.",
+        "source": "Conservation International",
+        "href": "https://www.conservation.org/learning/axolotl-conservation",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-8-danaus-plexippus-a77c6c4a42",
+      "subject_name": "Danaus plexippus",
+      "subject_taxon_id": "stx:taxon:tree-danaus-plexippus-6a5c6a91d2",
+      "subject_tree_organism_keys": [
+        "mb"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-monarchjointventure-org-blog-eastern-monarch-ove-12d8dbadf9"
+      ],
+      "verbatim_estimate": "≈60–90 million overwintering butterflies",
+      "verbatim_scope": "Eastern North American migrants, winter 2025–26",
+      "geographic_scope": "Eastern North American migrants, winter 2025–26",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Eastern North American migrants, winter 2025–26",
+        "reported_years": [
+          2025
+        ],
+        "observed_from_year": 2025,
+        "observed_to_year": 2026,
+        "exact_date_known": false
+      },
+      "source_label": "Monarch Joint Venture / winter survey",
+      "uncertainty_note": "Rough conversion of 2.93 hectares occupied in Mexico at ≈20–30 million butterflies per hectare. Not a census of all monarchs globally; seasonal numbers vary.",
+      "parsed": {
+        "estimate_type": "range",
+        "value": null,
+        "minimum": 60000000.0,
+        "maximum": 90000000.0,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Danaus plexippus",
+        "estimate": "≈60–90 million overwintering butterflies",
+        "scope": "Eastern North American migrants, winter 2025–26",
+        "note": "Rough conversion of 2.93 hectares occupied in Mexico at ≈20–30 million butterflies per hectare. Not a census of all monarchs globally; seasonal numbers vary.",
+        "source": "Monarch Joint Venture / winter survey",
+        "href": "https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-9-apis-mellifera-2adc3c9094",
+      "subject_name": "Apis mellifera",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new45"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-pmc-ncbi-nlm-nih-gov-articles-pmc10568204-c5b56e2d74"
+      ],
+      "verbatim_estimate": "≈280 million wild + 102 million managed colonies",
+      "verbatim_scope": "Worldwide colony estimate, 2021 baseline / 2023 study",
+      "geographic_scope": "Worldwide colony estimate, 2021 baseline / 2023 study",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Worldwide colony estimate, 2021 baseline / 2023 study",
+        "reported_years": [
+          2021,
+          2023
+        ],
+        "observed_from_year": 2021,
+        "observed_to_year": 2023,
+        "exact_date_known": false
+      },
+      "source_label": "Visick & Ratnieks (2023)",
+      "uncertainty_note": "Colonies, NOT individual bees. Wild-colony estimate is tentative. Individuals per colony change seasonally.",
+      "parsed": {
+        "estimate_type": "two_components",
+        "value": null,
+        "minimum": null,
+        "maximum": null,
+        "unit": "colonies",
+        "components": [
+          {
+            "population_category": "wild",
+            "value": 280000000,
+            "unit": "colonies",
+            "qualifier": "approximate"
+          },
+          {
+            "population_category": "managed",
+            "value": 102000000,
+            "unit": "colonies",
+            "qualifier": "source_rounded"
+          }
+        ]
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Apis mellifera",
+        "estimate": "≈280 million wild + 102 million managed colonies",
+        "scope": "Worldwide colony estimate, 2021 baseline / 2023 study",
+        "note": "Colonies, NOT individual bees. Wild-colony estimate is tentative. Individuals per colony change seasonally.",
+        "source": "Visick & Ratnieks (2023)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10568204/",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-10-carcharodon-carcharias-92b708e08a",
+      "subject_name": "Carcharodon carcharias",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new51"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-www-csiro-au-en-research-animals-marine-life-sha-872c9afe63"
+      ],
+      "verbatim_estimate": "≈5,460 sharks in eastern Australasia",
+      "verbatim_scope": "Regional population model; no reliable global total",
+      "geographic_scope": "Regional population model; no reliable global total",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Regional population model; no reliable global total",
+        "reported_years": [],
+        "observed_from_year": null,
+        "observed_to_year": null,
+        "exact_date_known": false
+      },
+      "source_label": "CSIRO white shark population",
+      "uncertainty_note": "Regional total (possible interval: 2,909–12,802) for eastern Australian and New Zealand white sharks. Must not be read as a worldwide count.",
+      "parsed": {
+        "estimate_type": "approximate",
+        "value": 5460.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "individuals",
+        "approximate": true
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Carcharodon carcharias",
+        "estimate": "≈5,460 sharks in eastern Australasia",
+        "scope": "Regional population model; no reliable global total",
+        "note": "Regional total (possible interval: 2,909–12,802) for eastern Australian and New Zealand white sharks. Must not be read as a worldwide count.",
+        "source": "CSIRO white shark population",
+        "href": "https://www.csiro.au/en/research/animals/marine-life/sharks/can-white-shark-numbers-be-estimated",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    },
+    {
+      "id": "stx:estimate:population-11-prochlorococcus-marinus-4e922e9a3d",
+      "subject_name": "Prochlorococcus marinus",
+      "subject_taxon_id": null,
+      "subject_tree_organism_keys": [
+        "new0"
+      ],
+      "source_export": "tree_of_life_explorer_v1.7",
+      "source_reference_ids": [
+        "stx:source:https-pmc-ncbi-nlm-nih-gov-articles-pmc3683724-a5c7f1c748"
+      ],
+      "verbatim_estimate": "Species-specific count unknown",
+      "verbatim_scope": "Prochlorococcus genus ≈2.9 × 10²⁷ marine cells",
+      "geographic_scope": "Prochlorococcus genus ≈2.9 × 10²⁷ marine cells",
+      "as_of_date": null,
+      "temporal_scope": {
+        "original_text": "Prochlorococcus genus ≈2.9 × 10²⁷ marine cells",
+        "reported_years": [],
+        "observed_from_year": null,
+        "observed_to_year": null,
+        "exact_date_known": false
+      },
+      "source_label": "Flombaum et al. (2013)",
+      "uncertainty_note": "Model estimate covers the genus across ocean regions, not exclusively the named species P. marinus.",
+      "parsed": {
+        "estimate_type": "species_unknown_genus_reference_only",
+        "value": null,
+        "minimum": null,
+        "maximum": null,
+        "unit": null,
+        "other_scope_assertion": {
+          "name": "Prochlorococcus genus",
+          "estimated_cells": 2.9e+27,
+          "unit": "cells",
+          "not_same_as_subject": true
+        }
+      },
+      "source_record": {
+        "taxon_or_organism_name": "Prochlorococcus marinus",
+        "estimate": "Species-specific count unknown",
+        "scope": "Prochlorococcus genus ≈2.9 × 10²⁷ marine cells",
+        "note": "Model estimate covers the genus across ocean regions, not exclusively the named species P. marinus.",
+        "source": "Flombaum et al. (2013)",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3683724/",
+        "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+      }
+    }
+  ],
+  "interpretation": "Indexed records, subdivision estimates, species richness and living-individual populations have separate units and scopes."
+}

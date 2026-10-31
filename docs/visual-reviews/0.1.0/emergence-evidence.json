@@ -1,0 +1,174 @@
+{
+  "widget": "emergence",
+  "widget_version": "1.10",
+  "repository_version": "0.1.0",
+  "captured_at": "2026-10-31T03:11:55.475422+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Emergence_Atlas_v1.10.html",
+  "source_sha256": "04d32f423364ca4f97e30a27378418482e93bda1483cf631aa6488d0ffe391cb",
+  "actual_sha256": "fa0d9d5ee95c8664bd2b81db8d8006e5f6aaedf491b6c2cb12b4dbd8f21e824b",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Initial default view in clean browser profile",
+  "goals": [
+    {
+      "path": "atlas/images/audit_emergence_concept.png",
+      "sha256": "a80f7481021513df7d2cc72365c7dac418bcd6386198d09f61aebecda409cef2",
+      "crop": null,
+      "approval": "proposed concept, not approved"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T072",
+      "title": "Preserve existing dataset and interactions while upgrading visual shell.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S016",
+      "title": "Add evidence-and-scale comparison for the active emergence level.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T071",
+      "title": "Translate common illustrated-header and story-card language to this widget.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "T073",
+      "title": "Capture new goal reference and actual screenshot at same viewport.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I011",
+      "title": "Improve interactive level diagrams and evidence panels.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "S009",
+      "title": "Interactive emergence-layer network comparison.",
+      "priority": "p2",
+      "status": "proposed"
+    }
+  ],
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "781f80f23dc9275209115f44e4c1adf731a71cb866ee9307cfc57438c0fe53c6"
+}

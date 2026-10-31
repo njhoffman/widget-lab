@@ -1,0 +1,1919 @@
+{
+  "_metadata": {
+    "originating_widget": "Tree of Life Explorer",
+    "originating_widget_file": "tree_of_life_explorer.html",
+    "originating_widget_version": "1.7",
+    "pre_export_widget_version": "1.6",
+    "source_date": "2026-10-15",
+    "export_date": "2026-10-15",
+    "export_type": "unreconciled source snapshot",
+    "source_html_sha256": "561087777ad88950fa1981e9f0b81f1a2a8232181b75fbf73e3811f2d21709b7",
+    "source_pre_export_sha256": "da359aa023aeeaa4e3769c74f2548920603307e58b9921123511e092d82d8a21"
+  },
+  "records": [
+    {
+      "taxon_id": "Life",
+      "pronunciation": "lyfe",
+      "etymology": "Old English līf, “life”",
+      "distinguishing_traits_text": "Heritable information; metabolism; evolutionary descent",
+      "evolutionary_history_text": "All known cellular organisms share ancestral biochemical systems. Oldest evidence of life is debated, with multiple geochemical and stromatolite lines of evidence.",
+      "original_diversity_or_population_text": "Millions of described species"
+    },
+    {
+      "taxon_id": "Bacteria_domain",
+      "pronunciation": "bak-TEER-ee-uh",
+      "etymology": "Greek baktērion, “little rod”",
+      "distinguishing_traits_text": "Prokaryotic organization; diverse cell envelopes; extraordinary metabolic breadth",
+      "evolutionary_history_text": "Bacteria are one of three major cellular domains; metabolism reshaped Earth long before animal life.",
+      "original_diversity_or_population_text": "Extremely diverse"
+    },
+    {
+      "taxon_id": "Archaea_domain",
+      "pronunciation": "ar-KEE-uh",
+      "etymology": "Greek arkhaios, “ancient”",
+      "distinguishing_traits_text": "Distinct membrane lipids; archaeal information processing; diverse chemistries",
+      "evolutionary_history_text": "Archaea include methanogens, salt-tolerant groups and lineages closely related to eukaryotes. Deep branching remains actively revised.",
+      "original_diversity_or_population_text": "Thousands described; many uncultured"
+    },
+    {
+      "taxon_id": "Eukaryota",
+      "pronunciation": "yoo-KAIR-ee-OH-tuh",
+      "etymology": "Greek eu “true” + karyon “kernel / nucleus”",
+      "distinguishing_traits_text": "Nucleus; endomembranes; mitochondria or descendants; cytoskeleton",
+      "evolutionary_history_text": "Eukaryotic cellular complexity arose through symbiogenesis and gene exchange; multicellularity arose independently several times.",
+      "original_diversity_or_population_text": "Millions of described species"
+    },
+    {
+      "taxon_id": "Bacteria",
+      "pronunciation": "bak-TEER-ee-uh",
+      "etymology": "Greek baktērion, “little rod”",
+      "distinguishing_traits_text": "Bacterial ribosomes; varied respiration and photosynthesis; rapid horizontal gene transfer",
+      "evolutionary_history_text": "Bacterial metabolisms include oxygenic photosynthesis, nitrogen fixation, sulfate reduction, and aerobic respiration.",
+      "original_diversity_or_population_text": "Tens of thousands formally named species"
+    },
+    {
+      "taxon_id": "Archaea",
+      "pronunciation": "ar-KEE-uh",
+      "etymology": "Greek arkhaios, “ancient”",
+      "distinguishing_traits_text": "Ether-linked membrane lipids in many; archaea-specific molecular machineries; methanogenesis in some",
+      "evolutionary_history_text": "Archaea occupy terrestrial, marine, host-associated, and high-temperature habitats, not only extremes.",
+      "original_diversity_or_population_text": "Thousands formally named species"
+    },
+    {
+      "taxon_id": "Opisthokonta",
+      "pronunciation": "oh-pis-thoh-KON-tuh",
+      "etymology": "Greek opisthen “behind” + kontos “pole”",
+      "distinguishing_traits_text": "Ancestral single posterior flagellum; shared molecular synapomorphies",
+      "evolutionary_history_text": "This evolutionary branch includes animal and fungal ancestors, with important single-celled relatives not fully shown in the atlas.",
+      "original_diversity_or_population_text": "Includes animals and fungi"
+    },
+    {
+      "taxon_id": "Archaeplastida",
+      "pronunciation": "ar-kee-PLAS-tih-duh",
+      "etymology": "Greek arkhaios “ancient” + plastid",
+      "distinguishing_traits_text": "Primary plastids derived from cyanobacteria; photosynthetic lineages",
+      "evolutionary_history_text": "Primary plastid endosymbiosis enabled the evolution of red algae, green plants, and glaucophytes.",
+      "original_diversity_or_population_text": "Green and red algal diversity"
+    },
+    {
+      "taxon_id": "Plantae",
+      "pronunciation": "PLAN-tee",
+      "etymology": "Latin planta “shoot / sprout”",
+      "distinguishing_traits_text": "Plastids; cellulose-rich cell walls; photosynthesis; alternating generations in land plants",
+      "evolutionary_history_text": "Green plant ancestry lies among freshwater-related green algal lines; land colonization reshaped soils, weathering, and atmospheric carbon. Circumscription of Plantae varies.",
+      "original_diversity_or_population_text": "410,832 Catalogue of Life listings, Sept 2026"
+    },
+    {
+      "taxon_id": "Fungi",
+      "pronunciation": "FUN-jye",
+      "etymology": "Latin fungus “mushroom”",
+      "distinguishing_traits_text": "Absorptive nutrition; chitin-rich walls in many; hyphal networks common",
+      "evolutionary_history_text": "Fungi evolved potent extracellular digestion, mineral uptake and symbioses; mycorrhizal partnerships aided land plants.",
+      "original_diversity_or_population_text": "174,666 Catalogue of Life listings, Sept 2026"
+    },
+    {
+      "taxon_id": "Chromista",
+      "pronunciation": "kroh-MIS-tuh",
+      "etymology": "Greek chrōma “color”",
+      "distinguishing_traits_text": "Many with complex plastids; diverse flagella; marine primary production",
+      "evolutionary_history_text": "Chromista is a classification-dependent assemblage. Its boundaries and monophyly are debated; many lineages arose through complex plastid symbiosis.",
+      "original_diversity_or_population_text": "Taxonomic coverage varies"
+    },
+    {
+      "taxon_id": "Protozoa",
+      "pronunciation": "proh-tuh-ZOH-uh",
+      "etymology": "Greek prōtos “first” + zōion “animal”",
+      "distinguishing_traits_text": "Mostly unicellular eukaryotes; phagocytosis in many; diverse motility",
+      "evolutionary_history_text": "Traditional Protozoa is paraphyletic: organisms grouped under it do not form one exclusive evolutionary branch. Shown as a historical taxonomic category.",
+      "original_diversity_or_population_text": "Classification-dependent"
+    },
+    {
+      "taxon_id": "Cyanobacteriota",
+      "pronunciation": "sy-an-oh-bak-TEER-ee-OH-tuh",
+      "etymology": "Greek kyanos “blue” + bacteria",
+      "distinguishing_traits_text": "Oxygenic photosynthesis; chlorophyll a; thylakoids in many",
+      "evolutionary_history_text": "Cyanobacterial oxygen production helped drive the Great Oxidation Event; a cyanobacterium became the ancestor of plastids.",
+      "original_diversity_or_population_text": "Thousands described"
+    },
+    {
+      "taxon_id": "Nostocales",
+      "pronunciation": "nos-toh-KAY-leez",
+      "etymology": "From genus Nostoc",
+      "distinguishing_traits_text": "Heterocysts in many; nitrogen fixation; filaments",
+      "evolutionary_history_text": "Some members specialize cells to fix nitrogen while neighboring cells produce oxygen.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Nostoc",
+      "pronunciation": "NOS-tok",
+      "etymology": "Traditional name applied to gelatinous colonies",
+      "distinguishing_traits_text": "Gelatinous colonies; heterocysts in many",
+      "evolutionary_history_text": "Nostoc species inhabit soils, rock surfaces and freshwater, often responding to periodic wetting.",
+      "original_diversity_or_population_text": "Many named species"
+    },
+    {
+      "taxon_id": "Nostoc commune",
+      "pronunciation": "NOS-tok KOM-yoon",
+      "etymology": "Latin commune “common”",
+      "distinguishing_traits_text": "Nitrogen-fixing colonies; desiccation tolerance",
+      "evolutionary_history_text": "Visible gelatinous colonies expand rapidly after rain.",
+      "original_diversity_or_population_text": "1 species; individual cell counts unknown"
+    },
+    {
+      "taxon_id": "Pseudomonadota",
+      "pronunciation": "soo-doh-mon-AH-doh-tuh",
+      "etymology": "From Pseudomonas + Greek taxonomic ending",
+      "distinguishing_traits_text": "Diverse Gram-negative lineages; photosynthesis or heterotrophy",
+      "evolutionary_history_text": "Includes many symbionts, marine bacteria, soil organisms and pathogens.",
+      "original_diversity_or_population_text": "Enormous named diversity"
+    },
+    {
+      "taxon_id": "Gammaproteobacteria",
+      "pronunciation": "GAM-uh-proh-tee-oh-bak-TEER-ee-uh",
+      "etymology": "Greek gamma, third letter",
+      "distinguishing_traits_text": "Highly varied respiratory and ecological strategies",
+      "evolutionary_history_text": "Includes enteric bacteria, vibrios, and many marine groups.",
+      "original_diversity_or_population_text": "Thousands described"
+    },
+    {
+      "taxon_id": "Enterobacterales",
+      "pronunciation": "en-ter-oh-bak-ter-AY-leez",
+      "etymology": "Greek enteron “intestine”",
+      "distinguishing_traits_text": "Facultative anaerobes common",
+      "evolutionary_history_text": "Includes abundant gut-associated and environmental species.",
+      "original_diversity_or_population_text": "Hundreds of named genera"
+    },
+    {
+      "taxon_id": "Enterobacteriaceae",
+      "pronunciation": "en-ter-oh-bak-teer-ee-AY-see-ee",
+      "etymology": "From Enterobacter",
+      "distinguishing_traits_text": "Gram-negative rods; fermentative capacity in many",
+      "evolutionary_history_text": "Contains model organisms and pathogenic relatives.",
+      "original_diversity_or_population_text": "Numerous genera"
+    },
+    {
+      "taxon_id": "Escherichia",
+      "pronunciation": "esh-uh-RIK-ee-uh",
+      "etymology": "Named for Theodor Escherich",
+      "distinguishing_traits_text": "Facultatively anaerobic enteric organisms",
+      "evolutionary_history_text": "E. coli became a central model for molecular genetics and microbial ecology.",
+      "original_diversity_or_population_text": "Several named species"
+    },
+    {
+      "taxon_id": "Escherichia coli",
+      "pronunciation": "esh-uh-RIK-ee-uh KOH-lye",
+      "etymology": "Latin coli “of the colon”",
+      "distinguishing_traits_text": "Enormous strain diversity; adaptable metabolism",
+      "evolutionary_history_text": "Most strains inhabit vertebrate guts without causing disease, while certain lineages are pathogenic.",
+      "original_diversity_or_population_text": "1 species; population not measurable globally"
+    },
+    {
+      "taxon_id": "Bacillota",
+      "pronunciation": "bah-sil-OH-tuh",
+      "etymology": "From Bacillus",
+      "distinguishing_traits_text": "Many Gram-positive lineages; spore formation in some",
+      "evolutionary_history_text": "Important decomposers, gut symbionts, fermenters, and pathogens.",
+      "original_diversity_or_population_text": "Many named species"
+    },
+    {
+      "taxon_id": "Bacilli",
+      "pronunciation": "bah-SIL-eye",
+      "etymology": "Latin bacillus “small rod”",
+      "distinguishing_traits_text": "Some form endospores",
+      "evolutionary_history_text": "Contains Bacillus and relatives adapted to contrasting habitats.",
+      "original_diversity_or_population_text": "Numerous genera"
+    },
+    {
+      "taxon_id": "Bacillales",
+      "pronunciation": "bah-sil-AY-leez",
+      "etymology": "From Bacillus",
+      "distinguishing_traits_text": "Aerobic and facultative taxa; endospores in some",
+      "evolutionary_history_text": "Includes soil-adapted bacterial lineages.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Bacillaceae",
+      "pronunciation": "bah-sil-AY-see-ee",
+      "etymology": "From Bacillus",
+      "distinguishing_traits_text": "Bacterial spores in many members",
+      "evolutionary_history_text": "Common in soils and other terrestrial habitats.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Bacillus",
+      "pronunciation": "bah-SIL-us",
+      "etymology": "Latin “little rod”",
+      "distinguishing_traits_text": "Resistant endospores",
+      "evolutionary_history_text": "Includes widely studied soil microorganisms.",
+      "original_diversity_or_population_text": "Dozens of recognized species"
+    },
+    {
+      "taxon_id": "Bacillus subtilis",
+      "pronunciation": "bah-SIL-us SUB-tih-lis",
+      "etymology": "Latin subtilis “fine / slender”",
+      "distinguishing_traits_text": "Sporulation; biofilm formation; competence",
+      "evolutionary_history_text": "A classic bacterium for studying cellular differentiation and gene regulation.",
+      "original_diversity_or_population_text": "1 species; global abundance unknown"
+    },
+    {
+      "taxon_id": "Euryarchaeota",
+      "pronunciation": "yoo-ree-ar-kee-OH-tuh",
+      "etymology": "Greek eurys “broad” + archaea",
+      "distinguishing_traits_text": "Methanogenesis in several lineages; halophiles",
+      "evolutionary_history_text": "Traditional Euryarchaeota membership is heavily revised in newer phylogenomic systems.",
+      "original_diversity_or_population_text": "Diverse lineages"
+    },
+    {
+      "taxon_id": "Methanobacteria",
+      "pronunciation": "meth-uh-noh-bak-TEER-ee-uh",
+      "etymology": "Greek methy “wine” via methane",
+      "distinguishing_traits_text": "Methanogenesis; hydrogen metabolism",
+      "evolutionary_history_text": "Methane production is an ancient biological source of atmospheric methane.",
+      "original_diversity_or_population_text": "Many named species"
+    },
+    {
+      "taxon_id": "Methanobacteriales",
+      "pronunciation": "meth-uh-noh-bak-ter-ee-AY-leez",
+      "etymology": "From Methanobacterium",
+      "distinguishing_traits_text": "Hydrogenotrophic methane production common",
+      "evolutionary_history_text": "Grow in anaerobic environments, including animal digestive systems.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Methanobacteriaceae",
+      "pronunciation": "meth-uh-noh-bak-ter-ee-AY-see-ee",
+      "etymology": "From Methanobacterium",
+      "distinguishing_traits_text": "Methane-producing metabolism",
+      "evolutionary_history_text": "A group involved in anoxic carbon cycling.",
+      "original_diversity_or_population_text": "Several genera"
+    },
+    {
+      "taxon_id": "Methanobrevibacter",
+      "pronunciation": "meth-uh-noh-brev-ih-BAK-ter",
+      "etymology": "Greek methane + Latin brevis “short” + bacterium",
+      "distinguishing_traits_text": "Often host-associated",
+      "evolutionary_history_text": "Some species inhabit mammal intestines.",
+      "original_diversity_or_population_text": "Several named species"
+    },
+    {
+      "taxon_id": "Methanobrevibacter smithii",
+      "pronunciation": "smith-EE-eye",
+      "etymology": "Named for an investigator Smith",
+      "distinguishing_traits_text": "Hydrogen-consuming methanogenesis",
+      "evolutionary_history_text": "Common archaeal member of human gut microbiomes.",
+      "original_diversity_or_population_text": "1 species; host abundance varies"
+    },
+    {
+      "taxon_id": "Thermoproteota",
+      "pronunciation": "THER-moh-proh-tee-OH-tuh",
+      "etymology": "Greek thermos “heat” + proteus",
+      "distinguishing_traits_text": "Many heat-adapted members; archaeal cell biology",
+      "evolutionary_history_text": "Contains branches formerly placed within Crenarchaeota; broader modern usage varies.",
+      "original_diversity_or_population_text": "Classification varies"
+    },
+    {
+      "taxon_id": "Thermoprotei",
+      "pronunciation": "THER-moh-PROH-tee-eye",
+      "etymology": "Heat + proteus",
+      "distinguishing_traits_text": "Acidothermal adaptations in many",
+      "evolutionary_history_text": "Diverse archaea thrive in sulfur-rich hot springs.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Sulfolobales",
+      "pronunciation": "sul-foh-loh-BAY-leez",
+      "etymology": "Sulfur + lobus “lobe”",
+      "distinguishing_traits_text": "Thermoacidophily common",
+      "evolutionary_history_text": "Oxidize sulfur compounds in acidic thermal environments.",
+      "original_diversity_or_population_text": "Multiple genera"
+    },
+    {
+      "taxon_id": "Sulfolobaceae",
+      "pronunciation": "sul-foh-loh-BAY-see-ee",
+      "etymology": "From Sulfolobus",
+      "distinguishing_traits_text": "Extremophilic cell membranes",
+      "evolutionary_history_text": "Important models for archaeal molecular biology.",
+      "original_diversity_or_population_text": "Several genera"
+    },
+    {
+      "taxon_id": "Sulfolobus",
+      "pronunciation": "SUL-foh-LOH-bus",
+      "etymology": "Latin sulfur + lobus “lobe”",
+      "distinguishing_traits_text": "Thermoacidophilic growth",
+      "evolutionary_history_text": "Thermoacidophiles found in geothermal areas.",
+      "original_diversity_or_population_text": "Several species"
+    },
+    {
+      "taxon_id": "Sulfolobus acidocaldarius",
+      "pronunciation": "as-id-oh-kal-DAIR-ee-us",
+      "etymology": "Latin acidus “acid” + caldarius “hot”",
+      "distinguishing_traits_text": "Grows at high temperature and low pH",
+      "evolutionary_history_text": "A model for archaeal chromosomal replication and cellular division.",
+      "original_diversity_or_population_text": "1 species"
+    },
+    {
+      "taxon_id": "Bryophyta",
+      "pronunciation": "bry-OFF-ih-tuh",
+      "etymology": "Greek bryon “moss” + phyton “plant”",
+      "distinguishing_traits_text": "Gametophyte-dominant; spores; no true vascular tissue",
+      "evolutionary_history_text": "Early land plants helped establish terrestrial habitats, while moss lineages retained a dominant gametophyte.",
+      "original_diversity_or_population_text": "~12,000 moss species"
+    },
+    {
+      "taxon_id": "Sphagnopsida",
+      "pronunciation": "sfag-NOP-sih-duh",
+      "etymology": "Greek sphagnos “sphagnum moss”",
+      "distinguishing_traits_text": "Water-holding cells; peat formation",
+      "evolutionary_history_text": "Peat mosses influence carbon storage and wetland acidity.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Sphagnum",
+      "pronunciation": "SFAG-num",
+      "etymology": "Greek sphagnos",
+      "distinguishing_traits_text": "Acidifying growth; high water retention",
+      "evolutionary_history_text": "Sphagnum plants create waterlogged peatlands with slow decomposition.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Sphagnum palustre",
+      "pronunciation": "pah-LOOS-tray",
+      "etymology": "Latin palustris “marshy”",
+      "distinguishing_traits_text": "Wetland moss",
+      "evolutionary_history_text": "Peatland moss distributed across broad temperate areas.",
+      "original_diversity_or_population_text": "1 species"
+    },
+    {
+      "taxon_id": "Tracheophyta",
+      "pronunciation": "tray-kee-OFF-ih-tuh",
+      "etymology": "Greek trakheia “windpipe / vessel”",
+      "distinguishing_traits_text": "Xylem and phloem; lignified support; sporophyte dominance",
+      "evolutionary_history_text": "Transport and structural tissues enabled taller terrestrial growth and diverse vascular ecologies.",
+      "original_diversity_or_population_text": "Hundreds of thousands of species"
+    },
+    {
+      "taxon_id": "Polypodiopsida",
+      "pronunciation": "pol-ee-poh-dee-OP-sih-duh",
+      "etymology": "Greek poly “many” + podion “little foot”",
+      "distinguishing_traits_text": "Fronds; spores; vascular tissue",
+      "evolutionary_history_text": "Ferns diversified extensively in humid terrestrial settings and persist globally.",
+      "original_diversity_or_population_text": "~10,000 fern species"
+    },
+    {
+      "taxon_id": "Cyatheales",
+      "pronunciation": "sye-uh-thee-AY-leez",
+      "etymology": "From Cyathea",
+      "distinguishing_traits_text": "Often upright trunks; large fronds",
+      "evolutionary_history_text": "Tree ferns were conspicuous in many Mesozoic forests.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Spermatophyta",
+      "pronunciation": "spur-MAT-oh-fy-tuh",
+      "etymology": "Greek sperma “seed” + phyton “plant”",
+      "distinguishing_traits_text": "Pollen and ovules; seed development",
+      "evolutionary_history_text": "Seeds freed reproduction from surface-water dependence and protected embryos.",
+      "original_diversity_or_population_text": "Most living vascular plant species"
+    },
+    {
+      "taxon_id": "Pinophyta",
+      "pronunciation": "pyn-OFF-ih-tuh",
+      "etymology": "Latin pinus “pine”",
+      "distinguishing_traits_text": "Cones; pollen; wood; many evergreen leaves",
+      "evolutionary_history_text": "Conifers dominate important high-latitude and montane forests.",
+      "original_diversity_or_population_text": "~600 extant species"
+    },
+    {
+      "taxon_id": "Pinopsida",
+      "pronunciation": "pin-OP-sih-duh",
+      "etymology": "Latin pinus “pine”",
+      "distinguishing_traits_text": "Needle or scale leaves; naked ovules",
+      "evolutionary_history_text": "Conifers occupied diverse Mesozoic habitats before flowering plant radiation.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Pinales",
+      "pronunciation": "pin-AY-leez",
+      "etymology": "Latin pinus",
+      "distinguishing_traits_text": "Seed-bearing woody plants",
+      "evolutionary_history_text": "Includes many living conifer families.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Pinaceae",
+      "pronunciation": "pin-AY-see-ee",
+      "etymology": "From Pinus",
+      "distinguishing_traits_text": "Resin canals; woody cones",
+      "evolutionary_history_text": "Includes pines, spruces, firs, and larches.",
+      "original_diversity_or_population_text": "~230 species"
+    },
+    {
+      "taxon_id": "Pinus",
+      "pronunciation": "PYE-nus",
+      "etymology": "Latin “pine”",
+      "distinguishing_traits_text": "Needles in fascicles in many",
+      "evolutionary_history_text": "Pines are important fire- and drought-adapted trees.",
+      "original_diversity_or_population_text": "~100 species"
+    },
+    {
+      "taxon_id": "Pinus sylvestris",
+      "pronunciation": "sil-VES-triss",
+      "etymology": "Latin “of the woods”",
+      "distinguishing_traits_text": "Conifer with needle fascicles",
+      "evolutionary_history_text": "Widespread Eurasian tree adapted to cool climates.",
+      "original_diversity_or_population_text": "1 species"
+    },
+    {
+      "taxon_id": "Angiospermae",
+      "pronunciation": "an-jee-oh-SPUR-mee",
+      "etymology": "Greek angeion “vessel” + sperma “seed”",
+      "distinguishing_traits_text": "Flowers; enclosed seeds; double fertilization",
+      "evolutionary_history_text": "Flowering plants radiated during the Cretaceous alongside pollinators and herbivores.",
+      "original_diversity_or_population_text": "~300,000 described species"
+    },
+    {
+      "taxon_id": "Magnoliopsida",
+      "pronunciation": "mag-noh-lee-OP-sih-duh",
+      "etymology": "Named for Magnolia",
+      "distinguishing_traits_text": "Tricolpate pollen in core eudicots",
+      "evolutionary_history_text": "A large flowering plant lineage; class circumscription differs by system.",
+      "original_diversity_or_population_text": "Most flowering plants"
+    },
+    {
+      "taxon_id": "Rosales",
+      "pronunciation": "roh-ZAY-leez",
+      "etymology": "Latin rosa “rose”",
+      "distinguishing_traits_text": "Diverse flowers and fruits",
+      "evolutionary_history_text": "An important angiosperm order occupying many habitats.",
+      "original_diversity_or_population_text": "Thousands of species"
+    },
+    {
+      "taxon_id": "Rosaceae",
+      "pronunciation": "roh-ZAY-see-ee",
+      "etymology": "Latin rosa “rose”",
+      "distinguishing_traits_text": "Hypanthium in many; diverse fruits",
+      "evolutionary_history_text": "Contains roses, apples, pears, cherries, and strawberries.",
+      "original_diversity_or_population_text": "~3,000 species"
+    },
+    {
+      "taxon_id": "Rosa",
+      "pronunciation": "ROH-zuh",
+      "etymology": "Latin “rose”",
+      "distinguishing_traits_text": "Prickles in many; fragrant flowers",
+      "evolutionary_history_text": "Wild roses occupy temperate regions worldwide.",
+      "original_diversity_or_population_text": "~100–300 species; taxonomy difficult"
+    },
+    {
+      "taxon_id": "Rosa canina",
+      "pronunciation": "kah-NEE-nah",
+      "etymology": "Latin canina “of a dog”",
+      "distinguishing_traits_text": "Pink flowers; vitamin-rich hips",
+      "evolutionary_history_text": "A wild rose native to Europe, northwest Africa, and western Asia.",
+      "original_diversity_or_population_text": "1 species complex"
+    },
+    {
+      "taxon_id": "Ascomycota",
+      "pronunciation": "as-koh-my-KOH-tuh",
+      "etymology": "Greek askos “sac” + mykēs “fungus”",
+      "distinguishing_traits_text": "Asci and ascospores; diverse yeast and filament forms",
+      "evolutionary_history_text": "Ascomycetes include lichens, decomposers, crop pathogens, and baking yeasts.",
+      "original_diversity_or_population_text": "Majority of described fungal species"
+    },
+    {
+      "taxon_id": "Saccharomycetes",
+      "pronunciation": "sak-uh-roh-my-SEE-teez",
+      "etymology": "Greek sakkharon “sugar” + mykēs",
+      "distinguishing_traits_text": "Single-celled budding forms common",
+      "evolutionary_history_text": "Fermentation made budding yeasts major partners of humans.",
+      "original_diversity_or_population_text": "Many named species"
+    },
+    {
+      "taxon_id": "Saccharomycetales",
+      "pronunciation": "sak-uh-roh-my-see-TAY-leez",
+      "etymology": "From Saccharomyces",
+      "distinguishing_traits_text": "Many sugar-fermenting yeasts",
+      "evolutionary_history_text": "This order includes laboratory and industrial yeasts.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Saccharomycetaceae",
+      "pronunciation": "sak-uh-roh-my-see-TAY-see-ee",
+      "etymology": "From Saccharomyces",
+      "distinguishing_traits_text": "Fermentative metabolic diversity",
+      "evolutionary_history_text": "Yeasts adapted to fruit and other sugar-rich environments.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Saccharomyces",
+      "pronunciation": "sak-uh-roh-MY-seez",
+      "etymology": "Greek sakkharon “sugar” + mykēs",
+      "distinguishing_traits_text": "Alcoholic fermentation",
+      "evolutionary_history_text": "Used to study genetics, aging, and basic cell biology.",
+      "original_diversity_or_population_text": "Multiple species"
+    },
+    {
+      "taxon_id": "Saccharomyces cerevisiae",
+      "pronunciation": "ser-uh-VIS-ee-eye",
+      "etymology": "Latin cerevisia “beer”",
+      "distinguishing_traits_text": "Unicellular eukaryote; budding; fermentation",
+      "evolutionary_history_text": "A model eukaryote with an extensively studied genome and cell cycle.",
+      "original_diversity_or_population_text": "1 species; vast cultivated strains"
+    },
+    {
+      "taxon_id": "Basidiomycota",
+      "pronunciation": "bah-sid-ee-oh-my-KOH-tuh",
+      "etymology": "Greek basidion “little pedestal” + mykēs",
+      "distinguishing_traits_text": "Basidia bearing sexual spores; mushrooms in many",
+      "evolutionary_history_text": "Major wood-decaying fungi, mushrooms, rusts and smuts.",
+      "original_diversity_or_population_text": "Tens of thousands described"
+    },
+    {
+      "taxon_id": "Agaricomycetes",
+      "pronunciation": "ag-uh-ree-koh-my-SEE-teez",
+      "etymology": "From Agaricus",
+      "distinguishing_traits_text": "Complex fruiting bodies in many",
+      "evolutionary_history_text": "Includes gilled mushrooms, bracket fungi and puffballs.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Agaricales",
+      "pronunciation": "ag-uh-ree-KAY-leez",
+      "etymology": "From Agaricus",
+      "distinguishing_traits_text": "Gills or transformed spore-bearing structures",
+      "evolutionary_history_text": "Includes edible and poisonous mushrooms.",
+      "original_diversity_or_population_text": "Thousands of species"
+    },
+    {
+      "taxon_id": "Agaricaceae",
+      "pronunciation": "ag-uh-ree-KAY-see-ee",
+      "etymology": "From Agaricus",
+      "distinguishing_traits_text": "Veils and gill-bearing fruiting bodies in many",
+      "evolutionary_history_text": "Contains edible cultivated mushrooms and their relatives.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Agaricus",
+      "pronunciation": "ah-GAIR-ih-kus",
+      "etymology": "Greek agarikon “a kind of fungus”",
+      "distinguishing_traits_text": "Fleshy fruiting bodies; dark mature gills",
+      "evolutionary_history_text": "Includes the domesticated button mushroom.",
+      "original_diversity_or_population_text": "Several hundred species"
+    },
+    {
+      "taxon_id": "Agaricus bisporus",
+      "pronunciation": "bye-SPOR-us",
+      "etymology": "Latin bi “two” + sporus “spore”",
+      "distinguishing_traits_text": "Often two-spored basidia",
+      "evolutionary_history_text": "Widely farmed as white button, cremini, and portobello mushrooms.",
+      "original_diversity_or_population_text": "1 species; extensive cultivation"
+    },
+    {
+      "taxon_id": "Ochrophyta",
+      "pronunciation": "oh-KROF-ih-tuh",
+      "etymology": "Greek ōkhros “pale yellow” + phyton",
+      "distinguishing_traits_text": "Chlorophyll c; fucoxanthin in many",
+      "evolutionary_history_text": "Photosynthetic lineages are central to marine food webs and global carbon cycling.",
+      "original_diversity_or_population_text": "Thousands described"
+    },
+    {
+      "taxon_id": "Phaeophyceae",
+      "pronunciation": "fee-oh-FY-see-ee",
+      "etymology": "Greek phaios “dusky” + phycos “seaweed”",
+      "distinguishing_traits_text": "Fucoxanthin; multicellularity; alginate walls",
+      "evolutionary_history_text": "Kelp forests form productive temperate coastal ecosystems.",
+      "original_diversity_or_population_text": "~2,000 species"
+    },
+    {
+      "taxon_id": "Laminariales",
+      "pronunciation": "lam-in-air-ee-AY-leez",
+      "etymology": "Latin lamina “thin plate”",
+      "distinguishing_traits_text": "Large blades; holdfasts; underwater canopies",
+      "evolutionary_history_text": "Kelp forests buffer waves and support diverse marine species.",
+      "original_diversity_or_population_text": "~100 species"
+    },
+    {
+      "taxon_id": "Laminariaceae",
+      "pronunciation": "lam-in-air-ee-AY-see-ee",
+      "etymology": "From Laminaria",
+      "distinguishing_traits_text": "Stipes, blades, and holdfasts",
+      "evolutionary_history_text": "Giant brown algae in temperate seas.",
+      "original_diversity_or_population_text": "Multiple genera"
+    },
+    {
+      "taxon_id": "Laminaria",
+      "pronunciation": "lam-in-AIR-ee-uh",
+      "etymology": "Latin lamina “sheet / blade”",
+      "distinguishing_traits_text": "Ribbonlike blades",
+      "evolutionary_history_text": "Important habitat formers on rocky coasts.",
+      "original_diversity_or_population_text": "Several species"
+    },
+    {
+      "taxon_id": "Laminaria digitata",
+      "pronunciation": "dij-ih-TAY-tuh",
+      "etymology": "Latin digitata “fingered”",
+      "distinguishing_traits_text": "Finger-like blade divisions",
+      "evolutionary_history_text": "Common in rocky North Atlantic coastal zones.",
+      "original_diversity_or_population_text": "1 species"
+    },
+    {
+      "taxon_id": "Bacillariophyceae",
+      "pronunciation": "bah-sil-air-ee-oh-FY-see-ee",
+      "etymology": "Latin bacillaria “little rods”",
+      "distinguishing_traits_text": "Silica frustules; photosynthetic unicells",
+      "evolutionary_history_text": "Diatoms produce substantial marine and freshwater primary productivity.",
+      "original_diversity_or_population_text": "Tens of thousands of named species"
+    },
+    {
+      "taxon_id": "Oomycota",
+      "pronunciation": "oh-oh-my-KOH-tuh",
+      "etymology": "Greek ōon “egg” + mykēs “fungus”",
+      "distinguishing_traits_text": "Cellulose-rich walls in many; diploid dominant; swimming spores",
+      "evolutionary_history_text": "Oomycetes resemble fungi but are evolutionarily distinct; many are plant pathogens.",
+      "original_diversity_or_population_text": "~1,000 species"
+    },
+    {
+      "taxon_id": "Phytophthora",
+      "pronunciation": "fye-TOFF-thor-uh",
+      "etymology": "Greek phyton “plant” + phthora “destruction”",
+      "distinguishing_traits_text": "Plant pathogenicity; zoospores",
+      "evolutionary_history_text": "Includes organisms responsible for major crop diseases.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Phytophthora infestans",
+      "pronunciation": "in-FES-tanz",
+      "etymology": "Latin infestans “attacking”",
+      "distinguishing_traits_text": "Oomycete crop pathogen",
+      "evolutionary_history_text": "A principal cause of devastating potato blights, including the Irish Great Famine.",
+      "original_diversity_or_population_text": "1 species; distribution widespread"
+    },
+    {
+      "taxon_id": "Amoebozoa",
+      "pronunciation": "uh-MEE-buh-ZOH-uh",
+      "etymology": "Greek amoibē “change” + zōion",
+      "distinguishing_traits_text": "Lobose pseudopodia in many; phagocytosis",
+      "evolutionary_history_text": "An important eukaryotic lineage, though the taxonomic Protozoa umbrella is not a true clade.",
+      "original_diversity_or_population_text": "Species totals uncertain"
+    },
+    {
+      "taxon_id": "Tubulinea",
+      "pronunciation": "too-byoo-LIN-ee-uh",
+      "etymology": "Latin tubulus “small tube”",
+      "distinguishing_traits_text": "Tubular pseudopodia",
+      "evolutionary_history_text": "Amoebas change shape to feed and migrate.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Amoeba",
+      "pronunciation": "uh-MEE-buh",
+      "etymology": "Greek amoibē “change”",
+      "distinguishing_traits_text": "Pseudopods; phagocytosis",
+      "evolutionary_history_text": "Amoebas have served as classic models for cell motility.",
+      "original_diversity_or_population_text": "Multiple species"
+    },
+    {
+      "taxon_id": "Amoeba proteus",
+      "pronunciation": "PROH-tee-us",
+      "etymology": "Greek Proteus, shape-shifting sea god",
+      "distinguishing_traits_text": "Large lobose pseudopodia",
+      "evolutionary_history_text": "A widely used teaching organism in cell biology.",
+      "original_diversity_or_population_text": "1 species; wild population unknown"
+    },
+    {
+      "taxon_id": "Euglenozoa",
+      "pronunciation": "yoo-glee-noh-ZOH-uh",
+      "etymology": "From Euglena + zōa",
+      "distinguishing_traits_text": "Flagellates; diverse feeding strategies; crystalline rods",
+      "evolutionary_history_text": "Some members photosynthesize; others are parasites or free-living heterotrophs.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Kinetoplastea",
+      "pronunciation": "kih-NEE-toh-PLAS-tee-uh",
+      "etymology": "Greek kinētos “moving” + plastos “formed”",
+      "distinguishing_traits_text": "Distinct kinetoplast mitochondrial DNA",
+      "evolutionary_history_text": "Includes disease-causing trypanosomes and free-living relatives.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Trypanosoma",
+      "pronunciation": "try-PAN-oh-SOH-muh",
+      "etymology": "Greek trypanon “borer” + sōma “body”",
+      "distinguishing_traits_text": "Flagellated protists; complex parasite cycles",
+      "evolutionary_history_text": "Trypanosomes evolved intricate host-vector life cycles.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Trypanosoma brucei",
+      "pronunciation": "BROO-see-eye",
+      "etymology": "Named for David Bruce",
+      "distinguishing_traits_text": "Variant surface glycoproteins; antigenic variation",
+      "evolutionary_history_text": "A parasite transmitted by tsetse flies that can cause human African trypanosomiasis.",
+      "original_diversity_or_population_text": "1 species complex; prevalence variable"
+    },
+    {
+      "taxon_id": "Ciliophora",
+      "pronunciation": "sil-ee-OFF-er-uh",
+      "etymology": "Latin cilium “eyelash” + Greek pherein “carry”",
+      "distinguishing_traits_text": "Cilia; nuclear dimorphism in many",
+      "evolutionary_history_text": "Ciliates have specialized feeding apparatus and dual nuclear systems.",
+      "original_diversity_or_population_text": "Thousands of species"
+    },
+    {
+      "taxon_id": "Oligohymenophorea",
+      "pronunciation": "ol-ih-goh-hye-men-oh-FOH-ree-uh",
+      "etymology": "Greek oligos “few” + hymēn “membrane”",
+      "distinguishing_traits_text": "Coordinated ciliary currents",
+      "evolutionary_history_text": "Includes major protist laboratory models.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Paramecium",
+      "pronunciation": "pair-uh-MEE-see-um",
+      "etymology": "Greek para “beside” + mēkos “length”",
+      "distinguishing_traits_text": "Cilia; contractile vacuoles",
+      "evolutionary_history_text": "Classic freshwater protists with sophisticated ciliary coordination.",
+      "original_diversity_or_population_text": "Many species"
+    },
+    {
+      "taxon_id": "Paramecium caudatum",
+      "pronunciation": "kaw-DAY-tum",
+      "etymology": "Latin caudatus “tailed”",
+      "distinguishing_traits_text": "Elongated body; oral groove",
+      "evolutionary_history_text": "A familiar protist viewed in microscope ponds samples.",
+      "original_diversity_or_population_text": "1 species; wild abundance unknown"
+    },
+    {
+      "taxon_id": "Animalia",
+      "pronunciation": "an-ih-MAY-lee-uh",
+      "etymology": "Latin animalis, “having breath / life”",
+      "distinguishing_traits_text": "Multicellularity; developmental gene networks; extracellular collagen; heterotrophy",
+      "evolutionary_history_text": "Animals emerged among marine eukaryotes during the Neoproterozoic. Body plans diversified dramatically across the Ediacaran–Cambrian transition; fossil and molecular clocks do not agree on a single origin date.",
+      "original_diversity_or_population_text": "1,796,900 species listed in Catalogue of Life (Sept 2026 XR)"
+    },
+    {
+      "taxon_id": "Ctenophora",
+      "pronunciation": "ten-OFF-er-uh",
+      "etymology": "Greek kteis “comb” + pherein “to bear”",
+      "distinguishing_traits_text": "Eight rows of ciliary comb plates; prey-capturing colloblasts; diffuse nerve net",
+      "evolutionary_history_text": "A proposed earliest-diverging animal lineage based on synteny data. Whether it or sponges branch first remains contested; neural origins are consequently debated.",
+      "original_diversity_or_population_text": "~200 described"
+    },
+    {
+      "taxon_id": "Porifera",
+      "pronunciation": "puh-RIF-er-uh",
+      "etymology": "Latin porus “pore” + ferre “to carry”",
+      "distinguishing_traits_text": "Choanocyte filter feeding; porous aquiferous canals; spicules / spongin",
+      "evolutionary_history_text": "Sponge-like remains may predate the Cambrian, but the oldest fossil assignments are disputed. Most lack organized nerves, muscles and a conventional gut.",
+      "original_diversity_or_population_text": "~9,000 described"
+    },
+    {
+      "taxon_id": "Placozoa",
+      "pronunciation": "plak-uh-ZOH-uh",
+      "etymology": "Greek plax “flat plate” + zōion “animal”",
+      "distinguishing_traits_text": "Flattened ciliated body; very few cell types; no neurons",
+      "evolutionary_history_text": "Tiny creeping marine animals that illuminate early animal tissue evolution; relationships to cnidarians and bilaterians remain under study.",
+      "original_diversity_or_population_text": "Few described; cryptic diversity"
+    },
+    {
+      "taxon_id": "Parahoxozoa",
+      "pronunciation": "par-uh-hok-soh-ZOH-uh",
+      "etymology": "Para- “beside” + Hox developmental-gene name + zōa “animals”",
+      "distinguishing_traits_text": "Shared developmental regulators; increasingly complex epithelia",
+      "evolutionary_history_text": "A proposed group generally including Placozoa, Cnidaria and Bilateria, though some deep relationships remain debated.",
+      "original_diversity_or_population_text": "Not counted separately"
+    },
+    {
+      "taxon_id": "Cnidaria",
+      "pronunciation": "ny-DAIR-ee-uh",
+      "etymology": "Greek knidē “nettle”",
+      "distinguishing_traits_text": "Cnidocytes with stinging organelles; gastrovascular cavity; radial tendencies",
+      "evolutionary_history_text": "Cnidarians evolved specialized nerve nets and stinging cells. Many reef builders shaped Paleozoic and later seas.",
+      "original_diversity_or_population_text": "~14,000 described"
+    },
+    {
+      "taxon_id": "Anthozoa",
+      "pronunciation": "an-thuh-ZOH-uh",
+      "etymology": "Greek anthos “flower” + zōion “animal”",
+      "distinguishing_traits_text": "Polyp-only adult; many photosymbioses; reef construction",
+      "evolutionary_history_text": "Scleractinian corals radiated especially from the Triassic onward after earlier reef systems collapsed.",
+      "original_diversity_or_population_text": "~7,500 species"
+    },
+    {
+      "taxon_id": "Medusozoa",
+      "pronunciation": "med-YOO-soh-ZOH-uh",
+      "etymology": "Medusa, Greek mythological name for the jellyfish stage",
+      "distinguishing_traits_text": "Many life cycles include medusae; specialized sensory structures",
+      "evolutionary_history_text": "Gelatinous predators evolved diverse pulsating medusae and sessile stages.",
+      "original_diversity_or_population_text": "Several thousand"
+    },
+    {
+      "taxon_id": "Bilateria",
+      "pronunciation": "by-luh-TEER-ee-uh",
+      "etymology": "Latin bi- “two” + latus “side”",
+      "distinguishing_traits_text": "Anteroposterior polarity; mesoderm; bilateral ancestry",
+      "evolutionary_history_text": "Bilaterians probably originated in the Ediacaran; many recognizable body plans become abundant in the Cambrian. A number of descendants later evolved radial symmetry.",
+      "original_diversity_or_population_text": "Most animal species"
+    },
+    {
+      "taxon_id": "Protostomia",
+      "pronunciation": "proh-toh-STOH-mee-uh",
+      "etymology": "Greek prōtos “first” + stoma “mouth”",
+      "distinguishing_traits_text": "Diverse neural and embryological patterns; ecdysozoan and spiralian branches",
+      "evolutionary_history_text": "Includes arthropods, mollusks, annelids and many worm phyla. The old “mouth-first” rule has exceptions and does not diagnose every species.",
+      "original_diversity_or_population_text": "Most described animal species"
+    },
+    {
+      "taxon_id": "Spiralia",
+      "pronunciation": "spy-RAY-lee-uh",
+      "etymology": "Latin spira “coil”",
+      "distinguishing_traits_text": "Some branches with spiral cleavage; diverse larval forms",
+      "evolutionary_history_text": "Includes mollusks, annelids and flatworms. Not all spiralians retain spiral cleavage.",
+      "original_diversity_or_population_text": "Many tens of thousands"
+    },
+    {
+      "taxon_id": "Mollusca",
+      "pronunciation": "muh-LUS-kuh",
+      "etymology": "Latin molluscus “soft”",
+      "distinguishing_traits_text": "Mantle; muscular foot (often modified); radula in many groups",
+      "evolutionary_history_text": "An exceptionally varied Cambrian-origin group; shells fossilize readily, leaving rich records of Paleozoic–Cenozoic oceans.",
+      "original_diversity_or_population_text": "~83,000–100,000 described"
+    },
+    {
+      "taxon_id": "Gastropoda",
+      "pronunciation": "gas-TROP-uh-duh",
+      "etymology": "Greek gastēr “belly” + pous “foot”",
+      "distinguishing_traits_text": "Embryonic torsion; diverse shells or shell loss; aquatic and terrestrial habits",
+      "evolutionary_history_text": "Gastropods radiated across marine, freshwater and terrestrial environments.",
+      "original_diversity_or_population_text": "~60,000–80,000"
+    },
+    {
+      "taxon_id": "Bivalvia",
+      "pronunciation": "by-VAL-vee-uh",
+      "etymology": "Latin bi- “two” + valva “folding door”",
+      "distinguishing_traits_text": "Two hinged shells; filter-feeding gills in most; no radula",
+      "evolutionary_history_text": "Bivalves became major marine filter feeders and expanded ecologically during Mesozoic diversification.",
+      "original_diversity_or_population_text": "~9,000–10,000"
+    },
+    {
+      "taxon_id": "Cephalopoda",
+      "pronunciation": "sef-uh-LOP-uh-duh",
+      "etymology": "Greek kephalē “head” + pous “foot”",
+      "distinguishing_traits_text": "Arms/tentacles around head; advanced eyes and behavior; jet propulsion",
+      "evolutionary_history_text": "Once represented by abundant shelled forms; coleoid cephalopods subsequently diversified high-performance locomotion and nervous systems.",
+      "original_diversity_or_population_text": "~800–1,000 living"
+    },
+    {
+      "taxon_id": "Ammonoidea",
+      "pronunciation": "am-uh-NOY-dee-uh",
+      "etymology": "Ammon, Egyptian deity depicted with ram horns",
+      "distinguishing_traits_text": "Chambered coiled shell; complex sutures in many groups",
+      "evolutionary_history_text": "Ammonoids evolved in the Devonian, recovered after several mass extinctions, and disappeared at the end-Cretaceous extinction.",
+      "original_diversity_or_population_text": "0 living; thousands fossil"
+    },
+    {
+      "taxon_id": "Coleoidea",
+      "pronunciation": "koh-lee-OY-dee-uh",
+      "etymology": "Greek koleos “sheath”",
+      "distinguishing_traits_text": "Internalized/reduced shells; chromatophores; complex learning",
+      "evolutionary_history_text": "Squids, cuttlefish and octopuses evolved rapid camouflage and large centralized brains.",
+      "original_diversity_or_population_text": "~800 living"
+    },
+    {
+      "taxon_id": "Octopoda",
+      "pronunciation": "ok-TOP-uh-duh",
+      "etymology": "Greek oktō “eight” + pous “foot”",
+      "distinguishing_traits_text": "Eight sucker-bearing arms; shell highly reduced or absent; dexterity",
+      "evolutionary_history_text": "Octopuses evolved unusually distributed nervous systems and sophisticated object manipulation.",
+      "original_diversity_or_population_text": "~300 species"
+    },
+    {
+      "taxon_id": "Octopus vulgaris",
+      "pronunciation": "OK-tuh-pus vul-GAIR-iss",
+      "etymology": "Greek oktōpous “eight-footed” + Latin vulgaris “common”",
+      "distinguishing_traits_text": "Three hearts; arm-local circuitry; rapid skin-pattern control",
+      "evolutionary_history_text": "A modern shallow-water octopus complex; some populations historically assigned to this name represent other species.",
+      "original_diversity_or_population_text": "1 species; global abundance unknown"
+    },
+    {
+      "taxon_id": "Annelida",
+      "pronunciation": "uh-NEL-ih-duh",
+      "etymology": "Latin anellus “little ring”",
+      "distinguishing_traits_text": "Serially repeated segments; chaetae in many; hydrostatic support",
+      "evolutionary_history_text": "Marine worms were important Cambrian sediment mixers; earthworms later helped reshape soils.",
+      "original_diversity_or_population_text": "~17,000–20,000"
+    },
+    {
+      "taxon_id": "Clitellata",
+      "pronunciation": "kly-tuh-LAY-tuh",
+      "etymology": "Latin clitellum “saddle”",
+      "distinguishing_traits_text": "Clitellum for reproduction; direct development common",
+      "evolutionary_history_text": "A mostly freshwater and terrestrial diversification of annelid worms.",
+      "original_diversity_or_population_text": "~10,000"
+    },
+    {
+      "taxon_id": "Platyhelminthes",
+      "pronunciation": "plat-ee-hel-MIN-theez",
+      "etymology": "Greek platys “flat” + helmins “worm”",
+      "distinguishing_traits_text": "Dorsoventrally flat; no coelom; many parasitic taxa",
+      "evolutionary_history_text": "Includes free-living planarians and multiple independently diverse parasitic lineages.",
+      "original_diversity_or_population_text": "~20,000–25,000"
+    },
+    {
+      "taxon_id": "Ecdysozoa",
+      "pronunciation": "ek-DIS-oh-ZOH-uh",
+      "etymology": "Greek ekdysis “shedding skin” + zōa “animals”",
+      "distinguishing_traits_text": "Ecdysis / molting of an external cuticle",
+      "evolutionary_history_text": "A molecularly supported group uniting arthropods, roundworms, tardigrades and velvet worms.",
+      "original_diversity_or_population_text": ">1 million described"
+    },
+    {
+      "taxon_id": "Nematoda",
+      "pronunciation": "nem-uh-TOH-duh",
+      "etymology": "Greek nēma “thread”",
+      "distinguishing_traits_text": "Collagenous molted cuticle; pseudocoelom; longitudinal muscles",
+      "evolutionary_history_text": "Highly abundant in many soils and sediments; some species are parasitic or key laboratory models.",
+      "original_diversity_or_population_text": "~20,000–30,000 described"
+    },
+    {
+      "taxon_id": "Panarthropoda",
+      "pronunciation": "pan-ar-THROP-uh-duh",
+      "etymology": "Greek pan “all” + arthron “joint” + pous “foot”",
+      "distinguishing_traits_text": "Segmented appendages; molting; distinct limb specializations",
+      "evolutionary_history_text": "Cambrian lobopodian fossils illuminate the evolution of articulated limbs.",
+      "original_diversity_or_population_text": ">1 million described"
+    },
+    {
+      "taxon_id": "Tardigrada",
+      "pronunciation": "tar-dih-GRAY-duh",
+      "etymology": "Latin tardigradus “slow walker”",
+      "distinguishing_traits_text": "Four pairs of lobopod legs; cryptobiosis in many species",
+      "evolutionary_history_text": "Some tolerate desiccation by entering a tun state; they are not universally resistant to all extremes.",
+      "original_diversity_or_population_text": "~1,500 described"
+    },
+    {
+      "taxon_id": "Onychophora",
+      "pronunciation": "on-ih-KOFF-er-uh",
+      "etymology": "Greek onyx “claw” + pherein “bear”",
+      "distinguishing_traits_text": "Soft lobopod legs; adhesive slime jets; tracheae",
+      "evolutionary_history_text": "Living velvet worms preserve combinations of features helpful for interpreting Cambrian panarthropods.",
+      "original_diversity_or_population_text": "~200 described"
+    },
+    {
+      "taxon_id": "Arthropoda",
+      "pronunciation": "ar-THROP-uh-duh",
+      "etymology": "Greek arthron “joint” + pous “foot”",
+      "distinguishing_traits_text": "Jointed appendages; chitinous exoskeleton; segmented body",
+      "evolutionary_history_text": "Most described animal species are arthropods. Their Cambrian ancestors diversified in seas before insects colonized land and air.",
+      "original_diversity_or_population_text": "~1.08 million described"
+    },
+    {
+      "taxon_id": "Trilobita",
+      "pronunciation": "try-loh-BY-tuh",
+      "etymology": "Greek tri “three” + lobos “lobe”",
+      "distinguishing_traits_text": "Three longitudinal lobes; many mineralized dorsal segments",
+      "evolutionary_history_text": "Iconic Paleozoic marine arthropods, extinct at the end-Permian extinction. Not direct ancestors of modern insects.",
+      "original_diversity_or_population_text": "0 living; >20,000 fossil species"
+    },
+    {
+      "taxon_id": "Chelicerata",
+      "pronunciation": "kih-LISS-er-uh-tuh",
+      "etymology": "Greek chēlē “claw” + keras “horn”",
+      "distinguishing_traits_text": "Chelicerae feeding appendages; no antennae",
+      "evolutionary_history_text": "Marine ancestors gave rise to extensive terrestrial arachnid radiations.",
+      "original_diversity_or_population_text": "~100,000 described"
+    },
+    {
+      "taxon_id": "Arachnida",
+      "pronunciation": "uh-RAK-nih-duh",
+      "etymology": "Greek arachnē “spider”",
+      "distinguishing_traits_text": "Four pairs of walking legs in adult typical forms; chelicerae",
+      "evolutionary_history_text": "Arachnids are major terrestrial predators, parasites and soil inhabitants.",
+      "original_diversity_or_population_text": ">100,000 described"
+    },
+    {
+      "taxon_id": "Araneae",
+      "pronunciation": "uh-RAN-ee-ee",
+      "etymology": "Latin aranea “spider”",
+      "distinguishing_traits_text": "Spinnerets producing silk; venomous fangs in most",
+      "evolutionary_history_text": "Spider silk and aerial prey capture diversified through the Mesozoic.",
+      "original_diversity_or_population_text": ">50,000 described"
+    },
+    {
+      "taxon_id": "Mandibulata",
+      "pronunciation": "man-dib-yoo-LAY-tuh",
+      "etymology": "Latin mandibula “jaw”",
+      "distinguishing_traits_text": "Mandibles derived from modified appendages",
+      "evolutionary_history_text": "Unites myriapods and pancrustaceans; several deep relationships remain under revision.",
+      "original_diversity_or_population_text": ">900,000 described"
+    },
+    {
+      "taxon_id": "Myriapoda",
+      "pronunciation": "mir-ee-AP-uh-duh",
+      "etymology": "Greek myrios “countless” + pous “foot”",
+      "distinguishing_traits_text": "Many trunk segments; terrestrial life",
+      "evolutionary_history_text": "Early land arthropods included myriapod relatives adapting to oxygen-rich terrestrial microhabitats.",
+      "original_diversity_or_population_text": ">16,000 described"
+    },
+    {
+      "taxon_id": "Pancrustacea",
+      "pronunciation": "pan-kruh-STAY-see-uh",
+      "etymology": "Greek pan “all” + Latin crusta “shell”",
+      "distinguishing_traits_text": "Molecularly supported clade that nests hexapods within crustacean-grade ancestors",
+      "evolutionary_history_text": "“Crustacea” excluding insects is paraphyletic; this tree keeps insects and other crustaceans together.",
+      "original_diversity_or_population_text": ">1 million described"
+    },
+    {
+      "taxon_id": "Malacostraca",
+      "pronunciation": "mal-uh-KOSS-truh-kuh",
+      "etymology": "Greek malakos “soft” + ostrakon “shell”",
+      "distinguishing_traits_text": "Characteristically 19 segments; specialized thoracic limbs",
+      "evolutionary_history_text": "Crabs, lobsters and shrimp have repeatedly occupied strikingly different marine and freshwater niches.",
+      "original_diversity_or_population_text": "~40,000 described"
+    },
+    {
+      "taxon_id": "Decapoda",
+      "pronunciation": "deh-KAP-uh-duh",
+      "etymology": "Greek deka “ten” + pous “foot”",
+      "distinguishing_traits_text": "Five pairs of thoracic walking limbs",
+      "evolutionary_history_text": "Decapods became major marine scavengers, predators and ecosystem engineers.",
+      "original_diversity_or_population_text": "~15,000 described"
+    },
+    {
+      "taxon_id": "Hexapoda",
+      "pronunciation": "hek-SAP-uh-duh",
+      "etymology": "Greek hex “six” + pous “foot”",
+      "distinguishing_traits_text": "Six walking legs on thorax; land adaptations",
+      "evolutionary_history_text": "Hexapods originated on land and subsequently evolved wings in the insect lineage.",
+      "original_diversity_or_population_text": "~1 million described"
+    },
+    {
+      "taxon_id": "Insecta",
+      "pronunciation": "in-SEK-tuh",
+      "etymology": "Latin insectum “cut into sections”",
+      "distinguishing_traits_text": "Head, thorax and abdomen; three leg pairs; wings in most lineages",
+      "evolutionary_history_text": "The largest described animal class; winged insects later drove terrestrial pollination and food webs.",
+      "original_diversity_or_population_text": "~880,000+ described"
+    },
+    {
+      "taxon_id": "Holometabola",
+      "pronunciation": "hol-oh-meh-TAB-uh-luh",
+      "etymology": "Greek holos “complete” + metabolē “change”",
+      "distinguishing_traits_text": "Larva, pupa and adult; distinct feeding niches",
+      "evolutionary_history_text": "Complete metamorphosis helped beetles, butterflies, flies and bees partition ecological roles.",
+      "original_diversity_or_population_text": ">700,000 described"
+    },
+    {
+      "taxon_id": "Coleoptera",
+      "pronunciation": "koh-lee-OP-ter-uh",
+      "etymology": "Greek koleos “sheath” + pteron “wing”",
+      "distinguishing_traits_text": "Protective hardened elytra over hindwings",
+      "evolutionary_history_text": "Beetles diversified alongside plants, wood decomposers and other ecosystems.",
+      "original_diversity_or_population_text": "~400,000 described"
+    },
+    {
+      "taxon_id": "Lepidoptera",
+      "pronunciation": "lep-ih-DOP-ter-uh",
+      "etymology": "Greek lepis “scale” + pteron “wing”",
+      "distinguishing_traits_text": "Scale-covered wings; coiled proboscis in many adults",
+      "evolutionary_history_text": "Lepidopteran diversification closely interacted with flowering plants during the Cretaceous and Cenozoic.",
+      "original_diversity_or_population_text": "~160,000 described"
+    },
+    {
+      "taxon_id": "Danaus plexippus",
+      "pronunciation": "duh-NAY-us plek-SIP-us",
+      "etymology": "Danaus, Greek mythic king; plexippus, mythological personal name",
+      "distinguishing_traits_text": "Toxic milkweed diet; long-distance multigenerational migration",
+      "evolutionary_history_text": "The North American migratory populations depend on milkweed breeding habitat and overwintering forests.",
+      "original_diversity_or_population_text": "1 species; migration populations vary"
+    },
+    {
+      "taxon_id": "Hymenoptera",
+      "pronunciation": "hy-muh-NOP-ter-uh",
+      "etymology": "Greek hymēn “membrane” + pteron “wing”",
+      "distinguishing_traits_text": "Hook-linked membranous wings in most; parasitoidism and eusociality",
+      "evolutionary_history_text": "Several eusocial lineages evolved complex division of labor and sophisticated collective behavior.",
+      "original_diversity_or_population_text": ">150,000 described"
+    },
+    {
+      "taxon_id": "Diptera",
+      "pronunciation": "DIP-ter-uh",
+      "etymology": "Greek di “two” + pteron “wing”",
+      "distinguishing_traits_text": "One flying wing pair; balancing halteres",
+      "evolutionary_history_text": "Dipterans diversified as pollinators, decomposers and some major disease vectors.",
+      "original_diversity_or_population_text": ">160,000 described"
+    },
+    {
+      "taxon_id": "Deuterostomia",
+      "pronunciation": "doo-ter-oh-STOH-mee-uh",
+      "etymology": "Greek deuteros “second” + stoma “mouth”",
+      "distinguishing_traits_text": "Includes echinoderms and chordates; multiple embryo-development patterns",
+      "evolutionary_history_text": "The name refers to an embryological generalization with exceptions; fossil representatives appear by the Cambrian.",
+      "original_diversity_or_population_text": ">70,000 described"
+    },
+    {
+      "taxon_id": "Echinodermata",
+      "pronunciation": "ih-KY-noh-DER-muh-tuh",
+      "etymology": "Greek ekhinos “hedgehog” + derma “skin”",
+      "distinguishing_traits_text": "Water vascular system; calcitic endoskeleton; secondary pentaradial symmetry",
+      "evolutionary_history_text": "Cambrian stem forms reveal the transition from bilaterian ancestors to characteristic adult radial plans.",
+      "original_diversity_or_population_text": "~7,000 living"
+    },
+    {
+      "taxon_id": "Asteroidea",
+      "pronunciation": "as-ter-OY-dee-uh",
+      "etymology": "Greek astēr “star” + -oeidēs “resembling”",
+      "distinguishing_traits_text": "Tube feet; regenerative arms; usually five rays",
+      "evolutionary_history_text": "Sea stars evolved diverse predatory feeding strategies in benthic marine habitats.",
+      "original_diversity_or_population_text": "~2,000 species"
+    },
+    {
+      "taxon_id": "Echinoidea",
+      "pronunciation": "ek-ih-NOY-dee-uh",
+      "etymology": "Greek ekhinos “spiny creature” + -oeidēs “form”",
+      "distinguishing_traits_text": "Fused test plates; movable spines; Aristotle’s lantern in most",
+      "evolutionary_history_text": "Regular echinoids diversified in the Paleozoic; irregular echinoids radiated in Mesozoic seas.",
+      "original_diversity_or_population_text": "~1,000 living"
+    },
+    {
+      "taxon_id": "Chordata",
+      "pronunciation": "kor-DAY-tuh",
+      "etymology": "Greek khordē “string / cord”",
+      "distinguishing_traits_text": "Notochord; dorsal hollow nerve cord; pharyngeal openings; postanal tail at some stage",
+      "evolutionary_history_text": "Cambrian fossils preserve chordate-like and vertebrate-like animals. Tunicates and vertebrates are close relatives.",
+      "original_diversity_or_population_text": "~75,000 described"
+    },
+    {
+      "taxon_id": "Tunicata",
+      "pronunciation": "too-nih-KAY-tuh",
+      "etymology": "Latin tunica “covering”",
+      "distinguishing_traits_text": "Larval notochord; cellulose-like tunic in adults",
+      "evolutionary_history_text": "Genomic evidence places tunicates as the living sister lineage to vertebrates.",
+      "original_diversity_or_population_text": "~3,000"
+    },
+    {
+      "taxon_id": "Vertebrata",
+      "pronunciation": "ver-tuh-BRAY-tuh",
+      "etymology": "Latin vertebra “joint / spine”",
+      "distinguishing_traits_text": "Specialized cranium; vertebral elements in most; neural crest",
+      "evolutionary_history_text": "Early vertebrates were jawless marine animals; jawed lineages later radiated on reefs and beyond.",
+      "original_diversity_or_population_text": "~70,000 described"
+    },
+    {
+      "taxon_id": "Chondrichthyes",
+      "pronunciation": "kon-DRIK-theez",
+      "etymology": "Greek chondros “cartilage” + ichthys “fish”",
+      "distinguishing_traits_text": "Cartilage-dominant skeleton; tooth replacement; electroreception in many",
+      "evolutionary_history_text": "Cartilaginous fish radiated from Paleozoic jawed-vertebrate ancestors.",
+      "original_diversity_or_population_text": "~1,200 species"
+    },
+    {
+      "taxon_id": "Osteichthyes",
+      "pronunciation": "oss-tee-IK-theez",
+      "etymology": "Greek osteon “bone” + ichthys “fish”",
+      "distinguishing_traits_text": "Endochondral bone; lungs or swim bladder ancestrally",
+      "evolutionary_history_text": "Cladistically includes all tetrapods: humans are deeply nested within bony vertebrates.",
+      "original_diversity_or_population_text": "~65,000 living"
+    },
+    {
+      "taxon_id": "Actinopterygii",
+      "pronunciation": "ak-tin-op-ter-IJ-ee-eye",
+      "etymology": "Greek aktis “ray” + pteryx “fin”",
+      "distinguishing_traits_text": "Fin rays supported by dermal skeleton",
+      "evolutionary_history_text": "Teleosts underwent a major Mesozoic–Cenozoic diversification in fresh and marine waters.",
+      "original_diversity_or_population_text": "~34,000 species"
+    },
+    {
+      "taxon_id": "Sarcopterygii",
+      "pronunciation": "sar-kop-ter-IJ-ee-eye",
+      "etymology": "Greek sarx “flesh” + pteryx “fin”",
+      "distinguishing_traits_text": "Paired fleshy fins/limbs with internal bones",
+      "evolutionary_history_text": "The lineages of coelacanths and lungfish diverged from the ancestor that also led to land vertebrates.",
+      "original_diversity_or_population_text": "Includes all living tetrapods"
+    },
+    {
+      "taxon_id": "Tetrapoda",
+      "pronunciation": "teh-TRAP-uh-duh",
+      "etymology": "Greek tetra “four” + pous “foot”",
+      "distinguishing_traits_text": "Digit-bearing limbs ancestrally; air breathing and modified senses",
+      "evolutionary_history_text": "Originated from Devonian sarcopterygian ancestry; some descendants later lost limbs or returned to water.",
+      "original_diversity_or_population_text": ">30,000 species"
+    },
+    {
+      "taxon_id": "Amphibia",
+      "pronunciation": "am-FIB-ee-uh",
+      "etymology": "Greek amphí “both” + bios “life”",
+      "distinguishing_traits_text": "Permeable skin; often aquatic larval stage; diverse reproduction",
+      "evolutionary_history_text": "Modern amphibians radiated after early tetrapod lineages, with a fossil record extending into the Paleozoic.",
+      "original_diversity_or_population_text": "~8,000+ species"
+    },
+    {
+      "taxon_id": "Amniota",
+      "pronunciation": "am-nee-OH-tuh",
+      "etymology": "Greek amnion “inner membrane”",
+      "distinguishing_traits_text": "Amniotic membranes; reproduction less tied to standing water",
+      "evolutionary_history_text": "The amniotic egg enabled major diversification on land during the Carboniferous and Permian.",
+      "original_diversity_or_population_text": "Mammals + reptiles incl. birds"
+    },
+    {
+      "taxon_id": "Synapsida",
+      "pronunciation": "sin-AP-sih-duh",
+      "etymology": "Greek syn “together” + apsis “arch”",
+      "distinguishing_traits_text": "Single ancestral lower temporal skull opening",
+      "evolutionary_history_text": "Includes Permian sail-backed forms, therapsids and living mammals. Many early synapsids are not true mammals.",
+      "original_diversity_or_population_text": "~6,791 extant mammals"
+    },
+    {
+      "taxon_id": "Mammalia",
+      "pronunciation": "muh-MAY-lee-uh",
+      "etymology": "Latin mamma “breast”",
+      "distinguishing_traits_text": "Mammary glands; hair; three middle-ear ossicles",
+      "evolutionary_history_text": "Crown mammals originated by the Mesozoic and radiated extensively after the K–Pg extinction.",
+      "original_diversity_or_population_text": "6,791 extant (MDD v2.5)"
+    },
+    {
+      "taxon_id": "Monotremata",
+      "pronunciation": "mon-oh-TREM-uh-tuh",
+      "etymology": "Greek monos “single” + trēma “opening”",
+      "distinguishing_traits_text": "Egg laying; milk secretion without nipples",
+      "evolutionary_history_text": "Surviving egg-laying mammals from an ancient mammalian divergence.",
+      "original_diversity_or_population_text": "5 extant"
+    },
+    {
+      "taxon_id": "Theria",
+      "pronunciation": "THEER-ee-uh",
+      "etymology": "Greek thērion “beast”",
+      "distinguishing_traits_text": "Shared reproductive and skeletal traits",
+      "evolutionary_history_text": "Unites marsupials and placentals; deep lineages diverged in Mesozoic time.",
+      "original_diversity_or_population_text": "Most living mammals"
+    },
+    {
+      "taxon_id": "Marsupialia",
+      "pronunciation": "mar-soo-pee-AY-lee-uh",
+      "etymology": "Latin marsupium “pouch”",
+      "distinguishing_traits_text": "Short gestation in many species; prolonged lactation",
+      "evolutionary_history_text": "Marsupial evolutionary history spans South America, Antarctica and Australia.",
+      "original_diversity_or_population_text": "~330 living"
+    },
+    {
+      "taxon_id": "Placentalia",
+      "pronunciation": "plas-en-TAY-lee-uh",
+      "etymology": "Latin placenta “flat cake”",
+      "distinguishing_traits_text": "Extended gestation with complex chorioallantoic placenta",
+      "evolutionary_history_text": "Major orders diversified before and after the K–Pg boundary; exact divergence dates are debated.",
+      "original_diversity_or_population_text": "~6,400 living"
+    },
+    {
+      "taxon_id": "Primates",
+      "pronunciation": "PRY-mayts",
+      "etymology": "Latin primas “first / chief”",
+      "distinguishing_traits_text": "Grasping extremities in many; forward-facing eyes in many",
+      "evolutionary_history_text": "Primates diversified in Paleocene–Eocene forests, with multiple adaptive radiations.",
+      "original_diversity_or_population_text": "~500+"
+    },
+    {
+      "taxon_id": "Hominidae",
+      "pronunciation": "hoh-MIN-ih-dee",
+      "etymology": "Latin homo “human” + -idae family ending",
+      "distinguishing_traits_text": "Large brains; flexible shoulder; long juvenile dependence",
+      "evolutionary_history_text": "Orangutans, gorillas, chimpanzees, bonobos and humans are living members of one family.",
+      "original_diversity_or_population_text": "8 extant species (common scheme)"
+    },
+    {
+      "taxon_id": "Homo",
+      "pronunciation": "HOH-moh",
+      "etymology": "Latin homo “human”",
+      "distinguishing_traits_text": "Habitual bipedalism; high behavioral flexibility; stone tools in many fossil contexts",
+      "evolutionary_history_text": "Homo first appears in the late Pliocene; several lineages coexisted in the Pleistocene.",
+      "original_diversity_or_population_text": "1 living species; multiple fossil"
+    },
+    {
+      "taxon_id": "Homo sapiens",
+      "pronunciation": "HOH-moh SAP-ee-enz",
+      "etymology": "Latin homo “human” + sapiens “wise”",
+      "distinguishing_traits_text": "Cumulative culture; symbolic language; extreme ecological flexibility",
+      "evolutionary_history_text": "Anatomically modern humans have an African fossil record dating to roughly 300,000 years ago.",
+      "original_diversity_or_population_text": "~8+ billion individuals (time-varying)"
+    },
+    {
+      "taxon_id": "Carnivora",
+      "pronunciation": "kar-NIV-er-uh",
+      "etymology": "Latin caro “flesh” + vorare “devour”",
+      "distinguishing_traits_text": "Carnassial dental adaptations, modified in omnivores",
+      "evolutionary_history_text": "Carnivorans radiated in Paleogene terrestrial ecosystems; pinnipeds returned to the sea.",
+      "original_diversity_or_population_text": "~300 species"
+    },
+    {
+      "taxon_id": "Felidae",
+      "pronunciation": "FEL-ih-dee",
+      "etymology": "Latin felis “cat”",
+      "distinguishing_traits_text": "Retractile claws in most; ambush predation; obligate carnivory",
+      "evolutionary_history_text": "Modern cats include small felines and roaring pantherines.",
+      "original_diversity_or_population_text": "~40 species"
+    },
+    {
+      "taxon_id": "Panthera",
+      "pronunciation": "pan-THEER-uh",
+      "etymology": "Greek panthēr “panther”",
+      "distinguishing_traits_text": "Powerful jaws; roaring anatomy in many",
+      "evolutionary_history_text": "Genus with lions, tigers, jaguars, leopards and snow leopards; classification of some members changes.",
+      "original_diversity_or_population_text": "~5 extant species (scheme-dependent)"
+    },
+    {
+      "taxon_id": "Panthera tigris",
+      "pronunciation": "pan-THEER-uh TYE-griss",
+      "etymology": "Greek panthēr “panther” + Latin tigris “tiger”",
+      "distinguishing_traits_text": "Striped coat; solitary stalking; exceptionally large felid",
+      "evolutionary_history_text": "Tiger populations experienced severe contractions in historic times; conservation status varies by geographic population.",
+      "original_diversity_or_population_text": "1 species; global abundance estimate varies"
+    },
+    {
+      "taxon_id": "Proboscidea",
+      "pronunciation": "proh-boh-SID-ee-uh",
+      "etymology": "Greek proboskis “trunk / snout”",
+      "distinguishing_traits_text": "Elongated trunk; tusks in many lineages; columnar limbs",
+      "evolutionary_history_text": "Proboscideans radiated from Afrotherian ancestors into many forms, including mammoths and mastodons.",
+      "original_diversity_or_population_text": "3 living elephant species"
+    },
+    {
+      "taxon_id": "Elephantidae",
+      "pronunciation": "el-uh-FAN-tih-dee",
+      "etymology": "Greek elephas “elephant / ivory”",
+      "distinguishing_traits_text": "Complex molar replacement; trunk; social learning",
+      "evolutionary_history_text": "Elephants and mammoths spread across Eurasia, Africa and the Americas through changing climates.",
+      "original_diversity_or_population_text": "3 living species"
+    },
+    {
+      "taxon_id": "Loxodonta cyclotis",
+      "pronunciation": "lok-soh-DON-tuh sy-KLOH-tiss",
+      "etymology": "Greek loxos “oblique” + odous “tooth”; kyklos “circle” + ous “ear”",
+      "distinguishing_traits_text": "Compact size relative to savanna elephants; forest seed dispersal",
+      "evolutionary_history_text": "IUCN’s 2025 assessment estimated about 135,690 individuals from robust survey methods; additional less-certain numbers were reported separately.",
+      "original_diversity_or_population_text": "~135,690 estimated (2025)"
+    },
+    {
+      "taxon_id": "Mammuthus primigenius",
+      "pronunciation": "mah-MOO-thus pry-mih-JEN-ee-us",
+      "etymology": "Mammuthus from “mammoth”; Latin primigenius “original / first-born”",
+      "distinguishing_traits_text": "Cold-adapted coat; high-domed skull; curved tusks",
+      "evolutionary_history_text": "Woolly mammoths thrived in Pleistocene mammoth-steppe ecosystems; some island populations survived into the Holocene.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Sauropsida",
+      "pronunciation": "saw-ROP-sih-duh",
+      "etymology": "Greek sauros “lizard” + opsis “appearance”",
+      "distinguishing_traits_text": "Keratinized skin and diverse eggshells; many skull types",
+      "evolutionary_history_text": "In cladistic usage birds are living sauropsids; “reptiles excluding birds” is paraphyletic.",
+      "original_diversity_or_population_text": ">20,000 living"
+    },
+    {
+      "taxon_id": "Testudines",
+      "pronunciation": "tes-TOO-dih-neez",
+      "etymology": "Latin testudo “tortoise”",
+      "distinguishing_traits_text": "Bony shell incorporating ribs and vertebrae",
+      "evolutionary_history_text": "The turtle shell evolved through gradual changes in ribs and ventral armor.",
+      "original_diversity_or_population_text": "~360 species"
+    },
+    {
+      "taxon_id": "Lepidosauria",
+      "pronunciation": "lep-ih-doh-SAW-ree-uh",
+      "etymology": "Greek lepis “scale” + sauros “lizard”",
+      "distinguishing_traits_text": "Periodic skin shedding; transverse cloacal opening",
+      "evolutionary_history_text": "Lepidosaurs include squamates and the sole living rhynchocephalian tuatara.",
+      "original_diversity_or_population_text": "~12,000 species"
+    },
+    {
+      "taxon_id": "Squamata",
+      "pronunciation": "skwah-MAY-tuh",
+      "etymology": "Latin squama “scale”",
+      "distinguishing_traits_text": "Kinetic skulls in many; repeated limb reduction",
+      "evolutionary_history_text": "Squamate radiations expanded from the Jurassic–Cretaceous into deserts, forests and oceans.",
+      "original_diversity_or_population_text": ">11,000 species"
+    },
+    {
+      "taxon_id": "Archosauria",
+      "pronunciation": "ar-koh-SAW-ree-uh",
+      "etymology": "Greek arkhōn “ruler” + sauros “lizard”",
+      "distinguishing_traits_text": "Antorbital fenestra ancestrally; derived ankle and skull traits",
+      "evolutionary_history_text": "Archosaurs survived the Permian–Triassic crisis and dominated many Mesozoic terrestrial environments.",
+      "original_diversity_or_population_text": "Birds + crocodilians living"
+    },
+    {
+      "taxon_id": "Crocodylia",
+      "pronunciation": "krok-uh-DIL-ee-uh",
+      "etymology": "Greek krokodeilos “lizard / crocodile”",
+      "distinguishing_traits_text": "Armored skin; four-chambered heart; complex parental care",
+      "evolutionary_history_text": "Surviving crocodylians are only one small part of the wider archosaur fossil radiation.",
+      "original_diversity_or_population_text": "~27 living species"
+    },
+    {
+      "taxon_id": "Dinosauria",
+      "pronunciation": "dye-noh-SAW-ree-uh",
+      "etymology": "Greek deinos “terrible / mighty” + sauros “lizard”",
+      "distinguishing_traits_text": "Erect hindlimb posture; distinctive hip and ankle anatomy",
+      "evolutionary_history_text": "Originated in Triassic ecosystems; non-avian lineages went extinct at 66 Ma, but birds survived and are dinosaurs.",
+      "original_diversity_or_population_text": "~11,131 living birds"
+    },
+    {
+      "taxon_id": "Ornithischia",
+      "pronunciation": "or-nih-THISK-ee-uh",
+      "etymology": "Greek ornis “bird” + iskhion “hip”",
+      "distinguishing_traits_text": "Backward-projecting pubis; herbivory prevalent",
+      "evolutionary_history_text": "Includes armored, plated, horned and duck-billed dinosaurs; not the lineage from which birds arose.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Ceratopsidae",
+      "pronunciation": "seh-ruh-TOP-sih-dee",
+      "etymology": "Greek keras “horn” + ops “face”",
+      "distinguishing_traits_text": "Enlarged frills and facial horns",
+      "evolutionary_history_text": "An especially successful Late Cretaceous North American radiation.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Triceratops horridus",
+      "pronunciation": "try-SAIR-uh-tops HOR-ih-dus",
+      "etymology": "Greek tri “three” + keras “horn” + ops “face”; Latin horridus “rough”",
+      "distinguishing_traits_text": "Three facial horns; elaborate frill; powerful beak",
+      "evolutionary_history_text": "A large Late Cretaceous herbivore from North America, disappearing at the K–Pg boundary.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Saurischia",
+      "pronunciation": "saw-RISSK-ee-uh",
+      "etymology": "Greek sauros “lizard” + iskhion “hip”",
+      "distinguishing_traits_text": "Ancestral saurischian pelvic configuration",
+      "evolutionary_history_text": "Includes sauropodomorphs and theropods. Birds evolved from theropod dinosaurs.",
+      "original_diversity_or_population_text": "Living birds descend here"
+    },
+    {
+      "taxon_id": "Sauropodomorpha",
+      "pronunciation": "saw-ROH-poh-doh-MOR-fuh",
+      "etymology": "Greek sauros “lizard” + pous “foot” + morphē “shape”",
+      "distinguishing_traits_text": "Long necks and small skulls in many; giant body sizes",
+      "evolutionary_history_text": "Sauropods evolved extraordinary body sizes through Jurassic and Cretaceous ecosystems.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Theropoda",
+      "pronunciation": "thee-ROP-uh-duh",
+      "etymology": "Greek thēr “beast” + pous “foot”",
+      "distinguishing_traits_text": "Hollow bones in many; three-toed hindfoot in many",
+      "evolutionary_history_text": "A subset of feathered theropods led to modern birds; Tyrannosaurus was a distant relative, not their direct ancestor.",
+      "original_diversity_or_population_text": "Includes living birds"
+    },
+    {
+      "taxon_id": "Tyrannosauridae",
+      "pronunciation": "ty-ran-oh-SAW-rih-dee",
+      "etymology": "Greek tyrannos “tyrant” + sauros “lizard”",
+      "distinguishing_traits_text": "Deep skulls; enormous bite forces; reduced forelimbs",
+      "evolutionary_history_text": "Large apex predators of Late Cretaceous Asia and North America.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Tyrannosaurus rex",
+      "pronunciation": "ty-RAN-oh-SAW-rus REKS",
+      "etymology": "Greek tyrannos “tyrant” + sauros “lizard”; Latin rex “king”",
+      "distinguishing_traits_text": "Massive tooth-bearing skull; forceful bite; tiny two-fingered arms",
+      "evolutionary_history_text": "Lived in western North America late in the Cretaceous; no non-avian tyrannosaurids survived the K–Pg impact.",
+      "original_diversity_or_population_text": "0 living"
+    },
+    {
+      "taxon_id": "Aves",
+      "pronunciation": "AY-veez",
+      "etymology": "Latin avis “bird”",
+      "distinguishing_traits_text": "Feathers; wings; beak in crown birds; high-performance respiration",
+      "evolutionary_history_text": "Birds arose among Jurassic maniraptoran theropods and radiated after the K–Pg boundary. Living dinosaurs are exceptionally diverse.",
+      "original_diversity_or_population_text": "11,131 (AviList 2025)"
+    },
+    {
+      "taxon_id": "Passeriformes",
+      "pronunciation": "pass-uh-RIF-or-meez",
+      "etymology": "Latin passer “sparrow” + forma “shape”",
+      "distinguishing_traits_text": "Perching tendon mechanism; song learning in oscines",
+      "evolutionary_history_text": "Songbirds represent one of the most species-rich vertebrate radiations.",
+      "original_diversity_or_population_text": ">6,000 species"
+    },
+    {
+      "taxon_id": "Bacteroidota",
+      "pronunciation": "bak-teh-roy-DOH-tuh",
+      "etymology": "From Bacteroides, rodlike organism",
+      "distinguishing_traits_text": "Flexible polysaccharide breakdown; environmental diversity",
+      "evolutionary_history_text": "This group includes abundant aquatic, soil and host-associated heterotrophs.",
+      "original_diversity_or_population_text": "Large bacterial phylum"
+    },
+    {
+      "taxon_id": "Bacteroidia",
+      "pronunciation": "bak-teh-ROY-dee-uh",
+      "etymology": "From Bacteroides",
+      "distinguishing_traits_text": "Anaerobic digestion in many members",
+      "evolutionary_history_text": "Often major components of mammalian gut microbial communities.",
+      "original_diversity_or_population_text": "Many described species"
+    },
+    {
+      "taxon_id": "Bacteroidales",
+      "pronunciation": "bak-teh-roy-DAY-leez",
+      "etymology": "From Bacteroides",
+      "distinguishing_traits_text": "Complex glycan metabolism in many",
+      "evolutionary_history_text": "Includes diverse anaerobes that participate in food-web carbon cycling.",
+      "original_diversity_or_population_text": "Many described species"
+    },
+    {
+      "taxon_id": "Bacteroidaceae",
+      "pronunciation": "bak-teh-roy-DAY-see-ee",
+      "etymology": "From Bacteroides",
+      "distinguishing_traits_text": "Carbohydrate-active enzymes",
+      "evolutionary_history_text": "Some species are abundant human gut symbionts.",
+      "original_diversity_or_population_text": "Many named species"
+    },
+    {
+      "taxon_id": "Bacteroides",
+      "pronunciation": "bak-teh-ROY-deez",
+      "etymology": "Greek bacterion, little rod, plus -oides, resembling",
+      "distinguishing_traits_text": "Strict anaerobiosis; polysaccharide use",
+      "evolutionary_history_text": "Prominent gut members can aid food breakdown and interact with immunity.",
+      "original_diversity_or_population_text": "Dozens of named species"
+    },
+    {
+      "taxon_id": "Bacteroides fragilis",
+      "pronunciation": "FRAJ-ih-lis",
+      "etymology": "Latin fragilis, fragile",
+      "distinguishing_traits_text": "Anaerobic gut growth; strain-specific virulence",
+      "evolutionary_history_text": "Often harmless in the gut but certain strains can become opportunistic pathogens.",
+      "original_diversity_or_population_text": "One species; global cell count unknown"
+    },
+    {
+      "taxon_id": "Actinomycetota",
+      "pronunciation": "ak-tih-noh-my-see-TOH-tuh",
+      "etymology": "Greek aktis, ray, and mykēs, fungus",
+      "distinguishing_traits_text": "Complex secondary metabolites; often high-GC genomes",
+      "evolutionary_history_text": "Many lineages colonize soils and produce medically important natural products.",
+      "original_diversity_or_population_text": "Major bacterial phylum"
+    },
+    {
+      "taxon_id": "Actinomycetia",
+      "pronunciation": "ak-tih-noh-my-SEE-tee-uh",
+      "etymology": "From Actinomyces",
+      "distinguishing_traits_text": "Branching filament-like growth in many",
+      "evolutionary_history_text": "Contains many soil decomposers, symbionts and antibiotic-producing groups.",
+      "original_diversity_or_population_text": "Many named lineages"
+    },
+    {
+      "taxon_id": "Streptomycetales",
+      "pronunciation": "strep-toh-my-see-TAY-leez",
+      "etymology": "From Streptomyces",
+      "distinguishing_traits_text": "Aerial hyphae; secondary metabolite synthesis",
+      "evolutionary_history_text": "Their branching filaments evolved in complex terrestrial microbial ecosystems.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Streptomycetaceae",
+      "pronunciation": "strep-toh-my-see-TAY-see-ee",
+      "etymology": "From Streptomyces",
+      "distinguishing_traits_text": "Substrate mycelium; spore chains",
+      "evolutionary_history_text": "Includes major producers of antibiotic and antifungal compounds.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Streptomyces",
+      "pronunciation": "strep-toh-MY-seez",
+      "etymology": "Greek streptos, twisted, and mykēs, fungus",
+      "distinguishing_traits_text": "Antibiotics; fungal-like filaments",
+      "evolutionary_history_text": "Large genomes encode chemically diverse compounds and environmental interactions.",
+      "original_diversity_or_population_text": "Hundreds of named species"
+    },
+    {
+      "taxon_id": "Streptomyces coelicolor",
+      "pronunciation": "see-LIH-koh-lor",
+      "etymology": "Latin coeli, sky, and color, color",
+      "distinguishing_traits_text": "Colored antibiotics; multicellular colony development",
+      "evolutionary_history_text": "A widely used model for bacterial developmental genetics.",
+      "original_diversity_or_population_text": "One species; global cell count unknown"
+    },
+    {
+      "taxon_id": "Halobacteriota",
+      "pronunciation": "hal-oh-bak-teer-ee-OH-tuh",
+      "etymology": "Greek hals, salt, and bacterion, rod",
+      "distinguishing_traits_text": "Adaptations to saline and anaerobic environments",
+      "evolutionary_history_text": "Modern schemes differ in where halophiles and certain methanogens are assigned.",
+      "original_diversity_or_population_text": "Many described lineages"
+    },
+    {
+      "taxon_id": "Halobacteria",
+      "pronunciation": "hal-oh-bak-TEER-ee-uh",
+      "etymology": "Salt + bacteria",
+      "distinguishing_traits_text": "Salt-stable proteins; often red carotenoids",
+      "evolutionary_history_text": "These archaea thrive in high-salt brines that exclude many other organisms.",
+      "original_diversity_or_population_text": "Numerous described species"
+    },
+    {
+      "taxon_id": "Halobacteriales",
+      "pronunciation": "hal-oh-bak-teer-ee-AY-leez",
+      "etymology": "From Halobacterium",
+      "distinguishing_traits_text": "High intracellular potassium; salt-tolerant enzymes",
+      "evolutionary_history_text": "Their brine ecosystems provide models of adaptation to extreme salinity.",
+      "original_diversity_or_population_text": "Many named genera"
+    },
+    {
+      "taxon_id": "Halobacteriaceae",
+      "pronunciation": "hal-oh-bak-teer-ee-AY-see-ee",
+      "etymology": "From Halobacterium",
+      "distinguishing_traits_text": "Pigmented membranes; aerobic heterotrophy in many",
+      "evolutionary_history_text": "Family delimitations change in revised genomic taxonomies.",
+      "original_diversity_or_population_text": "Several genera"
+    },
+    {
+      "taxon_id": "Halobacterium",
+      "pronunciation": "hal-oh-bak-TEER-ee-um",
+      "etymology": "Salt + little rod",
+      "distinguishing_traits_text": "Bacteriorhodopsin proton pumps",
+      "evolutionary_history_text": "Halobacterium is a model for light-powered proton transport without chlorophyll.",
+      "original_diversity_or_population_text": "Several named species"
+    },
+    {
+      "taxon_id": "Halobacterium salinarum",
+      "pronunciation": "sal-ih-NAH-rum",
+      "etymology": "Latin salinarum, of saltworks",
+      "distinguishing_traits_text": "Bacteriorhodopsin; high salt requirement",
+      "evolutionary_history_text": "The organism is found in hypersaline habitats and intensely studied in membrane biophysics.",
+      "original_diversity_or_population_text": "One species; abundance unknown"
+    },
+    {
+      "taxon_id": "Chytridiomycota",
+      "pronunciation": "ky-TRID-ee-oh-my-KOH-tuh",
+      "etymology": "From chytridion, a little pot",
+      "distinguishing_traits_text": "Flagellated zoospores; chitin-bearing cell walls",
+      "evolutionary_history_text": "Early-diverging fungal lineages often disperse through water with swimming cells.",
+      "original_diversity_or_population_text": "Diverse aquatic and terrestrial species"
+    },
+    {
+      "taxon_id": "Chytridiomycetes",
+      "pronunciation": "ky-trid-ee-oh-my-SEE-teez",
+      "etymology": "From chytrid",
+      "distinguishing_traits_text": "Motile zoospores; parasitism or saprotrophy",
+      "evolutionary_history_text": "Chytrids are common aquatic decomposers and parasites of other organisms.",
+      "original_diversity_or_population_text": "Hundreds of described species"
+    },
+    {
+      "taxon_id": "Chytridiales",
+      "pronunciation": "ky-trid-ee-AY-leez",
+      "etymology": "From chytridion",
+      "distinguishing_traits_text": "Zoosporangia; aquatic dispersal",
+      "evolutionary_history_text": "This order illustrates the fungal retention of flagellated life stages.",
+      "original_diversity_or_population_text": "Multiple families"
+    },
+    {
+      "taxon_id": "Glomeromycota",
+      "pronunciation": "gloh-mer-oh-my-KOH-tuh",
+      "etymology": "Latin glomus, ball, and Greek mykēs, fungus",
+      "distinguishing_traits_text": "Intracellular root arbuscules; mineral exchange",
+      "evolutionary_history_text": "Arbuscular mycorrhizal symbioses are ancient partnerships with terrestrial plants.",
+      "original_diversity_or_population_text": "Hundreds of species"
+    },
+    {
+      "taxon_id": "Glomeromycetes",
+      "pronunciation": "gloh-mer-oh-my-SEE-teez",
+      "etymology": "From Glomus",
+      "distinguishing_traits_text": "Obligate biotrophic root associations in many",
+      "evolutionary_history_text": "These fungi facilitate phosphorus acquisition in diverse plant communities.",
+      "original_diversity_or_population_text": "Many described species"
+    },
+    {
+      "taxon_id": "Glomerales",
+      "pronunciation": "gloh-mer-AY-leez",
+      "etymology": "From Glomus",
+      "distinguishing_traits_text": "Subterranean hyphae; large spores",
+      "evolutionary_history_text": "The group spreads hyphal networks among plant roots and soil.",
+      "original_diversity_or_population_text": "Numerous species"
+    },
+    {
+      "taxon_id": "Glomeraceae",
+      "pronunciation": "gloh-mer-AY-see-ee",
+      "etymology": "From Glomus",
+      "distinguishing_traits_text": "Root colonization; carbon-for-phosphorus exchange",
+      "evolutionary_history_text": "Their symbioses can influence plant nutrition and soil structure.",
+      "original_diversity_or_population_text": "Many named species"
+    },
+    {
+      "taxon_id": "Rhizophagus",
+      "pronunciation": "ry-ZOF-uh-gus",
+      "etymology": "Greek rhiza, root, and phagein, eat",
+      "distinguishing_traits_text": "Arbuscular root colonization",
+      "evolutionary_history_text": "Widely studied for its capacity to form arbuscular mycorrhizae.",
+      "original_diversity_or_population_text": "Multiple species"
+    },
+    {
+      "taxon_id": "Rhizophagus irregularis",
+      "pronunciation": "ir-REG-yoo-LAIR-iss",
+      "etymology": "Latin irregularis, uneven",
+      "distinguishing_traits_text": "Root arbuscules; extraradical hyphae",
+      "evolutionary_history_text": "A laboratory model for plant–fungal mutualism and nutrient transfer.",
+      "original_diversity_or_population_text": "One species; individual counts not meaningful"
+    },
+    {
+      "taxon_id": "Liliopsida",
+      "pronunciation": "lil-ee-OP-sih-duh",
+      "etymology": "From Lilium, lily",
+      "distinguishing_traits_text": "Single seed leaf; parallel leaf veins in many",
+      "evolutionary_history_text": "Monocots include grasses, orchids, palms, and lilies; alternative systems use an unranked clade.",
+      "original_diversity_or_population_text": "≈60,000 flowering plant species"
+    },
+    {
+      "taxon_id": "Poales",
+      "pronunciation": "poh-AY-leez",
+      "etymology": "From Poa, meadow grass",
+      "distinguishing_traits_text": "Wind pollination frequent; silica in many grasses",
+      "evolutionary_history_text": "Grasslands later expanded across continents, transforming herbivore evolution.",
+      "original_diversity_or_population_text": "Thousands of species"
+    },
+    {
+      "taxon_id": "Poaceae",
+      "pronunciation": "poh-AY-see-ee",
+      "etymology": "From Poa, grass",
+      "distinguishing_traits_text": "Hollow jointed stems in many; grass florets",
+      "evolutionary_history_text": "This family includes cereals, bamboo, and most grassland dominants.",
+      "original_diversity_or_population_text": "≈12,000 grass species"
+    },
+    {
+      "taxon_id": "Zea",
+      "pronunciation": "ZEE-uh",
+      "etymology": "Ancient Greek zeia, cereal",
+      "distinguishing_traits_text": "Large inflorescences; wind-borne pollen",
+      "evolutionary_history_text": "Wild teosintes and domesticated maize demonstrate rapid crop evolution.",
+      "original_diversity_or_population_text": "Several accepted species"
+    },
+    {
+      "taxon_id": "Zea mays",
+      "pronunciation": "zee-uh MAYZ",
+      "etymology": "Zea, cereal, and Taíno mahís, maize",
+      "distinguishing_traits_text": "Domesticated enlarged ears; C4 photosynthesis",
+      "evolutionary_history_text": "Maize was domesticated from teosinte in Mesoamerica thousands of years ago.",
+      "original_diversity_or_population_text": "One species; no single global individual census"
+    },
+    {
+      "taxon_id": "Asterales",
+      "pronunciation": "as-ter-AY-leez",
+      "etymology": "Greek astēr, star",
+      "distinguishing_traits_text": "Numerous composite flower forms",
+      "evolutionary_history_text": "Asterales diversified globally in the Cenozoic.",
+      "original_diversity_or_population_text": "Thousands of species"
+    },
+    {
+      "taxon_id": "Asteraceae",
+      "pronunciation": "as-ter-AY-see-ee",
+      "etymology": "Greek astēr, star",
+      "distinguishing_traits_text": "Flower heads made of many small florets",
+      "evolutionary_history_text": "The composite flower head supports diverse pollination and seed dispersal strategies.",
+      "original_diversity_or_population_text": "≈25,000–32,000 species"
+    },
+    {
+      "taxon_id": "Helianthus",
+      "pronunciation": "hee-lee-AN-thus",
+      "etymology": "Greek hēlios, sun, and anthos, flower",
+      "distinguishing_traits_text": "Composite heads; heliotropism in young plants",
+      "evolutionary_history_text": "Most wild sunflowers are North American, with a broad range of habitats.",
+      "original_diversity_or_population_text": "≈50–70 species"
+    },
+    {
+      "taxon_id": "Helianthus annuus",
+      "pronunciation": "AN-yoo-us",
+      "etymology": "Latin annuus, annual",
+      "distinguishing_traits_text": "Tall flowering annual; seed oil crops",
+      "evolutionary_history_text": "A North American species domesticated for edible seeds and oil.",
+      "original_diversity_or_population_text": "One species; cultivated and wild abundance not censused"
+    },
+    {
+      "taxon_id": "Holothuroidea",
+      "pronunciation": "hoh-loh-thur-OY-dee-uh",
+      "etymology": "Greek holothourion, sea cucumber",
+      "distinguishing_traits_text": "Elongate body; modified tube feet; soft ossicles",
+      "evolutionary_history_text": "Sea cucumbers process seafloor sediments in many marine ecosystems.",
+      "original_diversity_or_population_text": "≈1,700–1,800 species"
+    },
+    {
+      "taxon_id": "Holothuriida",
+      "pronunciation": "hoh-loh-thur-EE-ih-duh",
+      "etymology": "From Holothuria",
+      "distinguishing_traits_text": "Oral feeding tentacles; defensive responses",
+      "evolutionary_history_text": "Includes conspicuous tropical reef and sand-flat sediment feeders.",
+      "original_diversity_or_population_text": "Diverse tropical sea cucumbers"
+    },
+    {
+      "taxon_id": "Cichliformes",
+      "pronunciation": "SIK-lih-for-meez",
+      "etymology": "From cichlid fish name",
+      "distinguishing_traits_text": "Specialized pharyngeal jaws in cichlids",
+      "evolutionary_history_text": "Cichlid radiations in African lakes are classic examples of rapid speciation.",
+      "original_diversity_or_population_text": ">1,700 cichlid species"
+    },
+    {
+      "taxon_id": "Cichlidae",
+      "pronunciation": "SIK-lih-dee",
+      "etymology": "From Greek kichlē, a fish",
+      "distinguishing_traits_text": "Diverse mouth brooding; flexible jaw systems",
+      "evolutionary_history_text": "Species flocks evolved striking ecological specializations.",
+      "original_diversity_or_population_text": ">1,700 described species"
+    },
+    {
+      "taxon_id": "Oreochromis",
+      "pronunciation": "oh-ree-oh-KROH-miss",
+      "etymology": "Greek oreos, mountain, and chromis, fish",
+      "distinguishing_traits_text": "Maternal mouthbrooding frequent",
+      "evolutionary_history_text": "Widely cultivated tilapias descend from freshwater African fish lineages.",
+      "original_diversity_or_population_text": "More than 30 species"
+    },
+    {
+      "taxon_id": "Oreochromis niloticus",
+      "pronunciation": "nye-LOT-ih-kus",
+      "etymology": "Latin niloticus, from the Nile",
+      "distinguishing_traits_text": "Freshwater omnivory; mouthbrooding",
+      "evolutionary_history_text": "Native to African waters and introduced globally for aquaculture.",
+      "original_diversity_or_population_text": "One species; no reliable worldwide individual census"
+    },
+    {
+      "taxon_id": "Cetartiodactyla",
+      "pronunciation": "set-ar-tee-oh-DAK-tih-luh",
+      "etymology": "Cetacea + Artiodactyla",
+      "distinguishing_traits_text": "Shared molecular ancestry; diverse feet and flippers",
+      "evolutionary_history_text": "Molecular phylogenies nest whales within the even-toed ungulate radiation.",
+      "original_diversity_or_population_text": ">350 living species"
+    },
+    {
+      "taxon_id": "Balaenopteridae",
+      "pronunciation": "bal-ee-eh-NOP-teh-rih-dee",
+      "etymology": "From Balaenoptera, whale fin",
+      "distinguishing_traits_text": "Pleated throat grooves; lunge feeding",
+      "evolutionary_history_text": "Rorquals evolved highly efficient bulk feeding from marine ancestors.",
+      "original_diversity_or_population_text": "About 10–12 species"
+    },
+    {
+      "taxon_id": "Balaenoptera",
+      "pronunciation": "bal-ee-eh-NOP-teh-ruh",
+      "etymology": "Latin balaena, whale, and Greek pteron, fin",
+      "distinguishing_traits_text": "Streamlined baleen whales; lunge feeding",
+      "evolutionary_history_text": "Includes blue, fin and minke whales; species boundaries undergo review.",
+      "original_diversity_or_population_text": "Several living species"
+    },
+    {
+      "taxon_id": "Balaenoptera musculus",
+      "pronunciation": "mus-KYOO-lus",
+      "etymology": "Latin musculus, little mouse, an ironic species name",
+      "distinguishing_traits_text": "Largest known living animal; baleen filter feeding",
+      "evolutionary_history_text": "Blue whales were depleted by industrial whaling and remain protected.",
+      "original_diversity_or_population_text": "One species; ≈10k–25k individuals worldwide"
+    },
+    {
+      "taxon_id": "Rodentia",
+      "pronunciation": "roh-DEN-tee-uh",
+      "etymology": "Latin rodere, to gnaw",
+      "distinguishing_traits_text": "Ever-growing incisors",
+      "evolutionary_history_text": "Rodents diversified into nearly every terrestrial habitat and many aquatic ones.",
+      "original_diversity_or_population_text": ">2,500 living species"
+    },
+    {
+      "taxon_id": "Muridae",
+      "pronunciation": "MYOOR-ih-dee",
+      "etymology": "Latin mus, mouse",
+      "distinguishing_traits_text": "Small omnivores; rapid breeding in many",
+      "evolutionary_history_text": "Murids evolved striking diversity in Eurasia, Africa and elsewhere.",
+      "original_diversity_or_population_text": ">700 living species"
+    },
+    {
+      "taxon_id": "Mus",
+      "pronunciation": "MOOS",
+      "etymology": "Latin mus, mouse",
+      "distinguishing_traits_text": "Small-bodied rodents; strong olfactory signaling",
+      "evolutionary_history_text": "Members inhabit diverse environments and include important laboratory models.",
+      "original_diversity_or_population_text": "≈40 species"
+    },
+    {
+      "taxon_id": "Mus musculus",
+      "pronunciation": "mus MUS-kyoo-lus",
+      "etymology": "Latin mus, mouse, musculus, little mouse",
+      "distinguishing_traits_text": "Omnivory; rapid reproduction; social scent cues",
+      "evolutionary_history_text": "Domesticated lineages underpin much mammalian genetics research.",
+      "original_diversity_or_population_text": "One species; global wild abundance unknown"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "origin_widget": "Deep Time Atlas",
+  "origin_widget_slug": "deep-time-atlas",
+  "origin_widget_version": "1.6",
+  "origin_widget_previous_version": "1.5",
+  "data_snapshot_source_version": "1.5",
+  "export_date": "2026-10-15",
+  "export_name": "Shared Taxa — Deep Time Atlas source extraction",
+  "migration_status": "not_migrated",
+  "source_format": "standalone_HTML_with_embedded_JS",
+  "age_unit": "Ma before present",
+  "data_policy": "Preserve all source-authored details verbatim; derived indexes are separately identified; no taxonomic reconciliation yet.",
+  "counts": {
+    "geologic_intervals": 172,
+    "listed_taxa": 200,
+    "images": 23,
+    "original_direct_interval_taxon_links": 580,
+    "computed_ui_interval_taxon_links": 8916
+  },
+  "integrity": {
+    "source_html_sha256": "fa882a3616abb97bb3f554f22c802b5547ee1a599718517d4d036cce7aa2badf",
+    "source_html_file": "Deep_Time_Atlas_v1.5.html",
+    "taxon_ids_unique": true,
+    "geologic_interval_ids_unique": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "version",
+    "schema_version",
+    "validation_status",
+    "checks",
+    "statistics"
+  ],
+  "properties": {
+    "dataset": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "validation_status": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array"
+    },
+    "statistics": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "name": "Shared Taxa — Deep Time Atlas source export",
+  "origin_widget": "Deep Time Atlas",
+  "origin_widget_version": "1.6",
+  "versioning": "preservation export, not authoritative Shared Taxa release",
+  "created_utc_date": "2026-10-15",
+  "file_count": 39,
+  "files": [
+    {
+      "path": "AMBIGUITIES.json",
+      "bytes": 4834,
+      "sha256": "7a71890c8f5af261c68a6311e1a9de5b6443cdcea011c33686e3c23a68772329"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4066,
+      "sha256": "232491360acc42a998819c21a374291193f7dde0072cb163b5bf94d75d8fe90f"
+    },
+    {
+      "path": "SCHEMA.json",
+      "bytes": 5265,
+      "sha256": "5518d527d7a70fe01a07bb11e68415a07c25d988b5958ab442396390a87dfac4"
+    },
+    {
+      "path": "data/geologic_details.json",
+      "bytes": 26456,
+      "sha256": "83e8472901c164ec8566f8f5e001a8bf945e49521b60979d7010fe30177eb1c4"
+    },
+    {
+      "path": "data/geologic_intervals.json",
+      "bytes": 239473,
+      "sha256": "696a0ca0701774003240c97c4f62f13c20c2241e8952dd35388485260c4943b7"
+    },
+    {
+      "path": "data/geologic_taxon_links.json",
+      "bytes": 1743876,
+      "sha256": "b719410a95267e68b562862b1f25382e33f473dd8b0b1c044aecdae7a14ae07a"
+    },
+    {
+      "path": "data/images_manifest.json",
+      "bytes": 18042,
+      "sha256": "86bf9282f6cf620aa4968da0a899f3e82323d8962f994bd922541bceb8c492a2"
+    },
+    {
+      "path": "data/paleogeography.json",
+      "bytes": 6160,
+      "sha256": "31df14762c7e7bae2e6cd812ee211bee79db3f2ba195e25cadfbd18227f6e6cc"
+    },
+    {
+      "path": "data/source_logic.json",
+      "bytes": 6112,
+      "sha256": "f4f830d433fcf92d7c533a23a20e889b0679705ae3b31c15d49d05bac392d4f7"
+    },
+    {
+      "path": "data/source_references.json",
+      "bytes": 1309,
+      "sha256": "bfc77e475168f69198c646e10df79a5e02d7fe4cdb528d47f871f854e87546f0"
+    },
+    {
+      "path": "data/taxa.json",
+      "bytes": 551385,
+      "sha256": "477eb4142310af5ed77923863166c327546497bf591c91a7e4dcb3d60e34990f"
+    },
+    {
+      "path": "data/taxon_source_layers.json",
+      "bytes": 137901,
+      "sha256": "3140ee8ea6d7eb367d06007610b708fc41a1321da0bde4d454dfae7d0fc2b673"
+    },
+    {
+      "path": "data/widget_display_metadata.json",
+      "bytes": 2317,
+      "sha256": "32ce9ee1b913c9b8e49e237c00be9126cf84056feb570dc2f94bd689fa4bfffa"
+    },
+    {
+      "path": "extraction_log.json",
+      "bytes": 6423,
+      "sha256": "c902326ffe6a084e2bf860ebc5dac432d71ab4831c77f845f9692b81ca94d149"
+    },
+    {
+      "path": "images/ammonite.jpg",
+      "bytes": 22733,
+      "sha256": "5e4cab735d0c4df24796e391b3aa78a38d040b03bdfec069e2c90596522b7970"
+    },
+    {
+      "path": "images/anomalocaris.jpg",
+      "bytes": 20529,
+      "sha256": "18d3788f589643d8148fd93af6b2174cab93f44a248dbef4e057e517f2ca027c"
+    },
+    {
+      "path": "images/bird.jpg",
+      "bytes": 1772,
+      "sha256": "c8f67c722274738ea57ed91f9f2d399a45064d502ed3b616894291feb2ca71c1"
+    },
+    {
+      "path": "images/coelacanth.jpg",
+      "bytes": 19332,
+      "sha256": "b29204e8b5f7773fc1bdf495260a486bea7ee2a2083662146599c6ac70741d78"
+    },
+    {
+      "path": "images/dickinsonia.jpg",
+      "bytes": 27429,
+      "sha256": "2cbd2bbe3ce91f69a24bac422a2b8ca5842a40a8b7863055a30bedd6d9bb5498"
+    },
+    {
+      "path": "images/dimetrodon.jpg",
+      "bytes": 27967,
+      "sha256": "015c6b366f15de64dd076a898f2d81ffa56eb1a41a373549491415c26626114e"
+    },
+    {
+      "path": "images/dunkleosteus.jpg",
+      "bytes": 19156,
+      "sha256": "add8916232ec1b4c41a310c493aa0326d68c97bd7d754277b989e3ef1c7a18ae"
+    },
+    {
+      "path": "images/earlymammal.jpg",
+      "bytes": 2143,
+      "sha256": "68227a6b5ce6fad51fe740638de89a1f57ea7c6d63b8066b72d670327dad87ff"
+    },
+    {
+      "path": "images/horseshoe.jpg",
+      "bytes": 24471,
+      "sha256": "e3add0c9168a72b7d545007f3ab8f423b5d852ff6b178c5b0e8bf0343c772c89"
+    },
+    {
+      "path": "images/ichthyostega.jpg",
+      "bytes": 24414,
+      "sha256": "8aafe76d19e6183e4e03b34d54ee7c7658478dc2cc027966f1686f286b14ed0d"
+    },
+    {
+      "path": "images/insect.jpg",
+      "bytes": 1921,
+      "sha256": "bf09d1131af8edf570e05624c643ae85b9eb828b95ff1e20b04acf39c90f0cb8"
+    },
+    {
+      "path": "images/lungfish.jpg",
+      "bytes": 18256,
+      "sha256": "ee0956bea33d63ef0f3a1c502afcc95f25b2ed207553c5ec6e9d7c93fe4a6b99"
+    },
+    {
+      "path": "images/lystrosaurus.jpg",
+      "bytes": 25099,
+      "sha256": "d9cd4044c7af266e0301bf69efbcb8be8df2e802eaea28e2cebd2fbe8c7e25b1"
+    },
+    {
+      "path": "images/magnolia.jpg",
+      "bytes": 5466,
+      "sha256": "a2c835d5d25f1f8406348c7aa22cfc530b2fc627b16634cc7341ddf37575d140"
+    },
+    {
+      "path": "images/mosasaur.jpg",
+      "bytes": 11419,
+      "sha256": "0337b2c1d27bdc6838d5ce0e7582d253f75af4308ad106a03cd0928f5adb318b"
+    },
+    {
+      "path": "images/nautilus.jpg",
+      "bytes": 20510,
+      "sha256": "dee9b7b379545e6759d5695055e1c884450527b725c3d74ffe25178cb95b4cd2"
+    },
+    {
+      "path": "images/plesiosaur.jpg",
+      "bytes": 9339,
+      "sha256": "84b583cce9775037bedf17116100f0dbaeadc181650c8acd0008e0cd62717e54"
+    },
+    {
+      "path": "images/stromatolite.jpg",
+      "bytes": 28288,
+      "sha256": "becebeb749cb6d97700a02b9ee35cdaa702b87c9217e5ca491415266cbe32222"
+    },
+    {
+      "path": "images/tiktaalik.jpg",
+      "bytes": 21608,
+      "sha256": "09f6bf8f4057681c3344cd44e045130d36829b2bc2a71d4a4904d5629575cbd4"
+    },
+    {
+      "path": "images/triceratops.png",
+      "bytes": 88794,
+      "sha256": "e568eaa1722c281192908e4016e4d85c5ec384088e7d0df99740ccd9a7b1087a"
+    },
+    {
+      "path": "images/trilobite.jpg",
+      "bytes": 27137,
+      "sha256": "f1a7cb79249de3ba1000c9323110f39ea7f673d0aa27b8d1226ee0f70ddff7c8"
+    },
+    {
+      "path": "images/tuatara.jpg",
+      "bytes": 26826,
+      "sha256": "38bf1d6af9b2b641e0720d2a1fc1d09d5f326bed9715dad15c6f75e05d7cd662"
+    },
+    {
+      "path": "images/tyrannosaurus.jpg",
+      "bytes": 26899,
+      "sha256": "edee541b69ec67a2f6dc218b687df9c02ba2b1c3e4de79d77feb78d002ff420f"
+    },
+    {
+      "path": "metadata.json",
+      "bytes": 1000,
+      "sha256": "a74c7781df854665bcbb850cb7d92289c9b7d5f0ba1695d5f8f2f451b08a6afc"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 5940,
+      "sha256": "6bdeb854ce42bcb2429aeff5d6f044a1dc94de98af5de9e4ebe91db023a6c2c4"
+    }
+  ]
+}

@@ -1,50 +1,71 @@
 {
   "schema_version": 1,
   "generated": "2026-10-20",
-  "migration_status": "UNVERIFIED_SCAFFOLD",
-  "notes": "Release versions/null and authority must be verified against actual artifacts; never infer from filenames or old chats.",
+  "migration_status": "ATLAS_BASELINE_IMPORTED_QUIZ_UNVERIFIED",
+  "notes": "Atlas source versions verified from actual HTML, catalog and import hashes; no new releases created. Quiz null versions remain unverified. Verification of source integrity does not certify scientific accuracy or completed browser QA.",
   "atlas": [
     {
       "slug": "brain",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.21",
+      "authoritative_source": "atlas/widgets/Brain_Atlas_v1.21.html",
+      "verified": true,
+      "sha256": "e0d06998612440905f37ea2ab7ac686035132177b0f6bf4d8ac8c6acb71966dd",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/brain-evidence.json"
     },
     {
       "slug": "deep-time",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.18",
+      "authoritative_source": "atlas/widgets/Deep_Time_Atlas_v1.18.html",
+      "verified": true,
+      "sha256": "778624d6ae08e6c461ab5e7e7c55700e4867c589fe2145b01eb5e57393ed9cea",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/deep-time-evidence.json"
     },
     {
       "slug": "tree-of-life",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.14",
+      "authoritative_source": "atlas/widgets/Tree_of_Life_Atlas_v1.14.html",
+      "verified": true,
+      "sha256": "00cf3dfc3bafd55872121bab851e3928537a024c0644ba435202a1c30c1e5716",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/tree-of-life-evidence.json"
     },
     {
       "slug": "mythology",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.13",
+      "authoritative_source": "atlas/widgets/Mythology_Atlas_v1.13.html",
+      "verified": true,
+      "sha256": "c674057629c975b1f54e64be6f831660ce9ff19d563d78a2216dc2ec12dc0c19",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/mythology-evidence.json"
     },
     {
       "slug": "muscles",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.8",
+      "authoritative_source": "atlas/widgets/Muscle_Atlas_v1.8.html",
+      "verified": true,
+      "sha256": "01f5ae12e7fbb7f59036ae8bba93947d7b5101237d9918c9eaf087b9fc0ca2a4",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/muscles-evidence.json"
     },
     {
       "slug": "emergence",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.10",
+      "authoritative_source": "atlas/widgets/Emergence_Atlas_v1.10.html",
+      "verified": true,
+      "sha256": "04d32f423364ca4f97e30a27378418482e93bda1483cf631aa6488d0ffe391cb",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/emergence-evidence.json"
     },
     {
       "slug": "launcher",
-      "release_version": null,
-      "authoritative_source": null,
-      "verified": false
+      "release_version": "1.14",
+      "authoritative_source": "atlas/widgets/Widget_Launcher_v1.14.html",
+      "verified": true,
+      "sha256": "d011e76389234aa95058c5cce84e07a645f70d299b58aeb35dfd87f5212f13f0",
+      "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
+      "visual_evidence": "docs/visual-reviews/0.1.0/launcher-evidence.json"
     }
   ],
   "quiz": [
@@ -86,8 +107,25 @@
     }
   ],
   "shared_taxa": {
-    "release_version": null,
-    "verified": false,
-    "manifest": "shared/taxa/manifest.json"
+    "release_version": "1.0",
+    "verified": true,
+    "manifest": "shared/taxa/manifest.json",
+    "verification_scope": "All 90 manifest-listed files match sizes and SHA-256; JSON schema checks pass. Scientific claims, external URLs and 57 documented ambiguities remain unreviewed.",
+    "verification_report": "docs/migration/verification_report.json"
+  },
+  "last_verified": "2026-10-30",
+  "atlas_dashboard": {
+    "release_version": "1.21",
+    "authoritative_source": "atlas/MASTER_DASHBOARD_v1.21.html",
+    "catalog": "atlas/data/project_catalog_v1.21.json",
+    "verified": true,
+    "verification_scope": "Imported source identity and JavaScript syntax; existing dashboard decisions are project metadata, not approved requirements."
+  },
+  "repository": {
+    "release_version": "0.1.0",
+    "version_file": "VERSION",
+    "tag_format": "v{version}",
+    "changelog": "CHANGELOG.md",
+    "backlog": "TODO.md"
   }
 }

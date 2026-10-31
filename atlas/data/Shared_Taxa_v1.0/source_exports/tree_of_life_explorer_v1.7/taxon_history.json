@@ -1,0 +1,1919 @@
+{
+  "_metadata": {
+    "originating_widget": "Tree of Life Explorer",
+    "originating_widget_file": "tree_of_life_explorer.html",
+    "originating_widget_version": "1.7",
+    "pre_export_widget_version": "1.6",
+    "source_date": "2026-10-15",
+    "export_date": "2026-10-15",
+    "export_type": "unreconciled source snapshot",
+    "source_html_sha256": "561087777ad88950fa1981e9f0b81f1a2a8232181b75fbf73e3811f2d21709b7",
+    "source_pre_export_sha256": "da359aa023aeeaa4e3769c74f2548920603307e58b9921123511e092d82d8a21"
+  },
+  "records": [
+    {
+      "taxon_id": "Life",
+      "estimated_lineage_origin_ma": 3800,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteria_domain",
+      "estimated_lineage_origin_ma": 3500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Archaea_domain",
+      "estimated_lineage_origin_ma": 3500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Eukaryota",
+      "estimated_lineage_origin_ma": 1900,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteria",
+      "estimated_lineage_origin_ma": 3500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Archaea",
+      "estimated_lineage_origin_ma": 3500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Opisthokonta",
+      "estimated_lineage_origin_ma": 1100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Archaeplastida",
+      "estimated_lineage_origin_ma": 1500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Plantae",
+      "estimated_lineage_origin_ma": 1100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Fungi",
+      "estimated_lineage_origin_ma": 1050,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Chromista",
+      "estimated_lineage_origin_ma": 1200,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Protozoa",
+      "estimated_lineage_origin_ma": 1500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cyanobacteriota",
+      "estimated_lineage_origin_ma": 2800,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Nostocales",
+      "estimated_lineage_origin_ma": 1500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Nostoc",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Nostoc commune",
+      "estimated_lineage_origin_ma": 15,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pseudomonadota",
+      "estimated_lineage_origin_ma": 2200,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Gammaproteobacteria",
+      "estimated_lineage_origin_ma": 1500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Enterobacterales",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Enterobacteriaceae",
+      "estimated_lineage_origin_ma": 150,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Escherichia",
+      "estimated_lineage_origin_ma": 60,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Escherichia coli",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacillota",
+      "estimated_lineage_origin_ma": 1800,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacilli",
+      "estimated_lineage_origin_ma": 600,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacillales",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacillaceae",
+      "estimated_lineage_origin_ma": 200,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacillus",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacillus subtilis",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Euryarchaeota",
+      "estimated_lineage_origin_ma": 2600,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Methanobacteria",
+      "estimated_lineage_origin_ma": 1700,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Methanobacteriales",
+      "estimated_lineage_origin_ma": 700,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Methanobacteriaceae",
+      "estimated_lineage_origin_ma": 250,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Methanobrevibacter",
+      "estimated_lineage_origin_ma": 90,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Methanobrevibacter smithii",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Thermoproteota",
+      "estimated_lineage_origin_ma": 2500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Thermoprotei",
+      "estimated_lineage_origin_ma": 1600,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sulfolobales",
+      "estimated_lineage_origin_ma": 700,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sulfolobaceae",
+      "estimated_lineage_origin_ma": 300,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sulfolobus",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sulfolobus acidocaldarius",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bryophyta",
+      "estimated_lineage_origin_ma": 470,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sphagnopsida",
+      "estimated_lineage_origin_ma": 300,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sphagnum",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sphagnum palustre",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Tracheophyta",
+      "estimated_lineage_origin_ma": 440,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Polypodiopsida",
+      "estimated_lineage_origin_ma": 360,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cyatheales",
+      "estimated_lineage_origin_ma": 200,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Spermatophyta",
+      "estimated_lineage_origin_ma": 365,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pinophyta",
+      "estimated_lineage_origin_ma": 310,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pinopsida",
+      "estimated_lineage_origin_ma": 310,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pinales",
+      "estimated_lineage_origin_ma": 260,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pinaceae",
+      "estimated_lineage_origin_ma": 140,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pinus",
+      "estimated_lineage_origin_ma": 75,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pinus sylvestris",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Angiospermae",
+      "estimated_lineage_origin_ma": 145,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Magnoliopsida",
+      "estimated_lineage_origin_ma": 125,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rosales",
+      "estimated_lineage_origin_ma": 95,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rosaceae",
+      "estimated_lineage_origin_ma": 75,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rosa",
+      "estimated_lineage_origin_ma": 40,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rosa canina",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ascomycota",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Saccharomycetes",
+      "estimated_lineage_origin_ma": 340,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Saccharomycetales",
+      "estimated_lineage_origin_ma": 160,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Saccharomycetaceae",
+      "estimated_lineage_origin_ma": 70,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Saccharomyces",
+      "estimated_lineage_origin_ma": 25,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Saccharomyces cerevisiae",
+      "estimated_lineage_origin_ma": 1,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Basidiomycota",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Agaricomycetes",
+      "estimated_lineage_origin_ma": 330,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Agaricales",
+      "estimated_lineage_origin_ma": 180,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Agaricaceae",
+      "estimated_lineage_origin_ma": 85,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Agaricus",
+      "estimated_lineage_origin_ma": 35,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Agaricus bisporus",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ochrophyta",
+      "estimated_lineage_origin_ma": 650,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Phaeophyceae",
+      "estimated_lineage_origin_ma": 250,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Laminariales",
+      "estimated_lineage_origin_ma": 80,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Laminariaceae",
+      "estimated_lineage_origin_ma": 35,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Laminaria",
+      "estimated_lineage_origin_ma": 18,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Laminaria digitata",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacillariophyceae",
+      "estimated_lineage_origin_ma": 220,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Oomycota",
+      "estimated_lineage_origin_ma": 550,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Phytophthora",
+      "estimated_lineage_origin_ma": 60,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Phytophthora infestans",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Amoebozoa",
+      "estimated_lineage_origin_ma": 850,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Tubulinea",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Amoeba",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Amoeba proteus",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Euglenozoa",
+      "estimated_lineage_origin_ma": 850,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Kinetoplastea",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Trypanosoma",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Trypanosoma brucei",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ciliophora",
+      "estimated_lineage_origin_ma": 850,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Oligohymenophorea",
+      "estimated_lineage_origin_ma": 300,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Paramecium",
+      "estimated_lineage_origin_ma": 120,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Paramecium caudatum",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Animalia",
+      "estimated_lineage_origin_ma": 750,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ctenophora",
+      "estimated_lineage_origin_ma": 570,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Porifera",
+      "estimated_lineage_origin_ma": 600,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Placozoa",
+      "estimated_lineage_origin_ma": 550,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Parahoxozoa",
+      "estimated_lineage_origin_ma": 600,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cnidaria",
+      "estimated_lineage_origin_ma": 580,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Anthozoa",
+      "estimated_lineage_origin_ma": 530,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Medusozoa",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bilateria",
+      "estimated_lineage_origin_ma": 575,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Protostomia",
+      "estimated_lineage_origin_ma": 565,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Spiralia",
+      "estimated_lineage_origin_ma": 555,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Mollusca",
+      "estimated_lineage_origin_ma": 540,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Gastropoda",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bivalvia",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cephalopoda",
+      "estimated_lineage_origin_ma": 510,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ammonoidea",
+      "estimated_lineage_origin_ma": 410,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Coleoidea",
+      "estimated_lineage_origin_ma": 330,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Octopoda",
+      "estimated_lineage_origin_ma": 160,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Octopus vulgaris",
+      "estimated_lineage_origin_ma": 8,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Annelida",
+      "estimated_lineage_origin_ma": 530,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Clitellata",
+      "estimated_lineage_origin_ma": 320,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Platyhelminthes",
+      "estimated_lineage_origin_ma": 540,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ecdysozoa",
+      "estimated_lineage_origin_ma": 555,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Nematoda",
+      "estimated_lineage_origin_ma": 540,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Panarthropoda",
+      "estimated_lineage_origin_ma": 540,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Tardigrada",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Onychophora",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Arthropoda",
+      "estimated_lineage_origin_ma": 540,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Trilobita",
+      "estimated_lineage_origin_ma": 521,
+      "lineage_end_ma": 252,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Chelicerata",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Arachnida",
+      "estimated_lineage_origin_ma": 430,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Araneae",
+      "estimated_lineage_origin_ma": 320,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Mandibulata",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Myriapoda",
+      "estimated_lineage_origin_ma": 440,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Pancrustacea",
+      "estimated_lineage_origin_ma": 510,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Malacostraca",
+      "estimated_lineage_origin_ma": 420,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Decapoda",
+      "estimated_lineage_origin_ma": 360,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Hexapoda",
+      "estimated_lineage_origin_ma": 410,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Insecta",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Holometabola",
+      "estimated_lineage_origin_ma": 310,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Coleoptera",
+      "estimated_lineage_origin_ma": 295,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Lepidoptera",
+      "estimated_lineage_origin_ma": 220,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Danaus plexippus",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Hymenoptera",
+      "estimated_lineage_origin_ma": 240,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Diptera",
+      "estimated_lineage_origin_ma": 240,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Deuterostomia",
+      "estimated_lineage_origin_ma": 550,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Echinodermata",
+      "estimated_lineage_origin_ma": 530,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Asteroidea",
+      "estimated_lineage_origin_ma": 470,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Echinoidea",
+      "estimated_lineage_origin_ma": 460,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Chordata",
+      "estimated_lineage_origin_ma": 530,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Tunicata",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Vertebrata",
+      "estimated_lineage_origin_ma": 520,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Chondrichthyes",
+      "estimated_lineage_origin_ma": 420,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Osteichthyes",
+      "estimated_lineage_origin_ma": 425,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Actinopterygii",
+      "estimated_lineage_origin_ma": 420,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sarcopterygii",
+      "estimated_lineage_origin_ma": 420,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Tetrapoda",
+      "estimated_lineage_origin_ma": 370,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Amphibia",
+      "estimated_lineage_origin_ma": 315,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Amniota",
+      "estimated_lineage_origin_ma": 320,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Synapsida",
+      "estimated_lineage_origin_ma": 320,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Mammalia",
+      "estimated_lineage_origin_ma": 225,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Monotremata",
+      "estimated_lineage_origin_ma": 110,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Theria",
+      "estimated_lineage_origin_ma": 165,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Marsupialia",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Placentalia",
+      "estimated_lineage_origin_ma": 90,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Primates",
+      "estimated_lineage_origin_ma": 66,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Hominidae",
+      "estimated_lineage_origin_ma": 16,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Homo",
+      "estimated_lineage_origin_ma": 2.8,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Homo sapiens",
+      "estimated_lineage_origin_ma": 0.3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Carnivora",
+      "estimated_lineage_origin_ma": 60,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Felidae",
+      "estimated_lineage_origin_ma": 25,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Panthera",
+      "estimated_lineage_origin_ma": 5,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Panthera tigris",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Proboscidea",
+      "estimated_lineage_origin_ma": 60,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Elephantidae",
+      "estimated_lineage_origin_ma": 7,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Loxodonta cyclotis",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Mammuthus primigenius",
+      "estimated_lineage_origin_ma": 0.7,
+      "lineage_end_ma": 0.004,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Sauropsida",
+      "estimated_lineage_origin_ma": 320,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Testudines",
+      "estimated_lineage_origin_ma": 235,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Lepidosauria",
+      "estimated_lineage_origin_ma": 250,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Squamata",
+      "estimated_lineage_origin_ma": 170,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Archosauria",
+      "estimated_lineage_origin_ma": 250,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Crocodylia",
+      "estimated_lineage_origin_ma": 95,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Dinosauria",
+      "estimated_lineage_origin_ma": 235,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Ornithischia",
+      "estimated_lineage_origin_ma": 200,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Ceratopsidae",
+      "estimated_lineage_origin_ma": 84,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Triceratops horridus",
+      "estimated_lineage_origin_ma": 68,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Saurischia",
+      "estimated_lineage_origin_ma": 230,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Sauropodomorpha",
+      "estimated_lineage_origin_ma": 230,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Theropoda",
+      "estimated_lineage_origin_ma": 230,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Tyrannosauridae",
+      "estimated_lineage_origin_ma": 84,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Tyrannosaurus rex",
+      "estimated_lineage_origin_ma": 68,
+      "lineage_end_ma": 66,
+      "extinct": true,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": "approximate last known occurrence"
+    },
+    {
+      "taxon_id": "Aves",
+      "estimated_lineage_origin_ma": 150,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Passeriformes",
+      "estimated_lineage_origin_ma": 50,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteroidota",
+      "estimated_lineage_origin_ma": 2700,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteroidia",
+      "estimated_lineage_origin_ma": 1700,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteroidales",
+      "estimated_lineage_origin_ma": 1100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteroidaceae",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteroides",
+      "estimated_lineage_origin_ma": 140,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Bacteroides fragilis",
+      "estimated_lineage_origin_ma": 5,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Actinomycetota",
+      "estimated_lineage_origin_ma": 2500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Actinomycetia",
+      "estimated_lineage_origin_ma": 1800,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Streptomycetales",
+      "estimated_lineage_origin_ma": 1000,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Streptomycetaceae",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Streptomyces",
+      "estimated_lineage_origin_ma": 250,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Streptomyces coelicolor",
+      "estimated_lineage_origin_ma": 5,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Halobacteriota",
+      "estimated_lineage_origin_ma": 2500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Halobacteria",
+      "estimated_lineage_origin_ma": 1500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Halobacteriales",
+      "estimated_lineage_origin_ma": 800,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Halobacteriaceae",
+      "estimated_lineage_origin_ma": 350,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Halobacterium",
+      "estimated_lineage_origin_ma": 100,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Halobacterium salinarum",
+      "estimated_lineage_origin_ma": 10,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Chytridiomycota",
+      "estimated_lineage_origin_ma": 700,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Chytridiomycetes",
+      "estimated_lineage_origin_ma": 550,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Chytridiales",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Glomeromycota",
+      "estimated_lineage_origin_ma": 500,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Glomeromycetes",
+      "estimated_lineage_origin_ma": 400,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Glomerales",
+      "estimated_lineage_origin_ma": 300,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Glomeraceae",
+      "estimated_lineage_origin_ma": 180,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rhizophagus",
+      "estimated_lineage_origin_ma": 65,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rhizophagus irregularis",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Liliopsida",
+      "estimated_lineage_origin_ma": 120,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Poales",
+      "estimated_lineage_origin_ma": 90,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Poaceae",
+      "estimated_lineage_origin_ma": 70,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Zea",
+      "estimated_lineage_origin_ma": 8,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Zea mays",
+      "estimated_lineage_origin_ma": 0.01,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Asterales",
+      "estimated_lineage_origin_ma": 90,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Asteraceae",
+      "estimated_lineage_origin_ma": 60,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Helianthus",
+      "estimated_lineage_origin_ma": 15,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Helianthus annuus",
+      "estimated_lineage_origin_ma": 0.01,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Holothuroidea",
+      "estimated_lineage_origin_ma": 470,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Holothuriida",
+      "estimated_lineage_origin_ma": 200,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cichliformes",
+      "estimated_lineage_origin_ma": 80,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cichlidae",
+      "estimated_lineage_origin_ma": 60,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Oreochromis",
+      "estimated_lineage_origin_ma": 20,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Oreochromis niloticus",
+      "estimated_lineage_origin_ma": 3,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Cetartiodactyla",
+      "estimated_lineage_origin_ma": 70,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Balaenopteridae",
+      "estimated_lineage_origin_ma": 20,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Balaenoptera",
+      "estimated_lineage_origin_ma": 13,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Balaenoptera musculus",
+      "estimated_lineage_origin_ma": 5,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Rodentia",
+      "estimated_lineage_origin_ma": 65,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Muridae",
+      "estimated_lineage_origin_ma": 20,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Mus",
+      "estimated_lineage_origin_ma": 7,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    },
+    {
+      "taxon_id": "Mus musculus",
+      "estimated_lineage_origin_ma": 2,
+      "lineage_end_ma": null,
+      "extinct": false,
+      "origin_date_type": "approximate lineage origin, not necessarily earliest confirmed fossil",
+      "end_date_type": null
+    }
+  ]
+}

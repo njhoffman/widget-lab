@@ -1,0 +1,123 @@
+{
+  "status": "pass",
+  "scope": "Imported file integrity and JSON schemas only; no scientific or widget release certification.",
+  "shared_taxa": {
+    "claimed_version": "1.0",
+    "files_listed": 90,
+    "files_matching": 90,
+    "findings": [],
+    "schemas": {
+      "status": "pass",
+      "files_checked": 15,
+      "errors": []
+    }
+  },
+  "components": [
+    {
+      "family": "atlas",
+      "slug": "brain",
+      "html_sources": [
+        "atlas/widgets/Brain_Atlas_v1.21.html"
+      ],
+      "release_version": "1.21",
+      "verified": true
+    },
+    {
+      "family": "atlas",
+      "slug": "deep-time",
+      "html_sources": [
+        "atlas/widgets/Deep_Time_Atlas_v1.18.html"
+      ],
+      "release_version": "1.18",
+      "verified": true
+    },
+    {
+      "family": "atlas",
+      "slug": "tree-of-life",
+      "html_sources": [
+        "atlas/widgets/Tree_of_Life_Atlas_v1.14.html"
+      ],
+      "release_version": "1.14",
+      "verified": true
+    },
+    {
+      "family": "atlas",
+      "slug": "mythology",
+      "html_sources": [
+        "atlas/widgets/Mythology_Atlas_v1.13.html"
+      ],
+      "release_version": "1.13",
+      "verified": true
+    },
+    {
+      "family": "atlas",
+      "slug": "muscles",
+      "html_sources": [
+        "atlas/widgets/Muscle_Atlas_v1.8.html"
+      ],
+      "release_version": "1.8",
+      "verified": true
+    },
+    {
+      "family": "atlas",
+      "slug": "emergence",
+      "html_sources": [
+        "atlas/widgets/Emergence_Atlas_v1.10.html"
+      ],
+      "release_version": "1.10",
+      "verified": true
+    },
+    {
+      "family": "atlas",
+      "slug": "launcher",
+      "html_sources": [
+        "atlas/widgets/Widget_Launcher_v1.14.html"
+      ],
+      "release_version": "1.14",
+      "verified": true
+    },
+    {
+      "family": "quiz",
+      "slug": "geologic-time",
+      "html_sources": [],
+      "release_version": null,
+      "verified": false
+    },
+    {
+      "family": "quiz",
+      "slug": "tree-of-life",
+      "html_sources": [],
+      "release_version": null,
+      "verified": false
+    },
+    {
+      "family": "quiz",
+      "slug": "nervous-system",
+      "html_sources": [],
+      "release_version": null,
+      "verified": false
+    },
+    {
+      "family": "quiz",
+      "slug": "human-anatomy",
+      "html_sources": [],
+      "release_version": null,
+      "verified": false
+    },
+    {
+      "family": "quiz",
+      "slug": "greek-roman-mythology",
+      "html_sources": [],
+      "release_version": null,
+      "verified": false
+    },
+    {
+      "family": "quiz",
+      "slug": "launcher",
+      "html_sources": [],
+      "release_version": null,
+      "verified": false
+    }
+  ],
+  "component_source_findings": []
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "cross_source_matches",
+    "source_ambiguities"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "cross_source_matches": {
+      "type": "array"
+    },
+    "source_ambiguities": {
+      "type": "array"
+    }
+  }
+}

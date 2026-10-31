@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shared Taxa — extraction schemas",
+  "description": "The source fields are preserved without dropping unrecognized original properties.",
+  "$defs": {
+    "interval": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "start",
+        "end",
+        "rank",
+        "parent",
+        "children",
+        "hierarchy",
+        "period",
+        "source_provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number",
+          "description": "Older boundary in Ma"
+        },
+        "end": {
+          "type": "number",
+          "description": "Younger boundary in Ma"
+        },
+        "rank": {
+          "type": "integer"
+        },
+        "parent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hierarchy": {
+          "type": "object",
+          "required": [
+            "parent_id",
+            "child_ids",
+            "subdivision_count"
+          ]
+        },
+        "period": {
+          "type": "object",
+          "required": [
+            "start_ma",
+            "end_ma",
+            "duration_ma"
+          ]
+        },
+        "taxa": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_provenance": {
+          "type": "object",
+          "required": [
+            "origin_widget",
+            "origin_widget_version",
+            "export_date"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "taxon": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "pron",
+        "etym",
+        "what",
+        "traits",
+        "clade",
+        "examples",
+        "kind",
+        "taxonomy_classification",
+        "phylogenetic_representation",
+        "lineage_age",
+        "extinction",
+        "population_estimate",
+        "taxon_subdivision_count",
+        "source_provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "pron": {
+          "type": "string"
+        },
+        "etym": {
+          "type": "string"
+        },
+        "what": {
+          "type": "string"
+        },
+        "traits": {
+          "type": "string"
+        },
+        "clade": {
+          "type": "string",
+          "description": "Verbatim textual cladogram"
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "status"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "img": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "emoji": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "kind": {
+          "type": "string"
+        },
+        "taxonomy_classification": {
+          "type": "object"
+        },
+        "phylogenetic_representation": {
+          "type": "object"
+        },
+        "lineage_age": {
+          "type": "object"
+        },
+        "extinction": {
+          "type": "object"
+        },
+        "population_estimate": {
+          "type": "null"
+        },
+        "taxon_subdivision_count": {
+          "type": "null"
+        },
+        "citation_ids": {
+          "type": "array"
+        },
+        "source_provenance": {
+          "type": "object",
+          "required": [
+            "origin_widget",
+            "origin_widget_version",
+            "export_date"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "link": {
+      "type": "object",
+      "required": [
+        "geologic_interval_id",
+        "taxon_id",
+        "relationship"
+      ],
+      "properties": {
+        "geologic_interval_id": {
+          "type": "string"
+        },
+        "taxon_id": {
+          "type": "string"
+        },
+        "relationship": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "file_record_schemas": {
+    "data/taxa.json": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/taxon"
+      }
+    },
+    "data/geologic_intervals.json": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/interval"
+      }
+    },
+    "data/geologic_taxon_links.json": {
+      "type": "object",
+      "properties": {
+        "source_curated_direct_links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "ui_inferred_age_range_links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        }
+      }
+    }
+  }
+}

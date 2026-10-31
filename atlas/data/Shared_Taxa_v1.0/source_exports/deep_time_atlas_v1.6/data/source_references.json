@@ -1,0 +1,32 @@
+{
+  "origin": {
+    "origin_widget": "Deep Time Atlas",
+    "origin_widget_slug": "deep-time-atlas",
+    "origin_widget_version": "1.6",
+    "origin_widget_previous_version": "1.5",
+    "data_snapshot_source_version": "1.5",
+    "export_date": "2026-10-15",
+    "export_name": "Shared Taxa — Deep Time Atlas source extraction",
+    "migration_status": "not_migrated",
+    "source_format": "standalone_HTML_with_embedded_JS",
+    "age_unit": "Ma before present",
+    "data_policy": "Preserve all source-authored details verbatim; derived indexes are separately identified; no taxonomic reconciliation yet."
+  },
+  "references": [
+    {
+      "id": "ics-chart-2026-06",
+      "title": "International Commission on Stratigraphy — International Chronostratigraphic Chart",
+      "url": "https://stratigraphy.org/chart/",
+      "cited_for": [
+        "geologic_interval_boundaries"
+      ],
+      "source_widget_text": "Boundaries: International Commission on Stratigraphy, chart 2026/06",
+      "is_per_record_citation": false
+    }
+  ],
+  "image_attribution": {
+    "source_widget_text": "Images: illustrative AI paleoart; not diagnostic reconstructions.",
+    "per_image_source_urls_available": false
+  },
+  "completeness": "No per-taxon, per-clade, or per-event source citations embedded in the widget."
+}

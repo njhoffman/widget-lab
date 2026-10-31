@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "intervals"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "intervals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "parent_id",
+          "older_boundary_ma",
+          "younger_boundary_ma"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "name": {
+            "type": "string"
+          },
+          "parent_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^stx:"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "older_boundary_ma": {
+            "type": "number",
+            "minimum": 0
+          },
+          "younger_boundary_ma": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

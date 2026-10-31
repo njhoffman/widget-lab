@@ -1,0 +1,180 @@
+{
+  "widget": "tree-of-life",
+  "widget_version": "1.14",
+  "repository_version": "0.1.0",
+  "captured_at": "2026-10-31T03:11:47.803542+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Tree_of_Life_Atlas_v1.14.html",
+  "source_sha256": "00cf3dfc3bafd55872121bab851e3928537a024c0644ba435202a1c30c1e5716",
+  "actual_sha256": "b3c801c007224c100eb99ba85c31ea9cb9cbf7a566d55e87456b18ea8d006020",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Initial default view in clean browser profile",
+  "goals": [
+    {
+      "path": "atlas/images/audit_tree_concept.png",
+      "sha256": "055a2937024c8ee6916d39c123dd5ca26460484f0237b5042480b2e64cb45dcc",
+      "crop": null,
+      "approval": "proposed concept, not approved"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T066",
+      "title": "Preserve existing dataset and interactions while upgrading visual shell.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S014",
+      "title": "Add an evidence-backed selected-clade focus panel.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T065",
+      "title": "Translate common illustrated-header and story-card language to this widget.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "T067",
+      "title": "Capture new goal reference and actual screenshot at same viewport.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I009",
+      "title": "Extend illustrated atlas styling beyond first three.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "I017",
+      "title": "Reduced-motion support is inconsistent with the rest of the atlas family.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "S007",
+      "title": "Illustrated clade/organism focus stage.",
+      "priority": "p2",
+      "status": "proposed"
+    }
+  ],
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "181e48b408712b1a0f53ec2c7770aac93ac4a7cfb23331c4d3ed24a14f53142c"
+}

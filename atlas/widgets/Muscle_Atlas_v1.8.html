@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#090e19" name="theme-color"/><meta content="1.8" name="atlas-version"/><meta content="2026-10-16" name="atlas-updated"/>
+<title>Muscle Atlas — v1.8</title>
+<style>
+:root{color-scheme:dark;--bg:#080e1a;--panel:#111d2d;--panel2:#17273a;--panel3:#0e1929;--edge:#2a3e53;--ink:#eaf3fa;--sub:#97acc0;--dim:#71869b;--aqua:#6de1cc;--blue:#80bfff;--violet:#c0b0f6;--gold:#f6c38b;--red:#eb8d91}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 56% 25% at 82% 0,#12304870,transparent),var(--bg);color:var(--ink);font:13px/1.46 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--aqua);outline-offset:2px}a{color:var(--blue)}h1,h2,h3,p{margin-top:0}button:hover:not(:disabled){filter:brightness(1.13)}.app{max-width:1780px;margin:auto;padding:15px}.top{display:flex;align-items:center;justify-content:space-between;gap:13px;background:linear-gradient(115deg,#172d43,#111d30 55%,#1d233b);border:1px solid #3a5267;border-radius:15px;padding:15px 19px;margin-bottom:11px;flex-wrap:wrap}.headline{display:flex;align-items:center;gap:12px}.brand{width:43px;height:43px;border:1px solid #438a92;border-radius:12px;background:linear-gradient(150deg,#173c53,#1c4450);display:grid;place-items:center}.brand svg{width:27px;height:27px}.headline .kicker{font-size:9px;letter-spacing:.22em;color:#70dfcb;font-weight:800}.headline h1{font-size:26px;line-height:1.12;letter-spacing:-.055em;margin:2px 0}.headline p{margin:0;color:#a6bdcd;font-size:11px}.metrics{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.metric{border:1px solid #3b5369;background:#14263a;color:#d9e8f2;border-radius:9px;padding:7px 10px;font-size:11px;white-space:nowrap}.metric strong{font-size:16px;color:#72e6d0;margin-right:5px}.meta{font-size:11px;color:#95a9bd;display:flex;gap:8px;align-items:center;margin-left:6px}.meta b{border:1px solid #395369;border-radius:6px;color:#dcebf6;padding:4px 7px;background:#1b2e42}.layout{display:grid;grid-template-columns:minmax(255px,310px) minmax(340px,465px) minmax(340px,1fr);gap:11px;align-items:start}.panel{border:1px solid var(--edge);border-radius:13px;background:var(--panel);min-width:0}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:12px 13px 10px}.panel-head h2{font-size:13px;font-weight:760;margin:0}.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--aqua);font-size:10px;font-weight:800}.tiny{font-size:10px;color:var(--dim)}.nav{position:sticky;top:10px;max-height:calc(100vh - 20px);display:flex;flex-direction:column;overflow:hidden}.searchbox{padding:0 11px 9px;display:flex;gap:6px}.searchbox input{background:#091522;color:var(--ink);border:1px solid #334b62;border-radius:8px;padding:9px 10px;width:100%;min-width:0;font-size:12px}.searchbox button{border:1px solid #35516a;background:#15293c;color:#d6e8f3;border-radius:8px;min-width:31px}.hierbox{padding:0 11px 10px}.small-label{display:block;color:#90adc0;font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}select{background:#0b192a;border:1px solid #39546b;border-radius:8px;color:#e1f0f8;width:100%;padding:8px 9px;font-size:11px}.tree-area{overflow:auto;min-height:140px;flex:1;padding:0 8px 12px 10px;scrollbar-width:thin;scrollbar-color:#3b5970 transparent}.tree-group{margin:4px 0}.tree-h{width:100%;background:#1a2b40;border:1px solid #334b62;border-radius:8px;display:flex;gap:7px;align-items:center;text-align:left;color:#dfedf8;padding:7px 8px;font-size:11px}.tree-h.on{border-color:#69dac8;background:#194139}.tree-h .arrow{font-size:10px;color:#94b9bd;width:11px}.tree-h .n{flex:1;font-weight:700}.tree-h small{font-size:10px;color:#86b8b8}.tree-items{border-left:1px solid #355167;margin-left:12px;padding:2px 0 1px 9px}.tree-item{width:100%;display:flex;justify-content:space-between;gap:5px;align-items:center;text-align:left;color:#c4d7e6;border:1px solid transparent;border-radius:6px;background:transparent;padding:5px 6px;font-size:11px}.tree-item:hover,.tree-item.chosen{background:#21453f;border-color:#508e8a;color:#effefa}.tree-item.ghost{opacity:.48}.tree-item small{font-size:9px;color:#79a59d}.list-footer{padding:9px 11px;background:#0f1c2b;border-top:1px solid #263c51;color:#8da8bd;font-size:10px;display:flex;justify-content:space-between;gap:8px}.btn{border:1px solid #38566a;background:#192f43;color:#dcf0f8;border-radius:8px;padding:7px 10px;font-size:11px;font-weight:650}.btn.active{background:#20564d;border-color:#65d8bf;color:#eafff8}.btn.faint{background:transparent}.seg{display:flex;gap:4px;padding:3px;background:#0c1928;border:1px solid #2a4255;border-radius:9px}.seg button{border:0;background:transparent;color:#8aa5b9;font-size:10px;border-radius:6px;padding:6px 9px}.seg button.on{background:#294257;color:#e5faf2;font-weight:750}.body-panel{padding-bottom:8px}.body-toolbar{padding:0 12px 10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;justify-content:space-between}.body-toolbar label{display:flex;align-items:center;gap:5px;font-size:10px;color:#a8bdcd;white-space:nowrap}.body-toolbar input{accent-color:#67dbbd}.figure-holder{display:flex;justify-content:center;gap:4px;padding:4px 8px 8px;align-items:center;min-height:520px}.figure{flex:1;min-width:0;max-width:380px;position:relative;text-align:center}.figure.hidden{display:none}.figure-tag{text-align:center;text-transform:uppercase;letter-spacing:.17em;color:#91b2c5;font-size:10px;font-weight:760;margin-bottom:2px}.figure svg{width:100%;height:auto;max-height:660px;display:block;margin:auto;overflow:visible}.silhouette{fill:#233749;stroke:#66849a;stroke-width:1.4}.muscle{fill:#4b7585;stroke:#a5c1d0;stroke-width:.85;stroke-linejoin:round;opacity:.78;cursor:pointer;transition:opacity .12s,fill .12s,stroke .12s}.muscle:nth-child(even){fill:#597785}.muscle:hover{fill:#82b9b3;stroke:#d0faed;opacity:1}.muscle.faded{fill:#344856;stroke:#658092;opacity:.22}.muscle.in-filter{fill:#4e98a0;opacity:.9;stroke:#a2d3d4}.muscle.highlight{fill:#6ce6c9;stroke:#f1fff8;stroke-width:2;opacity:1;filter:drop-shadow(0 0 4px #6de6bf66)}.muscle.secondary{fill:#d2aa70;stroke:#efce9d;opacity:.9}.bodysplit{stroke:#1a2f42;stroke-width:1.5;fill:none;opacity:.5}.anatomy-line{fill:none;stroke:#aecad6;stroke-opacity:.28;stroke-width:.8;pointer-events:none}.locator{fill:#e6f3d5;stroke:#07231e;stroke-width:1.5;pointer-events:none}.figure-caption{font-size:10px;color:#90aabd;text-align:center;padding:8px 13px 0;line-height:1.5}.legend{display:flex;gap:9px;align-items:center;justify-content:center;color:#97adbf;font-size:10px;flex-wrap:wrap;padding:0 11px 7px}.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:3px;vertical-align:middle;background:#4e98a0}.legend i.sel{background:#6ce6c9}.legend i.fad{background:#344856}.legend i.sec{background:#d2aa70}.view-tabs{display:flex;gap:5px;padding:10px 12px 0;border-bottom:1px solid #2a4257;flex-wrap:wrap}.view-tabs button{border:0;border-bottom:2px solid transparent;color:#90adc3;background:transparent;padding:8px 10px;font-size:11px;font-weight:700}.view-tabs button.active{color:#8cf1d7;border-color:#6fdfc7}.detail{padding:15px 15px 18px}.detail h2{margin:4px 0 3px;font-size:clamp(22px,2.2vw,29px);letter-spacing:-.045em;line-height:1.13}.desc{color:#c0d0e0;margin:9px 0 12px;line-height:1.55;font-size:12px}.tagrow{display:flex;gap:5px;flex-wrap:wrap;margin:10px 0 12px}.tag{display:inline-flex;border:1px solid #3a5368;background:#182f44;color:#c4e3e9;border-radius:6px;padding:4px 7px;font-size:10px;line-height:1.25}.tag.click{cursor:pointer}.tag.click:hover{background:#25544d;border-color:#6bddc5}.subhead{font-size:11px;text-transform:uppercase;letter-spacing:.065em;color:#93d7ca;font-weight:800;margin:14px 0 7px}.anatomy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.fact{padding:9px 10px;background:#101e2f;border:1px solid #2d4358;border-radius:9px}.fact strong{font-size:10px;color:#8baabd;display:block;margin-bottom:5px;letter-spacing:.02em}.fact span{font-size:11px;color:#d6e4ef;line-height:1.5;display:block}.chipstrip{display:flex;flex-wrap:wrap;gap:5px}.chipstrip span{padding:4px 7px;font-size:10px;background:#102b38;border:1px solid #2d5863;color:#abd9de;border-radius:6px}.exrow{width:100%;border:1px solid #2d465d;background:#15273b;color:#dfecf5;text-align:left;border-radius:9px;padding:9px 10px;margin:0 0 6px;display:flex;align-items:center;gap:10px}.exrow:hover{border-color:#74d7c4;background:#1c3a45}.exrow .emblem{width:32px;height:32px;flex:none;border:1px solid #375b6c;background:#1b3b49;border-radius:8px;display:grid;place-items:center;font-size:18px}.exrow .exname{font-size:12px;font-weight:760;display:block}.exrow .exsub{font-size:10px;color:#9bb5c7;margin-top:2px;display:block}.role{margin-left:auto;font-size:9px;font-weight:750;border:1px solid #457b72;background:#204d45;color:#9bf3cf;padding:3px 6px;border-radius:5px;white-space:nowrap}.role.sec{border-color:#8d7959;background:#453d32;color:#f0c88e}.text-muted{color:#93abc1;font-size:11px}.empty{padding:18px 10px;font-size:11px;color:#8ca8bc;text-align:center}.catalog-controls{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:11px}.catalog-controls input,.catalog-controls select{background:#0d1b2c;border:1px solid #38536a;border-radius:8px;color:#e7f4fa;padding:9px 10px;font-size:11px;min-width:0}.catalog-controls input{flex:1;min-width:135px}.catalog-controls select{width:auto;max-width:165px}.catalog-list{max-height:610px;overflow:auto;padding-right:3px}.catalog-list .exrow{margin-bottom:5px}.catalog-list .exsub{line-height:1.45}.note{border:1px solid #33566a;background:#142d3c;border-radius:9px;padding:10px 11px;color:#adc6d5;font-size:11px;line-height:1.55;margin:11px 0}.note strong{color:#b5f2db}.modal-root{display:none;position:fixed;inset:0;background:#010815d6;z-index:100;padding:22px;overflow-y:auto;align-items:center;justify-content:center;backdrop-filter:blur(5px)}.modal-root.open{display:flex}.modal{width:min(760px,100%);max-height:min(900px,calc(100vh - 42px));overflow:auto;background:#132136;border:1px solid #486b7d;box-shadow:0 26px 85px #000b;border-radius:15px}.modal-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:16px 19px 10px}.modal-head h2{font-size:24px;letter-spacing:-.04em;margin:2px 0 0}.close{border:1px solid #476079;background:#22354b;color:#ddecf6;border-radius:9px;min-width:31px;height:31px;font-size:20px;line-height:1}.modal-body{padding:3px 19px 20px}.exercise-diagram{width:100%;height:185px;background:radial-gradient(ellipse at 50% 50%,#17384a,#0c1828 75%);border:1px solid #2a5060;border-radius:11px;overflow:hidden;margin:10px 0 14px}.exercise-diagram svg{width:100%;height:100%}.exercise-diagram .ground{stroke:#67869c;stroke-width:1.5}.exercise-diagram .figure-limb{stroke:#9fceca;stroke-width:8;stroke-linecap:round;fill:none}.exercise-diagram .figure-core{stroke:#5bd5bd;stroke-width:13;stroke-linecap:round;fill:none}.exercise-diagram .joint{fill:#d1eee4}.exercise-diagram .eq{stroke:#efc08d;stroke-width:7;stroke-linecap:round;fill:none}.exercise-diagram text{fill:#a5bed0;font-size:10px;font-family:inherit}.exercise-diagram .motion{fill:none;stroke:#f1ba7c;stroke-width:2;stroke-dasharray:5 4}.steps{margin:5px 0 0;padding-left:20px;color:#d5e5ee;font-size:12px;line-height:1.75}.steps li{padding-left:3px;margin:4px 0}.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:12px}.modal-grid>div{background:#0e1b2b;border:1px solid #294357;border-radius:10px;padding:12px}.modal-grid h3{font-size:12px;margin:0 0 8px;color:#95d9ce}.fine{color:#809bb1;font-size:10px;line-height:1.5}.data-head{font-size:12px;color:#c5d7e4;line-height:1.55}.data-actions{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.import-input{display:none}.data-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:12px 0}.kpi{border:1px solid #315064;border-radius:9px;background:#122b38;padding:11px}.kpi span{font-size:10px;color:#9bb9c8;display:block}.kpi strong{font-size:22px;color:#71e3c9;display:block;margin-top:2px}.muscle-progress{margin:5px 0;padding:8px 9px;background:#112336;border:1px solid #2a4358;border-radius:8px}.progress-row{display:flex;gap:7px;align-items:center;font-size:11px;justify-content:space-between}.progress-row b{color:#cce5ec}.progressbar{height:5px;background:#2a4054;border-radius:5px;overflow:hidden;margin-top:6px}.progressbar i{height:100%;display:block;background:linear-gradient(90deg,#428ba5,#75e7bb);border-radius:5px}.status{font-size:11px;color:#9bb3c5;margin-top:6px}.status.bad{color:#e7a29d}.toast{position:fixed;bottom:16px;right:16px;max-width:min(410px,calc(100vw - 32px));background:#204039;border:1px solid #65cdb2;border-radius:11px;padding:11px 15px;box-shadow:0 10px 30px #0008;z-index:150;color:#e5f8f2;display:none;font-size:12px}.toast.visible{display:block}.ex-link{font-size:10px;margin-left:auto;color:#a4d7e7}.divider{height:1px;background:#294258;margin:12px 0}.source-list{margin:9px 0;padding-left:16px;color:#aec3d2;font-size:11px}.source-list li{margin:5px 0}.found-counter{font-size:10px;color:#8cbdb8;padding:5px 1px}.subtlebtn{border:0;background:none;color:#97dcd2;font-size:10px;padding:2px 4px}.pill-label{font-size:10px;color:#91b7c3;border:1px solid #2d4f5e;background:#132939;padding:3px 6px;border-radius:4px}
+@media(max-width:1220px){.layout{grid-template-columns:minmax(235px,290px) minmax(280px,1fr)}.details-panel{grid-column:2;grid-row:2}.nav{grid-row:1/span 2;max-height:calc(100vh - 20px)}.figure-holder{min-height:490px}.figure svg{max-height:540px}}@media(max-width:760px){.app{padding:9px}.layout{display:block}.nav{position:static;max-height:none;margin-bottom:10px}.tree-area{max-height:250px}.body-panel{margin-bottom:10px}.details-panel{margin-bottom:10px}.figure-holder{min-height:unset}.figure svg{max-height:510px}.top{padding:13px}.meta{margin-left:0}.headline h1{font-size:23px}.modal-root{padding:9px}.modal{max-height:calc(100vh - 18px)}.modal-grid{grid-template-columns:1fr}}@media(max-width:420px){.seg button{padding:5px 6px;font-size:9px}.anatomy-grid{grid-template-columns:1fr}.data-kpis{grid-template-columns:1fr 1fr}.metrics{gap:4px}.metric{padding:5px 7px}.headline{gap:8px}.top{gap:9px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.version-btn{border:1px solid #395369;border-radius:7px;color:#dcebf6;padding:4px 8px;background:#1b2e42;font-size:11px;font-weight:750;cursor:pointer}.version-btn:hover{border-color:#78d9c4;color:#93f4da}.changelog-entry{background:#0e1b2b;border:1px solid #314b61;border-radius:10px;margin:8px 0;overflow:hidden}.changelog-entry[open]{border-color:#488c8c;background:#102b36}.changelog-entry summary{cursor:pointer;padding:12px 14px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:12px;font-weight:750;list-style:none}.changelog-entry summary::-webkit-details-marker{display:none}.changelog-entry summary:before{content:'▸';color:#78d9c9;font-size:11px;margin-right:3px}.changelog-entry[open] summary:before{content:'▾'}.changelog-entry summary .release-date{margin-left:auto;color:#8da8bc;font-size:10px;font-weight:500}.changelog-entry .notes{border-top:1px solid #28485b;padding:10px 15px 12px;color:#c9dbe6;font-size:11px}.changelog-entry .notes ul{margin:0;padding-left:17px;line-height:1.75}.changelog-entry .notes li{padding-left:3px;margin:3px 0}.two-col-names{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:11px}.target-group{background:#0c1b2b;border:1px solid #2a4559;border-radius:8px;padding:9px}.target-group h3{font-size:11px;color:#a1dcd3;margin:0 0 7px}.target-group .target-button{display:block;border:0;background:transparent;color:#d3e6f0;cursor:pointer;text-align:left;padding:5px 3px;width:100%;font-size:11px}.target-group .target-button:hover{color:#9bf7dd}.source-reference{font-size:11px;color:#a5c1d0;line-height:1.7}.source-reference a{color:#9bcfff}.train-chart{max-height:260px;overflow:auto}.logtable{border-collapse:collapse;width:100%;font-size:10px;margin-top:8px}.logtable td,.logtable th{border-bottom:1px solid #2b4255;padding:6px 4px;text-align:left;vertical-align:top}.logtable th{color:#95d4cc}.train-metrics{color:#93abc0;font-size:10px;line-height:1.5}.trainer-formula{color:#abbea9;font-size:10px;line-height:1.55}.exercise-diagram .pose-panel{fill:#132c3a;stroke:#35556b;stroke-width:1}.exercise-diagram .pose-title{fill:#cae4e3;font-weight:700;font-size:11px}.exercise-diagram .pose-limb{fill:none;stroke:#b5dcda;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.exercise-diagram .pose-body{fill:none;stroke:#78e2ce;stroke-width:13;stroke-linecap:round}.exercise-diagram .pose-head{fill:#a6d7da}.exercise-diagram .pose-weight{fill:none;stroke:#f3be84;stroke-width:7;stroke-linecap:round}.exercise-diagram .pose-floor{stroke:#527486;stroke-width:1.5}.exercise-diagram .pose-arrow{fill:none;stroke:#ecc089;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:6 5}.exercise-diagram .pose-arrowhead{fill:#ecc089}@media(max-width:500px){.two-col-names{grid-template-columns:1fr}.changelog-entry summary{padding:9px 11px}}
+</style>
+<style id="atlas-family-theme">
+/* Atlas family design system · October 16, 2026 · Deep Time palette */
+:root{color-scheme:dark;--bg:#080e19;--panel:#101b2b;--panel2:#142237;--outline:#26364b;--text:#e9f3fb;--txt:#e9f3fb;--ink:#e9f3fb;--sub:#96abbf;--muted:#96abbf;--cyan:#59c8ee;--mint:#6fe2b7;--gold:#f2bb77;--purple:#b3a0fb;--sky:#59c8ee;--blue:#59c8ee;--aqua:#6fe2b7;--teal:#6fe2b7;--green:#6fe2b7;--line:#26364b;--edge:#26364b;--stroke:#26364b;--card:#142237;--panel3:#0e1929;--panel2:#142237;--rose:#f2bb77;--violet:#b3a0fb;--amber:#f2bb77}
+html{color-scheme:dark}body{background:radial-gradient(ellipse at 75% -8%,#1b3851 0%,transparent 45%),#080e19!important;color:#e9f3fb!important}
+.atlas-family-header{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;flex-wrap:nowrap!important;border:0!important;border-bottom:1px solid #263749!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;padding:6px 0 17px!important;margin:0 0 18px!important;position:relative;min-height:91px;max-width:100%}
+.atlas-family-brand{display:flex;min-width:0;gap:12px;align-items:center;flex:1 1 auto}
+.atlas-family-icon{display:grid;place-items:center;flex:0 0 55px;height:62px;color:#6fe2b7;background:none;border:none;border-radius:0;padding:0}
+.atlas-family-icon svg{width:55px;height:62px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.atlas-family-copy{min-width:0}.atlas-family-header h1{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif!important;font-size:clamp(22px,2.3vw,31px)!important;color:#e9f3fb!important;font-weight:800!important;letter-spacing:-.055em!important;line-height:1.13!important;margin:0 0 5px!important;text-transform:none!important}
+.atlas-family-header h1 span{color:#59c8ee!important}
+.atlas-family-subtitle{color:#96abbf!important;font-size:10px!important;letter-spacing:.13em!important;font-weight:700!important;text-transform:uppercase!important;line-height:1.35!important;white-space:normal}
+.atlas-family-right{display:flex;align-items:center;justify-content:flex-end;gap:7px;min-width:0;flex-wrap:wrap}
+.atlas-family-status{display:flex;align-items:center;flex-wrap:wrap;gap:7px;justify-content:flex-end}
+.atlas-family-header .atlas-status,.atlas-family-header .chip,.atlas-family-header .tag,.atlas-family-header .metric,.atlas-family-header .atlasindex,.atlas-family-header .metadata-button.stat-link,.atlas-family-header .atlas-stat-button{font:650 11px/1.3 Inter,ui-sans-serif,system-ui,sans-serif!important;color:#c5dced!important;white-space:nowrap!important;background:#101f31!important;border:1px solid #2a3d54!important;border-radius:9px!important;padding:7px 10px!important;box-shadow:none!important;min-height:34px!important;cursor:pointer!important}
+.atlas-family-header .atlas-status:hover,.atlas-family-header .atlas-stat-button:hover{background:#1a3048!important;border-color:#4c7891!important}
+.atlas-family-header button strong,.atlas-family-header button b{color:#6fe2b7}
+.atlas-family-header .atlas-family-version{order:9999;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;flex:0 0 auto!important;margin-left:6px!important;min-height:35px!important;padding:7px 12px!important;background:#11283a!important;border:1px solid #346078!important;color:#92cde6!important;border-radius:8px!important;font-size:12px!important;line-height:1.1!important;letter-spacing:0!important;white-space:nowrap!important;font-weight:650!important;box-shadow:none!important}
+.atlas-family-header .atlas-family-version strong{font-weight:850!important;color:#59c8ee!important;font-size:13px!important}
+.atlas-family-header .atlas-family-version:hover{border-color:#59c8ee!important;background:#173a51!important}
+.atlas-deep-controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center;position:relative;border-bottom:1px solid #26364b;padding-bottom:10px;margin-bottom:2px}
+.atlas-deep-controls .smallBtn{padding:6px 9px!important;font-size:11px!important;flex:1 1 auto}
+.atlas-deep-controls .search{width:100%!important;max-width:100%!important;font-size:12px!important}
+.atlas-deep-controls .atlas-deep-search{width:100%;position:relative}
+.atlas-deep-controls .searchHits{left:0;right:0;top:100%;z-index:8;width:100%}
+.atlas-family-overlay{position:fixed;inset:0;background:#010611cf;z-index:100000;display:none;align-items:center;justify-content:center;padding:18px;backdrop-filter:blur(5px)}
+.atlas-family-overlay.open{display:flex}
+.atlas-family-dialog{color:#e9f3fb;background:linear-gradient(155deg,#142438,#0c1725);border:1px solid #47708a;border-radius:15px;max-width:580px;width:100%;max-height:min(88vh,820px);overflow:auto;box-shadow:0 20px 85px #0009;font-size:13px}
+.atlas-family-modal-head{padding:16px 19px 13px;border-bottom:1px solid #2b4258;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.atlas-family-modal-head h2{font-size:19px!important;letter-spacing:-.4px!important;margin:0!important;color:#e9f3fb!important}
+.atlas-family-close-row{display:flex;justify-content:flex-end;padding:8px 13px 0}
+.atlas-family-close{display:grid;place-items:center;width:31px;height:30px;border:1px solid #38526a;border-radius:8px;background:#162c40;color:#d9ecf9;font-size:20px;cursor:pointer}
+.atlas-family-dialog-body{padding:6px 19px 22px;max-height:65vh;overflow:auto}
+.atlas-family-summary{font-size:12px;line-height:1.6;color:#a8c2d6;margin:5px 0 12px}
+.atlas-family-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.atlas-family-stat{padding:11px;border-radius:10px;border:1px solid #2b4257;background:#14283c;min-width:0}
+.atlas-family-stat small{display:block;font-size:10px;color:#97b1c5;letter-spacing:.05em;margin-bottom:5px;text-transform:uppercase;line-height:1.3}
+.atlas-family-stat strong{font-size:17px;color:#e5f6fe;display:block;overflow-wrap:anywhere;line-height:1.25}
+.atlas-family-note{padding:9px 11px;border:1px solid #2c4256;border-radius:9px;background:#122336;color:#a7c2d4;font-size:11px;margin:11px 0;line-height:1.6}
+.atlas-family-verify{background:#143950;border:1px solid #347b96;border-radius:8px;color:#c6edfb;padding:8px 12px;font-weight:750;font-size:12px;cursor:pointer}
+.atlas-family-verify:hover{background:#20506b}
+.atlas-family-result{margin-top:9px;color:#a2c8d7;font-size:11px;line-height:1.6;min-height:14px}
+.atlas-family-release{margin:8px 0;background:#132a3d;border:1px solid #324d62;border-radius:10px;overflow:hidden}
+.atlas-family-release summary{cursor:pointer;padding:11px 12px;color:#c7e6f1;font-weight:750;display:flex;justify-content:space-between}
+.atlas-family-release[open]{border-color:#4386a1}
+.atlas-family-release ul{margin:0;padding:0 19px 12px 30px;color:#b6cad9;font-size:12px;line-height:1.6}
+@media(max-width:760px){.atlas-family-header{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-areas:'brand version' 'status status'!important;align-items:start!important;gap:8px!important;min-height:0}.atlas-family-brand{grid-area:brand}.atlas-family-right{display:contents!important}.atlas-family-status{grid-area:status;display:flex!important;justify-content:flex-start!important;padding-left:1px}.atlas-family-version{grid-area:version}.atlas-family-icon{flex-basis:42px;height:52px}.atlas-family-icon svg{width:42px;height:52px}.atlas-family-subtitle{font-size:9px!important;letter-spacing:.09em!important}.atlas-family-header h1{font-size:clamp(19px,5vw,26px)!important}.atlas-family-right{gap:5px;flex:0 0 auto}.atlas-family-header .atlas-family-status{display:flex!important}.atlas-family-header .atlas-family-version{padding:7px 8px!important;margin-left:0!important}.atlas-family-stats{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.atlas-family-brand{gap:6px}.atlas-family-icon{flex-basis:31px}.atlas-family-icon svg{width:31px}.atlas-family-header .atlas-family-version{font-size:10px!important;padding:7px 6px!important}.atlas-family-header .atlas-family-version strong{font-size:11px!important}}
+</style><style id="atlas-family-specific">.atlas-family-header .metric{display:inline-flex!important;align-items:center;gap:5px!important}.atlas-family-header .metric strong{font-size:12px!important;line-height:inherit!important}</style><meta content="1.8" name="widget-version"/><meta content="2026-10-16" name="widget-updated"/><style id="aw-unified-family-css">
+/* Atlas Widgets · unified visual release · 2026-10-16 · family spec v1.1 */
+:root{--aw-bg:#080e19;--aw-panel:#101b2b;--aw-panel2:#142237;--aw-outline:#2b435a;--aw-ink:#e9f3fb;--aw-muted:#9eb6ca;--aw-cyan:#59c8ee;--aw-teal:#6fe2c3;--aw-control-height:30px}
+.atlas-family-header.aw-header{background:radial-gradient(ellipse at 3% 15%,rgba(26,122,132,.32),transparent 40%),radial-gradient(ellipse at 86% 2%,rgba(48,127,170,.19),transparent 54%),linear-gradient(113deg,#142b42 0%,#10243b 38%,#0c1b31 72%,#12293f 100%)!important;border:1px solid #2b566d!important;border-bottom:1px solid #376b80!important;border-radius:14px!important;box-shadow:0 10px 30px #0107113d,inset 0 1px 0 #81eaff13!important;padding:16px 18px!important;margin-bottom:16px!important;min-height:92px;max-width:none!important;position:relative}
+.atlas-family-header.aw-header .atlas-family-brand{gap:14px!important;align-items:center!important}
+.atlas-family-header.aw-header .atlas-family-icon{width:66px!important;height:60px!important;flex:0 0 66px!important;background:transparent!important;box-shadow:none!important;border:0!important;outline:0!important;border-radius:0!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:0!important}
+.atlas-family-header.aw-header .atlas-family-icon svg{width:66px!important;height:60px!important;max-width:none!important;stroke:none!important;filter:drop-shadow(0 0 6px #66cdef20)}
+.atlas-family-header.aw-header .atlas-family-copy{min-width:0}
+.atlas-family-header.aw-header .atlas-family-copy h1{font-size:clamp(20px,2.3vw,27px)!important;line-height:1.13!important;letter-spacing:-.035em!important;margin:0 0 4px!important;color:#f1f8ff!important}
+.atlas-family-header.aw-header .atlas-family-copy h1 span{color:var(--aw-cyan)!important}
+.atlas-family-header.aw-header .atlas-family-subtitle{font-size:10px!important;letter-spacing:.105em!important;line-height:1.4!important;font-weight:700!important;color:#acc9d8!important}
+.atlas-family-header.aw-header .atlas-family-right{margin-left:auto!important;display:flex!important;justify-content:flex-end!important;gap:8px!important;align-items:center!important}
+.atlas-family-header.aw-header .atlas-family-status{display:flex!important;flex-wrap:wrap!important;gap:6px!important;align-items:center!important;justify-content:flex-end!important}
+.atlas-family-header.aw-header .atlas-family-status > *, .atlas-family-header.aw-header .atlas-family-version{height:var(--aw-control-height)!important;min-height:var(--aw-control-height)!important;max-height:var(--aw-control-height)!important;min-width:0!important;padding:0 10px!important;margin:0!important;box-sizing:border-box!important;border-radius:7px!important;background:linear-gradient(135deg,#10273a,#12283e)!important;border:1px solid #35546c!important;color:#bcd8e6!important;font-size:11px!important;font-weight:650!important;line-height:28px!important;white-space:nowrap!important;display:inline-flex!important;align-items:center!important;gap:5px!important;box-shadow:none!important}
+.atlas-family-header.aw-header .atlas-family-status > *:is(button):hover,.atlas-family-header.aw-header .atlas-family-version:hover{border-color:#58badd!important;background:#173b50!important}
+.atlas-family-header.aw-header .atlas-family-version{flex:0 0 auto!important;font-size:12px!important;color:#a5d6e7!important;border-color:#477e97!important;order:99!important}
+.atlas-family-header.aw-header .atlas-family-version strong{color:#74d9f6!important;font-size:12px!important;font-weight:800!important}
+.atlas-family-header.aw-header .atlas-family-status b,.atlas-family-header.aw-header .atlas-family-status strong{color:#78dec8!important}
+.atlas-family-header.aw-header :focus-visible{outline:2px solid #86e3ec!important;outline-offset:2px}
+.aw-modal-overlay{position:fixed!important;inset:0!important;z-index:2147482000!important;display:none!important;justify-content:center!important;align-items:center!important;padding:14px!important;background:#010713b9!important;backdrop-filter:blur(6px)}
+.aw-modal-overlay.aw-open{display:flex!important}
+.aw-modal{display:flex;flex-direction:column;overflow:hidden;max-height:min(86vh,1000px);width:min(735px,100%);border-radius:17px;background:#0d1728;border:1px solid #446681;color:var(--aw-ink);box-shadow:0 27px 100px #000a;text-align:left;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.aw-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;border-bottom:1px solid #3a566d;padding:19px 23px 20px;background:linear-gradient(120deg,#192b41,#101b2e 65%)}
+.aw-modal-eye{text-transform:uppercase;color:#65d6e7;font-size:11px;letter-spacing:.14em;font-weight:800;margin:0 0 8px}
+.aw-modal-head h2{color:#d8edfa;font-size:27px;letter-spacing:-.025em;line-height:1.15;margin:0;font-weight:800}
+.aw-modal-x{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border:1px solid #527088;border-radius:12px;background:#15283d;color:#bfddec;font-size:30px;line-height:1;cursor:pointer}
+.aw-modal-x:hover{background:#203952;border-color:#69b7d0}
+.aw-modal-body{padding:22px 23px 26px;overflow:auto;min-height:0}
+.aw-stat-summary{margin:0 0 18px;color:#79d8ea;font-size:15px;font-weight:770}
+.aw-stat-table{border:1px solid #47657d;border-radius:11px;overflow:hidden;background:#142033}
+.aw-stat-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(85px,max-content);gap:20px;align-items:center;min-height:46px;padding:11px 15px;border-bottom:1px solid #47657d;color:#b1ccde;font-size:14px;line-height:1.35}
+.aw-stat-row:last-child{border-bottom:0}.aw-stat-row strong{color:#d4e9f8;text-align:right;font-variant-numeric:tabular-nums;font-size:14px;white-space:normal}
+.aw-stat-row.aw-total{background:#1a3041;color:#e7f5fc;font-weight:800}.aw-stat-row.aw-total strong{color:#87e4e8;font-size:16px}
+.aw-stat-row.aw-section{background:#0f2739;min-height:35px;color:#67d9e5;text-transform:uppercase;letter-spacing:.07em;font-size:10px;font-weight:800}
+.aw-stat-note{font-size:12px;color:#a2bacc;line-height:1.75;margin:18px 0 0}
+.aw-verify{display:inline-flex;gap:7px;align-items:center;margin-top:15px;border:1px solid #447487;background:#0e3041;border-radius:7px;color:#a8e7ec;font-size:12px;font-weight:700;padding:10px 13px;cursor:pointer}
+.aw-check-status{font-size:12px;margin-top:10px;color:#abc5d4;line-height:1.5}
+.aw-releases{display:grid;gap:8px}.aw-release{border:1px solid #3c5268;border-radius:9px;overflow:hidden;background:#122339}.aw-release[open]{border-color:#58869c;background:#152b3e}.aw-release summary{padding:12px 14px;display:flex;align-items:center;gap:12px;cursor:pointer;list-style:none;color:#ddf4ff;font-size:14px;font-weight:800}.aw-release summary::-webkit-details-marker{display:none}.aw-release summary::after{content:'+';margin-left:auto;color:#83d8ee;font-size:20px}.aw-release[open] summary::after{content:'−'}.aw-release ul{padding:3px 19px 14px 33px;margin:0;color:#b7d1df;font-size:12px;line-height:1.7}.aw-release li+li{margin-top:4px}.aw-latest{font-size:10px;color:#6fe2c3;padding:2px 7px;border:1px solid #367565;border-radius:6px;background:#12392f}
+.aw-modal .aw-file-info{padding-top:8px;font-size:12px;color:#9fbacd}
+@media(max-width:900px){.atlas-family-header.aw-header{flex-wrap:wrap!important;align-items:flex-start!important;gap:10px!important}.atlas-family-header.aw-header .atlas-family-right{width:100%!important;justify-content:flex-end!important}.atlas-family-header.aw-header .atlas-family-brand{width:100%!important}}
+@media(max-width:570px){.atlas-family-header.aw-header{padding:13px!important}.atlas-family-header.aw-header .atlas-family-copy h1{font-size:19px!important}.atlas-family-header.aw-header .atlas-family-icon{width:52px!important;height:52px!important;flex-basis:52px!important}.atlas-family-header.aw-header .atlas-family-icon svg{width:52px!important;height:52px!important}.atlas-family-header.aw-header .atlas-family-status > *, .atlas-family-header.aw-header .atlas-family-version{font-size:10px!important;padding:0 7px!important}.aw-modal-head{padding:17px}.aw-modal-body{padding:17px}.aw-stat-row{padding:10px 11px;font-size:12px}.aw-stat-row strong{font-size:12px}}
+
+
+/* Atlas family v1.2: corrected borderless low-profile header and Mythology-style title row. */
+:root{--aw-accent-green:#70e3bb;--aw-stat-size:30px;--aw-accent-cyan:#64cfee}
+.atlas-family-header.aw-header{border:0!important;border-radius:0!important;box-shadow:none!important;min-height:0!important;padding:8px 10px 11px!important;margin-bottom:14px!important;background:radial-gradient(ellipse at 85% 5%,rgba(60,142,186,.14),transparent 55%),linear-gradient(110deg,#0b1523,#132d42 58%,#173149)!important;border-bottom:1px solid #294257!important}
+.atlas-family-header.aw-header .atlas-family-brand{gap:11px!important;flex:0 1 auto!important;min-width:0!important}
+.atlas-family-header.aw-header .atlas-family-icon{width:51px!important;height:49px!important;flex:0 0 51px!important;padding:0!important}
+.atlas-family-header.aw-header .atlas-family-icon svg{width:51px!important;height:49px!important}
+.atlas-family-header.aw-header .atlas-family-copy h1{font-size:22px!important;margin:0 0 2px!important;line-height:1.1!important;white-space:nowrap!important}
+.atlas-family-header.aw-header .atlas-family-subtitle{font-size:9px!important;letter-spacing:.035em!important;line-height:1.3!important;font-weight:600!important;text-transform:none!important;white-space:nowrap!important;max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.atlas-family-header.aw-header .atlas-family-right{min-width:0!important;flex:1 1 auto!important;margin-left:auto!important;gap:6px!important;align-items:center!important}
+.atlas-family-header.aw-header .atlas-family-status{gap:5px!important;flex-wrap:nowrap!important;min-width:0!important}
+.atlas-family-header.aw-header .atlas-family-status > *, .atlas-family-header.aw-header .atlas-family-version{height:var(--aw-stat-size)!important;min-height:var(--aw-stat-size)!important;max-height:var(--aw-stat-size)!important;padding:0 9px!important;line-height:28px!important;border-radius:6px!important;white-space:nowrap!important}
+.atlas-family-header.aw-header .atlas-family-status b,.atlas-family-header.aw-header .atlas-family-status strong,.atlas-family-header.aw-header .atlas-family-status .aw-green-number{color:var(--aw-accent-green)!important;font-weight:800!important}
+.atlas-family-header.aw-header .atlas-family-status .atlas-stat-button:not(:has(b,strong)){color:var(--aw-accent-green)!important}
+.aw-modal-head{background:transparent!important;border-bottom:0!important;padding:20px 21px 5px!important;align-items:center!important}
+.aw-modal-eye{font-size:11px!important;letter-spacing:.11em!important;color:var(--aw-accent-cyan)!important;margin:0 0 5px!important}
+.aw-modal-head h2{font-size:25px!important;line-height:1.1!important}
+.aw-modal-x{width:38px!important;height:38px!important;flex:0 0 38px!important;border-radius:9px!important;font-size:25px!important}
+.aw-modal-body{padding:15px 21px 23px!important}
+.aw-stat-summary{color:var(--aw-accent-cyan)!important}
+.aw-stat-row.aw-total{background:#1b283c!important;color:#d7f1fd!important}
+.aw-stat-row.aw-total strong{color:var(--aw-accent-green)!important}
+@media(min-width:950px){.atlas-family-header.aw-header{flex-wrap:nowrap!important}}
+@media(max-width:1100px){.atlas-family-header.aw-header .atlas-family-right{flex-wrap:wrap!important}.atlas-family-header.aw-header .atlas-family-status{flex-wrap:wrap!important;justify-content:flex-end!important}}
+@media(max-width:680px){.atlas-family-header.aw-header{padding:9px 6px 12px!important}.atlas-family-header.aw-header .atlas-family-right{width:100%!important}.atlas-family-header.aw-header .atlas-family-copy h1{font-size:19px!important}.aw-modal-head{padding:14px 15px 4px!important}.aw-modal-body{padding:14px 15px 20px!important}}
+</style>
+<style id="aw-index-compact-typography">
+/* Shared Atlas Widgets compact index-statistics typography, v1.3 — derived from Mythology Atlas v1.2.
+   Applies ONLY to indexed-data dialogs; all visual accent colors remain those of v1.2 unified family. */
+#aw-index-modal .aw-modal {
+  width:min(548px,100%)!important;max-height:min(88vh,820px)!important;
+  border-radius:13px!important;
+  font:13px/1.46 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+}
+#aw-index-modal .aw-modal-head {
+  background:transparent!important;border-bottom:0!important;
+  padding:14px 17px 4px!important;gap:10px!important;align-items:center!important;
+}
+#aw-index-modal .aw-modal-eye{font-size:10px!important;letter-spacing:.12em!important;margin:0 0 3px!important;line-height:1.25!important}
+#aw-index-modal .aw-modal-head h2{font-size:19px!important;line-height:1.2!important;letter-spacing:-.025em!important;margin:0!important}
+#aw-index-modal .aw-modal-x{width:33px!important;height:33px!important;flex:0 0 33px!important;border-radius:7px!important;font-size:21px!important}
+#aw-index-modal .aw-modal-body{padding:12px 17px 18px!important;font-family:inherit!important}
+#aw-index-modal .aw-stat-summary{font-size:13px!important;line-height:1.46!important;margin:0 0 11px!important;font-weight:700!important}
+#aw-index-modal .aw-stat-table{border-radius:9px!important}
+#aw-index-modal .aw-stat-row{
+  min-height:0!important;padding:7px 10px!important;gap:12px!important;
+  font-size:12px!important;line-height:1.46!important;
+  grid-template-columns:minmax(0,1fr) minmax(65px,max-content)!important;
+}
+#aw-index-modal .aw-stat-row strong{font-size:12px!important;font-weight:750!important;line-height:1.46!important;white-space:nowrap!important}
+#aw-index-modal .aw-stat-row.aw-total{font-weight:800!important}
+#aw-index-modal .aw-stat-row.aw-total strong{font-size:12px!important}
+#aw-index-modal .aw-stat-row.aw-section{font-size:10px!important;line-height:1.3!important;min-height:0!important;padding:7px 10px!important}
+#aw-index-modal .aw-stat-note{font-size:11px!important;line-height:1.6!important;margin:12px 0 0!important}
+#aw-index-modal .aw-verify{font-size:11px!important;padding:7px 10px!important;margin-top:11px!important}
+#aw-index-modal .aw-check-status{font-size:11px!important;line-height:1.5!important;margin-top:7px!important}
+/* Keep legacy version/date spans in any header button truly hidden. */
+.atlas-family-version [hidden]{display:none!important}
+/* Legacy statistics overlay fallback: same Segoe UI and compact rhythm. */
+#atlas-family-stats-overlay .atlas-family-dialog{max-width:548px!important;font:13px/1.46 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}
+#atlas-family-stats-overlay .atlas-family-modal-head{padding:13px 17px 3px!important;border-bottom:0!important}
+#atlas-family-stats-overlay .atlas-family-modal-head h2{font-size:19px!important}
+#atlas-family-stats-overlay .atlas-family-dialog-body{padding:10px 17px 18px!important}
+#atlas-family-stats-overlay .atlas-family-note{font-size:11px!important;line-height:1.6!important;padding:7px 10px!important;margin:10px 0!important}
+@media(max-width:570px){#aw-index-modal .aw-modal-head{padding:12px 13px 3px!important}#aw-index-modal .aw-modal-body{padding:11px 13px 15px!important}#aw-index-modal .aw-stat-row{padding:7px 8px!important;gap:8px!important}}
+</style>
+<style id="atlas-v14-typography-and-header">
+
+/* Atlas Widgets master workspace v1.4 — compact release histories, transparent headers */
+
+/* Standard for current and FUTURE atlas data tables / change logs.
+   Reuses compact Mythology v1.2 typography; modern navy/cyan/green colors intact. */
+:root {
+  --atlas-data-font: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --atlas-data-size: 12px;
+  --atlas-data-line-height: 1.46;
+  --atlas-data-row-pad-y: 7px;
+  --atlas-data-row-pad-x: 10px;
+  --atlas-data-heading-size: 19px;
+  --atlas-data-dialog-width: 548px;
+}
+/* Future tables use .atlas-data-table or [data-atlas-tabular], not global table rules. */
+.atlas-data-table, [data-atlas-tabular] {
+  font-family: var(--atlas-data-font) !important;
+  font-size: var(--atlas-data-size) !important;
+  line-height: var(--atlas-data-line-height) !important;
+  font-variant-numeric: tabular-nums;
+}
+.atlas-data-table :is(th,td),
+[data-atlas-tabular] :is(th,td) {
+  padding: var(--atlas-data-row-pad-y) var(--atlas-data-row-pad-x);
+  font-size: var(--atlas-data-size);
+  line-height: var(--atlas-data-line-height);
+}
+
+/* Unified header seam removal — user-selected exact header.top rule. */
+header.top {
+  border-bottom: 1px solid #263749;
+  background: none !important;
+}
+/* Equivalent live header elements: the six atlases and Widget Launcher. */
+header.atlas-family-header.aw-header,
+header.topbar {
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #263749 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+header.atlas-family-header.aw-header {
+  padding: 5px 2px 12px !important;
+  margin-bottom: 13px !important;
+  min-height: 0 !important;
+}
+header.topbar {
+  padding: 5px 0 12px !important;
+  margin-bottom: 12px !important;
+  min-height: 0 !important;
+}
+@media(max-width:680px) {
+  header.atlas-family-header.aw-header {padding: 7px 0 11px !important;}
+  header.topbar {padding: 7px 0 11px !important;}
+}
+
+/* Compact release histories, including current and retained legacy dialogs. */
+#aw-version-modal .aw-modal {
+  width:min(var(--atlas-data-dialog-width),100%)!important;
+  max-height:min(88vh,850px)!important;
+  border-radius:13px!important;
+  font:13px/1.46 var(--atlas-data-font)!important;
+}
+#aw-version-modal .aw-modal-head {
+  padding:14px 17px 3px!important;
+  gap:10px!important;
+  align-items:center!important;
+  background:transparent!important;
+  border:0!important;
+}
+#aw-version-modal .aw-modal-eye {font-size:10px!important;line-height:1.25!important;margin:0 0 3px!important;letter-spacing:.12em!important;}
+#aw-version-modal .aw-modal-head h2 {font-size:var(--atlas-data-heading-size)!important;line-height:1.2!important;margin:0!important;letter-spacing:-.025em!important;}
+#aw-version-modal .aw-modal-x {width:33px!important;height:33px!important;min-width:33px!important;flex:0 0 33px!important;padding:0!important;border-radius:7px!important;font-size:21px!important;line-height:1!important;}
+#aw-version-modal .aw-modal-body {padding:11px 17px 18px!important;font-family:inherit!important;}
+#aw-version-modal .aw-stat-summary {font-size:13px!important;line-height:1.46!important;margin:0 0 11px!important;}
+#aw-version-modal .aw-releases {gap:6px!important;}
+#aw-version-modal .aw-release {border-radius:8px!important;}
+#aw-version-modal .aw-release summary {padding:7px 10px!important;gap:8px!important;font-size:12px!important;line-height:1.46!important;min-height:0!important;}
+#aw-version-modal .aw-release summary::after {font-size:16px!important;}
+#aw-version-modal .aw-release .aw-latest {font-size:10px!important;line-height:1.3!important;padding:2px 6px!important;}
+#aw-version-modal .aw-release .aw-release-date {font-size:10px!important;color:#9eb6ca!important;font-weight:500!important;}
+#aw-version-modal .aw-release ul {padding:7px 12px 10px 25px!important;font-size:12px!important;line-height:1.46!important;}
+#aw-version-modal .aw-release li+li {margin-top:3px!important;}
+/* Older release-history overlays are still styled coherently when used. */
+#atlas-family-version-overlay .atlas-family-dialog {max-width:var(--atlas-data-dialog-width)!important;font:13px/1.46 var(--atlas-data-font)!important;}
+#atlas-family-version-overlay .atlas-family-modal-head {padding:14px 17px 3px!important;border-bottom:0!important;}
+#atlas-family-version-overlay .atlas-family-modal-head h2 {font-size:19px!important;line-height:1.2!important;}
+#atlas-family-version-overlay .atlas-family-dialog-body {padding:11px 17px 18px!important;}
+#atlas-family-version-overlay .atlas-family-release summary {padding:7px 10px!important;font-size:12px!important;line-height:1.46!important;}
+#atlas-family-version-overlay .atlas-family-release ul {padding:7px 10px 10px 25px!important;font-size:12px!important;line-height:1.46!important;}
+/* Legacy internal changelog fallback; primary version popup is #aw-version-modal. */
+dialog.changelog-dialog, dialog#changelog-dialog, dialog#changelogDialog {font:13px/1.46 var(--atlas-data-font)!important;}
+dialog.changelog-dialog .release summary, dialog#changelog-dialog .release summary {font-size:12px!important;line-height:1.46!important;padding:7px 10px!important;}
+dialog.changelog-dialog .release ul, dialog#changelog-dialog .release ul {font-size:12px!important;line-height:1.46!important;}
+@media(max-width:570px) {
+  #aw-version-modal .aw-modal-head {padding:12px 13px 3px!important;}
+  #aw-version-modal .aw-modal-body {padding:10px 13px 16px!important;}
+}
+
+</style>
+<style id="atlas-v15-responsive-header">
+
+/* Atlas Widgets v1.5 — content-first natural wrapping: no contradictory breakpoint grid.
+   Header rules appended last; no custom JS/resize listeners required. */
+header.atlas-family-header.aw-header{
+ display:flex!important;grid-template-areas:none!important;grid-template-columns:none!important;
+ flex-direction:row!important;flex-wrap:wrap!important;
+ align-items:center!important;justify-content:flex-start!important;
+ column-gap:12px!important;row-gap:7px!important;
+ width:100%!important;min-width:0!important;min-height:0!important;
+ padding:7px 0 11px!important;margin-bottom:14px!important;
+ border:0!important;border-bottom:1px solid #263749!important;
+ border-radius:0!important;box-shadow:none!important;background:none!important;
+}
+header.atlas-family-header.aw-header .atlas-family-brand{
+ flex:0 0 auto!important;width:max-content!important;max-width:100%!important;
+ min-width:0!important;display:flex!important;align-items:center!important;
+ gap:11px!important;margin:0!important;
+}
+header.atlas-family-header.aw-header .atlas-family-copy{
+ min-width:0!important;max-width:calc(100vw - 92px)!important;
+}
+header.atlas-family-header.aw-header .atlas-family-copy h1{
+ white-space:nowrap!important;line-height:1.12!important;margin:0 0 3px!important;
+}
+header.atlas-family-header.aw-header .atlas-family-subtitle{
+ white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+ max-width:100%!important;display:block!important;
+}
+header.atlas-family-header.aw-header .atlas-family-right{
+ display:flex!important;flex:0 0 auto!important;
+ width:max-content!important;max-width:100%!important;min-width:0!important;
+ flex-direction:row!important;flex-wrap:wrap!important;
+ align-items:center!important;justify-content:flex-end!important;
+ gap:6px!important;margin-left:auto!important;
+}
+header.atlas-family-header.aw-header .atlas-family-status{
+ display:flex!important;flex:0 1 auto!important;width:auto!important;
+ min-width:0!important;flex-wrap:wrap!important;
+ justify-content:flex-end!important;align-items:center!important;gap:5px!important;
+}
+header.atlas-family-header.aw-header .atlas-family-status > *,
+header.atlas-family-header.aw-header .atlas-family-version{
+ box-sizing:border-box!important;height:30px!important;min-height:30px!important;
+ max-height:30px!important;flex-shrink:0!important;margin:0!important;
+}
+header.atlas-family-header.aw-header .atlas-family-version{
+ order:99!important;flex:0 0 auto!important;white-space:nowrap!important;
+ margin:0!important;
+}
+@media(max-width:570px){
+ header.atlas-family-header.aw-header{padding:7px 0 11px!important;gap:7px!important}
+ header.atlas-family-header.aw-header .atlas-family-brand{width:max-content!important;max-width:100%!important}
+ header.atlas-family-header.aw-header .atlas-family-right{width:max-content!important;max-width:100%!important}
+ header.atlas-family-header.aw-header .atlas-family-copy{max-width:calc(100vw - 78px)!important}
+}
+@media(max-width:380px){
+ header.atlas-family-header.aw-header .atlas-family-copy h1{font-size:19px!important}
+ header.atlas-family-header.aw-header .atlas-family-brand{gap:6px!important}
+ header.atlas-family-header.aw-header .atlas-family-icon{width:42px!important;height:44px!important;flex:0 0 42px!important}
+ header.atlas-family-header.aw-header .atlas-family-icon svg{width:42px!important;height:44px!important}
+}
+
+</style>
+</head>
+<body>
+<div class="app">
+<header class="atlas-family-header aw-header" id="aw-header-family"><div class="atlas-family-brand"><div class="atlas-family-icon"><svg aria-label="Muscle Atlas icon" class="aw-launcher-icon" fill="none" role="img" viewbox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 5) scale(.20 .32)"><g stroke="#eca7ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"><path d="M110 17q14-12 28 0l8 19 23-1 22 20-9 17-29-13-8 21-6 48h-17l-7-46-8-22-28 12-10-17 21-20 23 1z" fill="#8e4b5c55"></path><path d="M124 35q-5 27-3 44m12-44q6 25 3 44m-28-32q-15 20-22 11m58-11q16 17 24 11M121 82l-11 33m24-32l11 31" opacity=".86"></path><circle cx="124" cy="13" fill="#81435388" r="10"></circle></g><g opacity=".8" stroke="#f8ccd1" stroke-width="1.3"><path d="M107 53l-24-3m65 3l25-3m-43 36h17"></path></g></g></svg></div><div class="atlas-family-copy"><h1>Muscle <span>Atlas</span></h1><div class="atlas-family-subtitle">Human anatomy · Movement</div></div></div><div class="atlas-family-right"><div class="atlas-family-status"><button class="metric" id="muscle-count" title="View atlas coverage and indexing details"><strong>—</strong> muscles</button><button class="metric" id="exercise-count" title="View exercise indexing details"><strong>—</strong> exercises</button></div><button aria-label="View Muscle Atlas v1.8 history" class="atlas-family-version" id="version-history" title="Release history" type="button">▤ <strong>v1.8</strong></button></div></header>
+<main class="layout">
+<aside aria-label="Hierarchy navigator" class="panel nav"><div class="panel-head"><h2>Muscle hierarchy</h2><button class="subtlebtn" id="clear-filters">Reset filters</button></div>
+<div class="searchbox"><input aria-label="Search atlas" id="global-search" placeholder="Search muscles, tags, exercises…"/><button id="clear-search" title="Clear search" type="button">×</button></div>
+<div class="hierbox"><label class="small-label" for="hierarchy">Explore by</label><select id="hierarchy"><option value="region">Body region</option><option value="division">Axial / appendicular</option><option value="fascicle">Fascicle arrangement</option><option value="chain">Kinematic chains / slings</option><option value="type">Postural / phasic tendencies</option><option value="stability">Joint stabilization roles</option><option value="development">Branchiomeric / myotomal</option><option value="movement">Movement patterns</option></select></div>
+<div aria-label="Muscle group hierarchy" class="tree-area" id="tree-area" role="navigation"></div><div class="list-footer"><span id="nav-count">— muscles visible</span><span id="active-filter-label">All regions</span></div></aside>
+<section aria-label="Human body anatomy map" class="panel body-panel"><div class="panel-head"><h2>Muscle map</h2><span class="pill-label" id="map-state">Superficial view</span></div><div class="body-toolbar"><div class="seg" id="body-view"><button class="on" data-view="front">Anterior</button><button data-view="back">Posterior</button><button data-view="both">Both</button></div><label><input checked="" id="show-labels" type="checkbox"/> Muscle labels</label></div><div class="figure-holder" id="figure-holder"><div class="figure" id="front-figure"><div class="figure-tag">Anterior</div><svg aria-label="Anterior muscle anatomy illustration" id="front-svg" role="img" viewbox="0 0 360 670"></svg></div><div class="figure hidden" id="back-figure"><div class="figure-tag">Posterior</div><svg aria-label="Posterior muscle anatomy illustration" id="back-svg" role="img" viewbox="0 0 360 670"></svg></div></div><div class="legend"><span><i class="sel"></i> Selected</span><span><i></i> Matched</span><span><i class="sec"></i> Secondary</span><span><i class="fad"></i> Other</span></div><p class="figure-caption">Illustrative anatomical map (not a medical plate). Deep muscles are indexed in the hierarchy but may lack a surface outline. Select a muscle or region to explore.</p></section>
+<section aria-label="Muscle profiles, exercise catalog and training data" class="panel details-panel"><div class="view-tabs" id="detail-tabs"><button class="active" data-tab="profile">Muscle profile</button><button data-tab="catalog">Exercise catalog</button><button data-tab="training">Training data <span style="opacity:.65;font-weight:500">β</span></button></div><div class="detail" id="detail-content"></div></section>
+</main></div>
+<div aria-label="Additional atlas details" aria-modal="true" class="modal-root" id="modal-root" role="dialog"><div class="modal"><div class="modal-head"><div><div class="eyebrow" id="modal-eyebrow"></div><h2 id="modal-title"></h2></div><button aria-label="Close dialog" class="close" id="close-modal" type="button">×</button></div><div class="modal-body" id="modal-body"></div></div></div><input accept=".csv,.json,text/csv,application/json" class="import-input" id="training-import" type="file"/><div class="toast" id="toast" role="status"></div>
+<script>
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const escapeHTML=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const REGIONS=['Head & face','Neck','Chest','Shoulder','Upper back','Core','Lower back','Upper arm','Forearm & hand','Hip & glutes','Thigh','Lower leg & foot'];
+const SHORTHAND={'Head & face':'Head','Forearm & hand':'Forearm','Hip & glutes':'Glutes','Lower leg & foot':'Lower leg'};
+const REGION_DIV={'Head & face':'Axial','Neck':'Axial','Chest':'Appendicular','Shoulder':'Appendicular','Upper back':'Appendicular','Core':'Axial','Lower back':'Axial','Upper arm':'Appendicular','Forearm & hand':'Appendicular','Hip & glutes':'Appendicular','Thigh':'Appendicular','Lower leg & foot':'Appendicular'};
+const DEFAULT_CHAIN={'Head & face':'Craniofacial','Neck':'Posterior longitudinal sling','Chest':'Anterior oblique sling','Shoulder':'Upper-limb kinetic chain','Upper back':'Posterior oblique sling','Core':'Anterior oblique sling','Lower back':'Posterior longitudinal sling','Upper arm':'Upper-limb kinetic chain','Forearm & hand':'Grip / forearm chain','Hip & glutes':'Posterior oblique sling','Thigh':'Lower-limb kinetic chain','Lower leg & foot':'Lower-limb kinetic chain'};
+const DEFAULT_MOVE={'Head & face':['Other / facial'],'Neck':['Carry'],'Chest':['Push'],'Shoulder':['Push','Pull'],'Upper back':['Pull'],'Core':['Carry'],'Lower back':['Hinge','Carry'],'Upper arm':['Push','Pull'],'Forearm & hand':['Pull','Carry'],'Hip & glutes':['Squat','Hinge','Lunge'],'Thigh':['Squat','Lunge'],'Lower leg & foot':['Squat','Lunge','Carry']};
+const muscle=[];
+// fields: ID | name | region | subregion | actions | fascicles | posture | stability | development | chains | patterns | proximal attachment | distal attachment | innervation | note
+const rawMuscles=`
+frontalis|Frontalis (occipitofrontalis)|Head & face|Facial expression|Raises eyebrows and wrinkles forehead|Parallel|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Epicranial aponeurosis|Skin of eyebrows and forehead|Facial nerve (CN VII)|Facial expression; superficial front scalp
+orbicularis-oculi|Orbicularis oculi|Head & face|Facial expression|Closes eyelids; blinking and squinting|Circular|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Medial orbital margin|Skin around eyelids|Facial nerve (CN VII)|Concentric fibers surround each eye
+orbicularis-oris|Orbicularis oris|Head & face|Facial expression|Closes and protrudes lips|Circular|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Complex perioral attachments|Skin and mucosa of lips|Facial nerve (CN VII)|Controls lip shape for speech and expression
+zygomaticus-major|Zygomaticus major|Head & face|Facial expression|Pulls mouth corner superolaterally; smiling|Parallel|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Zygomatic bone|Modiolus at mouth corner|Facial nerve (CN VII)|Major contributor to smiling
+buccinator|Buccinator|Head & face|Facial expression|Compresses cheek during chewing and blowing|Parallel|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Alveolar processes and pterygomandibular raphe|Orbicularis oris at mouth corner|Facial nerve (CN VII)|Helps position food between teeth
+masseter|Masseter|Head & face|Mastication|Elevates mandible; powerful jaw closure|Multipennate|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Zygomatic arch|Mandibular ramus and angle|Mandibular division of trigeminal nerve (CN V3)|First pharyngeal arch-derived muscle
+temporalis|Temporalis|Head & face|Mastication|Elevates and retracts mandible|Convergent|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Temporal fossa|Coronoid process of mandible|Mandibular division of trigeminal nerve (CN V3)|Fan-shaped muscle of temporal region
+medial-pterygoid|Medial pterygoid|Head & face|Mastication|Elevates jaw; side-to-side chewing|Multipennate|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Pterygoid region of sphenoid|maxilla and medial mandibular angle|Mandibular division of trigeminal nerve (CN V3)|Deep jaw muscle not visible at skin surface
+lateral-pterygoid|Lateral pterygoid|Head & face|Mastication|Protrudes and helps depress mandible|Parallel|Phasic|Global mover|Branchiomeric|Craniofacial|Other / facial|Greater wing and lateral pterygoid plate|Mandibular neck and temporomandibular joint capsule|Mandibular division of trigeminal nerve (CN V3)|Assists jaw opening and TMJ control
+sternocleidomastoid|Sternocleidomastoid|Neck|Superficial neck|Ipsilateral lateral flexion and contralateral head rotation; bilateral neck flexion|Parallel|Mixed|Both|Complex / cranial|Posterior longitudinal sling|Carry|Sternum and medial clavicle|Mastoid process and superior nuchal line|Accessory nerve (CN XI) plus cervical contributions|Development of neck musculature has mixed and debated lineages
+scalenes|Scalenes (group)|Neck|Lateral neck|Cervical lateral flexion and first or second rib elevation|Parallel|Mixed|Local stabilizer|Somitic|Posterior longitudinal sling|Carry|Cervical transverse processes|First and second ribs|Cervical spinal nerves|Group represented together for navigation
+splenius-capitis|Splenius capitis|Neck|Posterior neck|Extends, rotates and laterally flexes head|Parallel|Postural tendency|Both|Somitic|Posterior longitudinal sling|Carry|Nuchal ligament and upper thoracic spinous processes|Mastoid process and occipital bone|Posterior rami of cervical spinal nerves|Superficial posterior cervical extensor
+semispinalis-capitis|Semispinalis capitis|Neck|Deep posterior neck|Extends head and stabilizes cervical spine|Parallel|Postural tendency|Local stabilizer|Somitic|Posterior longitudinal sling|Carry|Cervical and upper thoracic transverse processes|Occipital bone between nuchal lines|Posterior rami of cervical spinal nerves|Deep cervical extensor
+longus-colli|Longus colli|Neck|Deep anterior neck|Deep cervical flexion and segmental neck stability|Parallel|Postural tendency|Local stabilizer|Somitic|Deep anterior stabilization|Carry|Anterior vertebral bodies and transverse processes|Cervical vertebral bodies and transverse processes|Anterior rami of cervical spinal nerves|Important deep neck flexor
+longus-capitis|Longus capitis|Neck|Deep anterior neck|Flexes head and upper cervical spine|Parallel|Postural tendency|Local stabilizer|Somitic|Deep anterior stabilization|Carry|Cervical transverse processes|Basilar occipital bone|Anterior rami of cervical spinal nerves|Deep craniovertebral flexor
+levator-scapulae|Levator scapulae|Neck|Posterolateral neck|Elevates and downwardly rotates scapula|Parallel|Mixed|Both|Somitic|Upper-limb kinetic chain|Pull;Carry|Transverse processes of C1–C4|Superior medial border of scapula|Dorsal scapular nerve and cervical nerves|Can assist cervical side bending if scapula fixed
+pectoralis-major|Pectoralis major|Chest|Superficial chest|Shoulder horizontal adduction, adduction and internal rotation|Convergent|Phasic|Global mover|Somitic|Anterior oblique sling|Push;Carry|Clavicle, sternum and upper costal cartilages|Lateral lip of intertubercular sulcus of humerus|Medial and lateral pectoral nerves|Clavicular and sternocostal portions have different lines of pull
+pectoralis-minor|Pectoralis minor|Chest|Deep chest|Scapular anterior tilt and protraction; stabilizes scapula|Parallel|Mixed|Both|Somitic|Upper-limb kinetic chain|Push;Carry|Ribs 3–5|Coracoid process of scapula|Medial pectoral nerve|Deep to pectoralis major
+serratus-anterior|Serratus anterior|Chest|Lateral rib cage|Scapular protraction, upward rotation and fixation to thorax|Convergent|Postural tendency|Both|Somitic|Upper-limb kinetic chain;Anterior oblique sling|Push;Carry|External surfaces of ribs 1–8 or 9|Anterior medial border of scapula|Long thoracic nerve|Serrated digitations along lateral thorax
+subclavius|Subclavius|Chest|Deep upper chest|Depresses and steadies clavicle|Parallel|Postural tendency|Local stabilizer|Somitic|Upper-limb kinetic chain|Carry|First rib and costal cartilage|Inferior surface of middle clavicle|Nerve to subclavius|Small muscle deep to clavicle
+intercostals-external|External intercostals|Chest|Thoracic wall|Elevates ribs during inspiration|Parallel|Mixed|Both|Somitic|Respiratory chain|Carry|Inferior border of rib above|Superior border of rib below|Intercostal nerves|Series of muscles between ribs
+intercostals-internal|Internal intercostals|Chest|Thoracic wall|Aid active expiration or stabilize intercostal spaces|Parallel|Mixed|Both|Somitic|Respiratory chain|Carry|Costal groove of rib above|Superior border of rib below|Intercostal nerves|Function varies by interosseous and interchondral region
+diaphragm|Diaphragm|Core|Deep respiratory core|Primary inspiratory muscle; modulates abdominal pressure|Convergent|Postural tendency|Local stabilizer|Complex / cranial|Deep anterior stabilization;Respiratory chain|Carry|Xiphoid, lower ribs and lumbar crura|Central tendon|Phrenic nerve (C3–C5)|Respiratory pump and trunk-pressure regulator
+rectus-abdominis|Rectus abdominis|Core|Anterior abdominal wall|Trunk flexion and posterior pelvic tilt; abdominal bracing|Parallel|Mixed|Global mover|Somitic|Anterior oblique sling|Carry;Push|Pubic crest and symphysis|Xiphoid process and costal cartilages 5–7|Thoracoabdominal nerves|Tendinous intersections create segmented appearance
+external-oblique|External oblique|Core|Lateral abdominal wall|Contralateral trunk rotation; trunk flexion; abdominal compression|Parallel|Mixed|Both|Somitic|Anterior oblique sling|Carry;Hinge|External surfaces of ribs 5–12|Linea alba, pubic tubercle and iliac crest|Thoracoabdominal nerves|Forms cross-body force couples with opposite internal oblique
+internal-oblique|Internal oblique|Core|Deep lateral abdomen|Ipsilateral rotation and lateral flexion; abdominal compression|Parallel|Mixed|Both|Somitic|Anterior oblique sling|Carry;Hinge|Thoracolumbar fascia, iliac crest and inguinal ligament|Lower ribs, linea alba and pubis|Thoracoabdominal nerves|Lies beneath external oblique
+transversus-abdominis|Transversus abdominis|Core|Deep abdominal wall|Abdominal compression and lumbopelvic stabilization|Parallel|Postural tendency|Local stabilizer|Somitic|Deep anterior stabilization|Carry;Hinge;Squat|Lower rib cartilages, thoracolumbar fascia, iliac crest|Linea alba and pubic crest|Thoracoabdominal nerves|Deepest broad abdominal wall layer
+quadratus-lumborum|Quadratus lumborum|Core|Posterior abdominal wall|Lateral trunk flexion and pelvic hiking; stabilizes 12th rib|Parallel|Postural tendency|Both|Somitic|Posterior longitudinal sling|Carry;Hinge|Iliac crest and iliolumbar ligament|Rib 12 and lumbar transverse processes|T12–L4 anterior rami|Deep posterolateral trunk stabilizer
+pelvic-floor|Pelvic floor (levator ani group)|Core|Pelvic floor|Supports pelvic viscera; contributes to continence and pressure control|Fan / complex|Postural tendency|Local stabilizer|Somitic|Deep anterior stabilization|Carry;Squat|Pubic bone and tendinous arch|Perineal body, coccyx and surrounding structures|Nerve to levator ani and pudendal contributions|Grouped functional complex, not one single muscle
+multifidus|Multifidus|Lower back|Deep spinal extensors|Segmental spinal stiffness and extension; controls vertebral motion|Multipennate|Postural tendency|Local stabilizer|Somitic|Posterior longitudinal sling|Hinge;Carry|Sacrum and vertebral transverse processes|Spinous processes 2–4 levels above|Posterior rami of spinal nerves|Deep transversospinalis muscle
+erector-spinae|Erector spinae (group)|Lower back|Superficial spinal extensors|Spinal extension and resisted trunk flexion|Parallel|Postural tendency|Global mover|Somitic|Posterior longitudinal sling|Hinge;Carry|Broad sacral, iliac and lumbar attachments|Ribs, vertebrae and cranium by subdivisions|Posterior rami of spinal nerves|Includes iliocostalis, longissimus and spinalis
+iliocostalis-lumborum|Iliocostalis lumborum|Lower back|Erector spinae subdivision|Extends and laterally flexes lumbar spine|Parallel|Postural tendency|Global mover|Somitic|Posterior longitudinal sling|Hinge;Carry|Iliac crest and sacral aponeurosis|Angles of lower ribs|Posterior rami of spinal nerves|Lateral division of erector spinae
+longissimus-thoracis|Longissimus thoracis|Lower back|Erector spinae subdivision|Thoracic and lumbar extension|Parallel|Postural tendency|Global mover|Somitic|Posterior longitudinal sling|Hinge;Carry|Sacrum, lumbar transverse processes|Thoracic transverse processes and ribs|Posterior rami of spinal nerves|Intermediate division of erector spinae
+rotatores|Rotatores (group)|Lower back|Deep transversospinalis|Segmental vertebral stabilization and proprioception|Parallel|Postural tendency|Local stabilizer|Somitic|Posterior longitudinal sling|Hinge;Carry|Transverse processes|Laminae and spinous processes above|Posterior rami of spinal nerves|Small deep muscles spanning one to two vertebrae
+trapezius|Trapezius|Upper back|Scapular girdle|Scapular elevation, retraction, depression and upward rotation|Convergent|Mixed|Both|Complex / cranial|Upper-limb kinetic chain;Posterior oblique sling|Pull;Carry|Occiput, nuchal ligament and C7–T12 spinous processes|Lateral clavicle, acromion and scapular spine|Accessory nerve (CN XI) with cervical contributions|Upper, middle and lower regions have different actions
+rhomboid-major|Rhomboid major|Upper back|Deep scapular retractors|Retracts and downwardly rotates scapula|Parallel|Mixed|Both|Somitic|Upper-limb kinetic chain|Pull;Carry|Spinous processes T2–T5|Medial border of scapula|Dorsal scapular nerve|Deep to trapezius
+rhomboid-minor|Rhomboid minor|Upper back|Deep scapular retractors|Retracts scapula and assists downward rotation|Parallel|Mixed|Both|Somitic|Upper-limb kinetic chain|Pull;Carry|Nuchal ligament and C7–T1 spinous processes|Medial border near scapular spine|Dorsal scapular nerve|Above rhomboid major
+latissimus-dorsi|Latissimus dorsi|Upper back|Superficial posterolateral back|Shoulder extension, adduction and internal rotation|Convergent|Phasic|Global mover|Somitic|Posterior oblique sling|Pull;Hinge;Carry|Lower spine via thoracolumbar fascia, iliac crest and ribs|Floor of intertubercular sulcus of humerus|Thoracodorsal nerve|Broad back muscle converging into axilla
+teres-major|Teres major|Upper back|Posterior shoulder|Shoulder adduction, internal rotation and extension|Parallel|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Pull|Inferior angle of scapula|Medial lip of intertubercular sulcus of humerus|Lower subscapular nerve|Works with latissimus dorsi
+infraspinatus|Infraspinatus|Upper back|Rotator cuff|External rotation and glenohumeral stabilization|Multipennate|Mixed|Local stabilizer|Somitic|Upper-limb kinetic chain|Pull;Carry|Infraspinous fossa of scapula|Greater tubercle of humerus|Suprascapular nerve|Posterior rotator cuff muscle
+supraspinatus|Supraspinatus|Upper back|Rotator cuff|Initiates shoulder abduction; compresses humeral head|Multipennate|Postural tendency|Local stabilizer|Somitic|Upper-limb kinetic chain|Push;Carry|Supraspinous fossa of scapula|Superior facet of greater tubercle|Suprascapular nerve|Deep to trapezius
+teres-minor|Teres minor|Upper back|Rotator cuff|External rotation and shoulder stabilization|Parallel|Mixed|Local stabilizer|Somitic|Upper-limb kinetic chain|Pull;Carry|Lateral border of scapula|Inferior facet of greater tubercle|Axillary nerve|Small posterior rotator cuff muscle
+subscapularis|Subscapularis|Upper back|Rotator cuff|Internal rotation and humeral head stabilization|Multipennate|Mixed|Local stabilizer|Somitic|Upper-limb kinetic chain|Push;Carry|Subscapular fossa of scapula|Lesser tubercle of humerus|Upper and lower subscapular nerves|Anterior rotator cuff; deep against chest wall
+rear-deltoid|Posterior deltoid|Shoulder|Deltoid subdivision|Shoulder extension and horizontal abduction|Multipennate|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Pull|Spine of scapula|Deltoid tuberosity of humerus|Axillary nerve|Posterior region of deltoid
+deltoid|Deltoid|Shoulder|Superficial shoulder|Shoulder abduction; region-specific flexion and extension|Multipennate|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Push;Pull;Carry|Lateral clavicle, acromion and scapular spine|Deltoid tuberosity of humerus|Axillary nerve|Anterior, middle and posterior portions
+anterior-deltoid|Anterior deltoid|Shoulder|Deltoid subdivision|Shoulder flexion and internal rotation|Multipennate|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Push|Lateral clavicle|Deltoid tuberosity of humerus|Axillary nerve|Clavicular subdivision of deltoid
+lateral-deltoid|Middle deltoid|Shoulder|Deltoid subdivision|Shoulder abduction|Multipennate|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Push;Carry|Acromion|Deltoid tuberosity of humerus|Axillary nerve|Acromial subdivision of deltoid
+coracobrachialis|Coracobrachialis|Shoulder|Deep anterior shoulder|Shoulder flexion and adduction|Parallel|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Push;Pull|Coracoid process of scapula|Medial middle humerus|Musculocutaneous nerve|Small muscle deep in upper arm
+biceps-brachii|Biceps brachii|Upper arm|Anterior arm|Elbow flexion and forearm supination; assists shoulder flexion|Fusiform|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Pull;Carry|Supraglenoid tubercle and coracoid process|Radial tuberosity and bicipital aponeurosis|Musculocutaneous nerve|Long and short heads; supination prominent with elbow flexed
+brachialis|Brachialis|Upper arm|Anterior arm|Elbow flexion across forearm positions|Parallel|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Pull;Carry|Distal anterior humerus|Ulnar tuberosity and coronoid process|Musculocutaneous nerve (often radial contribution)|Deep to biceps; elbow flexor
+triceps-brachii|Triceps brachii|Upper arm|Posterior arm|Elbow extension; long head extends shoulder|Parallel|Phasic|Global mover|Somitic|Upper-limb kinetic chain|Push;Carry|Infraglenoid tubercle and posterior humerus|Olecranon of ulna|Radial nerve|Long, lateral and medial heads
+anconeus|Anconeus|Upper arm|Posterior elbow|Assists elbow extension and joint stabilization|Parallel|Mixed|Local stabilizer|Somitic|Upper-limb kinetic chain|Push|Lateral epicondyle of humerus|Proximal lateral ulna|Radial nerve|Small triangular muscle by olecranon
+brachioradialis|Brachioradialis|Forearm & hand|Lateral forearm|Elbow flexion in neutral forearm position|Fusiform|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Lateral supracondylar ridge of humerus|Distal radius near styloid|Radial nerve|Prominent on thumb-side forearm
+pronator-teres|Pronator teres|Forearm & hand|Anterior forearm|Forearm pronation; assists elbow flexion|Parallel|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Medial epicondyle and coronoid process|Lateral radius midshaft|Median nerve|Superficial pronator
+pronator-quadratus|Pronator quadratus|Forearm & hand|Deep anterior forearm|Forearm pronation and radioulnar stabilization|Quadrate|Postural tendency|Local stabilizer|Somitic|Grip / forearm chain|Pull;Carry|Distal anterior ulna|Distal anterior radius|Anterior interosseous branch of median nerve|Deep square-shaped muscle near wrist
+flexor-carpi-radialis|Flexor carpi radialis|Forearm & hand|Anterior forearm|Wrist flexion and radial deviation|Fusiform|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Medial epicondyle of humerus|Bases of second and third metacarpals|Median nerve|Superficial wrist flexor
+flexor-carpi-ulnaris|Flexor carpi ulnaris|Forearm & hand|Anterior forearm|Wrist flexion and ulnar deviation|Fusiform|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Medial epicondyle and ulna|Pisiform, hamate and fifth metacarpal|Ulnar nerve|Ulnar-side wrist flexor
+flexor-digitorum-superficialis|Flexor digitorum superficialis|Forearm & hand|Anterior forearm|Flexes proximal interphalangeal joints of fingers|Unipennate|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Humeroulnar and radial heads|Middle phalanges of digits 2–5|Median nerve|Intermediate-layer finger flexor
+flexor-digitorum-profundus|Flexor digitorum profundus|Forearm & hand|Deep anterior forearm|Flexes distal interphalangeal joints of fingers|Unipennate|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Anterior and medial ulna and interosseous membrane|Distal phalanges of digits 2–5|Median anterior interosseous and ulnar nerves|Deep finger flexor crucial to gripping
+extensor-carpi-radialis|Extensor carpi radialis (longus / brevis)|Forearm & hand|Posterior forearm|Wrist extension and radial deviation|Fusiform|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Lateral supracondylar ridge and lateral epicondyle|Second and third metacarpal bases|Radial nerve / deep radial branch|Two wrist extensors grouped for overview
+extensor-digitorum|Extensor digitorum|Forearm & hand|Posterior forearm|Extends digits 2–5|Unipennate|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Lateral epicondyle of humerus|Extensor expansions digits 2–5|Posterior interosseous nerve|Superficial digital extensor
+extensor-carpi-ulnaris|Extensor carpi ulnaris|Forearm & hand|Posterior forearm|Wrist extension and ulnar deviation|Fusiform|Phasic|Global mover|Somitic|Grip / forearm chain|Pull;Carry|Lateral epicondyle and ulna|Base of fifth metacarpal|Posterior interosseous nerve|Ulnar-side wrist extensor
+abductor-pollicis-brevis|Abductor pollicis brevis|Forearm & hand|Thenar hand|Abducts thumb at carpometacarpal joint|Parallel|Phasic|Global mover|Somitic|Grip / forearm chain|Carry|Scaphoid, trapezium and flexor retinaculum|Base of proximal thumb phalanx|Recurrent branch of median nerve|Superficial thenar muscle
+first-dorsal-interosseous|First dorsal interosseous|Forearm & hand|Intrinsic hand|Abducts index finger; pinches and stabilizes grip|Bipennate|Mixed|Both|Somitic|Grip / forearm chain|Carry;Pull|First and second metacarpals|Base of index proximal phalanx|Deep branch of ulnar nerve|Prominent web-space muscle
+iliopsoas|Iliopsoas (psoas major + iliacus)|Hip & glutes|Anterior hip|Strong hip flexion; contributes to trunk and lumbopelvic control|Parallel|Mixed|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Lumbar spine and iliac fossa|Lesser trochanter of femur|Lumbar plexus and femoral nerve|Functional composite of psoas major and iliacus
+psoas-major|Psoas major|Hip & glutes|Deep anterior hip|Hip flexion and lumbar-pelvic control|Fusiform|Mixed|Both|Somitic|Deep anterior stabilization|Squat;Lunge|T12–L5 vertebral bodies and transverse processes|Lesser trochanter of femur|Anterior rami of lumbar spinal nerves|Deep hip flexor crosses lumbar spine
+iliacus|Iliacus|Hip & glutes|Deep anterior hip|Hip flexion|Fan / complex|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Iliac fossa|Lesser trochanter via iliopsoas tendon|Femoral nerve|Origin inside pelvis
+gluteus-maximus|Gluteus maximus|Hip & glutes|Superficial gluteal|Hip extension and external rotation; rising and sprinting|Parallel|Phasic|Global mover|Somitic|Posterior oblique sling|Hinge;Squat;Lunge;Carry|Posterior ilium, sacrum and coccyx|Iliotibial tract and gluteal tuberosity|Inferior gluteal nerve|Powerful hip extensor, especially against large loads
+gluteus-medius|Gluteus medius|Hip & glutes|Lateral gluteal|Hip abduction and frontal-plane pelvic control|Fan / complex|Postural tendency|Both|Somitic|Lateral subsystem|Lunge;Squat;Carry|Lateral ilium|Greater trochanter of femur|Superior gluteal nerve|Stabilizes pelvis during single-leg stance
+gluteus-minimus|Gluteus minimus|Hip & glutes|Deep lateral gluteal|Hip abduction and internal rotation; pelvic stabilization|Fan / complex|Postural tendency|Local stabilizer|Somitic|Lateral subsystem|Lunge;Squat|Lateral ilium deep to medius|Greater trochanter of femur|Superior gluteal nerve|Deepest gluteal abductor
+tensor-fasciae-latae|Tensor fasciae latae|Hip & glutes|Anterolateral hip|Hip flexion, abduction and internal rotation; tensions IT band|Fusiform|Mixed|Both|Somitic|Lateral subsystem|Squat;Lunge;Carry|ASIS and anterior iliac crest|Iliotibial tract|Superior gluteal nerve|Anterior-lateral hip muscle joining iliotibial band
+piriformis|Piriformis|Hip & glutes|Deep hip rotators|External hip rotation in extension; abducts flexed hip|Parallel|Mixed|Local stabilizer|Somitic|Lateral subsystem|Lunge;Carry|Anterior sacrum|Superior greater trochanter|Nerve to piriformis|One of deep lateral hip rotator group
+obturator-internus|Obturator internus|Hip & glutes|Deep hip rotators|External hip rotation and femoral head control|Fan / complex|Mixed|Local stabilizer|Somitic|Lateral subsystem|Lunge;Carry|Pelvic surface of obturator membrane|Medial greater trochanter|Nerve to obturator internus|Tendon bends through lesser sciatic foramen
+quadratus-femoris|Quadratus femoris|Hip & glutes|Deep hip rotators|External hip rotation and adduction|Quadrate|Mixed|Local stabilizer|Somitic|Lateral subsystem|Hinge;Lunge|Lateral ischial tuberosity|Quadrate tubercle of femur|Nerve to quadratus femoris|Small rectangular deep muscle
+rectus-femoris|Rectus femoris|Thigh|Quadriceps|Knee extension and hip flexion|Bipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Anterior inferior iliac spine|Tibial tuberosity via patella and patellar ligament|Femoral nerve|Only quadriceps head crossing both hip and knee
+vastus-lateralis|Vastus lateralis|Thigh|Quadriceps|Knee extension|Multipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Greater trochanter and lateral linea aspera|Patella and tibial tuberosity|Femoral nerve|Large lateral quadriceps head
+vastus-medialis|Vastus medialis|Thigh|Quadriceps|Knee extension; contributes patellar tracking|Multipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Intertrochanteric line and medial linea aspera|Patella and tibial tuberosity|Femoral nerve|Distal oblique fibers contribute patellar stabilization
+vastus-intermedius|Vastus intermedius|Thigh|Quadriceps|Knee extension|Multipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Anterior and lateral femoral shaft|Patella and tibial tuberosity|Femoral nerve|Deep quadriceps head beneath rectus femoris
+sartorius|Sartorius|Thigh|Anterior thigh|Hip flexion, abduction and external rotation; knee flexion|Parallel|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Squat|Anterior superior iliac spine|Medial proximal tibia (pes anserinus)|Femoral nerve|Long strap muscle crossing anterior thigh diagonally
+gracilis|Gracilis|Thigh|Medial thigh|Hip adduction and knee flexion|Parallel|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Squat|Pubic body and inferior ramus|Medial proximal tibia (pes anserinus)|Obturator nerve|Two-joint medial thigh muscle
+adductor-longus|Adductor longus|Thigh|Medial thigh|Hip adduction; assists hip flexion|Convergent|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Squat|Body of pubis|Middle third of linea aspera|Obturator nerve|Superficial medial adductor
+adductor-brevis|Adductor brevis|Thigh|Medial thigh|Hip adduction and slight flexion|Parallel|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Squat|Inferior pubic ramus|Pectineal line and proximal linea aspera|Obturator nerve|Deep to adductor longus
+adductor-magnus|Adductor magnus|Thigh|Medial thigh|Hip adduction; hamstring portion extends hip|Convergent|Phasic|Global mover|Somitic|Lower-limb kinetic chain;Posterior longitudinal sling|Squat;Hinge;Lunge|Inferior pubic ramus and ischial tuberosity|Linea aspera and adductor tubercle|Obturator and tibial sciatic divisions|Distinct adductor and ischiocondylar portions
+pectineus|Pectineus|Thigh|Medial thigh|Hip adduction and flexion|Parallel|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge|Superior pubic ramus|Pectineal line of femur|Femoral nerve often obturator contribution|Transition between anterior and medial thigh compartments
+biceps-femoris|Biceps femoris|Thigh|Hamstrings|Knee flexion; long head hip extension; tibial external rotation|Fusiform|Phasic|Global mover|Somitic|Posterior longitudinal sling|Hinge;Squat;Lunge|Ischial tuberosity and posterior femur|Head of fibula|Sciatic nerve (tibial and common fibular divisions)|Lateral hamstring with two heads
+semitendinosus|Semitendinosus|Thigh|Hamstrings|Hip extension, knee flexion and tibial internal rotation|Fusiform|Phasic|Global mover|Somitic|Posterior longitudinal sling|Hinge;Squat;Lunge|Ischial tuberosity|Medial proximal tibia (pes anserinus)|Tibial division of sciatic nerve|Long distal tendon along medial knee
+semimembranosus|Semimembranosus|Thigh|Hamstrings|Hip extension, knee flexion and tibial internal rotation|Multipennate|Phasic|Global mover|Somitic|Posterior longitudinal sling|Hinge;Squat;Lunge|Ischial tuberosity|Posteromedial tibial condyle|Tibial division of sciatic nerve|Broad proximal tendon and deep medial hamstring
+popliteus|Popliteus|Thigh|Posterior knee|Unlocks knee and provides rotational stability|Parallel|Mixed|Local stabilizer|Somitic|Lower-limb kinetic chain|Squat;Lunge|Lateral femoral condyle|Posterior proximal tibia|Tibial nerve|Small deep posterior knee muscle
+tibialis-anterior|Tibialis anterior|Lower leg & foot|Anterior shin|Ankle dorsiflexion and foot inversion|Parallel|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Squat;Lunge;Carry|Lateral tibia and interosseous membrane|Medial cuneiform and first metatarsal|Deep fibular nerve|Prominent muscle on anterior shin
+extensor-hallucis-longus|Extensor hallucis longus|Lower leg & foot|Anterior shin|Great toe extension and ankle dorsiflexion|Unipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Carry|Anterior fibula and interosseous membrane|Distal phalanx of hallux|Deep fibular nerve|Deep anterior compartment
+extensor-digitorum-longus|Extensor digitorum longus|Lower leg & foot|Anterior shin|Toe extension and ankle dorsiflexion|Unipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Carry|Lateral tibial condyle and fibula|Extensor expansions toes 2–5|Deep fibular nerve|Superficial anterior leg with long tendons
+fibularis-longus|Fibularis (peroneus) longus|Lower leg & foot|Lateral lower leg|Foot eversion and plantarflexion; transverse arch support|Unipennate|Mixed|Both|Somitic|Lateral subsystem|Lunge;Carry|Head and proximal lateral fibula|First metatarsal and medial cuneiform (plantar)|Superficial fibular nerve|Tendon passes beneath foot
+fibularis-brevis|Fibularis (peroneus) brevis|Lower leg & foot|Lateral lower leg|Foot eversion and plantarflexion|Unipennate|Mixed|Both|Somitic|Lateral subsystem|Lunge;Carry|Distal lateral fibula|Base of fifth metatarsal|Superficial fibular nerve|Lateral ankle stabilizer
+gastrocnemius|Gastrocnemius|Lower leg & foot|Superficial posterior calf|Ankle plantarflexion and knee flexion|Bipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain;Posterior longitudinal sling|Squat;Lunge;Carry|Medial and lateral femoral condyles|Calcaneus via Achilles tendon|Tibial nerve|Two heads cross knee and ankle
+soleus|Soleus|Lower leg & foot|Deep posterior calf|Ankle plantarflexion; controls forward tibial motion|Multipennate|Postural tendency|Global mover|Somitic|Lower-limb kinetic chain;Posterior longitudinal sling|Squat;Lunge;Carry|Posterior tibia and fibula|Calcaneus via Achilles tendon|Tibial nerve|Deep to gastrocnemius, active during standing
+plantaris|Plantaris|Lower leg & foot|Posterior calf|Small accessory plantarflexion and knee flexion|Fusiform|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Carry|Lateral supracondylar line of femur|Calcaneus by long tendon|Tibial nerve|Variably absent in some individuals
+tibialis-posterior|Tibialis posterior|Lower leg & foot|Deep posterior calf|Foot inversion and plantarflexion; supports medial arch|Multipennate|Postural tendency|Both|Somitic|Lower-limb kinetic chain|Lunge;Carry|Posterior tibia, fibula and interosseous membrane|Navicular and multiple midfoot bones|Tibial nerve|Deep arch-supporting invertor
+flexor-hallucis-longus|Flexor hallucis longus|Lower leg & foot|Deep posterior calf|Great toe flexion; aids propulsion|Unipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Carry|Posterior fibula|Distal phalanx of hallux|Tibial nerve|Important during toe-off
+flexor-digitorum-longus|Flexor digitorum longus|Lower leg & foot|Deep posterior calf|Flexes lateral four toes; supports arches|Unipennate|Phasic|Global mover|Somitic|Lower-limb kinetic chain|Lunge;Carry|Posterior tibia|Distal phalanges of toes 2–5|Tibial nerve|Deep toe flexor
+abductor-hallucis|Abductor hallucis|Lower leg & foot|Intrinsic foot|Abducts great toe; supports medial arch|Parallel|Postural tendency|Local stabilizer|Somitic|Lower-limb kinetic chain|Lunge;Carry|Calcaneal tuberosity and plantar aponeurosis|Base of proximal hallux phalanx|Medial plantar nerve|Medial intrinsic foot muscle
+flexor-digitorum-brevis|Flexor digitorum brevis|Lower leg & foot|Intrinsic foot|Flexes toes 2–5 at proximal interphalangeal joints|Parallel|Mixed|Local stabilizer|Somitic|Lower-limb kinetic chain|Lunge;Carry|Calcaneal tuberosity and plantar aponeurosis|Middle phalanges of toes 2–5|Medial plantar nerve|Superficial central plantar muscle
+`; 
+for(const line of rawMuscles.trim().split('\n')){
+ const f=line.split('|');if(f.length!==15){console.warn('Malformed muscle',f.length,line);continue}
+ const [id,name,region,subregion,actions,fascicle,type,stability,development,chains,patterns,origin,insertion,nerve,note]=f;
+ muscle.push({id:id.trim(),name,region,subregion,actions,fascicle,type,stability,development:development==='Somitic'?'Myotomal / somitic':development,chain:chains.split(';'),movement:patterns.split(';'),origin,insertion,nerve,note});
+}
+const MUSCLES=muscle;const MUSCLE_BY_ID=Object.fromEntries(MUSCLES.map(m=>[m.id,m]));
+// Exercise fields: ID | title | pattern | equipment | primary IDs | secondary IDs | setup | movement | main cue | variation / caution
+const rawExercises=`
+barbell-bench-press|Barbell bench press|Push|Barbell|pectoralis-major;triceps-brachii|anterior-deltoid;serratus-anterior|Lie on bench with eyes under bar; plant feet and set shoulder blades|Lower bar toward lower chest, then press up to stacked wrists and elbows|Keep forearms roughly vertical at the bottom|Use safeties or a spotter for heavy sets
+dumbbell-bench-press|Dumbbell bench press|Push|Dumbbell|pectoralis-major;triceps-brachii|anterior-deltoid;serratus-anterior|Lie on bench with dumbbells above shoulders|Lower with controlled elbows, then press up together|Stay within a comfortable shoulder range|Each arm can move independently
+incline-bench-press|Incline bench press|Push|Barbell|pectoralis-major;anterior-deltoid|triceps-brachii;serratus-anterior|Set bench at a moderate incline and grip the bar|Lower toward upper chest, then press vertically|Avoid an excessive incline that turns it mostly into a shoulder press|Emphasizes clavicular pectoral fibers
+push-up|Push-up|Push|Bodyweight|pectoralis-major;triceps-brachii|anterior-deltoid;serratus-anterior;rectus-abdominis|Set hands under or slightly wider than shoulders in a long plank|Lower chest toward floor, then push away|Keep ribs and pelvis aligned; move shoulder blades freely|Elevate hands to scale difficulty
+chest-fly|Dumbbell chest fly|Push|Dumbbell|pectoralis-major|anterior-deltoid;serratus-anterior|Lie on a bench, arms above chest with soft elbows|Open arms into a comfortable arc, then hug back together|Do not force deep shoulder extension|Keep elbow angle relatively constant
+cable-fly|Standing cable fly|Push|Cable|pectoralis-major|anterior-deltoid;serratus-anterior|Stand between cables with handles at chest height|Bring hands together in front of chest against cable tension|Keep torso still and elbows slightly bent|Cable line can be adjusted to bias fiber regions
+parallel-dip|Parallel-bar dip|Push|Bodyweight|triceps-brachii;pectoralis-major|anterior-deltoid;serratus-anterior|Support body on parallel bars with shoulders set|Bend elbows under control, then press back up|Stop at a comfortable depth; avoid forcing shoulder range|More torso lean shifts emphasis toward chest
+close-grip-bench|Close-grip bench press|Push|Barbell|triceps-brachii|pectoralis-major;anterior-deltoid|Grip bar slightly narrower than normal bench grip|Lower to lower chest with elbows controlled; press up|Do not force an extremely narrow wrist position|Compound triceps-focused pressing
+barbell-overhead-press|Standing overhead press|Push|Barbell|anterior-deltoid;lateral-deltoid;triceps-brachii|serratus-anterior;trapezius;rectus-abdominis|Stand tall with bar in front rack and feet firm|Press bar overhead while head moves through to finish|Maintain stacked ribs over pelvis|Let scapula upwardly rotate naturally
+dumbbell-shoulder-press|Seated dumbbell press|Push|Dumbbell|anterior-deltoid;lateral-deltoid;triceps-brachii|serratus-anterior;trapezius|Sit upright with dumbbells at shoulder level|Press overhead and lower to a comfortable depth|Avoid arching excessively to clear the weight|Neutral grips can be more comfortable
+lateral-raise|Dumbbell lateral raise|Push|Dumbbell|lateral-deltoid;deltoid|supraspinatus;trapezius|Stand with dumbbells beside hips and soft elbows|Raise upper arms out to sides to about shoulder height|Lead with upper arms without shrugging aggressively|Light loads and controlled tempo work well
+front-raise|Dumbbell front raise|Push|Dumbbell|anterior-deltoid|pectoralis-major;serratus-anterior|Stand holding dumbbells in front of thighs|Lift arms forward to about shoulder height, then lower slowly|Avoid swinging torso or flaring ribs|Single-arm or alternating variation
+rear-delt-fly|Rear-delt fly|Pull|Dumbbell|rear-deltoid|rhomboid-major;trapezius;infraspinatus|Hinge with neutral back and soft knees|Open arms laterally, then lower without swinging|Let motion originate at shoulders, not low-back extension|Chest-supported version reduces spinal loading
+face-pull|Cable face pull|Pull|Cable|rear-deltoid;infraspinatus|trapezius;rhomboid-major;teres-minor|Set rope at upper chest or face height|Pull rope toward face as elbows travel outward|Rotate naturally without forcing end-range positions|Load lightly enough to control scapulae
+barbell-row|Bent-over barbell row|Pull|Barbell|latissimus-dorsi;rhomboid-major;trapezius|rear-deltoid;biceps-brachii;erector-spinae|Hinge at hips and brace trunk with bar hanging below shoulders|Row toward lower ribs, then lower under control|Keep trunk angle consistent rather than jerking upright|Grip and elbow path change back emphasis
+one-arm-dumbbell-row|One-arm dumbbell row|Pull|Dumbbell|latissimus-dorsi;teres-major|rhomboid-major;biceps-brachii;rear-deltoid|Brace one hand on a bench and set a flat supported torso|Pull elbow toward hip, then let shoulder blade glide|Avoid twisting whole torso to lift weight|Single-arm row allows varied elbow paths
+seated-cable-row|Seated cable row|Pull|Cable|rhomboid-major;latissimus-dorsi;trapezius|biceps-brachii;rear-deltoid;brachialis|Sit upright with cable handles held forward|Row to torso with elbows traveling back, then reach under control|Do not use large spinal swinging to move load|Neutral grip often comfortable
+chest-supported-row|Chest-supported row|Pull|Dumbbell|rhomboid-major;latissimus-dorsi;trapezius|rear-deltoid;biceps-brachii|Lie chest-down on incline bench holding dumbbells|Draw elbows up and back, then lower with control|Keep chest touching support throughout|Reduces low-back isometric demand
+inverted-row|Inverted row|Pull|Bodyweight|rhomboid-major;latissimus-dorsi;trapezius|biceps-brachii;rear-deltoid;rectus-abdominis|Lie beneath a stable bar with heels on floor|Pull chest toward bar while holding a straight body line|Modify difficulty by changing body angle|Keep support apparatus secure
+pull-up|Pull-up|Pull|Bodyweight|latissimus-dorsi;teres-major|biceps-brachii;brachialis;trapezius;rectus-abdominis|Hang from bar with comfortable pronated grip|Pull upper chest toward bar and lower under control|Avoid sudden kipping unless specifically trained|Assistance band or machine can scale load
+chin-up|Chin-up|Pull|Bodyweight|latissimus-dorsi;biceps-brachii|teres-major;brachialis;trapezius|Hang from secure bar with supinated grip|Pull chin past bar and lower smoothly|Do not swing aggressively to reach the top|Supinated grip often increases elbow-flexor demand
+lat-pulldown|Lat pulldown|Pull|Cable|latissimus-dorsi;teres-major|biceps-brachii;brachialis;trapezius|Sit with thighs secured and grip overhead bar|Pull bar toward upper chest, then return overhead|Keep torso nearly fixed; pull through elbows|Avoid pulling bar forcefully behind neck
+straight-arm-pulldown|Straight-arm cable pulldown|Pull|Cable|latissimus-dorsi;teres-major|triceps-brachii;rectus-abdominis|Stand facing high cable with arms reaching forward|Pull handles toward hips keeping elbow bend nearly fixed|Avoid compensating with trunk collapse|Shoulder extension with limited elbow flexion
+biceps-curl|Dumbbell biceps curl|Pull|Dumbbell|biceps-brachii;brachialis|brachioradialis;flexor-carpi-radialis|Stand with arms at sides and palms forward|Flex elbows to lift weights, then lower smoothly|Keep upper arms roughly in place|Rotate palms as comfortable
+hammer-curl|Hammer curl|Pull|Dumbbell|brachialis;brachioradialis|biceps-brachii;flexor-digitorum-profundus|Hold dumbbells palms facing inward|Curl without turning wrists, then lower slowly|Avoid swinging shoulders forward|Neutral grip emphasizes brachialis and brachioradialis
+preacher-curl|Preacher curl|Pull|Barbell|biceps-brachii;brachialis|brachioradialis|Support upper arms on preacher pad|Curl from comfortable extended position, then lower slowly|Avoid bouncing at bottom when elbow extended|Pad constrains shoulder movement
+incline-curl|Incline dumbbell curl|Pull|Dumbbell|biceps-brachii|brachialis;brachioradialis|Sit on inclined bench with arms hanging slightly behind trunk|Curl through elbows, lower under control|Avoid shoulder swinging|Long-head biceps loaded at extended shoulder position
+cable-curl|Cable curl|Pull|Cable|biceps-brachii;brachialis|brachioradialis|Stand facing low pulley with elbows near sides|Curl handle while keeping torso stable|Keep wrists approximately neutral|Cable resists through changing joint angles
+triceps-pushdown|Cable triceps pushdown|Push|Cable|triceps-brachii|anconeus|Stand facing pulley with elbows close to torso|Extend elbows to press handle down; return with control|Keep shoulders from rocking|Rope, bar or single-handle versions
+triceps-overhead-extension|Overhead triceps extension|Push|Dumbbell|triceps-brachii|anconeus;rectus-abdominis|Hold dumbbell overhead with elbows pointing up|Bend elbows to lower weight behind head; extend|Avoid painful elbow or shoulder ranges|Overhead arm position lengthens long triceps head
+skull-crusher|Lying triceps extension|Push|Barbell|triceps-brachii|anconeus|Lie on bench and hold EZ bar above face|Flex elbows to lower bar behind forehead, then extend|Control speed and keep wrists stacked|EZ bar may be more comfortable
+wrist-curl|Wrist curl|Pull|Dumbbell|flexor-carpi-radialis;flexor-carpi-ulnaris|flexor-digitorum-superficialis;flexor-digitorum-profundus|Support forearms with palms up and wrists free|Curl wrists toward forearms and lower under control|Move at wrist rather than curling elbows|Start very light
+reverse-wrist-curl|Reverse wrist curl|Pull|Dumbbell|extensor-carpi-radialis;extensor-carpi-ulnaris|extensor-digitorum|Support forearms palms-down with hands past edge|Lift back of hand toward forearm, then lower|Use light loads for controlled wrist extension|Builds wrist extensor endurance
+reverse-curl|Reverse-grip curl|Pull|Barbell|brachioradialis;brachialis|biceps-brachii;extensor-carpi-radialis|Hold bar with palms downward and elbows near sides|Curl bar by bending elbows, then lower|Keep wrists straight; avoid excessive grip squeeze|Pronated grip changes elbow flexor leverage
+farmer-carry|Farmer carry|Carry|Dumbbell|flexor-digitorum-profundus;trapezius;erector-spinae|gluteus-medius;transversus-abdominis;quadratus-lumborum;soleus|Hold heavy weights at sides and stand tall|Walk controlled steps while resisting sway|Avoid excessive shrugging or leaning|Grip, axial load and gait stability
+suitcase-carry|Single-arm suitcase carry|Carry|Dumbbell|quadratus-lumborum;transversus-abdominis;gluteus-medius|obliques;erector-spinae;flexor-digitorum-profundus|Hold one weight at side with shoulders level|Walk slowly while resisting side bend|Keep rib cage centered over pelvis|Unilateral anti-lateral-flexion carry
+back-squat|Barbell back squat|Squat|Barbell|gluteus-maximus;vastus-lateralis;vastus-medialis;rectus-femoris|adductor-magnus;soleus;erector-spinae;transversus-abdominis|Set bar securely across upper back and brace abdomen|Sit down between hips and knees, then rise through full foot|Use depth that preserves control and joint comfort|Use rack safety bars for heavy sets
+front-squat|Barbell front squat|Squat|Barbell|vastus-lateralis;vastus-medialis;rectus-femoris;gluteus-maximus|adductor-magnus;erector-spinae;soleus|Hold bar in front rack with elbows elevated|Descend upright into squat, then drive upward|Keep midfoot contact and braced torso|More upright torso commonly shifts knee-extensor demand
+goblet-squat|Goblet squat|Squat|Dumbbell|vastus-lateralis;vastus-medialis;gluteus-maximus|adductor-magnus;rectus-femoris;soleus|Hold weight at chest and plant feet comfortably|Squat between legs, then stand tall|Keep weight near torso, do not collapse chest|Useful for technique and accessible loading
+leg-press|Leg press|Squat|Machine|vastus-lateralis;vastus-medialis;rectus-femoris;gluteus-maximus|adductor-magnus;soleus|Sit against back pad and place feet on platform|Lower sled with hips controlled then press away|Do not roll pelvis sharply off back support|Foot position changes joint emphasis
+hack-squat|Hack squat|Squat|Machine|vastus-lateralis;vastus-medialis;rectus-femoris|gluteus-maximus;adductor-magnus|Set shoulders and back against machine pads|Descend under control and press platform away|Use machine stops and comfortable depth|A stable knee-dominant squat option
+leg-extension|Leg extension|Squat|Machine|rectus-femoris;vastus-lateralis;vastus-medialis;vastus-intermedius|—|Adjust machine pivot to knee and ankle pad above feet|Extend knees, pause lightly, then lower|Avoid forceful snapping at lockout|Isolates knee extensors
+split-squat|Split squat|Lunge|Dumbbell|gluteus-maximus;vastus-lateralis;vastus-medialis|gluteus-medius;adductor-magnus;soleus|Use staggered stance and keep feet on separate tracks|Lower back knee toward floor, then rise through front foot|Keep front foot planted and torso stable|Static split stance simplifies balance
+bulgarian-split-squat|Rear-foot-elevated split squat|Lunge|Dumbbell|gluteus-maximus;vastus-lateralis;vastus-medialis|gluteus-medius;adductor-magnus;soleus|Rest rear foot on low stable bench and step front foot forward|Lower with controlled front knee bend and stand|Adjust front foot distance to avoid discomfort|Highly demanding single-leg loading
+reverse-lunge|Reverse lunge|Lunge|Dumbbell|gluteus-maximus;vastus-lateralis;vastus-medialis|gluteus-medius;adductor-magnus;soleus|Stand tall holding weights if desired|Step back into split stance, bend both knees, return to start|Control forward knee and resist pelvis dropping|Reverse step can ease balance for some people
+walking-lunge|Walking lunge|Lunge|Dumbbell|gluteus-maximus;vastus-lateralis;vastus-medialis|gluteus-medius;adductor-magnus;soleus|Stand tall in open space holding weights|Step forward and lower; drive through leading leg to next step|Keep steps deliberate, knees aligned with feet|Unilateral leg strength and coordination
+step-up|Weighted step-up|Lunge|Dumbbell|gluteus-maximus;vastus-lateralis;vastus-medialis|gluteus-medius;soleus;adductor-magnus|Stand facing stable knee-height or lower platform|Place foot atop box and stand through that leg, then descend|Minimize push-off from trailing leg|Box height controls hip and knee demand
+hip-thrust|Barbell hip thrust|Hinge|Barbell|gluteus-maximus|adductor-magnus;hamstrings;erector-spinae|Rest upper back on padded bench and place bar across hips|Drive hips upward and squeeze glutes, then lower|Keep ribs down instead of hyperextending lumbar spine|Shortened-position hip extensor emphasis
+glute-bridge|Glute bridge|Hinge|Bodyweight|gluteus-maximus|adductor-magnus;transversus-abdominis|Lie on back with knees bent and feet grounded|Drive heels down to raise pelvis, then lower|Finish with hips extended but without low-back arch|Useful floor-based hip extension
+romanian-deadlift|Romanian deadlift|Hinge|Barbell|biceps-femoris;semitendinosus;semimembranosus;gluteus-maximus|adductor-magnus;erector-spinae;flexor-digitorum-profundus|Stand with bar near thighs and knees softly bent|Push hips backward as bar slides near legs, then extend hips|Maintain long spine and stop before lumbar rounding|Hip hinge emphasizes lengthened hamstrings
+conventional-deadlift|Conventional deadlift|Hinge|Barbell|gluteus-maximus;erector-spinae;vastus-lateralis|biceps-femoris;semitendinosus;adductor-magnus;trapezius|Stand with midfoot under bar, hinge to grip and brace|Push floor away and extend hips and knees, then lower by hinging|Keep bar close; maintain neutral braced trunk|Heavy multi-joint lift
+trap-bar-deadlift|Trap-bar deadlift|Hinge|Barbell|gluteus-maximus;vastus-lateralis;vastus-medialis|erector-spinae;adductor-magnus;biceps-femoris|Stand centered in hex bar and hold handles|Extend knees and hips to stand, then descend in control|Keep feet planted and maintain trunk tension|May allow more upright torso than straight bar
+sumo-deadlift|Sumo deadlift|Hinge|Barbell|gluteus-maximus;adductor-magnus;vastus-lateralis|erector-spinae;biceps-femoris;semitendinosus|Take wide stance with toes turned out comfortably|Grip bar between knees and push floor apart while standing|Track knees over toes; avoid forcing extreme stance|Wide-stance hip and knee extension
+good-morning|Barbell good morning|Hinge|Barbell|erector-spinae;gluteus-maximus;biceps-femoris|semitendinosus;adductor-magnus|Place light bar on upper back and stand braced|Hinge hips backward maintaining soft knees, then stand|Begin lightly, stop when spinal position changes|High trunk and posterior-chain demand
+kettlebell-swing|Kettlebell swing|Hinge|Kettlebell|gluteus-maximus;biceps-femoris;semitendinosus|erector-spinae;rectus-abdominis;latissimus-dorsi|Stand with bell ahead, grip and hike between legs|Explosively extend hips to float bell, then hinge to catch|Power comes from hips, not shoulder lifting|Dynamic hinge skill; learn mechanics before speed
+seated-leg-curl|Seated leg curl|Hinge|Machine|biceps-femoris;semitendinosus;semimembranosus|gastrocnemius|Sit with thighs secured and knee aligned to pivot|Curl lower legs downward/back and return slowly|Keep pelvis seated against pad|Knee flexion with hips flexed
+lying-leg-curl|Lying leg curl|Hinge|Machine|biceps-femoris;semitendinosus;semimembranosus|gastrocnemius|Lie prone and align knee pivot with machine|Flex knees bringing heels toward body then lower|Avoid lifting hips and snapping at bottom|Knee-flexor machine variation
+back-extension|45° back extension|Hinge|Bodyweight|erector-spinae;gluteus-maximus|biceps-femoris;semitendinosus;adductor-magnus|Set back-extension pad just below hips|Hinge trunk forward, then return to neutral body line|Avoid aggressive lumbar hyperextension|Bias hip extensors by hinging primarily at hips
+cable-pull-through|Cable pull-through|Hinge|Cable|gluteus-maximus;biceps-femoris|semitendinosus;erector-spinae|Face away from low pulley with rope between legs|Hinge back, then stand by extending hips|Keep rope close and spine braced|Hip extension without axial bar loading
+machine-hip-abduction|Machine hip abduction|Lunge|Machine|gluteus-medius;gluteus-minimus|tensor-fasciae-latae|Sit with thigh pads on outer knees|Push knees outward, pause, return slowly|Keep pelvis steady on seat|Emphasizes lateral hip abductors
+cable-hip-abduction|Standing cable hip abduction|Lunge|Cable|gluteus-medius;gluteus-minimus|tensor-fasciae-latae|Attach cable to ankle and hold stable support|Move leg out to side without tilting torso|Control pelvis and avoid momentum|Standing lateral hip isolation
+cable-glute-kickback|Cable glute kickback|Hinge|Cable|gluteus-maximus|biceps-femoris;gluteus-medius|Attach ankle cuff to low cable and hold support|Extend leg backward at hip and return|Avoid arching low back for extra range|Standing single-leg hip extension
+copenhagen-plank|Copenhagen side plank|Carry|Bodyweight|adductor-longus;adductor-magnus;gracilis|external-oblique;internal-oblique;gluteus-medius|Side plank with upper leg supported on bench|Lift hips to line up body and hold|Start with knee-supported short-lever version|High adductor and lateral trunk demand
+standing-calf-raise|Standing calf raise|Carry|Machine|gastrocnemius;soleus|tibialis-posterior;fibularis-longus|Stand with forefeet on stable step/machine with straight knees|Lift heels high, pause, lower in comfortable stretch|Avoid bouncing through Achilles tendon|Straighter knee recruits gastrocnemius strongly
+seated-calf-raise|Seated calf raise|Carry|Machine|soleus|gastrocnemius;tibialis-posterior|Sit with knees bent and load over thighs|Raise heels, briefly pause, then lower slowly|Keep knees positioned under pad|Knee flexion reduces gastrocnemius contribution
+tibialis-raise|Tibialis raise|Carry|Bodyweight|tibialis-anterior|extensor-digitorum-longus;extensor-hallucis-longus|Lean back against wall with heels on floor|Lift toes toward shins, then lower with control|Keep heels planted throughout|Dorsiflexor isolation
+single-leg-calf-raise|Single-leg calf raise|Carry|Bodyweight|gastrocnemius;soleus|tibialis-posterior;fibularis-longus;gluteus-medius|Balance on one foot holding a rail lightly|Raise heel and lower through comfortable range|Avoid rolling ankles in or out|Unilateral calf and ankle control
+plank|Forearm plank|Carry|Bodyweight|transversus-abdominis;rectus-abdominis;internal-oblique|serratus-anterior;gluteus-maximus;quadratus-lumborum|Set forearms below shoulders and extend legs|Hold body straight while breathing and bracing|Avoid sagging hips or forceful breath holding|Anti-extension trunk endurance
+side-plank|Side plank|Carry|Bodyweight|external-oblique;internal-oblique;quadratus-lumborum|gluteus-medius;transversus-abdominis|Lie side-on supported on forearm and foot or knee|Raise pelvis to long body line and hold|Do not rotate trunk toward floor|Anti-lateral-flexion trunk endurance
+dead-bug|Dead bug|Carry|Bodyweight|transversus-abdominis;rectus-abdominis|internal-oblique;hip-flexors|Lie on back with arms up and hips/knees at 90 degrees|Slowly extend opposite arm and leg, then switch|Keep ribs down and back position controlled|Low-load coordination drill
+bird-dog|Bird dog|Carry|Bodyweight|multifidus;transversus-abdominis|gluteus-maximus;erector-spinae;gluteus-medius|Start on hands and knees with neutral trunk|Reach opposite arm and leg away, pause, return|Do not twist hips or arch lumbar spine|Contralateral trunk stabilization
+pallof-press|Pallof press|Carry|Cable|external-oblique;internal-oblique;transversus-abdominis|rectus-abdominis;gluteus-medius|Stand side-on to cable anchored at chest height|Press handle straight out and resist trunk rotation|Exhale normally and keep hips square|Anti-rotation training
+cable-crunch|Kneeling cable crunch|Carry|Cable|rectus-abdominis|external-oblique;internal-oblique|Kneel facing high cable with rope near head|Curl rib cage toward pelvis, return under control|Flex trunk rather than only pulling arms|Loaded trunk flexion
+hanging-knee-raise|Hanging knee raise|Carry|Bodyweight|rectus-abdominis;iliopsoas|external-oblique;flexor-digitorum-profundus|Hang from secure bar without swinging|Raise knees while curling pelvis upward, then lower|Pelvic curl distinguishes ab demand from pure hip flexion|Progress by straightening legs
+ab-wheel|Ab wheel rollout|Carry|Bodyweight|rectus-abdominis;transversus-abdominis|latissimus-dorsi;serratus-anterior;external-oblique|Kneel holding wheel below shoulders|Roll forward while holding ribs/pelvis aligned, then pull back|Only roll as far as trunk control allows|Advanced anti-extension exercise
+cable-wood-chop|Cable wood chop|Carry|Cable|external-oblique;internal-oblique|rectus-abdominis;serratus-anterior;gluteus-maximus|Stand sideways to cable with handle across body|Rotate upper trunk and arms in controlled diagonal path|Rotate through thoracic spine and hips as appropriate|Diagonal cross-body pattern
+sled-push|Sled push|Push|Machine|vastus-lateralis;gluteus-maximus;gastrocnemius|soleus;rectus-abdominis;serratus-anterior|Lean into sled handles with braced trunk|Drive alternating steps to move sled forward|Keep steps powerful and trunk stable|Locomotor lower-limb push pattern
+band-external-rotation|Band shoulder external rotation|Pull|Band|infraspinatus;teres-minor|rear-deltoid|Anchor band at elbow height and bend elbow about 90 degrees|Rotate hand outward while upper arm stays near side|Use a light band and control return|Rotator-cuff external-rotation drill
+band-internal-rotation|Band shoulder internal rotation|Push|Band|subscapularis|pectoralis-major;anterior-deltoid|Anchor band beside body and bend elbow to 90 degrees|Rotate hand inward toward abdomen|Keep elbow by side and avoid trunk rotation|Rotator-cuff internal-rotation drill
+scapular-push-up|Scapular push-up|Push|Bodyweight|serratus-anterior|pectoralis-minor;trapezius;transversus-abdominis|Begin in plank with elbows extended|Allow shoulder blades to draw together, then push floor away|Keep elbows straight and trunk neutral|Isolates scapular protraction range
+wall-slide|Forearm wall slide|Push|Bodyweight|serratus-anterior;trapezius|supraspinatus;rotator-cuff|Stand facing wall with forearms supported|Slide arms up and allow scapulae to rotate upward|Avoid flaring ribs to achieve more overhead reach|Scapular upward-rotation practice
+prone-y-raise|Prone Y-raise|Pull|Dumbbell|trapezius;supraspinatus|infraspinatus;rear-deltoid|Lie chest-down on incline bench with very light weights|Raise straight arms into a Y shape, then lower|Avoid shrugging and swinging torso|Targets lower-trapezius action pattern
+neck-chin-tuck|Supine chin tuck|Carry|Bodyweight|longus-colli;longus-capitis|sternocleidomastoid|Lie on back with head supported and relaxed|Gently nod chin back, maintaining length through neck|Do not jam head hard into floor|Deep cervical flexor control
+`; 
+const EXERCISES=[];
+for(const line of rawExercises.trim().split('\n')){
+ const f=line.split('|'); if(f.length!==10){console.warn('Malformed exercise',f.length,line);continue}
+ const [id,name,pattern,equipment,primary,secondary,setup,movement,cue,variation]=f;
+ EXERCISES.push({id,name,pattern,equipment,primary:primary.split(';').filter(x=>x!=='—'),secondary:secondary.split(';').filter(x=>x!=='—'),setup,movement,cue,variation});
+}
+// Aliases refer to indexed muscles, not additional independently counted muscles.
+const ALIASES={'hamstrings':['biceps-femoris','semitendinosus','semimembranosus'],'obliques':['external-oblique','internal-oblique'],'hip-flexors':['iliopsoas','psoas-major','iliacus'],'rotator-cuff':['infraspinatus','supraspinatus','subscapularis','teres-minor']};
+const normalizeTargets=arr=>[...new Set(arr.flatMap(id=>ALIASES[id]||[id]).filter(id=>MUSCLE_BY_ID[id]))];
+for(const ex of EXERCISES){ex.primary=normalizeTargets(ex.primary);ex.secondary=normalizeTargets(ex.secondary).filter(id=>!ex.primary.includes(id))}
+const EX_BY_ID=Object.fromEntries(EXERCISES.map(e=>[e.id,e]));
+for(const m of MUSCLES){m.exercises=EXERCISES.filter(e=>e.primary.includes(m.id)||e.secondary.includes(m.id)).map(e=>({id:e.id,role:e.primary.includes(m.id)?'Primary':'Secondary'}));m.division=REGION_DIV[m.region]}
+// Built-in schematic vector maps. Coordinates are illustrative, not traced anatomical plates.
+const SVG_NS='http://www.w3.org/2000/svg';
+const SHAPE={
+ front:[
+ ['frontalis','M158 49 Q165 34 180 39 L180 53 Z'],
+ ['orbicularis-oculi','M158 59 Q166 53 173 59 Q166 66 158 61 Z'],
+ ['zygomaticus-major','M153 73 L167 79 L168 85 L155 77 Z'],
+ ['masseter','M145 73 Q150 68 156 74 L157 94 L150 103 L147 91 Z'],
+ ['sternocleidomastoid','M162 109 L172 114 L139 153 L131 150 Z'],
+ ['deltoid','M131 140 Q110 131 100 149 Q92 161 93 184 L101 194 Q119 172 136 162 Z'],
+ ['pectoralis-major','M135 153 L171 153 L174 204 Q150 226 125 211 Q125 187 135 153 Z'],
+ ['serratus-anterior','M124 205 Q130 214 131 242 L139 265 L129 270 Q121 246 116 222 Z'],
+ ['rectus-abdominis','M158 218 L177 220 L178 331 L158 329 Q151 276 158 218 Z'],
+ ['external-oblique','M130 245 L157 235 L156 329 L142 347 L125 314 Z'],
+ ['biceps-brachii','M94 194 Q107 196 109 216 L108 258 Q98 274 87 251 Z'],
+ ['brachialis','M108 228 Q113 230 113 248 L109 265 L102 269 Z'],
+ ['brachioradialis','M84 265 Q95 263 100 277 L88 344 L79 349 Q77 312 84 265 Z'],
+ ['flexor-carpi-radialis','M103 270 L113 278 L103 329 L99 357 L92 354 Z'],
+ ['flexor-digitorum-superficialis','M88 281 L97 281 L87 366 L82 364 Z'],
+ ['tensor-fasciae-latae','M127 348 L140 348 L144 391 L132 410 Q124 378 127 348 Z'],
+ ['sartorius','M137 367 L144 370 L167 469 L162 479 Z'],
+ ['adductor-longus','M162 375 L178 378 L173 449 L159 421 Z'],
+ ['rectus-femoris','M143 397 L159 399 L160 478 L148 491 L140 471 Z'],
+ ['vastus-lateralis','M130 406 L144 404 L145 487 L134 508 L128 488 Z'],
+ ['vastus-medialis','M161 449 L174 436 L174 495 L157 502 Z'],
+ ['tibialis-anterior','M139 518 L149 519 L151 591 L145 618 L138 611 Z'],
+ ['extensor-digitorum-longus','M153 535 L161 537 L155 615 L149 623 Z'],
+ ['fibularis-longus','M132 535 L140 535 L138 582 L131 598 Z'],
+ ['gastrocnemius','M123 525 L132 524 L134 564 L129 580 L120 563 Z']
+ ],
+ back:[
+ ['trapezius','M169 116 Q142 121 125 143 L131 176 L160 213 L177 220 Z'],
+ ['deltoid','M131 141 Q109 129 99 151 Q92 165 94 187 L102 192 Q122 175 133 157 Z'],
+ ['infraspinatus','M130 178 L160 179 L159 218 L129 210 Z'],
+ ['teres-major','M130 217 L155 222 L152 230 L126 235 Z'],
+ ['latissimus-dorsi','M128 228 Q147 239 164 244 L174 328 L141 327 L120 274 Z'],
+ ['erector-spinae','M167 225 L177 225 L176 348 L166 343 Z'],
+ ['triceps-brachii','M94 191 Q111 195 112 219 L102 268 L91 265 Q86 244 94 191 Z'],
+ ['extensor-digitorum','M86 270 L100 266 L94 357 L83 362 Z'],
+ ['extensor-carpi-radialis','M103 275 L114 280 L105 352 L97 348 Z'],
+ ['gluteus-medius','M135 337 L154 340 L155 358 Q145 362 134 373 L126 365 Z'],
+ ['gluteus-maximus','M137 361 L175 361 L178 410 Q164 432 135 420 Q120 402 137 361 Z'],
+ ['adductor-magnus','M161 425 L175 424 L174 484 L161 480 Z'],
+ ['biceps-femoris','M130 428 L151 436 L149 499 L134 516 Q127 472 130 428 Z'],
+ ['semitendinosus','M154 430 L163 434 L159 513 L149 514 Z'],
+ ['semimembranosus','M164 449 L173 446 L170 505 L161 509 Z'],
+ ['gastrocnemius','M130 524 Q145 516 152 528 L150 583 L138 603 L126 568 Z'],
+ ['soleus','M140 588 L152 570 L152 613 L144 630 L138 626 Z'],
+ ['fibularis-longus','M122 540 L130 536 L131 591 L126 605 L121 594 Z']
+ ]
+};
+const LABELS={
+ front:[['frontalis',85,47,'Frontalis'],['masseter',80,93,'Masseter'],['sternocleidomastoid',86,135,'SCM'],['deltoid',287,169,'Deltoid'],['pectoralis-major',287,195,'Pec major'],['serratus-anterior',287,234,'Serratus ant.'],['biceps-brachii',82,229,'Biceps'],['rectus-abdominis',287,277,'Rectus abd.'],['external-oblique',287,318,'Ext. oblique'],['rectus-femoris',88,440,'Rectus fem.'],['vastus-lateralis',288,476,'Vastus lat.'],['tibialis-anterior',93,558,'Tibialis ant.']],
+ back:[['trapezius',82,145,'Trapezius'],['deltoid',287,171,'Deltoid'],['infraspinatus',287,197,'Infraspinatus'],['latissimus-dorsi',85,268,'Latissimus'],['triceps-brachii',286,230,'Triceps'],['erector-spinae',287,304,'Erectors'],['gluteus-maximus',82,391,'Glute max.'],['gluteus-medius',289,360,'Glute med.'],['biceps-femoris',82,462,'Biceps fem.'],['semitendinosus',286,474,'Semitend.'],['gastrocnemius',83,557,'Gastrocnemius'],['soleus',290,608,'Soleus']]
+};
+const outlineParts=[
+ 'M157 46 Q163 24 180 26 Q198 26 203 47 L205 84 Q202 102 191 108 L191 123 Q207 133 233 134 Q252 137 262 155 L279 233 Q284 259 292 299 L313 368 Q313 382 304 388 L294 375 L280 335 L270 306 L253 255 L244 212 L236 267 L237 319 Q239 345 245 366 L239 412 L227 480 L219 527 L216 580 L210 631 Q208 646 224 651 Q235 651 237 659 L235 663 L185 663 L183 649 L181 584 L179 513 L177 455 L173 454 L170 513 L168 584 L167 646 L166 663 L123 663 Q113 659 130 649 Q143 645 140 630 L138 580 L130 527 L122 480 L116 412 L110 366 Q119 342 122 319 L126 268 L116 213 L108 256 L92 307 L78 335 L67 376 L58 389 Q47 386 49 368 L65 297 L76 254 L81 233 L96 157 Q108 137 129 134 L168 123 L168 108 Q155 101 155 84 Z',
+ 'M154 51 Q160 34 178 35 M182 35 Q200 35 205 51'
+];
+function elSVG(tag,attrs={},parent){const node=document.createElementNS(SVG_NS,tag);for(const [k,v] of Object.entries(attrs))node.setAttribute(k,v);if(parent)parent.appendChild(node);return node}
+function buildMap(side){const svg=$('#'+side+'-svg');svg.innerHTML='';const defs=elSVG('defs',{},svg);let grd=elSVG('linearGradient',{id:'skin-'+side,x1:'0%',x2:'100%'},defs);elSVG('stop',{offset:'0%','stop-color':'#1a3347'},grd);elSVG('stop',{offset:'50%','stop-color':'#345468'},grd);elSVG('stop',{offset:'100%','stop-color':'#1b3248'},grd);
+ const silhouette=elSVG('g',{},svg);elSVG('path',{d:outlineParts[0],fill:'url(#skin-'+side+')',stroke:'#6a8a9e','stroke-width':'1.8'},silhouette);elSVG('path',{d:outlineParts[1],fill:'none',stroke:'#80a3b7',opacity:'.35'},silhouette);
+ const muscleGroup=elSVG('g',{},svg);
+ const makeMuscle=(id,d,g)=>{if(!MUSCLE_BY_ID[id])return;const p=elSVG('path',{d,class:'muscle','data-mid':id,tabindex:'0',role:'button','aria-label':MUSCLE_BY_ID[id].name},g);elSVG('title',{},p).textContent=MUSCLE_BY_ID[id].name;p.addEventListener('click',()=>selectMuscle(id));p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectMuscle(id)}})};
+ for(const [id,d] of SHAPE[side]){makeMuscle(id,d,muscleGroup);if(id==='frontalis'||id==='orbicularis-oculi'||id==='zygomaticus-major'||id==='masseter')continue;let g=elSVG('g',{transform:'translate(360 0) scale(-1 1)'},muscleGroup);makeMuscle(id,d,g)}
+ elSVG('path',{d:'M180 115 L180 352',class:'anatomy-line'},svg);
+ const labels=elSVG('g',{'data-labels':'true'},svg);
+ for(const [id,x,y,label] of LABELS[side]){
+  const startX=x<180?92:269;const anchor=x<180?'end':'start';let sideOf=id==='masseter'?'front':side;
+  elSVG('path',{d:`M${startX} ${y} L${x<180?105:257} ${y}`,stroke:'#6a9cae','stroke-width':'.7',opacity:'.6',fill:'none'},labels);
+  const t=elSVG('text',{x,y:y-3,fill:'#a5c5d4','font-size':'9','font-weight':'600','text-anchor':anchor,'data-label-id':id,style:'cursor:pointer'},labels);t.textContent=label;t.addEventListener('click',()=>selectMuscle(id));
+ }
+}
+buildMap('front');buildMap('back');
+const FACETS={region:'Body region',division:'Axial / appendicular',fascicle:'Fascicle arrangement',chain:'Kinematic chains / slings',type:'Postural / phasic',stability:'Joint stabilization',development:'Branchiomeric / myotomal',movement:'Movement pattern'};
+const FACET_DESCRIPTION={region:'Topographic body regions; groups and subdivisions are for navigation.',division:'Axial versus appendicular anatomical framework; attachments may cross these boundaries.',fascicle:'Simplified dominant fascicle geometry. Individual heads or regions may differ.',chain:'Functional force-transfer models, not discrete anatomical compartments.',type:'Postural versus phasic describes tendencies, not fixed muscle types.',stability:'Local / global roles are context-dependent and can change with exercise.',development:'Simplified embryologic origins; several head/neck lineages are complex.',movement:'Exercise-pattern relevance, not exclusive participation in a movement.'};
+const STATES={selected:'pectoralis-major',hierarchy:'region',group:null,search:'',tab:'profile',view:'front',labels:true,expanded:new Set(['Chest']),catalogSearch:'',catalogPattern:'All',catalogEquipment:'All',catalogOnly:false,logs:[]};
+try{const saved=JSON.parse(localStorage.getItem('muscle_atlas_training_v1')||'[]');if(Array.isArray(saved))STATES.logs=saved.filter(x=>x&&EX_BY_ID[x.exercise]).slice(0,20000)}catch(_){}
+function getFacet(m,k){if(k==='chain')return m.chain;if(k==='movement')return m.movement;return [m[k]]}
+function groupMembers(group){return MUSCLES.filter(m=>getFacet(m,STATES.hierarchy).includes(group))}
+function searchMatch(m){const q=STATES.search.trim().toLowerCase();if(!q)return true;const exnames=m.exercises.map(e=>EX_BY_ID[e.id]?.name||'').join(' ');return [m.name,m.region,m.subregion,m.actions,m.origin,m.insertion,m.nerve,m.fascicle,m.type,m.stability,m.development,m.chain.join(' '),m.movement.join(' '),exnames].join(' ').toLowerCase().includes(q)}
+function filteredMuscles(){return MUSCLES.filter(m=>(!STATES.group||getFacet(m,STATES.hierarchy).includes(STATES.group))&&searchMatch(m))}
+function targetCount(m){return m.exercises.length}
+function showToast(msg,bad=false){const t=$('#toast');t.textContent=msg;t.classList.toggle('bad',bad);t.classList.add('visible');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>t.classList.remove('visible'),3500)}
+function selectMuscle(id){if(!MUSCLE_BY_ID[id])return;STATES.selected=id;STATES.tab='profile';STATES.group=null;STATES.search='';$('#global-search').value='';if(STATES.hierarchy==='region')STATES.expanded.add(MUSCLE_BY_ID[id].region);renderAll()}
+function selectFacet(facet,value){STATES.hierarchy=facet;STATES.group=value;STATES.search='';$('#global-search').value='';STATES.expanded.add(value);$('#hierarchy').value=facet;renderAll()}
+function renderNav(){const tree=$('#tree-area');const facets={};for(const m of MUSCLES){for(const k of getFacet(m,STATES.hierarchy)){(facets[k]??=[]).push(m)}}
+ const keys=Object.keys(facets).sort((a,b)=>STATES.hierarchy==='region'?REGIONS.indexOf(a)-REGIONS.indexOf(b):a.localeCompare(b));
+ const html=[];
+ for(const key of keys){const matches=facets[key].filter(searchMatch);if(STATES.search&&!matches.length)continue;const expanded=STATES.expanded.has(key)||Boolean(STATES.search);const active=STATES.group===key;
+ html.push(`<div class="tree-group"><button class="tree-h ${active?'on':''}" data-group="${escapeHTML(key)}"><span class="arrow">${expanded?'▾':'▸'}</span><span class="n">${escapeHTML(key)}</span><small>${matches.length}</small></button>`);
+ if(expanded){html.push('<div class="tree-items">');let ordered=[...matches].sort((a,b)=>a.name.localeCompare(b.name));
+ if(STATES.hierarchy==='region'){
+  const subgroups={};for(const m of ordered)(subgroups[m.subregion]??=[]).push(m);
+  for(const [sub,entries] of Object.entries(subgroups).sort((a,b)=>a[0].localeCompare(b[0]))){html.push(`<div style="padding:6px 5px 2px;color:#7eacc0;font-size:9px;text-transform:uppercase;letter-spacing:.07em">${escapeHTML(sub)}</div>`);for(const m of entries)html.push(navEntry(m))}
+ }else for(const m of ordered)html.push(navEntry(m));
+ html.push('</div>')}html.push('</div>')
+ }
+ tree.innerHTML=html.length?html.join(''):'<div class="empty">No muscle entries match this search.</div>';
+ tree.querySelectorAll('[data-group]').forEach(b=>b.addEventListener('click',()=>{const val=b.dataset.group;if(STATES.expanded.has(val)){STATES.expanded.delete(val);if(STATES.group===val)STATES.group=null}else{STATES.expanded.add(val);STATES.group=val}renderAll()}));
+ tree.querySelectorAll('[data-mid]').forEach(b=>b.addEventListener('click',()=>selectMuscle(b.dataset.mid)));
+ const shown=filteredMuscles().length;$('#nav-count').textContent=`${shown} / ${MUSCLES.length} muscles shown`;$('#active-filter-label').textContent=STATES.group||'All groups';
+}
+function navEntry(m){return `<button class="tree-item ${STATES.selected===m.id?'chosen':''}" data-mid="${m.id}" title="${escapeHTML(m.actions)}"><span>${escapeHTML(m.name)}</span><small>${m.exercises.length||'—'}</small></button>`}
+function updateMap(){for(const s of ['front','back']){
+ const figure=$('#'+s+'-figure');figure.classList.toggle('hidden',STATES.view!==s&&STATES.view!=='both');let onMap=new Set(filteredMuscles().map(m=>m.id));
+ figure.querySelectorAll('.muscle').forEach(p=>{const id=p.dataset.mid;p.classList.remove('faded','highlight','in-filter','secondary');if(STATES.exerciseFocus){if(STATES.exerciseFocus.primary.includes(id))p.classList.add('highlight');else if(STATES.exerciseFocus.secondary.includes(id))p.classList.add('secondary');else p.classList.add('faded')}else if(id===STATES.selected){p.classList.add('highlight')}else if(STATES.group||STATES.search){p.classList.add(onMap.has(id)?'in-filter':'faded')} });
+ figure.querySelectorAll('[data-labels]').forEach(p=>p.style.display=STATES.labels?'':'none');
+ figure.querySelectorAll('[data-label-id]').forEach(t=>{t.setAttribute('fill',t.dataset.labelId===STATES.selected?'#90ffe2':'#a5c5d4')});
+ }
+ $$('#body-view button').forEach(b=>b.classList.toggle('on',b.dataset.view===STATES.view));
+ $('#map-state').textContent=STATES.view==='both'?'Dual anatomical views':'Superficial view';
+}
+const TAGFACETS=['division','region','fascicle','type','stability','development','chain','movement'];
+function tagMarkup(facet,value){return `<button class="tag click" data-facet="${facet}" data-value="${escapeHTML(value)}" title="Filter by ${escapeHTML(FACETS[facet])}">${escapeHTML(value)}</button>`}
+function exRow(ex,role=null){const emoji={Push:'↗',Pull:'↙',Squat:'⇵',Hinge:'⤴',Lunge:'↟',Carry:'⌁'}[ex.pattern]||'◆';return `<button class="exrow" data-ex="${ex.id}"><span class="emblem">${emoji}</span><span style="flex:1;min-width:0"><span class="exname">${escapeHTML(ex.name)}</span><span class="exsub">${escapeHTML(ex.pattern)} · ${escapeHTML(ex.equipment)} · ${ex.primary.length} primary / ${ex.secondary.length} secondary targets</span></span>${role?`<span class="role ${role==='Secondary'?'sec':''}">${role}</span>`:'<span class="ex-link">↗</span>'}</button>`}
+function renderProfile(){const m=MUSCLE_BY_ID[STATES.selected];if(!m)return;const allTags=[];for(const facet of TAGFACETS){for(const v of getFacet(m,facet)){allTags.push(tagMarkup(facet,v))}}
+ const p=m.exercises.filter(e=>e.role==='Primary').map(e=>EX_BY_ID[e.id]);const sec=m.exercises.filter(e=>e.role==='Secondary').map(e=>EX_BY_ID[e.id]);
+ $('#detail-content').innerHTML=`<div class="eyebrow">${escapeHTML(m.region)} · ${escapeHTML(m.subregion)}</div><h2>${escapeHTML(m.name)}</h2><p class="desc">${escapeHTML(m.actions)}. ${escapeHTML(m.note)}.</p><div class="tagrow">${allTags.join('')}</div><div class="subhead">Anatomy and function</div><div class="anatomy-grid">
+ <div class="fact"><strong>Proximal attachment / origin</strong><span>${escapeHTML(m.origin)}</span></div><div class="fact"><strong>Distal attachment / insertion</strong><span>${escapeHTML(m.insertion)}</span></div><div class="fact"><strong>Innervation</strong><span>${escapeHTML(m.nerve)}</span></div><div class="fact"><strong>Classification</strong><span>${escapeHTML(m.fascicle)} fascicles · ${escapeHTML(m.type)}</span></div>
+ </div><div class="subhead">Movement & functional systems</div><div class="chipstrip">${[...m.movement,...m.chain].map(s=>`<span>${escapeHTML(s)}</span>`).join('')}</div><div class="subhead">Resistance training <span class="tiny">(${p.length} primary · ${sec.length} secondary)</span></div>
+ ${p.length?`<div class="tiny" style="margin-bottom:5px">PRIMARY TARGET</div>${p.slice(0,9).map(e=>exRow(e,'Primary')).join('')}`:''}
+ ${sec.length?`<div class="tiny" style="margin:12px 0 5px">SECONDARY TARGET</div>${sec.slice(0,9).map(e=>exRow(e,'Secondary')).join('')}`:''}
+ ${!p.length&&!sec.length?'<p class="text-muted">No specific resistance exercise is assigned to this muscle yet. It remains available through the anatomy and functional hierarchies.</p>':''}
+ ${p.length+sec.length>18?`<button class="btn" id="open-associated" style="margin-top:5px">Explore all ${p.length+sec.length} related exercises →</button>`:''}
+ <p class="fine">Training roles are practical emphasis estimates, not EMG measurements. Group records and muscle subdivisions may overlap.</p>`;
+ bindDetails();$('#open-associated')?.addEventListener('click',()=>{STATES.tab='catalog';STATES.catalogOnly=true;renderAll()})
+}
+function bindDetails(){ $$('#detail-content [data-ex]').forEach(b=>b.addEventListener('click',()=>openExercise(b.dataset.ex)));$$('#detail-content [data-facet]').forEach(b=>b.addEventListener('click',()=>selectFacet(b.dataset.facet,b.dataset.value)));$$('#detail-content [data-mid]').forEach(b=>b.addEventListener('click',()=>selectMuscle(b.dataset.mid)));}
+function renderCatalog(){const patterns=['All','Push','Pull','Squat','Hinge','Lunge','Carry'];const equip=['All',...new Set(EXERCISES.map(e=>e.equipment))];
+ const search=STATES.catalogSearch.toLowerCase().trim();const pool=EXERCISES.filter(e=>(STATES.catalogPattern==='All'||e.pattern===STATES.catalogPattern)&&(STATES.catalogEquipment==='All'||e.equipment===STATES.catalogEquipment)&&(!STATES.catalogOnly||e.primary.includes(STATES.selected)||e.secondary.includes(STATES.selected))&&(!search||[e.name,e.pattern,e.equipment,e.setup,...e.primary.map(id=>MUSCLE_BY_ID[id].name),...e.secondary.map(id=>MUSCLE_BY_ID[id].name)].join(' ').toLowerCase().includes(search)));
+ $('#detail-content').innerHTML=`<div class="eyebrow">Exercise library</div><h2>${EXERCISES.length} indexed exercises</h2><p class="desc">Explore movement patterns, technique, and primary/secondary muscle targets. Select an exercise to see a schematic movement illustration and instructions.</p>
+ <div class="catalog-controls"><input id="catalog-search" placeholder="Search exercises or muscles" value="${escapeHTML(STATES.catalogSearch)}"><select id="pattern-filter">${patterns.map(p=>`<option ${p===STATES.catalogPattern?'selected':''}>${p}</option>`).join('')}</select><select id="equipment-filter">${equip.map(p=>`<option ${p===STATES.catalogEquipment?'selected':''}>${escapeHTML(p)}</option>`).join('')}</select></div><label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#adcbda;margin:0 0 10px"><input type="checkbox" id="only-muscle" ${STATES.catalogOnly?'checked':''} style="accent-color:var(--aqua)"> Only exercises involving ${escapeHTML(MUSCLE_BY_ID[STATES.selected].name)}</label>
+ <div class="found-counter">${pool.length} exercises found</div><div class="catalog-list">${pool.map(e=>exRow(e)).join('')||'<div class="empty">No exercises match these filters.</div>'}</div>`;
+ $('#catalog-search').addEventListener('input',e=>{let pos=e.target.selectionStart;STATES.catalogSearch=e.target.value;renderCatalog();const el=$('#catalog-search');el.focus();el.setSelectionRange(pos,pos)});
+ $('#pattern-filter').addEventListener('change',e=>{STATES.catalogPattern=e.target.value;renderCatalog()});$('#equipment-filter').addEventListener('change',e=>{STATES.catalogEquipment=e.target.value;renderCatalog()});$('#only-muscle').addEventListener('change',e=>{STATES.catalogOnly=e.target.checked;renderCatalog()});bindDetails();
+}
+function renderAll(){renderNav();updateMap();$$('#detail-tabs [data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===STATES.tab));if(STATES.tab==='profile')renderProfile();else if(STATES.tab==='catalog')renderCatalog();else renderTraining()}
+// Changelog records use major.minor versioning; the initial public release is 1.1.
+const CHANGELOG=[
+ {version:'1.2',date:'2026-10-15',name:'Changelog & data integrity',items:[
+  'Introduced major.minor version numbering with a clickable, expandable release history.',
+  'Added indexed coverage statistics and exercise-detail illustrations with primary/secondary targets.',
+  'Validated muscle-to-exercise IDs, named myotomal/branchiomeric filters and prepared local workout-import analytics.',
+  'Clarified that muscle diagrams and training classifications are simplified learning models.'
+ ]},
+ {version:'1.1',date:'2026-10-15',name:'Initial Muscles Atlas',items:[
+  'Created a navigable anterior/posterior human muscle map and searchable muscle hierarchy.',
+  'Indexed 101 muscles or explicitly named muscle groups across 12 body regions.',
+  'Added eight anatomical/functional hierarchy dimensions, including axial vs. appendicular, fascicles, development, stabilization, slings and movement patterns.',
+  'Indexed 83 resistance exercises with muscle targeting roles, setup, movement steps and form cues.',
+  'Built the training-data foundation for future exercise-log integration.'
+ ]}
+];
+function openModal(eyebrow,title,html){
+ const root=$('#modal-root');$('#modal-eyebrow').textContent=eyebrow;$('#modal-title').textContent=title;$('#modal-body').innerHTML=html;
+ root.classList.add('open');document.body.style.overflow='hidden';$('#close-modal').focus();
+}
+function closeModal(){const root=$('#modal-root');root.classList.remove('open');document.body.style.overflow='';STATES.exerciseFocus=null;updateMap()}
+function openChangelog(){
+ openModal('Release history','Muscles Atlas changelog',`<p class="data-head">Major version 1 · minor revisions track improvements within this atlas. Select a release to expand its changes.</p>${CHANGELOG.map((v,i)=>`<details class="changelog-entry" ${i===0?'open':''}><summary><span>v${v.version} — ${escapeHTML(v.name)}</span><span class="release-date">${escapeHTML(v.date)}</span></summary><div class="notes"><ul>${v.items.map(it=>`<li>${escapeHTML(it)}</li>`).join('')}</ul></div></details>`).join('')}`);
+}
+function openStats(which){
+ const outlined=new Set([...SHAPE.front,...SHAPE.back].map(v=>v[0]));
+ const withEx=MUSCLES.filter(m=>m.exercises.length>0).length;
+ const exercised=new Set(EXERCISES.flatMap(e=>[...e.primary,...e.secondary]));
+ const p=EXERCISES.reduce((sum,e)=>sum+e.primary.length,0),sec=EXERCISES.reduce((sum,e)=>sum+e.secondary.length,0);
+ const details=which==='muscles'?`<div class="data-kpis"><div class="kpi"><span>Indexed entries</span><strong>${MUSCLES.length}</strong></div><div class="kpi"><span>Illustrated names</span><strong>${outlined.size}</strong></div><div class="kpi"><span>Linked to exercises</span><strong>${withEx}</strong></div></div>
+ <div class="subhead">Regional coverage</div><div class="anatomy-grid">${REGIONS.map(r=>`<div class="fact"><strong>${escapeHTML(r)}</strong><span>${MUSCLES.filter(m=>m.region===r).length} entries</span></div>`).join('')}</div>`:
+ `<div class="data-kpis"><div class="kpi"><span>Indexed exercises</span><strong>${EXERCISES.length}</strong></div><div class="kpi"><span>Primary target links</span><strong>${p}</strong></div><div class="kpi"><span>Secondary links</span><strong>${sec}</strong></div></div><div class="subhead">Movement pattern coverage</div><div class="anatomy-grid">${['Push','Pull','Squat','Hinge','Lunge','Carry'].map(p=>`<div class="fact"><strong>${p}</strong><span>${EXERCISES.filter(e=>e.pattern===p).length} exercises</span></div>`).join('')}</div>`;
+ openModal('Index coverage',which==='muscles'?'Muscle atlas statistics':'Exercise catalog statistics',details+`<div class="note"><strong>Counting convention:</strong> Entries include certain named muscle groups and anatomical subdivisions, so ${MUSCLES.length} is an indexed entry count, not a claim about the number of distinct muscles in the human body. The map shows selected superficial regions rather than every deep structure. ${exercised.size} unique indexed entries occur in exercise target lists.</div><details class="changelog-entry"><summary>Reference sources and classification scope</summary><div class="notes source-reference">Anatomical foundations: <a target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/anatomy-and-physiology/pages/11-1-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems">OpenStax: muscle anatomy and fascicle organization ↗</a>. Exercise technique reference: <a target="_blank" rel="noopener noreferrer" href="https://www.acefitness.org/resources/everyone/exercise-library/">ACE Exercise Library ↗</a>.<p>Postural/phasic, local/global and kinetic sling categories represent practical conceptual models rather than immutable histological classes. Exercise primary/secondary classifications are illustrative and may vary with technique.</p></div></details>`);
+}
+function exerciseMode(e){
+ const id=e.id;
+ if(/bench|chest-fly/.test(id))return 'bench';
+ if(/push-up|plank|ab-wheel/.test(id))return 'plank';
+ if(/curl/.test(id)&&!/leg-curl/.test(id))return 'curl';
+ if(/overhead-press|shoulder-press|front-raise|lateral-raise|prone-y|wall-slide/.test(id))return 'overhead';
+ if(/pulldown|pull-up|chin-up/.test(id))return 'vertical-pull';
+ if(/row|fly|face-pull/.test(id))return 'pull';
+ if(/calf-raise|tibialis-raise/.test(id))return 'calf';
+ if(/lunge|split-squat|step-up/.test(id))return 'lunge';
+ if(/squat|leg-press|leg-extension|sled-push/.test(id))return 'squat';
+ if(/deadlift|hip-thrust|hinge|good-morning|kettlebell-swing|back-extension|pull-through|kickback/.test(id))return 'hinge';
+ if(/carry|walk|shrug/.test(id))return 'carry';
+ if(e.pattern==='Push')return 'overhead';
+ if(e.pattern==='Pull')return 'pull';
+ if(e.pattern==='Squat')return 'squat';
+ if(e.pattern==='Hinge')return 'hinge';
+ if(e.pattern==='Lunge')return 'lunge';
+ return 'carry';
+}
+function schematicPose(mode,finish){
+ const a={h:[151,35],s:[151,65],e:[172,93],w:[178,118],hip:[151,108],k:[153,140],f:[151,165],k2:[142,137],f2:[137,165]};
+ if(mode==='squat'&&finish){Object.assign(a,{h:[135,55],s:[139,79],e:[158,91],w:[167,91],hip:[139,118],k:[185,135],f:[183,165],k2:[104,136],f2:[104,165]})}
+ if(mode==='hinge'&&finish){Object.assign(a,{h:[214,80],s:[192,88],e:[210,108],w:[216,129],hip:[153,111],k:[160,142],f:[157,165],k2:[145,141],f2:[146,165]})}
+ if(mode==='lunge'&&finish){Object.assign(a,{h:[150,46],s:[150,73],hip:[147,108],k:[195,131],f:[206,165],k2:[109,143],f2:[100,165]})}
+ if(mode==='overhead'){a.e=finish?[163,38]:[174,92];a.w=finish?[156,18]:[179,78]}
+ if(mode==='vertical-pull'){a.e=finish?[180,76]:[179,39];a.w=finish?[187,60]:[195,19]}
+ if(mode==='pull'){a.e=finish?[169,95]:[203,82];a.w=finish?[156,107]:[240,82]}
+ if(mode==='curl'){a.e=[170,102];a.w=finish?[180,76]:[175,145]}
+ if(mode==='carry'){a.e=[169,100];a.w=[175,132];if(finish){a.k=[163,141];a.f=[176,163];a.k2=[135,142];a.f2=[123,165]}}
+ if(mode==='calf'){if(finish){a.h[1]-=11;a.s[1]-=11;a.hip[1]-=11;a.e[1]-=11;a.w[1]-=11;a.k[1]-=11;a.f=[153,154];a.k2[1]-=11;a.f2=[138,154]}}
+ if(mode==='plank'){Object.assign(a,{h:[79,91],s:[110,94],e:[116,121],w:[103,154],hip:[178,103],k:[225,123],f:[271,154],k2:[219,113],f2:[264,153]});if(finish){a.h=[77,83];a.s=[108,88];a.hip=[180,98];a.k=[225,119]}}
+ if(mode==='bench'){Object.assign(a,{h:[98,109],s:[130,109],e:finish?[144,71]:[143,90],w:finish?[145,30]:[144,60],hip:[194,107],k:[230,137],f:[229,163],k2:[213,138],f2:[219,163]})}
+ return a;
+}
+function poseMarkup(mode,finish,offset){
+ const p=schematicPose(mode,finish);const line=(a,b,cls)=>`<path class="${cls}" d="M${a[0]} ${a[1]} L${b[0]} ${b[1]}"/>`;
+ const head=`<circle class="pose-head" cx="${p.h[0]}" cy="${p.h[1]}" r="13"/>`;
+ const body=line(p.s,p.hip,'pose-body')+line(p.s,p.e,'pose-limb')+line(p.e,p.w,'pose-limb')+line(p.hip,p.k2,'pose-limb')+line(p.k2,p.f2,'pose-limb')+line(p.hip,p.k,'pose-limb')+line(p.k,p.f,'pose-limb');
+ let gear='';
+ if(mode==='bench'){gear=`<path stroke="#71949c" stroke-width="5" d="M96 121 H205 M120 121 V156 M199 121 V156"/>${line([110,p.w[1]], [175,p.w[1]],'pose-weight')}`}
+ else if(['carry','curl','overhead','pull','hinge'].includes(mode))gear=`<path class="pose-weight" d="M${p.w[0]-7} ${p.w[1]} H${p.w[0]+7}"/>`;
+ if(mode==='vertical-pull')gear+=`<path stroke="#e3b181" stroke-width="6" stroke-linecap="round" d="M130 16 H215"/>`;
+ return `<g transform="translate(${offset} 0)"><rect class="pose-panel" x="8" y="8" width="325" height="172" rx="9"/><text class="pose-title" x="22" y="28">${finish?'02 · FINISH':'01 · START'}</text><line class="pose-floor" x1="36" y1="168" x2="295" y2="168"/>${body}${head}${gear}</g>`;
+}
+function exerciseSchematic(e){const mode=exerciseMode(e);return `<div class="exercise-diagram" role="img" aria-label="Schematic start and finish positions for ${escapeHTML(e.name)}"><svg viewBox="0 0 700 190" preserveAspectRatio="xMidYMid meet">${poseMarkup(mode,false,0)}${poseMarkup(mode,true,350)}<path class="pose-arrow" d="M337 100 H363"/><path class="pose-arrowhead" d="M364 100 l-9 -5 v10 z"/></svg></div><p class="fine">Simplified start/finish illustration, not a complete model of body position, apparatus, or range of motion. Follow the exercise-specific instructions below.</p>`}
+function openExercise(id){const ex=EX_BY_ID[id];if(!ex)return;STATES.exerciseFocus=ex;updateMap();
+ const targets=(ids,role)=>`<div class="target-group"><h3>${role} · ${ids.length}</h3>${ids.length?ids.map(id=>`<button class="target-button" data-target-mid="${id}">${escapeHTML(MUSCLE_BY_ID[id].name)} ↗</button>`).join(''):'<span class="tiny">None specifically indexed</span>'}</div>`;
+ openModal(`${ex.pattern} · ${ex.equipment}` ,ex.name,`${exerciseSchematic(ex)}<div class="subhead">How to perform</div><ol class="steps"><li><strong>Setup:</strong> ${escapeHTML(ex.setup)}.</li><li><strong>Movement:</strong> ${escapeHTML(ex.movement)}.</li><li><strong>Form cue:</strong> ${escapeHTML(ex.cue)}.</li></ol><div class="note"><strong>Variation / practical note:</strong> ${escapeHTML(ex.variation)}.</div><div class="subhead">Muscles involved</div><div class="two-col-names">${targets(ex.primary,'Primary targets')}${targets(ex.secondary,'Secondary targets')}</div><p class="fine" style="margin-top:12px">Target roles describe typical emphasis for the named exercise and can change with technique, anatomy and loading. Stabilizing a joint does not necessarily imply strong hypertrophy stimulus.</p>`);
+ $$('#modal-body [data-target-mid]').forEach(b=>b.addEventListener('click',()=>{closeModal();selectMuscle(b.dataset.targetMid)}));
+}
+function downloadFile(filename,textContent,type='text/plain'){const blob=new Blob([textContent],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+function downloadTemplate(){downloadFile('muscles_atlas_training_template.csv','date,exercise,sets,reps,load,unit,rpe\n2026-10-15,barbell-bench-press,3,8,135,lb,8\n2026-10-15,back-squat,3,6,185,lb,8\n','text/csv');showToast('Training-log CSV template downloaded')}
+function parseCSV(str){let rows=[],row=[],cell='',inQuotes=false;for(let i=0;i<str.length;i++){const c=str[i];if(c==='"'){if(inQuotes&&str[i+1]==='"'){cell+='"';i++}else inQuotes=!inQuotes}else if(c===','&&!inQuotes){row.push(cell.trim());cell=''}else if((c==='\n'||c==='\r')&&!inQuotes){if(c==='\r'&&str[i+1]==='\n')i++;row.push(cell.trim());if(row.some(x=>x!==''))rows.push(row);cell='';row=[]}else cell+=c}row.push(cell.trim());if(row.some(x=>x!==''))rows.push(row);if(!rows.length)return [];const header=rows.shift().map(x=>x.toLowerCase());return rows.map(r=>Object.fromEntries(header.map((k,i)=>[k,r[i]??''])))}
+function normalizeLog(row){const label=String(row.exercise??row.exercise_id??row.exercise_name??row.name??'').trim();const ex=EX_BY_ID[label]??EXERCISES.find(e=>e.name.toLowerCase()===label.toLowerCase());if(!ex)return null;const sets=Number(row.sets??1),reps=Number(row.reps??row.repetitions??1),load=Number(row.load??row.weight??0),rpe=Number(row.rpe??0),date=String(row.date??'').slice(0,10);const unit=String(row.unit??'lb').toLowerCase();if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||!Number.isFinite(Date.parse(date))||!(sets>0&&sets<=100)||!(reps>0&&reps<=500)||!Number.isFinite(load)||load<0||load>100000||!(rpe>=0&&rpe<=10)||!['lb','lbs','kg'].includes(unit))return null;return {date,exercise:ex.id,sets,reps,load,unit:unit==='lbs'?'lb':unit,rpe};}
+async function onImportFile(e){const file=e.target.files?.[0];if(!file)return;try{
+ if(file.size>8000000)throw Error('File exceeds 8 MB');const str=await file.text();const raw=file.name.toLowerCase().endsWith('.json')?JSON.parse(str):parseCSV(str);const records=Array.isArray(raw)?raw:Array.isArray(raw.logs)?raw.logs:null;if(!records)throw Error('Use a JSON array or a CSV table');const valid=records.map(normalizeLog).filter(Boolean);if(!valid.length)throw Error('No valid rows. Check exercise IDs, dates (YYYY-MM-DD), sets and reps.');STATES.logs.push(...valid);STATES.logs=STATES.logs.slice(-20000);let localSave=true;try{localStorage.setItem('muscle_atlas_training_v1',JSON.stringify(STATES.logs))}catch(_){localSave=false}showToast(`Imported ${valid.length} / ${records.length} training rows${valid.length<records.length?' (unrecognized entries skipped)':''}${localSave?'':' — session only; please export a copy'}`);renderTraining();
+ }catch(err){showToast(`Import could not be completed: ${err.message}`,true)}finally{e.target.value=''}}
+function dayDiff(d){return Math.floor((Date.now()-Date.parse(d+'T12:00:00'))/86400000)}
+function estimateCoverage(logs){const exposure={};for(const m of MUSCLES)exposure[m.id]={primary:0,secondary:0};for(const r of logs){const ex=EX_BY_ID[r.exercise];if(!ex)continue;for(const id of ex.primary)exposure[id].primary+=r.sets;for(const id of ex.secondary)exposure[id].secondary+=r.sets}return exposure}
+function renderTraining(){const logs=STATES.logs;const in30=logs.filter(r=>dayDiff(r.date)>=0&&dayDiff(r.date)<30);const prev30=logs.filter(r=>dayDiff(r.date)>=30&&dayDiff(r.date)<60);
+ const exposures=estimateCoverage(in30);const trained=Object.entries(exposures).map(([id,v])=>({id,m:MUSCLE_BY_ID[id],score:v.primary+v.secondary*.35,...v}));const ranked=trained.filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
+ const has=logs.length>0;
+ $('#detail-content').innerHTML=`<div class="eyebrow">Personal training overlay · local data</div><h2>${has?'Training overview':'Ready for your workout history'}</h2><p class="desc">Import a workout CSV or JSON file. The atlas will link logged exercises to primary/secondary muscles, identify underrepresented areas of <em>your recorded exercise selection</em>, and prepare data for richer progress views.</p>
+ <div class="data-actions"><button class="btn active" id="import-training">↑ Import workout data</button><button class="btn" id="download-template">↓ CSV example / format</button>${has?'<button class="btn" id="export-training">↓ Export JSON</button><button class="btn faint" id="clear-training">Clear data</button>':''}</div>
+ <div class="data-kpis"><div class="kpi"><span>Imported exercise rows</span><strong>${logs.length}</strong></div><div class="kpi"><span>Sessions · last 30 d</span><strong>${new Set(in30.map(r=>r.date)).size}</strong></div><div class="kpi"><span>Mapped muscles · last 30 d</span><strong>${ranked.length}</strong></div></div>
+ ${has?`<div class="subhead">Muscle exposure proxy · past 30 days</div><p class="train-metrics">Based on sets recorded: 1 × primary-target set + 0.35 × secondary-target set. For comparing *exercise selection*, not direct physiological stimulus, strength gain, or hypertrophy.</p><div class="train-chart">${ranked.length?ranked.slice(0,18).map(({id,m,score,primary,secondary})=>`<div class="muscle-progress"><div class="progress-row"><button class="subtlebtn" data-training-mid="${id}">${escapeHTML(m.name)} ↗</button><b>${score.toFixed(1)} proxy sets</b></div><div class="progressbar"><i style="width:${Math.max(2,Math.min(100,score/ranked[0].score*100))}%"></i></div><div class="fine">${primary} primary sets · ${secondary} secondary sets</div></div>`).join(''):'<div class="empty">No logged entries in the last 30 days.</div>'}</div><div class="subhead">Recent imported sessions</div><table class="logtable"><thead><tr><th>Date</th><th>Exercise</th><th>Sets × reps</th><th>Load</th></tr></thead><tbody>${[...logs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,12).map(r=>`<tr><td>${escapeHTML(r.date)}</td><td>${escapeHTML(EX_BY_ID[r.exercise]?.name)}</td><td>${r.sets} × ${r.reps}</td><td>${r.load} ${escapeHTML(r.unit)}</td></tr>`).join('')}</tbody></table>`:`<div class="note"><strong>CSV columns:</strong> date, exercise, sets, reps, load, unit, rpe. The exercise field accepts an atlas exercise ID (e.g., <code>barbell-bench-press</code>) or exact exercise name. Each row represents the listed number of sets.<p style="margin:7px 0 0">JSON accepts the same records as an array or as <code>{"logs":[...]}</code>. All imported data stays in this browser’s local storage until you export or clear it.</p></div>`}
+ <div class="divider"></div><details class="changelog-entry"><summary>Planned integrations and important limitations</summary><div class="notes"><ul><li>Future: trend lines by muscle and exercise, load progression, estimated strength and fatigue metrics, neglected-muscle flags, training history imports.</li><li>Future population strength percentiles require comparable external reference norms and matching exercise, demographic, range-of-motion and measurement conventions; no such norms are supplied here.</li><li>Training emphasis cannot be inferred reliably from exercise labels alone. Sets and primary/secondary mappings are a simplified coverage proxy.</li><li>Aggregated muscle categories and overlapping subdivisions may duplicate anatomical representation; no double-count-free anatomical total is assumed.</li></ul></div></details>`;
+ $('#import-training').addEventListener('click',()=>$('#training-import').click());$('#download-template').addEventListener('click',downloadTemplate);
+ $('#export-training')?.addEventListener('click',()=>downloadFile('muscles_atlas_training_export.json',JSON.stringify({atlas:'Muscles Atlas',version:'1.2',logs},null,2),'application/json'));
+ $('#clear-training')?.addEventListener('click',()=>{if(confirm('Delete all locally saved Muscles Atlas training rows? This cannot be undone unless you exported a copy.')){STATES.logs=[];try{localStorage.removeItem('muscle_atlas_training_v1')}catch(_){}renderTraining();showToast('Local training logs cleared')}});
+ $$('#detail-content [data-training-mid]').forEach(b=>b.addEventListener('click',()=>selectMuscle(b.dataset.trainingMid)));
+}
+// Sidebar, tabs, map and dialog controls.
+$('#version-history').addEventListener('click',openChangelog);
+$('#muscle-count').addEventListener('click',()=>openStats('muscles'));
+$('#exercise-count').addEventListener('click',()=>openStats('exercises'));
+$('#close-modal').addEventListener('click',closeModal);
+$('#modal-root').addEventListener('click',e=>{if(e.target===$('#modal-root'))closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#modal-root').classList.contains('open'))closeModal()});
+$('#global-search').addEventListener('input',e=>{STATES.search=e.target.value;STATES.group=null;renderAll()});
+$('#clear-search').addEventListener('click',()=>{STATES.search='';$('#global-search').value='';renderAll()});
+$('#hierarchy').addEventListener('change',e=>{STATES.hierarchy=e.target.value;STATES.group=null;STATES.expanded.clear();const first=STATES.hierarchy==='region'?MUSCLE_BY_ID[STATES.selected].region:getFacet(MUSCLE_BY_ID[STATES.selected],STATES.hierarchy)[0];STATES.expanded.add(first);renderAll()});
+$('#clear-filters').addEventListener('click',()=>{STATES.hierarchy='region';STATES.group=null;STATES.search='';STATES.expanded=new Set(['Chest']);$('#global-search').value='';$('#hierarchy').value='region';renderAll()});
+$('#body-view').addEventListener('click',e=>{const b=e.target.closest('[data-view]');if(!b)return;STATES.view=b.dataset.view;updateMap()});
+$('#show-labels').addEventListener('change',e=>{STATES.labels=e.target.checked;updateMap()});
+$('#detail-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;STATES.tab=b.dataset.tab;STATES.catalogOnly=false;renderAll()});
+$('#training-import').addEventListener('change',onImportFile);
+$('#muscle-count strong').textContent=MUSCLES.length;
+$('#exercise-count strong').textContent=EXERCISES.length;
+// Enables an embedding host to inspect the public schema without mutating internal data.
+window.MusclesAtlas={version:'1.2',updated:'2026-10-15',muscleCount:MUSCLES.length,exerciseCount:EXERCISES.length,exportData:()=>({muscles:MUSCLES.map(m=>({...m,exercises:[...m.exercises]})),exercises:EXERCISES.map(e=>({...e}))})};
+renderAll();
+</script>
+<div class="atlas-family-overlay" id="atlas-family-stats-overlay" role="presentation"><section aria-labelledby="atlas-family-stats-title" aria-modal="true" class="atlas-family-dialog" role="dialog"><div class="atlas-family-modal-head"><h2 id="atlas-family-stats-title">Atlas statistics</h2></div><div class="atlas-family-close-row"><button aria-label="Close statistics" class="atlas-family-close" data-atlas-close="" type="button">×</button></div><div class="atlas-family-dialog-body"><p class="atlas-family-summary">Muscle Atlas · indexed content and bundled release resources</p><div class="atlas-family-stats" id="atlas-family-stats-grid"></div><div class="atlas-family-note" id="atlas-family-dataset-note"></div><button class="atlas-family-verify" id="atlas-family-verify" type="button">Verify Image Links</button><div aria-live="polite" class="atlas-family-result" id="atlas-family-verify-result"></div></div></section></div><div class="atlas-family-overlay" id="atlas-family-version-overlay" role="presentation"><section aria-labelledby="atlas-family-version-title" aria-modal="true" class="atlas-family-dialog" role="dialog"><div class="atlas-family-modal-head"><h2 id="atlas-family-version-title">Version history</h2></div><div class="atlas-family-close-row"><button aria-label="Close version history" class="atlas-family-close" data-atlas-close="" type="button">×</button></div><div class="atlas-family-dialog-body"><p class="atlas-family-summary">Muscle Atlas · current release v1.3 · October 16, 2026</p><details class="atlas-family-release" open=""><summary><span>v1.3</span><span>Latest</span></summary><ul><li>Standardized Atlas naming, header and Deep Time color palette.</li><li>Unified statistics, release history and image-link verification controls.</li></ul></details><details class="atlas-family-release"><summary><span>v1.2</span><span>Earlier release</span></summary><ul><li>Added major.minor versioning and version history.</li></ul></details><details class="atlas-family-release"><summary><span>v1.1</span><span>Earlier release</span></summary><ul><li>Expanded anatomy categories and exercise associations.</li></ul></details></div></section></div><script id="atlas-family-behavior">
+(()=>{
+ const meta={"key": "muscle", "size": 138352, "payload": 0, "appcode": 100533, "images": [], "stats": [["Muscles", "Live count"], ["Exercises", "Live count"]], "triggers": ["muscle-count", "exercise-count"], "shared": false, "sharedZipBytes": 0, "release": "1.8", "pageTitle": "Muscle Atlas — v1.8"};
+ window.addEventListener('load',()=>{document.title=meta.pageTitle;const id={'deep':'versionBtn','tree':'versionHistory','brain':'versionTrigger','muscle':'version-history','myth':'versionButton','emergence':'version-trigger'}[meta.key];const button=document.getElementById(id);if(button)button.setAttribute('aria-label','Open v'+meta.release+' release history');});
+ const $=(x)=>document.getElementById(x);
+ const stats=$('atlas-family-stats-overlay'), history=$('atlas-family-version-overlay');
+ let prior=null;
+ const prettyBytes=(v)=>v>=1048576?(v/1048576).toFixed(2)+' MB':(v/1024).toFixed(1)+' KB';
+ function open(box){prior=document.activeElement;box.classList.add('open');document.body.style.overflow='hidden';box.querySelector('.atlas-family-close')?.focus();}
+ function close(box){box.classList.remove('open');if(!document.querySelector('.atlas-family-overlay.open'))document.body.style.overflow='';prior?.focus?.();}
+ [stats,history].forEach(el=>{el.addEventListener('click',e=>{if(e.target===el||e.target.closest('[data-atlas-close]'))close(el)});});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){for(let el of [stats,history])if(el.classList.contains('open')){e.preventDefault();close(el);return;}}});
+ const countData=meta.stats.slice();
+ if(meta.key==='muscle'){
+  countData[0][1]=document.getElementById('muscle-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+  countData[1][1]=document.getElementById('exercise-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+ }
+ if(meta.key==='myth') countData[1][1]=document.getElementById('indexedMeta')?.textContent?.trim()||'See atlas';
+ if(meta.shared)countData.push(['Shared Taxa ZIP',prettyBytes(meta.sharedZipBytes)]);
+ const entries=[...countData,['HTML file size',prettyBytes(meta.size)],['Inline data (JSON)',meta.payload?prettyBytes(meta.payload):'See note'],['Embedded app + data',prettyBytes(meta.appcode)],['External image URLs',String(meta.images.length)]];
+ const grid=$('atlas-family-stats-grid');
+ function repaintCounts(){
+  if(meta.key==='muscle'){
+   entries[0][1]=$('muscle-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+   entries[1][1]=$('exercise-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+  }
+  if(meta.key==='tree')entries[0][1]='368 canonical';
+  if(meta.key==='myth')entries[1][1]=$('indexedMeta')?.textContent?.trim()||'See atlas';
+  grid.replaceChildren(...entries.map(([label,val])=>{let d=document.createElement('div');d.className='atlas-family-stat';let a=document.createElement('small'),b=document.createElement('strong');a.textContent=label;b.textContent=val;d.append(a,b);return d;}));
+  const note=$('atlas-family-dataset-note');
+  note.textContent=meta.shared?'Shared Taxa v1.0 (canonical, embedded for offline use). 57 unresolved scientific ambiguities remain documented; external image URLs have not been globally verified. File sizes describe this HTML release, not the whole shared dataset.':'The HTML file is self-contained for core functionality. “Embedded app + data” includes scripts and code; it is not a separately measured dataset file.';
+ }
+ function capture(id,fn){const e=$(id);if(e)e.addEventListener('click',ev=>{ev.preventDefault();ev.stopImmediatePropagation();fn()},true);}
+ meta.triggers.forEach(id=>capture(id,()=>{repaintCounts();open(stats)}));
+ const vers={'deep':'versionBtn','tree':'versionHistory','brain':'versionTrigger','muscle':'version-history','myth':'versionButton','emergence':'version-trigger'};
+ capture(vers[meta.key],()=>open(history));
+ const ver=$('atlas-family-verify'),result=$('atlas-family-verify-result');
+ ver.addEventListener('click',async()=>{
+  let urls=meta.images;
+  if(!urls.length){result.textContent='No directly encoded external image URLs were found in this HTML. Inline SVG and generated artwork do not require a network check.';return;}
+  ver.disabled=true;let good=0,bad=0;result.textContent='Checking '+urls.length+' linked image URL(s) from this browser…';
+  const test=url=>new Promise(resolve=>{
+   let img=new Image();let done=false;const fin=(ok)=>{if(done)return;done=true;img.onload=null;img.onerror=null;resolve(ok)};
+   img.onload=()=>fin(true);img.onerror=()=>fin(false);
+   img.src=url;
+   setTimeout(()=>fin(false),6500);
+  });
+  for(let i=0;i<urls.length;i+=5){const batch=await Promise.all(urls.slice(i,i+5).map(test));for(let b of batch){if(b)good++;else bad++;}result.textContent=`Checked ${good+bad}/${urls.length} · ${good} loaded · ${bad} failed or timed out`;}
+  if(meta.shared)result.textContent+=' · Other Shared Taxa links are not covered by this HTML-only check.';
+  ver.disabled=false;
+ });
+})();
+</script><div id="aw-unified-modals"><div aria-hidden="true" class="aw-modal-overlay" id="aw-index-modal"><section aria-labelledby="aw-index-heading" aria-modal="true" class="aw-modal" role="dialog"><div class="aw-modal-head"><div><div class="aw-modal-eye">Muscle Atlas</div><h2 id="aw-index-heading">Index statistics</h2></div><button aria-label="Close index statistics" class="aw-modal-x" type="button">×</button></div><div class="aw-modal-body"><p class="aw-stat-summary">Muscle and exercise records in the current atlas</p><div class="aw-stat-table" id="aw-index-rows"></div><p class="aw-stat-note">Counts refer to records indexed by this release, not worldwide scientific totals. Shared Taxa canonical inventory, source-specific profiles and current viewport counts are distinct. File sizes are approximate when calculated from the live document. External links have not been preverified.</p><button class="aw-verify" id="aw-verify-button" type="button">Verify rendered image links</button><div class="aw-check-status" id="aw-verify-state" role="status"></div></div></section></div><div aria-hidden="true" class="aw-modal-overlay" id="aw-version-modal"><section aria-labelledby="aw-version-heading" aria-modal="true" class="aw-modal" role="dialog"><div class="aw-modal-head"><div><div class="aw-modal-eye">Muscle Atlas</div><h2 id="aw-version-heading">Version history</h2></div><button aria-label="Close version history" class="aw-modal-x" type="button">×</button></div><div class="aw-modal-body"><p class="aw-stat-summary">Current release v1.8 · October 16, 2026</p><div class="aw-releases"><details class="aw-release" open><summary>v1.8<span class="aw-latest">Latest · Oct 16, 2026</span></summary><ul><li>Made header status labels naturally wrap below the title only when space requires it, at desktop, tablet, and mobile widths.</li><li>Preserved the compact header, numeric status colors, and all widget-specific content.</li></ul></details><details class="aw-release"><summary>v1.7<span class="aw-latest">Oct 16, 2026</span></summary><ul><li>Standardized release histories and tabular data to the compact Mythology v1.2 System UI / Segoe UI font, 12px rows, and tighter spacing.</li><li>Removed the header gradient/background, outer border, rounding and shadow; retained only the #263749 bottom divider to eliminate header seams.</li><li>Kept the current navy/cyan/green accent colors, launcher card gradients, interactive functionality, and preceding release history.</li></ul></details><details class="aw-release"><summary>v1.6<span class="aw-release-date">Oct 16, 2026</span></summary><ul><li>Adopted the compact System UI / Segoe UI font stack used in Mythology Atlas v1.2 for all indexed-data statistics.</li><li>Reduced statistics row text, row spacing, modal width and heading size while retaining the navy/cyan/green unified palette.</li><li>Preserved existing indexed counts, image-link verification, application functions and previous release notes.</li></ul></details><details class="aw-release"><summary>v1.5<span class="aw-release-date">Oct 16, 2026</span></summary><ul><li>Applied the compact borderless launcher-gradient header and shortened single-line subtitle.</li><li>Made status counts and release controls consistent, including shared green numeric accents.</li><li>Removed the separate statistics-popup header bar while retaining all indexed figures and prior release history.</li></ul></details><details class="aw-release"><summary>v1.4</summary><ul><li>Unified launcher-gradient header and launcher-derived subject icon.</li><li>Unified Mythology-style indexed-data statistics, consistent cyan palette and 30 px status/version controls.</li><li>Preserved existing science, source data, and interactive navigation.</li></ul></details><details class="aw-release"><summary>v1.3</summary><ul><li>Standardized Atlas naming, header and Deep Time color palette.</li><li>Unified statistics, release history and image-link verification controls.</li></ul></details><details class="aw-release"><summary>v1.2</summary><ul><li>Added major.minor versioning and version history.</li></ul></details><details class="aw-release"><summary>v1.1</summary><ul><li>Expanded anatomy categories and exercise associations.</li></ul></details></div></div></section></div></div>
+<script id="aw-unified-family-js">(()=>{
+ 'use strict';
+ const cfg={"key": "muscle", "name": "Muscle Atlas", "oldVersion": "1.3", "version": "1.8", "triggers": ["muscle-count", "exercise-count"], "versionId": "version-history", "pageTitle": "Muscle Atlas — v1.8"};
+ const $=id=>document.getElementById(id);
+ const fmt=n=>new Intl.NumberFormat('en-US').format(n);
+ const modal=$('aw-index-modal'), versionModal=$('aw-version-modal'), tbody=$('aw-index-rows');
+ let previousFocus=null;
+ function closeModal(m){m.classList.remove('aw-open');m.setAttribute('aria-hidden','true');document.body.style.overflow='';if(previousFocus?.isConnected)previousFocus.focus();previousFocus=null;}
+ function openModal(m){previousFocus=document.activeElement;m.classList.add('aw-open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';m.querySelector('.aw-modal-x')?.focus();}
+ function item(label,value,kind){const row=document.createElement('div');row.className='aw-stat-row'+(kind?' aw-'+kind:'');const a=document.createElement('span'),b=document.createElement('strong');a.textContent=label;b.textContent=value;row.append(a,b);return row;}
+ function val(id){return ($(id)?.textContent||'').trim()||'Not measured';}
+ function byteSize(o){return new TextEncoder().encode(o).length;}
+ function sizeStr(bytes){return fmt(bytes)+' bytes';}
+ function rows(){let r=[];const add=(label,value,kind)=>r.push([label,String(value),kind||'']);const section=label=>add(label,'','section');
+  if(cfg.key==='deep'){
+   add('Canonical Shared Taxa taxon concepts',368,'total');add('Original Deep Time taxon profiles',200);add('Additional Tree of Life concepts searchable',168);add('Canonical geologic intervals (Shared Taxa)',173);add('Source Deep Time interval records',172);add('Curated interval–taxon associations',580);add('Documented scientific ambiguities',57);add('Shared Taxa dataset version','v1.0');add('Calibrated time scale','ICS 2026/06');
+   add('Embedded canonical JSON (UTF-8)',sizeStr(byteSize($('sharedTaxaCanonicalSnapshot')?.textContent||'')));
+  } else if(cfg.key==='tree'){
+   add('Canonical Shared Taxa concepts',368,'total');add('Current atlas indexed taxa',val('indexTotal'));add('Canonical Shared Taxa interval records',173);add('Historical Tree source taxa',238);add('Curated interval–taxon links',580);add('Dataset version','Shared Taxa v1.0 embedded offline');add('Embedded canonical JSON (UTF-8)',sizeStr(byteSize($('sharedTaxaPayload')?.textContent||'')));
+  }else if(cfg.key==='brain'){
+   add('Anatomical regions in latest baseline',57,'total');add('Circuits and networks in baseline',16);add('Regions in current filtered view',val('visibleCount'));add('Systems in current filtered view',val('visibleSystemCount'));add('Primary browsing groupings','Brain divisions + circuits/networks');
+  }else if(cfg.key==='muscle'){
+   add('Indexed muscles',val('muscle-count').match(/[\d,]+/)?.[0]||'101','total');add('Indexed exercises',val('exercise-count').match(/[\d,]+/)?.[0]||'83');add('Anatomical model','Interactive body map');add('Exercise relationships','Primary / secondary where included');
+  }else if(cfg.key==='myth'){
+   let trs=null;try{if(typeof TRADITIONS!=='undefined')trs=TRADITIONS;}catch(e){}
+   const known=[['Greek',152],['Roman',82],['Norse',44],['Mesopotamian',31],['Hindu',54]];
+   if(trs){const all=Object.values(trs).flatMap(t=>t.data||[]);const names=Object.entries(trs).map(([k,t])=>[t.label||k,(t.data||[]).length]);names.forEach(([n,x])=>add(n,x));add('Total indexed entries',all.length,'total');add('Group tags (unique)',new Set(all.map(x=>x.group)).size);add('Story / epic tags (unique)',new Set(all.flatMap(x=>x.stories||[])).size);add('Symbol / trait tags (unique)',new Set(all.flatMap(x=>x.tags||[])).size);add('Offline SVG portraits',all.length);add('Dataset size (UTF-8 JSON)',sizeStr(byteSize(JSON.stringify(Object.fromEntries(Object.entries(trs).map(([k,t])=>[k,t.data]))))));}
+   else{known.forEach(([n,x])=>add(n,x));add('Total indexed entries',363,'total');add('Detailed tag totals','Not measured in this runtime');}
+   add('Embedded artwork photo files',0);add('Artwork search links',363);add('Live image preview loads','Not measured (session-dependent)');
+  }else if(cfg.key==='emergence'){
+   add('Consciousness hierarchy levels',6,'total');add('Phenomena in selector',7);add('Fully interactive phenomena',1);add('Other phenomena','Preview / coming soon');add('Scientific scale estimates','Approximate / definition-dependent');
+  }
+  section('Document and media');add('Current HTML document (approx.)',sizeStr(byteSize(document.documentElement.outerHTML)));add('Rendered external image elements',document.querySelectorAll('img[src^="http"]').length);return r;
+ }
+ function repaint(){tbody.replaceChildren(...rows().map(([a,b,c])=>item(a,b,c)));$('aw-verify-state').textContent='';}
+ const triggerIds=cfg.triggers;
+ // Capture document clicks before legacy source handlers, preventing two dialogs from opening.
+ document.addEventListener('click',e=>{
+  const button=e.target?.closest?.('button,[role="button"]');if(!button)return;
+  if(triggerIds.some(id=>button.id===id)){e.preventDefault();e.stopImmediatePropagation();repaint();openModal(modal);}
+  else if(button.id===cfg.versionId){e.preventDefault();e.stopImmediatePropagation();for(const [i,d] of [...versionModal.querySelectorAll('details.aw-release')].entries())d.open=i===0;openModal(versionModal);}
+ },true);
+ for(const m of [modal,versionModal]){
+  m.querySelectorAll('.aw-modal-x').forEach(x=>x.addEventListener('click',()=>closeModal(m)));
+  m.addEventListener('click',e=>{if(e.target===m)closeModal(m)});
+ }
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){for(const m of [modal,versionModal])if(m.classList.contains('aw-open')){e.stopImmediatePropagation();closeModal(m);}}},true);
+ $('aw-verify-button').addEventListener('click',async()=>{
+  const label=$('aw-verify-state'),imgs=[...document.querySelectorAll('img[src^="http"]')];
+  const urls=[...new Set(imgs.map(i=>i.src))];
+  if(!urls.length){label.textContent='No external <img> elements are currently rendered. Artwork search links, remote CSS images, and dataset references have not been tested.';return;}
+  label.textContent='Testing '+urls.length+' currently rendered image URLs (this does not validate licensing or unrendered dataset links)…';
+  let ok=0,bad=0;
+  for(const url of urls){const result=await Promise.race([new Promise(resolve=>{const img=new Image();img.onload=()=>resolve(true);img.onerror=()=>resolve(false);img.src=url;}),new Promise(resolve=>setTimeout(()=>resolve(false),6500))]);if(result)ok++;else bad++;}
+  label.textContent=`${ok} loaded; ${bad} failed/timed out. Tested ${urls.length} rendered image URL(s) only; licensing and other links were not verified.`;
+ });
+ window.addEventListener('load',()=>{document.title=cfg.pageTitle;const header=$('aw-header-family');if(header)header.dataset.awVersion=cfg.version;$(cfg.versionId)?.setAttribute('aria-label','Open v'+cfg.version+' release history');});
+})();</script>
+</body>
+</html>

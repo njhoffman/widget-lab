@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "representatives"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "representatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "display_name",
+          "linked_taxon_id",
+          "image_reference_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "linked_taxon_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "image_reference_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^stx:"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

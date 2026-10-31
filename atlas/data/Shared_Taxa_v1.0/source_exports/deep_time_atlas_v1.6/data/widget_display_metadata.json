@@ -1,0 +1,60 @@
+{
+  "rank_labels": [
+    "Earth history",
+    "Eon",
+    "Era",
+    "Period",
+    "Epoch / series",
+    "Age / stage"
+  ],
+  "release_history": [
+    {
+      "version": "1.5",
+      "date": "Oct 15, 2026",
+      "updates": [
+        "Adopted major.minor version numbers, continuing the atlas as v1.5.",
+        "Made the version and date label open a changelog with collapsible entries.",
+        "Added a concise history of changes from the previous four releases."
+      ]
+    },
+    {
+      "version": "1.4",
+      "date": "Oct 15, 2026",
+      "updates": [
+        "Expanded the taxon catalog from 100 to 200 profiles.",
+        "Tightened spacing, switched displayed ages from mya to Ma, and simplified hierarchy controls.",
+        "Moved Earth-shaping Events above the Evolutionary Lens and limited visible taxa to nine.",
+        "Merged climate and geology into a richer Overview and added illustrative continental maps."
+      ]
+    },
+    {
+      "version": "1.3",
+      "date": "Oct 14, 2026",
+      "updates": [
+        "Expanded the catalog from 50 to 100 taxon profiles.",
+        "Integrated new taxa into geologic intervals, search, and detail views.",
+        "Added version and update-date information beside the atlas title."
+      ]
+    },
+    {
+      "version": "1.2",
+      "date": "Oct 14, 2026",
+      "updates": [
+        "Replaced the single duration chart with stacked timelines showing selected intervals and dimmed siblings.",
+        "Simplified the time navigator, titles, and inline interval duration; removed redundant subdivision cards.",
+        "Refined taxon labels and expanded the catalog to 50 profiles."
+      ]
+    },
+    {
+      "version": "1.1",
+      "date": "Oct 14, 2026",
+      "updates": [
+        "Introduced hierarchical exploration of geologic eons, eras, periods, epochs, and selected stages.",
+        "Added interval overviews spanning etymology, climate, continents, geology, and life.",
+        "Introduced clickable taxon profiles with simplified cladograms, traits, examples, and illustrations."
+      ]
+    }
+  ],
+  "base_map_palette": "Excluded from biological dataset: UI-only styling colors; unchanged in original HTML",
+  "profile_ranking_and_filters": "The existing widget retains its UI logic; taxon popularity heuristics are not taxonomic facts."
+}

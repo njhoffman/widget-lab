@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "taxon_id",
+          "source_age_assertions",
+          "canonical_crown_origin_ma"
+        ],
+        "properties": {
+          "taxon_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "source_age_assertions": {
+            "type": "array",
+            "minItems": 1
+          },
+          "canonical_crown_origin_ma": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

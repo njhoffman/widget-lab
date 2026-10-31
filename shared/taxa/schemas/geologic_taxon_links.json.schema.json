@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "curated_direct_associations",
+    "ui_inferred_age_filter_matches"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "curated_direct_associations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "interval_id",
+          "taxon_id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "interval_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "taxon_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "ui_inferred_age_filter_matches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "interval_id",
+          "taxon_id",
+          "scientific_evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "interval_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "taxon_id": {
+            "type": "string",
+            "pattern": "^stx:"
+          },
+          "scientific_evidence": {
+            "const": false
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

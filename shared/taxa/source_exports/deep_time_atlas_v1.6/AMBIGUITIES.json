@@ -1,0 +1,84 @@
+{
+  "scope": "Preservation-first, no cross-widget reconciliation yet",
+  "findings": [
+    {
+      "id": "A01",
+      "severity": "high",
+      "area": "phylogeny",
+      "description": "Taxon cladograms are human-readable illustrative strings, not linked taxonomic graph IDs. Many display informal groups and example names not backed by explicit taxon records. Raw strings and line arrays are preserved; no parent_taxon_id has been invented.",
+      "resolution": "Reconcile cladogram claims with Shared Taxa canonical identifiers and current phylogenetic sources."
+    },
+    {
+      "id": "A02",
+      "severity": "high",
+      "area": "interval-taxon associations",
+      "description": "The widget contains 580 direct interval-to-taxon links and a separate age-filter predicate producing 8916 computed UI matches. The latter must NOT be treated as authoritative ranges, validated evolutionary first appearances, fossil observations or equivalent curated associations.",
+      "resolution": "Keep curated links and inferred matches separate until scholarly range reconciliation."
+    },
+    {
+      "id": "A03",
+      "severity": "high",
+      "area": "data gaps",
+      "description": "The source contains no numeric organism population estimates and no taxonomic subdivision counts. The taxon export contains explicit nulls rather than fabricated values. Geologic subdivision_count is computed from actual child IDs.",
+      "resolution": "Add sourced fields during Shared Taxa enrichment, not at extraction."
+    },
+    {
+      "id": "A04",
+      "severity": "medium",
+      "area": "lineage dates",
+      "description": "Only 100 taxon profiles supply numeric first/last fields; these are approximate widget ranges, not precise phylogenetic origination or extinction dates. Others remain null.",
+      "resolution": "Normalize later with calibrated first fossil records and qualified uncertainty."
+    },
+    {
+      "id": "A05",
+      "severity": "medium",
+      "area": "extinction labels",
+      "description": "Example status strings are heterogeneous: some say extinct, living, historical, fossil, or refer to relatives. The status of a sampled example does not safely establish extinction of the parent group. Raw labels are preserved, taxon-level status is null pending review.",
+      "resolution": "Determine extinction at appropriate phylogenetic level and separate example from lineage status."
+    },
+    {
+      "id": "A06",
+      "severity": "medium",
+      "area": "citations",
+      "description": "The widget cites the ICS 2026/06 chronostratigraphic chart globally and identifies artwork as illustrative AI-generated paleoart. No source citations or source URLs are attached to individual taxa, example dates, climatic statements, or maps.",
+      "resolution": "Add verifiable per-record bibliographic references in canonical dataset."
+    },
+    {
+      "id": "A07",
+      "severity": "medium",
+      "area": "paleogeography",
+      "description": "The 7 map SVG shape groups are hand-drawn approximate visualization presets selected by midpoint-age thresholds, not time-resolved georeferenced reconstructions.",
+      "resolution": "Replace with age-matched published reconstructions with license and scholarly citation."
+    },
+    {
+      "id": "A08",
+      "severity": "medium",
+      "area": "climate and atmosphere",
+      "description": "Some environmental text is inherited from broader parent intervals. Atmosphere and paleogeographic time slices are selected by hard-coded age thresholds. The exported interval fields and separate source_logic.json preserve this distinction.",
+      "resolution": "Retain provenance on inherited claims; source calibrated proxy data when available."
+    },
+    {
+      "id": "A09",
+      "severity": "low",
+      "area": "artwork",
+      "description": "23 unique embedded generated images are stored losslessly as extracted image files and referenced by stable keys. Illustrations are not verified specimen images. Multiple example cards reuse the same key; some examples have emoji only.",
+      "resolution": "Cross-link imagery to actual taxa, credits, and licenses before canonical reuse."
+    },
+    {
+      "id": "A10",
+      "severity": "low",
+      "area": "nomenclature",
+      "description": "Ranks mix formal Linnaean units, clades, assemblages and historical/informal grades; names may be polyphyletic, deprecated, or broadly defined. The original classification strings are retained verbatim.",
+      "resolution": "Choose accepted definitions and preserve synonyms and editorial notes."
+    }
+  ],
+  "validation_summary": {
+    "geologic_parent_consistency": true,
+    "source_interval_taxon_ids_all_present": true,
+    "image_references_resolved": true,
+    "geologic_intervals": 172,
+    "taxa": 200,
+    "images": 23,
+    "examples": 400
+  }
+}

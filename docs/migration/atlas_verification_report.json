@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "imported_files_checked": 1321,
+  "artwork_records_checked": 543,
+  "versions": [
+    {
+      "file": "widgets/Tree_of_Life_Atlas_v1.14.html",
+      "title": "Tree of Life Atlas \u2014 v1.14",
+      "catalog_version": "v1.14",
+      "matches_v1_20_checksum": true
+    },
+    {
+      "file": "widgets/Deep_Time_Atlas_v1.18.html",
+      "title": "Deep Time Atlas \u2014 v1.18",
+      "catalog_version": "v1.18",
+      "matches_v1_20_checksum": true
+    },
+    {
+      "file": "widgets/Brain_Atlas_v1.21.html",
+      "title": "Brain Atlas \u2014 v1.21",
+      "catalog_version": "v1.21",
+      "matches_v1_20_checksum": true
+    },
+    {
+      "file": "widgets/Emergence_Atlas_v1.10.html",
+      "title": "Emergence Atlas \u2014 v1.10",
+      "catalog_version": "v1.10",
+      "matches_v1_20_checksum": true
+    },
+    {
+      "file": "widgets/Mythology_Atlas_v1.13.html",
+      "title": "Mythology Atlas \u2014 v1.13",
+      "catalog_version": "v1.13",
+      "matches_v1_20_checksum": true
+    },
+    {
+      "file": "widgets/Muscle_Atlas_v1.8.html",
+      "title": "Muscle Atlas \u2014 v1.8",
+      "catalog_version": "v1.8",
+      "matches_v1_20_checksum": true
+    },
+    {
+      "file": "widgets/Widget_Launcher_v1.14.html",
+      "title": "Atlas Widgets \u2014 Widget Launcher v1.14",
+      "catalog_version": "v1.14",
+      "matches_v1_20_checksum": false
+    }
+  ],
+  "javascript_syntax": {
+    "status": "pass",
+    "html_files": 14,
+    "scripts": 39
+  },
+  "errors": [],
+  "limitations": [
+    "No interactive browser, IndexedDB, folder-picker, or offline persistence testing.",
+    "Checksums and syntax do not certify scientific accuracy or artwork approval.",
+    "Distribution download ZIPs remain in incoming; original dashboard download links are unavailable."
+  ]
+}

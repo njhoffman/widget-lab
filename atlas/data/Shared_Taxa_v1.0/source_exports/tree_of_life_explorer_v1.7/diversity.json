@@ -1,0 +1,465 @@
+{
+  "_metadata": {
+    "originating_widget": "Tree of Life Explorer",
+    "originating_widget_file": "tree_of_life_explorer.html",
+    "originating_widget_version": "1.7",
+    "pre_export_widget_version": "1.6",
+    "source_date": "2026-10-15",
+    "export_date": "2026-10-15",
+    "export_type": "unreconciled source snapshot",
+    "source_html_sha256": "561087777ad88950fa1981e9f0b81f1a2a8232181b75fbf73e3811f2d21709b7",
+    "source_pre_export_sha256": "da359aa023aeeaa4e3769c74f2548920603307e58b9921123511e092d82d8a21"
+  },
+  "coverage_note": "Raw reference estimates, usually extant-only or extant-focused; exact figures can differ across taxonomic systems; do not add extinct counts.",
+  "worldwide_subdivision_count_references": [
+    {
+      "taxon_id": "Life",
+      "estimates_by_rank": {
+        "domain": 3,
+        "kingdom": 7,
+        "phylum": "≥60",
+        "subphylum": "≥41",
+        "class": "≥187",
+        "subclass": "≥118",
+        "order": "≥895",
+        "family": "≥7.5k",
+        "genus": "≥58k",
+        "species": ">2m"
+      }
+    },
+    {
+      "taxon_id": "Eukaryota",
+      "estimates_by_rank": {
+        "kingdom": 5,
+        "phylum": "≥60",
+        "subphylum": "≥41",
+        "class": "≥187",
+        "subclass": "≥118",
+        "order": "≥895",
+        "family": "≥7.5k",
+        "genus": "≥58k",
+        "species": ">2m"
+      }
+    },
+    {
+      "taxon_id": "Opisthokonta",
+      "estimates_by_rank": {
+        "kingdom": 2,
+        "phylum": "≥53",
+        "subphylum": "≥32",
+        "class": "≥145",
+        "subclass": "≥87",
+        "order": "≥682",
+        "family": "≥6.5k",
+        "species": ">1.6m"
+      }
+    },
+    {
+      "taxon_id": "Animalia",
+      "estimates_by_rank": {
+        "phylum": 34,
+        "subphylum": 21,
+        "class": 107,
+        "subclass": 54,
+        "order": 521,
+        "family": 5956,
+        "genus": 51892,
+        "species": ">1.5m"
+      }
+    },
+    {
+      "taxon_id": "Plantae",
+      "estimates_by_rank": {
+        "phylum": 7,
+        "subphylum": 9,
+        "class": 42,
+        "subclass": 31,
+        "order": 213,
+        "family": 941,
+        "genus": 6160,
+        "species": "≈400k"
+      }
+    },
+    {
+      "taxon_id": "Fungi",
+      "estimates_by_rank": {
+        "phylum": 19,
+        "subphylum": "≥11",
+        "class": "≥38",
+        "subclass": "≥33",
+        "order": "≥161",
+        "family": "≥628",
+        "genus": "≥784",
+        "species": "≈170k"
+      }
+    },
+    {
+      "taxon_id": "Angiospermae",
+      "estimates_by_rank": {
+        "order": 64,
+        "family": 416,
+        "species": "≈300k"
+      }
+    },
+    {
+      "taxon_id": "Mammalia",
+      "estimates_by_rank": {
+        "order": 27,
+        "family": 169,
+        "genus": 1363,
+        "species": 6791
+      }
+    },
+    {
+      "taxon_id": "Aves",
+      "estimates_by_rank": {
+        "order": 46,
+        "family": 252,
+        "genus": 2376,
+        "species": 11131
+      }
+    },
+    {
+      "taxon_id": "Insecta",
+      "estimates_by_rank": {
+        "species": ">1m"
+      }
+    },
+    {
+      "taxon_id": "Arthropoda",
+      "estimates_by_rank": {
+        "species": ">1.1m"
+      }
+    },
+    {
+      "taxon_id": "Chordata",
+      "estimates_by_rank": {
+        "species": ">65k"
+      }
+    },
+    {
+      "taxon_id": "Vertebrata",
+      "estimates_by_rank": {
+        "class": 14,
+        "order": 141,
+        "family": 1067,
+        "genus": 9984,
+        "species": ">60k"
+      }
+    },
+    {
+      "taxon_id": "Cnidaria",
+      "estimates_by_rank": {
+        "species": "≈11k"
+      }
+    },
+    {
+      "taxon_id": "Porifera",
+      "estimates_by_rank": {
+        "species": "≈9k"
+      }
+    },
+    {
+      "taxon_id": "Mollusca",
+      "estimates_by_rank": {
+        "species": "≈85k"
+      }
+    },
+    {
+      "taxon_id": "Echinodermata",
+      "estimates_by_rank": {
+        "species": "≈7k"
+      }
+    },
+    {
+      "taxon_id": "Ctenophora",
+      "estimates_by_rank": {
+        "species": "≈200"
+      }
+    },
+    {
+      "taxon_id": "Nematoda",
+      "estimates_by_rank": {
+        "species": ">25k"
+      }
+    },
+    {
+      "taxon_id": "Annelida",
+      "estimates_by_rank": {
+        "species": "≈20k"
+      }
+    },
+    {
+      "taxon_id": "Amphibia",
+      "estimates_by_rank": {
+        "species": ">8k"
+      }
+    },
+    {
+      "taxon_id": "Crocodylia",
+      "estimates_by_rank": {
+        "species": "≈27"
+      }
+    },
+    {
+      "taxon_id": "Testudines",
+      "estimates_by_rank": {
+        "species": "≈360"
+      }
+    },
+    {
+      "taxon_id": "Squamata",
+      "estimates_by_rank": {
+        "species": ">11k"
+      }
+    },
+    {
+      "taxon_id": "Lepidosauria",
+      "estimates_by_rank": {
+        "species": "≈12k"
+      }
+    },
+    {
+      "taxon_id": "Primates",
+      "estimates_by_rank": {
+        "species": "≈500"
+      }
+    },
+    {
+      "taxon_id": "Carnivora",
+      "estimates_by_rank": {
+        "species": "≈300"
+      }
+    },
+    {
+      "taxon_id": "Felidae",
+      "estimates_by_rank": {
+        "species": "≈40"
+      }
+    },
+    {
+      "taxon_id": "Hominidae",
+      "estimates_by_rank": {
+        "species": 8
+      }
+    },
+    {
+      "taxon_id": "Panthera",
+      "estimates_by_rank": {
+        "species": 5
+      }
+    },
+    {
+      "taxon_id": "Proboscidea",
+      "estimates_by_rank": {
+        "species": 3
+      }
+    },
+    {
+      "taxon_id": "Monotremata",
+      "estimates_by_rank": {
+        "species": 5
+      }
+    },
+    {
+      "taxon_id": "Marsupialia",
+      "estimates_by_rank": {
+        "species": "≈330"
+      }
+    },
+    {
+      "taxon_id": "Placentalia",
+      "estimates_by_rank": {
+        "species": ">6k"
+      }
+    },
+    {
+      "taxon_id": "Agaricus",
+      "estimates_by_rank": {
+        "species": ">400"
+      }
+    },
+    {
+      "taxon_id": "Pinus",
+      "estimates_by_rank": {
+        "species": "≈130"
+      }
+    },
+    {
+      "taxon_id": "Rosa",
+      "estimates_by_rank": {
+        "species": ">300"
+      }
+    },
+    {
+      "taxon_id": "Dinosauria",
+      "estimates_by_rank": {
+        "species": "≈11k living birds"
+      }
+    },
+    {
+      "taxon_id": "Theropoda",
+      "estimates_by_rank": {
+        "species": "≈11k living birds"
+      }
+    },
+    {
+      "taxon_id": "Chytridiomycota",
+      "estimates_by_rank": {
+        "species": "≈1k"
+      }
+    },
+    {
+      "taxon_id": "Poaceae",
+      "estimates_by_rank": {
+        "species": "≈12k"
+      }
+    },
+    {
+      "taxon_id": "Asteraceae",
+      "estimates_by_rank": {
+        "species": "≈25k–32k"
+      }
+    },
+    {
+      "taxon_id": "Liliopsida",
+      "estimates_by_rank": {
+        "species": "≈60k"
+      }
+    },
+    {
+      "taxon_id": "Cichlidae",
+      "estimates_by_rank": {
+        "species": ">1.7k"
+      }
+    },
+    {
+      "taxon_id": "Rodentia",
+      "estimates_by_rank": {
+        "species": ">2.5k"
+      }
+    },
+    {
+      "taxon_id": "Muridae",
+      "estimates_by_rank": {
+        "species": ">700"
+      }
+    },
+    {
+      "taxon_id": "Holothuroidea",
+      "estimates_by_rank": {
+        "species": "≈1.7k"
+      }
+    }
+  ],
+  "population_estimates": [
+    {
+      "taxon_or_organism_name": "Homo sapiens",
+      "estimate": ">8 billion individuals",
+      "scope": "Worldwide, 2026 approximate",
+      "note": "Population changes continuously; this is a broad order-of-magnitude figure, not a live census.",
+      "source": "UN World Population Prospects",
+      "href": "https://population.un.org/wpp/",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Panthera tigris",
+      "estimate": "≈5,574 wild individuals",
+      "scope": "Global wild population, 2023",
+      "note": "A Global Tiger Forum estimate reported by WWF; excludes animals in captivity.",
+      "source": "WWF / Global Tiger Forum",
+      "href": "https://www.worldwildlife.org/stories/new-tiger-population-estimate-of-5-574-wild-tigers-announced-by-global-tiger-forum",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Loxodonta cyclotis",
+      "estimate": "≈135,690 surveyed individuals",
+      "scope": "African forest elephants, 2016–2022 surveys",
+      "note": "95% confidence interval: 99,343–172,297; a further 7,728–10,990 may occupy unsurveyed regions. Published in 2025.",
+      "source": "IUCN African Forest Elephant Status Report",
+      "href": "https://iucn.org/press-release/202511/dna-methods-help-uncover-further-african-forest-elephants-species-remains",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Balaenoptera musculus",
+      "estimate": "≈10,000–25,000 individuals",
+      "scope": "Global blue whale population",
+      "note": "Broad conservation estimate; no complete worldwide animal-by-animal census.",
+      "source": "WWF blue whale facts",
+      "href": "https://www.worldwildlife.org/species/blue-whale",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Dromaius novaehollandiae",
+      "estimate": "≈630,000–725,000 mature birds",
+      "scope": "Global mature population, 2018 assessment",
+      "note": "A mature-individual estimate—not all emus including juveniles.",
+      "source": "BirdLife / IUCN Red List",
+      "href": "https://doi.org/10.2305/IUCN.UK.2018-2.RLTS.T22678117A131902466.en",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Corvus corax",
+      "estimate": "≈21–26.4 million mature birds",
+      "scope": "Global, preliminary BirdLife estimate",
+      "note": "Preliminary adult-population estimate; accuracy varies across regions.",
+      "source": "BirdLife DataZone",
+      "href": "https://datazone.birdlife.org/species/factsheet/common-raven-corvus-corax",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Ornithorhynchus anatinus",
+      "estimate": "≈30,000–300,000 individuals",
+      "scope": "Australia, highly uncertain 2016 assessment",
+      "note": "This large range reflects limited survey coverage and strong uncertainty, not short-term annual variation.",
+      "source": "IUCN-based platypus abundance review",
+      "href": "https://platypus.asn.au/population-size-and-density/",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Ambystoma mexicanum",
+      "estimate": "≈50–1,000 wild individuals",
+      "scope": "Xochimilco wild population, IUCN-based estimate",
+      "note": "Excludes the much larger captive and laboratory population.",
+      "source": "Conservation International",
+      "href": "https://www.conservation.org/learning/axolotl-conservation",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Danaus plexippus",
+      "estimate": "≈60–90 million overwintering butterflies",
+      "scope": "Eastern North American migrants, winter 2025–26",
+      "note": "Rough conversion of 2.93 hectares occupied in Mexico at ≈20–30 million butterflies per hectare. Not a census of all monarchs globally; seasonal numbers vary.",
+      "source": "Monarch Joint Venture / winter survey",
+      "href": "https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Apis mellifera",
+      "estimate": "≈280 million wild + 102 million managed colonies",
+      "scope": "Worldwide colony estimate, 2021 baseline / 2023 study",
+      "note": "Colonies, NOT individual bees. Wild-colony estimate is tentative. Individuals per colony change seasonally.",
+      "source": "Visick & Ratnieks (2023)",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10568204/",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Carcharodon carcharias",
+      "estimate": "≈5,460 sharks in eastern Australasia",
+      "scope": "Regional population model; no reliable global total",
+      "note": "Regional total (possible interval: 2,909–12,802) for eastern Australian and New Zealand white sharks. Must not be read as a worldwide count.",
+      "source": "CSIRO white shark population",
+      "href": "https://www.csiro.au/en/research/animals/marine-life/sharks/can-white-shark-numbers-be-estimated",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    },
+    {
+      "taxon_or_organism_name": "Prochlorococcus marinus",
+      "estimate": "Species-specific count unknown",
+      "scope": "Prochlorococcus genus ≈2.9 × 10²⁷ marine cells",
+      "note": "Model estimate covers the genus across ocean regions, not exclusively the named species P. marinus.",
+      "source": "Flombaum et al. (2013)",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3683724/",
+      "unit_semantics": "Preserve estimate text; may refer to colonies, mature animals, regional subset or genus abundance rather than global individuals."
+    }
+  ]
+}

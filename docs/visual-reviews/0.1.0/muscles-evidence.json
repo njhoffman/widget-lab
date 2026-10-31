@@ -1,0 +1,174 @@
+{
+  "widget": "muscles",
+  "widget_version": "1.8",
+  "repository_version": "0.1.0",
+  "captured_at": "2026-10-31T03:11:51.580149+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Muscle_Atlas_v1.8.html",
+  "source_sha256": "01f5ae12e7fbb7f59036ae8bba93947d7b5101237d9918c9eaf087b9fc0ca2a4",
+  "actual_sha256": "6d7eda459a9eff8b7e9e4ec821e5ae9072571ee11d9bc568d4d10f1ec0570982",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Initial default view in clean browser profile",
+  "goals": [
+    {
+      "path": "atlas/images/audit_muscle_concept.png",
+      "sha256": "34a280385eaf879396b6da7daa2360d69bb4033d6537df54d383df0c66906de6",
+      "crop": null,
+      "approval": "proposed concept, not approved"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T069",
+      "title": "Preserve existing dataset and interactions while upgrading visual shell.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S015",
+      "title": "Clear selected muscle anatomy and exercise context.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T068",
+      "title": "Translate common illustrated-header and story-card language to this widget.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "T070",
+      "title": "Capture new goal reference and actual screenshot at same viewport.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I010",
+      "title": "Improve anatomy-stage clarity and visual depth.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "S008",
+      "title": "Muscle region render and compact exercise panel.",
+      "priority": "p2",
+      "status": "proposed"
+    }
+  ],
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "fde562197fe6fe7d3f4a18886f7f979d384e029be7e895a0c49f1c41dad4aadc"
+}

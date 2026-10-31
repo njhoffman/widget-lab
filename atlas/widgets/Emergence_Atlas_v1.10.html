@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#090d16" name="theme-color"/><title>Emergence Atlas — v1.10</title>
+<style>
+:root{color-scheme:dark;--bg:#090d16;--panel:#111c30;--card:#19283e;--edge:#31435b;--text:#e2e8f0;--muted:#9eb2c9;--blue:#38bdf8;--teal:#2dd4bf;--purple:#b6a0ff;--amber:#fbbf24;--shadow:0 18px 55px #03081250}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 1000px 650px at 10% -15%,#172e52 0,transparent 66%),radial-gradient(ellipse 950px 640px at 102% 34%,#1c163f 0,transparent 67%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.5}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}button:disabled{cursor:not-allowed}a{color:#87dfff;text-decoration:none}a:hover{text-decoration:underline}p{margin-top:0}.shell{max-width:1210px;margin:0 auto;padding:27px 22px 55px}.eyebrow{color:var(--teal);font-size:10px;letter-spacing:.17em;font-weight:850;text-transform:uppercase}.hero{display:grid;grid-template-columns:1fr minmax(210px,275px);gap:20px;align-items:center;margin-bottom:22px}.hero h1{font-size:clamp(31px,4.2vw,48px);letter-spacing:-.045em;line-height:1.1;margin:8px 0 12px}.hero h1 span{color:var(--blue)}.lead{color:#b7c8db;font-size:14px;max-width:750px;margin:0}.hero-stat{padding:17px 20px;border:1px solid #345272;border-radius:14px;background:linear-gradient(130deg,#182b45,#171b34);min-height:124px}.hero-stat small{display:block;color:#9ac3e4;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.hero-stat b{font-size:31px;line-height:1.2;display:block;margin:8px 0 4px;letter-spacing:-.05em}.hero-stat em{font-style:normal;color:#bdcce2;font-size:11px}.panel{background:linear-gradient(160deg,#172439,#101a2a);border:1px solid #2e4057;border-radius:15px;padding:20px;margin-bottom:14px;box-shadow:var(--shadow)}.sectiontitle{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin:0 0 12px}.sectiontitle h2{font-size:13px;letter-spacing:.03em;margin:0}.muted{font-size:11px;color:var(--muted)}.phenomena{display:flex;flex-wrap:wrap;gap:9px}.phenom{border:1px solid #34485e;background:#111c2d;color:#c5d5e9;border-radius:11px;min-height:54px;display:flex;align-items:center;gap:10px;text-align:left;padding:9px 13px;font-size:12px;font-weight:800}.phenom .glyph{font-size:19px;color:#a9dffe}.phenom.current{border-color:#39bafa;background:linear-gradient(120deg,#153b58,#211e45);color:white;box-shadow:inset 0 2px #38bdf8}.phenom:disabled{opacity:.39;border-style:dashed;filter:saturate(.3)}.soon{font-size:9px;color:#9daec3;font-weight:700;display:block}.pill{display:inline-block;padding:5px 9px;border-radius:100px;background:#17304a;border:1px solid #365675;color:#abdcf8;font-size:10px;font-weight:800;white-space:nowrap}.tabs{display:grid;grid-template-columns:repeat(6,minmax(136px,1fr));gap:8px;min-width:825px}.tabs-scroll{overflow-x:auto;scrollbar-color:#445a74 transparent;scrollbar-width:thin;padding:1px 0 12px}.tab{border:1px solid #33465e;border-radius:11px;padding:13px;background:#101c2d;color:#d0d9e6;min-height:77px;text-align:left;transition:background .17s,border-color .17s,transform .17s}.tab:hover{border-color:#60b4e5;transform:translateY(-2px)}.tab[aria-selected=true]{color:white;border-color:#38bdf8;background:linear-gradient(140deg,#173b56,#252448);box-shadow:inset 0 2px #38bdf8}.tab small{display:block;color:#91a8c5;font-size:10px;letter-spacing:.14em;font-weight:800}.tab b{display:block;margin-top:5px;font-size:13px}.stagehead{display:flex;align-items:start;justify-content:space-between;gap:14px;flex-wrap:wrap}.stagehead h2{font-size:clamp(27px,3.2vw,36px);letter-spacing:-.035em;line-height:1.14;margin:6px 0 7px}.stagehead p{font-size:13px;color:#c0d1e4;max-width:740px;margin:0}.level-tag{padding:7px 11px;border:1px solid #44698b;border-radius:10px;background:#143049;color:#aeeaff;font-size:11px;font-weight:850}.emerge-strip{margin-top:17px;padding:13px 16px;background:linear-gradient(110deg,#152f3b,#1c2440);border:1px solid #345b70;border-left:3px solid var(--teal);border-radius:0 10px 10px 0;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.emerge-strip .label{font-size:10px;color:#80ead7;text-transform:uppercase;letter-spacing:.1em;font-weight:850}.emerge-strip strong{font-size:14px;color:#e8fbff}.scale-box{margin-top:21px;border:1px solid #31445f;border-radius:13px;background:#0b1728;padding:16px}.scaletop{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:12px;flex-wrap:wrap}.scaletop h3{font-size:15px;margin:0;color:#e2f5ff}.scaletop span{font-size:10px;color:#9ab0c5}.foundation{text-align:center;padding:23px 12px 17px;max-width:550px;margin:auto}.foundation .cell{width:72px;height:72px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#48cfff,#23568b 55%,#1b315d);box-shadow:0 0 0 9px #2aaefa14,0 0 27px #1ba4e72b;margin:0 auto 22px;position:relative}.foundation .cell:before,.foundation .cell:after{content:'';position:absolute;background:#388bd0;border-radius:6px;width:45px;height:4px;left:-38px;top:30px;transform:rotate(-22deg)}.foundation .cell:after{left:66px;width:70px;transform:rotate(19deg)}.foundation b{font-size:17px;display:block}.foundation p{font-size:12px;color:#9db4c9;margin:7px 0 0}.syn-diagram{display:flex;gap:0;align-items:center;justify-content:center;padding:27px 8px 15px;min-height:132px}.soma{width:71px;height:71px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#155b84,#203e7c);border:2px solid #72cefa;font-size:23px;box-shadow:0 0 0 7px #38bdf812}.soma:last-child{background:linear-gradient(130deg,#5a368d,#333d81);border-color:#bd9fff}.synbridge{height:3px;max-width:160px;min-width:60px;width:25%;background:linear-gradient(90deg,#38bdf8,#906fee);position:relative}.synbridge:after{content:'◆';color:#f9d173;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:23px;text-shadow:0 0 14px #fbbf24}.synlabels{display:flex;justify-content:space-between;gap:20px;max-width:390px;margin:0 auto 13px;color:#b7d0e6;font-size:11px;font-weight:700}.singlestat{border:1px solid #315675;background:#172d46;border-radius:10px;padding:13px 18px;display:flex;gap:12px;justify-content:center;align-items:baseline}.singlestat b{font-size:26px;color:white}.singlestat span{font-size:12px;color:#b7cee5}.scale-foot{border:1px solid #405274;background:#162339;border-radius:10px;padding:12px;margin-top:14px;font-size:11px;color:#bbcee2}.scale-foot strong{color:#9fdbff}.scale-foot p{margin:5px 0 0}.scen-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.scen{background:#142238;border:1px solid #324660;border-radius:11px;padding:14px;min-width:0}.scen h4{font-size:13px;margin:0 0 3px}.scen .sub{font-size:11px;color:#96aac0;margin-bottom:15px;min-height:33px}.statlabel{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#a1bdd5;font-weight:800}.bigstat{font-size:clamp(16px,1.9vw,24px);font-weight:850;letter-spacing:-.035em;color:#f2fbff;margin:3px 0 5px;overflow-wrap:anywhere}.bar{height:9px;border-radius:99px;background:#273b54;margin:8px 0 14px;overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#0ea5e9,#a78bfa)}.substat{margin-top:12px;padding-top:11px;border-top:1px solid #33445b}.substat strong{display:block;font-size:13px;overflow-wrap:anywhere}.tiny{font-size:10px;color:#9eb2c9}.region-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.regioncard{background:#14243a;border:1px solid #344860;padding:15px;border-radius:12px;min-width:0}.region-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.region-title h4{font-size:15px;margin:0}.region-title .chip{font-size:9px;color:#94bed3;padding:3px 6px;border:1px solid #3c566c;border-radius:6px}.regiondata{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:9px}.regiondata div{padding:9px;background:#0e1a2b;border-radius:8px;border:1px solid #2c4058;min-width:0}.regiondata b{font-size:14px;display:block;color:#eefaff;overflow-wrap:anywhere}.regiondata small{font-size:10px;color:#95afc8;display:block;line-height:1.35}.regioncard p{font-size:10px;color:#a5b8ce;margin:10px 0 0}.legend{display:flex;gap:8px;flex-wrap:wrap}.legend i{border-radius:100px;border:1px solid #3a4e69;padding:4px 8px;font-style:normal;font-size:10px;color:#afc4da}.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.ladderitem{border:1px solid #3b506a;border-radius:10px;padding:14px 11px;background:#14243a;position:relative}.ladderitem:not(:last-child):after{content:'→';position:absolute;right:-12px;top:40%;font-size:19px;z-index:2;color:#87dffc}.ladderitem small{display:block;font-size:9px;color:#97b4ca;text-transform:uppercase;letter-spacing:.07em}.ladderitem b{font-size:14px;display:block;margin:6px 0;color:#ebfaff}.ladderitem p{font-size:10px;margin:0;color:#96aec1}.readout{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.readout>div{border-radius:11px;border:1px solid #354a64;background:#14233b;padding:12px}.readout strong{font-size:21px;display:block}.readout span{font-size:10px;color:#a0b9d3}.controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:17px;flex-wrap:wrap}.btn{border:1px solid #395674;border-radius:9px;color:#d4ebf9;background:#162b43;padding:8px 13px;font-weight:800;font-size:11px}.btn:not(:disabled):hover{border-color:#38bdf8;background:#21425d}.btn:disabled{opacity:.35}.btn.primary{background:#075985;border-color:#167aac;color:white}.counter{color:#98aec6;font-size:11px}.accordion-head{font-size:14px;margin:21px 0 9px}.acc{border:1px solid #334861;background:#111e30;border-radius:10px;margin-top:7px;overflow:hidden}.acc summary{list-style:none;cursor:pointer;padding:12px 15px;font-size:12px;font-weight:800;display:flex;justify-content:space-between;align-items:center;gap:10px}.acc summary::-webkit-details-marker{display:none}.acc summary span{color:#8eb6d4;font-size:16px}.acc[open]{background:#18293e;border-color:#486883}.acc[open] summary{color:#9fddff}.acc .accbody{border-top:1px solid #30465e;padding:14px 16px;font-size:13px;color:#c0d0e1}.acc .accbody p{margin:0 0 10px}.acc .accbody p:last-child{margin-bottom:0}.acc .accbody strong{color:#eaf8ff}.acc .accbody em{color:#d8c5ff}.acc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.acc-grid>div{border:1px solid #334962;border-radius:9px;padding:11px;background:#112035}.acc-grid h4{margin:0 0 6px;font-size:12px;color:#cbb9ff}.acc-grid p{font-size:11px}.sources{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sources a{display:block;border-radius:9px;padding:10px;border:1px solid #35516b;background:#102337;font-size:11px}.sources a small{display:block;font-size:10px;color:#8ea9c2}.labbox{padding-top:19px}.lab-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:15px}.lab-head h2{font-size:23px;letter-spacing:-.025em;margin:4px 0}.lab-head p{font-size:12px;color:#a8c0d6;margin:0;max-width:800px}.choices{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}.choice{border:1px solid #39516c;border-radius:9px;background:#0e1e32;color:#c4d6e8;font-size:11px;font-weight:750;padding:9px 12px}.choice[aria-pressed=true]{background:#164063;color:white;border-color:#38bdf8}.lab-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:12px}.lab-pane{border-radius:12px;background:#0e1b2d;border:1px solid #30465f;padding:16px}.lab-pane h3{font-size:15px;margin:0 0 7px;color:#e4f4ff}.lab-pane p{font-size:12px;color:#b1c4d6;margin-bottom:12px}.factlist{display:grid;gap:8px}.fact{padding:10px 12px;border-radius:9px;background:#172c45;border:1px solid #31516e;display:flex;justify-content:space-between;align-items:start;gap:12px;font-size:12px}.fact span{color:#afc5d9}.fact b{color:#f2f9ff;text-align:right}.field{display:grid;gap:7px;margin:13px 0}.field label{font-size:11px;display:flex;justify-content:space-between;gap:10px;color:#bcd2e5}.field label b{color:white}.field select{background:#182b43;color:#e9f6fd;border:1px solid #415874;border-radius:8px;padding:8px}.field input{width:100%;accent-color:#38bdf8}.outputs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0}.outputs>div{padding:11px;border:1px solid #34526e;background:#162c45;border-radius:9px}.outputs b{display:block;color:#f2faff;font-size:20px}.outputs span{font-size:10px;color:#9dbbd5}.compare-bars{display:grid;gap:11px;margin-bottom:16px}.compare-row{display:grid;grid-template-columns:94px minmax(0,1fr) 80px;align-items:center;gap:8px;font-size:10px;color:#bcd0e2}.compare-row b{text-align:right}.compare-row.selected{color:#fff;font-weight:850}.compare-row.selected .bar i{background:linear-gradient(90deg,#30cfb1,#38bdf8)}.compare-row .bar{margin:0}.notice{border-left:3px solid #b6a0ff;background:#25253b;padding:11px 13px;font-size:11px;color:#c4cbec;border-radius:0 9px 9px 0;margin-top:10px}.notice strong{color:#ded1ff}.footer{margin-top:28px;text-align:center;font-size:11px;color:#718ca9}sup{font-size:9px;color:#fcd693;cursor:help;margin-left:1px}.fade{animation:enter .22s ease both}@keyframes enter{from{opacity:.6;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:870px){.hero{grid-template-columns:1fr}.hero-stat{display:none}.scen-grid{grid-template-columns:1fr}.scen .sub{min-height:0}.regiondata{grid-template-columns:1fr 1fr 1fr}.ladder{grid-template-columns:1fr 1fr}.ladderitem:not(:last-child):after{display:none}.lab-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.shell{padding:18px 12px 40px}.panel{padding:15px}.region-grid{grid-template-columns:1fr}.acc-grid{grid-template-columns:1fr}.sources{grid-template-columns:1fr}.sectiontitle{align-items:start}.tabs-scroll{margin-right:-12px}.regiondata b{font-size:13px}}
+@media(max-width:420px){.hero h1{font-size:32px}.phenom{flex:1 1 138px}.regiondata{grid-template-columns:1fr 1fr}.ladder{grid-template-columns:1fr 1fr}.outputs{grid-template-columns:1fr}.compare-row{grid-template-columns:78px 1fr 72px}.synbridge{min-width:52px}.controls{gap:5px}.btn{padding:8px 9px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Version 3: compact, interactive phenomenon switcher and overview */
+.hero{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:17px}
+.hero h1{font-size:clamp(30px,4vw,42px);margin:5px 0 1px}
+.hero-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;padding-bottom:5px;white-space:nowrap;font-size:11px;color:#aabed5}
+.version{display:inline-flex;align-items:center;padding:5px 9px;border-radius:7px;border:1px solid #3a76a0;color:#b7e6fc;background:#13314a;font-size:11px;font-weight:850;letter-spacing:.03em}
+.phenomenon-panel{padding:12px 13px 13px;margin-bottom:18px}
+.phenomena{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:7px;padding:1px 1px 8px;scrollbar-color:#435a73 transparent;scrollbar-width:thin}
+.phenom{flex:0 0 auto;min-height:37px;padding:7px 10px;border-radius:9px;font-size:11px;gap:7px;transition:border-color .15s,background .15s,transform .15s}
+.phenom .glyph{font-size:15px;line-height:1}
+.phenom.current{box-shadow:inset 0 2px #38bdf8;background:linear-gradient(120deg,#173d59,#242244)}
+.phenom:not(.current){background:#101a2b;color:#b0c1d5}
+.phenom:not(.current):hover{border-color:#78b8e0;background:#1a3049;transform:translateY(-1px);color:white}
+.phenom:focus-visible{outline-offset:2px}
+.phenomenon-summary{padding:11px 12px 10px;background:#0d1a2d;border:1px solid #293e58;border-radius:10px}
+.overview-line{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.overview-line h2{font-size:14px;margin:0 0 3px;color:#e6f5ff;letter-spacing:-.01em}
+.overview-line p{font-size:11px;line-height:1.5;color:#a8bed4;margin:0;max-width:890px}
+.overview-status{flex:0 0 auto;border:1px solid #3f6476;background:#14324a;color:#a5e3fa;font-size:10px;font-weight:800;padding:4px 8px;border-radius:99px;white-space:nowrap}
+.overview-status.upcoming{border-color:#675c87;color:#ddccff;background:#29213e}
+.summary-track{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin-top:10px}
+.summary-step{min-width:0;border-radius:8px;background:#142438;border:1px solid #2b435a;padding:9px 9px 8px;position:relative}
+.summary-step .summary-level{font-size:10px;color:#e5f6ff;font-weight:850;line-height:1.3;display:block;margin-bottom:4px}
+.summary-step .summary-property{color:#9fbad0;font-size:10px;line-height:1.35;display:block}
+.summary-step .summary-index{font-size:9px;font-weight:900;letter-spacing:.08em;color:#73cbe8;margin-bottom:3px;display:block}
+.summary-hint{margin:8px 0 0;color:#92a7bd;font-size:10px;line-height:1.4}
+#consciousness-explorer[hidden]{display:none!important}
+@media(max-width:1000px){.summary-track{display:flex;overflow-x:auto;scrollbar-color:#435a73 transparent;padding-bottom:5px}.summary-step{flex:0 0 160px}}
+@media(max-width:640px){.hero{align-items:start;flex-direction:column;gap:8px;margin-bottom:13px}.hero-meta{justify-content:flex-start}.phenom{min-height:35px;padding:6px 9px}.phenomenon-panel{padding:10px 10px 12px}.overview-line{align-items:start}.overview-line h2{font-size:13px}.summary-track{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;padding-bottom:0}.summary-step{flex-basis:auto}}
+@media(max-width:420px){.phenom{flex:0 0 auto}.overview-status{font-size:9px;padding:4px 7px}}
+
+
+/* Version history: keyboard-accessible popup and single-open release accordion */
+button.version{font:inherit;cursor:pointer;font-size:11px;font-weight:850;letter-spacing:.03em;gap:7px;transition:background .15s ease,border-color .15s ease,box-shadow .15s ease}
+button.version:hover,button.version:focus-visible{background:#174461;border-color:#69cfff;box-shadow:0 0 0 2px #38bdf812}
+.version-chevron{font-size:12px;color:#74d7fe;line-height:1}
+.changelog-dialog{color:var(--text);background:linear-gradient(160deg,#17263e,#0c1626);border:1px solid #47627f;border-radius:14px;box-shadow:0 22px 100px #000b;max-width:min(550px,calc(100vw - 28px));width:100%;max-height:min(82vh,730px);padding:0;overflow:hidden}
+.changelog-dialog::backdrop{background:#020714b8;backdrop-filter:blur(4px)}
+.changelog-shell{display:flex;flex-direction:column;max-height:min(82vh,730px)}
+.changelog-header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:19px 20px 15px;border-bottom:1px solid #344b63}
+.changelog-header h2{margin:4px 0 1px;font-size:21px;letter-spacing:-.03em}
+.changelog-header p{font-size:11px;color:#9bb4ca;margin:3px 0 0}
+.changelog-close{height:32px;width:32px;flex-shrink:0;display:grid;place-items:center;background:#1b314b;border:1px solid #45627e;color:#d3e6f6;border-radius:8px;line-height:1;font-size:19px}
+.changelog-close:hover{background:#254663;border-color:#76cffe}
+.release-list{overflow-y:auto;padding:12px 16px 18px;scrollbar-color:#425c78 transparent}
+.release{background:#101f32;border:1px solid #34465c;border-radius:10px;margin-bottom:8px;overflow:hidden}
+.release[open]{border-color:#4884a9;background:#12283d}
+.release summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;padding:12px 14px;font-size:12px;font-weight:750}
+.release summary::-webkit-details-marker{display:none}
+.release summary::after{content:'+';color:#89c8e8;font-size:18px;line-height:1;font-weight:500}
+.release[open] summary::after{content:'−'}
+.release summary:hover{background:#ffffff07}
+.release-name{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.release-version{color:#e9f8ff;font-size:14px;letter-spacing:-.02em}
+.release-date{color:#9fb6cd;font-size:10px;font-weight:600}
+.release-latest{font-size:9px;padding:2px 6px;border-radius:100px;background:#16455b;color:#a7ecff;border:1px solid #387c97;letter-spacing:.02em}
+.release ul{padding:0 19px 14px 31px;margin:0;color:#c2d6e7;font-size:12px;line-height:1.55}
+.release li+li{margin-top:6px}
+@media(max-width:640px){.changelog-header{padding:16px}.release-list{padding:10px}.release summary{padding:10px 12px}}
+</style><style id="atlas-family-theme">
+/* Atlas family design system · October 16, 2026 · Deep Time palette */
+:root{color-scheme:dark;--bg:#080e19;--panel:#101b2b;--panel2:#142237;--outline:#26364b;--text:#e9f3fb;--txt:#e9f3fb;--ink:#e9f3fb;--sub:#96abbf;--muted:#96abbf;--cyan:#59c8ee;--mint:#6fe2b7;--gold:#f2bb77;--purple:#b3a0fb;--sky:#59c8ee;--blue:#59c8ee;--aqua:#6fe2b7;--teal:#6fe2b7;--green:#6fe2b7;--line:#26364b;--edge:#26364b;--stroke:#26364b;--card:#142237;--panel3:#0e1929;--panel2:#142237;--rose:#f2bb77;--violet:#b3a0fb;--amber:#f2bb77}
+html{color-scheme:dark}body{background:radial-gradient(ellipse at 75% -8%,#1b3851 0%,transparent 45%),#080e19!important;color:#e9f3fb!important}
+.atlas-family-header{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;flex-wrap:nowrap!important;border:0!important;border-bottom:1px solid #263749!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;padding:6px 0 17px!important;margin:0 0 18px!important;position:relative;min-height:91px;max-width:100%}
+.atlas-family-brand{display:flex;min-width:0;gap:12px;align-items:center;flex:1 1 auto}
+.atlas-family-icon{display:grid;place-items:center;flex:0 0 55px;height:62px;color:#6fe2b7;background:none;border:none;border-radius:0;padding:0}
+.atlas-family-icon svg{width:55px;height:62px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.atlas-family-copy{min-width:0}.atlas-family-header h1{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif!important;font-size:clamp(22px,2.3vw,31px)!important;color:#e9f3fb!important;font-weight:800!important;letter-spacing:-.055em!important;line-height:1.13!important;margin:0 0 5px!important;text-transform:none!important}
+.atlas-family-header h1 span{color:#59c8ee!important}
+.atlas-family-subtitle{color:#96abbf!important;font-size:10px!important;letter-spacing:.13em!important;font-weight:700!important;text-transform:uppercase!important;line-height:1.35!important;white-space:normal}
+.atlas-family-right{display:flex;align-items:center;justify-content:flex-end;gap:7px;min-width:0;flex-wrap:wrap}
+.atlas-family-status{display:flex;align-items:center;flex-wrap:wrap;gap:7px;justify-content:flex-end}
+.atlas-family-header .atlas-status,.atlas-family-header .chip,.atlas-family-header .tag,.atlas-family-header .metric,.atlas-family-header .atlasindex,.atlas-family-header .metadata-button.stat-link,.atlas-family-header .atlas-stat-button{font:650 11px/1.3 Inter,ui-sans-serif,system-ui,sans-serif!important;color:#c5dced!important;white-space:nowrap!important;background:#101f31!important;border:1px solid #2a3d54!important;border-radius:9px!important;padding:7px 10px!important;box-shadow:none!important;min-height:34px!important;cursor:pointer!important}
+.atlas-family-header .atlas-status:hover,.atlas-family-header .atlas-stat-button:hover{background:#1a3048!important;border-color:#4c7891!important}
+.atlas-family-header button strong,.atlas-family-header button b{color:#6fe2b7}
+.atlas-family-header .atlas-family-version{order:9999;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;flex:0 0 auto!important;margin-left:6px!important;min-height:35px!important;padding:7px 12px!important;background:#11283a!important;border:1px solid #346078!important;color:#92cde6!important;border-radius:8px!important;font-size:12px!important;line-height:1.1!important;letter-spacing:0!important;white-space:nowrap!important;font-weight:650!important;box-shadow:none!important}
+.atlas-family-header .atlas-family-version strong{font-weight:850!important;color:#59c8ee!important;font-size:13px!important}
+.atlas-family-header .atlas-family-version:hover{border-color:#59c8ee!important;background:#173a51!important}
+.atlas-deep-controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center;position:relative;border-bottom:1px solid #26364b;padding-bottom:10px;margin-bottom:2px}
+.atlas-deep-controls .smallBtn{padding:6px 9px!important;font-size:11px!important;flex:1 1 auto}
+.atlas-deep-controls .search{width:100%!important;max-width:100%!important;font-size:12px!important}
+.atlas-deep-controls .atlas-deep-search{width:100%;position:relative}
+.atlas-deep-controls .searchHits{left:0;right:0;top:100%;z-index:8;width:100%}
+.atlas-family-overlay{position:fixed;inset:0;background:#010611cf;z-index:100000;display:none;align-items:center;justify-content:center;padding:18px;backdrop-filter:blur(5px)}
+.atlas-family-overlay.open{display:flex}
+.atlas-family-dialog{color:#e9f3fb;background:linear-gradient(155deg,#142438,#0c1725);border:1px solid #47708a;border-radius:15px;max-width:580px;width:100%;max-height:min(88vh,820px);overflow:auto;box-shadow:0 20px 85px #0009;font-size:13px}
+.atlas-family-modal-head{padding:16px 19px 13px;border-bottom:1px solid #2b4258;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.atlas-family-modal-head h2{font-size:19px!important;letter-spacing:-.4px!important;margin:0!important;color:#e9f3fb!important}
+.atlas-family-close-row{display:flex;justify-content:flex-end;padding:8px 13px 0}
+.atlas-family-close{display:grid;place-items:center;width:31px;height:30px;border:1px solid #38526a;border-radius:8px;background:#162c40;color:#d9ecf9;font-size:20px;cursor:pointer}
+.atlas-family-dialog-body{padding:6px 19px 22px;max-height:65vh;overflow:auto}
+.atlas-family-summary{font-size:12px;line-height:1.6;color:#a8c2d6;margin:5px 0 12px}
+.atlas-family-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.atlas-family-stat{padding:11px;border-radius:10px;border:1px solid #2b4257;background:#14283c;min-width:0}
+.atlas-family-stat small{display:block;font-size:10px;color:#97b1c5;letter-spacing:.05em;margin-bottom:5px;text-transform:uppercase;line-height:1.3}
+.atlas-family-stat strong{font-size:17px;color:#e5f6fe;display:block;overflow-wrap:anywhere;line-height:1.25}
+.atlas-family-note{padding:9px 11px;border:1px solid #2c4256;border-radius:9px;background:#122336;color:#a7c2d4;font-size:11px;margin:11px 0;line-height:1.6}
+.atlas-family-verify{background:#143950;border:1px solid #347b96;border-radius:8px;color:#c6edfb;padding:8px 12px;font-weight:750;font-size:12px;cursor:pointer}
+.atlas-family-verify:hover{background:#20506b}
+.atlas-family-result{margin-top:9px;color:#a2c8d7;font-size:11px;line-height:1.6;min-height:14px}
+.atlas-family-release{margin:8px 0;background:#132a3d;border:1px solid #324d62;border-radius:10px;overflow:hidden}
+.atlas-family-release summary{cursor:pointer;padding:11px 12px;color:#c7e6f1;font-weight:750;display:flex;justify-content:space-between}
+.atlas-family-release[open]{border-color:#4386a1}
+.atlas-family-release ul{margin:0;padding:0 19px 12px 30px;color:#b6cad9;font-size:12px;line-height:1.6}
+@media(max-width:760px){.atlas-family-header{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-areas:'brand version' 'status status'!important;align-items:start!important;gap:8px!important;min-height:0}.atlas-family-brand{grid-area:brand}.atlas-family-right{display:contents!important}.atlas-family-status{grid-area:status;display:flex!important;justify-content:flex-start!important;padding-left:1px}.atlas-family-version{grid-area:version}.atlas-family-icon{flex-basis:42px;height:52px}.atlas-family-icon svg{width:42px;height:52px}.atlas-family-subtitle{font-size:9px!important;letter-spacing:.09em!important}.atlas-family-header h1{font-size:clamp(19px,5vw,26px)!important}.atlas-family-right{gap:5px;flex:0 0 auto}.atlas-family-header .atlas-family-status{display:flex!important}.atlas-family-header .atlas-family-version{padding:7px 8px!important;margin-left:0!important}.atlas-family-stats{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.atlas-family-brand{gap:6px}.atlas-family-icon{flex-basis:31px}.atlas-family-icon svg{width:31px}.atlas-family-header .atlas-family-version{font-size:10px!important;padding:7px 6px!important}.atlas-family-header .atlas-family-version strong{font-size:11px!important}}
+</style><style id="atlas-family-specific"></style><meta content="1.10" name="widget-version"/><meta content="2026-10-16" name="widget-updated"/><style id="aw-unified-family-css">
+/* Atlas Widgets · unified visual release · 2026-10-16 · family spec v1.1 */
+:root{--aw-bg:#080e19;--aw-panel:#101b2b;--aw-panel2:#142237;--aw-outline:#2b435a;--aw-ink:#e9f3fb;--aw-muted:#9eb6ca;--aw-cyan:#59c8ee;--aw-teal:#6fe2c3;--aw-control-height:30px}
+.atlas-family-header.aw-header{background:radial-gradient(ellipse at 3% 15%,rgba(26,122,132,.32),transparent 40%),radial-gradient(ellipse at 86% 2%,rgba(48,127,170,.19),transparent 54%),linear-gradient(113deg,#142b42 0%,#10243b 38%,#0c1b31 72%,#12293f 100%)!important;border:1px solid #2b566d!important;border-bottom:1px solid #376b80!important;border-radius:14px!important;box-shadow:0 10px 30px #0107113d,inset 0 1px 0 #81eaff13!important;padding:16px 18px!important;margin-bottom:16px!important;min-height:92px;max-width:none!important;position:relative}
+.atlas-family-header.aw-header .atlas-family-brand{gap:14px!important;align-items:center!important}
+.atlas-family-header.aw-header .atlas-family-icon{width:66px!important;height:60px!important;flex:0 0 66px!important;background:transparent!important;box-shadow:none!important;border:0!important;outline:0!important;border-radius:0!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:0!important}
+.atlas-family-header.aw-header .atlas-family-icon svg{width:66px!important;height:60px!important;max-width:none!important;stroke:none!important;filter:drop-shadow(0 0 6px #66cdef20)}
+.atlas-family-header.aw-header .atlas-family-copy{min-width:0}
+.atlas-family-header.aw-header .atlas-family-copy h1{font-size:clamp(20px,2.3vw,27px)!important;line-height:1.13!important;letter-spacing:-.035em!important;margin:0 0 4px!important;color:#f1f8ff!important}
+.atlas-family-header.aw-header .atlas-family-copy h1 span{color:var(--aw-cyan)!important}
+.atlas-family-header.aw-header .atlas-family-subtitle{font-size:10px!important;letter-spacing:.105em!important;line-height:1.4!important;font-weight:700!important;color:#acc9d8!important}
+.atlas-family-header.aw-header .atlas-family-right{margin-left:auto!important;display:flex!important;justify-content:flex-end!important;gap:8px!important;align-items:center!important}
+.atlas-family-header.aw-header .atlas-family-status{display:flex!important;flex-wrap:wrap!important;gap:6px!important;align-items:center!important;justify-content:flex-end!important}
+.atlas-family-header.aw-header .atlas-family-status > *, .atlas-family-header.aw-header .atlas-family-version{height:var(--aw-control-height)!important;min-height:var(--aw-control-height)!important;max-height:var(--aw-control-height)!important;min-width:0!important;padding:0 10px!important;margin:0!important;box-sizing:border-box!important;border-radius:7px!important;background:linear-gradient(135deg,#10273a,#12283e)!important;border:1px solid #35546c!important;color:#bcd8e6!important;font-size:11px!important;font-weight:650!important;line-height:28px!important;white-space:nowrap!important;display:inline-flex!important;align-items:center!important;gap:5px!important;box-shadow:none!important}
+.atlas-family-header.aw-header .atlas-family-status > *:is(button):hover,.atlas-family-header.aw-header .atlas-family-version:hover{border-color:#58badd!important;background:#173b50!important}
+.atlas-family-header.aw-header .atlas-family-version{flex:0 0 auto!important;font-size:12px!important;color:#a5d6e7!important;border-color:#477e97!important;order:99!important}
+.atlas-family-header.aw-header .atlas-family-version strong{color:#74d9f6!important;font-size:12px!important;font-weight:800!important}
+.atlas-family-header.aw-header .atlas-family-status b,.atlas-family-header.aw-header .atlas-family-status strong{color:#78dec8!important}
+.atlas-family-header.aw-header :focus-visible{outline:2px solid #86e3ec!important;outline-offset:2px}
+.aw-modal-overlay{position:fixed!important;inset:0!important;z-index:2147482000!important;display:none!important;justify-content:center!important;align-items:center!important;padding:14px!important;background:#010713b9!important;backdrop-filter:blur(6px)}
+.aw-modal-overlay.aw-open{display:flex!important}
+.aw-modal{display:flex;flex-direction:column;overflow:hidden;max-height:min(86vh,1000px);width:min(735px,100%);border-radius:17px;background:#0d1728;border:1px solid #446681;color:var(--aw-ink);box-shadow:0 27px 100px #000a;text-align:left;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.aw-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;border-bottom:1px solid #3a566d;padding:19px 23px 20px;background:linear-gradient(120deg,#192b41,#101b2e 65%)}
+.aw-modal-eye{text-transform:uppercase;color:#65d6e7;font-size:11px;letter-spacing:.14em;font-weight:800;margin:0 0 8px}
+.aw-modal-head h2{color:#d8edfa;font-size:27px;letter-spacing:-.025em;line-height:1.15;margin:0;font-weight:800}
+.aw-modal-x{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border:1px solid #527088;border-radius:12px;background:#15283d;color:#bfddec;font-size:30px;line-height:1;cursor:pointer}
+.aw-modal-x:hover{background:#203952;border-color:#69b7d0}
+.aw-modal-body{padding:22px 23px 26px;overflow:auto;min-height:0}
+.aw-stat-summary{margin:0 0 18px;color:#79d8ea;font-size:15px;font-weight:770}
+.aw-stat-table{border:1px solid #47657d;border-radius:11px;overflow:hidden;background:#142033}
+.aw-stat-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(85px,max-content);gap:20px;align-items:center;min-height:46px;padding:11px 15px;border-bottom:1px solid #47657d;color:#b1ccde;font-size:14px;line-height:1.35}
+.aw-stat-row:last-child{border-bottom:0}.aw-stat-row strong{color:#d4e9f8;text-align:right;font-variant-numeric:tabular-nums;font-size:14px;white-space:normal}
+.aw-stat-row.aw-total{background:#1a3041;color:#e7f5fc;font-weight:800}.aw-stat-row.aw-total strong{color:#87e4e8;font-size:16px}
+.aw-stat-row.aw-section{background:#0f2739;min-height:35px;color:#67d9e5;text-transform:uppercase;letter-spacing:.07em;font-size:10px;font-weight:800}
+.aw-stat-note{font-size:12px;color:#a2bacc;line-height:1.75;margin:18px 0 0}
+.aw-verify{display:inline-flex;gap:7px;align-items:center;margin-top:15px;border:1px solid #447487;background:#0e3041;border-radius:7px;color:#a8e7ec;font-size:12px;font-weight:700;padding:10px 13px;cursor:pointer}
+.aw-check-status{font-size:12px;margin-top:10px;color:#abc5d4;line-height:1.5}
+.aw-releases{display:grid;gap:8px}.aw-release{border:1px solid #3c5268;border-radius:9px;overflow:hidden;background:#122339}.aw-release[open]{border-color:#58869c;background:#152b3e}.aw-release summary{padding:12px 14px;display:flex;align-items:center;gap:12px;cursor:pointer;list-style:none;color:#ddf4ff;font-size:14px;font-weight:800}.aw-release summary::-webkit-details-marker{display:none}.aw-release summary::after{content:'+';margin-left:auto;color:#83d8ee;font-size:20px}.aw-release[open] summary::after{content:'−'}.aw-release ul{padding:3px 19px 14px 33px;margin:0;color:#b7d1df;font-size:12px;line-height:1.7}.aw-release li+li{margin-top:4px}.aw-latest{font-size:10px;color:#6fe2c3;padding:2px 7px;border:1px solid #367565;border-radius:6px;background:#12392f}
+.aw-modal .aw-file-info{padding-top:8px;font-size:12px;color:#9fbacd}
+@media(max-width:900px){.atlas-family-header.aw-header{flex-wrap:wrap!important;align-items:flex-start!important;gap:10px!important}.atlas-family-header.aw-header .atlas-family-right{width:100%!important;justify-content:flex-end!important}.atlas-family-header.aw-header .atlas-family-brand{width:100%!important}}
+@media(max-width:570px){.atlas-family-header.aw-header{padding:13px!important}.atlas-family-header.aw-header .atlas-family-copy h1{font-size:19px!important}.atlas-family-header.aw-header .atlas-family-icon{width:52px!important;height:52px!important;flex-basis:52px!important}.atlas-family-header.aw-header .atlas-family-icon svg{width:52px!important;height:52px!important}.atlas-family-header.aw-header .atlas-family-status > *, .atlas-family-header.aw-header .atlas-family-version{font-size:10px!important;padding:0 7px!important}.aw-modal-head{padding:17px}.aw-modal-body{padding:17px}.aw-stat-row{padding:10px 11px;font-size:12px}.aw-stat-row strong{font-size:12px}}
+
+
+/* Atlas family v1.2: corrected borderless low-profile header and Mythology-style title row. */
+:root{--aw-accent-green:#70e3bb;--aw-stat-size:30px;--aw-accent-cyan:#64cfee}
+.atlas-family-header.aw-header{border:0!important;border-radius:0!important;box-shadow:none!important;min-height:0!important;padding:8px 10px 11px!important;margin-bottom:14px!important;background:radial-gradient(ellipse at 85% 5%,rgba(60,142,186,.14),transparent 55%),linear-gradient(110deg,#0b1523,#132d42 58%,#173149)!important;border-bottom:1px solid #294257!important}
+.atlas-family-header.aw-header .atlas-family-brand{gap:11px!important;flex:0 1 auto!important;min-width:0!important}
+.atlas-family-header.aw-header .atlas-family-icon{width:51px!important;height:49px!important;flex:0 0 51px!important;padding:0!important}
+.atlas-family-header.aw-header .atlas-family-icon svg{width:51px!important;height:49px!important}
+.atlas-family-header.aw-header .atlas-family-copy h1{font-size:22px!important;margin:0 0 2px!important;line-height:1.1!important;white-space:nowrap!important}
+.atlas-family-header.aw-header .atlas-family-subtitle{font-size:9px!important;letter-spacing:.035em!important;line-height:1.3!important;font-weight:600!important;text-transform:none!important;white-space:nowrap!important;max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.atlas-family-header.aw-header .atlas-family-right{min-width:0!important;flex:1 1 auto!important;margin-left:auto!important;gap:6px!important;align-items:center!important}
+.atlas-family-header.aw-header .atlas-family-status{gap:5px!important;flex-wrap:nowrap!important;min-width:0!important}
+.atlas-family-header.aw-header .atlas-family-status > *, .atlas-family-header.aw-header .atlas-family-version{height:var(--aw-stat-size)!important;min-height:var(--aw-stat-size)!important;max-height:var(--aw-stat-size)!important;padding:0 9px!important;line-height:28px!important;border-radius:6px!important;white-space:nowrap!important}
+.atlas-family-header.aw-header .atlas-family-status b,.atlas-family-header.aw-header .atlas-family-status strong,.atlas-family-header.aw-header .atlas-family-status .aw-green-number{color:var(--aw-accent-green)!important;font-weight:800!important}
+.atlas-family-header.aw-header .atlas-family-status .atlas-stat-button:not(:has(b,strong)){color:var(--aw-accent-green)!important}
+.aw-modal-head{background:transparent!important;border-bottom:0!important;padding:20px 21px 5px!important;align-items:center!important}
+.aw-modal-eye{font-size:11px!important;letter-spacing:.11em!important;color:var(--aw-accent-cyan)!important;margin:0 0 5px!important}
+.aw-modal-head h2{font-size:25px!important;line-height:1.1!important}
+.aw-modal-x{width:38px!important;height:38px!important;flex:0 0 38px!important;border-radius:9px!important;font-size:25px!important}
+.aw-modal-body{padding:15px 21px 23px!important}
+.aw-stat-summary{color:var(--aw-accent-cyan)!important}
+.aw-stat-row.aw-total{background:#1b283c!important;color:#d7f1fd!important}
+.aw-stat-row.aw-total strong{color:var(--aw-accent-green)!important}
+@media(min-width:950px){.atlas-family-header.aw-header{flex-wrap:nowrap!important}}
+@media(max-width:1100px){.atlas-family-header.aw-header .atlas-family-right{flex-wrap:wrap!important}.atlas-family-header.aw-header .atlas-family-status{flex-wrap:wrap!important;justify-content:flex-end!important}}
+@media(max-width:680px){.atlas-family-header.aw-header{padding:9px 6px 12px!important}.atlas-family-header.aw-header .atlas-family-right{width:100%!important}.atlas-family-header.aw-header .atlas-family-copy h1{font-size:19px!important}.aw-modal-head{padding:14px 15px 4px!important}.aw-modal-body{padding:14px 15px 20px!important}}
+</style>
+<style id="aw-index-compact-typography">
+/* Shared Atlas Widgets compact index-statistics typography, v1.3 — derived from Mythology Atlas v1.2.
+   Applies ONLY to indexed-data dialogs; all visual accent colors remain those of v1.2 unified family. */
+#aw-index-modal .aw-modal {
+  width:min(548px,100%)!important;max-height:min(88vh,820px)!important;
+  border-radius:13px!important;
+  font:13px/1.46 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+}
+#aw-index-modal .aw-modal-head {
+  background:transparent!important;border-bottom:0!important;
+  padding:14px 17px 4px!important;gap:10px!important;align-items:center!important;
+}
+#aw-index-modal .aw-modal-eye{font-size:10px!important;letter-spacing:.12em!important;margin:0 0 3px!important;line-height:1.25!important}
+#aw-index-modal .aw-modal-head h2{font-size:19px!important;line-height:1.2!important;letter-spacing:-.025em!important;margin:0!important}
+#aw-index-modal .aw-modal-x{width:33px!important;height:33px!important;flex:0 0 33px!important;border-radius:7px!important;font-size:21px!important}
+#aw-index-modal .aw-modal-body{padding:12px 17px 18px!important;font-family:inherit!important}
+#aw-index-modal .aw-stat-summary{font-size:13px!important;line-height:1.46!important;margin:0 0 11px!important;font-weight:700!important}
+#aw-index-modal .aw-stat-table{border-radius:9px!important}
+#aw-index-modal .aw-stat-row{
+  min-height:0!important;padding:7px 10px!important;gap:12px!important;
+  font-size:12px!important;line-height:1.46!important;
+  grid-template-columns:minmax(0,1fr) minmax(65px,max-content)!important;
+}
+#aw-index-modal .aw-stat-row strong{font-size:12px!important;font-weight:750!important;line-height:1.46!important;white-space:nowrap!important}
+#aw-index-modal .aw-stat-row.aw-total{font-weight:800!important}
+#aw-index-modal .aw-stat-row.aw-total strong{font-size:12px!important}
+#aw-index-modal .aw-stat-row.aw-section{font-size:10px!important;line-height:1.3!important;min-height:0!important;padding:7px 10px!important}
+#aw-index-modal .aw-stat-note{font-size:11px!important;line-height:1.6!important;margin:12px 0 0!important}
+#aw-index-modal .aw-verify{font-size:11px!important;padding:7px 10px!important;margin-top:11px!important}
+#aw-index-modal .aw-check-status{font-size:11px!important;line-height:1.5!important;margin-top:7px!important}
+/* Keep legacy version/date spans in any header button truly hidden. */
+.atlas-family-version [hidden]{display:none!important}
+/* Legacy statistics overlay fallback: same Segoe UI and compact rhythm. */
+#atlas-family-stats-overlay .atlas-family-dialog{max-width:548px!important;font:13px/1.46 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}
+#atlas-family-stats-overlay .atlas-family-modal-head{padding:13px 17px 3px!important;border-bottom:0!important}
+#atlas-family-stats-overlay .atlas-family-modal-head h2{font-size:19px!important}
+#atlas-family-stats-overlay .atlas-family-dialog-body{padding:10px 17px 18px!important}
+#atlas-family-stats-overlay .atlas-family-note{font-size:11px!important;line-height:1.6!important;padding:7px 10px!important;margin:10px 0!important}
+@media(max-width:570px){#aw-index-modal .aw-modal-head{padding:12px 13px 3px!important}#aw-index-modal .aw-modal-body{padding:11px 13px 15px!important}#aw-index-modal .aw-stat-row{padding:7px 8px!important;gap:8px!important}}
+</style>
+<style id="atlas-v14-typography-and-header">
+
+/* Atlas Widgets master workspace v1.4 — compact release histories, transparent headers */
+
+/* Standard for current and FUTURE atlas data tables / change logs.
+   Reuses compact Mythology v1.2 typography; modern navy/cyan/green colors intact. */
+:root {
+  --atlas-data-font: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --atlas-data-size: 12px;
+  --atlas-data-line-height: 1.46;
+  --atlas-data-row-pad-y: 7px;
+  --atlas-data-row-pad-x: 10px;
+  --atlas-data-heading-size: 19px;
+  --atlas-data-dialog-width: 548px;
+}
+/* Future tables use .atlas-data-table or [data-atlas-tabular], not global table rules. */
+.atlas-data-table, [data-atlas-tabular] {
+  font-family: var(--atlas-data-font) !important;
+  font-size: var(--atlas-data-size) !important;
+  line-height: var(--atlas-data-line-height) !important;
+  font-variant-numeric: tabular-nums;
+}
+.atlas-data-table :is(th,td),
+[data-atlas-tabular] :is(th,td) {
+  padding: var(--atlas-data-row-pad-y) var(--atlas-data-row-pad-x);
+  font-size: var(--atlas-data-size);
+  line-height: var(--atlas-data-line-height);
+}
+
+/* Unified header seam removal — user-selected exact header.top rule. */
+header.top {
+  border-bottom: 1px solid #263749;
+  background: none !important;
+}
+/* Equivalent live header elements: the six atlases and Widget Launcher. */
+header.atlas-family-header.aw-header,
+header.topbar {
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #263749 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+header.atlas-family-header.aw-header {
+  padding: 5px 2px 12px !important;
+  margin-bottom: 13px !important;
+  min-height: 0 !important;
+}
+header.topbar {
+  padding: 5px 0 12px !important;
+  margin-bottom: 12px !important;
+  min-height: 0 !important;
+}
+@media(max-width:680px) {
+  header.atlas-family-header.aw-header {padding: 7px 0 11px !important;}
+  header.topbar {padding: 7px 0 11px !important;}
+}
+
+/* Compact release histories, including current and retained legacy dialogs. */
+#aw-version-modal .aw-modal {
+  width:min(var(--atlas-data-dialog-width),100%)!important;
+  max-height:min(88vh,850px)!important;
+  border-radius:13px!important;
+  font:13px/1.46 var(--atlas-data-font)!important;
+}
+#aw-version-modal .aw-modal-head {
+  padding:14px 17px 3px!important;
+  gap:10px!important;
+  align-items:center!important;
+  background:transparent!important;
+  border:0!important;
+}
+#aw-version-modal .aw-modal-eye {font-size:10px!important;line-height:1.25!important;margin:0 0 3px!important;letter-spacing:.12em!important;}
+#aw-version-modal .aw-modal-head h2 {font-size:var(--atlas-data-heading-size)!important;line-height:1.2!important;margin:0!important;letter-spacing:-.025em!important;}
+#aw-version-modal .aw-modal-x {width:33px!important;height:33px!important;min-width:33px!important;flex:0 0 33px!important;padding:0!important;border-radius:7px!important;font-size:21px!important;line-height:1!important;}
+#aw-version-modal .aw-modal-body {padding:11px 17px 18px!important;font-family:inherit!important;}
+#aw-version-modal .aw-stat-summary {font-size:13px!important;line-height:1.46!important;margin:0 0 11px!important;}
+#aw-version-modal .aw-releases {gap:6px!important;}
+#aw-version-modal .aw-release {border-radius:8px!important;}
+#aw-version-modal .aw-release summary {padding:7px 10px!important;gap:8px!important;font-size:12px!important;line-height:1.46!important;min-height:0!important;}
+#aw-version-modal .aw-release summary::after {font-size:16px!important;}
+#aw-version-modal .aw-release .aw-latest {font-size:10px!important;line-height:1.3!important;padding:2px 6px!important;}
+#aw-version-modal .aw-release .aw-release-date {font-size:10px!important;color:#9eb6ca!important;font-weight:500!important;}
+#aw-version-modal .aw-release ul {padding:7px 12px 10px 25px!important;font-size:12px!important;line-height:1.46!important;}
+#aw-version-modal .aw-release li+li {margin-top:3px!important;}
+/* Older release-history overlays are still styled coherently when used. */
+#atlas-family-version-overlay .atlas-family-dialog {max-width:var(--atlas-data-dialog-width)!important;font:13px/1.46 var(--atlas-data-font)!important;}
+#atlas-family-version-overlay .atlas-family-modal-head {padding:14px 17px 3px!important;border-bottom:0!important;}
+#atlas-family-version-overlay .atlas-family-modal-head h2 {font-size:19px!important;line-height:1.2!important;}
+#atlas-family-version-overlay .atlas-family-dialog-body {padding:11px 17px 18px!important;}
+#atlas-family-version-overlay .atlas-family-release summary {padding:7px 10px!important;font-size:12px!important;line-height:1.46!important;}
+#atlas-family-version-overlay .atlas-family-release ul {padding:7px 10px 10px 25px!important;font-size:12px!important;line-height:1.46!important;}
+/* Legacy internal changelog fallback; primary version popup is #aw-version-modal. */
+dialog.changelog-dialog, dialog#changelog-dialog, dialog#changelogDialog {font:13px/1.46 var(--atlas-data-font)!important;}
+dialog.changelog-dialog .release summary, dialog#changelog-dialog .release summary {font-size:12px!important;line-height:1.46!important;padding:7px 10px!important;}
+dialog.changelog-dialog .release ul, dialog#changelog-dialog .release ul {font-size:12px!important;line-height:1.46!important;}
+@media(max-width:570px) {
+  #aw-version-modal .aw-modal-head {padding:12px 13px 3px!important;}
+  #aw-version-modal .aw-modal-body {padding:10px 13px 16px!important;}
+}
+
+</style>
+<style id="atlas-v15-responsive-header">
+
+/* Atlas Widgets v1.5 — content-first natural wrapping: no contradictory breakpoint grid.
+   Header rules appended last; no custom JS/resize listeners required. */
+header.atlas-family-header.aw-header{
+ display:flex!important;grid-template-areas:none!important;grid-template-columns:none!important;
+ flex-direction:row!important;flex-wrap:wrap!important;
+ align-items:center!important;justify-content:flex-start!important;
+ column-gap:12px!important;row-gap:7px!important;
+ width:100%!important;min-width:0!important;min-height:0!important;
+ padding:7px 0 11px!important;margin-bottom:14px!important;
+ border:0!important;border-bottom:1px solid #263749!important;
+ border-radius:0!important;box-shadow:none!important;background:none!important;
+}
+header.atlas-family-header.aw-header .atlas-family-brand{
+ flex:0 0 auto!important;width:max-content!important;max-width:100%!important;
+ min-width:0!important;display:flex!important;align-items:center!important;
+ gap:11px!important;margin:0!important;
+}
+header.atlas-family-header.aw-header .atlas-family-copy{
+ min-width:0!important;max-width:calc(100vw - 92px)!important;
+}
+header.atlas-family-header.aw-header .atlas-family-copy h1{
+ white-space:nowrap!important;line-height:1.12!important;margin:0 0 3px!important;
+}
+header.atlas-family-header.aw-header .atlas-family-subtitle{
+ white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+ max-width:100%!important;display:block!important;
+}
+header.atlas-family-header.aw-header .atlas-family-right{
+ display:flex!important;flex:0 0 auto!important;
+ width:max-content!important;max-width:100%!important;min-width:0!important;
+ flex-direction:row!important;flex-wrap:wrap!important;
+ align-items:center!important;justify-content:flex-end!important;
+ gap:6px!important;margin-left:auto!important;
+}
+header.atlas-family-header.aw-header .atlas-family-status{
+ display:flex!important;flex:0 1 auto!important;width:auto!important;
+ min-width:0!important;flex-wrap:wrap!important;
+ justify-content:flex-end!important;align-items:center!important;gap:5px!important;
+}
+header.atlas-family-header.aw-header .atlas-family-status > *,
+header.atlas-family-header.aw-header .atlas-family-version{
+ box-sizing:border-box!important;height:30px!important;min-height:30px!important;
+ max-height:30px!important;flex-shrink:0!important;margin:0!important;
+}
+header.atlas-family-header.aw-header .atlas-family-version{
+ order:99!important;flex:0 0 auto!important;white-space:nowrap!important;
+ margin:0!important;
+}
+@media(max-width:570px){
+ header.atlas-family-header.aw-header{padding:7px 0 11px!important;gap:7px!important}
+ header.atlas-family-header.aw-header .atlas-family-brand{width:max-content!important;max-width:100%!important}
+ header.atlas-family-header.aw-header .atlas-family-right{width:max-content!important;max-width:100%!important}
+ header.atlas-family-header.aw-header .atlas-family-copy{max-width:calc(100vw - 78px)!important}
+}
+@media(max-width:380px){
+ header.atlas-family-header.aw-header .atlas-family-copy h1{font-size:19px!important}
+ header.atlas-family-header.aw-header .atlas-family-brand{gap:6px!important}
+ header.atlas-family-header.aw-header .atlas-family-icon{width:42px!important;height:44px!important;flex:0 0 42px!important}
+ header.atlas-family-header.aw-header .atlas-family-icon svg{width:42px!important;height:44px!important}
+}
+
+</style>
+</head><body><main class="shell">
+<header class="atlas-family-header aw-header" id="aw-header-family"><div class="atlas-family-brand"><div class="atlas-family-icon"><svg aria-label="Emergence Atlas icon" class="aw-launcher-icon" fill="none" role="img" viewbox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 5) scale(.20 .32)"><g stroke="#89d2ff" stroke-width="1.3"><path d="M35 123L73 86 111 122 151 77 195 113 248 57 M35 123L103 65 151 77 179 31 248 57 M73 86L179 31 195 113 111 122 M103 65L248 57 151 77" opacity=".78"></path></g><g fill="#112f51" stroke="#a7e4ff" stroke-width="2"><circle cx="35" cy="123" r="10"></circle><circle cx="73" cy="86" r="8"></circle><circle cx="111" cy="122" r="11"></circle><circle cx="151" cy="77" r="13"></circle><circle cx="195" cy="113" r="10"></circle><circle cx="248" cy="57" r="15"></circle><circle cx="103" cy="65" r="8"></circle><circle cx="179" cy="31" r="10"></circle></g><g fill="#bceeff"><circle cx="151" cy="77" r="4"></circle><circle cx="248" cy="57" r="5"></circle><circle cx="179" cy="31" r="3"></circle></g></g></svg></div><div class="atlas-family-copy"><h1>Emergence <span>Atlas</span></h1><div class="atlas-family-subtitle">Complex systems · Emergent properties</div></div></div><div class="atlas-family-right"><div class="atlas-family-status"><button class="atlas-status atlas-stat-button" id="atlas-stats-trigger" type="button"><strong class="aw-green-number">6</strong> levels · <strong class="aw-green-number">7</strong> phenomena</button></div><button aria-controls="changelog-dialog" aria-haspopup="dialog" aria-label="View Emergence Atlas v1.10 history" class="atlas-family-version" id="version-trigger" title="Release history" type="button">▤ <strong>v1.10</strong></button></div></header>
+<section aria-label="Select an emergence phenomenon" class="panel phenomenon-panel">
+<div aria-label="Emergence phenomena" class="phenomena" id="phenomena" role="group"></div>
+<section aria-atomic="true" aria-live="polite" class="phenomenon-summary" id="phenomenon-summary"></section>
+</section>
+<div id="consciousness-explorer">
+<div class="sectiontitle" style="margin-top:23px"><h2>Consciousness · Six levels</h2><span class="muted">Select a level or use ← → keys</span></div><nav aria-label="Hierarchy level navigation" class="tabs-scroll"><div class="tabs" id="tabs" role="tablist"></div></nav>
+<section aria-live="polite" class="panel fade" id="mainsection"><div id="stage"></div><div class="controls"><button class="btn" id="previous" type="button">← Previous</button><span class="counter" id="position">01 / 06</span><button class="btn primary" id="next" type="button">Next level →</button></div></section>
+<section aria-label="Level-specific variance laboratory" class="panel labbox" id="lab-section"><div id="lab"></div></section>
+</div><!-- /consciousness-explorer -->
+<footer class="footer">Conceptual hierarchy, not a proven sequence of sharp phase transitions · Population and contact figures vary across samples and definitions · 2026</footer></main>
+<dialog aria-describedby="changelog-subheading" aria-labelledby="changelog-heading" class="changelog-dialog" id="changelog-dialog">
+<div class="changelog-shell">
+<header class="changelog-header">
+<div><div class="eyebrow">Release history</div><h2 id="changelog-heading">Changelog</h2><p id="changelog-subheading">Updates to the Emergence Hierarchy Explorer</p></div>
+<button aria-label="Close changelog" class="changelog-close" id="changelog-close" type="button">×</button>
+</header>
+<div class="release-list" id="release-list">
+<details class="release" name="release-history" open="">
+<summary><span class="release-name"><span class="release-version">v1.4</span><span class="release-latest">Latest</span><time class="release-date" datetime="2026-10-15">Oct 15, 2026</time></span></summary>
+<ul><li>Introduced major.minor version numbering.</li><li>Made the header version label open an expandable release-history popup.</li><li>Recorded earlier changes in one place.</li></ul>
+</details>
+<details class="release" name="release-history">
+<summary><span class="release-name"><span class="release-version">v1.3</span><time class="release-date" datetime="2026-10-14">Oct 14, 2026</time></span></summary>
+<ul><li>Compact phenomenon selector with all seven options clickable.</li><li>Added six-level hierarchy summaries and emergent properties for each phenomenon.</li><li>Added “Coming soon” previews while keeping Consciousness fully interactive.</li></ul>
+</details>
+<details class="release" name="release-history">
+<summary><span class="release-name"><span class="release-version">v1.2</span><time class="release-date" datetime="2026-10-14">Oct 14, 2026</time></span></summary>
+<ul><li>Expanded into a generic emergence framework with future phenomena listed.</li><li>Added level-specific comparison laboratories and exclusive, initially collapsed explanation sections.</li><li>Redesigned nested scale comparisons with large-number context and estimate caveats.</li></ul>
+</details>
+<details class="release" name="release-history">
+<summary><span class="release-name"><span class="release-version">v1.1</span><time class="release-date" datetime="2026-10-14">Oct 14, 2026</time></span></summary>
+<ul><li>Created the six-level neural-emergence explorer: neuron to phenomenal consciousness.</li><li>Added interactive layer navigation, biological explanations, and regional scale calculations.</li><li>Introduced responsive dark styling and scientific uncertainty notes.</li></ul>
+</details>
+</div>
+</div>
+</dialog>
+<script>(()=>{'use strict';
+const layers=[
+{n:'Neuron',scale:'1 neuron · often ~1k–10k synaptic contacts',tag:'The excitable unit',short:'A cell converts temporally integrated electrochemical inputs into adaptive, often all-or-none spikes.',
+metrics:[['Neurons','1','Single excitable cell'],['Synaptic contacts','~1k–10k','Common broad heuristic; varies greatly'],['Cortical columns','0','A neuron is a building block'],['Timescale','~1–10 ms','Typical action potential / fast signaling']],
+context:'Voltage-gated Na⁺ channels rapidly depolarize the membrane; K⁺ channels help repolarize it. Dendrites sum excitatory and inhibitory currents in space and time. Axonal geometry, myelin, metabolism and glial support condition propagation. Many dendrites perform local nonlinear computations.',
+why:'Coordinated channel opening creates regenerative action potentials: a microscopic conductance change becomes a reliable, propagating event. A spike is not a tiny conscious feeling; it is a dynamically organized signal.',
+nested:'<b>Inside this level:</b> thousands of ion-channel proteins, a membrane with spatial electrical compartments and often thousands of incoming synaptic contact sites. Single neurons can support complex nonlinear integration without being entire conscious agents.',
+case:'Touch an unexpectedly cold surface: a sensory neuron changes receptor current and may fire. Whether it fires depends on its recent activity and its membrane state.',
+caveat:'Not all neurons have axons or conventional spikes, and synapse counts depend dramatically on cell type. Cerebellar granule cells and Purkinje cells illustrate opposite extremes.'},
+{n:'Synapse',scale:'1 contact locally · ≈10¹⁴–10¹⁵ contacts brain-wide',tag:'The relational unit',short:'Synapses transform activity between cells and can change their efficacy with experience.',
+metrics:[['Neurons per contact','Usually 2','One presynaptic + one postsynaptic; exceptions'],['Per neuron','~1k–10k','Heuristic; highly nonuniform'],['Whole-brain contacts','~10¹⁴–10¹⁵','Literature-level order of magnitude'],['Cortical columns','Not yet','Synapses cross columns and regions']],
+context:'Chemical synapses translate an arriving spike into vesicle release, receptor activation and postsynaptic currents. Inhibitory synapses regulate timing and gain. NMDA-receptor-dependent LTP and LTD are examples of changes in synaptic strength; plasticity also involves homeostasis, structural remodeling and non-synaptic processes.',
+why:'Learning is not simply a property of one membrane. Persistent changes in a distributed pattern of connection strengths permit stored associations and altered future responses. The network—not a single contact—supports memory.',
+nested:'<b>Inside this level:</b> a single synapse involves at least two neuronal compartments; a distributed memory may involve millions of neurons and many more contact sites. ~100 trillion describes the whole-brain scale, not one individual synapse.',
+case:'Repeatedly pairing a sound with a consequence can change multiple pathways. The synapses involved carry traces of experience, but a recollection is not stored in just one synapse.',
+caveat:'This level is relational, not a physical container bigger than a neuron. One axon may make multiple synapses with the same target; counting synapses ≠ counting distinct neuron-to-neuron pairs.'},
+{n:'Local Network',scale:'~80–120 neurons/minicolumn · ~5k–20k illustrative macro-circuit',tag:'The circuit unit',short:'Recurrent excitation, inhibition and population coding generate computations unavailable to isolated neurons.',
+metrics:[['Minicolumn','~80–120','Classic rough anatomical model'],['Larger module','~5k–20k','Illustrative; no universal census'],['Contact instances','~5M–200M','Simple 1k–10k × 5k–20k heuristic*'],['1 mm² patch','~20k–90k','Strong regional variation']],
+context:'Excitatory pyramidal cells, inhibitory interneurons and multiple cortical layers form recurrent circuits. In visual cortex, orientation selectivity is shaped by feedforward and intracortical mechanisms; lateral inhibition, gain control and recurrent competition sharpen patterns. A minicolumn is not the same thing as a functional macrocolumn.',
+why:'A group can represent orientation, sequence, contrast or a working state through relationships among firing patterns. Collective inhibition and recurrent dynamics permit attractors, distributed coding and robust categorization.',
+nested:'<b>Inside this level:</b> thousands of cells and millions of contact incidences in a larger microcircuit; a small minicolumn contains roughly 10² neurons. *Synapse multiplication is a contact-budget illustration, NOT an empirical count of internal circuit synapses.',
+case:'A V1 population responds preferentially to a particular edge orientation. Selectivity does not belong to one magical “edge detector” but to a tuned circuit embedded in feedback and context.',
+caveat:'Claims of a universal cortical column are disputed. An 80k–100k-neuron count may describe a dense ~1 mm² patch, not a standardized macrocolumn. Different areas have different lamination, packing and circuit motifs.'},
+{n:'Brain Regions',scale:'Millions to tens of billions · high structural variance',tag:'The specialized system',short:'Anatomically and functionally organized systems make region-specific computations and exchange signals with other regions.',
+metrics:[['Cerebellum','~69 billion','Predominantly granule neurons'],['Cerebral cortex','~16 billion','Cortex-wide total'],['Hippocampus','~40M / side','Five-subdivision sample mean'],['Amygdala','~12M / side','Per complex; sample estimate']],
+context:'The cortex hosts multiple layered areas with distinct local wiring; the hippocampus binds events and sequences via dentate gyrus–CA3–CA1 loops; the amygdala is a collection of nuclei involved in value and salience; the cerebellum builds predictive, error-correcting dynamics. Long-range fibers, thalamic relay loops and rhythmic coordination link these systems.',
+why:'Region-scale architecture creates selective faculties—vision, memory indexing, sensorimotor prediction and affective salience. These are not reducible to an arbitrary heap of identical “columns”; distinct circuitry and external inputs matter.',
+nested:'<b>Inside this level:</b> ≈16B neurons across cerebral cortex and ≈69B across cerebellum. The cortex can be partitioned into patches, but there is no validated brain-wide count of interchangeable functional cortical columns. Use the regional calculator below for comparable local tissue volumes.',
+case:'Seeing an unfamiliar face recruits visual hierarchy; recognizing it recruits memory-related pathways; an emotional reaction recruits salience networks. These functions overlap and cannot be mapped to single isolated “centers.”',
+caveat:'Subcortical regions do not have standard six-layer neocortical columns. Do not multiply all 69B cerebellar cells by a cortical synapses-per-neuron average: granule and Purkinje cells differ enormously.'},
+{n:'Workspace',scale:'Distributed cortical–thalamic substrate · active subset unknown',tag:'The global availability regime',short:'Locally represented information becomes flexibly available to distant systems for report, planning and control.',
+metrics:[['Neural pool','Up to ~16B','Cortical substrate; not all active at once'],['Active assembly','Unknown','No accepted global-neuron census'],['Synaptic substrate','Huge / distributed','Subset-specific count unknown'],['Macro networks','Multiple','Cortical, thalamic & association loops']],
+context:'Global neuronal workspace theory (GNWT) proposes that sufficiently strong and recurrently amplified representations are broadcast across distributed association networks, especially involving frontoparietal and higher sensory cortex, with thalamocortical involvement. White-matter tracts permit long-range interactions; competition, attention and recurrent feedback influence access.',
+why:'A visual feature processed locally can become available to language, decision-making, task switching and working memory. The relevant new property is <em>global availability</em>, not merely another larger piece of tissue; it is defined functionally by which processes can read and use the information.',
+nested:'<b>Inside this level:</b> many regions, countless local ensembles, neuron populations across large parts of the ~16B-neuron cortex, and broad thalamic/basal-ganglia involvement. There is no justified estimate of “X workspace neurons” or a unique workspace synapse count. Brain-wide ≈86B neurons is an upper substrate count, not the number undergoing ignition.',
+case:'A faint masked image can modulate local visual processing without being reportable. If the representation gains widespread stable access, you can name it, compare it with goals and hold it in mind.',
+caveat:'Access consciousness and working memory overlap but are not identical. GNWT is influential, not conclusively established. A 2025 preregistered test both supported and challenged predictions of GNWT and IIT.'},
+{n:'Consciousness',scale:'Whole-system causal integration? · no known numeric threshold',tag:'The phenomenal question',short:'How and why do some neural processes correspond to first-person experience—the felt quality of seeing, hearing or being?',
+metrics:[['Brain neurons','~86 billion','Anatomical reference, not an active threshold'],['Conscious subset','Unknown','No consensus network census'],['Synaptic count','Not diagnostic','Contact number alone is insufficient'],['Integrated Φ','Unverified','Theory-defined measure; not a known cutoff']],
+context:'Phenomenal consciousness concerns subjective experience: what red looks like or pain feels like. Candidate mechanisms include recurrent processing, higher-order modeling, distributed workspace access and integrated causal structure. Arousal, cortical–thalamic feedback, posterior sensory systems, interoception and self-related models may each contribute in different ways.',
+why:'This is a distinct <em>explanatory target</em>, not an established seventh biological organ or a demonstrated moment when a neuron count is crossed. Third-person mechanisms can predict report and neural correlates while the “why it feels like something” question remains philosophically and scientifically disputed.',
+nested:'<b>Inside this level:</b> the ≈86B-neuron brain provides the full anatomical background (including ≈69B cerebellar and ≈16B cortical neurons), but that does <em>not</em> imply every neuron directly implements each conscious content. Required populations, connectivity and synapse census remain unknown.',
+case:'You can identify a red square, say “red,” remember it, and act on it—but the felt redness, or quale, is a distinct question. Tests of consciousness theories constrain causal accounts without directly reading subjectivity.',
+caveat:'IIT identifies consciousness with a form of integrated information Φ, but a “high-Φ threshold” is not empirically calibrated for human brains. GNWT often targets conscious access; other theories dispute what access explains about phenomenology.'}
+];
+const sources=[
+['Human neuron counts','Azevedo / Herculano-Houzel, 2009–2012','https://pmc.ncbi.nlm.nih.gov/articles/PMC2776484/'],
+['Hippocampal stereology','West & Gundersen, J. Comp. Neurol. (1990)','https://pubmed.ncbi.nlm.nih.gov/2358525/'],
+['Amygdala neuron counts','Schumann & Amaral, J. Comp. Neurol. (2005)','https://pmc.ncbi.nlm.nih.gov/articles/PMC2572713/'],
+['Cortical packing varies','Ribeiro et al., Front. Neuroanat. (2013)','https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2013.00028/full'],
+['Macrocolumns vs minicolumns','Opris et al., review (2014)','https://pmc.ncbi.nlm.nih.gov/articles/PMC4065017/'],
+['Synapse number uncertainty','PLOS One, human synaptome survey (2024)','https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0310156'],
+['Cell-type synaptic extremes','Review of cerebellar granule cells (2018)','https://pmc.ncbi.nlm.nih.gov/articles/PMC6069759/'],
+['Major theory comparison','Cogitate Consortium, Nature (2025)','https://www.nature.com/articles/s41586-025-08888-1']
+];
+const regional=[{name:'Prefrontal',short:'PFC',n:20000,desc:'Prefrontal cortex often has lower neuron counts under equivalent surface patches. Fewer local neurons do not imply simpler cognition; long-range projections and control architecture matter.'},{name:'Sensorimotor',short:'S1/M1',n:45000,desc:'Sensorimotor tissue can contain a larger local neuronal population than frontal pole tissue, with pathways organized for precise sensorimotor transformations.'},{name:'Primary visual',short:'V1',n:90000,desc:'Dense primary visual tissue, especially selected foveal V1 samples, can approach or exceed 90,000 neurons beneath a 1 mm² surface patch. V1 also contains unusually prominent input layer 4.'}];
+
+const phenomena=[
+ {key:'consciousness',name:'Consciousness',icon:'◉',description:'From electrically excitable neurons and plastic synapses to coordinated circuits, brain systems, globally available information, and subjective experience. The final transition remains scientifically unresolved.',steps:[['Neuron','Nonlinear electrical signaling'],['Synapse','Plastic connections and learning'],['Local network','Population codes and recurrent dynamics'],['Brain regions','Specialized functions'],['Workspace','Flexible global access'],['Consciousness','Phenomenal experience (unresolved)']]},
+ {key:'life-from-chemistry',name:'Life from chemistry',icon:'✳',description:'A possible route from geochemical reactions to self-maintaining, evolving biological systems. Competing origin-of-life models propose different sequences.',steps:[['Molecules','Reactive chemistry'],['Reaction networks','Coupled catalysis'],['Autocatalytic cycles','Self-amplification'],['Protocells','Compartments and gradients'],['Replicating systems','Heritable variation'],['Living cells','Self-regulation and evolution']]},
+ {key:'multicellularity',name:'Multicellularity',icon:'⬡',description:'How independently living cells can evolve into cooperative bodies with communication, specialized tissues, and coordinated development.',steps:[['Individual cells','Autonomous physiology'],['Cell adhesion','Stable multicellular groups'],['Cell signaling','Coordination'],['Cell differentiation','Division of labor'],['Tissues','Specialized collective functions'],['Organisms','Integrated development']]},
+ {key:'swarm-intelligence',name:'Swarm intelligence',icon:'✥',description:'How many agents following local rules can solve group-level problems without a central controller, as in ants, bees, and some robot swarms.',steps:[['Agents','Local perception'],['Interactions','Information transfer'],['Environmental traces','Distributed memory'],['Feedback loops','Amplified signals'],['Quorum decisions','Collective choice'],['Swarm','Adaptive coordination']]},
+ {key:'language',name:'Language',icon:'✦',description:'How shared signals and combinatorial structures support complex meaning, conversation, and cumulative cultural knowledge.',steps:[['Signals','Expressive contrasts'],['Shared symbols','Conventional meaning'],['Lexicon','Flexible reference'],['Grammar','Compositional structure'],['Discourse','Contextual coherence'],['Culture','Knowledge transmission']]},
+ {key:'ecosystems',name:'Ecosystems',icon:'❋',description:'How organisms interacting with one another and their physical environment generate food webs, nutrient cycles, and planetary feedback.',steps:[['Organisms','Resource use'],['Populations','Demographic dynamics'],['Communities','Ecological coexistence'],['Food webs','Trophic effects'],['Ecosystems','Material cycling'],['Biosphere','Planet-scale feedback']]},
+ {key:'collective-behavior',name:'Collective behavior',icon:'◎',description:'How individual decisions and social interactions can produce shared norms, institutions, and large-scale patterns of coordination.',steps:[['Individuals','Local choices'],['Social interactions','Influence and imitation'],['Shared norms','Collective expectations'],['Groups','Coordinated action'],['Institutions','Durable social rules'],['Societies','System-wide patterns']]}
+];
+const emergence=['Regenerative electrical signaling','Changeable connections and plasticity','Population codes and recurrent dynamics','Specialized systems and faculties','Flexible global availability','Subjective experience: unresolved mechanism'];
+const stageLabels=['Elementary unit','Relational unit','Circuit assembly','Anatomical system','Distributed cognitive state','Phenomenological target'];
+const labs=[
+ {name:'Neuron diversity laboratory',descr:'Compare the computations performed by different neuron classes. Level 1 has no lower-level neural component scale breakdown.'},
+ {name:'Synaptic modality laboratory',descr:'Different kinds of junctions alter timing, sign, and plasticity without changing the usual two-neuron building-block relationship.'},
+ {name:'Local-circuit variance laboratory',descr:'Change cortical area, patch size, and assumed inputs per neuron; compare structurally different patches.'},
+ {name:'Regional variance laboratory',descr:'Compare four brain structures. Convert their neuron counts into illustrative synaptic-contact budgets and level-3-sized equivalents—not actual cortical columns.'},
+ {name:'Workspace-state laboratory',descr:'Compare access states qualitatively. No defensible census exists for neurons or synapses participating in a particular conscious broadcast.'},
+ {name:'Consciousness-theory laboratory',descr:'Compare competing explanatory claims. None has established a numeric neuron count, connection count, or Φ threshold for experience.'}
+];
+const cells=[
+ {name:'Cortical pyramidal neuron',role:'Long-range excitation and integration',structure:'Branched apical and basal dendrites',signal:'Spiking, often rich dendritic nonlinearity',detail:'Combines feedforward inputs, recurrent excitation, inhibition and feedback. Input placement matters: dendritic branches can act as local nonlinear subunits.'},
+ {name:'Cerebellar granule neuron',role:'Sparse recoding in cerebellar circuits',structure:'Compact soma and short dendrites',signal:'High-dimensional pattern expansion',detail:'Small granule cells typically sample a few mossy fiber inputs. They illustrate why a uniform synapses-per-neuron estimate is biologically misleading.'},
+ {name:'Purkinje neuron',role:'Inhibitory output from cerebellar cortex',structure:'Highly elaborate planar dendritic tree',signal:'Complex and simple spike patterns',detail:'Thousands of distributed dendritic inputs converge onto a very large tree, enabling timing-sensitive cerebellar learning.'}
+];
+const synclasses=[
+ {name:'Excitatory chemical',trans:'Glutamate (commonly)',sign:'Typically increases postsynaptic excitation',temporal:'~milliseconds for fast AMPA responses',memory:'Receptor trafficking, LTP/LTD, structural plasticity',detail:'Glutamatergic synapses are not simply on/off contacts: receptor mix, neuromodulators and dendritic location change their effects.'},
+ {name:'Inhibitory chemical',trans:'GABA (commonly)',sign:'Usually decreases excitability or shunts inputs',temporal:'~milliseconds–tens of ms',memory:'Plastic inhibition and circuit homeostasis',detail:'Inhibition sculpts firing windows, synchrony, selectivity, and competition. Its polarity can vary with chloride gradients and development.'},
+ {name:'Electrical junction',trans:'Gap-junction current',sign:'Often bidirectional and synchronizing',temporal:'Very fast; little chemical delay',memory:'Conductance and network-dependent modulation',detail:'Direct electrical coupling may synchronize or filter neighboring cells; unlike a conventional chemical synapse it need not transmit through vesicles.'}
+];
+const regionData=[
+ {name:'Cerebellum',n:69e9,unit:'Whole cerebellum',color:'teal',cortex:false,desc:'A majority of brain neurons are small granule cells. Parallel-fiber and Purkinje connectivity cannot be summarized by one universal contacts-per-neuron factor.',function:'Precise timing, prediction, error correction and sensorimotor / cognitive calibration.'},
+ {name:'Cerebral cortex',n:16e9,unit:'Both hemispheres',color:'blue',cortex:true,desc:'Layered cortical areas have large differences in packing and projection patterns. Columns are useful in some contexts but not identical standardized units.',function:'Perception, association, abstract models, language and flexible control.'},
+ {name:'Hippocampus',n:40e6,unit:'One side · sample estimate',color:'purple',cortex:false,desc:'Dentate gyrus, CA3 and CA1 build an associative loop; a neocortical column count would be misleading.',function:'Episodic memory indexing, pattern separation and completion.'},
+ {name:'Amygdala',n:12e6,unit:'One side · approximate',color:'amber',cortex:false,desc:'Distinct nuclei support interacting valuation and salience circuits, not six-layer neocortical columns.',function:'Valence, salience, learning about threat and reward.'}
+];
+const theory=[
+ {name:'Global neuronal workspace',main:'Access and wide availability',prediction:'Widespread recurrent broadcasting enables flexible report and use by downstream systems.',limit:'An access account need not fully explain why neural processing feels like anything.'},
+ {name:'Integrated information',main:'Intrinsic causal organization',prediction:'Specific irreducible causal structures, formalized through measures such as Φ, correspond to experience.',limit:'Φ is theory-specific and has no validated human-brain consciousness cutoff.'},
+ {name:'Recurrent processing',main:'Local and hierarchical feedback',prediction:'Reentry among sensory circuits may help make sensory contents conscious.',limit:'Which recurrent processes are sufficient and how to distinguish them from unconscious feedback is debated.'},
+ {name:'Higher-order views',main:'Representations of mental states',prediction:'A mental state is conscious when appropriately represented at a higher level.',limit:'The necessity of higher-order representation and its neural implementation remain disputed.'}
+];
+let active=0, selectedPhenomenon=0;
+const choice={0:0,1:0,2:0,3:0,4:0,5:0};
+let patchArea=1,contactsPerNeuron=5000,groupSize=10000;
+const $=id=>document.getElementById(id);
+const safe=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const fmt=n=>{if(n>=1e15)return (n/1e15).toLocaleString('en-US',{maximumFractionDigits:2})+' quadrillion';if(n>=1e12)return (n/1e12).toLocaleString('en-US',{maximumFractionDigits:2})+' trillion';if(n>=1e9)return (n/1e9).toLocaleString('en-US',{maximumFractionDigits:2})+' billion';if(n>=1e6)return (n/1e6).toLocaleString('en-US',{maximumFractionDigits:2})+' million';return Math.round(n).toLocaleString('en-US')};
+function timeToCount(n){let y=n/31557600;if(y>=1e6)return fmt(y)+' years';if(y>=1)return y.toLocaleString('en-US',{maximumFractionDigits:1})+' years';let d=n/86400;if(d>=1)return d.toLocaleString('en-US',{maximumFractionDigits:1})+' days';let h=n/3600;return h>=1?h.toFixed(1)+' hours':Math.round(n)+' seconds'}
+function count(n,short=false){let val=short?fmt(n):fmt(n);return `<span class="count" title="Counting one per second: ${safe(timeToCount(n))}">${val}${n>=1e6?'<sup>*</sup>':''}</span>`}
+function asterisk(){return `<div class="scale-foot"><strong>* Magnitude perspective</strong><p>Counting one item every second, without breaks: <b>1 million</b> takes 11.6 days; <b>100 million</b> takes 3.2 years; <b>1 trillion</b> takes ≈31,700 years; <b>100 trillion</b> takes ≈3.17 million years. Hover a starred count for its own equivalent. These are counts of neurons or contact instances, not claims about distinct neuron-to-neuron pairs.</p></div>`}
+function scaleFrame(title,sub,body,foot=''){return `<div class="scale-box"><div class="scaletop"><h3>${title}</h3><span>${sub}</span></div>${body}${foot}</div>`}
+function renderPhenomena(){
+ $('phenomena').innerHTML=phenomena.map((p,i)=>`<button type="button" class="phenom ${i===selectedPhenomenon?'current':''}" aria-pressed="${i===selectedPhenomenon}" data-phenomenon="${i}"><span class="glyph" aria-hidden="true">${p.icon}</span><span>${safe(p.name)}</span></button>`).join('');
+ const p=phenomena[selectedPhenomenon],upcoming=selectedPhenomenon!==0;
+ $('phenomenon-summary').innerHTML=`<div class="overview-line"><div><h2>${safe(p.name)}</h2><p>${safe(p.description)}</p></div><span class="overview-status ${upcoming?'upcoming':''}">${upcoming?'Coming soon':'6 interactive levels'}</span></div><div class="summary-track" aria-label="${upcoming?'Proposed':'Available'} levels and emergent properties">${p.steps.map((step,i)=>`<div class="summary-step"><span class="summary-index">${String(i+1).padStart(2,'0')}</span><span class="summary-level">${safe(step[0])}</span><span class="summary-property">${safe(step[1])}</span></div>`).join('')}</div>${upcoming?'<p class="summary-hint"><strong>Coming soon:</strong> This is a provisional outline, not an interactive hierarchy yet. Detailed levels, numerical scales, examples, and comparison laboratories are planned.</p>':''}`;
+}
+function selectPhenomenon(i,setHash=true){
+ selectedPhenomenon=Math.max(0,Math.min(phenomena.length-1,i));
+ renderPhenomena();
+ $('consciousness-explorer').hidden=selectedPhenomenon!==0;
+ document.title=`Emergence Hierarchy Explorer · ${phenomena[selectedPhenomenon].name} · v1.4`;
+ if(setHash){try{history.replaceState(null,'',selectedPhenomenon===0?'#layer-'+(active+1):'#phenomenon-'+phenomena[selectedPhenomenon].key)}catch(e){}}
+}
+function renderTabs(){$('tabs').innerHTML=layers.map((d,i)=>`<button type="button" class="tab" role="tab" aria-selected="${active===i}" tabindex="${active===i?0:-1}" data-tab="${i}"><small>LEVEL 0${i+1}</small><b>${safe(d.n)}</b></button>`).join('')}
+function renderScale(){
+ if(active===0)return scaleFrame('Base component','No lower neural-emergence levels',`<div class="foundation"><div class="cell" aria-hidden="true"></div><b>One neuron · starting unit</b><p>No nested neural-level counts at this base level. Ion channels, dendrites, glial support and membrane compartments are relevant biological substructure, but are not lower levels in this particular hierarchy.</p></div>`);
+ if(active===1)return scaleFrame('Constituent neurons','Single conventional chemical synapse',`<div class="syn-diagram" role="img" aria-label="Two neurons linked by a synapse"><span class="soma">①</span><span class="synbridge"></span><span class="soma">②</span></div><div class="synlabels"><span>Presynaptic neuron</span><span>Postsynaptic neuron</span></div><div class="singlestat"><b>2</b><span>neuronal partners</span></div><p class="tiny" style="text-align:center;margin:12px 0 0">Exceptions include autapses and more complex synaptic arrangements.</p>`);
+ if(active===2){let net=[{name:'Minicolumn-sized group',n:100,sub:'Classical rough cortical minicolumn model'},{name:'Larger microcircuit',n:10000,sub:'Illustrative 5k–20k-neuron circuit'},{name:'Dense cortical patch',n:90000,sub:'Illustrative 1 mm² high-density V1 patch'}];let max=90000;return scaleFrame('Component counts · network size','Approximate contact-budget model',`<div class="scen-grid">${net.map(x=>`<div class="scen"><h4>${x.name}</h4><div class="sub">${x.sub}</div><div class="statlabel">Level 1 · neurons</div><div class="bigstat">${count(x.n)}</div><div class="bar"><i style="width:${14+86*(Math.log10(x.n)-2)/(Math.log10(max)-2)}%"></i></div><div class="substat"><div class="statlabel">Level 2 · synapse contacts</div><strong>${count(x.n*1000)} – ${count(x.n*10000)}</strong><span class="tiny">Modeled input-contact incidences at 1k–10k contacts per neuron</span></div></div>`).join('')}</div>`,`${asterisk()}<div class="notice"><strong>What is being estimated?</strong> Multiplying neuron count by average contacts estimates synaptic endpoints associated with those neurons; it does not count only connections internal to the selected network. Pairs may have multiple contacts, and many links extend outside a patch.</div>`)}
+ if(active===3)return scaleFrame('Nested component counts · brain regions','4 anatomical examples',`<div class="region-grid">${regionData.map((r,i)=>{let syn=r.name==='Cerebellum'?`<b>Unknown total</b><small>≈0.3 trillion<sup>*</sup> mossy→granule inputs alone, crude subset</small>`:`<b>${count(r.n*1000)}–${count(r.n*10000)}</b><small>1k–10k contact-endpoint model</small>`;return `<div class="regioncard"><div class="region-title"><h4>${r.name}</h4><span class="chip">${r.unit}</span></div><div class="bar"><i style="width:${Math.min(100,9+91*(Math.log10(r.n)-7)/(Math.log10(69e9)-7))}%"></i></div><div class="regiondata"><div><small>L1 · neurons</small><b>${count(r.n)}</b></div><div><small>L2 · synapses</small>${syn}</div><div><small>L3 · size equivalents†</small><b>${count(r.n/20000)}–${count(r.n/5000)}</b></div></div><p>${r.desc}</p></div>`}).join('')}</div>`,`${asterisk()}<div class="notice"><strong>† Level-3 equivalents are arithmetic, not column censuses.</strong> Counts divide region neurons by illustrative groups of 5,000–20,000 cells. Cerebellum, hippocampus and amygdala are not composed of neocortical columns. Synaptic contact budgets (except the cerebellar subset) are explicitly modeled, not measured region totals.</div>`);
+ if(active===4)return scaleFrame('The distributed substrate ≠ an active workspace','Nested components, access episode unknown',`<div class="ladder"><div class="ladderitem"><small>L1 Neurons</small><b>${count(16e9)}</b><p>Entire cortical reference pool—not an ignition count</p></div><div class="ladderitem"><small>L2 Contacts</small><b>${count(16e12)}–${count(160e12)}</b><p>Whole cortex contact-endpoint illustration</p></div><div class="ladderitem"><small>L3 Microcircuits</small><b>Uncounted</b><p>Selected and changing local ensembles</p></div><div class="ladderitem"><small>L4 Regions</small><b>Distributed</b><p>Multiple cortical and subcortical nodes</p></div></div><div class="notice"><strong>Access ≠ total brain activity.</strong> Broadcast-related neural participation varies with stimulus, task, arousal and measurement method. We cannot currently assign a reliable number of active neurons or connections to one global workspace episode.</div>`,asterisk());
+ return scaleFrame('Full anatomical reference ≠ conscious subset','Unknown physical threshold',`<div class="ladder"><div class="ladderitem"><small>L1 Neurons</small><b>${count(86e9)}</b><p>Adult-human whole-brain population reference</p></div><div class="ladderitem"><small>L2 Synapses</small><b>~10¹⁴–10¹⁵<sup>*</sup></b><p>Very broad whole-brain order of magnitude</p></div><div class="ladderitem"><small>L3 Circuits</small><b>Not enumerable</b><p>No unique division into universal modules</p></div><div class="ladderitem"><small>L4–5 systems</small><b>Unresolved</b><p>No accepted minimal conscious network census</p></div></div><div class="notice"><strong>No hard threshold demonstrated.</strong> These are substrate scales, not the neuron counts or synapse counts needed for a specific experience. Integrated information Φ is one theory’s formal quantity, not an established empirical cutoff.</div>`,asterisk());
+}
+function accordions(d){const detail=[
+ ['Mechanism & biological context',`<p>${safe(d.context)}</p><p>${d.nested}</p>`],
+ ['What emerges, and why is this a separate level?',`<p>${d.why}</p><p><strong>Explanatory transition:</strong> ${safe(emergence[active])}. A level can be conceptually useful without being a physically sealed or sharply bounded compartment.</p>`],
+ ['Worked example',`<p>${safe(d.case)}</p>`],
+ ['Limits, exceptions & open questions',`<p>${safe(d.caveat)}</p><p><strong>Interpretation:</strong> Scientific observations, order-of-magnitude models and disputed theories are deliberately distinguished in scale displays.</p>`],
+ ['Cross-level context & consciousness',`<p><strong>Context is not an extra anatomical level.</strong> The same input behaves differently across membrane state, local inhibition, feedback, attention, motivation and arousal. Dynamics at every level can change which signals matter.</p><div class="acc-grid"><div><h4>Microscale · ms–min</h4><p>Receptor availability, adaptation, ion-channel state and neuromodulators modify gain and integration.</p></div><div><h4>Network · tens–hundreds of ms</h4><p>Recurrent activity, timing and inhibitory control shape feature binding, selection and competition.</p></div><div><h4>Organism · seconds–years</h4><p>Sleep, goals, interoception, learning and environmental context condition which representations become reportable.</p></div></div><p><strong>Emergence caution:</strong> The cerebellum contains most brain neurons, yet conscious perceptual contents do not scale with raw cell count. Connectivity and causal architecture matter.</p>`],
+ ['Evidence guide & further reading',`<p><strong>● Empirical:</strong> measured neuroanatomy and physiological phenomena. <strong>◆ Model:</strong> contact budgets and arbitrary equal-sized group equivalents. <strong>◇ Hypothesis:</strong> proposed sufficient mechanisms for experience.</p><div class="sources">${sources.map(s=>`<a href="${safe(s[2])}" target="_blank" rel="noopener noreferrer"><b>${safe(s[0])} ↗</b><small>${safe(s[1])}</small></a>`).join('')}</div>`]
+ ];return `<h3 class="accordion-head">Explore this level in depth <span class="muted" style="font-weight:400">· all collapsed by default</span></h3><div id="accordions">${detail.map((x,i)=>`<details class="acc" name="level-deep-dive"><summary>${x[0]}<span aria-hidden="true">＋</span></summary><div class="accbody">${x[1]}</div></details>`).join('')}</div>`}
+function renderStage(){let d=layers[active];$('stage').innerHTML=`<div class="stagehead"><div><div class="eyebrow">${stageLabels[active]} · Level ${active+1} of 6</div><h2>${safe(d.n)}</h2><p>${safe(d.short)}</p></div><span class="level-tag">${safe(d.tag)}</span></div><div class="emerge-strip"><span class="label">Emergent property</span><strong>${emergence[active]}</strong></div>${renderScale()}${accordions(d)}`;$('position').textContent=`${String(active+1).padStart(2,'0')} / 06`;$('previous').disabled=active===0;$('next').disabled=active===5;const acc=[...$('accordions').querySelectorAll('details')];acc.forEach(el=>el.addEventListener('toggle',()=>{if(el.open){acc.forEach(other=>{if(other!==el)other.open=false});el.querySelector('summary span').textContent='−'}else el.querySelector('summary span').textContent='＋'}))}
+function choiceButtons(entries,sel){return `<div class="choices">${entries.map((e,i)=>`<button class="choice" type="button" data-choice="${i}" aria-pressed="${sel===i}">${safe(e.name)}</button>`).join('')}</div>`}
+function fact(label,value){return `<div class="fact"><span>${label}</span><b>${value}</b></div>`}
+function labContent(){let sel=choice[active];if(active===0){let v=cells[sel];return choiceButtons(cells,sel)+`<div class="lab-grid"><div class="lab-pane"><h3>${v.name}</h3><p>${v.detail}</p><div class="notice"><strong>Micro-to-macro insight</strong> Dendritic placement and cell type can substantially change a neuron’s input-output function without changing its status as one neuron.</div></div><div class="lab-pane"><div class="factlist">${fact('Typical role',v.role)}${fact('Architecture',v.structure)}${fact('Signaling',v.signal)}</div></div></div>`}
+if(active===1){let v=synclasses[sel];return choiceButtons(synclasses,sel)+`<div class="lab-grid"><div class="lab-pane"><h3>${v.name}</h3><p>${v.detail}</p><div class="factlist">${fact('Mode',v.trans)}${fact('Usual effect',v.sign)}</div></div><div class="lab-pane"><h3>Timing and adaptation</h3><div class="factlist">${fact('Typical response',v.temporal)}${fact('Plasticity',v.memory)}${fact('Lower-level partners','2 neurons (usual case)')}</div></div></div>`}
+if(active===2)return choiceButtons(regional,sel)+`<div class="lab-grid"><div class="lab-pane"><h3>Neurons beneath a cortical surface patch</h3><div class="compare-bars">${regional.map((r,i)=>`<div class="compare-row ${sel===i?'selected':''}"><span>${r.short}</span><div class="bar"><i style="width:${r.n/90000*100}%"></i></div><b>${fmt(r.n)}</b></div>`).join('')}</div><div class="notice"><strong>${regional[sel].name} · example density</strong> ${regional[sel].desc}</div></div><div class="lab-pane"><h3>Patch-scale model</h3><div class="field"><label for="patch">Patch area <b id="patchRead">${patchArea} mm²</b></label><select id="patch"><option value="0.25">0.25 mm²</option><option value="1">1 mm²</option><option value="4">4 mm²</option><option value="10">10 mm²</option></select></div><div class="field"><label for="contactRange">Contact endpoints / neuron <b id="contactRead">${fmt(contactsPerNeuron)}</b></label><input type="range" id="contactRange" min="1000" max="10000" step="500" value="${contactsPerNeuron}"></div><div class="outputs"><div><b id="pNeurons"></b><span>Modeled neurons in patch</span></div><div><b id="pContacts"></b><span>Modeled synaptic-contact endpoints</span></div><div><b id="pFootprints"></b><span>Illustrative macrocolumn-sized footprints†</span></div><div><b id="pPerGroup"></b><span>Neurons / geometric footprint†</span></div></div><div class="tiny">† Geometry-only 0.35–0.60 mm diameter footprints; not actual identified functional columns. Contact endpoints may connect outside the patch.</div></div></div>`;
+if(active===3){let r=regionData[sel];return choiceButtons(regionData,sel)+`<div class="lab-grid"><div class="lab-pane"><h3>Population comparison</h3><div class="compare-bars">${regionData.map((q,i)=>`<div class="compare-row ${sel===i?'selected':''}"><span>${q.name}</span><div class="bar"><i style="width:${Math.min(100,9+91*(Math.log10(q.n)-7)/(Math.log10(69e9)-7))}%"></i></div><b>${fmt(q.n)}</b></div>`).join('')}</div><div class="notice"><strong>${r.name} · biological variance</strong> ${r.desc}</div></div><div class="lab-pane"><h3>Component-equivalent calculator</h3><div class="field"><label for="groupSize">Assumed size of a level-3 group <b id="groupRead">${fmt(groupSize)} neurons</b></label><input type="range" id="groupSize" min="5000" max="20000" step="1000" value="${groupSize}"></div>${r.name==='Cerebellum'?'<p class="tiny">Uniform synapse-budget extrapolation is withheld: the granule/Purkinje cell mix violates a single contacts-per-cell assumption.</p>':`<div class="field"><label for="contactRange">Contact endpoints / neuron <b id="contactRead">${fmt(contactsPerNeuron)}</b></label><input type="range" id="contactRange" min="1000" max="10000" step="500" value="${contactsPerNeuron}"></div>`}<div class="outputs"><div><b id="rNeurons">${count(r.n)}</b><span>Neurons · population reference</span></div><div><b id="rContacts"></b><span>Estimated contacts · model only</span></div><div><b id="rGroups"></b><span>Groups by arithmetic size equivalence†</span></div><div><b>${r.cortex?'Neocortex':'Non-neocortex'}</b><span>True universal cortical columns?</span></div></div><p class="tiny">† Total neurons ÷ assumed group size; never a census of true cortical columns. ${r.function}</p></div></div>`}
+if(active===4){let cases=[{name:'Masked input',status:'Locally processed; may be unavailable for report',fan:'Predominantly localized or weakly propagated',detail:'In some paradigms, masked stimuli influence decisions despite limited reported awareness. Local neural encoding does not guarantee widespread access.'},{name:'Reportable input',status:'Accessible to flexible report or action',fan:'Potentially distributed and recurrent',detail:'A reportable representation can recruit broader task-relevant systems, though the exact anatomy of conscious broadcasting remains debated.'},{name:'Sleep or anesthesia',status:'State-dependent changes in integration and access',fan:'Connectivity and responsiveness change',detail:'Low arousal, anesthesia and stages of sleep can alter large-scale effective connectivity; these states are not all identical and dreams complicate simple equations.'}];let v=cases[sel];return choiceButtons(cases,sel)+`<div class="lab-grid"><div class="lab-pane"><h3>${v.name}</h3><p>${v.detail}</p><div class="notice"><strong>Conceptual comparison</strong> These scenarios summarize research paradigms; they do not provide fixed access-consciousness neuron or synapse counts.</div></div><div class="lab-pane"><div class="factlist">${fact('Behavioral access',v.status)}${fact('Integration pattern',v.fan)}${fact('Neuron count','Not resolved')} ${fact('Synaptic participation','Not resolved')}</div></div></div>`}
+let v=theory[sel];return choiceButtons(theory,sel)+`<div class="lab-grid"><div class="lab-pane"><h3>${v.name}</h3><p>${v.prediction}</p><div class="notice"><strong>Open challenge</strong> ${v.limit}</div></div><div class="lab-pane"><div class="factlist">${fact('Explanatory focus',v.main)}${fact('Threshold for experience','Not empirically established')} ${fact('Status','Active scientific and philosophical debate')}</div></div></div>`}
+function renderLab(){let l=labs[active];$('lab').innerHTML=`<div class="lab-head"><div><div class="eyebrow">Active level only · Level ${active+1}</div><h2>${l.name}</h2><p>${l.descr}</p></div><span class="pill">Explore variation</span></div>${labContent()}`;if(active===2){$('patch').value=patchArea;updateLabCalc()}if(active===3)updateLabCalc()}
+function updateLabCalc(){if(active===2){let r=regional[choice[2]],n=r.n*patchArea,c=n*contactsPerNeuron,fmin=patchArea*4/(Math.PI*.6*.6),fmax=patchArea*4/(Math.PI*.35*.35);$('patchRead').textContent=patchArea+' mm²';$('contactRead').textContent=fmt(contactsPerNeuron);$('pNeurons').innerHTML=count(n);$('pContacts').innerHTML=count(c);$('pFootprints').textContent='≈'+fmin.toFixed(1)+'–'+fmax.toFixed(1);$('pPerGroup').innerHTML=count(n/fmax)+'–'+count(n/fmin)}else if(active===3){let r=regionData[choice[3]];$('groupRead').textContent=fmt(groupSize)+' neurons';$('rGroups').innerHTML=count(r.n/groupSize);if(r.name==='Cerebellum')$('rContacts').innerHTML='Unknown total';else{$('contactRead').textContent=fmt(contactsPerNeuron);$('rContacts').innerHTML=count(r.n*contactsPerNeuron)}}}
+function change(n,focus=false){active=Math.max(0,Math.min(layers.length-1,n));renderTabs();renderStage();renderLab();if(selectedPhenomenon===0){try{history.replaceState(null,'','#layer-'+(active+1))}catch(e){}}if(focus)$('tabs').querySelector('[aria-selected="true"]')?.focus()}
+$('tabs').addEventListener('click',e=>{let btn=e.target.closest('button[data-tab]');if(btn)change(+btn.dataset.tab)});
+$('tabs').addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();change((active+(e.key==='ArrowRight'?1:5))%6,true)}else if(e.key==='Home'){e.preventDefault();change(0,true)}else if(e.key==='End'){e.preventDefault();change(5,true)}});
+$('previous').addEventListener('click',()=>change(active-1));$('next').addEventListener('click',()=>change(active+1));
+$('lab').addEventListener('click',e=>{let b=e.target.closest('button[data-choice]');if(b){choice[active]=+b.dataset.choice;renderLab()}});
+$('lab').addEventListener('change',e=>{if(e.target.id==='patch'){patchArea=+e.target.value;updateLabCalc()}});
+$('lab').addEventListener('input',e=>{if(e.target.id==='contactRange'){contactsPerNeuron=+e.target.value;updateLabCalc()}if(e.target.id==='groupSize'){groupSize=+e.target.value;updateLabCalc()}});
+$('phenomena').addEventListener('click',e=>{let b=e.target.closest('button[data-phenomenon]');if(b)selectPhenomenon(+b.dataset.phenomenon)});
+window.addEventListener('hashchange',()=>{
+ let m=location.hash.match(/^#layer-([1-6])$/);
+ if(m){selectedPhenomenon=0;change(+m[1]-1);selectPhenomenon(0,false);return}
+ let p=location.hash.match(/^#phenomenon-([a-z-]+)$/);
+ if(p){let i=phenomena.findIndex(v=>v.key===p[1]);if(i>=0)selectPhenomenon(i,false)}
+});
+
+// Open latest release by default; make the release notes a single-open accordion.
+const changelogDialog=$('changelog-dialog');
+const releases=[...changelogDialog.querySelectorAll('details.release')];
+releases.forEach(release=>release.addEventListener('toggle',()=>{
+ if(release.open) releases.forEach(other=>{if(other!==release)other.open=false});
+}));
+$('version-trigger').addEventListener('click',()=>{
+ releases.forEach((release,i)=>{release.open=i===0});
+ changelogDialog.showModal();
+});
+$('changelog-close').addEventListener('click',()=>changelogDialog.close());
+changelogDialog.addEventListener('click',event=>{
+ if(event.target===changelogDialog) changelogDialog.close();
+});
+
+let initialLevel=location.hash.match(/^#layer-([1-6])$/);
+if(initialLevel)active=+initialLevel[1]-1;
+let initialPhenomenon=location.hash.match(/^#phenomenon-([a-z-]+)$/);
+if(initialPhenomenon){let i=phenomena.findIndex(p=>p.key===initialPhenomenon[1]);if(i>=0)selectedPhenomenon=i}
+change(active);selectPhenomenon(selectedPhenomenon,false);
+})();</script><div class="atlas-family-overlay" id="atlas-family-stats-overlay" role="presentation"><section aria-labelledby="atlas-family-stats-title" aria-modal="true" class="atlas-family-dialog" role="dialog"><div class="atlas-family-modal-head"><h2 id="atlas-family-stats-title">Atlas statistics</h2></div><div class="atlas-family-close-row"><button aria-label="Close statistics" class="atlas-family-close" data-atlas-close="" type="button">×</button></div><div class="atlas-family-dialog-body"><p class="atlas-family-summary">Emergence Atlas · indexed content and bundled release resources</p><div class="atlas-family-stats" id="atlas-family-stats-grid"></div><div class="atlas-family-note" id="atlas-family-dataset-note"></div><button class="atlas-family-verify" id="atlas-family-verify" type="button">Verify Image Links</button><div aria-live="polite" class="atlas-family-result" id="atlas-family-verify-result"></div></div></section></div><div class="atlas-family-overlay" id="atlas-family-version-overlay" role="presentation"><section aria-labelledby="atlas-family-version-title" aria-modal="true" class="atlas-family-dialog" role="dialog"><div class="atlas-family-modal-head"><h2 id="atlas-family-version-title">Version history</h2></div><div class="atlas-family-close-row"><button aria-label="Close version history" class="atlas-family-close" data-atlas-close="" type="button">×</button></div><div class="atlas-family-dialog-body"><p class="atlas-family-summary">Emergence Atlas · current release v1.5 · October 16, 2026</p><details class="atlas-family-release" open=""><summary><span>v1.5</span><span>Latest</span></summary><ul><li>Renamed the explorer to Emergence Atlas with the common atlas header.</li><li>Added clickable coverage statistics and consistent release-history and image-link verification dialogs.</li></ul></details><details class="atlas-family-release"><summary><span>v1.4</span><span>Earlier release</span></summary><ul><li>Adopted major.minor versioning and expandable changelog.</li></ul></details><details class="atlas-family-release"><summary><span>v1.3</span><span>Earlier release</span></summary><ul><li>Extended the phenomenon chooser and added previews for future emergent properties.</li></ul></details><details class="atlas-family-release"><summary><span>v1.2</span><span>Earlier release</span></summary><ul><li>Expanded neuronal, network and regional scale comparisons.</li></ul></details></div></section></div><script id="atlas-family-behavior">
+(()=>{
+ const meta={"key": "emergence", "size": 86277, "payload": 0, "appcode": 44801, "images": [], "stats": [["Hierarchy levels", "6"], ["Phenomena", "7"]], "triggers": ["atlas-stats-trigger"], "shared": false, "sharedZipBytes": 0, "release": "1.10", "pageTitle": "Emergence Atlas — v1.10"};
+ window.addEventListener('load',()=>{document.title=meta.pageTitle;const id={'deep':'versionBtn','tree':'versionHistory','brain':'versionTrigger','muscle':'version-history','myth':'versionButton','emergence':'version-trigger'}[meta.key];const button=document.getElementById(id);if(button)button.setAttribute('aria-label','Open v'+meta.release+' release history');});
+ const $=(x)=>document.getElementById(x);
+ const stats=$('atlas-family-stats-overlay'), history=$('atlas-family-version-overlay');
+ let prior=null;
+ const prettyBytes=(v)=>v>=1048576?(v/1048576).toFixed(2)+' MB':(v/1024).toFixed(1)+' KB';
+ function open(box){prior=document.activeElement;box.classList.add('open');document.body.style.overflow='hidden';box.querySelector('.atlas-family-close')?.focus();}
+ function close(box){box.classList.remove('open');if(!document.querySelector('.atlas-family-overlay.open'))document.body.style.overflow='';prior?.focus?.();}
+ [stats,history].forEach(el=>{el.addEventListener('click',e=>{if(e.target===el||e.target.closest('[data-atlas-close]'))close(el)});});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){for(let el of [stats,history])if(el.classList.contains('open')){e.preventDefault();close(el);return;}}});
+ const countData=meta.stats.slice();
+ if(meta.key==='muscle'){
+  countData[0][1]=document.getElementById('muscle-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+  countData[1][1]=document.getElementById('exercise-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+ }
+ if(meta.key==='myth') countData[1][1]=document.getElementById('indexedMeta')?.textContent?.trim()||'See atlas';
+ if(meta.shared)countData.push(['Shared Taxa ZIP',prettyBytes(meta.sharedZipBytes)]);
+ const entries=[...countData,['HTML file size',prettyBytes(meta.size)],['Inline data (JSON)',meta.payload?prettyBytes(meta.payload):'See note'],['Embedded app + data',prettyBytes(meta.appcode)],['External image URLs',String(meta.images.length)]];
+ const grid=$('atlas-family-stats-grid');
+ function repaintCounts(){
+  if(meta.key==='muscle'){
+   entries[0][1]=$('muscle-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+   entries[1][1]=$('exercise-count')?.querySelector('strong')?.textContent?.trim()||'See atlas';
+  }
+  if(meta.key==='tree')entries[0][1]='368 canonical';
+  if(meta.key==='myth')entries[1][1]=$('indexedMeta')?.textContent?.trim()||'See atlas';
+  grid.replaceChildren(...entries.map(([label,val])=>{let d=document.createElement('div');d.className='atlas-family-stat';let a=document.createElement('small'),b=document.createElement('strong');a.textContent=label;b.textContent=val;d.append(a,b);return d;}));
+  const note=$('atlas-family-dataset-note');
+  note.textContent=meta.shared?'Shared Taxa v1.0 (canonical, embedded for offline use). 57 unresolved scientific ambiguities remain documented; external image URLs have not been globally verified. File sizes describe this HTML release, not the whole shared dataset.':'The HTML file is self-contained for core functionality. “Embedded app + data” includes scripts and code; it is not a separately measured dataset file.';
+ }
+ function capture(id,fn){const e=$(id);if(e)e.addEventListener('click',ev=>{ev.preventDefault();ev.stopImmediatePropagation();fn()},true);}
+ meta.triggers.forEach(id=>capture(id,()=>{repaintCounts();open(stats)}));
+ const vers={'deep':'versionBtn','tree':'versionHistory','brain':'versionTrigger','muscle':'version-history','myth':'versionButton','emergence':'version-trigger'};
+ capture(vers[meta.key],()=>open(history));
+ const ver=$('atlas-family-verify'),result=$('atlas-family-verify-result');
+ ver.addEventListener('click',async()=>{
+  let urls=meta.images;
+  if(!urls.length){result.textContent='No directly encoded external image URLs were found in this HTML. Inline SVG and generated artwork do not require a network check.';return;}
+  ver.disabled=true;let good=0,bad=0;result.textContent='Checking '+urls.length+' linked image URL(s) from this browser…';
+  const test=url=>new Promise(resolve=>{
+   let img=new Image();let done=false;const fin=(ok)=>{if(done)return;done=true;img.onload=null;img.onerror=null;resolve(ok)};
+   img.onload=()=>fin(true);img.onerror=()=>fin(false);
+   img.src=url;
+   setTimeout(()=>fin(false),6500);
+  });
+  for(let i=0;i<urls.length;i+=5){const batch=await Promise.all(urls.slice(i,i+5).map(test));for(let b of batch){if(b)good++;else bad++;}result.textContent=`Checked ${good+bad}/${urls.length} · ${good} loaded · ${bad} failed or timed out`;}
+  if(meta.shared)result.textContent+=' · Other Shared Taxa links are not covered by this HTML-only check.';
+  ver.disabled=false;
+ });
+})();
+</script><div id="aw-unified-modals"><div aria-hidden="true" class="aw-modal-overlay" id="aw-index-modal"><section aria-labelledby="aw-index-heading" aria-modal="true" class="aw-modal" role="dialog"><div class="aw-modal-head"><div><div class="aw-modal-eye">Emergence Atlas</div><h2 id="aw-index-heading">Index statistics</h2></div><button aria-label="Close index statistics" class="aw-modal-x" type="button">×</button></div><div class="aw-modal-body"><p class="aw-stat-summary">Consciousness hierarchy and emerging phenomena index</p><div class="aw-stat-table" id="aw-index-rows"></div><p class="aw-stat-note">Counts refer to records indexed by this release, not worldwide scientific totals. Shared Taxa canonical inventory, source-specific profiles and current viewport counts are distinct. File sizes are approximate when calculated from the live document. External links have not been preverified.</p><button class="aw-verify" id="aw-verify-button" type="button">Verify rendered image links</button><div class="aw-check-status" id="aw-verify-state" role="status"></div></div></section></div><div aria-hidden="true" class="aw-modal-overlay" id="aw-version-modal"><section aria-labelledby="aw-version-heading" aria-modal="true" class="aw-modal" role="dialog"><div class="aw-modal-head"><div><div class="aw-modal-eye">Emergence Atlas</div><h2 id="aw-version-heading">Version history</h2></div><button aria-label="Close version history" class="aw-modal-x" type="button">×</button></div><div class="aw-modal-body"><p class="aw-stat-summary">Current release v1.10 · October 16, 2026</p><div class="aw-releases"><details class="aw-release" open><summary>v1.10<span class="aw-latest">Latest · Oct 16, 2026</span></summary><ul><li>Made header status labels naturally wrap below the title only when space requires it, at desktop, tablet, and mobile widths.</li><li>Preserved the compact header, numeric status colors, and all widget-specific content.</li></ul></details><details class="aw-release"><summary>v1.9<span class="aw-latest">Oct 16, 2026</span></summary><ul><li>Standardized release histories and tabular data to the compact Mythology v1.2 System UI / Segoe UI font, 12px rows, and tighter spacing.</li><li>Removed the header gradient/background, outer border, rounding and shadow; retained only the #263749 bottom divider to eliminate header seams.</li><li>Kept the current navy/cyan/green accent colors, launcher card gradients, interactive functionality, and preceding release history.</li></ul></details><details class="aw-release"><summary>v1.8<span class="aw-release-date">Oct 16, 2026</span></summary><ul><li>Adopted the compact System UI / Segoe UI font stack used in Mythology Atlas v1.2 for all indexed-data statistics.</li><li>Reduced statistics row text, row spacing, modal width and heading size while retaining the navy/cyan/green unified palette.</li><li>Preserved existing indexed counts, image-link verification, application functions and previous release notes.</li></ul></details><details class="aw-release"><summary>v1.7<span class="aw-release-date">Oct 16, 2026</span></summary><ul><li>Applied the compact borderless launcher-gradient header and shortened single-line subtitle.</li><li>Made status counts and release controls consistent, including shared green numeric accents.</li><li>Removed the separate statistics-popup header bar while retaining all indexed figures and prior release history.</li></ul></details><details class="aw-release"><summary>v1.6</summary><ul><li>Unified launcher-gradient header and launcher-derived subject icon.</li><li>Unified Mythology-style indexed-data statistics, consistent cyan palette and 30 px status/version controls.</li><li>Preserved existing science, source data, and interactive navigation.</li></ul></details><details class="aw-release"><summary>v1.5</summary><ul><li>Renamed the explorer to Emergence Atlas with the common atlas header.</li><li>Added clickable coverage statistics and consistent release-history and image-link verification dialogs.</li></ul></details><details class="aw-release"><summary>v1.4</summary><ul><li>Adopted major.minor versioning and expandable changelog.</li></ul></details><details class="aw-release"><summary>v1.3</summary><ul><li>Extended the phenomenon chooser and added previews for future emergent properties.</li></ul></details><details class="aw-release"><summary>v1.2</summary><ul><li>Expanded neuronal, network and regional scale comparisons.</li></ul></details><details class="aw-release"><summary>v1.1</summary><ul><li>Created the six-level neural-emergence explorer: neuron to phenomenal consciousness.</li><li>Added interactive layer navigation, biological explanations, and regional scale calculations.</li><li>Introduced responsive dark styling and scientific uncertainty notes.</li></ul></details></div></div></section></div></div>
+<script id="aw-unified-family-js">(()=>{
+ 'use strict';
+ const cfg={"key": "emergence", "name": "Emergence Atlas", "oldVersion": "1.5", "version": "1.10", "triggers": ["atlas-stats-trigger"], "versionId": "version-trigger", "pageTitle": "Emergence Atlas — v1.10"};
+ const $=id=>document.getElementById(id);
+ const fmt=n=>new Intl.NumberFormat('en-US').format(n);
+ const modal=$('aw-index-modal'), versionModal=$('aw-version-modal'), tbody=$('aw-index-rows');
+ let previousFocus=null;
+ function closeModal(m){m.classList.remove('aw-open');m.setAttribute('aria-hidden','true');document.body.style.overflow='';if(previousFocus?.isConnected)previousFocus.focus();previousFocus=null;}
+ function openModal(m){previousFocus=document.activeElement;m.classList.add('aw-open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';m.querySelector('.aw-modal-x')?.focus();}
+ function item(label,value,kind){const row=document.createElement('div');row.className='aw-stat-row'+(kind?' aw-'+kind:'');const a=document.createElement('span'),b=document.createElement('strong');a.textContent=label;b.textContent=value;row.append(a,b);return row;}
+ function val(id){return ($(id)?.textContent||'').trim()||'Not measured';}
+ function byteSize(o){return new TextEncoder().encode(o).length;}
+ function sizeStr(bytes){return fmt(bytes)+' bytes';}
+ function rows(){let r=[];const add=(label,value,kind)=>r.push([label,String(value),kind||'']);const section=label=>add(label,'','section');
+  if(cfg.key==='deep'){
+   add('Canonical Shared Taxa taxon concepts',368,'total');add('Original Deep Time taxon profiles',200);add('Additional Tree of Life concepts searchable',168);add('Canonical geologic intervals (Shared Taxa)',173);add('Source Deep Time interval records',172);add('Curated interval–taxon associations',580);add('Documented scientific ambiguities',57);add('Shared Taxa dataset version','v1.0');add('Calibrated time scale','ICS 2026/06');
+   add('Embedded canonical JSON (UTF-8)',sizeStr(byteSize($('sharedTaxaCanonicalSnapshot')?.textContent||'')));
+  } else if(cfg.key==='tree'){
+   add('Canonical Shared Taxa concepts',368,'total');add('Current atlas indexed taxa',val('indexTotal'));add('Canonical Shared Taxa interval records',173);add('Historical Tree source taxa',238);add('Curated interval–taxon links',580);add('Dataset version','Shared Taxa v1.0 embedded offline');add('Embedded canonical JSON (UTF-8)',sizeStr(byteSize($('sharedTaxaPayload')?.textContent||'')));
+  }else if(cfg.key==='brain'){
+   add('Anatomical regions in latest baseline',57,'total');add('Circuits and networks in baseline',16);add('Regions in current filtered view',val('visibleCount'));add('Systems in current filtered view',val('visibleSystemCount'));add('Primary browsing groupings','Brain divisions + circuits/networks');
+  }else if(cfg.key==='muscle'){
+   add('Indexed muscles',val('muscle-count').match(/[\d,]+/)?.[0]||'101','total');add('Indexed exercises',val('exercise-count').match(/[\d,]+/)?.[0]||'83');add('Anatomical model','Interactive body map');add('Exercise relationships','Primary / secondary where included');
+  }else if(cfg.key==='myth'){
+   let trs=null;try{if(typeof TRADITIONS!=='undefined')trs=TRADITIONS;}catch(e){}
+   const known=[['Greek',152],['Roman',82],['Norse',44],['Mesopotamian',31],['Hindu',54]];
+   if(trs){const all=Object.values(trs).flatMap(t=>t.data||[]);const names=Object.entries(trs).map(([k,t])=>[t.label||k,(t.data||[]).length]);names.forEach(([n,x])=>add(n,x));add('Total indexed entries',all.length,'total');add('Group tags (unique)',new Set(all.map(x=>x.group)).size);add('Story / epic tags (unique)',new Set(all.flatMap(x=>x.stories||[])).size);add('Symbol / trait tags (unique)',new Set(all.flatMap(x=>x.tags||[])).size);add('Offline SVG portraits',all.length);add('Dataset size (UTF-8 JSON)',sizeStr(byteSize(JSON.stringify(Object.fromEntries(Object.entries(trs).map(([k,t])=>[k,t.data]))))));}
+   else{known.forEach(([n,x])=>add(n,x));add('Total indexed entries',363,'total');add('Detailed tag totals','Not measured in this runtime');}
+   add('Embedded artwork photo files',0);add('Artwork search links',363);add('Live image preview loads','Not measured (session-dependent)');
+  }else if(cfg.key==='emergence'){
+   add('Consciousness hierarchy levels',6,'total');add('Phenomena in selector',7);add('Fully interactive phenomena',1);add('Other phenomena','Preview / coming soon');add('Scientific scale estimates','Approximate / definition-dependent');
+  }
+  section('Document and media');add('Current HTML document (approx.)',sizeStr(byteSize(document.documentElement.outerHTML)));add('Rendered external image elements',document.querySelectorAll('img[src^="http"]').length);return r;
+ }
+ function repaint(){tbody.replaceChildren(...rows().map(([a,b,c])=>item(a,b,c)));$('aw-verify-state').textContent='';}
+ const triggerIds=cfg.triggers;
+ // Capture document clicks before legacy source handlers, preventing two dialogs from opening.
+ document.addEventListener('click',e=>{
+  const button=e.target?.closest?.('button,[role="button"]');if(!button)return;
+  if(triggerIds.some(id=>button.id===id)){e.preventDefault();e.stopImmediatePropagation();repaint();openModal(modal);}
+  else if(button.id===cfg.versionId){e.preventDefault();e.stopImmediatePropagation();for(const [i,d] of [...versionModal.querySelectorAll('details.aw-release')].entries())d.open=i===0;openModal(versionModal);}
+ },true);
+ for(const m of [modal,versionModal]){
+  m.querySelectorAll('.aw-modal-x').forEach(x=>x.addEventListener('click',()=>closeModal(m)));
+  m.addEventListener('click',e=>{if(e.target===m)closeModal(m)});
+ }
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){for(const m of [modal,versionModal])if(m.classList.contains('aw-open')){e.stopImmediatePropagation();closeModal(m);}}},true);
+ $('aw-verify-button').addEventListener('click',async()=>{
+  const label=$('aw-verify-state'),imgs=[...document.querySelectorAll('img[src^="http"]')];
+  const urls=[...new Set(imgs.map(i=>i.src))];
+  if(!urls.length){label.textContent='No external <img> elements are currently rendered. Artwork search links, remote CSS images, and dataset references have not been tested.';return;}
+  label.textContent='Testing '+urls.length+' currently rendered image URLs (this does not validate licensing or unrendered dataset links)…';
+  let ok=0,bad=0;
+  for(const url of urls){const result=await Promise.race([new Promise(resolve=>{const img=new Image();img.onload=()=>resolve(true);img.onerror=()=>resolve(false);img.src=url;}),new Promise(resolve=>setTimeout(()=>resolve(false),6500))]);if(result)ok++;else bad++;}
+  label.textContent=`${ok} loaded; ${bad} failed/timed out. Tested ${urls.length} rendered image URL(s) only; licensing and other links were not verified.`;
+ });
+ window.addEventListener('load',()=>{document.title=cfg.pageTitle;const header=$('aw-header-family');if(header)header.dataset.awVersion=cfg.version;$(cfg.versionId)?.setAttribute('aria-label','Open v'+cfg.version+' release history');});
+})();</script>
+</body></html>

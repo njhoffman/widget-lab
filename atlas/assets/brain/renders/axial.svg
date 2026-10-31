@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="69 57 605 353">
+ <defs><radialGradient id="halo"><stop stop-color="#174767"/><stop offset="1" stop-color="#06101e"/></radialGradient><linearGradient id="brainFill"><stop stop-color="#465b79"/><stop offset=".53" stop-color="#2c4767"/><stop offset="1" stop-color="#152c43"/></linearGradient></defs>
+ <rect x="69" y="57" width="605" height="353" fill="url(#halo)"/>
+ <g fill="url(#brainFill)" stroke="#83c8e0" stroke-opacity=".63" stroke-width="2.3" stroke-linejoin="round"><path class="base-brain" d="M353 66 C302 58 260 71 223 96 C188 112 162 148 156 190 C127 223 142 279 165 309 C184 346 228 373 279 376 Q319 397 353 375 Q388 397 427 376 C477 375 520 347 542 306 C563 273 578 230 548 190 C541 151 514 112 482 96 C446 70 405 59 353 66Z"/>
+<path d="M353 71 Q346 151 353 225 Q358 289 353 372" fill="none" stroke="#7e9ab8" stroke-opacity=".58" stroke-width="2"/>
+<path d="M273 183 Q306 158 341 207 Q319 226 287 231Z M435 183 Q397 158 367 207 Q388 227 424 231Z" fill="#213751" stroke="#7193b7" stroke-opacity=".58"/>
+<path d="M306 240 Q331 220 353 252 Q374 217 400 240 Q389 263 353 283 Q317 263 306 240Z" fill="#18304a" stroke="#6a8aa8" stroke-width="1.2"/>
+<g class="gyri"><path d="M222 132 Q263 107 315 132 M398 131 Q449 106 486 137"/><path d="M178 211 Q234 188 291 218 M415 217 Q472 186 528 209"/><path d="M188 299 Q240 280 301 307 M405 309 Q467 281 522 297"/><path d="M263 350 Q295 332 329 355 M376 354 Q410 333 443 350"/></g>
+<text x="113" y="91" fill="#7296af" font-size="12">↑ ANTERIOR</text><text x="535" y="403" fill="#7296af" font-size="12">POSTERIOR ↓</text></g>
+ </svg>

@@ -1,0 +1,563 @@
+{
+  "dataset": "Shared Taxa",
+  "dataset_version": "1.0",
+  "release_date": "2026-10-15",
+  "schema_version": "1.0",
+  "release_status": "published_with_documented_scientific_ambiguities",
+  "source_exports": [
+    {
+      "name": "Tree of Life Explorer",
+      "version": "1.7",
+      "archive": "source_archives/shared_taxa_tree_of_life_v1.7_export(1).zip",
+      "sha256": "a45d1ca16a1d1f54c6e0dc415e447350ff16bce8d748c0fcef4442cebc9f95f1",
+      "taxon_source_records": 238,
+      "export_date": "2026-10-15"
+    },
+    {
+      "name": "Deep Time Atlas",
+      "version": "1.6",
+      "data_snapshot_version": "1.5",
+      "archive": "source_archives/Shared_Taxa_Deep_Time_Atlas_v1.6_Export(2).zip",
+      "sha256": "a836159c0662f2a14746b211ccbb5129cd35013e1c0d75e4aaa451985582a1d4",
+      "taxon_source_records": 200,
+      "geologic_source_intervals": 172,
+      "export_date": "2026-10-15"
+    }
+  ],
+  "counts": {
+    "taxa_total_canonical": 368,
+    "taxa_source_tree": 238,
+    "taxa_source_deep": 200,
+    "taxa_added_tree_before_merging": 238,
+    "taxa_added_deep_unique": 130,
+    "duplicate_taxon_source_records_reconciled": 70,
+    "unranked_clade_records": 70,
+    "ranked_taxonomic_concept_records": 279,
+    "organism_example_records": 495,
+    "organism_examples_tree": 95,
+    "organism_examples_deep": 400,
+    "population_estimate_records": 12,
+    "population_estimates_with_explicit_unknown": 1,
+    "subdivision_reference_taxa": 47,
+    "subdivision_estimate_values": 104,
+    "image_reference_records": 129,
+    "images_bundled_locally": 23,
+    "images_local_content_verified": 23,
+    "images_external_links_checked": 0,
+    "image_references_tree_runtime": 95,
+    "image_references_tree_commons_fallback": 11,
+    "deep_time_example_image_usages": 44,
+    "geologic_intervals_canonical": 173,
+    "geologic_intervals_tree_source": 44,
+    "geologic_intervals_deep_source": 172,
+    "curated_interval_taxon_associations": 580,
+    "derived_ui_age_filter_matches": 8916,
+    "source_reference_records_canonical": 24,
+    "source_reference_entries_tree": 24,
+    "source_reference_entries_deep": 1,
+    "rank_disagreements": 1,
+    "lineage_age_source_differences": 22,
+    "geologic_boundary_source_differences": 9,
+    "source_ambiguity_notes": 25,
+    "unresolved_scientific_ambiguities": 57
+  },
+  "compatibility": {
+    "Tree of Life Explorer": "1.7 source records indexed, migration not performed",
+    "Deep Time Atlas": "1.6 source records indexed, migration not performed",
+    "schema_version": "1.0",
+    "future_widgets": "canonical JSON 1.0 consumers"
+  },
+  "release_history": [
+    {
+      "version": "1.0",
+      "date": "2026-10-15",
+      "expand_by_default": true,
+      "changes": [
+        "Initial conservative taxon ID reconciliation",
+        "Geologic interval and provenance merges",
+        "Full original source snapshots retained",
+        "Machine schema and cross-file integrity validation"
+      ]
+    }
+  ],
+  "validation_status": "PASS_WITH_DOCUMENTED_SCIENTIFIC_WARNINGS",
+  "validation_report": "VALIDATION_REPORT.json",
+  "schema_standard": "https://json-schema.org/draft/2020-12/schema",
+  "checksum_algorithm": "sha256",
+  "checksum_note": "manifest.json intentionally not self-hashed to avoid recursive checksum; all other files included.",
+  "files_changed": [
+    "taxonomy.json",
+    "taxon_details.json",
+    "taxon_history.json",
+    "diversity.json",
+    "organisms.json",
+    "geologic_time.json",
+    "rank_guides.json",
+    "sources.json",
+    "images_manifest.json",
+    "geologic_taxon_links.json",
+    "additional_science.json",
+    "ID_MAPPING.json",
+    "RECONCILIATION_REPORT.json",
+    "VALIDATION_REPORT.json",
+    "manifest.json",
+    "schemas/*",
+    "README.md",
+    "CHANGELOG.md",
+    "CHANGELOG.html",
+    "RECONCILIATION.md",
+    "MIGRATION_GUIDE.md"
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG.html",
+      "size_bytes": 988,
+      "sha256": "0946de499feacbcf99c5514db79c43ec7fe12732c40604113c81e8bb54efad6c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 1095,
+      "sha256": "00a3933134e66224007b043cf9a33c4c7dfa27a676c971e7aeae32ebdcc0607b"
+    },
+    {
+      "path": "ID_MAPPING.json",
+      "size_bytes": 154446,
+      "sha256": "9fae12596b3c8184e494412cba5d88cb59ae5b7aed51831a56839ffbbb3a43e7"
+    },
+    {
+      "path": "MIGRATION_GUIDE.md",
+      "size_bytes": 2347,
+      "sha256": "057e4f57c910c68e59c792a2cf956ad517d41cd50b1db48c2a14314ef4e9df3d"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2804,
+      "sha256": "fdd0bdde040d54d0c33b618a2e7407f15dc3230bc8ecb0f63bcee7b03cdec2ae"
+    },
+    {
+      "path": "RECONCILIATION.md",
+      "size_bytes": 3733,
+      "sha256": "ab45f47f6c0aa96fc26cf2b252fb06286859f82d230fea400770176d6404c1d2"
+    },
+    {
+      "path": "RECONCILIATION_REPORT.json",
+      "size_bytes": 59716,
+      "sha256": "1053e01bd7d038cd5d1d57abc261d6db659adc93c76c06e77edce1a10186bc19"
+    },
+    {
+      "path": "VALIDATION_REPORT.json",
+      "size_bytes": 7221,
+      "sha256": "aec42069522d69b911685e0491e2810b0a1ecc888129e116020307b51022d397"
+    },
+    {
+      "path": "additional_science.json",
+      "size_bytes": 199546,
+      "sha256": "c6f09a8cc33bb93c233e8478c1f5f38eb2498b9c8d894f301f208c239d43eea0"
+    },
+    {
+      "path": "diversity.json",
+      "size_bytes": 118432,
+      "sha256": "b8b1bef431a7567beaf9b65615b6bdc2e13b949a0b52d32a5931a10dd7952797"
+    },
+    {
+      "path": "geologic_taxon_links.json",
+      "size_bytes": 5031944,
+      "sha256": "1abd22a51735cf4fc6cb53ec2edad5220c4502f4b56c239741f9adc6ddeef8f4"
+    },
+    {
+      "path": "geologic_time.json",
+      "size_bytes": 213653,
+      "sha256": "511d531e1ab07b3ae6bf4f3f3b572884f071f1194678ebcd52aa6f4d94710f6a"
+    },
+    {
+      "path": "images_manifest.json",
+      "size_bytes": 67786,
+      "sha256": "1aec3ff4a9443afab95531af8bf71990079b74b8436a2bf130a413850875fc56"
+    },
+    {
+      "path": "organisms.json",
+      "size_bytes": 556265,
+      "sha256": "9dd33b5506e37b60d320a9351cb272efd280b1eab22aa9e4af555a17b5c4b6f9"
+    },
+    {
+      "path": "rank_guides.json",
+      "size_bytes": 8968,
+      "sha256": "9139456c56fc53af084cf68f9117ef706778c6cc89ec44d9fc76bc63e884d976"
+    },
+    {
+      "path": "schemas/ID_MAPPING.json.schema.json",
+      "size_bytes": 1304,
+      "sha256": "def7fb671a577930edae9b885ec29e424f84a505fe4b68de57d5274adcc79fa1"
+    },
+    {
+      "path": "schemas/RECONCILIATION_REPORT.json.schema.json",
+      "size_bytes": 394,
+      "sha256": "a851cb8a389d77908b00011b66586809d30745abfb16f3b929ce7edf2b2d851b"
+    },
+    {
+      "path": "schemas/VALIDATION_REPORT.json.schema.json",
+      "size_bytes": 535,
+      "sha256": "08955500bcd7b3b24de1dd82d1a1540580c8c772a2c09c0960b6bda7cae886a9"
+    },
+    {
+      "path": "schemas/additional_science.json.schema.json",
+      "size_bytes": 300,
+      "sha256": "6c621dc1b0f767bef22675d916d5da2535db2757ccedca329768b99ad6d8335c"
+    },
+    {
+      "path": "schemas/diversity.json.schema.json",
+      "size_bytes": 1664,
+      "sha256": "f94028d12a8d702fc6f39ef21cd47c61ad52027baad13bbaab31f6877983796f"
+    },
+    {
+      "path": "schemas/geologic_taxon_links.json.schema.json",
+      "size_bytes": 1638,
+      "sha256": "71b179f9d83ece37a6fdb570d9da8a45b5bb8110a8f8fd3f3a9a2d412a2d24af"
+    },
+    {
+      "path": "schemas/geologic_time.json.schema.json",
+      "size_bytes": 1195,
+      "sha256": "553e1f7295f1712697a06891589bd916058fe3a27e2a473760eb45e6ea66e9d8"
+    },
+    {
+      "path": "schemas/images_manifest.json.schema.json",
+      "size_bytes": 766,
+      "sha256": "225d12728455ca81780db329a284c04d5a115bafacf88b62d8c30318c72d4c3d"
+    },
+    {
+      "path": "schemas/manifest.json.schema.json",
+      "size_bytes": 672,
+      "sha256": "7373a22863b28018d35f915f05ca2d802c4ed1062c2b0d33e5f9267b1e10dd6f"
+    },
+    {
+      "path": "schemas/organisms.json.schema.json",
+      "size_bytes": 1038,
+      "sha256": "83087c7931b9b5450f89f9b02079c5a90658e5b1bcd50458987c684db20f4983"
+    },
+    {
+      "path": "schemas/rank_guides.json.schema.json",
+      "size_bytes": 756,
+      "sha256": "ebd5245d5f87b18f71c88bcc4b060630d5e2dcb24c79886681e7f65c2a0df3cf"
+    },
+    {
+      "path": "schemas/sources.json.schema.json",
+      "size_bytes": 823,
+      "sha256": "e6703c71f1fcaffe7702223816b723ebd3b6d3fff322c561196f2b90a9d86fe7"
+    },
+    {
+      "path": "schemas/taxon_details.json.schema.json",
+      "size_bytes": 724,
+      "sha256": "4cf01a622d0f8ce359ffa14bca6e4d5c8bd8b965acbd8aa1929ecddc2c72e2df"
+    },
+    {
+      "path": "schemas/taxon_history.json.schema.json",
+      "size_bytes": 906,
+      "sha256": "606952d3c8e412179403337b270c88ed36cc51093398e47c407f14718a62b159"
+    },
+    {
+      "path": "schemas/taxonomy.json.schema.json",
+      "size_bytes": 1162,
+      "sha256": "c4deb9efc2e832f2c5f66de542160b992d52bdeb30eb18341c70e79b3bc5d6c0"
+    },
+    {
+      "path": "source_archives/Shared_Taxa_Deep_Time_Atlas_v1.6_Export(2).zip",
+      "size_bytes": 679365,
+      "sha256": "a836159c0662f2a14746b211ccbb5129cd35013e1c0d75e4aaa451985582a1d4"
+    },
+    {
+      "path": "source_archives/shared_taxa_tree_of_life_v1.7_export(1).zip",
+      "size_bytes": 87300,
+      "sha256": "a45d1ca16a1d1f54c6e0dc415e447350ff16bce8d748c0fcef4442cebc9f95f1"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/AMBIGUITIES.json",
+      "size_bytes": 4834,
+      "sha256": "7a71890c8f5af261c68a6311e1a9de5b6443cdcea011c33686e3c23a68772329"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/README.md",
+      "size_bytes": 4066,
+      "sha256": "232491360acc42a998819c21a374291193f7dde0072cb163b5bf94d75d8fe90f"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/SCHEMA.json",
+      "size_bytes": 5265,
+      "sha256": "5518d527d7a70fe01a07bb11e68415a07c25d988b5958ab442396390a87dfac4"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/geologic_details.json",
+      "size_bytes": 26456,
+      "sha256": "83e8472901c164ec8566f8f5e001a8bf945e49521b60979d7010fe30177eb1c4"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/geologic_intervals.json",
+      "size_bytes": 239473,
+      "sha256": "696a0ca0701774003240c97c4f62f13c20c2241e8952dd35388485260c4943b7"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/geologic_taxon_links.json",
+      "size_bytes": 1743876,
+      "sha256": "b719410a95267e68b562862b1f25382e33f473dd8b0b1c044aecdae7a14ae07a"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/images_manifest.json",
+      "size_bytes": 18042,
+      "sha256": "86bf9282f6cf620aa4968da0a899f3e82323d8962f994bd922541bceb8c492a2"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/paleogeography.json",
+      "size_bytes": 6160,
+      "sha256": "31df14762c7e7bae2e6cd812ee211bee79db3f2ba195e25cadfbd18227f6e6cc"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/source_logic.json",
+      "size_bytes": 6112,
+      "sha256": "f4f830d433fcf92d7c533a23a20e889b0679705ae3b31c15d49d05bac392d4f7"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/source_references.json",
+      "size_bytes": 1309,
+      "sha256": "bfc77e475168f69198c646e10df79a5e02d7fe4cdb528d47f871f854e87546f0"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/taxa.json",
+      "size_bytes": 551385,
+      "sha256": "477eb4142310af5ed77923863166c327546497bf591c91a7e4dcb3d60e34990f"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/taxon_source_layers.json",
+      "size_bytes": 137901,
+      "sha256": "3140ee8ea6d7eb367d06007610b708fc41a1321da0bde4d454dfae7d0fc2b673"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/data/widget_display_metadata.json",
+      "size_bytes": 2317,
+      "sha256": "32ce9ee1b913c9b8e49e237c00be9126cf84056feb570dc2f94bd689fa4bfffa"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/extraction_log.json",
+      "size_bytes": 6423,
+      "sha256": "c902326ffe6a084e2bf860ebc5dac432d71ab4831c77f845f9692b81ca94d149"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/ammonite.jpg",
+      "size_bytes": 22733,
+      "sha256": "5e4cab735d0c4df24796e391b3aa78a38d040b03bdfec069e2c90596522b7970"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/anomalocaris.jpg",
+      "size_bytes": 20529,
+      "sha256": "18d3788f589643d8148fd93af6b2174cab93f44a248dbef4e057e517f2ca027c"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/bird.jpg",
+      "size_bytes": 1772,
+      "sha256": "c8f67c722274738ea57ed91f9f2d399a45064d502ed3b616894291feb2ca71c1"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/coelacanth.jpg",
+      "size_bytes": 19332,
+      "sha256": "b29204e8b5f7773fc1bdf495260a486bea7ee2a2083662146599c6ac70741d78"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/dickinsonia.jpg",
+      "size_bytes": 27429,
+      "sha256": "2cbd2bbe3ce91f69a24bac422a2b8ca5842a40a8b7863055a30bedd6d9bb5498"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/dimetrodon.jpg",
+      "size_bytes": 27967,
+      "sha256": "015c6b366f15de64dd076a898f2d81ffa56eb1a41a373549491415c26626114e"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/dunkleosteus.jpg",
+      "size_bytes": 19156,
+      "sha256": "add8916232ec1b4c41a310c493aa0326d68c97bd7d754277b989e3ef1c7a18ae"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/earlymammal.jpg",
+      "size_bytes": 2143,
+      "sha256": "68227a6b5ce6fad51fe740638de89a1f57ea7c6d63b8066b72d670327dad87ff"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/horseshoe.jpg",
+      "size_bytes": 24471,
+      "sha256": "e3add0c9168a72b7d545007f3ab8f423b5d852ff6b178c5b0e8bf0343c772c89"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/ichthyostega.jpg",
+      "size_bytes": 24414,
+      "sha256": "8aafe76d19e6183e4e03b34d54ee7c7658478dc2cc027966f1686f286b14ed0d"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/insect.jpg",
+      "size_bytes": 1921,
+      "sha256": "bf09d1131af8edf570e05624c643ae85b9eb828b95ff1e20b04acf39c90f0cb8"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/lungfish.jpg",
+      "size_bytes": 18256,
+      "sha256": "ee0956bea33d63ef0f3a1c502afcc95f25b2ed207553c5ec6e9d7c93fe4a6b99"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/lystrosaurus.jpg",
+      "size_bytes": 25099,
+      "sha256": "d9cd4044c7af266e0301bf69efbcb8be8df2e802eaea28e2cebd2fbe8c7e25b1"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/magnolia.jpg",
+      "size_bytes": 5466,
+      "sha256": "a2c835d5d25f1f8406348c7aa22cfc530b2fc627b16634cc7341ddf37575d140"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/mosasaur.jpg",
+      "size_bytes": 11419,
+      "sha256": "0337b2c1d27bdc6838d5ce0e7582d253f75af4308ad106a03cd0928f5adb318b"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/nautilus.jpg",
+      "size_bytes": 20510,
+      "sha256": "dee9b7b379545e6759d5695055e1c884450527b725c3d74ffe25178cb95b4cd2"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/plesiosaur.jpg",
+      "size_bytes": 9339,
+      "sha256": "84b583cce9775037bedf17116100f0dbaeadc181650c8acd0008e0cd62717e54"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/stromatolite.jpg",
+      "size_bytes": 28288,
+      "sha256": "becebeb749cb6d97700a02b9ee35cdaa702b87c9217e5ca491415266cbe32222"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/tiktaalik.jpg",
+      "size_bytes": 21608,
+      "sha256": "09f6bf8f4057681c3344cd44e045130d36829b2bc2a71d4a4904d5629575cbd4"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/triceratops.png",
+      "size_bytes": 88794,
+      "sha256": "e568eaa1722c281192908e4016e4d85c5ec384088e7d0df99740ccd9a7b1087a"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/trilobite.jpg",
+      "size_bytes": 27137,
+      "sha256": "f1a7cb79249de3ba1000c9323110f39ea7f673d0aa27b8d1226ee0f70ddff7c8"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/tuatara.jpg",
+      "size_bytes": 26826,
+      "sha256": "38bf1d6af9b2b641e0720d2a1fc1d09d5f326bed9715dad15c6f75e05d7cd662"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/images/tyrannosaurus.jpg",
+      "size_bytes": 26899,
+      "sha256": "edee541b69ec67a2f6dc218b687df9c02ba2b1c3e4de79d77feb78d002ff420f"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/manifest.json",
+      "size_bytes": 6393,
+      "sha256": "2e81317f4720a992a38efc5e59f060ea352b38fcc43a0d87c786f89868470fea"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/metadata.json",
+      "size_bytes": 1000,
+      "sha256": "a74c7781df854665bcbb850cb7d92289c9b7d5f0ba1695d5f8f2f451b08a6afc"
+    },
+    {
+      "path": "source_exports/deep_time_atlas_v1.6/validation.json",
+      "size_bytes": 5940,
+      "sha256": "6bdeb854ce42bcb2429aeff5d6f044a1dc94de98af5de9e4ebe91db023a6c2c4"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/AMBIGUITIES.md",
+      "size_bytes": 4651,
+      "sha256": "e40b14b1c5e46ad2c62efa1aacb7d0aeff6b754949247fdb99a9e337af666d25"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/README.md",
+      "size_bytes": 1722,
+      "sha256": "9a30b16a973f96441ae730f69c0f36ea34428b4c3478b97be7f128be0a5507ac"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/SCHEMA.md",
+      "size_bytes": 3809,
+      "sha256": "196bdcb4dcbeabc05deb7a00e25fe623710a22f654dfb8ee4769d71acbf64009"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/diversity.json",
+      "size_bytes": 14376,
+      "sha256": "37dd6e1c2be97b299a6a47b8445a2c7c3acacd0d8a41e1e97b2a5ff94bea8b1f"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/geologic_time.json",
+      "size_bytes": 8021,
+      "sha256": "1eb00d0f877badb0222527fbc8b3011a7a3dc6c2a77b8e4865ed753f162415b7"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/manifest.json",
+      "size_bytes": 3498,
+      "sha256": "1f8646fc21c8a5bb108bf2ef5e96ded334c7e3c1206aa7665172022aba649fd3"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/organisms.json",
+      "size_bytes": 88027,
+      "sha256": "ab52e4e071de3b2297e796a0dce85658a3647bbe9c6e20827afe861dc26668a2"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/rank_guides.json",
+      "size_bytes": 7938,
+      "sha256": "9d80f72696f92726b3a34212954d270e195c953f0e949b9b9137b347aa30933a"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/sources.json",
+      "size_bytes": 8871,
+      "sha256": "c4f0e5408936edfaeb2dcc1d1deb7a67404090205e8eee411bf593c6f968252c"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/taxon_details.json",
+      "size_bytes": 102359,
+      "sha256": "a6048610bdc143229e6dee02e19399db1dd4ded777db499ddc3e2cd767714672"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/taxon_history.json",
+      "size_bytes": 64925,
+      "sha256": "2a047f8e5599bbd645b452b51105561e1e7c9f02d3f464c8aef8484db49afd96"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/taxonomy.json",
+      "size_bytes": 172863,
+      "sha256": "ae39c8d3caf38cda2c2ed7f9182f1d6161e88f5ec5e0506f426c75265533bd58"
+    },
+    {
+      "path": "source_exports/tree_of_life_explorer_v1.7/validation_report.json",
+      "size_bytes": 1828,
+      "sha256": "876435eae334176d8b8b9f33e1b5bc1c8f88fa7319d407e999933ba913ac60ef"
+    },
+    {
+      "path": "sources.json",
+      "size_bytes": 17241,
+      "sha256": "aefda21eaae6a4d069919b5a728811a2f30bd633de8737666290c490eee2789b"
+    },
+    {
+      "path": "taxon_details.json",
+      "size_bytes": 1179834,
+      "sha256": "3f7d018948520a7ef463edb8fea2407ad090355a086b44b221e91da31a18fc2d"
+    },
+    {
+      "path": "taxon_history.json",
+      "size_bytes": 501301,
+      "sha256": "9d1834e082668121f319f321b732ddef8fa6f621bcaa9914478ffb697d155900"
+    },
+    {
+      "path": "taxonomy.json",
+      "size_bytes": 556940,
+      "sha256": "39817254707c7a3a73e7da052b9710539bee0a31e1c1cde23169e44c0d7d4d3d"
+    },
+    {
+      "path": "tools/build_shared_taxa_v1.py",
+      "size_bytes": 61365,
+      "sha256": "e6e35dfb650e4e5d1518a9508845e5987a0438861d338bb5426a58ef4e7dea12"
+    }
+  ]
+}

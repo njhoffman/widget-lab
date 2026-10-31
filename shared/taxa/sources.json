@@ -1,0 +1,408 @@
+{
+  "schema_version": "1.0",
+  "references": [
+    {
+      "id": "stx:source:https-www-fws-gov-taxonomic-tree-5007-0048e898cc",
+      "url": "https://www.fws.gov/taxonomic-tree/5007",
+      "title": "FWS / ITIS animal ranks",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_01",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-fws-gov-taxonomic-tree-4599-f72cd3a610",
+      "url": "https://www.fws.gov/taxonomic-tree/4599",
+      "title": "FWS / ITIS plant ranks",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_02",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-fws-gov-taxonomic-tree-5022-1929c674d5",
+      "url": "https://www.fws.gov/taxonomic-tree/5022",
+      "title": "FWS / ITIS fungal ranks",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_03",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-doi-org-10-1007-s13225-024-00540-z-e8da41b2dc",
+      "url": "https://doi.org/10.1007/s13225-024-00540-z",
+      "title": "Fungi: 19 phyla (2024)",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_04",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-itis-gov-hierarchy-html-ca2916eaf4",
+      "url": "https://www.itis.gov/hierarchy.html",
+      "title": "ITIS kingdoms",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_05",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-catalogueoflife-org-data-download-c441c7a37d",
+      "url": "https://www.catalogueoflife.org/data/download",
+      "title": "Catalogue of Life 2026",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_06",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-mammaldiversity-org-releases-28a1a3b498",
+      "url": "https://www.mammaldiversity.org/releases/",
+      "title": "MDD 2026",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_07",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-avilist-org-7413c261bc",
+      "url": "https://www.avilist.org/",
+      "title": "AviList",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_08",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-doi-org-10-1111-boj-12385-b869e7178a",
+      "url": "https://doi.org/10.1111/boj.12385",
+      "title": "APG IV",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_09",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-stratigraphy-org-chart-882030fa39",
+      "url": "https://stratigraphy.org/chart/",
+      "title": "Geologic chart (ICS)",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_10",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "source_reference_id": "ics-chart-2026-06",
+          "source_file": "data/source_references.json",
+          "citation_usage": [
+            "geologic_interval_boundaries"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-mediawiki-org-wiki-api-cross-site-requests-d2852d4db3",
+      "url": "https://www.mediawiki.org/wiki/API:Cross-site_requests",
+      "title": "Wikipedia image API",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_11",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-pmc-ncbi-nlm-nih-gov-articles-pmc4418965-090b847e30",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4418965/",
+      "title": "Why kingdom systems differ",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "footer_12",
+          "source_file": "sources.json",
+          "citation_usage": "general widget source/references; not a per-taxon verified citation"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-population-un-org-wpp-43598a297d",
+      "url": "https://population.un.org/wpp/",
+      "title": "UN World Population Prospects",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_13",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Homo sapiens"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-worldwildlife-org-stories-new-tiger-populati-81660bfe84",
+      "url": "https://www.worldwildlife.org/stories/new-tiger-population-estimate-of-5-574-wild-tigers-announced-by-global-tiger-forum",
+      "title": "WWF / Global Tiger Forum",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_14",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Panthera tigris"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-iucn-org-press-release-202511-dna-methods-help-u-af7e99b69a",
+      "url": "https://iucn.org/press-release/202511/dna-methods-help-uncover-further-african-forest-elephants-species-remains",
+      "title": "IUCN African Forest Elephant Status Report",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_15",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Loxodonta cyclotis"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-worldwildlife-org-species-blue-whale-0fe5f8dc5d",
+      "url": "https://www.worldwildlife.org/species/blue-whale",
+      "title": "WWF blue whale facts",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_16",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Balaenoptera musculus"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-doi-org-10-2305-iucn-uk-2018-2-rlts-t22678117a13-794ea4ee91",
+      "url": "https://doi.org/10.2305/IUCN.UK.2018-2.RLTS.T22678117A131902466.en",
+      "title": "BirdLife / IUCN Red List",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_17",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Dromaius novaehollandiae"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-datazone-birdlife-org-species-factsheet-common-r-d7c0dca0f6",
+      "url": "https://datazone.birdlife.org/species/factsheet/common-raven-corvus-corax",
+      "title": "BirdLife DataZone",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_18",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Corvus corax"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-platypus-asn-au-population-size-and-density-e636501aab",
+      "url": "https://platypus.asn.au/population-size-and-density/",
+      "title": "IUCN-based platypus abundance review",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_19",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Ornithorhynchus anatinus"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-conservation-org-learning-axolotl-conservati-9ec4946f93",
+      "url": "https://www.conservation.org/learning/axolotl-conservation",
+      "title": "Conservation International",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_20",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Ambystoma mexicanum"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-monarchjointventure-org-blog-eastern-monarch-ove-12d8dbadf9",
+      "url": "https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year",
+      "title": "Monarch Joint Venture / winter survey",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_21",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Danaus plexippus"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-pmc-ncbi-nlm-nih-gov-articles-pmc10568204-c5b56e2d74",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10568204/",
+      "title": "Visick & Ratnieks (2023)",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_22",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Apis mellifera"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-www-csiro-au-en-research-animals-marine-life-sha-872c9afe63",
+      "url": "https://www.csiro.au/en/research/animals/marine-life/sharks/can-white-shark-numbers-be-estimated",
+      "title": "CSIRO white shark population",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_23",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Carcharodon carcharias"
+        }
+      ]
+    },
+    {
+      "id": "stx:source:https-pmc-ncbi-nlm-nih-gov-articles-pmc3683724-a5c7f1c748",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3683724/",
+      "title": "Flombaum et al. (2013)",
+      "publication_date": null,
+      "link_check_status": "not_checked",
+      "usage": "general_unless_explicit_population",
+      "source_claims": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "source_reference_id": "population_24",
+          "source_file": "sources.json",
+          "citation_usage": "Population estimate for Prochlorococcus marinus"
+        }
+      ]
+    }
+  ],
+  "original_source_general_notes": [
+    {
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "Scope & taxonomic cautions: The kingdom headings follow the seven-kingdom listing used by ITIS (Animalia, Plantae, Fungi, Chromista, Protozoa, Bacteria and Archaea), not a single universally accepted phylogenetic scheme. Kingdoms such as Protozoa—and the historical circumscription of Chromista—do not map neatly onto modern monophyletic branches; the cladogram here is an educational navigation scaffold, not a complete species-level phylogeny . The title counts only the entries indexed in this atlas (including indexed fossil lineages). Subdivision badges show approximate extant-only richness or reference inventory counts, regardless of whether extinct branches are displayed. The worldwide rank inventories are approximations or lower bounds assembled from different classification systems; they should not be mistaken for an exhaustive, precisely synchronized extant census. Species counts from Catalogue of Life include some fossil records, so rounded living diversity estimates are used in the badges instead. No accepted global count exists for unranked clades, so that badge reports only named clades represented in this atlas that have surviving members. A dash means no reliable worldwide count was supplied for that rank. Population estimates in species cards are separate and are dated, unit-labelled estimates rather than current censuses. Fossil and origin dates are approximate, and a lineage's hypothetical origin must not be confused with its earliest certain fossil. Images are fetched, when expanded, from Wikimedia-hosted Wikipedia page images and depend on connectivity, availability, and their individual licenses."
+    },
+    {
+      "source_export": "deep_time_atlas_v1.6",
+      "text": "No per-taxon, per-clade, or per-event source citations embedded in the widget."
+    }
+  ],
+  "citations_per_claim_coverage": "incomplete; do not conflate a general source URL with taxon-specific scientific verification"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset": "brain-view-references",
+  "version": "1.0",
+  "release_date": "2026-10-16",
+  "notes": "Images derive from the existing interactive authored anatomical schematic paths; not volumetric scans or new spatial coordinates",
+  "views": [
+    {
+      "view": "lateral",
+      "source": "authored projection outlines (not a 3-D scan)",
+      "illustration": "renders/lateral.svg",
+      "sha256": "fc1f99779011b465cfba1669a6fe44659c6de476ebc4e75ced7e3277560ad30b"
+    },
+    {
+      "view": "medial",
+      "source": "authored projection outlines (not a 3-D scan)",
+      "illustration": "renders/medial.svg",
+      "sha256": "9a43555bff627b9cc5a3189dc6bb376b406fd9670d3cf0fbff0fa2e65b999be0"
+    },
+    {
+      "view": "axial",
+      "source": "authored projection outlines (not a 3-D scan)",
+      "illustration": "renders/axial.svg",
+      "sha256": "edb627e7973da0dc82d014c621bf3597e900c7438c9ee6cac2c0d8dfc570ef95"
+    }
+  ],
+  "quality_tier": "schematic",
+  "registered_3d_geometry": false,
+  "review_status": "needs_licensed_registered_anatomical_source"
+}

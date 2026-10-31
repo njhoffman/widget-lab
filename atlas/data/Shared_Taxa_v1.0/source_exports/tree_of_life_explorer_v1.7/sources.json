@@ -1,0 +1,168 @@
+{
+  "_metadata": {
+    "originating_widget": "Tree of Life Explorer",
+    "originating_widget_file": "tree_of_life_explorer.html",
+    "originating_widget_version": "1.7",
+    "pre_export_widget_version": "1.6",
+    "source_date": "2026-10-15",
+    "export_date": "2026-10-15",
+    "export_type": "unreconciled source snapshot",
+    "source_html_sha256": "561087777ad88950fa1981e9f0b81f1a2a8232181b75fbf73e3811f2d21709b7",
+    "source_pre_export_sha256": "da359aa023aeeaa4e3769c74f2548920603307e58b9921123511e092d82d8a21"
+  },
+  "references": [
+    {
+      "reference_id": "footer_01",
+      "label": "FWS / ITIS animal ranks",
+      "url": "https://www.fws.gov/taxonomic-tree/5007",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_02",
+      "label": "FWS / ITIS plant ranks",
+      "url": "https://www.fws.gov/taxonomic-tree/4599",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_03",
+      "label": "FWS / ITIS fungal ranks",
+      "url": "https://www.fws.gov/taxonomic-tree/5022",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_04",
+      "label": "Fungi: 19 phyla (2024)",
+      "url": "https://doi.org/10.1007/s13225-024-00540-z",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_05",
+      "label": "ITIS kingdoms",
+      "url": "https://www.itis.gov/hierarchy.html",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_06",
+      "label": "Catalogue of Life 2026",
+      "url": "https://www.catalogueoflife.org/data/download",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_07",
+      "label": "MDD 2026",
+      "url": "https://www.mammaldiversity.org/releases/",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_08",
+      "label": "AviList",
+      "url": "https://www.avilist.org/",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_09",
+      "label": "APG IV",
+      "url": "https://doi.org/10.1111/boj.12385",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_10",
+      "label": "Geologic chart (ICS)",
+      "url": "https://stratigraphy.org/chart/",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_11",
+      "label": "Wikipedia image API",
+      "url": "https://www.mediawiki.org/wiki/API:Cross-site_requests",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "footer_12",
+      "label": "Why kingdom systems differ",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4418965/",
+      "citation_usage": "general widget source/references; not a per-taxon verified citation"
+    },
+    {
+      "reference_id": "population_13",
+      "label": "UN World Population Prospects",
+      "url": "https://population.un.org/wpp/",
+      "citation_usage": "Population estimate for Homo sapiens"
+    },
+    {
+      "reference_id": "population_14",
+      "label": "WWF / Global Tiger Forum",
+      "url": "https://www.worldwildlife.org/stories/new-tiger-population-estimate-of-5-574-wild-tigers-announced-by-global-tiger-forum",
+      "citation_usage": "Population estimate for Panthera tigris"
+    },
+    {
+      "reference_id": "population_15",
+      "label": "IUCN African Forest Elephant Status Report",
+      "url": "https://iucn.org/press-release/202511/dna-methods-help-uncover-further-african-forest-elephants-species-remains",
+      "citation_usage": "Population estimate for Loxodonta cyclotis"
+    },
+    {
+      "reference_id": "population_16",
+      "label": "WWF blue whale facts",
+      "url": "https://www.worldwildlife.org/species/blue-whale",
+      "citation_usage": "Population estimate for Balaenoptera musculus"
+    },
+    {
+      "reference_id": "population_17",
+      "label": "BirdLife / IUCN Red List",
+      "url": "https://doi.org/10.2305/IUCN.UK.2018-2.RLTS.T22678117A131902466.en",
+      "citation_usage": "Population estimate for Dromaius novaehollandiae"
+    },
+    {
+      "reference_id": "population_18",
+      "label": "BirdLife DataZone",
+      "url": "https://datazone.birdlife.org/species/factsheet/common-raven-corvus-corax",
+      "citation_usage": "Population estimate for Corvus corax"
+    },
+    {
+      "reference_id": "population_19",
+      "label": "IUCN-based platypus abundance review",
+      "url": "https://platypus.asn.au/population-size-and-density/",
+      "citation_usage": "Population estimate for Ornithorhynchus anatinus"
+    },
+    {
+      "reference_id": "population_20",
+      "label": "Conservation International",
+      "url": "https://www.conservation.org/learning/axolotl-conservation",
+      "citation_usage": "Population estimate for Ambystoma mexicanum"
+    },
+    {
+      "reference_id": "population_21",
+      "label": "Monarch Joint Venture / winter survey",
+      "url": "https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year",
+      "citation_usage": "Population estimate for Danaus plexippus"
+    },
+    {
+      "reference_id": "population_22",
+      "label": "Visick & Ratnieks (2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10568204/",
+      "citation_usage": "Population estimate for Apis mellifera"
+    },
+    {
+      "reference_id": "population_23",
+      "label": "CSIRO white shark population",
+      "url": "https://www.csiro.au/en/research/animals/marine-life/sharks/can-white-shark-numbers-be-estimated",
+      "citation_usage": "Population estimate for Carcharodon carcharias"
+    },
+    {
+      "reference_id": "population_24",
+      "label": "Flombaum et al. (2013)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3683724/",
+      "citation_usage": "Population estimate for Prochlorococcus marinus"
+    }
+  ],
+  "original_footer_cautions": "Scope & taxonomic cautions: The kingdom headings follow the seven-kingdom listing used by ITIS (Animalia, Plantae, Fungi, Chromista, Protozoa, Bacteria and Archaea), not a single universally accepted phylogenetic scheme. Kingdoms such as Protozoa—and the historical circumscription of Chromista—do not map neatly onto modern monophyletic branches; the cladogram here is an educational navigation scaffold, not a complete species-level phylogeny . The title counts only the entries indexed in this atlas (including indexed fossil lineages). Subdivision badges show approximate extant-only richness or reference inventory counts, regardless of whether extinct branches are displayed. The worldwide rank inventories are approximations or lower bounds assembled from different classification systems; they should not be mistaken for an exhaustive, precisely synchronized extant census. Species counts from Catalogue of Life include some fossil records, so rounded living diversity estimates are used in the badges instead. No accepted global count exists for unranked clades, so that badge reports only named clades represented in this atlas that have surviving members. A dash means no reliable worldwide count was supplied for that rank. Population estimates in species cards are separate and are dated, unit-labelled estimates rather than current censuses. Fossil and origin dates are approximate, and a lineage's hypothetical origin must not be confused with its earliest certain fossil. Images are fetched, when expanded, from Wikimedia-hosted Wikipedia page images and depend on connectivity, availability, and their individual licenses.",
+  "source_count_notes": [
+    "FWS/ITIS Animalia rank inventory: 34 phyla, 107 classes, 521 orders, 5956 families, 51892 genera (as referenced in source code).",
+    "FWS/ITIS Plantae rank inventory: 7 divisions, 42 classes, 213 orders, 941 families, 6160 genera (as referenced in source code).",
+    "FWS/ITIS Fungi inventory: 38 classes, 161 orders, 628 families, 784 genera; 19 fungal phyla per 2024 fungal classification.",
+    "Across Eukaryota several rank counts are lower bounds assembled across incompletely compatible schemes.",
+    "Catalog of Life entries may include fossil records; badge estimates represent rounded extant-focused richness.",
+    "Original counts and references were extracted, NOT independently verified or updated."
+  ]
+}

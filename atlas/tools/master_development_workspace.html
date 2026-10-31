@@ -1,0 +1,1263 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><title>Atlas Widgets · Master Development Workspace v1.0</title><style>
+:root{color-scheme:dark;--bg:#080e19;--panel:#101b2b;--raised:#142237;--line:#26364b;--text:#e9f3fb;--muted:#96abbf;--cyan:#59c8ee;--mint:#6fe2b7;--gold:#f2bb77;--purple:#b3a0fb;--red:#f09fa4;font:14px/1.48 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+*{box-sizing:border-box}body{background:radial-gradient(ellipse at 75% -20%,#1e3950,transparent 47%),var(--bg);color:var(--text);margin:0;min-height:100vh}button,input,select,textarea{font:inherit}button,select,input[type=file]{cursor:pointer}button{color:inherit}a{color:var(--cyan)}.shell{width:min(1510px,calc(100% - 44px));margin:auto}.top{padding:25px 0 17px;display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line)}.brand{display:flex;gap:15px;align-items:center}.mark{font-size:39px;color:var(--mint);line-height:1}.brand h1{font-size:25px;letter-spacing:-.7px;margin:0;font-weight:830}.brand h1 span{color:var(--cyan)}.sub{font-size:11px;letter-spacing:1.1px;text-transform:uppercase;color:var(--muted);margin-top:1px}.chip{font-size:11px;border:1px solid #334a62;background:#0e1c2c;color:#bcd1de;border-radius:7px;padding:6px 9px;white-space:nowrap}.chip strong{color:var(--cyan)}.chip.mint{color:var(--mint)}.topright{display:flex;gap:8px;align-items:center}.nav{display:flex;gap:6px;overflow:auto;padding:13px 0 17px;scrollbar-width:thin}.tab{border:1px solid transparent;border-radius:7px;background:transparent;color:#a1b3c6;padding:9px 13px;white-space:nowrap;font-weight:750;font-size:12px}.tab:hover{color:var(--text);background:#192b3f}.tab.active{background:#18344b;color:#76dcff;border-color:#386481}.content{padding:7px 0 55px}.section{display:none;animation:appear .18s}.section.active{display:block}@keyframes appear{from{opacity:.25;transform:translateY(3px)}to{opacity:1}}h2{font-size:20px;margin:0 0 6px}h3{font-size:15px;margin:0 0 8px}h4{font-size:12px;margin:0 0 6px}p{margin:6px 0 14px;color:#bbcddd}p.small,.small{font-size:12px;color:var(--muted)}.eyebrow{color:var(--mint);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800}.panel{background:linear-gradient(180deg,#142237,#101c2e);border:1px solid var(--line);border-radius:12px;padding:17px;min-width:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.statnum{font-size:24px;color:var(--cyan);font-weight:850}.wcard{cursor:pointer;transition:border-color .2s}.wcard:hover{border-color:#5481a5}.whead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.wid{font-size:16px;font-weight:850}.count{font-size:11px;color:#a9bdcf;line-height:1.5}.version{font-size:12px;font-weight:820;color:var(--cyan);border:1px solid #35607a;border-radius:7px;padding:3px 7px;background:#152d41;white-space:nowrap}.twocol{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;margin:14px 0}.pill{display:inline-block;padding:3px 8px;font-size:11px;border-radius:7px;color:#9cdde5;border:1px solid #365971;background:#112738;margin:3px 4px 3px 0}.toolbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:13px 0}.btn{border:1px solid #3b617d;border-radius:8px;background:#183148;padding:9px 13px;color:#e4f2ff;font-size:12px;font-weight:700}.btn:hover{border-color:#62bee1;background:#1b3e5b}.btn.primary{background:#146e86;border-color:#3ab8d6;color:#effcff}.btn.good{background:#14594b;border-color:#338c76}.btn.plain{background:none}.select,input[type=text],textarea{background:#0b1929;color:#e2eff7;border:1px solid #334d63;border-radius:7px;padding:9px 10px;min-width:0;max-width:100%}.select{width:100%}textarea{width:100%;resize:vertical;min-height:72px}textarea:focus,select:focus,button:focus-visible,input:focus-visible{outline:2px solid #4ec3e8;outline-offset:1px}table{width:100%;border-collapse:collapse;font-size:12px}th{text-align:left;color:#b2ccdf;font-size:11px;letter-spacing:.3px;background:#17293d}td,th{padding:9px 10px;border-bottom:1px solid #263b50;vertical-align:top}tr:last-child td{border-bottom:0}td>p{margin:2px 0}tr:hover td{background:#ffffff04}code{color:#b7e9fa;background:#152b41;border-radius:4px;padding:2px 4px;font-size:.92em}.notice{border-left:3px solid var(--gold);padding:9px 12px;background:#31261955;border-radius:2px 7px 7px 2px;margin:12px 0;color:#e9cfb6;font-size:12px}.ok{border-left-color:var(--mint);background:#123d3255;color:#bce8d7}.decision-header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.fieldtitle{font-size:11px;color:var(--muted);font-weight:750;display:block;margin:10px 0 5px}.chooser{display:grid;grid-template-columns:190px 1fr;gap:16px;align-items:start}.widgetlist{display:grid;gap:6px}.choose-widget{width:100%;text-align:left;border:1px solid #31465d;background:#132236;padding:10px 11px;border-radius:7px;font-weight:700;font-size:12px}.choose-widget.active{background:#12415c;border-color:#4ebcd7}.decisiongrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.decisioncell{border:1px solid #2b465d;background:#0c1c2e;padding:12px;border-radius:9px}.decisioncell label{display:block;font-size:12px;font-weight:760;margin-bottom:6px}.decisioncell input{width:100%;font-size:11px;margin-top:7px}.comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.picpanel{background:#0d192a;border:1px solid #2b4861;border-radius:11px;overflow:hidden}.picpanel .head{padding:13px;display:flex;align-items:center;justify-content:space-between;gap:9px}.picpanel .head label{font-size:11px;color:var(--muted);font-weight:750}.imgbox{height:480px;background:repeating-linear-gradient(45deg,#0e1e31,#0e1e31 10px,#102337 10px,#102337 20px);display:flex;align-items:flex-start;justify-content:center;overflow:auto;border-top:1px solid #2c4055}.imgbox img{max-width:none;width:100%;height:auto;cursor:zoom-in}.missing{align-self:center;max-width:260px;text-align:center;color:#9bb0c2;padding:20px}.capt{padding:10px 13px;font-size:11px;color:#abc3d5;border-top:1px solid #2c4055;min-height:61px}.pretend{border:1px dashed #42627a;padding:9px;border-radius:8px;color:#a9bfce;font-size:11px}.variantstrip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.mockheader{border:1px solid #2f5368;background:#101f2d;min-height:74px;border-radius:8px;display:flex;align-items:center;justify-content:space-between;gap:9px;padding:10px}.micon{font-size:25px;flex:0 0 auto;color:var(--mint)}.mockmain{min-width:0;flex:1}.mocktitle{font-weight:800;font-size:13px;line-height:1.15}.mocktitle span{color:var(--cyan)}.mocksub{font-size:7px;letter-spacing:.6px;color:#91b5c6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mockstatus{display:flex;gap:3px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.mockbadge{background:#0a1727;color:#a5c5d4;border:1px solid #26465d;font-size:8px;padding:3px 4px;border-radius:4px}.mockversion{background:#143349;color:var(--cyan);border:1px solid #315775;font-weight:bold;padding:4px;font-size:9px}.vtitle{font-size:12px;font-weight:750;margin:5px 0}.vdesc{font-size:11px;color:#9db2c4}.screenshotitem{display:flex;align-items:center;gap:12px;padding:9px;border-bottom:1px solid #24374a;font-size:12px}.screenshotitem:last-child{border:0}.shotid{width:70px;color:var(--cyan);font-weight:840}.shotfile{flex:1;min-width:0;overflow-wrap:anywhere}.type{font-size:10px;padding:3px 6px;border-radius:4px;color:#c7e4f0;background:#1c3b50;white-space:nowrap}.type.concept{background:#4b3021;color:#f6ca96}.accordion{border:1px solid #345068;border-radius:9px;margin:7px 0;background:#111f30}.accordion summary{padding:12px 14px;cursor:pointer;font-weight:720}.accordion ul{padding:0 22px 12px 34px;font-size:12px;color:#b4cada}.accordion li{padding:3px}.accordion[open]{border-color:#4d86a4}.statuscritical{color:#ffb0a9}.statushigh{color:#f1c57d}.statusmedium{color:#b9d7ee}.foot{border-top:1px solid var(--line);padding:18px 0 25px;font-size:11px;color:var(--muted)}.footerlinks{display:flex;gap:9px;flex-wrap:wrap}.tagline{font-size:10px;opacity:.82}.sectiontitle{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}.tiny{font-size:10px;color:#829db4}.versionblock{display:grid;grid-template-columns:1fr 1fr;gap:12px}.src{font-size:11px;color:#8ecedb}.rowbadge{background:#1b3a4a;color:#8bd5dc;padding:2px 7px;border-radius:4px;font-size:10px}.danger{color:#f3b5ab}.numberband{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:15px}.numberband .panel{padding:12px}.numberband .statnum{font-size:20px}@media(max-width:1050px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.twocol{grid-template-columns:1fr}.variantstrip{grid-template-columns:1fr 1fr}.numberband{grid-template-columns:repeat(2,1fr)}}@media(max-width:750px){.shell{width:calc(100% - 24px)}.top{padding-top:14px;align-items:flex-start}.brand h1{font-size:19px}.mark{font-size:30px}.topright{flex-wrap:wrap;justify-content:flex-end}.sub{font-size:9px}.grid,.grid2,.comparison,.decisiongrid,.versionblock{grid-template-columns:1fr}.chooser{grid-template-columns:1fr}.widgetlist{grid-template-columns:repeat(2,1fr)}.variantstrip{grid-template-columns:1fr}.imgbox{height:320px}.topright .chip:first-child{display:none}.panel{padding:12px}.sectiontitle h2{font-size:17px}td,th{padding:7px 5px}.wideonly{display:none}}
+</style></head><body>
+<div class="shell"><header class="top"><div class="brand"><div class="mark">◇</div><div><h1>Atlas Widgets <span>Master Workspace</span></h1><div class="sub">Development registry · design decisions · scientific provenance</div></div></div><div class="topright"><span class="chip mint">7 applications · 1 dataset</span><span class="chip">16 Oct 2026</span><span class="chip">▤ <strong>v1.0</strong></span></div></header><nav class="nav" id="nav" aria-label="Workspace sections"></nav><main class="content">
+<section id="overview" class="section active"></section>
+<section id="compare" class="section"></section>
+<section id="decide" class="section"></section>
+<section id="sources" class="section"></section>
+<section id="releases" class="section"></section>
+<section id="science" class="section"></section>
+<section id="issues" class="section"></section>
+<section id="governance" class="section"></section>
+</main><footer class="foot"><span class="src">Master development workspace v1.0</span> · Documentation-only consolidation — no widget releases modified. <span class="tagline">Three original archival ZIPs are packaged for provenance; the newer branch files must be reimported before merges.</span></footer></div>
+<input type="file" id="decision-import" accept=".json,application/json" hidden><script id="masterdata" type="application/json">{
+  "workspace_version": "1.0",
+  "date": "2026-10-16",
+  "widgets": [
+    {
+      "id": "deep",
+      "name": "Deep Time Atlas",
+      "v": "1.8",
+      "next": "1.9",
+      "count": "368 reconciled concepts; 172 Deep Time source intervals; 580 curated links",
+      "status": "Shared Taxa v1.0 embedded; original data rollback; 173 canonical intervals in parent dataset",
+      "preserve": [
+        "Eon/era/period/epoch hierarchy and contextual tabs",
+        "Evolutionary Lens, earth events, taxon gallery, search",
+        "ICS calibration and Ma ages, fossil/lineage range provenance",
+        "Original 200 detailed Deep Time profiles + 168 additional searchable concepts",
+        "Bundled offline Shared Taxa and legacy fallback"
+      ],
+      "releases": [
+        {
+          "version": "1.8",
+          "date": "2026-10-16",
+          "summary": "Common Atlas UI, stats and version overlays; controls relocated to time hierarchy"
+        },
+        {
+          "version": "1.7",
+          "date": "2026-10-15",
+          "summary": "Integrated Shared Taxa 1.0 canonical snapshot, source provenance, legacy rollback"
+        },
+        {
+          "version": "1.6",
+          "date": "2026-10-15",
+          "summary": "Exported taxonomic/geologic data with schemas"
+        },
+        {
+          "version": "1.5",
+          "date": "2026-10-15",
+          "summary": "Converted integer releases to v1.x + changelog"
+        },
+        {
+          "version": "1.4",
+          "date": "2026-10-14",
+          "summary": "Expanded to 200 profiles; interval content/age refinements"
+        },
+        {
+          "version": "1.3",
+          "date": "2026-10-14",
+          "summary": "Expanded to 100 taxon profiles"
+        }
+      ]
+    },
+    {
+      "id": "tree",
+      "name": "Tree of Life Atlas",
+      "v": "1.9",
+      "next": "1.10",
+      "count": "367 indexed descendants displayed; 368 canonical Shared Taxa concepts including hidden/root concept",
+      "status": "Shared Taxa v1.0 embedded in migrated v1.8/v1.9 branch",
+      "preserve": [
+        "Clade/taxa navigation and hierarchical ancestry",
+        "Root and branch browsing; major ranks and taxon cards",
+        "Pronunciation, etymology, traits and evolutionary adaptations",
+        "Phylogenetic uncertainty, alternative rank systems",
+        "Evolutionary timeline / age filters and representative organisms"
+      ],
+      "releases": [
+        {
+          "version": "1.9",
+          "date": "2026-10-16",
+          "summary": "Family header, Shared Taxa status and indexed count popup"
+        },
+        {
+          "version": "1.8",
+          "date": "2026-10-15",
+          "summary": "Migrated/embedded Shared Taxa 1.0 crosswalk with original content continuity"
+        },
+        {
+          "version": "1.7",
+          "date": "2026-10-15",
+          "summary": "Source export underlying Shared Taxa, 238 source nodes including root"
+        }
+      ]
+    },
+    {
+      "id": "brain",
+      "name": "Brain Atlas",
+      "v": "1.11",
+      "next": "1.12",
+      "count": "57 anatomical regions; 16 circuits/networks (as shown in v1.11 comparison)",
+      "status": "v1.11 primary source; v1.7-from-v1.6 is an obsolete design fork",
+      "preserve": [
+        "Five anatomical divisions + circuits/network hierarchy",
+        "57-region anatomy with 16 circuits/networks",
+        "Evolution timeline, periods/epochs and appearance filters",
+        "Interactive schematic views, selected/highlighted anatomy, pathways",
+        "OFC, Broca and Wernicke, glia/neurotransmitters, clinical and species context",
+        "Two-outline circuit/network convention and selection refinements"
+      ],
+      "releases": [
+        {
+          "version": "1.11",
+          "date": "2026-10-16",
+          "summary": "Current unified Atlas branch preserving newer circuits and regions"
+        },
+        {
+          "version": "1.10",
+          "date": "2026-10-16",
+          "summary": "Interactive anatomical network refinements; standalone source available in project"
+        },
+        {
+          "version": "1.9",
+          "date": "2026-10-16",
+          "summary": "Anatomical timeline and visual refinements"
+        },
+        {
+          "version": "1.8",
+          "date": "2026-10-16",
+          "summary": "Network/selection refinements"
+        },
+        {
+          "version": "1.7",
+          "date": "2026-10-16",
+          "summary": "Added circuit/network hierarchy and OFC coverage"
+        },
+        {
+          "version": "1.6",
+          "date": "2026-10-15",
+          "summary": "v1.x version/changelog conventions"
+        },
+        {
+          "version": "1.5",
+          "date": "2026-10-14",
+          "summary": "Expanded 37→57 regions"
+        },
+        {
+          "version": "1.4",
+          "date": "2026-10-14",
+          "summary": "37th region nucleus accumbens"
+        },
+        {
+          "version": "1.3",
+          "date": "2026-10-14",
+          "summary": "Cortical/subcortical and cortical lobe navigation"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-10-14",
+          "summary": "Hierarchy, geology segments, cross-species and neurochemistry"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-10-14",
+          "summary": "25-region interactive brain and temporal filtering"
+        }
+      ]
+    },
+    {
+      "id": "myth",
+      "name": "Mythology Atlas",
+      "v": "1.3",
+      "next": "1.4",
+      "count": "5 traditions; 363 indexed entries in latest observed variants",
+      "status": "Standalone independent source",
+      "preserve": [
+        "Greek, Roman, Norse, Mesopotamian, Hindu genealogies",
+        "Separate Greek/Roman lineages and names/alternate-name toggle",
+        "Top-down family trees, story/epic/theme tags",
+        "Figures, origin stories, historical text references and artwork",
+        "Search/filter/zoom, entry details and constellation associations"
+      ],
+      "releases": [
+        {
+          "version": "1.3",
+          "date": "2026-10-16",
+          "summary": "Unified header / stats / image verification"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-10-15",
+          "summary": "Major.minor release conversion and five-tradition atlas"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-10-14",
+          "summary": "Broadened from Greek roots to multi-tradition genealogies"
+        }
+      ]
+    },
+    {
+      "id": "muscle",
+      "name": "Muscle Atlas",
+      "v": "1.3",
+      "next": "1.4",
+      "count": "101 muscles; 83 exercises in observed versions",
+      "status": "Standalone; personal training-data import still prospective",
+      "preserve": [
+        "Body map (anterior/posterior) and highlighted regions",
+        "Axial/appendicular, muscle groups and anatomical details",
+        "Origin/insertion, actions, innervation and blood supply",
+        "Fascicle arrangement; stabilizer, postural/phasic and biomechanical tags",
+        "Primary/secondary exercise associations, techniques and visuals",
+        "Future personal exercise progress import must not be invented as current"
+      ],
+      "releases": [
+        {
+          "version": "1.3",
+          "date": "2026-10-16",
+          "summary": "Unified header / stats / image verification"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-10-15",
+          "summary": "Versioned muscle/exercise atlas, muscle groups and association tags"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-10-14",
+          "summary": "Expanded anatomical/biomechanical categories"
+        }
+      ]
+    },
+    {
+      "id": "emergence",
+      "name": "Emergence Atlas",
+      "v": "1.5",
+      "next": "1.6",
+      "count": "6 levels in the consciousness explorer; 7 selectable phenomena",
+      "status": "Standalone; only Consciousness is fully interactive",
+      "preserve": [
+        "Neuron→Synapse→Network→Brain Regions→Workspace→Consciousness",
+        "Expandable explanatory sections (exclusive accordion)",
+        "Level-specific regional variance laboratory and scale estimators",
+        "Scientific uncertainty and estimates labels",
+        "Other phenomena present as previews / coming soon"
+      ],
+      "releases": [
+        {
+          "version": "1.5",
+          "date": "2026-10-16",
+          "summary": "Renamed Emergence Atlas; common header/stats"
+        },
+        {
+          "version": "1.4",
+          "date": "2026-10-15",
+          "summary": "Major.minor scheme with expandable history"
+        },
+        {
+          "version": "1.3",
+          "date": "2026-10-14",
+          "summary": "Seven phenomenon choices, only Consciousness functional"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-10-14",
+          "summary": "Scale comparisons and variance laboratories"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-10-14",
+          "summary": "Six-level neural-emergence explorer"
+        }
+      ]
+    },
+    {
+      "id": "launcher",
+      "name": "Widget Launcher",
+      "v": "1.8",
+      "next": "1.9",
+      "count": "6 atlas cards + 1 Shared Taxa dataset",
+      "status": "Dashboard/importer, not a scientific widget",
+      "preserve": [
+        "Open complete widget card, local standalone HTML launch",
+        "Scan source directory and sync latest matching HTML",
+        "Manual HTML/file import; optional output folder",
+        "IndexedDB persistent local widget resource store",
+        "Shared Data panel; manifest/schema/checksum verification",
+        "Published vs draft dataset status, dependencies and provenance",
+        "Expandable history and compact sync/status UI"
+      ],
+      "releases": [
+        {
+          "version": "1.8",
+          "date": "2026-10-16",
+          "summary": "Common Atlas family styling; header & launch dashboard refinements"
+        },
+        {
+          "version": "1.7",
+          "date": "2026-10-15",
+          "summary": "Actual Shared Taxa manifest, checksums, schema & ambiguity validation"
+        },
+        {
+          "version": "1.6",
+          "date": "2026-10-15",
+          "summary": "Shared datasets and dependencies"
+        },
+        {
+          "version": "1.5",
+          "date": "2026-10-15",
+          "summary": "Six atlas launch cards; minor release scheme"
+        },
+        {
+          "version": "1.4",
+          "date": "2026-10-14",
+          "summary": "Compact dashboard/cards, collapse details"
+        },
+        {
+          "version": "1.3",
+          "date": "2026-10-14",
+          "summary": "Version/date added"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-10-14",
+          "summary": "Sync, newest HTML selection and imports"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-10-14",
+          "summary": "Four-widget launcher established"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "LINE",
+      "file": "atlas_before_after_header.png",
+      "label": "A · Line-art family headers",
+      "type": "actual browser composite",
+      "scope": "Six atlases",
+      "desc": "Thin teal outline symbols, no date, status chips + rightmost version, horizontal divider; Brain source v1.11."
+    },
+    {
+      "id": "LINEFULL",
+      "file": "atlas_before_after_overview.png",
+      "label": "A2 · Line-art full-page overviews",
+      "type": "actual browser composite",
+      "scope": "Six atlases",
+      "desc": "Same general family as A, showing header with first content panel for all six."
+    },
+    {
+      "id": "EMOJI",
+      "file": "atlas_before_after_headers.png",
+      "label": "B · Emoji header variation",
+      "type": "actual browser composite",
+      "scope": "Six atlases + launcher",
+      "desc": "Color pictographic content icons; **Brain v1.7 source is stale**, use icon only; version to far right."
+    },
+    {
+      "id": "MIX",
+      "file": "Atlas_Before_After_2026-10-16.png",
+      "label": "C · Mixed pictogram headers",
+      "type": "actual browser composite",
+      "scope": "Six atlases + launcher",
+      "desc": "Brain v1.11, Tree leaf, muscle pictogram, Deep Time globe; compact stat chips and page content."
+    },
+    {
+      "id": "FULL",
+      "file": "Atlas_Before_After_All_Widgets.jpg",
+      "label": "D · Six-widget full comparisons",
+      "type": "actual browser composite",
+      "scope": "Six atlases",
+      "desc": "Six paired before/after views emphasizing main content layout rather than header alone."
+    },
+    {
+      "id": "SHORT",
+      "file": "atlas_before_after_headers.png",
+      "label": "E · Compact headers composite",
+      "type": "actual browser composite",
+      "scope": "Six atlases",
+      "desc": "Another actual browser composite of the header family; compare badge spacing and icon shapes."
+    },
+    {
+      "id": "FULL2",
+      "file": "atlas_before_after_full.png",
+      "label": "F · Full layout composite",
+      "type": "actual browser composite",
+      "scope": "Six atlases",
+      "desc": "Actual before/after full widgets; compare retention of original content panels."
+    },
+    {
+      "id": "CONCEPT1",
+      "file": "Before and After Atlas Dashboard Redesign.png",
+      "label": "Concept · Hero/dashboard mockup",
+      "type": "concept / unverified screenshot",
+      "scope": "Five atlas concepts",
+      "desc": "An aspirational design mockup with non-production counts and versions. Do not use its displayed data or versions as fact."
+    },
+    {
+      "id": "CONCEPT2",
+      "file": "Atlas Launcher Redesign: Before and After.png",
+      "label": "Concept · Launcher v1.9 proposal",
+      "type": "concept / unverified screenshot",
+      "scope": "Launcher + cards",
+      "desc": "An aspirational v1.9 card design, preview panel and ambiguity status; not a released v1.9 build."
+    },
+    {
+      "id": "DEEPSTATS",
+      "file": "Deep_Time_statistics_popup.png",
+      "label": "Popup · Deep Time statistics",
+      "type": "actual browser capture",
+      "scope": "Deep Time stats",
+      "desc": "Reference for count, HTML size and on-demand image-link verification popup."
+    },
+    {
+      "id": "MYTHSTATS",
+      "file": "mythology_index_popup_v1.3.png",
+      "label": "Popup · Mythology index",
+      "type": "actual browser capture",
+      "scope": "Mythology stats",
+      "desc": "Reference for popup content and sizing in Mythology."
+    }
+  ],
+  "variants": [
+    {
+      "id": "A",
+      "name": "A · Line-art family",
+      "ref": "LINE",
+      "icon": "Thin unboxed teal subject outline",
+      "header": "Flat transparent navy, icon/title/subtitle/divider",
+      "stats": "Right-aligned concise status chips",
+      "note": "Actual browser capture; newer Brain v1.11 represented"
+    },
+    {
+      "id": "B",
+      "name": "B · Emoji family",
+      "ref": "EMOJI",
+      "icon": "Color topic pictogram emoji",
+      "header": "Flat dark header, icon/title/subtitle/divider",
+      "stats": "Extra source/status labels vary",
+      "note": "Actual capture, but Brain v1.7 is based on stale v1.6 source; design only"
+    },
+    {
+      "id": "C",
+      "name": "C · Mixed icon family",
+      "ref": "MIX",
+      "icon": "Mixed color pictograms and science symbols",
+      "header": "Compact header, Atlas emphasized",
+      "stats": "Various source counts and status placements",
+      "note": "Actual capture including Brain v1.11"
+    },
+    {
+      "id": "D",
+      "name": "D · Full content comparison",
+      "ref": "FULL",
+      "icon": "Actual v1.8/v1.9/v1.11 icons in six examples",
+      "header": "Compact dark palette",
+      "stats": "Varies by widget",
+      "note": "Actual capture best for choosing content-area and spacing"
+    },
+    {
+      "id": "P",
+      "name": "P · Concept reference only",
+      "ref": "CONCEPT1",
+      "icon": "Photorealistic, illustrative subjects",
+      "header": "More graphic and promotional",
+      "stats": "Prominent data/media/HTML chips",
+      "note": "Not actual release. Example statistics and versions are not authoritative"
+    },
+    {
+      "id": "L",
+      "name": "L · Launcher concept",
+      "ref": "CONCEPT2",
+      "icon": "Large colored illustration icons",
+      "header": "Big launcher title and sync row",
+      "stats": "Status cards and dataset overview",
+      "note": "Not actual launcher v1.9; use as inspiration only"
+    }
+  ],
+  "components": [
+    [
+      "header",
+      "Header structure"
+    ],
+    [
+      "icon",
+      "Subject icon"
+    ],
+    [
+      "subtitle",
+      "Title & subtitle"
+    ],
+    [
+      "version",
+      "Version control"
+    ],
+    [
+      "badges",
+      "Status/count badges"
+    ],
+    [
+      "stats",
+      "Statistics popup"
+    ],
+    [
+      "history",
+      "Version history popup"
+    ],
+    [
+      "palette",
+      "Colors & panel styling"
+    ],
+    [
+      "layout",
+      "Content layout"
+    ],
+    [
+      "launcher_card",
+      "Launcher card styling"
+    ]
+  ],
+  "conflicts": [
+    {
+      "severity": "critical",
+      "id": "C01",
+      "name": "Brain v1.11 vs v1.7 fallback",
+      "issue": "One header package was generated from old Brain v1.6 and labeled new v1.7; different independent Brain work had reached v1.11.",
+      "proposed": "Use Brain v1.11 functional base. Copy only explicitly selected visual pieces from older design. Reject silent rewinds."
+    },
+    {
+      "severity": "high",
+      "id": "C02",
+      "name": "Same-version HTML variants",
+      "issue": "Multiple same-version HTML files differ in size, layout, code and icons. Same version does not imply same bytes or common release.",
+      "proposed": "Pick exact source file per widget (filename + checksum), compare source branches, and advance minor release only after decisions."
+    },
+    {
+      "severity": "high",
+      "id": "C03",
+      "name": "Shared Taxa compatibility metadata is historical",
+      "issue": "v1.0 manifest says both source widgets not migrated as of Oct 15, while Deep Time v1.7+ and Tree v1.8+ did integrate embedded snapshots.",
+      "proposed": "Record integration state per consumer release; leave immutable Shared Taxa v1.0 manifest untouched."
+    },
+    {
+      "severity": "high",
+      "id": "C04",
+      "name": "Count conventions",
+      "issue": "368 canonical taxon concepts vs Tree 367 indexed descendants; 173 canonical intervals vs 172 Deep Time source intervals; 580 curated links vs 8,916 age-filter matches.",
+      "proposed": "Label each count with its basis/scope, avoid conflating source, canonical, UI and curated counts."
+    },
+    {
+      "severity": "high",
+      "id": "C05",
+      "name": "Popup duplication / stale changelog",
+      "issue": "At least one Emergence v1.5 file has both a v1.5 family overlay and a legacy changelog whose first entry incorrectly says v1.4 Latest.",
+      "proposed": "Unify to one authoritative release history popup; retain legacy entries, eliminate stale \"Latest\" labels."
+    },
+    {
+      "severity": "high",
+      "id": "C06",
+      "name": "Concept screenshots vs runnable HTML",
+      "issue": "Concept designs show example versions and large entry counts not substantiated in the production HTML, including a proposed launcher v1.9.",
+      "proposed": "Tag concepts as visual-only and never use their placeholder metrics or revisions as source truth."
+    },
+    {
+      "severity": "medium",
+      "id": "C07",
+      "name": "Icon source conflict",
+      "issue": "Some branches use line-art SVG, others emoji/pictograms or rounded framed icons; user wants an unboxed content icon with the height of title + subtitle.",
+      "proposed": "Select icon independently for each widget and maintain unboxed sizing across the family."
+    },
+    {
+      "severity": "medium",
+      "id": "C08",
+      "name": "Header status control conflict",
+      "issue": "Some variants retain header search, old update date or conflicting counts; the requested header contains only statuses and far-right version control.",
+      "proposed": "Move search/tools into main content, remove header update date, preserve release date in changelog."
+    },
+    {
+      "severity": "medium",
+      "id": "C09",
+      "name": "Popup content/placement differences",
+      "issue": "Mythology-style index overlay, family stats dialog and original changelog differ in title bands, close-X placement and size.",
+      "proposed": "Pick best visual popup and standardize modal accessibility, close X below divider, image verification on demand."
+    },
+    {
+      "severity": "medium",
+      "id": "C10",
+      "name": "Launcher naming and dataset scope",
+      "issue": "Earlier widgets use Tree of Life, Geologic Time, Brain Structure, Muscles while newer UI uses Atlas names; shared data is not launchable.",
+      "proposed": "Six launchable atlas cards; Shared Taxa as dataset resource with dependencies and aliases for source discovery."
+    },
+    {
+      "severity": "medium",
+      "id": "C11",
+      "name": "Visual changes vs scientific content regression",
+      "issue": "Different automated header packages may modify data, embedded app code or region navigation.",
+      "proposed": "Diff canonical content and JS separately; audit counts, event handlers, IDs and source hashes before release."
+    },
+    {
+      "severity": "medium",
+      "id": "C12",
+      "name": "Image link verification claims",
+      "issue": "Shared Taxa checksummed 23 local images but no external link URLs; Verify Image Links button is not proof of prior successful checks.",
+      "proposed": "Show pending/checked timestamps and network limitations; avoid claims that untested URLs/licensing are valid."
+    }
+  ],
+  "backlog": [
+    [
+      "P0",
+      "UI choice",
+      "Choose header, icon, popups, statuses, palette and content elements using comparison photos; export decisions"
+    ],
+    [
+      "P0",
+      "Source resolution",
+      "Locate/import exact same-version HTML source files for all seven apps; compute SHA-256 branch matrix"
+    ],
+    [
+      "P0",
+      "Brain preservation",
+      "Retain v1.11 neuroanatomical regions, 16 circuits, network pathways and two-outline selection rules"
+    ],
+    [
+      "P0",
+      "Release integrity",
+      "Use one real v1.x version in title, header, embedded metadata and changelog; remove duplicate legacy overlays"
+    ],
+    [
+      "P1",
+      "Shared Taxa",
+      "Review 57 scientific ambiguities (22 age diffs, 9 boundaries, 1 rank conflict and 25 notes)"
+    ],
+    [
+      "P1",
+      "Shared Taxa",
+      "Verify external image URL availability/licenses, per-taxon citation coverage and provenance"
+    ],
+    [
+      "P1",
+      "Consumer metadata",
+      "Make embedded Shared Taxa version and schema provenance observable; never auto-migrate upon launcher sync"
+    ],
+    [
+      "P1",
+      "Launcher",
+      "Import exact new authoritative HTML builds, synchronize folder versions and test persistence after upgrade"
+    ],
+    [
+      "P1",
+      "Regression",
+      "Offline loading, counts, navigation, modal keyboard accessibility, mobile layouts, metadata and checksums"
+    ],
+    [
+      "P2",
+      "Brain",
+      "Improve regional/circuit precision and ensure visual highlights, OFC and anatomical routes remain supported"
+    ],
+    [
+      "P2",
+      "Muscle",
+      "Future import of personal workouts/weights/progress; keep local privacy/data separations"
+    ],
+    [
+      "P2",
+      "Emergence",
+      "Implement additional phenomena beyond fully implemented Consciousness, one with a science review first"
+    ],
+    [
+      "P2",
+      "Cross-widget",
+      "Adopt Shared Taxa consumer contracts in future biology/evolution/quiz modules"
+    ],
+    [
+      "P2",
+      "Launcher",
+      "Evaluate optional v1.9 card-design concept; avoid mockup placeholder numbers and unsupported features"
+    ]
+  ],
+  "colors": {
+    "background": "#080e19",
+    "panel": "#101b2b",
+    "raised_panel": "#142237",
+    "outline": "#26364b",
+    "text": "#e9f3fb",
+    "muted": "#96abbf",
+    "cyan": "#59c8ee",
+    "mint": "#6fe2b7",
+    "gold": "#f2bb77",
+    "purple": "#b3a0fb"
+  },
+  "shared_taxa": {
+    "data_release": "Shared Taxa v1.0",
+    "date": "2026-10-15",
+    "schema": "1.0",
+    "status": "PASS_WITH_DOCUMENTED_SCIENTIFIC_WARNINGS",
+    "checks_passed": 32,
+    "canonical_taxa": 368,
+    "tree_source_taxa": 238,
+    "deep_source_taxa": 200,
+    "matched_cross_source": 70,
+    "deep_unique": 130,
+    "tree_display_descendants": 367,
+    "canonical_intervals": 173,
+    "deep_source_intervals": 172,
+    "curated_links": 580,
+    "ui_age_filter_matches": 8916,
+    "examples": 495,
+    "images_referenced": 129,
+    "local_images_verified": 23,
+    "external_images_checked": 0,
+    "ambiguities": 57,
+    "age_differences": 22,
+    "interval_boundary_differences": 9,
+    "rank_conflicts": 1,
+    "other_notes": 25,
+    "dataset_files": [
+      "manifest.json",
+      "taxonomy.json",
+      "taxon_details.json",
+      "taxon_history.json",
+      "organisms.json",
+      "diversity.json",
+      "geologic_time.json",
+      "geologic_taxon_links.json",
+      "images_manifest.json",
+      "rank_guides.json",
+      "sources.json",
+      "additional_science.json",
+      "ID_MAPPING.json",
+      "VALIDATION_REPORT.json",
+      "RECONCILIATION_REPORT.json",
+      "schemas/",
+      "source_archives/",
+      "source_exports/"
+    ]
+  },
+  "source_limit": "October 16 multiple source HTML releases and screenshots were indexed in earlier project chats/library but raw latest files/screenshots were not transferable to this runtime; exact newest builds must be attached or imported for merge. Three earlier archival ZIPs included.",
+  "html_variants": [
+    {
+      "widget_id": "deep",
+      "variant_id": "deep-01",
+      "file": "Deep_Time_Atlas_v1.8.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Deep_Time_Atlas_v1.8.html",
+      "byte_size": 2553971,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "deep",
+      "variant_id": "deep-02",
+      "file": "Deep_Time_Atlas_v1.8(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Deep_Time_Atlas_v1.8(1).html",
+      "byte_size": 2549858,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "deep",
+      "variant_id": "deep-03",
+      "file": "Deep_Time_Atlas_v1.8(2).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Deep_Time_Atlas_v1.8(2).html",
+      "byte_size": 2553813,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "deep",
+      "variant_id": "deep-04",
+      "file": "Deep_Time_Atlas_v1.8(3).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Deep_Time_Atlas_v1.8(3).html",
+      "byte_size": 2554668,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": "file_000000007c7081f6b7c5deeae52a72f2",
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "deep",
+      "variant_id": "deep-05",
+      "file": "Deep_Time_Atlas_v1.8.html",
+      "folder": "Widgets",
+      "library_path": "/Widgets/Deep_Time_Atlas_v1.8.html",
+      "byte_size": 2554668,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "tree",
+      "variant_id": "tree-01",
+      "file": "tree_of_life_explorer_v1.9.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/tree_of_life_explorer_v1.9.html",
+      "byte_size": 657995,
+      "embedded_version_from_filename": "v1.9",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "tree",
+      "variant_id": "tree-02",
+      "file": "tree_of_life_explorer_v1.9(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/tree_of_life_explorer_v1.9(1).html",
+      "byte_size": 673560,
+      "embedded_version_from_filename": "v1.9",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "tree",
+      "variant_id": "tree-03",
+      "file": "Tree_of_Life_Atlas_v1.9.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Tree_of_Life_Atlas_v1.9.html",
+      "byte_size": 669499,
+      "embedded_version_from_filename": "v1.9",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "tree",
+      "variant_id": "tree-04",
+      "file": "Tree_of_Life_Atlas_v1.9(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Tree_of_Life_Atlas_v1.9(1).html",
+      "byte_size": 673479,
+      "embedded_version_from_filename": "v1.9",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "tree",
+      "variant_id": "tree-05",
+      "file": "Tree_of_Life_Atlas_v1.9(2).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Tree_of_Life_Atlas_v1.9(2).html",
+      "byte_size": 676188,
+      "embedded_version_from_filename": "v1.9",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": "file_000000008e8481f69fc12f27dca63046",
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "tree",
+      "variant_id": "tree-06",
+      "file": "Tree_of_Life_Atlas_v1.9.html",
+      "folder": "Widgets",
+      "library_path": "/Widgets/Tree_of_Life_Atlas_v1.9.html",
+      "byte_size": 676188,
+      "embedded_version_from_filename": "v1.9",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "brain",
+      "variant_id": "brain-01",
+      "file": "Brain_Atlas_v1.7_from_source_v1.6.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Brain_Atlas_v1.7_from_source_v1.6.html",
+      "byte_size": 203773,
+      "embedded_version_from_filename": "v1.7",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": "Historic source regression branch"
+    },
+    {
+      "widget_id": "brain",
+      "variant_id": "brain-02",
+      "file": "neural_evolution_atlas_v1.10.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/neural_evolution_atlas_v1.10.html",
+      "byte_size": 242211,
+      "embedded_version_from_filename": "v1.10",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "brain",
+      "variant_id": "brain-03",
+      "file": "Brain_Atlas_v1.11.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Brain_Atlas_v1.11.html",
+      "byte_size": 256116,
+      "embedded_version_from_filename": "v1.11",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": "file_000000006be081f699f9789544be9071",
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "brain",
+      "variant_id": "brain-04",
+      "file": "Brain_Atlas_v1.11(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Brain_Atlas_v1.11(1).html",
+      "byte_size": 261780,
+      "embedded_version_from_filename": "v1.11",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": "file_00000000d36881f6a799e4276879b439",
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "brain",
+      "variant_id": "brain-05",
+      "file": "Brain_Atlas_v1.11.html",
+      "folder": "Widgets",
+      "library_path": "/Widgets/Brain_Atlas_v1.11.html",
+      "byte_size": 261780,
+      "embedded_version_from_filename": "v1.11",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": "file_000000006be081f699f9789544be9071",
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "myth",
+      "variant_id": "myth-01",
+      "file": "mythology_atlas_v1.3.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/mythology_atlas_v1.3.html",
+      "byte_size": 168565,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "myth",
+      "variant_id": "myth-02",
+      "file": "Mythology_Atlas_v1.3(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Mythology_Atlas_v1.3(1).html",
+      "byte_size": 164460,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "myth",
+      "variant_id": "myth-03",
+      "file": "Mythology_Atlas_v1.3(2).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Mythology_Atlas_v1.3(2).html",
+      "byte_size": 168043,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "myth",
+      "variant_id": "myth-04",
+      "file": "Mythology_Atlas_v1.3(3).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Mythology_Atlas_v1.3(3).html",
+      "byte_size": 166411,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "myth",
+      "variant_id": "myth-05",
+      "file": "mythology_atlas_v1.3(4).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/mythology_atlas_v1.3(4).html",
+      "byte_size": 167053,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": "file_00000000ecbc81f699e24b6c191e1a7e",
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "myth",
+      "variant_id": "myth-06",
+      "file": "Mythology_Atlas_v1.3.html",
+      "folder": "Widgets",
+      "library_path": "/Widgets/Mythology_Atlas_v1.3.html",
+      "byte_size": 166411,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "muscle",
+      "variant_id": "muscle-01",
+      "file": "muscle_atlas_v1.3.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/muscle_atlas_v1.3.html",
+      "byte_size": 140812,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "muscle",
+      "variant_id": "muscle-02",
+      "file": "Muscle_Atlas_v1.3(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Muscle_Atlas_v1.3(1).html",
+      "byte_size": 136286,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "muscle",
+      "variant_id": "muscle-03",
+      "file": "Muscle_Atlas_v1.3(2).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Muscle_Atlas_v1.3(2).html",
+      "byte_size": 140297,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "muscle",
+      "variant_id": "muscle-04",
+      "file": "Muscle_Atlas_v1.3(3).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Muscle_Atlas_v1.3(3).html",
+      "byte_size": 138352,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "muscle",
+      "variant_id": "muscle-05",
+      "file": "Muscle_Atlas_v1.3.html",
+      "folder": "Widgets",
+      "library_path": "/Widgets/Muscle_Atlas_v1.3.html",
+      "byte_size": 138352,
+      "embedded_version_from_filename": "v1.3",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "emergence",
+      "variant_id": "emergence-01",
+      "file": "emergence_atlas_v1.5.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/emergence_atlas_v1.5.html",
+      "byte_size": 87935,
+      "embedded_version_from_filename": "v1.5",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "emergence",
+      "variant_id": "emergence-02",
+      "file": "Emergence_Atlas_v1.5(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Emergence_Atlas_v1.5(1).html",
+      "byte_size": 84289,
+      "embedded_version_from_filename": "v1.5",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "emergence",
+      "variant_id": "emergence-03",
+      "file": "Emergence_Atlas_v1.5(2).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Emergence_Atlas_v1.5(2).html",
+      "byte_size": 87885,
+      "embedded_version_from_filename": "v1.5",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "emergence",
+      "variant_id": "emergence-04",
+      "file": "Emergence_Atlas_v1.5(3).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Emergence_Atlas_v1.5(3).html",
+      "byte_size": 86277,
+      "embedded_version_from_filename": "v1.5",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "emergence",
+      "variant_id": "emergence-05",
+      "file": "Emergence_Atlas_v1.5.html",
+      "folder": "Widgets",
+      "library_path": "/Widgets/Emergence_Atlas_v1.5.html",
+      "byte_size": 86277,
+      "embedded_version_from_filename": "v1.5",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "launcher",
+      "variant_id": "launcher-01",
+      "file": "widget_launcher_v1.8.html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/widget_launcher_v1.8.html",
+      "byte_size": 98015,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "launcher",
+      "variant_id": "launcher-02",
+      "file": "Widget_Launcher_v1.8(1).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/Widget_Launcher_v1.8(1).html",
+      "byte_size": 97668,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    },
+    {
+      "widget_id": "launcher",
+      "variant_id": "launcher-03",
+      "file": "widget_launcher_v1.8(2).html",
+      "folder": "Atlas Widgets",
+      "library_path": "/Atlas Widgets/widget_launcher_v1.8(2).html",
+      "byte_size": 81994,
+      "embedded_version_from_filename": "v1.8",
+      "sha256": null,
+      "bytes_available": false,
+      "source_file_id": null,
+      "status": "indexed_library_metadata_only; exact code and screenshot mapping pending",
+      "warning": ""
+    }
+  ],
+  "html_snapshot_inventory_count": 35
+}</script><script>
+(()=>{'use strict';
+const D=JSON.parse(document.getElementById('masterdata').textContent);const $=s=>document.querySelector(s),byid=s=>document.getElementById(s);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const slim=s=>esc(s).replace(/\*\*/g,'');
+const KEY='AtlasWidgets_MasterWorkspace_v1.0';let saved;try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){saved={}};let prefs={decisions:{},decisionNotes:{},issues:{},widgetNotes:{},...saved};const imgs={};let left='LINE',right='EMOJI',chosen='deep';const tabs=[['overview','Overview'],['compare','Visual comparisons'],['decide','Decision matrix'],['sources','HTML branches'],['releases','Version histories'],['science','Shared Taxa & launcher'],['issues','Issues / backlog'],['governance','Release protocol']];const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(prefs))}catch(e){console.warn('Save preferences error',e)}};
+const msg=(str)=>{const div=document.createElement('div');div.className='notice';div.textContent=str;return div};function opt(v,l){return `<option value="${esc(v)}">${esc(l)}</option>`}function widgetLabel(id){return D.widgets.find(x=>x.id===id)?.name||id};function versionRow(w){return `<tr><td><strong>${esc(w.name)}</strong></td><td><span class="version">▤ v${esc(w.v)}</span></td><td>v${esc(w.next)}</td><td>${esc(w.count)}</td></tr>`}
+function overview(){const indexed=`<div class="numberband">${[['6','Standalone atlases'],['1','Launcher'],['368','Canonical taxon concepts'],['57','Scientific ambiguities']].map(([a,b])=>`<div class="panel"><div class="statnum">${a}</div><div class="small">${b}</div></div>`).join('')}</div>`;byid('overview').innerHTML=`<div class="sectiontitle"><div><div class="eyebrow">Authoritative inventory · pending UI choices</div><h2>One project, seven applications, preserved branch histories</h2><p>Source of truth for future changes. This workspace itself is not a new atlas release.</p></div><button class="btn primary" data-go="decide">Choose design features →</button></div>${indexed}<div class="grid">${D.widgets.map(w=>`<article class="panel wcard" data-widget="${w.id}"><div class="whead"><div class="wid">${esc(w.name)}</div><span class="version">v${esc(w.v)}</span></div><p class="small">${esc(w.status)}</p><div class="count">${esc(w.count)}</div></article>`).join('')}</div><div class="twocol"><article class="panel"><h3>Shared requirements across six atlases</h3><p class="small">Use the Deep Time navy/cyan color system, unboxed subject icon aligned to title+subtitle height, colored final “Atlas”, short subtitle, divider, only status/count controls and the extreme-right <code>▤ vX.Y</code> changelog button. Keep header search/action buttons out.</p>${Object.entries(D.colors).map(([k,v])=>`<span class="pill" style="border-left:4px solid ${v}">${esc(k)} · ${v}</span>`).join('')}</article><article class="panel"><h3>Release status versus source choices</h3><p class="small">Every displayed version is the most recent release identified in previous project history. Some same-version HTML outputs differ. No source file should be called “canonical” until the exact original file is selected and regression-tested.</p><div class="notice">A Brain v1.7 header branch was made from v1.6. Keep v1.11 logic; transfer visual elements only. Concept v1.9 launcher previews are not released v1.9.</div></article></div><div class="panel"><h3>Complete current version matrix</h3><table><thead><tr><th>Component</th><th>Current</th><th>Next approved</th><th>Content definition</th></tr></thead><tbody>${D.widgets.map(versionRow).join('')}<tr><td><strong>Shared Taxa dataset</strong></td><td><span class="version">v1.0</span></td><td>v1.1 only on change</td><td>Immutable source release; 368 concepts / 173 canonical intervals</td></tr></tbody></table></div>`}
+function shotSelector(side,val){return `<select class="select" id="${side}-select">${D.screenshots.map(s=>opt(s.id,`${s.id} · ${s.label}`)).join('')}</select>`}
+function compare(){byid('compare').innerHTML=`<div class="sectiontitle"><div><div class="eyebrow">Branch candidate gallery</div><h2>Compare actual screenshot variants side by side</h2><p>Existing browser captures and conceptual design examples are indexed separately. You can upload the pictures already generated in other Atlas chats; this board matches them by filename.</p></div></div><div class="notice">Images in previous Project conversations could be inspected but not copied to this downloadable package. Load the existing PNG/JPG captures below to combine them in this comparison workspace. Empty panels are not fabricated screenshots.</div><div class="toolbar"><label class="btn primary" for="screenshot-upload">Add screenshots (multiple files)</label><input type="file" id="screenshot-upload" accept="image/*" multiple style="max-width:260px;font-size:10px"><span class="small" id="shot-count">0 / ${D.screenshots.length} referenced files loaded</span></div><div class="comparison"><article class="picpanel"><div class="head"><label>Left candidate</label>${shotSelector('left',left)}</div><div class="imgbox" id="left-img"></div><div class="capt" id="left-cap"></div></article><article class="picpanel"><div class="head"><label>Right candidate</label>${shotSelector('right',right)}</div><div class="imgbox" id="right-img"></div><div class="capt" id="right-cap"></div></article></div><div class="sectiontitle" style="margin-top:22px"><div><h3>Feature families</h3><div class="tiny">Small schematic header previews, not original screenshots · switch the above choices for real captures.</div></div><button class="btn" data-go="decide">Record individual selections →</button></div><div class="variantstrip">${D.variants.map(v=>`<div class="panel" style="padding:10px"><div class="mockheader"><div class="micon">${v.id==='A'?'♧':v.id==='B'?'🌿':v.id==='C'?'🌎':v.id==='L'?'🧭':v.id==='P'?'🌎':'⎔'}</div><div class="mockmain"><div class="mocktitle">Tree of Life <span>Atlas</span></div><div class="mocksub">Evolution · biodiversity</div></div><div class="mockstatus"><span class="mockbadge">367 taxa</span><span class="mockversion">▤ v1.9</span></div></div><div class="vtitle">${esc(v.name)}</div><div class="vdesc">${esc(v.icon)}</div><div class="tiny" style="margin-top:6px">${esc(v.note)}</div></div>`).join('')}</div><div class="panel"><h3>Comparison picture catalog</h3>${D.screenshots.map(s=>`<div class="screenshotitem"><span class="shotid">${esc(s.id)}</span><div class="shotfile"><strong>${esc(s.file)}</strong><div class="tiny">${slim(s.desc)}</div></div><span class="type ${s.type.includes('concept')?'concept':''}">${esc(s.type)}</span></div>`).join('')}</div>`;byid('left-select').value=left;byid('right-select').value=right;byid('left-select').addEventListener('change',e=>{left=e.target.value;paintShot('left',left)});byid('right-select').addEventListener('change',e=>{right=e.target.value;paintShot('right',right)});byid('screenshot-upload').addEventListener('change',async e=>{for(const f of e.target.files){if(!f.type.startsWith('image/'))continue;const key=f.name.toLowerCase();if(imgs[key])URL.revokeObjectURL(imgs[key]);imgs[key]=URL.createObjectURL(f)}paintShot('left',left);paintShot('right',right);countPics()});paintShot('left',left);paintShot('right',right);countPics()}
+function countPics(){let n=D.screenshots.filter(s=>imgs[s.file.toLowerCase()]).length;const el=byid('shot-count');if(el)el.textContent=`${n} / ${D.screenshots.length} catalog references resolved`}
+function paintShot(side,id){let s=D.screenshots.find(x=>x.id===id);let box=byid(side+'-img'),cap=byid(side+'-cap');if(!box||!s)return;const url=imgs[s.file.toLowerCase()];box.replaceChildren();if(url){let im=document.createElement('img');im.src=url;im.alt=s.label;im.title='Click to view full image';im.addEventListener('click',()=>window.open(url,'_blank'));box.append(im)}else{const b=document.createElement('div');b.className='missing';b.innerHTML='<div style="font-size:33px;margin-bottom:12px">▧</div><strong>Screenshot not imported</strong><p class="small">Add the existing file <code>'+esc(s.file)+'</code> using the file chooser above. This is a reference slot, not a recreated screenshot.</p>';box.append(b)}cap.textContent=`${s.label} · ${s.type} · ${s.desc}`}
+function sources(){byid('sources').innerHTML=`<div class="eyebrow">Independent same-version source branches</div><h2>${D.html_snapshot_inventory_count} earlier Library HTML snapshots</h2><p>These are cataloged file names and byte sizes from previous project chats. The later bytes are not attached to this workspace; equal version numbers may hide substantially different files. Select exact HTML sources after UI decisions and before generating code.</p><div class="notice">No source SHA-256 has been invented. Sizes alone cannot determine which branch is correct, and the “v1.7 from v1.6” Brain branch must not supersede v1.11.</div><div class="grid2">${D.widgets.map(w=>`<div class="panel"><div class="whead"><h3>${esc(w.name)}</h3><span class="version">v${w.v}</span></div><table><thead><tr><th>Candidate</th><th>Source path</th><th>Bytes</th></tr></thead><tbody>${D.html_variants.filter(x=>x.widget_id===w.id).map(x=>`<tr><td><span class="rowbadge">${esc(x.variant_id)}</span></td><td><code style="overflow-wrap:anywhere">${esc(x.library_path)}</code>${x.warning?'<div class="danger">Old Brain source — design only</div>':''}</td><td>${Number(x.byte_size).toLocaleString()}</td></tr>`).join('')}</tbody></table></div>`).join('')}</div><div class="notice ok">To reference a specific visual branch in your selections, name the screenshot choice (A, B, C, D, P or L) and the corresponding source filename when known. The final code merge requires exact file bytes, not just this metadata list.</div>`}
+function controlsWidget(){return D.widgets.map(w=>`<button type="button" class="choose-widget ${w.id===chosen?'active':''}" data-w="${w.id}">${esc(w.name)} <span style="float:right;color:#6abbd4">v${w.v}</span></button>`).join('')}
+const choices=[['','Unresolved — choose later'],['KEEP','Keep current release visual'],...D.variants.map(v=>[v.id,v.name]),['CUSTOM','Mix/describe custom']];
+function decision(){const w=D.widgets.find(x=>x.id===chosen);const n=D.components.length;const filled=D.components.filter(([k])=>prefs.decisions[w.id+'|'+k]).length;byid('decide').innerHTML=`<div class="sectiontitle"><div><div class="eyebrow">User-controlled authoritative merge</div><h2>Pick each feature independently</h2><p>Take a header from one comparison and an icon/popup from another without replacing scientific content.</p></div><div class="toolbar"><button class="btn primary" id="export-json">Export decisions (JSON)</button><button class="btn" id="export-md">Export summary (Markdown)</button><button class="btn" id="load-json">Import decisions</button></div></div><div class="chooser"><aside class="widgetlist">${controlsWidget()}</aside><div><div class="panel"><div class="decision-header"><div><h3>${esc(w.name)} · v${w.v}</h3><div class="small">${filled}/${n} component selections recorded · next release after sign-off: v${w.next}</div></div><span class="version">baseline v${w.v}</span></div><p class="small">Do not replace current release behavior. ${esc(w.status)}.</p><div class="decisiongrid">${D.components.map(([id,label])=>{const key=w.id+'|'+id;return `<div class="decisioncell"><label for="c-${id}">${esc(label)}</label><select class="select" id="c-${id}" data-component="${id}">${choices.map(([v,t])=>opt(v,t)).join('')}</select><input type="text" data-note="${id}" placeholder="Specific element or adjustment…" maxlength="360" value="${esc(prefs.decisionNotes[key]||'')}"></div>`}).join('')}</div><label class="fieldtitle" for="widget-notes">Other requirements / final instructions for this widget</label><textarea id="widget-notes" placeholder="Keep existing feature X, copy the search position from variant Y, preserve source code…">${esc(prefs.widgetNotes[w.id]||'')}</textarea></div><div class="notice ok">Your selections are stored locally in this browser and exported only when you choose. Choosing a source variant here does not edit, overwrite or release an atlas.</div></div></div>`;for(const [id] of D.components){const key=w.id+'|'+id;const el=byid('c-'+id);el.value=prefs.decisions[key]||'';el.addEventListener('change',e=>{prefs.decisions[key]=e.target.value;save();});const note=byid('decide').querySelector(`[data-note="${id}"]`);note.addEventListener('input',e=>{prefs.decisionNotes[key]=e.target.value;save()})}byid('widget-notes').addEventListener('input',e=>{prefs.widgetNotes[w.id]=e.target.value;save()});byid('export-json').addEventListener('click',exportJson);byid('export-md').addEventListener('click',exportMarkdown);byid('load-json').addEventListener('click',()=>byid('decision-import').click());byid('decide').querySelectorAll('[data-w]').forEach(b=>b.addEventListener('click',()=>{chosen=b.dataset.w;decision()}))}
+function versions(){byid('releases').innerHTML=`<div class="eyebrow">Preserved individual histories</div><h2>Current releases and previous development branches</h2><p>Entries preserve known changes and selected source records. Older minor summaries may be abbreviated; original HTML/source changelogs must be carried forward verbatim before next release.</p><div class="grid2">${D.widgets.map(w=>`<div class="panel"><div class="whead"><h3>${esc(w.name)}</h3><span class="version">v${w.v}</span></div>${w.releases.map((r,i)=>`<details class="accordion" ${i===0?'open':''}><summary><span style="color:${i===0?'var(--cyan)':'inherit'}">v${esc(r.version)}</span> · <span class="tiny">${esc(r.date)}</span>${i===0?' <span class="rowbadge">latest</span>':''}</summary><ul><li>${esc(r.summary)}</li></ul></details>`).join('')}</div>`).join('')}<div class="panel"><div class="whead"><h3>Shared Taxa</h3><span class="version">v1.0</span></div><details class="accordion" open><summary>v1.0 · 2026-10-15</summary><ul><li>Initial published canonical scientific resource; all source records preserved</li><li>368 concepts; 173 canonical intervals; 580 curated associations</li><li>32/32 structural checks PASS; 57 documented scientific ambiguities</li></ul></details></div></div>`}
+function science(){const p=D.shared_taxa;byid('science').innerHTML=`<div class="eyebrow">Scientific foundation</div><h2>Shared Taxa v1.0 architecture and consumer integration</h2><p>Published October 15, 2026 · schema 1.0 · 32 structural checks passed, with documented scientific ambiguities.</p><div class="numberband">${[['368','Canonical concepts'],['173','Canonical intervals'],['580','Curated interval–taxon links'],['57','Scientific review items']].map(([x,y])=>`<div class="panel"><div class="statnum">${x}</div><div class="small">${y}</div></div>`).join('')}</div><div class="twocol"><div class="panel"><h3>Source records and identity</h3><table><tbody><tr><td>Tree source nodes</td><td>238 (incl. root; 367 displayed descendants later is a different count)</td></tr><tr><td>Deep Time source profiles</td><td>200</td></tr><tr><td>Matched across source</td><td>70</td></tr><tr><td>Unique additions</td><td>130</td></tr><tr><td>Canonical IDs</td><td><code>stx:taxon:…</code> via <code>ID_MAPPING.json</code></td></tr><tr><td>Examples</td><td>495</td></tr><tr><td>Media references</td><td>129 · 23 bundled locally verified · 0 external verified</td></tr></tbody></table><div class="notice">Display filter matches (8,916) are not independently curated fossil associations; do not add them to the 580 curated connections.</div></div><div class="panel"><h3>Scientific ambiguity register</h3><table><tbody><tr><td>Age differences</td><td>22</td></tr><tr><td>Geological boundary disagreements</td><td>9</td></tr><tr><td>Rank disagreements</td><td>1</td></tr><tr><td>Source ambiguity notes</td><td>25</td></tr><tr><td>Total</td><td><strong>57 unresolved</strong></td></tr></tbody></table><p class="small">No fuzzy cross-source matching, unsupported ancestry edges, false calibration of crown/stem/origin, or conflation of taxon records with global abundance. Source assertions and null uncertainties persist.</p></div></div><div class="panel"><h3>Published dataset files (real schema, not the earlier proposed filenames)</h3><div>${p.dataset_files.map(t=>`<span class="pill">${esc(t)}</span>`).join('')}</div></div><div class="grid2" style="margin-top:12px"><div class="panel"><h3>Consumer status</h3><p class="small"><strong>Tree of Life v1.8/v1.9:</strong> embedded Shared Taxa 1.0; <strong>Deep Time v1.7/v1.8:</strong> canonical snapshot + legacy rollback. The original dataset manifest's "not migrated" wording accurately describes Oct 15 publication time, not later app releases.</p><p class="small">Muscle, Brain, Mythology and Emergence are not assumed to consume Shared Taxa just because they share the atlas UI design.</p></div><div class="panel"><h3>Widget Launcher v1.8</h3><p class="small">Six standalone HTML cards; source directory and file imports; persistent IndexedDB; Shared Data as a nonlaunchable resource; SHA-256/size/schema validation and dependency indicators. Manual sync must never silently replace the embedded scientific snapshot or wipe user settings.</p><p class="small"><strong>Historical reference:</strong> v1.7 database <code>AtlasWidgetLauncher</code> version 2; current implementation requires exact file-level verification before generating v1.9.</p></div></div>`}
+function issues(){const totals={};D.conflicts.forEach(c=>totals[c.severity]=(totals[c.severity]||0)+1);byid('issues').innerHTML=`<div class="eyebrow">Outstanding decisions · technical debt · planned science reviews</div><h2>Issues and release blockers</h2><p>Issue states are editable here and included in exports; initial states are unresolved, not assumed fixed.</p><div class="grid2"><div class="panel"><h3>Conflicts & risks (${D.conflicts.length})</h3>${D.conflicts.map(c=>`<details class="accordion" ${c.severity==='critical'?'open':''}><summary><span class="status${c.severity}">${esc(c.severity.toUpperCase())}</span> · ${esc(c.id)} ${esc(c.name)}</summary><div style="padding:0 13px 13px"><p class="small"><strong>Finding:</strong> ${esc(c.issue)}</p><p class="small"><strong>Proposed resolution:</strong> ${esc(c.proposed)}</p><label class="fieldtitle">Decision status</label><select class="select" data-issue="${c.id}">${[['open','Open / unresolved'],['accepted','Resolution accepted'],['needs-source','Need exact source files'],['deferred','Deferred for later']].map(([v,l])=>opt(v,l)).join('')}</select></div></details>`).join('')}</div><div class="panel"><h3>Development queue</h3><table><thead><tr><th>Priority</th><th>Area</th><th>Request</th></tr></thead><tbody>${D.backlog.map(([prio,area,task])=>`<tr><td><span class="rowbadge">${prio}</span></td><td>${esc(area)}</td><td>${esc(task)}</td></tr>`).join('')}</tbody></table></div></div>`;byid('issues').querySelectorAll('[data-issue]').forEach(e=>{e.value=prefs.issues[e.dataset.issue]||'open';e.addEventListener('change',()=>{prefs.issues[e.dataset.issue]=e.value;save()})})}
+function governance(){byid('governance').innerHTML=`<div class="eyebrow">Shipping policy</div><h2>Required gates before creating authoritative next versions</h2><p>Every widget keeps its own version stream and full changelog; this independent workspace is v1.0.</p><div class="grid2"><div class="panel"><h3>1 · Select + freeze source branches</h3><p class="small">Choose each widget's exact baseline HTML (file + SHA-256), not just the current version label. Preserve Brain v1.11 scientific and network logic. Diff branches whose version number was reused.</p><h3>2 · Merge approved UI selectively</h3><p class="small">Move common header design into a single shared template while keeping each standalone widget independent. Apply chosen icon, status, popup, palette and content layout one component at a time. Preserve function/event listeners.</p><h3>3 · Validate semantics</h3><p class="small">Canonical Shared Taxa IDs, chronology and aliases, all original detailed records, quiz integration boundaries and image provenance. Preserve scientific uncertainty and the 57-item audit queue.</p></div><div class="panel"><h3>4 · Test and release</h3><p class="small">Offline <code>file://</code> run, desktop/mobile screenshot comparisons, full content/navigation test, search/filters, modal keyboard support, correct statistics, image URL status, IndexedDB state and Shared Taxa manifest verification.</p><h3>5 · Release records</h3><p class="small">Bump minor only when code/data actually released. Update release date, exact version header, changelog entry and browser title. Preserve all prior entries, suggest matching project chat title, package standalone HTML, data manifest, screenshots and checksum report.</p><div class="notice ok">No version bumps occur merely because design candidates were collected or a decision was marked accepted.</div></div></div><div class="panel" style="margin-top:12px"><h3>Import/export</h3><div class="toolbar"><button class="btn primary" id="gov-json">Export decisions JSON</button><button class="btn" id="gov-md">Export human-readable summary</button><button class="btn" id="gov-import">Import existing decision JSON</button></div><p class="small">To generate the next authoritative HTML files in a subsequent chat turn, attach your exported decisions and the exact latest HTML source files for the versions above. The three original ZIPs in this package serve only as provenance/rollback.</p></div>`;byid('gov-json').onclick=exportJson;byid('gov-md').onclick=exportMarkdown;byid('gov-import').onclick=()=>byid('decision-import').click()}
+function exportObj(){return {format:'AtlasWidgetsMasterDecisions',schema_version:'1.0',workspace_version:'1.0',exported_at:new Date().toISOString(),latestVersions:Object.fromEntries(D.widgets.map(w=>[w.id,w.v])),...prefs}}
+function dl(file,content,mime){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([content],{type:mime}));a.href=url;a.download=file;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000)}
+function exportJson(){dl('Atlas_Widgets_Design_Decisions.json',JSON.stringify(exportObj(),null,2),'application/json')}
+function buildMarkdown(){const lines=['# Atlas Widgets — Selected design decisions','','Exported '+new Date().toISOString(),'','Do not overwrite current atlas versions. Source strings refer to the visual comparison family; each next release requires user approval and exact HTML source.'];for(const w of D.widgets){lines.push('',`## ${w.name} · baseline v${w.v} → proposed v${w.next}`);for(const [id,label] of D.components){const key=w.id+'|'+id;const c=prefs.decisions[key]||'UNDECIDED',note=prefs.decisionNotes[key]||'';lines.push(`- **${label}:** ${c}${note?' — '+note:''}`)}if(prefs.widgetNotes[w.id])lines.push('','Additional requirements: '+prefs.widgetNotes[w.id])}lines.push('','## Conflict decisions');for(const c of D.conflicts)lines.push(`- ${c.id} ${c.name}: ${prefs.issues[c.id]||'open'}`);return lines.join('\n')+'\n'}
+function exportMarkdown(){dl('Atlas_Widgets_Selected_Design.md',buildMarkdown(),'text/markdown')}
+byid('decision-import').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{let obj=JSON.parse(t);if(obj.format!=='AtlasWidgetsMasterDecisions'&&obj.workspace_version!=='1.0')throw Error('Unexpected decision file type');for(const key of ['decisions','decisionNotes','issues','widgetNotes']){if(obj[key]&&typeof obj[key]==='object')prefs[key]=obj[key]}save();decision();issues();alert('Decisions imported.');}).catch(err=>alert('Could not import: '+err.message));e.target.value='' });
+function go(id){document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));try{history.replaceState(null,'','#'+id)}catch(e){}window.scrollTo({top:0,behavior:'smooth'})}
+byid('nav').innerHTML=tabs.map(([id,label])=>`<button type="button" class="tab" data-tab="${id}">${esc(label)}</button>`).join('');byid('nav').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(b)go(b.dataset.tab)});document.body.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)go(b.dataset.go);const w=e.target.closest('[data-widget]');if(w){chosen=w.dataset.widget;decision();go('decide')}});
+overview();compare();decision();sources();versions();science();issues();governance();go(tabs.some(x=>x[0]===location.hash.slice(1))?location.hash.slice(1):'overview');
+})();</script></body></html>

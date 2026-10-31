@@ -1,0 +1,192 @@
+{
+  "widget": "launcher",
+  "widget_version": "1.14",
+  "repository_version": "0.1.0",
+  "captured_at": "2026-10-31T03:11:59.750385+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Widget_Launcher_v1.14.html",
+  "source_sha256": "d011e76389234aa95058c5cce84e07a645f70d299b58aeb35dfd87f5212f13f0",
+  "actual_sha256": "4803bbdb24a9f592f7ad262578861392155f2115b9460af53d7465aec4964256",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "selection": "Initial default view in clean browser profile",
+  "goals": [
+    {
+      "path": "atlas/images/audit_launcher_concept.png",
+      "sha256": "95f9bb876cc80f75d0380543411e0c8144203bcc6af755e3a81e469b44c2a16f",
+      "crop": null,
+      "approval": "proposed concept, not approved"
+    }
+  ],
+  "complete": [
+    {
+      "id": "WL-001",
+      "title": "Import and verify the Atlas baseline.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-003",
+      "title": "Maintain a categorized, prioritized live backlog.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "WL-004",
+      "title": "Produce actual-versus-goal evidence and open it in feh.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "pending": [
+    {
+      "id": "WL-005",
+      "title": "Exercise Atlas browser interactions before visual refactoring.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "WL-006",
+      "title": "Refine the goal-image layout without scientific regressions.",
+      "priority": "p1",
+      "status": "approved"
+    },
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T010",
+      "title": "Automate regression for header, popup, versions and mobile breakpoints.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T002",
+      "title": "Apply consistent navy gradient with subtle colored subject identity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T003",
+      "title": "Match illustrated reference icon scale and clarity.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T007",
+      "title": "Verify existing: Unify overlay spacing and one-row title/close control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T008",
+      "title": "Consolidate hover/active/selected/focus styles and common green stat emphasis.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I001",
+      "title": "Close remaining header/hero visual gap.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S022",
+      "title": "Standard keyboard, reduced-motion and visual-contrast test plan.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T009",
+      "title": "Match reference luminous panel edges and restrained atmospheric fills.",
+      "priority": "p2",
+      "status": "proposed"
+    },
+    {
+      "id": "I026",
+      "title": "Keyboard, contrast and responsive coverage is not maintained as a uniform regression matrix.",
+      "priority": "p2",
+      "status": "triage"
+    },
+    {
+      "id": "T075",
+      "title": "Support optional external asset manifests and local artwork bundles.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T076",
+      "title": "Verify existing: Retain Shared Taxa as nonlaunchable versioned resource.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T077",
+      "title": "Regression-test folder sync / imported artwork / IndexedDB in Windows.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I006",
+      "title": "Test folder sync and persistence on Windows.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S013",
+      "title": "Preflight bundled-artwork compatibility before syncing.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "T074",
+      "title": "Extend illustrated card gradients and status panel polish.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "I015",
+      "title": "Launcher HTML import does not transport external artwork directories.",
+      "priority": "p1",
+      "status": "triage"
+    },
+    {
+      "id": "S010",
+      "title": "Dependency and readiness visualization.",
+      "priority": "p1",
+      "status": "proposed"
+    },
+    {
+      "id": "S025",
+      "title": "Show authoritative package and asset health per widget.",
+      "priority": "p1",
+      "status": "proposed"
+    }
+  ],
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "2e8ec6f960ede0ed0f5c0abec9d970951f7cd94d1c19b0b7d5f403b273478e0e"
+}

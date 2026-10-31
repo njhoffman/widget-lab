@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "dataset_version",
+    "release_date",
+    "schema_version",
+    "source_exports",
+    "counts",
+    "files"
+  ],
+  "properties": {
+    "dataset": {
+      "type": "string"
+    },
+    "dataset_version": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "source_exports": {
+      "type": "array",
+      "minItems": 2
+    },
+    "counts": {
+      "type": "object"
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1
+    }
+  }
+}

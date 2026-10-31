@@ -1,0 +1,58 @@
+{
+  "source": {
+    "originating_widget": "Tree of Life Explorer",
+    "originating_widget_file": "tree_of_life_explorer.html",
+    "originating_widget_version": "1.7",
+    "pre_export_widget_version": "1.6",
+    "source_date": "2026-10-15",
+    "export_date": "2026-10-15",
+    "export_type": "unreconciled source snapshot",
+    "source_html_sha256": "561087777ad88950fa1981e9f0b81f1a2a8232181b75fbf73e3811f2d21709b7",
+    "source_pre_export_sha256": "da359aa023aeeaa4e3769c74f2548920603307e58b9921123511e092d82d8a21"
+  },
+  "record_counts": {
+    "taxa_including_hidden_life_root": 238,
+    "indexed_entries_excluding_life_root": 237,
+    "taxonomic_rank_breakdown": {
+      "Root": 1,
+      "Domain": 3,
+      "Kingdom": 7,
+      "Clade": 32,
+      "Phylum": 33,
+      "Order": 37,
+      "Genus": 26,
+      "Species": 29,
+      "Class": 36,
+      "Family": 22,
+      "Extinct subclass": 1,
+      "Subclass": 1,
+      "Extinct class": 1,
+      "Subphylum": 5,
+      "Extinct species": 3,
+      "Extinct family": 1
+    },
+    "representative_organisms": 95,
+    "base_examples": 23,
+    "extra_examples": 62,
+    "v4_examples": 10,
+    "population_metadata_entries": 12,
+    "non_unknown_population_estimate_entries": 11,
+    "worldwide_subdivision_count_reference_taxa": 47,
+    "rank_explanation_guides": 11,
+    "geologic_eons": 4,
+    "source_urls_including_population_sources": 24,
+    "examples_with_explicit_commons_fallback_filename": 11,
+    "images_live_verified": 0
+  },
+  "checks": {
+    "original_source_taxon_calls": 238,
+    "duplicate_taxon_ids": [],
+    "missing_parent_ids": [],
+    "hierarchy_cycles": [],
+    "organisms_with_missing_taxon_refs": [],
+    "duplicate_organism_keys": [],
+    "raw_examples_partition_matches": true,
+    "raw_taxa_count_matches_calls": true
+  },
+  "validation_status": "PASS"
+}

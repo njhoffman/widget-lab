@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#09101e" name="theme-color"/>
+<meta content="1.13" name="launcher-version"/>
+<meta content="2026-10-16" name="launcher-updated"/>
+<title>Atlas Widgets — Widget Launcher v1.14</title>
+<style>
+    :root{color-scheme:dark;--bg:#080e1b;--panel:#111b2d;--stroke:#25354b;--text:#e9f0f9;--muted:#93a8c1;--dim:#647990;--bright:#6ce0cf;--shadow:0 26px 65px #0004}
+    *{box-sizing:border-box}html{min-height:100%}body{margin:0;font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);background:radial-gradient(ellipse 60% 35% at 93% 0%,#18335485,transparent),radial-gradient(ellipse 40% 34% at 0% 82%,#18214358,transparent),var(--bg)}
+    button{font:inherit;cursor:pointer}button:disabled{cursor:not-allowed;opacity:.48}button:focus-visible,a:focus-visible{outline:2px solid #80e9dd;outline-offset:3px}button:hover:not(:disabled){filter:brightness(1.1)}
+    .shell{max-width:1290px;padding:30px clamp(16px,3.4vw,48px) 65px;margin:auto}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:28px;border-bottom:1px solid #ffffff15}
+    .brand{display:flex;align-items:center;gap:13px}.brandmark{width:38px;height:38px;border:1px solid #498f9d;border-radius:11px;background:linear-gradient(140deg,#233e5b,#10343d);display:grid;place-items:center;color:#93f0d8;font-weight:900;font-size:19px;letter-spacing:-.07em}.brand-title{font-weight:760;letter-spacing:.24em;font-size:14px}.brand-sub{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+    .topright{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.build-meta{display:flex;align-items:center;gap:9px;color:#92a9c2;font-size:11px;white-space:nowrap}.build-version{border:1px solid #34465e;background:#162337;border-radius:6px;color:#daebf7;padding:4px 8px;font-weight:750;letter-spacing:.02em}.build-date{color:#9aafc5}.state-pill{border:1px solid #345867;border-radius:30px;color:#a4ddcf;background:#12363a45;padding:6px 10px;display:flex;align-items:center;gap:7px;font-size:11px}.dot{width:7px;height:7px;border-radius:100%;background:#62d6b6;box-shadow:0 0 11px #62d6b660}
+    .eyebrow{text-transform:uppercase;letter-spacing:.21em;color:#7fdac7;font-size:11px;font-weight:750}.intro{padding:47px 0 25px;display:flex;align-items:end;justify-content:space-between;gap:26px}.intro h1{font-size:clamp(37px,5vw,61px);letter-spacing:-.065em;line-height:1.06;font-weight:760;margin:8px 0 13px}.intro p{color:#a9bad0;margin:0;max-width:660px;font-size:14px}.intro-metrics{display:flex;gap:22px;flex-shrink:0;padding-bottom:4px}.metric b{display:block;font-size:27px;line-height:1.1;letter-spacing:-.05em;font-weight:760}.metric span{font-size:10px;color:#849bb5;text-transform:uppercase;letter-spacing:.07em}
+    .toolbar{background:#111d30cc;border:1px solid #29415a;border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;box-shadow:0 8px 45px #01071250}.toolbar-left,.toolbar-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.syncbtn{border:1px solid #86f3db;background:#63dcc6;color:#08272c;padding:11px 18px;font-weight:790;border-radius:9px;display:flex;align-items:center;gap:8px;white-space:nowrap}.syncbtn.busy{opacity:.65;pointer-events:none}.btn{border:1px solid #3b526b;background:#1d2b40;color:#dae8f6;padding:10px 13px;border-radius:9px;font-weight:640;font-size:12px}.btn.transparent{background:transparent}.toolbar-copy{color:#aec3d7;font-size:12px}.toolbar-copy b{color:#dcecf7}.source-row{margin:11px 0 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#7890a8;font-size:11px;padding:0 3px}.source-row strong{color:#b8cee0;font-weight:600}
+    .section-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:35px 0 16px}.section-title h2{margin:0;font-size:15px;letter-spacing:.01em}.section-title span{color:#829ab3;font-size:12px}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{min-width:0;border:1px solid #2a3b55;background:#121d30;border-radius:18px;overflow:hidden;box-shadow:0 7px 25px #0002;display:flex;flex-direction:column;position:relative;transition:border-color .2s, transform .2s}.card:hover{border-color:#49627b;transform:translateY(-2px)}.art{height:146px;position:relative;overflow:hidden;display:flex;justify-content:flex-end;align-items:center}.art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#121d30 0%,transparent 71%);pointer-events:none}.art svg{height:155px;width:290px;opacity:.95;transform:translateX(1%)}.art.tree{background:radial-gradient(ellipse at 80% 50%,#11464b,#132b35 55%,#121d30 95%)}.art.time{background:radial-gradient(ellipse at 80% 50%,#53462a,#28323d 55%,#121d30 95%)}.art.brain{background:radial-gradient(ellipse at 80% 50%,#51446a,#2d2849 55%,#121d30 95%)}.art.emergence{background:radial-gradient(ellipse at 80% 50%,#1c4a75,#1a2c4e 55%,#121d30 95%)}
+    .card-number{position:absolute;left:23px;top:20px;z-index:1;font-size:11px;color:#c8d6e7;letter-spacing:.18em}.card-content{padding:0 22px 19px;flex:1}.card-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:-3px}.card-head h3{font-size:23px;letter-spacing:-.045em;font-weight:735;margin:0}.availability{font-size:10px;font-weight:700;color:#a8bdcf;border:1px solid #3a4a5f;background:#ffffff06;padding:4px 8px;border-radius:30px;white-space:nowrap}.availability.ready{border-color:#296f65;color:#9de6d6;background:#14534f2e}.card-desc{color:#9bb0c7;font-size:12px;min-height:36px;margin:8px 0 14px}.metadata{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 11px}.meta-box{background:#0c1524;border:1px solid #22354b;border-radius:9px;padding:9px 10px;min-width:0}.meta-box label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#738aa4;margin-bottom:3px}.meta-box strong{font-size:12px;font-weight:650;color:#e0ebfa;overflow-wrap:anywhere}.filename{font-size:10px;color:#7f9ab5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:16px}.filename b{color:#abc0d5;font-weight:600}.card-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 22px 18px;border-top:1px solid #ffffff0d}.open{display:flex;align-items:center;gap:9px;padding:10px 13px;border-radius:8px;border:1px solid #47677f;background:#23394e;color:#e9f6ff;font-weight:700;font-size:12px}.open:disabled{background:#1c2a3a;border-color:#304157;color:#7d91a7}.sync-note{font-size:10px;color:#7089a1}
+    .lower{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:24px}.pane{border:1px solid #273a51;background:#111b2bc7;border-radius:16px;padding:21px 23px}.pane h3{font-size:14px;margin:0 0 15px}.step{display:flex;align-items:flex-start;gap:12px;margin-bottom:13px;color:#adc0d5;font-size:12px}.step:last-child{margin:0}.step .num{border:1px solid #345368;color:#80dfce;border-radius:7px;padding:2px 7px;font-weight:800;flex-shrink:0}.step strong{color:#d8e8f5}.log{display:flex;flex-direction:column;gap:8px}.log-entry{border-bottom:1px solid #ffffff12;padding-bottom:9px;font-size:11px;color:#94abc0}.log-entry:last-child{border:0;padding-bottom:0}.log-entry strong{color:#d8e9f5;font-weight:660}.log-entry time{float:right;color:#6e839d}.empty{font-size:12px;color:#8199b1}
+    .toast{position:fixed;right:24px;bottom:23px;max-width:min(480px,calc(100vw - 35px));color:#ddecfa;border:1px solid #426177;border-radius:13px;background:#182c40;box-shadow:var(--shadow);padding:14px 17px;z-index:15;display:none;font-size:12px}.toast.visible{display:block}.toast.error{border-color:#a86766;background:#43272e}.loader{display:inline-block;height:13px;width:13px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}footer{margin-top:23px;color:#617992;font-size:11px;line-height:1.6}.fileinput{display:none}
+    @media(max-width:900px){.intro{align-items:flex-start}.intro-metrics{display:none}.lower{grid-template-columns:1fr}.art{height:124px}}
+    @media(max-width:640px){.shell{padding:19px 14px 40px}.topbar{padding-bottom:19px}.brand-title{font-size:13px}.brand-sub{font-size:10px}.intro{padding:30px 0 23px}.intro h1{font-size:39px}.cards{grid-template-columns:1fr}.art{height:137px}.toolbar-left,.toolbar-right{width:100%}.toolbar-right .btn{flex:1}.pane{padding:17px}.state-pill{font-size:10px}}
+
+    /* Launcher v1.4: concise dashboard and fully clickable widget cards. */
+    .shell{max-width:1180px;padding:20px clamp(14px,2.7vw,32px) 28px}
+    .topbar{padding-bottom:15px;gap:12px}
+    .brand{gap:10px}.brandmark{width:34px;height:34px;border-radius:9px;font-size:17px}
+    .brand-title{letter-spacing:.18em}.brand-sub{font-size:10px;letter-spacing:.08em}
+    .toolbar{margin-top:17px;padding:10px 12px;gap:10px;border-radius:13px}
+    .toolbar-left{gap:12px;min-width:0}.toolbar-right{gap:6px}
+    .syncbtn{padding:9px 13px;font-size:12px}.btn{padding:9px 11px;font-size:11px}
+    .toolbar-tally{display:flex;align-items:center;gap:12px;padding:0 12px;border-left:1px solid #ffffff22}
+    .tally{display:flex;align-items:center;gap:6px;white-space:nowrap}.tally strong{font-size:19px;line-height:1;font-weight:790;letter-spacing:-.04em}.tally small{color:#829ab3;font-size:10px;text-transform:uppercase;letter-spacing:.045em}
+    .toolbar-copy{font-size:11px;max-width:200px;line-height:1.25}
+    .source-row{margin:8px 0 14px;font-size:10px;gap:6px 17px}
+    .cards{gap:12px}.card{border-radius:13px;cursor:pointer;box-shadow:0 5px 18px #0002;outline-offset:3px}
+    .card:hover{border-color:#6bc2ae;transform:translateY(-2px);box-shadow:0 8px 22px #0004}
+    .card:focus-visible{outline:2px solid #80e9dd}
+    .art{height:89px}.art svg{height:116px;width:250px}.card-number{left:16px;top:12px;font-size:10px}
+    .card-content{padding:11px 16px 13px}.card-head{margin:0}.card-head h3{font-size:20px}
+    .card-desc{min-height:auto;margin:5px 0 11px;font-size:11px;line-height:1.4}
+    .metadata{gap:7px;margin-bottom:10px}.meta-box{border-radius:7px;padding:6px 9px}
+    .meta-box label{font-size:9px;margin-bottom:2px}.meta-box strong{font-size:11px}
+    .card-source{border-top:1px solid #ffffff13;padding-top:8px}
+    .source-head{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+    .source-label{color:#829bb3;font-size:10px;font-weight:650;letter-spacing:.035em}
+    .source-head .availability{font-size:9px;padding:2px 7px;line-height:1.2}
+    .source-head .sync-note{margin-left:auto;font-size:9px}
+    .filename{min-height:14px;color:#9bb4cc;font-size:10px}
+    .lower{margin-top:12px;gap:12px;grid-template-columns:1fr 1fr}
+    details.pane{padding:0;overflow:hidden;border-radius:12px;align-self:start}
+    details.pane summary{list-style:none;cursor:pointer;font-size:12px;font-weight:700;color:#cddff0;padding:13px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    details.pane summary::-webkit-details-marker{display:none}
+    details.pane summary::after{content:'⌄';font-size:16px;font-weight:400;color:#88a9c1;line-height:1;transition:transform .15s}
+    details.pane[open] summary::after{transform:rotate(180deg)}
+    details.pane[open] summary{border-bottom:1px solid #ffffff12}
+    details.pane .step{padding:0 15px;margin:11px 0;font-size:11px}
+    details.pane .log{padding:12px 15px}details.pane .log-entry{font-size:11px}
+    @media(max-width:1080px){.toolbar-copy{display:none}.toolbar-left{flex:1}}
+    @media(max-width:790px){.toolbar-left,.toolbar-right{width:100%}.toolbar-right{justify-content:flex-start}.toolbar-copy{display:inline;max-width:none}.lower{grid-template-columns:1fr}.art{height:95px}}
+    @media(max-width:640px){.shell{padding:13px 12px 24px}.topbar{padding-bottom:11px}.topright{gap:6px;flex-wrap:nowrap}.topbar .state-pill{display:none}.brand-sub{white-space:nowrap}.build-meta{gap:6px}.build-version{padding:3px 6px}.state-pill{padding:4px 7px}.toolbar{margin-top:12px}.toolbar-left{gap:9px}.toolbar-tally{gap:8px;padding:0 6px}.tally{gap:4px}.tally strong{font-size:17px}.tally small{font-size:9px}.toolbar-copy{display:none}.source-row{gap:5px 12px}.cards{grid-template-columns:1fr;gap:11px}.art{height:89px}.card-content{padding:11px 15px 13px}.card-desc{margin-bottom:9px}.toolbar-right .btn{flex:1}.lower{margin-top:11px}}
+    @media(max-width:355px){.date-prefix{display:none}.brand{gap:7px}.brandmark{width:31px;height:31px}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+    /* v1.5: six atlas families, clickable release notes and compact changelog dialog. */
+    .art.mythology{background:radial-gradient(ellipse at 80% 50%,#6f4b35,#342b41 53%,#121d30 95%)}
+    .art.muscles{background:radial-gradient(ellipse at 80% 50%,#643d49,#3b293d 55%,#121d30 95%)}
+    .version-trigger{font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:5px;line-height:1.4}
+    .version-trigger:hover{color:#a6f8e3;border-color:#61c8b5;background:#1d3943}
+    .version-trigger:focus-visible{outline:2px solid #80e9dd;outline-offset:3px}
+    dialog.changelog{width:min(540px,calc(100vw - 24px));max-height:min(78vh,760px);overflow:auto;box-sizing:border-box;border:1px solid #405775;border-radius:15px;background:#101d30;color:#eaf3fc;box-shadow:0 35px 120px #000c;padding:0}
+    dialog.changelog::backdrop{background:#030812c9;backdrop-filter:blur(4px)}
+    .change-header{position:sticky;top:0;z-index:1;background:#132238;border-bottom:1px solid #293e55;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:17px 18px}
+    .change-header h2{margin:0;font-size:18px;letter-spacing:-.025em}.change-header p{margin:2px 0 0;font-size:11px;color:#91a9bf}
+    .change-close{background:#25354a;color:#ddecfb;border:1px solid #435a70;border-radius:8px;padding:5px 11px;font-weight:700}
+    .change-list{padding:12px;display:flex;flex-direction:column;gap:7px}
+    .release{border:1px solid #2a4056;border-radius:9px;overflow:hidden;background:#15243a}
+    .release[open]{border-color:#397b79;background:#162b3c}
+    .release summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;padding:11px 12px}
+    .release summary::-webkit-details-marker{display:none}
+    .release summary::after{content:'⌄';font-size:15px;line-height:1;color:#8eb3c9;margin-left:auto}
+    .release[open] summary::after{transform:rotate(180deg)}
+    .release summary .release-version{font-size:13px;color:#e3f8f3;font-weight:800}
+    .release summary time{color:#91a9be;font-size:11px}
+    .release ul{border-top:1px solid #334b61;padding:10px 15px 12px 32px;margin:0;color:#c0d4e3;font-size:12px;line-height:1.65}
+    .release li+li{margin-top:3px}.release .former{color:#809eb5;font-size:10px;font-weight:500}
+    @media(max-width:640px){.build-meta{font-size:10px}.version-trigger{padding:3px 6px}.change-header{padding:13px 14px}}
+
+    /* v1.6: shared canonical data and unobtrusive dependency tracking. */
+    .shared-bar{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:10px 0 0;padding:10px 13px;border:1px solid #2a3d52;border-radius:11px;background:#101b2bc9}
+    .shared-title{font-size:10px;font-weight:800;color:#91cabb;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
+    .scientific-warning{border:1px solid #786644;border-radius:8px;background:#3c31201e;padding:10px 12px;color:#e3cda9;font-size:11px;line-height:1.55;margin-top:8px}.scientific-warning strong{color:#f8db9c}.dataset-chip .dataset-caveat{font-size:10px;color:#e2bd8d}.data-detail .scientific-warning{margin:10px 0 12px}.data-detail details>div{margin:0 10px 12px}
+    .dataset-list{display:flex;gap:8px;flex:1;flex-wrap:wrap}
+    .dataset-chip{border:1px solid #365267;background:#192a3e;color:#cfe6f0;display:flex;align-items:center;gap:8px;border-radius:8px;padding:7px 9px;font-size:10px;text-align:left;min-width:0}
+    .dataset-chip:hover{border-color:#69aaad}.dataset-title{font-weight:760;font-size:11px}.dataset-muted{color:#93aabd}.dataset-mark{border:1px solid #765d45;background:#4e382522;color:#e7bf8b;border-radius:30px;padding:2px 6px;font-size:9px;white-space:nowrap}
+    .dataset-mark.dataset-good{border-color:#357b71;background:#14473e43;color:#9cebd2}.dataset-import{font-size:10px;padding:7px 10px;white-space:nowrap}
+    .dep-row{display:flex;gap:4px;flex-wrap:wrap;min-height:17px;margin-top:7px}.dep-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;color:#b7d7d8;border:1px solid #2b5260;border-radius:6px;padding:2px 6px;background:#132d3633}
+    .dep-status{font-size:9px;color:#9cb8ce}.dep-label.rebuild,.dep-label.incompatible,.dep-label.missing{border-color:#856041;color:#f2c59a;background:#57392736}.dep-label.rebuild .dep-status,.dep-label.incompatible .dep-status,.dep-label.missing .dep-status{color:#e9ae83}
+    .dep-label.current{border-color:#366960}.dep-label.current .dep-status{color:#9cebd2}.dep-label.available{border-color:#42678d}.dep-label.available .dep-status{color:#a9d0f4}.data-muted{color:#788ca4;font-size:10px}
+    dialog.dataset-dialog{width:min(610px,calc(100vw - 20px));max-height:80vh;overflow:auto;border:1px solid #405775;border-radius:15px;background:#101d30;color:#eaf3fc;box-shadow:0 30px 100px #000b;padding:0}dialog.dataset-dialog::backdrop{background:#050c17ba}
+    .data-detail{padding:14px 18px 22px;font-size:12px;color:#bccfe1}.data-detail p{line-height:1.65}.data-detail details{border:1px solid #2e455d;border-radius:8px;margin-top:10px;overflow:hidden}.data-detail summary{padding:9px 10px;cursor:pointer;font-weight:680;color:#d7eaf3}.data-detail details>ul,.data-detail details>p,.data-detail details>pre,.data-detail details>table{margin:0 10px 12px}.data-detail li{margin:5px 0}.data-detail pre{overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:#0b1727;padding:8px;border-radius:7px}.data-statgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.data-statgrid span{border:1px solid #30445b;border-radius:8px;padding:8px;color:#8ca6c2}.data-statgrid b{display:block;color:#e3f5f2;font-size:13px;overflow-wrap:anywhere}.inventory{border-collapse:collapse;width:calc(100% - 20px);font-size:10px}.inventory th,.inventory td{text-align:left;padding:6px;border-bottom:1px solid #293e52;overflow-wrap:anywhere}.inventory code{color:#a8d3c8}
+    @media(max-width:640px){.shared-bar{gap:7px;padding:8px}.dataset-chip{gap:5px;flex-wrap:wrap;flex:1 1 100%}.dataset-import{width:100%}.data-statgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.dep-label{max-width:100%;flex-wrap:wrap}}
+  </style>
+<style id="aw-launcher-design-v19">
+/* Atlas Widgets / Launcher v1.9 dashboard · shared v1.2 compact dashboard */
+:root{--bg:#080e19;--panel:#101b2b;--stroke:#2a4059;--bright:#69dec1;--azure:#59c8ee;--green:#70e3bb}
+body{background:radial-gradient(ellipse at 82% 0%,#1b415b85,transparent 55%),#080e19}
+.shell{max-width:1320px!important;padding:16px 22px 38px!important}
+.topbar{gap:16px;padding:3px 0 12px;border-bottom:1px solid #2c4357;background:linear-gradient(100deg,#0b1726,#133047 67%,#193750);margin-bottom:12px;min-height:75px}
+.brand{gap:15px}.atlas-globe{font-size:41px;width:58px;height:58px;border:0;border-radius:0;background:transparent;box-shadow:none;letter-spacing:normal}
+.brand-title{letter-spacing:-.04em;font-size:28px;color:#eaf4fe;line-height:1.13}.brand-sub{letter-spacing:.11em;font-weight:650;font-size:10px;white-space:nowrap}
+.build-meta{gap:0}.build-version{min-height:32px;height:32px;padding:0 12px;border:1px solid #3a7190;border-radius:8px;color:#7cddf6;background:#12364e;font-size:13px;white-space:nowrap}
+.state-pill{height:32px;border-radius:7px;padding:0 11px;background:#0b2738;color:#8be8c3;border-color:#276960;font-size:11px}
+.atlas-overview-bar{order:0;display:flex;gap:12px;align-items:center;flex-wrap:wrap;border:1px solid #2e5368;border-radius:13px;padding:12px 14px;margin:5px 0 12px;background:linear-gradient(105deg,#142d40,#11263a 67%,#103149);box-shadow:none}
+.overview-pill{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;border-radius:8px;padding:7px 12px;border:1px solid #37556b;font-size:12px;color:#c0d5e7;background:#10253a}
+.overview-pill b{color:#8cebc5;font-size:17px}.overview-pill.count:first-child{background:linear-gradient(115deg,#53e1c9,#71d6ee);color:#062c32;font-weight:800;border:0}.overview-pill.count:first-child b{color:#082d33}
+.summary-warn[hidden]{display:none!important}.summary-warn{border-color:#74664a;color:#e6c98c;background:#41322133}
+.shared-title{display:none}.atlas-overview-bar .dataset-import{margin-left:auto;border-color:#39778a;color:#9be3e5;background:#15374a}
+.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.toolbar{background:#0e2031;border:1px solid #2b455d;border-radius:11px;padding:9px 12px;margin:0 0 5px;box-shadow:none}
+.syncbtn{background:#5bdcc7;border-radius:7px;color:#06292c;border:0}.source-row{margin:5px 0 13px}
+.cards{gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{display:flex;flex-direction:row;align-items:center;min-height:138px;box-shadow:none;border:1px solid #2d5872;border-radius:14px;padding:12px 12px 13px;gap:12px;background:#0d2035;transition:transform .18s,border-color .18s,box-shadow .18s}
+.card:hover,.card:focus-visible{border-color:#79d6e9;transform:translateY(-2px);box-shadow:0 10px 28px #0005}
+.card[data-widget="tree"]{background:radial-gradient(ellipse at 12% 48%,#124d488f,transparent 70%),linear-gradient(115deg,#0d2b32,#0e2034)}
+.card[data-widget="time"]{background:radial-gradient(ellipse at 12% 48%,#73533370,transparent 68%),linear-gradient(115deg,#2d3035,#0e2034)}
+.card[data-widget="brain"]{background:radial-gradient(ellipse at 12% 48%,#63388b70,transparent 70%),linear-gradient(115deg,#29213f,#0e2034)}
+.card[data-widget="emergence"]{background:radial-gradient(ellipse at 12% 48%,#1164958f,transparent 72%),linear-gradient(115deg,#10314b,#0e2034)}
+.card[data-widget="mythology"]{background:radial-gradient(ellipse at 12% 48%,#8e642d75,transparent 70%),linear-gradient(115deg,#322935,#0e2034)}
+.card[data-widget="muscles"]{background:radial-gradient(ellipse at 12% 48%,#81384b85,transparent 70%),linear-gradient(115deg,#39253b,#0e2034)}
+.art{height:90px!important;width:95px!important;flex:0 0 95px!important;display:grid;place-items:center;overflow:visible;background:none!important}
+.art::after{display:none}.art svg{width:122px;height:100px;transform:scale(1.14);overflow:visible}
+.card-content{padding:0 5px 0 0;flex:1;min-width:0}.card-head{display:flex;align-items:flex-start;margin:0}.card-head h3{font-size:20px;letter-spacing:-.04em;font-weight:780;line-height:1.13;white-space:nowrap}.card-head h3 span{color:#62cceb}.card-arrow{font-size:30px;color:#86def5;line-height:.8;margin-left:auto}
+.card-desc{min-height:0;color:#9bb4cb;font-size:10px;text-transform:uppercase;font-weight:700;letter-spacing:.07em;line-height:1.4;margin:5px 0 14px}
+.card-source{border:0;padding:0}.source-head{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.dep-row{margin:0;min-height:0}.dep-label,.availability{display:inline-flex;align-items:center;min-height:26px;border:1px solid #345874;border-radius:7px;padding:3px 7px;background:#11283b;color:#d2e4ee;font-size:10px}.dep-label.current{border-color:#277762;color:#8ff0c7}.source-head .availability{border-radius:7px;font-size:10px;padding:4px 8px}
+.lower{margin-top:15px}
+.atlas-extra-panels{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(245px,.68fr);gap:14px;margin-top:16px}
+.atlas-preview,.atlas-resource{border:1px solid #32708a;border-radius:14px;overflow:hidden;background:linear-gradient(125deg,#102b3e,#0e1a2c 70%);min-width:0}
+.atlas-resource{padding:16px}
+.subpanel-head{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid #2d5570}
+.subpanel-head h2{margin:0;font-size:16px;letter-spacing:-.025em}.subpanel-head h2 em{color:#62cbec;font-style:normal}.subpanel-head h2 small{font-size:11px;font-weight:500;color:#7facc0}.subpanel-head p{margin:2px 0 0;font-size:10px;color:#9ab7c9}
+.preview-mini-globe{font-size:24px}.open-preview{margin-left:auto;border:0;background:transparent;font-size:21px;color:#7fdef0}.mini-toolbar{padding:11px 14px 8px;display:flex;gap:8px;flex-wrap:wrap}.mini-toolbar span{border:1px solid #2f4d63;background:#132a3d;border-radius:7px;padding:7px 10px;font-size:10px;color:#d6e5ee}.mini-toolbar .mini-search{flex:1;color:#99b4c8}
+.mini-layout{display:grid;grid-template-columns:30% 70%;padding:3px 12px 8px;gap:8px}.mini-time{background:#0c1d2e;border:1px solid #2b5165;border-radius:8px;padding:9px}.mini-time h3{font-size:10px;color:#67d4ef;letter-spacing:.09em;margin:0 0 8px}.mini-time div{border-left:4px solid #b88bdc;background:#143049;border-radius:5px;padding:9px 8px;margin-bottom:5px;font-size:11px;font-weight:750}.mini-time div:nth-of-type(2){border-color:#d68eaa}.mini-time div:nth-of-type(3){border-color:#e3a371}.mini-time small{display:block;font-size:9px;color:#9bb8cd;font-weight:500}
+.mini-scene{min-height:190px;border-radius:9px;background:radial-gradient(ellipse at 74% 25%,#526076 0%,transparent 26%),linear-gradient(145deg,#29415c,#172b46 40%,#0d172a);position:relative;overflow:hidden}
+.mini-sky{position:absolute;inset:10% 0 30%;background:radial-gradient(ellipse at 80% 0%,#6c8a9b55,transparent 55%),linear-gradient(0deg,#14263f99,transparent)}
+.mini-scene:before{content:'';position:absolute;inset:55% -20% -20%;background:linear-gradient(140deg,#183b51,#0c2638);transform:rotate(-9deg)}.mini-scene-copy{position:absolute;bottom:12px;left:14px;right:6px}.mini-scene-copy strong{color:#58d9f4;font-size:10px;letter-spacing:.07em}.mini-scene-copy h3{font-size:24px;letter-spacing:-.04em;margin:4px 0}.mini-scene-copy p{font-size:11px;color:#c0d5e3;margin:0 0 10px}.mini-tabs{display:flex;align-items:center;gap:12px;font-size:10px}.mini-tabs b{color:#062635;background:#64d9ed;border-radius:5px;padding:5px 8px}
+.preview-notice{font-size:10px;color:#88a8bc;padding:0 14px}
+.atlas-resource .subpanel-head{padding:0 0 11px}.res-icon{font-size:34px;color:#6ce0bb}.resource-stats{margin:14px 0}.resource-stats div{border-bottom:1px solid #244558;display:flex;justify-content:space-between;gap:14px;padding:9px 0}.resource-stats dt{font-size:11px;color:#afc8d7}.resource-stats dd{font-size:11px;color:#80e6bd;font-weight:800;margin:0;text-align:right}.dataset-details{width:100%;border:1px solid #3b8297;border-radius:8px;padding:10px;color:#b2eef1;background:#15394a;cursor:pointer;font-weight:740}.atlas-resource > p{font-size:10px;color:#8dabbc;line-height:1.5}
+.change-header{position:relative;background:transparent;border:0;align-items:center;padding:17px 19px 2px}.change-header h2{font-size:21px}.change-close{font-size:23px;border-radius:8px;padding:2px 12px}.data-detail{padding:13px 18px 20px}.data-statgrid{display:flex;flex-direction:column;gap:0;border:1px solid #35556e;border-radius:9px;overflow:hidden}.data-statgrid span{display:flex;align-items:center;justify-content:space-between;gap:12px;border:0;border-bottom:1px solid #35556e;border-radius:0;padding:10px 13px;color:#a5c4d7}.data-statgrid span:last-child{border:0}.data-statgrid b{margin-left:auto;color:#80e7c7}
+@media(max-width:900px){.atlas-extra-panels{grid-template-columns:1fr}.card-head h3{font-size:18px}.brand-sub{white-space:normal}}
+@media(max-width:650px){.shell{padding:12px!important}.cards{grid-template-columns:1fr}.topbar{gap:8px}.brand-sub{font-size:8px}.atlas-globe{width:42px;height:42px;font-size:30px}.brand-title{font-size:21px}.atlas-overview-bar{gap:7px;padding:9px}.overview-pill{padding:5px 8px;font-size:10px}.mini-layout{grid-template-columns:40% 60%}.mini-scene-copy h3{font-size:17px}.toolbar{margin-bottom:7px}}
+</style><style id="aw-launcher-index-compact-typography">
+/* Widget Launcher v1.10: original Mythology v1.2 popup's Segoe UI rhythm,
+   scoped to Shared Taxa/index info; shared cyan/green/navy colors retained. */
+dialog#data-dialog.dataset-dialog {
+ width:min(548px,calc(100vw - 24px))!important;max-height:min(88vh,850px)!important;
+ border-radius:13px!important;
+ font:13px/1.46 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+}
+#data-dialog .change-header{padding:14px 17px 3px!important;gap:10px!important;align-items:center!important;background:transparent!important;border:0!important}
+#data-dialog .change-header h2{font-size:19px!important;line-height:1.2!important;margin:0!important;font-weight:800!important}
+#data-dialog .change-header p{font-size:10px!important;line-height:1.3!important;margin:3px 0 0!important}
+#data-dialog .change-close{width:33px!important;height:33px!important;min-width:33px!important;padding:0!important;display:grid!important;place-items:center!important;font-size:21px!important;line-height:1!important;border-radius:7px!important}
+#data-dialog .data-detail{padding:11px 17px 18px!important;font-family:inherit!important;font-size:12px!important}
+#data-dialog .data-statgrid{border-radius:9px!important}
+#data-dialog .data-statgrid span{font-size:12px!important;line-height:1.46!important;min-height:0!important;padding:7px 10px!important;gap:12px!important}
+#data-dialog .data-statgrid b{font-size:12px!important;line-height:1.46!important;font-weight:750!important;white-space:nowrap!important}
+#data-dialog .data-statgrid span:first-child b{color:#70e3bb!important}
+#data-dialog .data-detail p{font-size:11px!important;line-height:1.6!important;margin:10px 0!important}
+#data-dialog .data-detail details summary{font-size:12px!important;padding:8px 10px!important;line-height:1.4!important}
+#data-dialog .inventory{font-size:10px!important}
+#data-dialog .inventory th,#data-dialog .inventory td{padding:6px!important}
+#data-dialog .scientific-warning{font-size:11px!important;line-height:1.5!important;padding:9px 10px!important}
+@media(max-width:570px){#data-dialog .change-header{padding:12px 13px 3px!important}#data-dialog .data-detail{padding:10px 13px 16px!important}}
+</style>
+<style id="atlas-v14-typography-and-header">
+
+/* Atlas Widgets master workspace v1.4 — compact release histories, transparent headers */
+
+/* Standard for current and FUTURE atlas data tables / change logs.
+   Reuses compact Mythology v1.2 typography; modern navy/cyan/green colors intact. */
+:root {
+  --atlas-data-font: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --atlas-data-size: 12px;
+  --atlas-data-line-height: 1.46;
+  --atlas-data-row-pad-y: 7px;
+  --atlas-data-row-pad-x: 10px;
+  --atlas-data-heading-size: 19px;
+  --atlas-data-dialog-width: 548px;
+}
+/* Future tables use .atlas-data-table or [data-atlas-tabular], not global table rules. */
+.atlas-data-table, [data-atlas-tabular] {
+  font-family: var(--atlas-data-font) !important;
+  font-size: var(--atlas-data-size) !important;
+  line-height: var(--atlas-data-line-height) !important;
+  font-variant-numeric: tabular-nums;
+}
+.atlas-data-table :is(th,td),
+[data-atlas-tabular] :is(th,td) {
+  padding: var(--atlas-data-row-pad-y) var(--atlas-data-row-pad-x);
+  font-size: var(--atlas-data-size);
+  line-height: var(--atlas-data-line-height);
+}
+
+/* Unified header seam removal — user-selected exact header.top rule. */
+header.top {
+  border-bottom: 1px solid #263749;
+  background: none !important;
+}
+/* Equivalent live header elements: the six atlases and Widget Launcher. */
+header.atlas-family-header.aw-header,
+header.topbar {
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #263749 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+header.atlas-family-header.aw-header {
+  padding: 5px 2px 12px !important;
+  margin-bottom: 13px !important;
+  min-height: 0 !important;
+}
+header.topbar {
+  padding: 5px 0 12px !important;
+  margin-bottom: 12px !important;
+  min-height: 0 !important;
+}
+@media(max-width:680px) {
+  header.atlas-family-header.aw-header {padding: 7px 0 11px !important;}
+  header.topbar {padding: 7px 0 11px !important;}
+}
+
+/* Widget Launcher release history: same font / density as atlas statistics. */
+dialog#changelog-dialog.changelog {
+  width:min(var(--atlas-data-dialog-width),calc(100vw - 24px))!important;
+  max-height:min(88vh,850px)!important;
+  border-radius:13px!important;
+  font:13px/1.46 var(--atlas-data-font)!important;
+}
+#changelog-dialog .change-header {padding:14px 17px 3px!important;align-items:center!important;background:transparent!important;border:0!important;gap:10px!important;}
+#changelog-dialog .change-header h2 {font-size:19px!important;line-height:1.2!important;margin:0!important;}
+#changelog-dialog .change-header p {font-size:10px!important;line-height:1.3!important;margin:3px 0 0!important;}
+#changelog-dialog .change-close {height:33px!important;width:33px!important;min-width:33px!important;padding:0!important;display:grid!important;place-items:center!important;font-size:21px!important;line-height:1!important;}
+#changelog-dialog .change-list {padding:11px 17px 18px!important;gap:6px!important;}
+#changelog-dialog .release {border-radius:8px!important;}
+#changelog-dialog .release summary {padding:7px 10px!important;font-size:12px!important;line-height:1.46!important;gap:8px!important;min-height:0!important;}
+#changelog-dialog .release-version {font-size:12px!important;line-height:1.46!important;}
+#changelog-dialog .release summary time {font-size:10px!important;line-height:1.3!important;}
+#changelog-dialog .release ul {padding:7px 12px 10px 25px!important;font-size:12px!important;line-height:1.46!important;}
+#changelog-dialog .release li+li {margin-top:3px!important;}
+/* Apply the same tabular tokens to Shared Taxa details and future launcher tables. */
+#data-dialog .data-detail details,
+#data-dialog .data-detail table,
+#data-dialog .data-statgrid {font-family:var(--atlas-data-font)!important;font-size:var(--atlas-data-size)!important;line-height:var(--atlas-data-line-height)!important;}
+#data-dialog .inventory th,#data-dialog .inventory td {padding:var(--atlas-data-row-pad-y) var(--atlas-data-row-pad-x)!important;font-size:12px!important;line-height:1.46!important;}
+#data-dialog .data-detail details summary {padding:7px 10px!important;font-size:12px!important;line-height:1.46!important;}
+@media(max-width:570px){#changelog-dialog .change-header{padding:12px 13px 3px!important}#changelog-dialog .change-list{padding:10px 13px 16px!important}}
+
+</style>
+<style id="atlas-v15-responsive-header">
+
+/* Launcher uses the same content-first wrap policy as atlas headers; keep v1.4 borderless style. */
+header.topbar{
+ display:flex!important;flex-wrap:wrap!important;flex-direction:row!important;
+ justify-content:flex-start!important;align-items:center!important;
+ row-gap:8px!important;column-gap:12px!important;
+ background:none!important;border:0!important;border-bottom:1px solid #263749!important;
+ border-radius:0!important;box-shadow:none!important;
+ min-width:0!important;padding:7px 0 11px!important;
+}
+header.topbar .brand{display:flex!important;flex:0 0 auto!important;width:max-content!important;max-width:100%!important;min-width:0!important}
+header.topbar .brand-titles{min-width:0!important}
+header.topbar .brand-sub{white-space:nowrap!important;text-overflow:ellipsis!important;overflow:hidden!important;max-width:calc(100vw - 115px)!important}
+header.topbar .topright{
+ display:flex!important;flex:0 0 auto!important;width:max-content!important;
+ max-width:100%!important;min-width:0!important;flex-wrap:wrap!important;
+ align-items:center!important;justify-content:flex-end!important;
+ margin-left:auto!important;gap:6px!important;
+}
+header.topbar .build-version,header.topbar .state-pill{height:30px!important;min-height:30px!important;max-height:30px!important;box-sizing:border-box!important}
+
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+<div class="brand"><div aria-hidden="true" class="brandmark atlas-globe">🌎</div><div class="brand-titles"><div class="brand-title">Atlas</div><div class="brand-sub">EXPLORE KNOWLEDGE ACROSS TIME, LIFE AND MIND</div></div></div>
+<div class="topright"><div aria-label="Launcher version and last update" class="build-meta"><button aria-controls="changelog-dialog" aria-haspopup="dialog" aria-label="Open Widget Launcher v1.14 release history" class="build-version version-trigger" id="version-btn" type="button">▤ v1.14</button></div><span class="state-pill"><i aria-hidden="true" class="dot"></i><span id="top-status">Local launcher</span></span></div>
+</header>
+<div aria-label="Shared scientific datasets" class="shared-bar atlas-overview-bar" role="group"><span class="overview-pill count"><b>6</b> widgets</span><span class="overview-pill count"><b id="aw-ready-tiles">0</b> ready</span><span class="overview-pill dataset-summary" id="aw-dataset-summary">Shared Taxa · not imported</span><span class="overview-pill summary-warn" hidden="" id="aw-ambiguities">Scientific ambiguities: 57</span>
+<span class="shared-title">SHARED TAXA</span>
+<div class="dataset-list visually-hidden" id="dataset-list"><button class="dataset-chip" data-dataset="shared-taxa" type="button">Shared Taxa · Not imported</button></div>
+<button class="btn transparent dataset-import" id="dataset-import" title="Import an extracted canonical Shared Taxa release directory (not a ZIP)." type="button">Import dataset</button>
+</div><div aria-label="Widget synchronization controls" class="toolbar" role="group">
+<div class="toolbar-left"><button class="syncbtn" id="sync-btn" type="button"><span id="sync-icon">↻</span> <span id="sync-label">Sync latest widgets</span></button><div aria-label="Widget library totals" class="toolbar-tally"><span class="tally"><strong id="explorer-count">06</strong><small>Explorers</small></span><span class="tally"><strong id="ready-count">00</strong><small>Ready</small></span></div><span class="toolbar-copy" id="sync-info">Select a source folder on first sync.</span></div>
+<div class="toolbar-right"><button class="btn" id="folder-btn" type="button">Source folder</button><button class="btn" id="import-btn" type="button">Import HTML files</button><button class="btn" id="bundle-btn" type="button" title="Import extracted HTML and sibling artwork folders; keeps local images in IndexedDB">Import artwork folder</button><button class="btn transparent" id="output-btn" title="Optional: copy synced HTML and manifest to a local destination folder" type="button">Output folder</button></div>
+</div>
+<div class="source-row"><span>Source: <strong id="source-name">Not selected</strong></span><span>Output copies: <strong id="output-name">Not configured</strong></span><span>Last checked: <strong id="last-sync">Never</strong></span></div>
+
+<input accept=".json,application/json" aria-label="Select an extracted dataset directory" class="fileinput" id="dataset-files" multiple="" type="file" webkitdirectory=""/>
+<input accept=".html,.htm,text/html" aria-label="Choose widget HTML files" class="fileinput" id="file-input" multiple="" type="file"/><input class="fileinput" id="bundle-files" type="file" webkitdirectory="" multiple="" aria-label="Choose extracted folder containing atlas HTML and assets"/>
+<div class="cards">
+<article aria-label="Open Tree of Life Atlas (when synchronized)" class="card" data-widget="tree" role="button" tabindex="0">
+<div aria-hidden="true" class="art tree"><svg aria-hidden="true" fill="none" viewbox="0 0 290 155"><g opacity=".8" stroke="#67dcca" stroke-width="1.7"><path d="M145 149V121 M145 121L89 91M145 121L200 91 M89 91L65 57M89 91L110 57 M200 91L173 57M200 91L239 57 M65 57L44 20M65 57L82 20 M110 57L99 20M110 57L132 20 M173 57L151 20M173 57L187 20 M239 57L219 20M239 57L265 20"></path></g><g fill="#9df2dd"><circle cx="44" cy="20" r="4"></circle><circle cx="82" cy="20" r="4"></circle><circle cx="99" cy="20" r="4"></circle><circle cx="132" cy="20" r="4"></circle><circle cx="151" cy="20" r="4"></circle><circle cx="187" cy="20" r="4"></circle><circle cx="219" cy="20" r="4"></circle><circle cx="265" cy="20" r="4"></circle></g><circle cx="145" cy="121" fill="#c5ffe9" r="6"></circle></svg></div>
+<div class="card-content"><div class="card-head"><h3>Tree of Life <span>Atlas</span></h3><span aria-hidden="true" class="card-arrow">›</span></div><p class="card-desc">Life’s evolutionary tree</p><div class="metadata visually-hidden"><div class="meta-box"><label>Revision</label><strong id="rev-tree">—</strong></div><div class="meta-box"><label>File updated</label><strong id="date-tree">—</strong></div></div><div class="card-source"><div class="source-head"><div class="dep-row" id="dep-tree"><span class="data-muted">Shared data — Unknown</span></div><span class="availability" id="status-tree">Not linked</span><span class="sync-note visually-hidden" id="synced-tree">Waiting for first sync</span></div><div class="filename visually-hidden" id="file-tree">Expected: tree_of_life_explorer.html</div></div></div>
+</article>
+<article aria-label="Open Deep Time Atlas (when synchronized)" class="card" data-widget="time" role="button" tabindex="0">
+<div aria-hidden="true" class="art time"><svg aria-hidden="true" fill="none" viewbox="0 0 290 155"><g opacity=".85"><path d="M10 46H280" stroke="#e9b977" stroke-width="3"></path><path d="M10 77H280" stroke="#ccb788" stroke-width="3"></path><path d="M10 108H280" stroke="#8eb0bc" stroke-width="3"></path><rect fill="#a8754c" height="18" rx="3" width="62" x="20" y="37"></rect><rect fill="#e2b275" height="18" rx="3" width="110" x="84" y="37"></rect><rect fill="#f1ddaa" height="18" rx="3" width="69" x="198" y="37"></rect><rect fill="#547a98" height="18" rx="3" width="28" x="20" y="68"></rect><rect fill="#789e9f" height="18" rx="3" width="108" x="52" y="68"></rect><rect fill="#d1b17a" height="18" rx="3" width="103" x="164" y="68"></rect><rect fill="#467c81" height="18" rx="3" width="85" x="20" y="99"></rect><rect fill="#79a69a" height="18" rx="3" width="90" x="109" y="99"></rect><rect fill="#b3cc95" height="18" rx="3" width="64" x="203" y="99"></rect></g><g stroke="#ffffff9a" stroke-dasharray="3 5"><path d="M82 25V135M160 25V135M198 25V135"></path></g></svg></div>
+<div class="card-content"><div class="card-head"><h3>Deep Time <span>Atlas</span></h3><span aria-hidden="true" class="card-arrow">›</span></div><p class="card-desc">Earth systems through time</p><div class="metadata visually-hidden"><div class="meta-box"><label>Revision</label><strong id="rev-time">—</strong></div><div class="meta-box"><label>File updated</label><strong id="date-time">—</strong></div></div><div class="card-source"><div class="source-head"><div class="dep-row" id="dep-time"><span class="data-muted">Shared data — Unknown</span></div><span class="availability" id="status-time">Not linked</span><span class="sync-note visually-hidden" id="synced-time">Waiting for first sync</span></div><div class="filename visually-hidden" id="file-time">Expected: Deep_Time_Atlas_Updated.html</div></div></div>
+</article>
+<article aria-label="Open Brain Atlas (when synchronized)" class="card" data-widget="brain" role="button" tabindex="0">
+<div aria-hidden="true" class="art brain"><svg aria-hidden="true" fill="none" viewbox="0 0 290 155"><g stroke="#d0b3ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" transform="translate(38 9)"><path d="M104 126q-25 7-38-13Q45 110 44 93q-26-10-22-30 3-18 19-23Q42 20 65 18q14-15 34-8 17-13 34-2 24-2 31 17 21-2 27 22 20 14 6 32 6 22-14 33-8 18-25 16-13 12-28 2-10 7-26-4Z" fill="#6f59964a"></path><path d="M59 34q-16 15-3 28m29-42q-17 17-9 30m42-34q-16 13-8 35m36-24q-18 12-10 31m38-8q-26 0-20 24M44 76q30 3 33 22m21-40q-18 13-7 34m34-25q-17 22-2 36m42-17q-28-3-26 27m-86-13q30 0 28 24" opacity=".8"></path><path d="M107 129v-21l16-13v-18" stroke="#f1d2fa" stroke-width="2.4"></path></g><circle cx="164" cy="67" fill="#f4d2ff" r="4"></circle></svg></div>
+<div class="card-content"><div class="card-head"><h3>Brain <span>Atlas</span></h3><span aria-hidden="true" class="card-arrow">›</span></div><p class="card-desc">Neural anatomy · Brain evolution</p><div class="metadata visually-hidden"><div class="meta-box"><label>Revision</label><strong id="rev-brain">—</strong></div><div class="meta-box"><label>File updated</label><strong id="date-brain">—</strong></div></div><div class="card-source"><div class="source-head"><div class="dep-row" id="dep-brain"><span class="data-muted">Shared data — Unknown</span></div><span class="availability" id="status-brain">Not linked</span><span class="sync-note visually-hidden" id="synced-brain">Waiting for first sync</span></div><div class="filename visually-hidden" id="file-brain">Expected: neural_evolution_atlas_v3.html</div></div></div>
+</article>
+<article aria-label="Open Emergence Atlas (when synchronized)" class="card" data-widget="emergence" role="button" tabindex="0">
+<div aria-hidden="true" class="art emergence"><svg aria-hidden="true" fill="none" viewbox="0 0 290 155"><g stroke="#89d2ff" stroke-width="1.3"><path d="M35 123L73 86 111 122 151 77 195 113 248 57 M35 123L103 65 151 77 179 31 248 57 M73 86L179 31 195 113 111 122 M103 65L248 57 151 77" opacity=".78"></path></g><g fill="#112f51" stroke="#a7e4ff" stroke-width="2"><circle cx="35" cy="123" r="10"></circle><circle cx="73" cy="86" r="8"></circle><circle cx="111" cy="122" r="11"></circle><circle cx="151" cy="77" r="13"></circle><circle cx="195" cy="113" r="10"></circle><circle cx="248" cy="57" r="15"></circle><circle cx="103" cy="65" r="8"></circle><circle cx="179" cy="31" r="10"></circle></g><g fill="#bceeff"><circle cx="151" cy="77" r="4"></circle><circle cx="248" cy="57" r="5"></circle><circle cx="179" cy="31" r="3"></circle></g></svg></div>
+<div class="card-content"><div class="card-head"><h3>Emergence <span>Atlas</span></h3><span aria-hidden="true" class="card-arrow">›</span></div><p class="card-desc">Components to emergent properties</p><div class="metadata visually-hidden"><div class="meta-box"><label>Revision</label><strong id="rev-emergence">—</strong></div><div class="meta-box"><label>File updated</label><strong id="date-emergence">—</strong></div></div><div class="card-source"><div class="source-head"><div class="dep-row" id="dep-emergence"><span class="data-muted">Shared data — Unknown</span></div><span class="availability" id="status-emergence">Not linked</span><span class="sync-note visually-hidden" id="synced-emergence">Waiting for first sync</span></div><div class="filename visually-hidden" id="file-emergence">Expected: emergence_hierarchy_explorer.html</div></div></div>
+</article>
+<article aria-label="Open Mythology Atlas (when synchronized)" class="card" data-widget="mythology" role="button" tabindex="0">
+<div aria-hidden="true" class="art mythology"><svg aria-hidden="true" fill="none" viewbox="0 0 290 155"><g stroke="#dcb992" stroke-linecap="round" stroke-width="1.7"><path d="M40 127L82 92 119 123 157 68 203 104 253 46"></path><path d="M40 127L157 68 82 92 118 27 203 104 253 46" opacity=".65"></path><path d="M118 27L157 68 253 46" opacity=".75"></path></g><g fill="#46364a" stroke="#ffdea9" stroke-width="2"><circle cx="40" cy="127" r="8"></circle><circle cx="82" cy="92" r="12"></circle><circle cx="119" cy="123" r="9"></circle><circle cx="157" cy="68" r="15"></circle><circle cx="203" cy="104" r="10"></circle><circle cx="253" cy="46" r="17"></circle><circle cx="118" cy="27" r="8"></circle></g><g fill="#ffe8b4"><circle cx="157" cy="68" r="4"></circle><circle cx="253" cy="46" r="5"></circle></g></svg></div>
+<div class="card-content"><div class="card-head"><h3>Mythology <span>Atlas</span></h3><span aria-hidden="true" class="card-arrow">›</span></div><p class="card-desc">World mythologies · Divine lineages</p><div class="metadata visually-hidden"><div class="meta-box"><label>Revision</label><strong id="rev-mythology">—</strong></div><div class="meta-box"><label>File updated</label><strong id="date-mythology">—</strong></div></div><div class="card-source"><div class="source-head"><div class="dep-row" id="dep-mythology"><span class="data-muted">Shared data — Unknown</span></div><span class="availability" id="status-mythology">Not linked</span><span class="sync-note visually-hidden" id="synced-mythology">Waiting for first sync</span></div><div class="filename visually-hidden" id="file-mythology">Expected: mythology_atlas.html</div></div></div>
+</article>
+<article aria-label="Open Muscle Atlas (when synchronized)" class="card" data-widget="muscles" role="button" tabindex="0">
+<div aria-hidden="true" class="art muscles"><svg aria-hidden="true" fill="none" viewbox="0 0 290 155"><g stroke="#eca7ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"><path d="M110 17q14-12 28 0l8 19 23-1 22 20-9 17-29-13-8 21-6 48h-17l-7-46-8-22-28 12-10-17 21-20 23 1z" fill="#8e4b5c55"></path><path d="M124 35q-5 27-3 44m12-44q6 25 3 44m-28-32q-15 20-22 11m58-11q16 17 24 11M121 82l-11 33m24-32l11 31" opacity=".86"></path><circle cx="124" cy="13" fill="#81435388" r="10"></circle></g><g opacity=".8" stroke="#f8ccd1" stroke-width="1.3"><path d="M107 53l-24-3m65 3l25-3m-43 36h17"></path></g></svg></div>
+<div class="card-content"><div class="card-head"><h3>Muscle <span>Atlas</span></h3><span aria-hidden="true" class="card-arrow">›</span></div><p class="card-desc">Human anatomy · Training &amp; function</p><div class="metadata visually-hidden"><div class="meta-box"><label>Revision</label><strong id="rev-muscles">—</strong></div><div class="meta-box"><label>File updated</label><strong id="date-muscles">—</strong></div></div><div class="card-source"><div class="source-head"><div class="dep-row" id="dep-muscles"><span class="data-muted">Shared data — Unknown</span></div><span class="availability" id="status-muscles">Not linked</span><span class="sync-note visually-hidden" id="synced-muscles">Waiting for first sync</span></div><div class="filename visually-hidden" id="file-muscles">Expected: muscles_atlas.html</div></div></div>
+</article>
+</div><section aria-label="Atlas launcher preview and shared data" class="atlas-extra-panels">
+<div aria-labelledby="aw-preview-title" class="atlas-preview">
+<header class="subpanel-head"><span aria-hidden="true" class="preview-mini-globe">🌎</span><div><h2 id="aw-preview-title">Deep Time <em>Atlas</em> <small>(illustrative preview)</small></h2><p>Planetary history · Geologic time &amp; evolution</p></div><button aria-label="Open the synchronized Deep Time Atlas" class="open-preview" id="aw-preview-open" type="button">↗</button></header>
+<div class="mini-toolbar"><span class="mini-search">⌕ Search time or life…</span><span>Eon ⌄</span><span>All eons ⌄</span></div>
+<div class="mini-layout"><div class="mini-time"><h3>TIME HIERARCHY</h3><div>Hadean Eon<small>4,567–4,031 Ma</small></div><div>Archean Eon<small>4,031–2,500 Ma</small></div><div>Proterozoic Eon<small>2,500–538.8 Ma</small></div></div><div class="mini-scene"><div class="mini-sky"></div><div class="mini-scene-copy"><strong>4.567 BILLION YEARS</strong><h3>Earth’s deep-time story</h3><p>From the early Solar System to a living planet.</p><div class="mini-tabs"><b>Overview</b><span>Climate</span><span>Continents</span><span>Life</span></div></div></div></div>
+<p class="preview-notice">Visual example; select an atlas card or use ↗ to open your locally imported HTML.</p>
+</div>
+<aside aria-labelledby="aw-resource-title" class="atlas-resource"><div class="subpanel-head"><span aria-hidden="true" class="res-icon">♧</span><div><h2 id="aw-resource-title">Shared Taxa</h2><p>Canonical scientific dataset</p></div></div><dl class="resource-stats"><div><dt>Release</dt><dd id="aw-resource-release">Not imported</dd></div><div><dt>Canonical taxa</dt><dd id="aw-resource-taxa">—</dd></div><div><dt>Geologic intervals</dt><dd id="aw-resource-intervals">—</dd></div><div><dt>Dependent widgets</dt><dd id="aw-resource-deps">—</dd></div><div><dt>Scientific warnings</dt><dd id="aw-resource-warnings">Pending import</dd></div></dl><button class="dataset-details" id="aw-resource-details" type="button">View dataset details ›</button><p>Import Shared Taxa to verify the release. The launcher does not silently update embedded atlas data.</p></aside>
+</section>
+<div class="lower">
+<details class="pane"><summary>How synchronization works</summary>
+<div class="step"><span class="num">1</span><div><strong>Choose your HTML source folder.</strong> Click <em>Sync latest widgets</em> and grant the browser access to the folder containing your widget HTML files.</div></div>
+<div class="step"><span class="num">2</span><div><strong>Sync whenever you update a widget.</strong> The launcher scans subfolders, chooses each explorer's newest HTML file, compares its contents, and saves changed versions locally.</div></div>
+<div class="step"><span class="num">3</span><div><strong>Optional: save real HTML copies.</strong> Choose an output folder. Future syncs write the current six widgets and their <code>manifest.json</code> into its <code>launcher_widgets/</code> subfolder.</div></div>
+<div class="step"><span class="num">4</span><div><strong>Use manual import as a fallback.</strong> On browsers without folder access, use <em>Import artwork folder</em> for complete extracted HTML and image assets, or <em>Import HTML files</em> for standalone editions.</div></div>
+</details>
+<details class="pane"><summary>Recent activity</summary><div class="log" id="activity"><div class="empty">No synchronization activity yet.</div></div></details>
+</div>
+</div>
+<dialog aria-labelledby="change-title" class="changelog" id="changelog-dialog">
+<div class="change-header"><div><h2 id="change-title">Widget Launcher changelog</h2><p>Release history · Latest version is expanded</p></div><button aria-label="Close dialog" class="change-close" id="change-close" type="button">×</button></div>
+<div class="change-list"><details class="release" open><summary><span class="release-version">v1.14</span><time datetime="2026-10-17">Oct 17, 2026</time></summary><ul><li>Imports complete local artwork folders and stores them with their HTML revision in IndexedDB for offline launching.</li><li>Builds self-contained temporary launch pages with verified asset coverage, and can export full HTML-plus-artwork bundles to the chosen output folder.</li><li>Lists imported, incomplete and missing image assets, while retaining standalone HTML support and Shared Taxa checks.</li></ul></details><details class="release"><summary><span class="release-version">v1.13</span><time datetime="2026-10-17">Oct 17, 2026</time></summary><ul><li>Added asset-readiness preflight for imported HTML that references external artwork paths.</li><li>Warns and blocks opening a bundle-dependent HTML through a temporary blob URL; standalone HTML continues to open normally.</li><li>Preserved sync/import, IndexedDB history, Shared Taxa canonical validation and previous release history.</li><li>Full external bundle packaging remains a separate open feature.</li></ul></details><details class="release"><summary><span class="release-version">v1.12</span><time datetime="2026-10-16">Oct 16, 2026</time></summary><ul><li>Aligned launcher header wrapping with the atlas family without changing card gradients.</li><li>Kept the transparent borderless header and full data-import/synchronization features.</li></ul></details><details class="release"><summary><span class="release-version">v1.11</span><time datetime="2026-10-16">Oct 16, 2026</time></summary><ul><li>Standardized release histories and tabular data to the compact Mythology v1.2 System UI / Segoe UI font, 12px rows, and tighter spacing.</li><li>Removed the header gradient/background, outer border, rounding and shadow; retained only the #263749 bottom divider to eliminate header seams.</li><li>Kept the current navy/cyan/green accent colors, launcher card gradients, interactive functionality, and preceding release history.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.10</span><time datetime="2026-10-16">Oct 16, 2026</time></summary><ul><li>Standardized Shared Taxa index-information typography to the compact Mythology Atlas v1.2 System UI / Segoe UI style.</li><li>Reduced resource-statistics row spacing and dialog dimensions without changing the common navy/cyan/green color palette.</li><li>Advanced the Widget Launcher with the same release and changelog conventions as every Atlas widget; preserved local widget sync, file import and Shared Taxa validation.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.9 · dashboard redesign</span><time datetime="2026-10-16">Oct 16, 2026</time></summary><ul><li>Implemented redesigned Atlas dashboard with compact summary band, launchable gradient cards, an illustrative Deep Time preview, and Shared Taxa resource panel.</li><li>Preserved original v1.7 file synchronization, IndexedDB persistence, checksum verification, imports, and release-history functionality.</li><li>Source provenance: v1.9 used the uploaded v1.7 functional source; an independent v1.8 launcher implementation was not available for comparison.</li></ul></details><details class="release"><summary><span class="release-version">v1.7</span><time datetime="2026-10-15">Oct 15, 2026</time></summary><ul><li>Integrated the actual Shared Taxa v1.0 release manifest and its published-with-warnings status.</li><li>Verify every declared file checksum, including preserved source archives and images; display scientific ambiguities and unchecked external image links.</li><li>Retained cautious dependency comparisons and all existing widget synchronization and offline-launch behavior.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.6</span><time datetime="2026-10-15">Oct 15, 2026</time></summary><ul><li>Added canonical shared-dataset imports with JSON and SHA-256 validation.</li><li>Added the Shared Data overview, release details, and widget dependency statuses.</li><li>Preserved standalone widgets and added backward-compatible dataset storage.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.5</span><time datetime="2026-10-15">Oct 15, 2026</time></summary><ul><li>Added Mythology Atlas and Muscles Atlas cards, expanding the launcher to six explorers.</li><li>Extended folder sync and HTML imports to recognize both new widget families.</li><li>Introduced major.minor version numbering and clickable changelog history.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.4 <span class="former">(formerly v4)</span></span><time datetime="2026-10-14">Oct 14, 2026</time></summary><ul><li>Made the dashboard and header more compact.</li><li>Made entire widget cards clickable and merged explorer counts into the sync bar.</li><li>Collapsed synchronization instructions and activity history by default.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.3 <span class="former">(formerly v3)</span></span><time datetime="2026-10-14">Oct 14, 2026</time></summary><ul><li>Added launcher version and last-updated date in the header.</li><li>Kept launcher release metadata separate from widget file revisions.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.2 <span class="former">(formerly v2)</span></span><time datetime="2026-10-14">Oct 14, 2026</time></summary><ul><li>Added Sync button, folder scanning, and newest-file selection.</li><li>Added manual HTML import, saved local widget copies, and optional manifest export.</li><li>Displayed widget revision, file date, and synchronization status.</li></ul></details>
+<details class="release"><summary><span class="release-version">v1.1 <span class="former">(formerly v1)</span></span><time datetime="2026-10-14">Oct 14, 2026</time></summary><ul><li>Created the standalone launcher for Tree of Life, Geologic Time, Brain Structure, and Emergence.</li><li>Established a central dashboard for opening independently maintained widgets.</li></ul></details>
+</div>
+</dialog>
+<dialog aria-labelledby="data-title" class="dataset-dialog" id="data-dialog">
+<div class="change-header"><div><h2 id="data-title">Shared Taxa · Index statistics</h2><p>Published release details · documented uncertainties remain unresolved</p></div><button aria-label="Close dialog" class="change-close" id="data-close" type="button">×</button></div>
+<div class="data-detail" id="data-detail"></div>
+</dialog>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script>
+(()=>{'use strict';
+const DEFINITIONS=[
+ {id:'tree',name:'Tree of Life',savedName:'tree_of_life.html',expectedName:'tree_of_life_explorer.html',pattern:/(?:tree[ _-]*of[ _-]*life|zoolog(?:ical|y)|taxonomy|taxonomic|cladogram|phylogenetic)/i},
+ {id:'time',name:'Geologic Time',savedName:'geologic_time.html',expectedName:'Deep_Time_Atlas.html',pattern:/(?:deep[ _-]*time|geolog(?:ic|ical|y)|earth[ _-]*history|cretaceous[ _-]*period[ _-]*explorer)/i},
+ {id:'brain',name:'Brain Structure',savedName:'brain_structure.html',expectedName:'neural_evolution_atlas.html',pattern:/(?:neural[ _-]*evolution|brain[ _-]*structure|neuroanatom|brain[ _-]*atlas|neural[ _-]*atlas)/i},
+ {id:'emergence',name:'Emergence',savedName:'emergence.html',expectedName:'emergence_hierarchy_explorer.html',pattern:/(?:emergence|consciousness[ _-]*explorer|neural[ _-]*emergence)/i},
+ {id:'mythology',name:'Mythology Atlas',savedName:'mythology_atlas.html',expectedName:'mythology_atlas.html',pattern:/(?:mythology|mythological|greek[ _-]*myth|norse[ _-]*myth|roman[ _-]*myth|mesopotamian[ _-]*myth|hindu[ _-]*myth)/i},
+ {id:'muscles',name:'Muscles Atlas',savedName:'muscles_atlas.html',expectedName:'muscles_atlas.html',pattern:/(?:muscles?|muscular|myology)(?:[ _-]*(?:atlas|explorer|hierarchy|anatomy))?|(?:atlas|explorer)[ _-]*of[ _-]*muscles?/i}
+];
+const $=id=>document.getElementById(id);const now=()=>new Date().toISOString();
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const readableDate=timestamp=>timestamp?new Date(timestamp).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}):'—';
+const readableTime=timestamp=>timestamp?new Date(timestamp).toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'Never';
+const kvMemory=new Map(), widgetMemory=new Map(),bundleMemory=new Map(),historyMemory=[];
+let db=null, sourceHandle=null, outputHandle=null, busy=false, records={}, bundles={}, toastTimer, lastChecked=null;
+function request(store,mode,operation){return new Promise((resolve,reject)=>{if(!db)return reject(new Error('Storage unavailable'));const tx=db.transaction(store,mode);let req=operation(tx.objectStore(store));req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
+async function connectDB(){if(!('indexedDB'in window))return;try{db=await new Promise((resolve,reject)=>{const req=indexedDB.open('AtlasWidgetLauncher',3);req.onupgradeneeded=()=>{const d=req.result;if(!d.objectStoreNames.contains('widgets'))d.createObjectStore('widgets',{keyPath:'id'});if(!d.objectStoreNames.contains('settings'))d.createObjectStore('settings',{keyPath:'key'});if(!d.objectStoreNames.contains('history'))d.createObjectStore('history',{keyPath:'id',autoIncrement:true});if(!d.objectStoreNames.contains('datasets'))d.createObjectStore('datasets',{keyPath:'key'});if(!d.objectStoreNames.contains('widgetBundles'))d.createObjectStore('widgetBundles',{keyPath:'id'});};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}catch(err){console.warn('IndexedDB unavailable, temporary session only',err);}}
+async function getSetting(key){if(!db)return kvMemory.get(key);try{return(await request('settings','readonly',st=>st.get(key)))?.value}catch{return kvMemory.get(key)}}
+async function setSetting(key,value){kvMemory.set(key,value);if(db)try{await request('settings','readwrite',st=>st.put({key,value}))}catch(e){console.warn(e)}}
+async function loadRecords(){if(db){try{for(const rec of await request('widgets','readonly',st=>st.getAll())){if(!rec.datasetMetadata)rec.datasetMetadata=versionMeta(rec.html||'');records[rec.id]=rec;}return}catch(e){console.warn(e)}}for(const[id,rec]of widgetMemory){if(!rec.datasetMetadata)rec.datasetMetadata=versionMeta(rec.html||'');records[id]=rec;}}
+async function loadBundles(){
+ if(db){try{for(const b of await request('widgetBundles','readonly',s=>s.getAll()))bundles[b.id]=b;return;}catch(e){console.warn('Artwork store read failed:',e);}}
+ for(const [id,b] of bundleMemory)bundles[id]=b;
+}
+async function saveBundle(bundle){
+ // Do not claim a persistent bundle if quota or IndexedDB writing fails.
+ if(!db)throw new Error('Browser persistent storage is unavailable; enable IndexedDB or import standalone HTML.');
+ await request('widgetBundles','readwrite',s=>s.put(bundle));
+ bundles[bundle.id]=bundle;bundleMemory.set(bundle.id,bundle);
+}
+function activeBundle(rec){const b=bundles[rec?.id];return b&&b.widgetHash===rec.hash?b:null;}
+async function saveRecord(rec){records[rec.id]=rec;widgetMemory.set(rec.id,rec);if(db)try{await request('widgets','readwrite',st=>st.put(rec))}catch(e){console.warn(e);showToast('Browser storage failed. This version may only last until the page closes.',true)}}
+async function addHistory(message){let item={when:now(),message};historyMemory.unshift(item);historyMemory.splice(15);if(db)try{await request('history','readwrite',st=>st.add(item))}catch(e){console.warn(e)}await renderHistory();}
+async function renderHistory(){let items=historyMemory;if(db)try{items=(await request('history','readonly',st=>st.getAll())).reverse().slice(0,6)}catch(e){console.warn(e)}$('activity').innerHTML=items.length?items.map(item=>`<div class="log-entry"><time>${esc(readableTime(item.when))}</time><strong>${esc(item.message)}</strong></div>`).join(''):'<div class="empty">No synchronization activity yet.</div>';}
+function showToast(message,isError=false){const t=$('toast');t.textContent=message;t.className='toast visible'+(isError?' error':'');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('visible'),6500);}
+function setBusy(value){busy=value;$('sync-btn').classList.toggle('busy',value);$('sync-btn').disabled=value;$('sync-icon').innerHTML=value?'<span class="loader"></span>':'↻';$('sync-label').textContent=value?'Synchronizing…':'Sync latest widgets';for(const id of ['folder-btn','import-btn','bundle-btn','output-btn','dataset-import'])$(id).disabled=value;}
+function render(){let ready=0;for(const def of DEFINITIONS){let r=records[def.id],has=!!r;const paths=has?externalBundleRefs(r.html):[],bundle=has?activeBundle(r):null;const complete=has&&(!paths.length||(bundle&&paths.every(p=>bundle.files.some(f=>f.path===p))));if(complete)ready++;$('status-'+def.id).textContent=has?(complete?(paths.length?'Bundle ready':'Synced'):'Assets missing'):'Not linked';$('status-'+def.id).classList.toggle('ready',!!complete);$('rev-'+def.id).textContent=has?(r.sourceRevision||'Local r'+r.localRevision):'—';$('rev-'+def.id).title=has?(r.sourceRevision?'Version extracted from original filename or widget metadata; launcher copy '+r.localRevision:'Local revision counted by launcher; original has no explicit version'):'Not yet synced';$('date-'+def.id).textContent=has?readableDate(r.modifiedAt):'—';$('date-'+def.id).title=has?('Source file modified: '+new Date(r.modifiedAt).toLocaleString()):'';$('file-'+def.id).textContent=has?(r.sourcePath||r.sourceFile):'Expected: '+def.expectedName;document.querySelector('.card[data-widget="'+def.id+'"]').classList.toggle('linked',has);$('status-'+def.id).title=has?'Last synced '+readableTime(r.syncedAt):'Import widget HTML to enable opening';$('synced-'+def.id).textContent=has?readableTime(r.syncedAt):'Waiting for first sync';}
+ renderDatasets();renderDependencies();renderAssetReadiness();
+ $('explorer-count').textContent=String(DEFINITIONS.length).padStart(2,'0');$('ready-count').textContent=String(ready).padStart(2,'0');$('top-status').textContent=ready===DEFINITIONS.length?DEFINITIONS.length+' widgets ready':ready?ready+' widgets ready':'Local launcher';$('source-name').textContent=sourceHandle?.name||'Not selected';$('output-name').textContent=outputHandle?.name?outputHandle.name+'/launcher_widgets':'Not configured';$('last-sync').textContent=readableTime(lastChecked);$('sync-info').textContent=sourceHandle?'Ready to scan '+sourceHandle.name:ready?'Open synced widgets or connect a source folder.':'Select a source folder on first sync.';
+}
+function classify(name){for(const d of DEFINITIONS){if(d.pattern.test(name))return d.id}return null}
+function versionFrom(name,html){const m=name.match(/(?:^|[ _.-])v(?:ersion)?[ _.-]?(\d+(?:\.\d+){0,2})(?=[ _.-]|$)/i);if(m)return 'v'+m[1];const meta=html.match(/<meta\s+(?:[^>]*\bname\s*=\s*["'](?:widget-revision|widget-version)["'][^>]*\bcontent\s*=\s*["']([^"']+)["']|[^>]*\bcontent\s*=\s*["']([^"']+)["'][^>]*\bname\s*=\s*["'](?:widget-revision|widget-version)["'])[^>]*>/i);const v=(meta?.[1]||meta?.[2]||'').trim();return v?v.slice(0,24):null;}
+async function fingerprint(text){if(crypto?.subtle){const bytes=new TextEncoder().encode(text);const digest=await crypto.subtle.digest('SHA-256',bytes);return Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');}let h=2166136261;for(let i=0;i<text.length;i++){h=Math.imul(h^text.charCodeAt(i),16777619)}return 'fnv-'+(h>>>0).toString(16)+'-'+text.length;}
+async function scanFolder(handle,level=0,prefix='',collected=[]){if(level>4||collected.length>=900)return collected;for await(const entry of handle.values()){if(collected.length>=900)break;if(entry.kind==='directory'){if(level<4&&!['launcher_widgets','.git','node_modules','dist','build'].includes(entry.name.toLowerCase()))await scanFolder(entry,level+1,prefix+entry.name+'/',collected)}else if(entry.kind==='file'&&/\.html?$/i.test(entry.name)&&!/^widget[_ -]?launcher\.html?$/i.test(entry.name)){let id=classify(entry.name);if(id){let f=await entry.getFile();collected.push({id,filename:f.name,path:prefix+f.name,file:f})}}}return collected;}
+async function processFiles(files){const latest=new Map();for(const item of files){if(!item.id)continue;const old=latest.get(item.id);let mtime=item.file.lastModified||0;if(!old||isPreferredCandidate(item,old))latest.set(item.id,item)}let changed=[],unchanged=[],older=[],invalid=[];
+ for(const def of DEFINITIONS){let candidate=latest.get(def.id);if(!candidate)continue;let file=candidate.file;let html=await file.text();if(!/<(?:!doctype\s+html|html|head|body|script|style)(?:\s|>)/i.test(html.slice(0,8000))){invalid.push(file.name);continue;}const hash=await fingerprint(html),existing=records[def.id],changedContents=!existing||existing.hash!==hash;const sourceRevision=versionFrom(file.name,html);const modAt=(file.lastModified?new Date(file.lastModified):new Date()).toISOString();const oldDate=existing?Date.parse(existing.modifiedAt)||0:0;const newDate=Date.parse(modAt)||0;
+ if(existing&&changedContents&&((newDate<oldDate&&!(numericVersion(file.name)>numericVersion(existing.sourceFile)))||(numericVersion(file.name)>0&&numericVersion(existing.sourceFile)>0&&numericVersion(file.name)<numericVersion(existing.sourceFile)))){older.push(def.name);continue;}
+ if(!changedContents){unchanged.push(def.name);continue;}
+ const rec={id:def.id,sourceFile:file.name,sourcePath:candidate.path||file.name,modifiedAt:modAt,syncedAt:now(),sourceRevision,localRevision:(existing?.localRevision||0)+1,hash,bytes:file.size,html,datasetMetadata:versionMeta(html)};await saveRecord(rec);changed.push(def.name);}
+ lastChecked=now();await setSetting('lastChecked',lastChecked);if(changed.length)await addHistory('Updated '+changed.join(', '));else await addHistory('Checked for newer files — no changes');render();return{changed,unchanged,older,invalid,matched:latest.size};
+}
+function numericVersion(name){let m=name.match(/(?:^|[ _.-])v(?:ersion)?[ _.-]?(\d+(?:\.\d+)*)/i);return m?m[1].split('.').reduce((n,x)=>n*1000+Number(x),0):0;}
+function isPreferredCandidate(candidate,current){const a=numericVersion(candidate.filename),b=numericVersion(current.filename);if(a&&b&&a!==b)return a>b;const ma=candidate.file.lastModified||0,mb=current.file.lastModified||0;return ma>mb||(ma===mb&&a>b);}
+async function checkPermission(handle,mode){if(!handle)return false;try{if(await handle.queryPermission({mode})==='granted')return true;return(await handle.requestPermission({mode}))==='granted'}catch{return false}}
+async function chooseSource(){if(!window.showDirectoryPicker){$('file-input').click();return false;}try{sourceHandle=await window.showDirectoryPicker({id:'atlas-widget-source',mode:'read'});await setSetting('sourceHandle',sourceHandle);render();return true}catch(e){if(e.name!=='AbortError')showToast('Could not select folder: '+e.message,true);return false;}}
+async function selectOutput(){if(!window.showDirectoryPicker){showToast('Output-folder writing needs a Chromium browser. You can still import and open HTML files.',true);return;}try{const picked=await window.showDirectoryPicker({id:'atlas-widget-output',mode:'readwrite'});if(!await checkPermission(picked,'readwrite')){showToast('Write permission was not granted.',true);return;}outputHandle=picked;await setSetting('outputHandle',outputHandle);render();if(Object.keys(records).length){await writeOutput();showToast('Output folder linked. Current widgets and manifest copied.')}}catch(e){if(e.name!=='AbortError')showToast('Output folder error: '+e.message,true);}}
+async function writeFile(handle,name,body){const file=await handle.getFileHandle(name,{create:true});const writable=await file.createWritable();await writable.write(body);await writable.close();}
+async function writeOutput(){if(!outputHandle)return{written:0};if(!await checkPermission(outputHandle,'readwrite'))throw new Error('Output folder needs write permission. Select it again to reconnect.');const sub=await outputHandle.getDirectoryHandle('launcher_widgets',{create:true});let manifest={schemaVersion:2,generatedAt:now(),widgets:{},sharedDatasets:[]};let written=0;for(const d of DEFINITIONS){let r=records[d.id];if(!r)continue;await writeFile(sub,d.savedName,r.html);written++;
+ const bundle=activeBundle(r);let assetListing=[];
+ if(bundle){for(const f of bundle.files){let dir=sub;const parts=f.path.split('/');for(const part of parts.slice(0,-1))dir=await dir.getDirectoryHandle(part,{create:true});await writeFile(dir,parts.at(-1),f.blob);assetListing.push({path:f.path,sha256:f.sha256||null,bytes:f.blob.size});}}
+ manifest.widgets[d.id]={artworkAssets:assetListing,title:d.name,file:d.savedName,sourceFile:r.sourceFile,sourcePath:r.sourcePath,sourceRevision:r.sourceRevision,launcherRevision:r.localRevision,sourceModifiedAt:r.modifiedAt,syncedAt:r.syncedAt,sha256:r.hash.startsWith('fnv-')?null:r.hash};}for(const release of Object.values(datasetReleases)){manifest.sharedDatasets.push({datasetId:release.id,version:release.version,schemaVersion:release.schemaVersion,releaseStatus:release.releaseStatus||'canonical',scientificWarnings:release.manifest?.counts?.unresolved_scientific_ambiguities||0,files:release.inventory.map(f=>({path:f.path,sha256:f.sha256}))});}await writeFile(sub,'manifest.json',JSON.stringify(manifest,null,2)+'\n');return{written};}
+/* Atlas Widget Launcher v1.6 — canonical datasets, independent widget snapshots. */
+const DATASET_CATALOG=[{id:'shared-taxa',name:'Shared Taxa'}];
+const datasetMemory=new Map();
+let datasetReleases={},datasetBusy=false,datasetDialogId='shared-taxa';
+const datasetKey=(id,v)=>id+'@'+v;
+const semver=v=>{const m=String(v??'').trim().replace(/^v/i,'').match(/^(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:[-+]([a-z\d.-]+))?$/i);return m?[+m[1],+(m[2]||0),+(m[3]||0),m[4]||'']:null;};
+function compareVersions(a,b){const x=semver(a),y=semver(b);if(!x||!y)return null;for(let i=0;i<3;i++)if(x[i]!==y[i])return x[i]>y[i]?1:-1;return x[3]===y[3]?0:!x[3]?1:!y[3]?-1:x[3].localeCompare(y[3]);}
+function compatibleSchema(version,range){const v=semver(version);if(!v||!range)return false;let r=String(range).trim().replace(/^v/i,'');if(/^\d+(?:\.x|\.\*)?$/i.test(r))return v[0]===parseInt(r,10);if(/^\d+\.\d+(?:\.x|\.\*)$/i.test(r)){const parts=r.split('.');return v[0]===+parts[0]&&v[1]===+parts[1]};if(/^\^\d+(?:\.\d+){0,2}$/.test(r))return v[0]===semver(r.slice(1))[0]&&compareVersions(v.slice(0,3).join('.'),r.slice(1))>=0;if(/^\d+(?:\.\d+){1,2}$/.test(r))return compareVersions(version,r)===0;const mt=r.match(/^>=\s*(\d+(?:\.\d+){1,2})\s*<\s*(\d+(?:\.\d+){1,2})$/);return !!(mt&&compareVersions(version,mt[1])>=0&&compareVersions(version,mt[2])<0);}
+function latestRelease(id,range){const all=Object.values(datasetReleases).filter(r=>r.id===id&&(!range||compatibleSchema(r.schemaVersion,range)));all.sort((a,b)=>compareVersions(b.version,a.version)||0);return all[0]||null;}
+const isPlain=o=>o!==null&&typeof o==='object'&&!Array.isArray(o);
+function versionMeta(html){const match=html.match(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)||[];for(const block of match){const head=block.slice(0,block.indexOf('>')+1);if(!/\btype\s*=\s*(["'])application\/json\1/i.test(head)||!/(?:\bid\s*=\s*(["'])atlas-widget-metadata\1|\bdata-atlas-widget\b)/i.test(head))continue;try{const o=JSON.parse(block.slice(block.indexOf('>')+1).replace(/<\/script\s*>$/i,''));if(!isPlain(o))throw new Error('Metadata is not a JSON object');if(o.dependencies!==undefined&&!Array.isArray(o.dependencies))throw new Error('dependencies must be an array');return {declared:true,raw:o,dependencies:(o.dependencies||[]).map(d=>({datasetId:String(d.datasetId||d.id||'').trim().toLowerCase(),embeddedVersion:d.embeddedVersion||d.datasetVersion||null,schemaRange:d.schemaRange||d.compatibleSchema||d.compatibleSchemaVersion||null,integration:d.integration||'embedded',updateMethod:d.updateMethod||'rebuild',embeddedSchemaVersion:d.embeddedSchemaVersion||null})).filter(d=>d.datasetId),warning:null};}catch(e){return {declared:false,dependencies:[],warning:'Invalid widget dependency metadata: '+e.message};}}return {declared:false,dependencies:[],warning:null};}
+function dependencyStatus(dep){if(!dep?.datasetId)return {key:'unknown',label:'Unknown',tip:'Dependency identifier missing'};const all=Object.values(datasetReleases).filter(r=>r.id===dep.datasetId);const candidate=latestRelease(dep.datasetId,dep.schemaRange||null);if(!all.length)return {key:'missing',label:'Dataset missing',tip:'Canonical '+dep.datasetId+' release has not been imported'};
+ if(!dep.schemaRange)return {key:'unknown',label:'Unknown',tip:'Widget does not declare a compatible dataset schema range'};
+ if(!candidate)return {key:'incompatible',label:'Incompatible',tip:'No imported canonical '+dep.datasetId+' release supports schema '+dep.schemaRange};
+ if(!dep.embeddedVersion||!semver(dep.embeddedVersion))return {key:'unknown',label:'Unknown',tip:'No valid embedded dataset version declared'};
+ if(dep.embeddedSchemaVersion&&!compatibleSchema(dep.embeddedSchemaVersion,dep.schemaRange))return {key:'incompatible',label:'Incompatible',tip:'The embedded schema does not match its declared compatibility range'};
+ const comparison=compareVersions(dep.embeddedVersion,candidate.version);
+ if(comparison===0)return {key:'current',label:'Up to date',tip:'Embedded snapshot matches latest compatible canonical release '+candidate.version};
+ if(comparison>0)return {key:'unknown',label:'Unknown',tip:'Widget embeds '+dep.embeddedVersion+', newer than imported canonical '+candidate.version};
+ if(dep.integration==='runtime'||dep.updateMethod==='replace-widget')return {key:'available',label:'Update available',tip:'Newer compatible dataset '+candidate.version+' is available; import a replacement widget to complete update'};
+ return {key:'rebuild',label:'Needs rebuild',tip:'Latest compatible '+dep.datasetId+' is '+candidate.version+'; widget still embeds '+dep.embeddedVersion+'. Build a new standalone HTML snapshot'};
+}
+function niceDataset(id){return DATASET_CATALOG.find(d=>d.id===id)?.name||latestRelease(id)?.name||id.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());}
+function dependencyRows(rec){const md=rec?.datasetMetadata||(!rec?.html?null:versionMeta(rec.html));if(!rec)return '<span class="data-muted">Widget not linked</span>';if(!md||!md.declared)return '<span class="data-muted" title="Legacy widget: dependency metadata not provided">Shared data — Unknown</span>';if(!md.dependencies.length)return '<span class="data-muted">Shared data — No dependency</span>';return md.dependencies.map(d=>{const s=dependencyStatus(d);return '<span class="dep-label '+esc(s.key)+'" title="'+esc(s.tip)+'"><span>'+esc(niceDataset(d.datasetId))+' — '+esc(d.embeddedVersion?'v'+String(d.embeddedVersion).replace(/^v/i,''):'version unknown')+'</span><span class="dep-status">'+esc(s.label)+'</span></span>';}).join('');}
+function renderDependencies(){for(const def of DEFINITIONS){const el=$('dep-'+def.id);if(el)el.innerHTML=dependencyRows(records[def.id]);}}
+function datasetList(){const ids=new Set([...DATASET_CATALOG.map(d=>d.id),...Object.values(datasetReleases).map(d=>d.id)]);return [...ids];}
+function dependentsFor(id){return DEFINITIONS.filter(d=>(records[d.id]?.datasetMetadata?.dependencies||[]).some(t=>t.datasetId===id));}
+function releaseWarnings(r){if(!r)return {count:0,external:0,images:0,local:0,hasWarnings:false};const c=r.manifest?.counts||{};return {count:Number(c.unresolved_scientific_ambiguities||0),external:Number(c.images_external_links_checked||0),images:Number(c.image_reference_records||0),local:Number(c.images_local_content_verified||0),hasWarnings:!!(r.releaseStatus==='published_with_documented_scientific_ambiguities'||c.unresolved_scientific_ambiguities)};}
+function renderDatasets(){const el=$('dataset-list');if(!el)return;el.innerHTML=datasetList().map(id=>{const r=latestRelease(id),dependent=dependentsFor(id).length,w=releaseWarnings(r);return '<button type="button" class="dataset-chip" data-dataset="'+esc(id)+'" title="Open '+esc(niceDataset(id))+' details"><span class="dataset-title">'+esc(niceDataset(id))+'</span><strong>'+(r?'v'+esc(r.version):'Not imported')+'</strong><span class="dataset-muted">'+(r?esc(String(r.taxaCount).toLocaleString())+' taxa':'Awaiting published release')+'</span><span class="dataset-muted">'+dependent+' depend'+(dependent===1?'ent':'ents')+'</span>'+(r?'<span class="dataset-muted">Synced '+esc(readableTime(r.syncedAt))+'</span>':'')+(w.hasWarnings?'<span class="dataset-caveat">'+esc(w.count)+' scientific ambiguities · external links unchecked</span>':'')+'<span class="dataset-mark '+(r&&!w.hasWarnings?'dataset-good':'')+'">'+(r?(w.hasWarnings?'Published · warnings':'Verified release'):'Pending')+'</span></button>';}).join('');}
+function renderDataDetails(id){datasetDialogId=id;const record=latestRelease(id);$('data-title').textContent=niceDataset(id);const arr=Object.values(datasetReleases).filter(r=>r.id===id).sort((a,b)=>compareVersions(b.version,a.version)||0);const deps=dependentsFor(id);if(!record){$('data-detail').innerHTML='<p>No published release has been imported. An unreconciled source export is not a Shared Data release.</p><p class="data-muted">Use <b>Import dataset folder</b> or place an eligible manifest.json and its referenced files in the source folder before syncing.</p><p>Declared dependents: '+deps.length+'</p>';return;}
+ const c=record.manifest?.counts||{},w=releaseWarnings(record);const inv=record.inventory.map(f=>'<tr><td>'+esc(f.path)+'</td><td><code>'+esc(f.sha256.slice(0,12))+'…</code></td><td>'+esc(f.bytes.toLocaleString())+'</td></tr>').join('');const changes=(Array.isArray(record.changelog)?record.changelog:[]).flatMap(e=>typeof e==='string'?[e]:Array.isArray(e?.changes)?e.changes:[e?.description||e?.summary||JSON.stringify(e)]).map(x=>'<li>'+esc(x)+'</li>').join('');const depHtml=deps.length?deps.map(d=>{const r=records[d.id],ds=(r.datasetMetadata?.dependencies||[]).filter(x=>x.datasetId===id).map(x=>dependencyStatus(x).label).join(', ');return '<li>'+esc(d.name)+': '+esc(ds)+'</li>';}).join(''):'<li>No linked widgets currently declare this dependency; older widgets remain Unknown.</li>';
+ const warnings=w.hasWarnings?'<div class="scientific-warning" role="note"><strong>'+w.count+' unresolved scientific ambiguities retained</strong><div>Rank disagreements: '+esc(c.rank_disagreements||0)+' · Lineage-age source differences: '+esc(c.lineage_age_source_differences||0)+' · Geologic-boundary differences: '+esc(c.geologic_boundary_source_differences||0)+' · Source ambiguity notes: '+esc(c.source_ambiguity_notes||0)+'.</div><div>External image links checked: '+w.external+'; image references: '+w.images+'; locally verified images: '+w.local+'. External links, credits and licenses remain unverified.</div><div>These are documented scientific and media uncertainties, not silently resolved findings.</div></div>':'';
+ $('data-detail').innerHTML='<div class="data-statgrid"><span>Version<b>v'+esc(record.version)+'</b></span><span>Schema<b>'+esc(record.schemaVersion)+'</b></span><span>Released<b>'+esc(record.releaseDate)+'</b></span><span>Synced<b>'+esc(readableTime(record.syncedAt))+'</b></span><span>Indexed taxa<b>'+record.taxaCount.toLocaleString()+'</b></span><span>Organism examples<b>'+record.organismCount.toLocaleString()+'</b></span></div><p><span class="dataset-mark '+(w.hasWarnings?'':'dataset-good')+'">'+esc(w.hasWarnings?'Published with documented scientific warnings':'Published release')+' · '+esc(record.inventory.length)+' file checksums verified</span></p>'+warnings+'<details><summary>File inventory ('+record.inventory.length+')</summary><table class="inventory"><thead><tr><th>File</th><th>SHA-256</th><th>Bytes</th></tr></thead><tbody>'+inv+'</tbody></table></details><details><summary>Dependent widgets ('+deps.length+')</summary><ul>'+depHtml+'</ul></details><details><summary>Compatibility and provenance</summary><pre>'+esc(JSON.stringify({compatibility:record.compatibility,sources:record.sources,validationStatus:record.validationStatus,releaseStatus:record.releaseStatus},null,2))+'</pre></details><details><summary>Changelog</summary>'+(changes?'<ul>'+changes+'</ul>':'<p>No changelog entries provided.</p>')+'</details><details><summary>Imported releases ('+arr.length+')</summary><p>'+arr.map(r=>esc(r.version+' — '+r.releaseDate)).join(' · ')+'</p></details>';
+}
+function openDataDetails(id){renderDataDetails(id);const dlg=$('data-dialog');if(typeof dlg.showModal==='function')dlg.showModal();else dlg.setAttribute('open','');}
+function normalizeDatasetManifest(m){
+ if(!isPlain(m))throw new Error('Manifest must be a JSON object');
+ const name=String(m.datasetName||m.name||m.dataset||'').trim();
+ const suppliedId=m.datasetId||m.id;
+ const id=String(suppliedId||(/^Shared Taxa$/i.test(name)?'shared-taxa':'')).trim().toLowerCase();
+ const version=String(m.datasetVersion||m.version||m.dataset_version||'').replace(/^v/i,'');
+ const schema=String(m.schemaVersion||m.schema_version||'').replace(/^v/i,'');
+ const releaseDate=m.releaseDate||m.release_date||m.releasedAt||null;
+ const status=String(m.releaseStatus||m.release_status||m.status||m.release?.status||'').toLowerCase();
+ const validationStatus=String(m.validationStatus||m.validation_status||'');
+ const standardRelease=m.canonical===true||m.release?.canonical===true||status==='canonical';
+ // The authoritative Shared Taxa release uses a documented publication status rather than a `canonical: true` flag.
+ // Accept only that exact status plus its explicitly matching validation report, never generic drafts/exports.
+ const publishedWithWarnings=id==='shared-taxa'&&status==='published_with_documented_scientific_ambiguities'&&validationStatus==='PASS_WITH_DOCUMENTED_SCIENTIFIC_WARNINGS';
+ if(!/^[a-z][a-z0-9-]{2,63}$/.test(id))throw new Error('Missing/invalid datasetId');
+ if(!name)throw new Error('Missing dataset name');
+ if(!semver(version)||!semver(schema))throw new Error('Missing/invalid version or schemaVersion');
+ if(typeof releaseDate!=='string'||!/^\d{4}-\d{2}-\d{2}/.test(releaseDate)||!Number.isFinite(Date.parse(releaseDate)))throw new Error('Invalid releaseDate');
+ if(!(standardRelease||publishedWithWarnings)||['draft','unreconciled','source-export','preliminary','candidate'].includes(status)||m.reconciled===false)throw new Error('Release is not explicitly published/canonical (unreconciled exports are not accepted)');
+ const counts=m.counts||{};
+ const taxa=Number(counts.taxa??counts.taxonCount??counts.taxa_total_canonical??m.taxonCount??m.taxaCount);
+ const organisms=Number(counts.organisms??counts.organismCount??counts.organism_example_records??m.organismCount);
+ if(!Number.isSafeInteger(taxa)||taxa<0||!Number.isSafeInteger(organisms)||organisms<0)throw new Error('Both indexed taxon and organism-example counts are required');
+ const rawFiles=m.files||m.fileInventory,entries=Array.isArray(rawFiles)?rawFiles:Object.entries(rawFiles||{}).map(([path,x])=>typeof x==='string'?{path,sha256:x}:{...x,path});
+ if(!Array.isArray(entries)||!entries.length||entries.length>200)throw new Error('Non-empty files inventory is required (max 200)');
+ const seen=new Set(),inventory=entries.map(e=>{
+  if(!isPlain(e))throw new Error('Invalid files entry');
+  const path=e.path||e.file||e.filename;
+  const hash=String(e.sha256||e.checksum||e.hash||'').replace(/^sha256:/i,'').toLowerCase();
+  if(typeof path!=='string'||!/\.(?:json|md|html|txt|png|jpg|jpeg|webp|zip|py)$/i.test(path)||path.startsWith('/')||path.includes('\\')||path.split('/').some(x=>!x||x==='..'||x==='.')||path==='manifest.json'||seen.has(path))throw new Error('Unsafe, duplicated, or unsupported inventory path: '+path);
+  if(!/^[a-f0-9]{64}$/.test(hash))throw new Error('Missing or invalid SHA-256 for '+path);
+  seen.add(path);return {path,sha256:hash,bytes:e.bytes??e.sizeBytes??e.size_bytes??null};
+ });
+ const sources=m.sources??m.sourceExports??m.source_exports,compat=m.compatibility??m.compatibilityRequirements;
+ if(sources==null||!((Array.isArray(sources)&&sources.length)||isPlain(sources)))throw new Error('Source information is required');
+ if(compat==null||!(Array.isArray(compat)||isPlain(compat)))throw new Error('Compatibility information is required');
+ if(publishedWithWarnings&&!(Number.isSafeInteger(counts.unresolved_scientific_ambiguities)&&counts.unresolved_scientific_ambiguities>0&&counts.images_external_links_checked===0))throw new Error('Published Shared Taxa release must retain its scientific and external-media warnings');
+ return {id,name,version,schemaVersion:schema,releaseDate,releaseStatus:status,validationStatus,taxaCount:taxa,organismCount:organisms,inventory,sources,compatibility:compat,changelog:m.changelog||m.release_history||m.changes||[],manifest:m};
+}
+/* Synchronous pure JS SHA-256 fallback: file:// may not expose crypto.subtle. */
+function sha256Fallback(ascii){const rightRotate=(value,amount)=>(value>>>amount)|(value<<(32-amount));const words=[],length=ascii.length,bitLength=length*8;let hash=sha256Fallback.h,prime=sha256Fallback.k;if(!hash){let n=0,composites={};hash=[];prime=[];for(let c=2;n<64;c++){if(!composites[c]){for(let j=c*c;j<400;j+=c)composites[j]=true;if(n<8)hash[n]=(Math.pow(c,.5)%1*4294967296)|0;prime[n++]=(Math.pow(c,1/3)%1*4294967296)|0;}}sha256Fallback.h=hash;sha256Fallback.k=prime;}let msg=Array.from(ascii);msg.push(128);while(msg.length%64!==56)msg.push(0);const high=Math.floor(bitLength/4294967296),low=bitLength>>>0;for(let i=3;i>=0;i--)msg.push((high>>>(i*8))&255);for(let i=3;i>=0;i--)msg.push((low>>>(i*8))&255);let h=hash.slice();for(let idx=0;idx<msg.length;idx+=64){for(let i=0;i<16;i++)words[i]=(msg[idx+4*i]<<24)|(msg[idx+4*i+1]<<16)|(msg[idx+4*i+2]<<8)|msg[idx+4*i+3];for(let i=16;i<64;i++){const a=words[i-15],b=words[i-2];words[i]=((words[i-16]+(rightRotate(a,7)^rightRotate(a,18)^(a>>>3)))+words[i-7]+(rightRotate(b,17)^rightRotate(b,19)^(b>>>10)))|0;}let [a,b,c,d,e,f,g,j]=h;for(let i=0;i<64;i++){const t1=(j+(rightRotate(e,6)^rightRotate(e,11)^rightRotate(e,25))+((e&f)^(~e&g))+prime[i]+words[i])|0;const t2=((rightRotate(a,2)^rightRotate(a,13)^rightRotate(a,22))+((a&b)^(a&c)^(b&c)))|0;j=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0;}[a,b,c,d,e,f,g,j].forEach((x,i)=>h[i]=(h[i]+x)|0);}return h.map(x=>(x>>>0).toString(16).padStart(8,'0')).join('');}
+async function sha256(bytes){if(globalThis.crypto?.subtle){try{const d=await crypto.subtle.digest('SHA-256',bytes);return Array.from(new Uint8Array(d),x=>x.toString(16).padStart(2,'0')).join('');}catch(e){console.warn('SubtleCrypto unavailable; using local SHA-256',e);}}return sha256Fallback(new Uint8Array(bytes));}
+async function getFolderFile(root,path){let h=root;const pieces=path.split('/');for(const part of pieces.slice(0,-1))h=await h.getDirectoryHandle(part);const fh=await h.getFileHandle(pieces[pieces.length-1]);return fh.getFile();}
+async function validateFolderRelease(mfFile,fetchFile){
+ if(mfFile.size>1024*1024)throw new Error('Manifest exceeds 1 MiB');
+ let parsed;try{parsed=JSON.parse(await mfFile.text());}catch(e){throw new Error('manifest.json is not valid JSON: '+e.message);}
+ const rec=normalizeDatasetManifest(parsed),fileData={},verified=[];let total=0;
+ for(const file of rec.inventory){
+  const f=await fetchFile(file.path);if(!f)throw new Error('Missing '+file.path);
+  total+=f.size;if(total>70*1024*1024)throw new Error('Dataset exceeds 70 MiB import limit');
+  const buf=await f.arrayBuffer(),hash=await sha256(buf);
+  if(hash!==file.sha256)throw new Error('SHA-256 mismatch: '+file.path);
+  if(file.bytes!=null&&Number(file.bytes)!==buf.byteLength)throw new Error('Byte-size mismatch: '+file.path);
+  if(file.path.toLowerCase().endsWith('.json')){
+   let text;try{text=new TextDecoder('utf-8',{fatal:true}).decode(buf);JSON.parse(text);}catch(e){throw new Error('Invalid UTF-8 JSON in '+file.path+': '+e.message);}
+   // Keep the verified authoritative JSON snapshot; preserved historical exports and images
+   // are verified but need not be duplicated in browser IndexedDB.
+   if(!file.path.includes('/'))fileData[file.path]=text;
+  }
+  verified.push({...file,bytes:buf.byteLength});
+ }
+ // The validation report is part of the manifest's verified inventory: retain warnings as supplied.
+ if(rec.releaseStatus==='published_with_documented_scientific_ambiguities'){
+  const v=fileData['VALIDATION_REPORT.json'];
+  if(!v||JSON.parse(v).validation_status!==rec.validationStatus)throw new Error('Shared Taxa validation report does not match declared scientific warning status');
+ }
+ return {...rec,inventory:verified,fileData,verifiedAt:now()};
+}
+async function storeCanonicalDataset(release){const key=datasetKey(release.id,release.version);const existing=datasetReleases[key];const fingerprint=release.inventory.map(f=>f.path+':'+f.sha256).sort().join('|');if(existing){const old=existing.inventory.map(f=>f.path+':'+f.sha256).sort().join('|');if(old!==fingerprint||JSON.stringify(existing.manifest)!==JSON.stringify(release.manifest))throw new Error('Canonical version '+release.version+' already stored with different contents. Publish a new version.');return 'unchanged';}
+ const rec={...release,key,syncedAt:now()};if(db){await new Promise((resolve,reject)=>{const tx=db.transaction('datasets','readwrite');tx.objectStore('datasets').put(rec);tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error||new Error('Dataset storage failed'));tx.onabort=()=>reject(tx.error||new Error('Dataset storage aborted'));});}else datasetMemory.set(key,rec);datasetReleases[key]=rec;return 'imported';}
+async function importOneDataset(manifestFile,readResource,label){const rec=await validateFolderRelease(manifestFile,readResource);const status=await storeCanonicalDataset(rec);await addHistory((status==='imported'?'Imported ':'Verified ')+rec.name+' v'+rec.version+' ('+rec.inventory.length+' verified files; '+rec.releaseStatus+')');return {id:rec.id,name:rec.name,version:rec.version,status,source:label};}
+async function findManifests(folder,prefix='',depth=0,result=[]){if(depth>5||result.length>=50)return result;for await(const entry of folder.values()){if(entry.kind==='file'&&entry.name.toLowerCase()==='manifest.json'){result.push({directory:folder,prefix,file:await entry.getFile()});}else if(entry.kind==='directory'&&depth<5&&!['node_modules','.git','launcher_widgets','dist','build'].includes(entry.name.toLowerCase()))await findManifests(entry,prefix+entry.name+'/',depth+1,result);}return result;}
+async function syncDatasetFolder(folder,quiet=false){const found=await findManifests(folder),out={imported:[],unchanged:[],errors:[],examined:found.length};for(const candidate of found){let m;try{m=JSON.parse(await candidate.file.text());}catch(e){if(/shared.?taxa|dataset/i.test(candidate.prefix)){out.errors.push(candidate.prefix+': Invalid manifest JSON');}continue;}if(!isPlain(m)||!(m.datasetId||m.datasetName||m.dataset||m.releaseStatus||m.release_status||m.canonical||m.release?.canonical))continue;try{const result=await importOneDataset(candidate.file,p=>getFolderFile(candidate.directory,p),candidate.prefix||folder.name);out[result.status].push(result.name+' v'+result.version);}catch(e){out.errors.push((candidate.prefix||folder.name)+': '+e.message);await addHistory('Dataset import failed — '+(candidate.prefix||folder.name)+': '+e.message);}}renderDatasets();renderDependencies();if(!quiet&&(!out.imported.length&&!out.unchanged.length&&!out.errors.length))showToast('No canonical dataset manifest found. Existing datasets are unchanged.');return out;}
+async function manualDatasetImport(){if(datasetBusy||busy)return;if(window.showDirectoryPicker){try{const folder=await window.showDirectoryPicker({id:'atlas-dataset-source',mode:'read'});setDatasetBusy(true);const out=await syncDatasetFolder(folder);showDatasetResults(out);}catch(e){if(e.name!=='AbortError')showToast('Dataset folder import failed: '+e.message,true);await addHistory('Dataset folder import failed: '+e.message);}finally{setDatasetBusy(false);}}else{$('dataset-files').click();}}
+function setDatasetBusy(value){datasetBusy=value;$('dataset-import').disabled=value||busy;$('dataset-import').textContent=value?'Validating…':'Import dataset folder';}
+function showDatasetResults(o){const text=['Datasets: '+o.imported.length+' imported, '+o.unchanged.length+' unchanged'].concat(o.errors.length?['Errors: '+o.errors.slice(0,2).join(' | ')]:[]).join('. ');showToast(text,!!o.errors.length);}
+async function importDatasetSelection(selected){if(datasetBusy||busy)return;setDatasetBusy(true);try{const byPath=new Map(Array.from(selected).map(f=>[f.webkitRelativePath||f.name,f]));const manifests=[...byPath].filter(([p])=>/(^|\/)manifest\.json$/i.test(p));const results={imported:[],unchanged:[],errors:[],examined:manifests.length};for(const [path,manifest] of manifests){const base=path.slice(0,path.length-'manifest.json'.length);try{const m=JSON.parse(await manifest.text());if(!m.datasetId&&!m.datasetName&&!m.dataset)continue;const outcome=await importOneDataset(manifest,p=>byPath.get(base+p),base);results[outcome.status].push(outcome.name+' v'+outcome.version);}catch(e){results.errors.push(path+': '+e.message);await addHistory('Dataset import failed: '+path+' '+e.message);}}renderDatasets();renderDependencies();showDatasetResults(results);}catch(e){showToast('Dataset import failed: '+e.message,true);}finally{setDatasetBusy(false);}}
+async function loadDatasets(){if(db&&db.objectStoreNames.contains('datasets')){try{for(const rec of await request('datasets','readonly',st=>st.getAll()))datasetReleases[rec.key]=rec;return;}catch(e){console.warn('Dataset restore failed',e);}}for(const [key,r] of datasetMemory)datasetReleases[key]=r;}
+$('dataset-list').addEventListener('click',e=>{const b=e.target.closest('[data-dataset]');if(b)openDataDetails(b.dataset.dataset);});
+$('dataset-import').addEventListener('click',manualDatasetImport);
+$('dataset-files').addEventListener('change',async e=>{await importDatasetSelection(e.target.files);e.target.value='';});
+$('data-close').addEventListener('click',()=>{const d=$('data-dialog');if(d.close)d.close();else d.removeAttribute('open');});
+$('data-dialog').addEventListener('click',e=>{if(e.target.id==='data-dialog')$('data-dialog').close();});
+
+async function sync(){if(busy)return;
+ if(!sourceHandle){let selected=await chooseSource();if(!selected)return;}
+ setBusy(true);try{if(!await checkPermission(sourceHandle,'read')){showToast('Folder access was not granted. Choose the source folder again.',true);return;}const files=await scanFolder(sourceHandle);const result=await processFiles(files);
+  try{if([...Object.values(records)].some(r=>externalBundleRefs(r.html).length&&!activeBundle(r)))await importBundleMap(await inventoryFolder(sourceHandle),true);}
+  catch(e){await addHistory('Artwork auto-sync warning: '+e.message);showToast('Artwork synchronization: '+e.message,true);}let ds={imported:[],unchanged:[],errors:[]};try{ds=await syncDatasetFolder(sourceHandle,true);}catch(e){ds.errors.push(e.message);await addHistory('Shared Data sync error: '+e.message);}let output='';if(outputHandle){try{const count=await writeOutput();output=' Copied '+count.written+' HTML files and manifest to output folder.';}catch(e){output=' Output copy failed: '+e.message;}}
+ if(!files.length&&!ds.imported.length&&!ds.unchanged.length&&!ds.errors.length)showToast('No matching widget HTML or canonical datasets found in '+sourceHandle.name+'.',true);else showToast((result.changed.length?'Updated '+result.changed.join(', ')+'. ':'Widgets checked ('+result.matched+' of '+DEFINITIONS.length+' matched). ')+(ds.imported.length?'Datasets: '+ds.imported.join(', ')+'. ':'')+(ds.errors.length?'Dataset validation failed: '+ds.errors.slice(0,2).join(' | ')+'. ':'')+output,!!ds.errors.length);
+ }catch(e){console.error(e);showToast('Synchronization error: '+e.message,true)}finally{setBusy(false);render();}}
+async function importFiles(filelist){if(busy)return;const files=[...filelist].map(f=>({id:classify(f.name),filename:f.name,path:f.name,file:f})).filter(f=>f.id);if(!files.length){showToast('No recognized widget names. Try tree_of_life, Deep_Time_Atlas, neural_evolution_atlas, emergence, mythology_atlas, or muscles_atlas.',true);return;}setBusy(true);try{const result=await processFiles(files);let output='';if(outputHandle){try{let o=await writeOutput();output=' Copied '+o.written+' widgets to output folder.';}catch(e){output=' Output copy failed: '+e.message;}}showToast(result.changed.length?'Imported '+result.changed.join(', ')+'.'+output:'Files checked; no newer versions found.'+output);}catch(e){showToast('Import failed: '+e.message,true)}finally{setBusy(false);render();}}
+// Artwork bundles are independent of canonical Shared Taxa datasets.
+const BUNDLE_IMAGE=/\.(?:webp|png|jpe?g|svg|avif)$/i;
+const MAX_BUNDLE_FILE=12*1024*1024,MAX_BUNDLE_TOTAL=90*1024*1024,MAX_BUNDLE_FILES=1600;
+function safeBundlePath(input){
+ let path=String(input||'').replace(/\\/g,'/').replace(/^\.\//,'');
+ if(!path||path.startsWith('/')||path.includes('://')||path.split('/').some(x=>!x||x==='.'||x==='..'||/[\x00-\x1f<>:"|?*]/.test(x)))throw new Error('Unsafe artwork path: '+String(input).slice(0,90));
+ return path;
+}
+async function inventoryFolder(handle,prefix='',out=new Map(),depth=0){
+ if(depth>7)throw new Error('Folder nesting exceeds supported depth (7)');
+ for await(const entry of handle.values()){
+  if(out.size>4000)throw new Error('Selected folder contains too many files');
+  const path=prefix+entry.name;
+  if(entry.kind==='directory'){
+   if(['node_modules','.git','launcher_widgets'].includes(entry.name))continue;
+   await inventoryFolder(entry,path+'/',out,depth+1);
+  }else if(entry.kind==='file'&&(/\.(?:html?|webp|png|jpe?g|svg|avif)$/i.test(entry.name)||entry.name==='manifest.json'))out.set(safeBundlePath(path),await entry.getFile());
+ }
+ return out;
+}
+function sourceAsset(fileMap,htmlPath,required){
+ const path=safeBundlePath(required);
+ const parent=htmlPath.split('/').slice(0,-1);
+ // Strictly prefer file beside HTML, then shared assets folder in its enclosing package.
+ for(let n=parent.length;n>=0;n--){const key=parent.slice(0,n).concat(path.split('/')).join('/');if(fileMap.has(key))return{path:key,file:fileMap.get(key)};}
+ const matches=[...fileMap].filter(([key])=>key===path||key.endsWith('/'+path));
+ if(matches.length===1)return {path:matches[0][0],file:matches[0][1]};
+ if(matches.length>1)throw new Error('Ambiguous image path '+path+' across multiple folders; choose a single atlas bundle.');
+ return null;
+}
+async function shaFile(file){
+ if(!crypto?.subtle)return null;
+ const bytes=await file.arrayBuffer(),digest=await crypto.subtle.digest('SHA-256',bytes);
+ return Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,'0')).join('');
+}
+async function findExpectedArtworkHash(fileMap,actualPath,requested){
+ const m=actualPath.match(/^(.*?assets\/(?:deep_time|brain|mythology|featured))\//i);
+ if(!m)return null;
+ const file=fileMap.get(m[1]+'/manifest.json');if(!file)return null;
+ let data;try{data=JSON.parse(await file.text())}catch(e){throw new Error('Artwork manifest is invalid: '+m[1]+'/manifest.json');}
+ const rel=requested.replace(/^assets\/(?:deep_time|brain|mythology|featured)\//,'');
+ for(const x of data.entries||[]){if(x.hero===rel&&/^[a-f0-9]{64}$/i.test(x.sha256||''))return x.sha256.toLowerCase();}
+ return null;
+}
+async function storeAssetsForRecord(rec,htmlPath,fileMap){
+ const expected=externalBundleRefs(rec.html);
+ if(!expected.length)return {count:0,missing:[],status:'standalone'};
+ if(expected.length>MAX_BUNDLE_FILES)throw new Error('Too many referenced image assets');
+ const found=[],missing=[];let total=0;
+ for(const requested of expected){
+  const match=sourceAsset(fileMap,htmlPath,requested);
+  if(!match){missing.push(requested);continue;}
+  const file=match.file;
+  if(file.size>MAX_BUNDLE_FILE)throw new Error('Image too large: '+requested);
+  total+=file.size;if(total>MAX_BUNDLE_TOTAL)throw new Error('Artwork bundle too large for safe browser import (90 MB limit).');
+  // Persist Blob in IndexedDB, not its original filesystem handle.
+  const sha256=await shaFile(file),expectedHash=await findExpectedArtworkHash(fileMap,match.path,requested);
+  if(expectedHash&&sha256&&sha256!==expectedHash)throw new Error('Artwork checksum mismatch for '+requested);
+  found.push({path:safeBundlePath(requested),blob:file,sha256,verified:!!(expectedHash&&sha256),sourcePath:match.path});
+ }
+ if(missing.length)return {count:found.length,missing,status:'incomplete'};
+ await saveBundle({id:rec.id,widgetHash:rec.hash,importedAt:now(),files:found,sourceHtml:htmlPath,totalBytes:total,verifiedCount:found.filter(x=>x.verified).length});
+ return {count:found.length,missing:[],status:'stored',bytes:total};
+}
+async function importBundleMap(files,auto=false){
+ if(busy&&!auto)return;
+ const chosen=[];
+ for(const [path,file] of files){if(/\.html?$/i.test(path)){const id=classify(path.split('/').at(-1));if(id)chosen.push({id,path,filename:file.name,file});}}
+ if(!chosen.length&&!auto)throw new Error('No recognized atlas HTML files in selected folder.');
+ let processed={changed:[],unchanged:[],older:[],invalid:[],matched:0};
+ if(chosen.length)processed=await processFiles(chosen);
+ const results=[],errors=[];
+ for(const item of chosen){const rec=records[item.id];if(!rec)continue;
+  // Use the actual selected version rather than attaching an older folder's images.
+  const fileHash=await fingerprint(await item.file.text());if(fileHash!==rec.hash)continue;
+  try{const result=await storeAssetsForRecord(rec,item.path,files);results.push({name:rec.id,...result});}
+  catch(e){errors.push(rec.id+': '+e.message);}
+ }
+ // When syncing an existing source folder, HTML may already be unchanged but image assets newly added.
+ if(auto)for(const def of DEFINITIONS){const rec=records[def.id];if(!rec||!externalBundleRefs(rec.html).length||activeBundle(rec))continue;
+  const candidates=chosen.filter(x=>x.id===def.id);if(candidates.length)continue;
+  try{const result=await storeAssetsForRecord(rec,rec.sourcePath,files);results.push({name:def.id,...result});}
+  catch(e){errors.push(def.id+': '+e.message);}
+ }
+ render();return {processed,results,errors};
+}
+async function chooseBundleFolder(){
+ if(!window.showDirectoryPicker){$('bundle-files').click();return;}
+ try{const handle=await window.showDirectoryPicker({id:'atlas-artwork-bundle',mode:'read'});
+  if(!await checkPermission(handle,'read'))throw new Error('Folder read permission was not granted');
+  setBusy(true);
+  const result=await importBundleMap(await inventoryFolder(handle),true);
+  await addHistory('Artwork bundles: '+result.results.map(x=>x.name+' '+x.status+' ('+x.count+')').join(', '));
+  showToast(result.results.map(x=>x.name+': '+(x.status==='stored'?x.count+' images stored':x.status==='incomplete'?x.missing.length+' missing images':'standalone')).join(' | ')+(result.errors.length?' | '+result.errors.join(' | '):''),!!result.errors.length||result.results.some(x=>x.missing?.length));
+ }catch(e){if(e.name!=='AbortError')showToast('Artwork import: '+e.message,true)}finally{setBusy(false);render();}
+}
+function blobDataURL(blob){return new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>reject(r.error||new Error('Image read failed'));r.readAsDataURL(blob);});}
+async function offlineLaunchHTML(rec){
+ const refs=externalBundleRefs(rec.html);if(!refs.length)return rec.html;
+ const bundle=activeBundle(rec);
+ if(!bundle)throw new Error('Artwork folder not stored for this exact widget version. Choose Import artwork folder.');
+ const byPath=new Map(bundle.files.map(x=>[x.path,x]));let html=rec.html;
+ for(const ref of refs){const asset=byPath.get(ref);if(!asset)throw new Error('Missing asset '+ref);
+  const uri=await blobDataURL(asset.blob);
+  html=html.split(ref).join(uri);
+ }
+ return html;
+}
+async function openExplorer(id){
+ const rec=records[id];if(!rec){showToast('This widget has not been synchronized yet.',true);return;}
+ // Reserve the tab *during the click*; opening after awaited image reads triggers popup blocking.
+ const tab=window.open('about:blank','_blank');
+ if(!tab){showToast('Browser blocked the new tab. Allow popups for your local launcher origin.',true);return;}
+ try{tab.opener=null;tab.document.title='Preparing atlas artwork…';tab.document.body.textContent='Preparing the offline atlas and artwork…';
+  const html=await offlineLaunchHTML(rec);
+  const blob=new Blob([html],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob);
+  tab.location.replace(url);setTimeout(()=>URL.revokeObjectURL(url),180000);
+ }catch(e){try{tab.close()}catch{}showToast('Cannot launch: '+e.message,true);}
+}
+function externalBundleRefs(html){
+  const out=new Set();const re=/\bassets\/(?:deep_time|brain|mythology|featured)\/[\w./-]+\.(?:webp|jpe?g|png|svg|avif)(?:\?[^"'\s<>]*)?/gi;
+  for(const m of html.matchAll(re))out.add(m[0]);
+  return [...out].slice(0,3000);
+}
+function renderAssetReadiness(){
+ for(const d of DEFINITIONS){const rec=records[d.id];const card=document.querySelector('.card[data-widget="'+d.id+'"]');if(!card)continue;
+  let mark=card.querySelector('.asset-preflight');if(!mark){mark=document.createElement('div');mark.className='asset-preflight';mark.style.cssText='margin:7px 10px 1px;font-size:10px;line-height:1.45;color:#a1e1dc';card.append(mark)}
+  const paths=rec?externalBundleRefs(rec.html):[];
+  if(!rec){mark.textContent='○ Not imported';mark.style.color='#9cabc0';}
+  else if(paths.length){const b=activeBundle(rec),stored=b?new Set(b.files.map(f=>f.path)):new Set(),missing=paths.filter(p=>!stored.has(p));
+   if(!missing.length){mark.textContent='✓ Artwork stored offline ('+paths.length+' images · '+b.verifiedCount+' verified · '+(b.totalBytes/1024/1024).toFixed(1)+' MB)';mark.style.color='#7fe0b3';}
+   else{mark.textContent='⚠ '+missing.length+'/'+paths.length+' artwork files missing — Import artwork folder';mark.style.color='#f1c888';}
+   mark.title=missing.length?'Missing: '+missing.slice(0,3).join(', '):'Persisted with this HTML revision in IndexedDB';}
+  else{mark.textContent='✓ No unresolved bundle-image references';mark.style.color='#7fe0b3';}
+ }
+}
+const changelog=$('changelog-dialog');
+$('version-btn').addEventListener('click',()=>{const releases=changelog.querySelectorAll('details.release');releases.forEach((release,i)=>{release.open=i===0});if(typeof changelog.showModal==='function')changelog.showModal();else changelog.setAttribute('open','');});
+$('change-close').addEventListener('click',()=>{if(typeof changelog.close==='function')changelog.close();else changelog.removeAttribute('open');});
+changelog.addEventListener('click',event=>{if(event.target===changelog){if(typeof changelog.close==='function')changelog.close();else changelog.removeAttribute('open');}});
+$('sync-btn').addEventListener('click',sync);$('folder-btn').addEventListener('click',async()=>{if(await chooseSource())showToast('Source folder connected. Click Sync latest widgets to scan it.');});$('import-btn').addEventListener('click',()=>$('file-input').click());
+$('bundle-btn').addEventListener('click',chooseBundleFolder);
+$('bundle-files').addEventListener('change',async e=>{if(busy)return;setBusy(true);try{const m=new Map();for(const f of e.target.files){const path=safeBundlePath(f.webkitRelativePath||f.name);m.set(path,f);}const result=await importBundleMap(m,true);await addHistory('Artwork folder import: '+result.results.map(x=>x.name+': '+x.count+' '+x.status).join(', '));showToast(result.results.map(x=>x.name+' '+x.count+' '+x.status).join(' | ')+(result.errors.length?' | '+result.errors.join(' | '):''),!!result.errors.length||result.results.some(x=>x.missing?.length));}catch(err){showToast('Artwork import: '+err.message,true);}finally{e.target.value='';setBusy(false);render();}});$('file-input').addEventListener('change',async e=>{const selected=e.target.files;await importFiles(selected);e.target.value='';});$('output-btn').addEventListener('click',selectOutput);for(const d of DEFINITIONS){const card=document.querySelector('.card[data-widget="'+d.id+'"]');card.addEventListener('click',()=>openExplorer(d.id));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openExplorer(d.id);}});}
+(async()=>{await connectDB();sourceHandle=await getSetting('sourceHandle')||null;outputHandle=await getSetting('outputHandle')||null;lastChecked=await getSetting('lastChecked')||null;await loadRecords();await loadBundles();await loadDatasets();await renderHistory();render();if(!db)showToast('Persistent browser storage is disabled. Widgets will need to be imported again after closing this page.',true);})();
+})();
+</script>
+<script id="aw-launcher-dashboard-binding">
+(()=>{'use strict';
+ const $=id=>document.getElementById(id);
+ function update(){
+  const ready=$('ready-count')?.textContent?.trim()||'0';$('aw-ready-tiles').textContent=String(Number(ready));
+  const dataset=document.querySelector('#dataset-list [data-dataset="shared-taxa"]');
+  const txt=dataset?.textContent?.replace(/\s+/g,' ').trim()||'';
+  const imported=/v\d+\.\d+/i.test(txt);
+  const version=dataset?.querySelector('strong')?.textContent?.trim()||null;
+  $('aw-dataset-summary').textContent=imported?'Shared Taxa · '+version:'Shared Taxa · not imported';
+  $('aw-resource-release').textContent=imported?version:'Not imported';
+  const count=imported?[...dataset.querySelectorAll('.dataset-muted')].map(e=>e.textContent.trim()).join(' ').match(/([\d,]+)\s+taxa\b/i):null;
+  $('aw-resource-taxa').textContent=count?count[1]:'—';$('aw-resource-intervals').textContent=version==='v1.0'?'173 (v1.0)':'—';
+  const deps=imported?txt.match(/(\d+)\s+dependents?/i):null;
+  $('aw-resource-deps').textContent=deps?deps[1]:'—';
+  const warns=imported?txt.match(/(\d+)\s+scientific ambiguities/i):null;
+  $('aw-resource-warnings').textContent=warns?warns[1]+' documented ambiguities':imported?'See release details':'Pending import';
+  $('aw-ambiguities').hidden=!warns;
+  if(warns)$('aw-ambiguities').textContent=warns[1]+' scientific ambiguities';
+ }
+ $('aw-resource-details').addEventListener('click',()=>document.querySelector('#dataset-list [data-dataset="shared-taxa"]')?.click());
+ $('aw-preview-open').addEventListener('click',()=>document.querySelector('.card[data-widget="time"]')?.click());
+ const mo=new MutationObserver(()=>update());
+ ['dataset-list','ready-count'].forEach(id=>{const e=$(id);if(e)mo.observe(e,{childList:true,subtree:true,characterData:true});});
+ update();
+})();
+</script></body>
+</html>

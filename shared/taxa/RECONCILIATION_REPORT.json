@@ -1,0 +1,1706 @@
+{
+  "schema_version": "1.0",
+  "cross_source_matches": [
+    {
+      "deep_id": "cyanobacteria",
+      "deep_name": "Cyanobacteria",
+      "tree_id": "Cyanobacteriota",
+      "canonical_id": "stx:taxon:tree-cyanobacteriota-fd0cb72d9b",
+      "matching_method": "curated_taxonomic_alias",
+      "rationale": "Cyanobacteria is the source common name for the cyanobacterial phylum (Cyanobacteriota).",
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "eukaryotes",
+      "deep_name": "Eukaryota",
+      "tree_id": "Eukaryota",
+      "canonical_id": "stx:taxon:tree-eukaryota-4a0b58655f",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "trilobita",
+      "deep_name": "Trilobita",
+      "tree_id": "Trilobita",
+      "canonical_id": "stx:taxon:tree-trilobita-2a95d2b2bb",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "arthropoda",
+      "deep_name": "Arthropoda",
+      "tree_id": "Arthropoda",
+      "canonical_id": "stx:taxon:tree-arthropoda-7483f37241",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "chordata",
+      "deep_name": "Chordata",
+      "tree_id": "Chordata",
+      "canonical_id": "stx:taxon:tree-chordata-e25dd70cfb",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "mollusca",
+      "deep_name": "Mollusca",
+      "tree_id": "Mollusca",
+      "canonical_id": "stx:taxon:tree-mollusca-bbcc6f597e",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "echinodermata",
+      "deep_name": "Echinodermata",
+      "tree_id": "Echinodermata",
+      "canonical_id": "stx:taxon:tree-echinodermata-ab669a5cb5",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "cnidaria",
+      "deep_name": "Cnidaria",
+      "tree_id": "Cnidaria",
+      "canonical_id": "stx:taxon:tree-cnidaria-c89f6e1a21",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "sarcopterygii",
+      "deep_name": "Sarcopterygii",
+      "tree_id": "Sarcopterygii",
+      "canonical_id": "stx:taxon:tree-sarcopterygii-69719103bf",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "tetrapoda",
+      "deep_name": "Tetrapoda",
+      "tree_id": "Tetrapoda",
+      "canonical_id": "stx:taxon:tree-tetrapoda-c30d2fcfb2",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "amniota",
+      "deep_name": "Amniota",
+      "tree_id": "Amniota",
+      "canonical_id": "stx:taxon:tree-amniota-c7e800d300",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "synapsida",
+      "deep_name": "Synapsida",
+      "tree_id": "Synapsida",
+      "canonical_id": "stx:taxon:tree-synapsida-fb85be3fa3",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "dinosaurs",
+      "deep_name": "Dinosauria",
+      "tree_id": "Dinosauria",
+      "canonical_id": "stx:taxon:tree-dinosauria-ef3bf2b16e",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "ammonoidea",
+      "deep_name": "Ammonoidea",
+      "tree_id": "Ammonoidea",
+      "canonical_id": "stx:taxon:tree-ammonoidea-6012d56c0e",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "mammalia",
+      "deep_name": "Mammalia",
+      "tree_id": "Mammalia",
+      "canonical_id": "stx:taxon:tree-mammalia-caa6267fce",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "angiosperms",
+      "deep_name": "Angiosperms",
+      "tree_id": "Angiospermae",
+      "canonical_id": "stx:taxon:tree-angiospermae-d743fcdb17",
+      "matching_method": "curated_taxonomic_alias",
+      "rationale": "Angiosperms is the English rendering of the flowering-plant clade Angiospermae.",
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "primates",
+      "deep_name": "Primates",
+      "tree_id": "Primates",
+      "canonical_id": "stx:taxon:tree-primates-f711c8c541",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "archaea",
+      "deep_name": "Archaea",
+      "tree_id": "Archaea_domain",
+      "canonical_id": "stx:taxon:tree-archaea-domain-1b26a335c7",
+      "matching_method": "domain_identity_selected_over_same-name-kingdom",
+      "rationale": "Deep Time calls Archaea a Domain, while Tree contains separate Domain and Kingdom records.",
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "porifera",
+      "deep_name": "Porifera",
+      "tree_id": "Porifera",
+      "canonical_id": "stx:taxon:tree-porifera-3b830759ee",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "annelida",
+      "deep_name": "Annelida",
+      "tree_id": "Annelida",
+      "canonical_id": "stx:taxon:tree-annelida-8fce65ffed",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "insecta",
+      "deep_name": "Insecta",
+      "tree_id": "Insecta",
+      "canonical_id": "stx:taxon:tree-insecta-4e9be8a3db",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "chelicerata",
+      "deep_name": "Chelicerata",
+      "tree_id": "Chelicerata",
+      "canonical_id": "stx:taxon:tree-chelicerata-9d6f314f94",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "chondrichthyes",
+      "deep_name": "Chondrichthyes",
+      "tree_id": "Chondrichthyes",
+      "canonical_id": "stx:taxon:tree-chondrichthyes-de0c1f81bf",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "actinopterygii",
+      "deep_name": "Actinopterygii",
+      "tree_id": "Actinopterygii",
+      "canonical_id": "stx:taxon:tree-actinopterygii-ec05eec3e5",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "testudines",
+      "deep_name": "Testudines",
+      "tree_id": "Testudines",
+      "canonical_id": "stx:taxon:tree-testudines-cf82e13faa",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "crocodylia",
+      "deep_name": "Crocodylia",
+      "tree_id": "Crocodylia",
+      "canonical_id": "stx:taxon:tree-crocodylia-5967239c87",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "squamata",
+      "deep_name": "Squamata",
+      "tree_id": "Squamata",
+      "canonical_id": "stx:taxon:tree-squamata-6e6ad3b88f",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "lepidosauria",
+      "deep_name": "Lepidosauria",
+      "tree_id": "Lepidosauria",
+      "canonical_id": "stx:taxon:tree-lepidosauria-01f26625bc",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "ctenophora",
+      "deep_name": "Ctenophora",
+      "tree_id": "Ctenophora",
+      "canonical_id": "stx:taxon:tree-ctenophora-dcbe1c86cc",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "onychophora",
+      "deep_name": "Onychophora",
+      "tree_id": "Onychophora",
+      "canonical_id": "stx:taxon:tree-onychophora-336d0d9e5c",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "myriapoda",
+      "deep_name": "Myriapoda",
+      "tree_id": "Myriapoda",
+      "canonical_id": "stx:taxon:tree-myriapoda-b4b955395a",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "decapoda",
+      "deep_name": "Decapoda",
+      "tree_id": "Decapoda",
+      "canonical_id": "stx:taxon:tree-decapoda-61741740a2",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "gastropoda",
+      "deep_name": "Gastropoda",
+      "tree_id": "Gastropoda",
+      "canonical_id": "stx:taxon:tree-gastropoda-9a1447b546",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "bivalvia",
+      "deep_name": "Bivalvia",
+      "tree_id": "Bivalvia",
+      "canonical_id": "stx:taxon:tree-bivalvia-950a557c78",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "echinoidea",
+      "deep_name": "Echinoidea",
+      "tree_id": "Echinoidea",
+      "canonical_id": "stx:taxon:tree-echinoidea-3ee09897ba",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "archosauria",
+      "deep_name": "Archosauria",
+      "tree_id": "Archosauria",
+      "canonical_id": "stx:taxon:tree-archosauria-d95902aacf",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "theropoda",
+      "deep_name": "Theropoda",
+      "tree_id": "Theropoda",
+      "canonical_id": "stx:taxon:tree-theropoda-a0756980e4",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "ornithischia",
+      "deep_name": "Ornithischia",
+      "tree_id": "Ornithischia",
+      "canonical_id": "stx:taxon:tree-ornithischia-6e5f7e4d43",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "monotremata",
+      "deep_name": "Monotremata",
+      "tree_id": "Monotremata",
+      "canonical_id": "stx:taxon:tree-monotremata-cd40c2bb50",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "proboscidea",
+      "deep_name": "Proboscidea",
+      "tree_id": "Proboscidea",
+      "canonical_id": "stx:taxon:tree-proboscidea-b5cc3dd76c",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "bacteria",
+      "deep_name": "Bacteria",
+      "tree_id": "Bacteria_domain",
+      "canonical_id": "stx:taxon:tree-bacteria-domain-1f8f7e618f",
+      "matching_method": "domain_identity_selected_over_same-name-kingdom",
+      "rationale": "Deep Time calls Bacteria a Domain, while Tree contains separate Domain and Kingdom records.",
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "pseudomonadota",
+      "deep_name": "Pseudomonadota",
+      "tree_id": "Pseudomonadota",
+      "canonical_id": "stx:taxon:tree-pseudomonadota-ed7e928827",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "actinomycetota",
+      "deep_name": "Actinomycetota",
+      "tree_id": "Actinomycetota",
+      "canonical_id": "stx:taxon:tree-actinomycetota-f78130a787",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "bacillota",
+      "deep_name": "Bacillota",
+      "tree_id": "Bacillota",
+      "canonical_id": "stx:taxon:tree-bacillota-93ef9452d9",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "methanobacteria",
+      "deep_name": "Methanobacteria",
+      "tree_id": "Methanobacteria",
+      "canonical_id": "stx:taxon:tree-methanobacteria-cc958a1f2d",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "halobacteria",
+      "deep_name": "Halobacteria",
+      "tree_id": "Halobacteria",
+      "canonical_id": "stx:taxon:tree-halobacteria-642b2ded11",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "ciliophora",
+      "deep_name": "Ciliophora",
+      "tree_id": "Ciliophora",
+      "canonical_id": "stx:taxon:tree-ciliophora-6a3102b4e7",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "tracheophyta",
+      "deep_name": "Tracheophyta",
+      "tree_id": "Tracheophyta",
+      "canonical_id": "stx:taxon:tree-tracheophyta-edbb3057cf",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": false
+    },
+    {
+      "deep_id": "pinaceae",
+      "deep_name": "Pinaceae",
+      "tree_id": "Pinaceae",
+      "canonical_id": "stx:taxon:tree-pinaceae-367119cea8",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "asteraceae",
+      "deep_name": "Asteraceae",
+      "tree_id": "Asteraceae",
+      "canonical_id": "stx:taxon:tree-asteraceae-1bc3190cc2",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "anthozoa",
+      "deep_name": "Anthozoa",
+      "tree_id": "Anthozoa",
+      "canonical_id": "stx:taxon:tree-anthozoa-6aac4e96ad",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "placozoa",
+      "deep_name": "Placozoa",
+      "tree_id": "Placozoa",
+      "canonical_id": "stx:taxon:tree-placozoa-5467ccd011",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "nematoda",
+      "deep_name": "Nematoda",
+      "tree_id": "Nematoda",
+      "canonical_id": "stx:taxon:tree-nematoda-b29d82a19c",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "tardigrada",
+      "deep_name": "Tardigrada",
+      "tree_id": "Tardigrada",
+      "canonical_id": "stx:taxon:tree-tardigrada-da3bc5229d",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "platyhelminthes",
+      "deep_name": "Platyhelminthes",
+      "tree_id": "Platyhelminthes",
+      "canonical_id": "stx:taxon:tree-platyhelminthes-268466e39b",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "ecdysozoa",
+      "deep_name": "Ecdysozoa",
+      "tree_id": "Ecdysozoa",
+      "canonical_id": "stx:taxon:tree-ecdysozoa-8f91cc9749",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "malacostraca",
+      "deep_name": "Malacostraca",
+      "tree_id": "Malacostraca",
+      "canonical_id": "stx:taxon:tree-malacostraca-ed845cc9e5",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "coleoptera",
+      "deep_name": "Coleoptera",
+      "tree_id": "Coleoptera",
+      "canonical_id": "stx:taxon:tree-coleoptera-de05d6aca2",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "hymenoptera",
+      "deep_name": "Hymenoptera",
+      "tree_id": "Hymenoptera",
+      "canonical_id": "stx:taxon:tree-hymenoptera-875978aebc",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "lepidoptera",
+      "deep_name": "Lepidoptera",
+      "tree_id": "Lepidoptera",
+      "canonical_id": "stx:taxon:tree-lepidoptera-0480a0fbf6",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "diptera",
+      "deep_name": "Diptera",
+      "tree_id": "Diptera",
+      "canonical_id": "stx:taxon:tree-diptera-4ed173ed1c",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "asteroidea",
+      "deep_name": "Asteroidea",
+      "tree_id": "Asteroidea",
+      "canonical_id": "stx:taxon:tree-asteroidea-92d2a3a64e",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "holothuroidea",
+      "deep_name": "Holothuroidea",
+      "tree_id": "Holothuroidea",
+      "canonical_id": "stx:taxon:tree-holothuroidea-35245e590c",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "octopoda",
+      "deep_name": "Octopoda",
+      "tree_id": "Octopoda",
+      "canonical_id": "stx:taxon:tree-octopoda-66344b31f7",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "osteichthyes",
+      "deep_name": "Osteichthyes",
+      "tree_id": "Osteichthyes",
+      "canonical_id": "stx:taxon:tree-osteichthyes-fa936686de",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "sauropsida",
+      "deep_name": "Sauropsida",
+      "tree_id": "Sauropsida",
+      "canonical_id": "stx:taxon:tree-sauropsida-83e686a590",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "passeriformes",
+      "deep_name": "Passeriformes",
+      "tree_id": "Passeriformes",
+      "canonical_id": "stx:taxon:tree-passeriformes-df89b58663",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "theria",
+      "deep_name": "Theria",
+      "tree_id": "Theria",
+      "canonical_id": "stx:taxon:tree-theria-8f107cd38c",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "carnivora",
+      "deep_name": "Carnivora",
+      "tree_id": "Carnivora",
+      "canonical_id": "stx:taxon:tree-carnivora-77ee16c33a",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    },
+    {
+      "deep_id": "rodentia",
+      "deep_name": "Rodentia",
+      "tree_id": "Rodentia",
+      "canonical_id": "stx:taxon:tree-rodentia-ecef2dad9b",
+      "matching_method": "exact_scientific_name",
+      "rationale": null,
+      "rank_agreement": true
+    }
+  ],
+  "rank_and_text_conflicts": [
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-cyanobacteriota-fd0cb72d9b",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "sy-an-oh-bak-TEER-ee-OH-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "sye-AN-oh-bak-TEER-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-pseudomonadota-ed7e928827",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "soo-doh-mon-AH-doh-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "SOO-doh-moh-nuh-DOH-tuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-methanobacteria-cc958a1f2d",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "meth-uh-noh-bak-TEER-ee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "meth-AN-oh-bak-TEER-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-angiospermae-d743fcdb17",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "an-jee-oh-SPUR-mee"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "AN-jee-oh-sperms"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-ctenophora-dcbe1c86cc",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ten-OFF-er-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "teh-NAH-for-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-porifera-3b830759ee",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "puh-RIF-er-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "poh-RIF-er-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-placozoa-5467ccd011",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "plak-uh-ZOH-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "plak-oh-ZOH-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-cnidaria-c89f6e1a21",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ny-DAIR-ee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "nye-DAIR-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-anthozoa-6aac4e96ad",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "an-thuh-ZOH-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "an-thoh-ZOH-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-gastropoda-9a1447b546",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "gas-TROP-uh-duh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "gas-TROP-oh-duh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-bivalvia-950a557c78",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "by-VAL-vee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "bye-VAL-vee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-octopoda-66344b31f7",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ok-TOP-uh-duh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "ok-TOP-oh-duh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-ecdysozoa-8f91cc9749",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ek-DIS-oh-ZOH-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "ek-dy-soh-ZOH-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-trilobita-2a95d2b2bb",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "try-loh-BY-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "TRY-loh-BYE-tuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-chelicerata-9d6f314f94",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "kih-LISS-er-uh-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "kuh-LISS-er-uh-tuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-myriapoda-b4b955395a",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "mir-ee-AP-uh-duh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "meer-ee-AP-oh-duh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-malacostraca-ed845cc9e5",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "mal-uh-KOSS-truh-kuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "mal-uh-KOS-truh-kuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-decapoda-61741740a2",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "deh-KAP-uh-duh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "deh-KAP-oh-duh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-hymenoptera-875978aebc",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "hy-muh-NOP-ter-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "hye-men-OP-ter-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-echinodermata-ab669a5cb5",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ih-KY-noh-DER-muh-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "ee-KYE-no-der-MAH-tuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-asteroidea-92d2a3a64e",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "as-ter-OY-dee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "as-tuh-ROY-dee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-echinoidea-3ee09897ba",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ek-ih-NOY-dee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "eh-kin-OY-dee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-chondrichthyes-de0c1f81bf",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "kon-DRIK-theez"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "kon-DRIK-thee-eez"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-osteichthyes-fa936686de",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "oss-tee-IK-theez"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "os-tee-IK-thee-eez"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-actinopterygii-ec05eec3e5",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ak-tin-op-ter-IJ-ee-eye"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "ak-tin-op-tuh-RIJ-ee-eye"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-sarcopterygii-69719103bf",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "sar-kop-ter-IJ-ee-eye"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "sar-KOP-tuh-RIJ-ee-eye"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-synapsida-fb85be3fa3",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "sin-AP-sih-duh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "sih-NAP-sih-duh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-carnivora-77ee16c33a",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "kar-NIV-er-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "kar-NIV-or-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-proboscidea-b5cc3dd76c",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "proh-boh-SID-ee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "proh-buh-SID-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-testudines-cf82e13faa",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "tes-TOO-dih-neez"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "tess-TOO-dih-neez"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-lepidosauria-01f26625bc",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "lep-ih-doh-SAW-ree-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "lep-ih-doh-SORE-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-squamata-6e6ad3b88f",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "skwah-MAY-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "skwah-MAH-tuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-archosauria-d95902aacf",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ar-koh-SAW-ree-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "ar-koh-SORE-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-dinosauria-ef3bf2b16e",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "dye-noh-SAW-ree-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "dye-noh-SORE-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-ornithischia-6e5f7e4d43",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "or-nih-THISK-ee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "or-nih-THISS-kee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-theropoda-a0756980e4",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "thee-ROP-uh-duh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "thuh-ROP-oh-duh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-passeriformes-df89b58663",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "pass-uh-RIF-or-meez"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "pas-er-ih-FOR-meez"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-actinomycetota-f78130a787",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "ak-tih-noh-my-see-TOH-tuh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "ak-TIN-oh-my-suh-TOH-tuh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-halobacteria-642b2ded11",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "hal-oh-bak-TEER-ee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "HAL-oh-bak-TEER-ee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "pronunciation_variant",
+      "taxon_id": "stx:taxon:tree-holothuroidea-35245e590c",
+      "source_values": [
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "value": "hoh-loh-thur-OY-dee-uh"
+        },
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "value": "hol-oh-thyoo-ROY-dee-uh"
+        }
+      ],
+      "interpretation": "Textual variation, both preserved."
+    },
+    {
+      "type": "rank_disagreement",
+      "taxon_id": "stx:taxon:tree-tracheophyta-edbb3057cf",
+      "tree_source_id": "Tracheophyta",
+      "deep_source_id": "tracheophyta",
+      "tree_rank": "Phylum",
+      "deep_rank": "Clade",
+      "interpretation": "Same named taxonomic concept represented with a different rank; retain both source assertions."
+    }
+  ],
+  "dated_lineage_ambiguities": [
+    {
+      "taxon_id": "stx:taxon:tree-bacillota-93ef9452d9",
+      "tree_origin_ma": 1800,
+      "deep_time_first_ma": 1500,
+      "difference_ma": 300,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-methanobacteria-cc958a1f2d",
+      "tree_origin_ma": 1700,
+      "deep_time_first_ma": 3000,
+      "difference_ma": 1300,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-tracheophyta-edbb3057cf",
+      "tree_origin_ma": 440,
+      "deep_time_first_ma": 425,
+      "difference_ma": 15,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-pinaceae-367119cea8",
+      "tree_origin_ma": 140,
+      "deep_time_first_ma": 150,
+      "difference_ma": 10,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-ciliophora-6a3102b4e7",
+      "tree_origin_ma": 850,
+      "deep_time_first_ma": 750,
+      "difference_ma": 100,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-placozoa-5467ccd011",
+      "tree_origin_ma": 550,
+      "deep_time_first_ma": 540,
+      "difference_ma": 10,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-anthozoa-6aac4e96ad",
+      "tree_origin_ma": 530,
+      "deep_time_first_ma": 540,
+      "difference_ma": 10,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-octopoda-66344b31f7",
+      "tree_origin_ma": 160,
+      "deep_time_first_ma": 155,
+      "difference_ma": 5,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-platyhelminthes-268466e39b",
+      "tree_origin_ma": 540,
+      "deep_time_first_ma": 520,
+      "difference_ma": 20,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-ecdysozoa-8f91cc9749",
+      "tree_origin_ma": 555,
+      "deep_time_first_ma": 550,
+      "difference_ma": 5,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-nematoda-b29d82a19c",
+      "tree_origin_ma": 540,
+      "deep_time_first_ma": 530,
+      "difference_ma": 10,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-malacostraca-ed845cc9e5",
+      "tree_origin_ma": 420,
+      "deep_time_first_ma": 510,
+      "difference_ma": 90,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-coleoptera-de05d6aca2",
+      "tree_origin_ma": 295,
+      "deep_time_first_ma": 290,
+      "difference_ma": 5,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-lepidoptera-0480a0fbf6",
+      "tree_origin_ma": 220,
+      "deep_time_first_ma": 200,
+      "difference_ma": 20,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-asteroidea-92d2a3a64e",
+      "tree_origin_ma": 470,
+      "deep_time_first_ma": 480,
+      "difference_ma": 10,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-osteichthyes-fa936686de",
+      "tree_origin_ma": 425,
+      "deep_time_first_ma": 430,
+      "difference_ma": 5,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-carnivora-77ee16c33a",
+      "tree_origin_ma": 60,
+      "deep_time_first_ma": 55,
+      "difference_ma": 5,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-passeriformes-df89b58663",
+      "tree_origin_ma": 50,
+      "deep_time_first_ma": 65,
+      "difference_ma": 15,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-actinomycetota-f78130a787",
+      "tree_origin_ma": 2500,
+      "deep_time_first_ma": 1000,
+      "difference_ma": 1500,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-halobacteria-642b2ded11",
+      "tree_origin_ma": 1500,
+      "deep_time_first_ma": 1200,
+      "difference_ma": 300,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-asteraceae-1bc3190cc2",
+      "tree_origin_ma": 60,
+      "deep_time_first_ma": 65,
+      "difference_ma": 5,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    },
+    {
+      "taxon_id": "stx:taxon:tree-rodentia-ecef2dad9b",
+      "tree_origin_ma": 65,
+      "deep_time_first_ma": 57,
+      "difference_ma": 8,
+      "interpretation": "Unresolved date disagreement; source fields have non-equivalent evidence definitions. Do not treat as a calibrated crown/stem/fossil conflict."
+    }
+  ],
+  "geologic_boundary_conflicts": [
+    {
+      "interval_id": "stx:geo:deep-hadean-b33b85abf9",
+      "interval_name": "Hadean",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 4567,
+          "young_ma": 4031
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 4600,
+          "young_ma": 4031
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-paleozoic-343bc24ff8",
+      "interval_name": "Paleozoic",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 538.8,
+          "young_ma": 251.902
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 538.8,
+          "young_ma": 251.9
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-permian-796c6528d7",
+      "interval_name": "Permian",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 298.9,
+          "young_ma": 251.902
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 298.9,
+          "young_ma": 251.9
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-mesozoic-971ff2bb09",
+      "interval_name": "Mesozoic",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 251.902,
+          "young_ma": 66
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 251.9,
+          "young_ma": 66
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-triassic-bacc140deb",
+      "interval_name": "Triassic",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 251.902,
+          "young_ma": 201.4
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 251.9,
+          "young_ma": 201.4
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-paleogene-035d3d9060",
+      "interval_name": "Paleogene",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 66,
+          "young_ma": 23.04
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 66,
+          "young_ma": 23.03
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-oligocene-c6a253ba47",
+      "interval_name": "Oligocene",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 33.9,
+          "young_ma": 23.04
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 33.9,
+          "young_ma": 23.03
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-neogene-cc8fecdbe7",
+      "interval_name": "Neogene",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 23.04,
+          "young_ma": 2.58
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 23.03,
+          "young_ma": 2.58
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    },
+    {
+      "interval_id": "stx:geo:deep-miocene-9b28aaa3cd",
+      "interval_name": "Miocene",
+      "source_bounds": [
+        {
+          "source_export": "deep_time_atlas_v1.6",
+          "old_ma": 23.04,
+          "young_ma": 5.333
+        },
+        {
+          "source_export": "tree_of_life_explorer_v1.7",
+          "old_ma": 23.03,
+          "young_ma": 5.333
+        }
+      ],
+      "interpretation": "Conflicting source vintages, rounding, or stage boundary revisions; Deep Time values retained as primary for its detailed scheme."
+    }
+  ],
+  "source_ambiguities": [
+    {
+      "id": "tree:5",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "1. **Original root:** `Life` exists as a hidden application-level root although the UI starts with the three domains. It is exported with its own ID and parent `null`; the 237 displayed/indexed descendants remain separate."
+    },
+    {
+      "id": "tree:6",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "2. **Animalia late mutation:** Initially `Animalia` is declared with parent `null` and diversity text `>1.5 million described`; later the script changes its parent to `Opisthokonta` and its count text to `1,796,900 species listed in Catalogue of Life (Sept 2026 XR)`. The export records both declared and effective values, with the effective hierarchy as `parent_id`."
+    },
+    {
+      "id": "tree:7",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "3. **IDs are local UI keys:** The source uses human-readable taxon names (sometimes `_domain` suffix) as identifiers, not Life Science Identifiers, NCBI, GBIF, WoRMS, or Catalogue of Life taxon IDs. Treat them as **source-stable**, not global canonical IDs. Do not silently rename during merges."
+    },
+    {
+      "id": "tree:8",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "4. **Kingdom/classification overlap:** Some seven-kingdom category nodes (especially `Protozoa` and `Chromista`) are not monophyletic across modern trees; some `Clade` nodes overlap ranked taxa, and evolutionary relationships including very deep animal branches are contested. Reconciliation should retain provenance and alternate classifications."
+    },
+    {
+      "id": "tree:9",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "5. **Source ranks carry extinct status:** A few original `rank` strings start with `Extinct`, while other extinction status is derived from `end`. Both were preserved, with an additional derived `extinct` boolean; retain original rank text separately from standardized rank."
+    },
+    {
+      "id": "tree:10",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "6. **Ages are estimates:** `age` is the atlas's approximate origin in Ma, not consistently the earliest fossil, stem age, or crown age. `end` may be a rounded terminal fossil occurrence. Do not convert into hard extinction/origin dates without additional evidence."
+    },
+    {
+      "id": "tree:11",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "7. **Subdivision totals are not census data:** `WORLD_COUNTS` combines mixed-source extant-focused estimates, inequalities, and approximate order-of-magnitude counts; some category totals are conservative lower bounds. Numeric strings such as `≥7.5k`, `>1.5m` and `≈25k–32k` are intentionally retained as strings, not coerced to point estimates."
+    },
+    {
+      "id": "tree:12",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "8. **`count` is free text:** Individual taxa's `count` may express species richness, individuals, qualitative descriptions, or include dated Catalogue of Life totals with fossil listings. It is preserved verbatim in `taxon_details.json` and `raw_source_fields`, rather than parsed into a misleading single metric."
+    },
+    {
+      "id": "tree:13",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "9. **Population-unit inconsistencies:** `POPULATIONS` mixes global wild animals, surveyed regional totals, mature adults, colony counts, seasonal migration estimates, and one explicitly unknown species estimate with genus-level cell abundance (Prochlorococcus). Scope, note, source, URLs, and estimate text are preserved verbatim; no unit conversions."
+    },
+    {
+      "id": "tree:14",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "10. **Organism records are samples, not all unique species:** Some entries are common names, aggregate categories, living representatives of ancient lineages, or fossil groups. The source `taxon` pointer refers to the selected atlas branch, not necessarily the exact organism's taxon."
+    },
+    {
+      "id": "tree:15",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "11. **Images are runtime-resolved:** Most examples do not have static image files or validated stable image URLs. The widget loads Wikipedia REST/MediaWiki thumbnails with optional Wikimedia Commons file-name fallbacks. The export records all image references and generated fallback URLs, but makes **no verified-working-image claim**. Check image licensing/attribution during migration."
+    },
+    {
+      "id": "tree:16",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "12. **References are primarily broad:** Footer references apply to the atlas's concepts, not each record. Population records have more specific URLs; missing per-taxon citations must not be fabricated."
+    },
+    {
+      "id": "tree:17",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "13. **Time boundaries depend on source vintage:** `geologic_time.json` preserves the exact intervals and numerical boundaries in this widget. Deep Time Atlas may contain different revisions, subdivisions, or terminological choices; reconcile explicitly against shared standard."
+    },
+    {
+      "id": "tree:18",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "14. **Redundant and potentially mismatched records:** Many representative organisms correspond to species not independently indexed at species rank; external Wikipedia article titles and `scientificName(...)` UI heuristics should not be promoted to authoritative taxonomy without checking."
+    },
+    {
+      "id": "tree:19",
+      "source_export": "tree_of_life_explorer_v1.7",
+      "text": "15. **Dates and versioning:** v1.7 only adds the export and changelog; the scientific content is unchanged from source v1.6 and is intentionally not reverified for October 2026."
+    },
+    {
+      "id": "A01",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "phylogeny",
+      "severity": "high",
+      "text": "Taxon cladograms are human-readable illustrative strings, not linked taxonomic graph IDs. Many display informal groups and example names not backed by explicit taxon records. Raw strings and line arrays are preserved; no parent_taxon_id has been invented."
+    },
+    {
+      "id": "A02",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "interval-taxon associations",
+      "severity": "high",
+      "text": "The widget contains 580 direct interval-to-taxon links and a separate age-filter predicate producing 8916 computed UI matches. The latter must NOT be treated as authoritative ranges, validated evolutionary first appearances, fossil observations or equivalent curated associations."
+    },
+    {
+      "id": "A03",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "data gaps",
+      "severity": "high",
+      "text": "The source contains no numeric organism population estimates and no taxonomic subdivision counts. The taxon export contains explicit nulls rather than fabricated values. Geologic subdivision_count is computed from actual child IDs."
+    },
+    {
+      "id": "A04",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "lineage dates",
+      "severity": "medium",
+      "text": "Only 100 taxon profiles supply numeric first/last fields; these are approximate widget ranges, not precise phylogenetic origination or extinction dates. Others remain null."
+    },
+    {
+      "id": "A05",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "extinction labels",
+      "severity": "medium",
+      "text": "Example status strings are heterogeneous: some say extinct, living, historical, fossil, or refer to relatives. The status of a sampled example does not safely establish extinction of the parent group. Raw labels are preserved, taxon-level status is null pending review."
+    },
+    {
+      "id": "A06",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "citations",
+      "severity": "medium",
+      "text": "The widget cites the ICS 2026/06 chronostratigraphic chart globally and identifies artwork as illustrative AI-generated paleoart. No source citations or source URLs are attached to individual taxa, example dates, climatic statements, or maps."
+    },
+    {
+      "id": "A07",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "paleogeography",
+      "severity": "medium",
+      "text": "The 7 map SVG shape groups are hand-drawn approximate visualization presets selected by midpoint-age thresholds, not time-resolved georeferenced reconstructions."
+    },
+    {
+      "id": "A08",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "climate and atmosphere",
+      "severity": "medium",
+      "text": "Some environmental text is inherited from broader parent intervals. Atmosphere and paleogeographic time slices are selected by hard-coded age thresholds. The exported interval fields and separate source_logic.json preserve this distinction."
+    },
+    {
+      "id": "A09",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "artwork",
+      "severity": "low",
+      "text": "23 unique embedded generated images are stored losslessly as extracted image files and referenced by stable keys. Illustrations are not verified specimen images. Multiple example cards reuse the same key; some examples have emoji only."
+    },
+    {
+      "id": "A10",
+      "source_export": "deep_time_atlas_v1.6",
+      "area": "nomenclature",
+      "severity": "low",
+      "text": "Ranks mix formal Linnaean units, clades, assemblages and historical/informal grades; names may be polyphyletic, deprecated, or broadly defined. The original classification strings are retained verbatim."
+    }
+  ],
+  "ambiguous_identity_candidates": [],
+  "scientific_review_status": "scientific_source_conflicts_preserved_pending_external_authority_review"
+}
