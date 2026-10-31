@@ -8,6 +8,7 @@ import html
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -25,6 +26,9 @@ CONFIG = {
     'emergence': ('Emergence Atlas', [('audit_emergence_concept.png', None)]),
     'launcher': ('Widget Launcher', [('audit_launcher_concept.png', None)]),
 }
+
+HIGHLIGHT = {'deep-time': ('T011', 'main.panel.center.aw-deep-art', 'Interval artwork · verified'),
+             'mythology': ('T040', '#awMythArtworkStage', 'Figure artwork · verified')}
 
 
 def digest(path):
@@ -115,26 +119,37 @@ class Browser:
                 self.process.wait(timeout=5)
 
 
-def task_lists(widget):
+def task_lists(widget, release_version):
     catalog = json.loads((ROOT / 'atlas/data/project_catalog_v1.21.json').read_text())
     related = {x['id'] for key in ('goals', 'issues', 'suggestions') for x in catalog[key]
                if x['widget'] == widget or x['widget'] == 'Shared UI'}
-    related.update(('WL-001', 'WL-003', 'WL-004', 'WL-005', 'WL-006', 'WL-010'))
+    related.update(('WL-001', 'WL-003', 'WL-004', 'WL-005', 'WL-006', 'WL-010', 'WL-024'))
     if widget == 'Deep Time Atlas':
         related.update(('WL-011', 'WL-012', 'WL-013', 'WL-015'))
     if widget == 'Mythology Atlas':
         related.update(('WL-016', 'WL-017', 'WL-018'))
     if widget == 'Brain Atlas':
         related.update(('WL-019', 'WL-020', 'WL-021'))
-    done, pending = [], []
+    changelog = (ROOT / 'CHANGELOG.md').read_text()
+    release = changelog.split(f'## [{release_version}]', 1)[-1].split('\n## [', 1)[0]
+    recent_ids = set(re.findall(r'\b(?:WL-?|T|I|S)\d{3}\b', release))
+    done, earlier, pending = [], [], []
     for match in TASK.finditer((ROOT / 'TODO.md').read_text()):
         if match[2] in related:
             item = {'id': match[2], 'title': match[3], 'priority': match[4], 'status': match[6]}
-            (done if match[1] == 'x' else pending).append(item)
-    return done, pending
+            if match[1] == 'x':
+                (done if match[2] in recent_ids else earlier).append(item)
+            else:
+                pending.append(item)
+    pending.sort(key=lambda t: ({'p1': 0, 'p2': 1, 'p3': 2}[t['priority']],
+                                {'needs-verification': 0, 'triage': 1, 'approved': 2,
+                                 'in-progress': 3, 'blocked': 4, 'proposed': 5}[t['status']], t['id']))
+    shown, hidden = pending[:4], pending[4:]
+    return done, len(earlier), shown, {'total': len(hidden),
+                                       'needs_verification': sum(t['status'] == 'needs-verification' for t in hidden)}
 
 
-def render_report(title, actual, goals, done, pending, metadata):
+def render_report(title, actual, goals, done, earlier_count, pending, hidden, metadata):
     escape = html.escape
     pictures = []
     for goal in goals:
@@ -151,14 +166,16 @@ def render_report(title, actual, goals, done, pending, metadata):
         pictures.append(f'<h3>{escape(image.name)} · {goal["approval"]}</h3>{visual}')
     def items(entries):
         return ''.join(f'<li><b>{escape(t["id"])} · {escape(t["priority"])} · {escape(t["status"])}</b><br>{escape(t["title"])}</li>' for t in entries)
+    earlier = f'<p>{earlier_count} completed in earlier updates</p>' if earlier_count else ''
+    remainder = f'<p>… + {hidden["total"]} others; {hidden["needs_verification"]} need verification.</p>' if hidden['total'] else ''
     return f'''<!doctype html><html><meta charset="utf-8"><title>{escape(title)} comparison</title>
-<style>*{{box-sizing:border-box}}body{{margin:0;padding:24px;background:#07121d;color:#e6f3ff;font:16px system-ui}}h1{{margin:0 0 8px}}h2{{font-size:23px}}h3{{font-size:16px;color:#55e8e7}}.meta{{color:#a9c5d7;margin-bottom:20px;line-height:1.7}}main{{display:grid;grid-template-columns:820px 820px 480px;gap:20px}}section{{background:#0d1d2c;border:1px solid #225571;border-radius:12px;padding:14px;overflow:hidden}}section img{{display:block;max-width:100%}}ul{{padding-left:20px}}li{{margin-bottom:12px;font-size:14px;line-height:1.4}}.done{{color:#6df5be}}.pending{{color:#ffdb86}}footer{{margin-top:18px;color:#b9cbd6;max-width:2100px}}code{{font-size:13px}}</style>
+<style>*{{box-sizing:border-box}}body{{margin:0;padding:24px;background:#07121d;color:#e6f3ff;font:16px system-ui}}h1{{margin:0 0 8px}}h2{{font-size:23px}}h3{{font-size:16px;color:#55e8e7}}.meta{{color:#a9c5d7;margin-bottom:20px;line-height:1.7}}main{{display:grid;grid-template-columns:820px 820px 480px;gap:20px}}section{{background:#0d1d2c;border:1px solid #225571;border-radius:12px;padding:14px;overflow:hidden}}section img{{display:block;max-width:100%}}ul{{padding-left:20px}}li{{margin-bottom:12px;font-size:14px;line-height:1.4}}.done{{color:#6df5be}}.recent{{color:#07121d;background:#6df5be;padding:4px 8px;border-radius:8px}}.pending{{color:#ffdb86}}section p{{color:#d2e1ec;font-size:13px}}footer{{margin-top:18px;color:#b9cbd6;max-width:2100px}}code{{font-size:13px}}</style>
 <h1>{escape(title)} · actual versus goal · repository {escape(metadata['repository_version'])}</h1>
 <div class="meta">Captured {escape(metadata['captured_at'])} · {escape(metadata['browser'])} · 1440 × 1000 actual viewport<br>
 Widget {escape(metadata['widget_version'])} · State: {escape(metadata['selection'])}<br><code>Source SHA-256 {metadata['source_sha256']}</code></div>
-<main><section><h2>Actual · fresh browser capture</h2><img src="{actual.name}"><p>Original widget source unchanged. External HTTP(S) requests blocked for this offline capture.</p></section>
+<main><section><h2>Actual · fresh browser capture</h2><img src="{metadata.get('annotated_actual', actual.name)}"><p>{escape(metadata.get('annotation_note', 'No app region changed in this update.'))} Clean capture is kept separately.</p></section>
 <section><h2>Goal reference</h2>{''.join(pictures)}</section>
-<section><h2 class="done">Complete · {len(done)}</h2><ul>{items(done)}</ul><h2 class="pending">Pending / verify · {len(pending)}</h2><ul>{items(pending)}</ul></section></main>
+<section><h2 class="recent">Completed this update · {len(done)}</h2><ul>{items(done) if done else '<li>No tasks completed in this release.</li>'}</ul>{earlier}<h2 class="pending">Top priority pending · {len(pending)}</h2><ul>{items(pending)}</ul>{remainder}</section></main>
 <footer>Task status comes from TODO.md. Historical implementation claims remain pending verification. Rendering, source integrity, and goal similarity do not certify interactions, anatomical accuracy, cultural interpretation, artwork approval, or scientific claims. Goal counts/versions are illustrative. This report does not mark visual gaps complete.</footer></html>'''
 
 
@@ -211,32 +228,49 @@ def main():
                     selection = 'Initial default view in clean browser profile'
                 browser.evaluate('new Promise(resolve => setTimeout(resolve, 600))')
                 actual = output / f'{slug}-actual.png'
+                browser.call('Emulation.setDeviceMetricsOverride', {'width': 1440, 'height': 1000, 'deviceScaleFactor': 2, 'mobile': False})
                 browser.screenshot(actual)
                 goals = [{'path': ROOT / 'atlas/images' / name, 'crop': crop,
                           'approval': 'approved visual direction' if name.startswith('goal_') else 'proposed concept, not approved'}
                          for name, crop in references]
-                done, pending = task_lists(title)
+                done, earlier_count, pending, hidden = task_lists(title, version)
+                annotation_note = 'No app layout changed this update.'
+                annotated = actual
+                highlight = None
+                if slug in HIGHLIGHT and any(t['id'] == HIGHLIGHT[slug][0] for t in done):
+                    task_id, selector, label = HIGHLIGHT[slug]
+                    rect = browser.evaluate(f'''(()=>{{const n=document.querySelector({json.dumps(selector)});if(!n)throw Error('Missing highlight target');const r=n.getBoundingClientRect();return {{x:r.x,y:r.y,w:r.width,h:r.height}}}})()''')
+                    browser.evaluate(f'''(()=>{{const r={json.dumps(rect)},d=document.createElement('div');d.id='wl-highlight';d.style='position:fixed;inset:0;z-index:2147483647;pointer-events:none';d.innerHTML=`<svg width="100%" height="100%"><rect x="${{r.x+2}}" y="${{r.y+2}}" width="${{r.w-4}}" height="${{r.h-4}}" rx="10" fill="none" stroke="#ffc247" stroke-width="5"/><rect x="${{r.x+8}}" y="${{r.y+8}}" width="290" height="38" rx="8" fill="#ffc247"/><text x="${{r.x+18}}" y="${{r.y+34}}" font-family="sans-serif" font-size="20" font-weight="bold" fill="#101820">{task_id} · verified area</text></svg>`;document.body.append(d);return true}})()''')
+                    annotated = output / f'{slug}-actual-annotated.png'
+                    browser.screenshot(annotated)
+                    browser.evaluate("document.getElementById('wl-highlight').remove();true")
+                    highlight = {'task_id': task_id, 'selector': selector, 'bounds_css_px': rect,
+                                 'label': label, 'file': annotated.name, 'sha256': digest(annotated)}
+                    annotation_note = f'{task_id} marks the {label.lower()}; this release verified offline coverage without changing the app.'
                 metadata = {'widget': slug, 'widget_version': component['release_version'], 'repository_version': version,
                             'captured_at': datetime.now(timezone.utc).isoformat(), 'browser': browser.version,
                             'source': component['authoritative_source'], 'source_sha256': digest(source),
-                            'actual_sha256': digest(actual), 'viewport': [1440, 1000], 'selection': selection,
+                            'actual_sha256': digest(actual), 'annotated_actual_sha256': digest(annotated),
+                            'annotation_note': annotation_note, 'highlight': highlight,
+                            'viewport': [1440, 1000], 'device_scale_factor': 2, 'selection': selection,
                             'goals': [{'path': str(g['path'].relative_to(ROOT)), 'sha256': digest(g['path']), 'crop': g['crop'], 'approval': g['approval']} for g in goals],
-                            'complete': done, 'pending': pending,
+                            'complete_this_release': done, 'completed_earlier_count': earlier_count,
+                            'pending_top_priority': pending, 'pending_summary': hidden,
                             'capture_checks': capture_checks,
                             'runtime_exceptions': [e['params']['exceptionDetails'] for e in browser.events if e.get('method') == 'Runtime.exceptionThrown'],
                             'review_scope': 'Fresh browser rendering and selected state only; full functional/scientific review pending.'}
                 page = output / f'{slug}-comparison.html'
-                page.write_text(render_report(title, actual, goals, done, pending, metadata))
+                page.write_text(render_report(title, actual, goals, done, earlier_count, pending, hidden, metadata))
                 browser.navigate(page, 2240, 1100)
                 height = browser.evaluate('Math.ceil(document.documentElement.scrollHeight)')
-                browser.call('Emulation.setDeviceMetricsOverride', {'width': 2240, 'height': height, 'deviceScaleFactor': 1, 'mobile': False})
+                browser.call('Emulation.setDeviceMetricsOverride', {'width': 2240, 'height': height, 'deviceScaleFactor': 2, 'mobile': False})
                 browser.evaluate('new Promise(resolve => setTimeout(resolve, 300))')
                 comparison = output / f'{slug}-comparison.png'
                 browser.screenshot(comparison)
                 metadata['comparison_sha256'] = digest(comparison)
                 (output / f'{slug}-evidence.json').write_text(json.dumps(metadata, indent=2) + '\n')
                 records.append(slug)
-                print(f'Captured {slug}: {len(done)} complete, {len(pending)} pending', flush=True)
+                print(f'Captured {slug}: {len(done)} recent, {len(pending)} shown, {hidden["total"]} summarized', flush=True)
         finally:
             browser.close()
     links = ''.join(f'<li><a href="{s}-comparison.png">{s} comparison PNG</a> · <a href="{s}-evidence.json">evidence</a></li>' for s in CONFIG if (output / f'{s}-comparison.png').exists())

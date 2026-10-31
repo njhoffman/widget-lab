@@ -1,0 +1,104 @@
+{
+  "widget": "deep-time",
+  "widget_version": "1.19.0",
+  "repository_version": "0.4.3",
+  "captured_at": "2026-10-31T05:28:10.131033+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Deep_Time_Atlas_v1.19.0.html",
+  "source_sha256": "13b203a3c5b8e0f8a9091e4d35c80491e44cc83fc15bbed4fddad6054be82c1f",
+  "actual_sha256": "bb10675140fd17045f4de3b33b96dd9061e45ea955f1cecf41349ec9d990376c",
+  "annotated_actual_sha256": "6b10f5d913c642ca7ec272a9ca3fd250f36c9564c03a4ed0682053ea59d53373",
+  "annotation_note": "T011 marks the interval artwork \u00b7 verified; this release verified offline coverage without changing the app.",
+  "highlight": {
+    "task_id": "T011",
+    "selector": "main.panel.center.aw-deep-art",
+    "bounds_css_px": {
+      "x": 276,
+      "y": 95,
+      "w": 828,
+      "h": 761.421875
+    },
+    "label": "Interval artwork \u00b7 verified",
+    "file": "deep-time-actual-annotated.png",
+    "sha256": "6b10f5d913c642ca7ec272a9ca3fd250f36c9564c03a4ed0682053ea59d53373"
+  },
+  "viewport": [
+    1440,
+    1000
+  ],
+  "device_scale_factor": 2,
+  "selection": "Triassic interval",
+  "goals": [
+    {
+      "path": "atlas/images/goal_1.png",
+      "sha256": "ac6791493a099863f8cf109412176a3daf201e9c4f9b6c65bb358ea3d2347775",
+      "crop": [
+        0,
+        0,
+        817,
+        505
+      ],
+      "approval": "approved visual direction"
+    },
+    {
+      "path": "atlas/images/goal_2.png",
+      "sha256": "047dcaa91d5d2cb3966527acafab4f57c9c851992c5d10f9967bffa100fdf275",
+      "crop": [
+        0,
+        0,
+        1536,
+        411
+      ],
+      "approval": "approved visual direction"
+    }
+  ],
+  "complete_this_release": [
+    {
+      "id": "WL-024",
+      "title": "Focus comparison sheets on this release and improve zoom clarity.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T011",
+      "title": "Verify existing: Resolve image for every indexed Deep Time interval.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "completed_earlier_count": 13,
+  "pending_top_priority": [
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    }
+  ],
+  "pending_summary": {
+    "total": 23,
+    "needs_verification": 4
+  },
+  "capture_checks": {},
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "3dd6ae8882750b629753a8577f748eb5575e062385c24545b59920d6bb556772"
+}

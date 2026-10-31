@@ -1,6 +1,6 @@
 # Widget Lab task list
 
-Reviewed: 2026-10-31 · Repository release: 0.4.2
+Reviewed: 2026-10-31 · Repository release: 0.4.3
 
 Every task has a stable ID, priority `(p1)` high / `(p2)` normal / `(p3)` low,
 a category `[bug]`, `[feature]`, `[refactor]`, `[docs]`, `[test]`, `[chore]`, or `[perf]`,
@@ -14,6 +14,10 @@ Historical IDs and acceptance criteria come from the [v1.21 catalog](atlas/data/
 Historical P0/P1 map to p1; P2 to p2. Within each section, work approved p1 items first.
 
 ## 1. Repository, workflow, and migration
+
+- [x] **WL-024 — Focus comparison sheets on this release and improve zoom clarity.** (p1) [feature] [done]
+  Highlight current-release completions, show four highest-priority pending tasks and a count for remaining verification, annotate reliably mapped app regions, and render at higher pixel density.
+  Evidence: `docs/visual-reviews/0.4.3/`; seven fresh comparisons retain clean actuals, annotations where mapped, metadata, and feh viewer record. Annotations mark verified areas, not UI changes.
 
 - [x] **WL-023 — Exhaustively verify offline artwork coverage and parity.** (p1) [test] [done]
   Continue approved QA under WL-005/WL-006: match all 172 Deep Time and 363 tradition-specific Mythology IDs, compare embedded hero/thumbnail bytes with adjacent assets, and decode every image from isolated HTML with networking disabled.

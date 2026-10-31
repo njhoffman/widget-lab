@@ -4,6 +4,14 @@ Repository changes use Keep a Changelog sections and Semantic Versioning. `VERSI
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-10-31
+
+### Changed
+
+- Task highlights for this release: WL-024, T011, T040 and T078.
+- Comparison sheets highlight tasks completed in the current release, show four highest-priority pending tasks with verification counts for the rest, and mark mapped app areas.
+- Render captures at device scale factor 2; retain clean actual screenshots with separate annotated copies.
+
 ## [0.4.2] - 2026-10-31
 
 ### Added

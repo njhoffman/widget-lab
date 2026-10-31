@@ -11,7 +11,7 @@
       "verified": true,
       "sha256": "a01fa7f9a05132926d6ebf52a28fb76e0aa09cbeceebcd76eaad190a832e526b",
       "verification_scope": "Derived standalone visual release; original 1.21 geometry, records and handlers retained with appended presentation. Schematic/estimated depth is not registered anatomy.",
-      "visual_evidence": "docs/visual-reviews/0.4.0/brain-evidence.json",
+      "visual_evidence": "docs/visual-reviews/0.4.3/brain-evidence.json",
       "browser_verification": {
         "report": "docs/browser-tests/0.4.2/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
@@ -25,7 +25,7 @@
       "verified": true,
       "sha256": "13b203a3c5b8e0f8a9091e4d35c80491e44cc83fc15bbed4fddad6054be82c1f",
       "verification_scope": "Standalone visual release derived from preserved 1.18 baseline; original data/scripts retained, presentation adapter and title added. Runtime/scientific verification scope is recorded separately.",
-      "visual_evidence": "docs/visual-reviews/0.4.2/deep-time-evidence.json",
+      "visual_evidence": "docs/visual-reviews/0.4.3/deep-time-evidence.json",
       "browser_verification": {
         "report": "docs/browser-tests/0.4.2/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
@@ -39,7 +39,7 @@
       "verified": true,
       "sha256": "00cf3dfc3bafd55872121bab851e3928537a024c0644ba435202a1c30c1e5716",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/tree-of-life-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.4.3/tree-of-life-evidence.json"
     },
     {
       "slug": "mythology",
@@ -48,7 +48,7 @@
       "verified": true,
       "sha256": "a8b8a6813216ebd4cf9afa81c3cc1e0d6db7c0c829c937b9a007a5de8dec3d03",
       "verification_scope": "Derived standalone visual release; original 1.13 records/control source retained with appended presentation and verified local featured artwork. Scientific/cultural approval is not implied.",
-      "visual_evidence": "docs/visual-reviews/0.4.2/mythology-evidence.json",
+      "visual_evidence": "docs/visual-reviews/0.4.3/mythology-evidence.json",
       "browser_verification": {
         "report": "docs/browser-tests/0.4.2/report.json",
         "scope": "Chrome/Linux real-input checks at 390/768/1440px; navigation/filter/panel, history keyboard focus, layout overflow, and runtime errors. No scientific/storage/Windows certification."
@@ -62,7 +62,7 @@
       "verified": true,
       "sha256": "01f5ae12e7fbb7f59036ae8bba93947d7b5101237d9918c9eaf087b9fc0ca2a4",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/muscles-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.4.3/muscles-evidence.json"
     },
     {
       "slug": "emergence",
@@ -71,7 +71,7 @@
       "verified": true,
       "sha256": "04d32f423364ca4f97e30a27378418482e93bda1483cf631aa6488d0ffe391cb",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/emergence-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.4.3/emergence-evidence.json"
     },
     {
       "slug": "launcher",
@@ -80,7 +80,7 @@
       "verified": true,
       "sha256": "d011e76389234aa95058c5cce84e07a645f70d299b58aeb35dfd87f5212f13f0",
       "verification_scope": "Imported source identity: HTML title and delivered v1.21 catalog; six scientific widgets also match v1.20 source checksums. Interactive behavior and scientific accuracy are not certified.",
-      "visual_evidence": "docs/visual-reviews/0.1.0/launcher-evidence.json"
+      "visual_evidence": "docs/visual-reviews/0.4.3/launcher-evidence.json"
     }
   ],
   "quiz": [
@@ -137,7 +137,7 @@
     "verification_scope": "Imported source identity and JavaScript syntax; existing dashboard decisions are project metadata, not approved requirements."
   },
   "repository": {
-    "release_version": "0.4.2",
+    "release_version": "0.4.3",
     "version_file": "VERSION",
     "tag_format": "v{version}",
     "changelog": "CHANGELOG.md",

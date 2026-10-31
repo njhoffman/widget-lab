@@ -1,0 +1,104 @@
+{
+  "widget": "mythology",
+  "widget_version": "1.14.0",
+  "repository_version": "0.4.3",
+  "captured_at": "2026-10-31T05:28:31.434888+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Mythology_Atlas_v1.14.0.html",
+  "source_sha256": "a8b8a6813216ebd4cf9afa81c3cc1e0d6db7c0c829c937b9a007a5de8dec3d03",
+  "actual_sha256": "dc0e488bc30d69c1a583db805b19659a588b7d6eb6332a941f9ee37c8a40e329",
+  "annotated_actual_sha256": "021671c106547261ff84905fe52377985fec3e0270ccfc430e0c33762a610bc6",
+  "annotation_note": "T040 marks the figure artwork \u00b7 verified; this release verified offline coverage without changing the app.",
+  "highlight": {
+    "task_id": "T040",
+    "selector": "#awMythArtworkStage",
+    "bounds_css_px": {
+      "x": 272,
+      "y": 252.203125,
+      "w": 791,
+      "h": 500
+    },
+    "label": "Figure artwork \u00b7 verified",
+    "file": "mythology-actual-annotated.png",
+    "sha256": "021671c106547261ff84905fe52377985fec3e0270ccfc430e0c33762a610bc6"
+  },
+  "viewport": [
+    1440,
+    1000
+  ],
+  "device_scale_factor": 2,
+  "selection": "Greek Zeus, artwork view",
+  "goals": [
+    {
+      "path": "atlas/images/goal_1.png",
+      "sha256": "ac6791493a099863f8cf109412176a3daf201e9c4f9b6c65bb358ea3d2347775",
+      "crop": [
+        0,
+        538,
+        1536,
+        486
+      ],
+      "approval": "approved visual direction"
+    },
+    {
+      "path": "atlas/images/goal_2.png",
+      "sha256": "047dcaa91d5d2cb3966527acafab4f57c9c851992c5d10f9967bffa100fdf275",
+      "crop": [
+        0,
+        750,
+        1536,
+        274
+      ],
+      "approval": "approved visual direction"
+    }
+  ],
+  "complete_this_release": [
+    {
+      "id": "WL-024",
+      "title": "Focus comparison sheets on this release and improve zoom clarity.",
+      "priority": "p1",
+      "status": "done"
+    },
+    {
+      "id": "T040",
+      "title": "Verify existing: Provide local illustration for all 363 indexed records.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "completed_earlier_count": 12,
+  "pending_top_priority": [
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    }
+  ],
+  "pending_summary": {
+    "total": 23,
+    "needs_verification": 2
+  },
+  "capture_checks": {},
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "360581e60f522284e438cca85b97e243e9028be9be32c2e8ed48bfdd6d18e420"
+}

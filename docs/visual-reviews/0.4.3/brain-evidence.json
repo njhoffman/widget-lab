@@ -1,0 +1,88 @@
+{
+  "widget": "brain",
+  "widget_version": "1.22.0",
+  "repository_version": "0.4.3",
+  "captured_at": "2026-10-31T05:28:19.511420+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Brain_Atlas_v1.22.0.html",
+  "source_sha256": "a01fa7f9a05132926d6ebf52a28fb76e0aa09cbeceebcd76eaad190a832e526b",
+  "actual_sha256": "81ed0d2847d8897ba3e964e89a005237a01f06f0eeb5689c27d872ac046332fa",
+  "annotated_actual_sha256": "81ed0d2847d8897ba3e964e89a005237a01f06f0eeb5689c27d872ac046332fa",
+  "annotation_note": "No app layout changed this update.",
+  "highlight": null,
+  "viewport": [
+    1440,
+    1000
+  ],
+  "device_scale_factor": 2,
+  "selection": "Orbitofrontal cortex, lateral schematic; estimated depth on (medium)",
+  "goals": [
+    {
+      "path": "atlas/images/goal_1.png",
+      "sha256": "ac6791493a099863f8cf109412176a3daf201e9c4f9b6c65bb358ea3d2347775",
+      "crop": [
+        828,
+        0,
+        708,
+        505
+      ],
+      "approval": "approved visual direction"
+    },
+    {
+      "path": "atlas/images/goal_2.png",
+      "sha256": "047dcaa91d5d2cb3966527acafab4f57c9c851992c5d10f9967bffa100fdf275",
+      "crop": [
+        0,
+        414,
+        1536,
+        332
+      ],
+      "approval": "approved visual direction"
+    }
+  ],
+  "complete_this_release": [
+    {
+      "id": "WL-024",
+      "title": "Focus comparison sheets on this release and improve zoom clarity.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "completed_earlier_count": 12,
+  "pending_top_priority": [
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    }
+  ],
+  "pending_summary": {
+    "total": 25,
+    "needs_verification": 1
+  },
+  "capture_checks": {
+    "reduced_motion_control_transition": "pass"
+  },
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "2ab012697375cca8c50fad506675e76b525730f2e545f22a0f2b685c299a4092"
+}

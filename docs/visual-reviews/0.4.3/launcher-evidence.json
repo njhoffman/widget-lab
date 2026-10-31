@@ -1,0 +1,70 @@
+{
+  "widget": "launcher",
+  "widget_version": "1.14",
+  "repository_version": "0.4.3",
+  "captured_at": "2026-10-31T05:28:56.245415+00:00",
+  "browser": "Chrome/155.0.8059.84",
+  "source": "atlas/widgets/Widget_Launcher_v1.14.html",
+  "source_sha256": "d011e76389234aa95058c5cce84e07a645f70d299b58aeb35dfd87f5212f13f0",
+  "actual_sha256": "6ce106582040d45fc28dc71b6239ed1d64575f94660e082248a44b6f35ab799e",
+  "annotated_actual_sha256": "6ce106582040d45fc28dc71b6239ed1d64575f94660e082248a44b6f35ab799e",
+  "annotation_note": "No app layout changed this update.",
+  "highlight": null,
+  "viewport": [
+    1440,
+    1000
+  ],
+  "device_scale_factor": 2,
+  "selection": "Initial default view in clean browser profile",
+  "goals": [
+    {
+      "path": "atlas/images/audit_launcher_concept.png",
+      "sha256": "95f9bb876cc80f75d0380543411e0c8144203bcc6af755e3a81e469b44c2a16f",
+      "crop": null,
+      "approval": "proposed concept, not approved"
+    }
+  ],
+  "complete_this_release": [
+    {
+      "id": "WL-024",
+      "title": "Focus comparison sheets on this release and improve zoom clarity.",
+      "priority": "p1",
+      "status": "done"
+    }
+  ],
+  "completed_earlier_count": 5,
+  "pending_top_priority": [
+    {
+      "id": "T001",
+      "title": "Verify existing: Retain compact one-line title/subtitle with responsive natural wrap.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T004",
+      "title": "Verify existing: Align version and data chips, equal control heights.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T005",
+      "title": "Verify existing: Preserve historical changelog entries and click-to-expand version control.",
+      "priority": "p1",
+      "status": "needs-verification"
+    },
+    {
+      "id": "T006",
+      "title": "Verify existing: Compact statistics typography and balanced rows.",
+      "priority": "p1",
+      "status": "needs-verification"
+    }
+  ],
+  "pending_summary": {
+    "total": 19,
+    "needs_verification": 2
+  },
+  "capture_checks": {},
+  "runtime_exceptions": [],
+  "review_scope": "Fresh browser rendering and selected state only; full functional/scientific review pending.",
+  "comparison_sha256": "28c656bc916907912d520f49ad9c407fbeb188f660c609df5cf5108f98b5724f"
+}
